@@ -4,7 +4,9 @@
 
 **Status**: Supabase is **NOT CURRENTLY USED** in the application.
 
-**Recommendation**: **REMOVE** - Supabase packages and infrastructure are installed but not utilized. The app currently uses static data and doesn't require database functionality.
+**Decision (September 27, 2025)**: **RETAINED** - Per user decision, Supabase infrastructure will be kept for potential future use despite current recommendation to remove.
+
+**Original Recommendation**: REMOVE - Supabase packages and infrastructure are installed but not utilized. The app currently uses static data and doesn't require database functionality.
 
 ## Current Usage Analysis
 

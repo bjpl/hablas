@@ -21,10 +21,10 @@ Help working-class Colombians (Rappi/Didi/Uber/inDriver drivers and delivery wor
 ## 🛠️ Tech Stack
 
 - **Frontend**: Next.js 14 with TypeScript
-- **Database**: Supabase (PostgreSQL)
-- **Hosting**: Vercel
-- **Styling**: Tailwind CSS
+- **Deployment**: GitHub Pages (static export)
+- **Styling**: Tailwind CSS with custom design system
 - **PWA**: Service Workers for offline functionality
+- **Build Automation**: Automated documentation sync
 
 ## 📱 Optimization for Colombia
 
@@ -38,25 +38,45 @@ Help working-class Colombians (Rappi/Didi/Uber/inDriver drivers and delivery wor
 
 1. Clone the repository
 2. Install dependencies: `npm install`
-3. Set up Supabase:
-   - Create a new project at supabase.com
-   - Run the schema from `supabase/schema.sql`
-   - Copy credentials to `.env.local`
-4. Run development server: `npm run dev`
+3. Run development server: `npm run dev`
+4. Build for production: `npm run build`
+
+### Build Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production (automatically syncs design system docs)
+- `npm run sync-docs` - Manually sync design system documentation
+- `npm run lint` - Run ESLint
 
 ## 🌐 Deployment
 
-Deploy to Vercel:
-```bash
-vercel
-```
+Deployed to GitHub Pages using static export:
 
-## 📊 Analytics
+1. Push to `main` branch
+2. GitHub Actions automatically builds and deploys
+3. Live at: `https://bjpl.github.io/hablas/`
 
-Track usage patterns to understand:
-- Most helpful resources
-- Peak usage times (driver schedules)
-- Geographic distribution in Colombian cities
+### Build Configuration
+
+- **Static Export**: `output: 'export'` in next.config.js
+- **Base Path**: `/hablas` for GitHub Pages
+- **Automated Sync**: Design system docs copied to public/ during build
+
+## 📊 Current Status
+
+- **Version**: 1.0.0
+- **Last Updated**: September 27, 2025
+- **Resources**: 6 downloadable learning materials
+- **Design System**: 100% integrated across all components
+- **Documentation**: Complete with interactive style guide
+
+### Recent Improvements
+
+- ✅ Complete design system integration
+- ✅ Automated documentation sync
+- ✅ TypeScript strict mode enabled
+- ✅ Component data extraction (57% size reduction)
+- ✅ Comprehensive cleanup and optimization
 
 ## 🤝 Contributing
 
