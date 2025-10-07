@@ -22,7 +22,8 @@
     "ai:generate-topic": "tsx scripts/ai-generate-resources.ts topic",
     "ai:generate-template": "tsx scripts/ai-generate-resources.ts template",
     "ai:generate-category": "tsx scripts/ai-generate-resources.ts category",
-    "ai:generate-level": "tsx scripts/ai-generate-resources.ts level"
+    "ai:generate-level": "tsx scripts/ai-generate-resources.ts level",
+    "check:progress": "tsx scripts/check-progress.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.65.0",
