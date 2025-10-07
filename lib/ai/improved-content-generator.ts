@@ -7,9 +7,19 @@ import Anthropic from '@anthropic-ai/sdk'
 import type { Resource } from '@/data/resources'
 import { validateResource } from '@/lib/utils/resource-validator'
 
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY || ''
-})
+// Lazy initialization to allow env vars to load first
+let anthropic: Anthropic | null = null
+
+function getAnthropicClient(): Anthropic {
+  if (!anthropic) {
+    const apiKey = process.env.ANTHROPIC_API_KEY
+    if (!apiKey) {
+      throw new Error('ANTHROPIC_API_KEY environment variable is not set')
+    }
+    anthropic = new Anthropic({ apiKey })
+  }
+  return anthropic
+}
 
 export interface GenerationConfig {
   model?: string
@@ -56,7 +66,8 @@ export async function generateResourceContent(
 
   try {
     // Generate content with Claude
-    const response = await anthropic.messages.create({
+    const client = getAnthropicClient()
+    const response = await client.messages.create({
       model: mergedConfig.model,
       max_tokens: mergedConfig.maxTokens,
       temperature: mergedConfig.temperature,
