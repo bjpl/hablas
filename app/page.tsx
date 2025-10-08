@@ -5,14 +5,30 @@ import Hero from '@/components/Hero'
 import ResourceLibrary from '@/components/ResourceLibrary'
 import WhatsAppCTA from '@/components/WhatsAppCTA'
 import OfflineNotice from '@/components/OfflineNotice'
+import SearchBar from '@/components/SearchBar'
+import InstallPrompt from '@/components/InstallPrompt'
 
 export default function Home() {
   const [isOnline, setIsOnline] = useState(true)
   const [selectedCategory, setSelectedCategory] = useState<'all' | 'repartidor' | 'conductor'>('all')
   const [selectedLevel, setSelectedLevel] = useState<'all' | 'basico' | 'intermedio'>('all')
+  const [searchQuery, setSearchQuery] = useState('')
 
   useEffect(() => {
     setIsOnline(navigator.onLine)
+
+    // Register service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('/hablas/sw.js', { scope: '/hablas/' })
+        .then((registration) => {
+          console.log('Service Worker registered:', registration)
+        })
+        .catch((error) => {
+          console.error('Service Worker registration failed:', error)
+        })
+    }
+
     
     const handleOnline = () => setIsOnline(true)
     const handleOffline = () => setIsOnline(false)
@@ -29,6 +45,7 @@ export default function Home() {
   return (
     <main id="main-content" className="min-h-screen" role="main">
       {!isOnline && <OfflineNotice />}
+      <InstallPrompt />
 
       <Hero />
       
@@ -51,7 +68,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mb-6" role="region" aria-label="Filtros de recursos">
+        <div className="mb-6" role="region" aria-label="Búsqueda y filtros de recursos">
+          {/* Search bar */}
+          <SearchBar onSearch={setSearchQuery} placeholder="Buscar por título, descripción o etiquetas..." />
+
           <div className="flex flex-wrap gap-2 mb-4" role="group" aria-labelledby="category-filter-label">
             <span id="category-filter-label" className="text-sm font-medium">Filtrar por trabajo:</span>
             <button
@@ -127,9 +147,10 @@ export default function Home() {
           </div>
         </div>
 
-        <ResourceLibrary 
+        <ResourceLibrary
           category={selectedCategory}
           level={selectedLevel}
+          searchQuery={searchQuery}
         />
       </section>
 

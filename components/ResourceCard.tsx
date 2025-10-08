@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import type { Resource } from '../data/resources'
 
 interface ResourceCardProps {
@@ -63,7 +64,11 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
         )}
       </div>
 
-      <h3 className="font-bold text-lg mb-2">{resource.title}</h3>
+      <Link href={`/recursos/${resource.id}`}>
+        <h3 className="font-bold text-lg mb-2 hover:text-accent-blue transition-colors cursor-pointer">
+          {resource.title}
+        </h3>
+      </Link>
       <p className="text-sm text-gray-600 mb-3 flex-grow">{resource.description}</p>
 
       <div className="flex flex-wrap gap-1 mb-3">
@@ -79,15 +84,24 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
       </div>
 
       <div className="flex gap-2">
+        <Link href={`/recursos/${resource.id}`} className="flex-1">
+          <button
+            className="w-full py-2 px-3 rounded-lg font-medium bg-accent-blue text-white hover:bg-opacity-90 transition-colors"
+          >
+            Ver recurso
+          </button>
+        </Link>
         <button
           onClick={handleDownloadClick}
-          className={`flex-1 py-2 px-3 rounded-lg font-medium transition-colors ${
+          className={`p-2 rounded-lg font-medium transition-colors ${
             isDownloaded
               ? 'bg-accent-green bg-opacity-20 text-accent-green'
-              : 'bg-accent-blue text-white hover:bg-opacity-90'
+              : 'bg-gray-100 hover:bg-gray-200'
           }`}
+          aria-label="Descargar"
+          title="Descargar"
         >
-          {isDownloaded ? '✓ Descargado' : 'Descargar'}
+          {isDownloaded ? '✓' : '📥'}
         </button>
         <button
           onClick={handleShare}

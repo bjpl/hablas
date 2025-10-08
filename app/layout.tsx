@@ -3,12 +3,29 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Hablas - Aprende Inglés para Trabajo',
-  description: 'Recursos gratis de inglés para conductores y domiciliarios en Colombia. WhatsApp grupos, frases útiles, y pronunciación.',
-  keywords: 'inglés para Rappi, inglés para Uber, inglés domiciliarios, inglés conductores Colombia',
+  description: 'Recursos gratuitos de inglés para conductores y domiciliarios en Colombia. Aprende inglés para trabajar con Uber, Rappi, DiDi y más.',
+  keywords: 'inglés para Rappi, inglés para Uber, inglés domiciliarios, inglés conductores Colombia, recursos gratis inglés, aprender inglés trabajo',
+  manifest: '/hablas/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Hablas',
+  },
+  formatDetection: {
+    telephone: false,
+  },
   openGraph: {
-    title: 'Hablas - Inglés para Trabajadores',
-    description: 'Únete a nuestra comunidad WhatsApp y aprende inglés práctico para tu trabajo',
+    type: 'website',
     locale: 'es_CO',
+    url: 'https://bjpl.github.io/hablas/',
+    siteName: 'Hablas',
+    title: 'Hablas - Aprende Inglés para Trabajo',
+    description: 'Recursos gratuitos de inglés para conductores y domiciliarios en Colombia',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hablas - Aprende Inglés para Trabajo',
+    description: 'Recursos gratuitos de inglés para conductores y domiciliarios en Colombia',
   },
 }
 
@@ -26,6 +43,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es-CO">
+      <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/hablas/icon-192.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+      </head>
       <body className="min-h-screen bg-gray-50">
         <a href="#main-content" className="skip-to-content">
           Saltar al contenido principal

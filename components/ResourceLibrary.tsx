@@ -7,16 +7,34 @@ import { resources, type Resource } from '../data/resources'
 interface ResourceLibraryProps {
   category: 'all' | 'repartidor' | 'conductor'
   level: 'all' | 'basico' | 'intermedio'
+  searchQuery?: string
 }
 
 
-export default function ResourceLibrary({ category, level }: ResourceLibraryProps) {
+export default function ResourceLibrary({ category, level, searchQuery = '' }: ResourceLibraryProps) {
   const [downloadedResources, setDownloadedResources] = useState<number[]>([])
 
   const filteredResources = resources.filter(resource => {
     const categoryMatch = category === 'all' || resource.category === category || resource.category === 'all'
     const levelMatch = level === 'all' || resource.level === level
-    return categoryMatch && levelMatch
+
+    // Search query matching
+    let searchMatch = true
+    if (searchQuery && searchQuery.trim()) {
+      const query = searchQuery.toLowerCase().trim()
+      const searchableText = [
+        resource.title,
+        resource.description,
+        ...resource.tags,
+        resource.category,
+        resource.level,
+        resource.type
+      ].join(' ').toLowerCase()
+
+      searchMatch = searchableText.includes(query)
+    }
+
+    return categoryMatch && levelMatch && searchMatch
   })
 
   const handleDownload = (resourceId: number) => {

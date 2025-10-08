@@ -1,0 +1,497 @@
+{
+  "timestamp": "2025-10-07T09:07:32.926Z",
+  "total": 50,
+  "successful": 34,
+  "failed": 16,
+  "avgQuality": 87.6470588235294,
+  "totalCost": 0.8068139999999999,
+  "totalTime": 56.657816666666676,
+  "results": [
+    {
+      "number": 1,
+      "name": "basic_phrases_1",
+      "title": "Frases Esenciales para Entregas - Var 1",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9406,
+      "cost": 0.028218,
+      "time": 116.607,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_1.md"
+    },
+    {
+      "number": 2,
+      "name": "basic_audio_1",
+      "title": "Pronunciación: Entregas - Var 1",
+      "success": true,
+      "qualityScore": 80,
+      "tokens": 3715,
+      "cost": 0.011145,
+      "time": 46.756,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_1-audio-script.txt"
+    },
+    {
+      "number": 3,
+      "name": "basic_visual_1",
+      "title": "Guía Visual: Entregas - Var 1",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9238,
+      "cost": 0.027714,
+      "time": 115.25,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_visual_1-image-spec.md"
+    },
+    {
+      "number": 4,
+      "name": "basic_phrases_2",
+      "title": "Frases Esenciales para Entregas - Var 2",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9406,
+      "cost": 0.028218,
+      "time": 118.156,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_2.md"
+    },
+    {
+      "number": 5,
+      "name": "intermediate_situations_1",
+      "title": "Situaciones Complejas en Entregas - Var 1",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9409,
+      "cost": 0.028227000000000002,
+      "time": 134.672,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_situations_1.md"
+    },
+    {
+      "number": 6,
+      "name": "basic_phrases_3",
+      "title": "Frases Esenciales para Entregas - Var 3",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9406,
+      "cost": 0.028218,
+      "time": 113.145,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_3.md"
+    },
+    {
+      "number": 7,
+      "name": "basic_audio_2",
+      "title": "Pronunciación: Entregas - Var 2",
+      "success": true,
+      "qualityScore": 80,
+      "tokens": 3756,
+      "cost": 0.011268,
+      "time": 47.225,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_2-audio-script.txt"
+    },
+    {
+      "number": 8,
+      "name": "basic_visual_2",
+      "title": "Guía Visual: Entregas - Var 2",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9238,
+      "cost": 0.027714,
+      "time": 137.082,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_visual_2-image-spec.md"
+    },
+    {
+      "number": 9,
+      "name": "basic_phrases_4",
+      "title": "Frases Esenciales para Entregas - Var 4",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9406,
+      "cost": 0.028218,
+      "time": 116.238,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_4.md"
+    },
+    {
+      "number": 10,
+      "name": "intermediate_conversations_1",
+      "title": "Conversaciones con Clientes - Var 1",
+      "success": true,
+      "qualityScore": 80,
+      "tokens": 4226,
+      "cost": 0.012677999999999998,
+      "time": 56.574,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_conversations_1-audio-script.txt"
+    },
+    {
+      "number": 11,
+      "name": "basic_greetings_1",
+      "title": "Saludos y Confirmación de Pasajeros - Var 1",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9389,
+      "cost": 0.028166999999999998,
+      "time": 117.417,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_1.md"
+    },
+    {
+      "number": 12,
+      "name": "basic_directions_1",
+      "title": "Direcciones y Navegación GPS - Var 1",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9375,
+      "cost": 0.028124999999999997,
+      "time": 110.526,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_directions_1.md"
+    },
+    {
+      "number": 13,
+      "name": "basic_audio_navigation_1",
+      "title": "Audio: Direcciones en Inglés - Var 1",
+      "success": true,
+      "qualityScore": 80,
+      "tokens": 3629,
+      "cost": 0.010886999999999999,
+      "time": 44.396,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_audio_navigation_1-audio-script.txt"
+    },
+    {
+      "number": 14,
+      "name": "basic_greetings_2",
+      "title": "Saludos y Confirmación de Pasajeros - Var 2",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9389,
+      "cost": 0.028166999999999998,
+      "time": 116.517,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_2.md"
+    },
+    {
+      "number": 15,
+      "name": "basic_directions_2",
+      "title": "Direcciones y Navegación GPS - Var 2",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9375,
+      "cost": 0.028124999999999997,
+      "time": 113.324,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_directions_2.md"
+    },
+    {
+      "number": 16,
+      "name": "intermediate_smalltalk_1",
+      "title": "Small Talk con Pasajeros - Var 1",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9369,
+      "cost": 0.028107,
+      "time": 117.844,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_smalltalk_1.md"
+    },
+    {
+      "number": 17,
+      "name": "basic_greetings_3",
+      "title": "Saludos y Confirmación de Pasajeros - Var 3",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9389,
+      "cost": 0.028166999999999998,
+      "time": 114.412,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_3.md"
+    },
+    {
+      "number": 18,
+      "name": "basic_audio_navigation_2",
+      "title": "Audio: Direcciones en Inglés - Var 2",
+      "success": true,
+      "qualityScore": 80,
+      "tokens": 3515,
+      "cost": 0.010544999999999999,
+      "time": 42.531,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_audio_navigation_2-audio-script.txt"
+    },
+    {
+      "number": 19,
+      "name": "basic_directions_3",
+      "title": "Direcciones y Navegación GPS - Var 3",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9375,
+      "cost": 0.028124999999999997,
+      "time": 108.429,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_directions_3.md"
+    },
+    {
+      "number": 20,
+      "name": "intermediate_problems_1",
+      "title": "Manejo de Situaciones Difíciles - Var 1",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9382,
+      "cost": 0.028145999999999997,
+      "time": 123.615,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_problems_1.md"
+    },
+    {
+      "number": 21,
+      "name": "basic_greetings_all_1",
+      "title": "Saludos Básicos en Inglés - Var 1",
+      "success": true,
+      "qualityScore": 80,
+      "tokens": 3492,
+      "cost": 0.010476,
+      "time": 41.202,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_greetings_all_1-audio-script.txt"
+    },
+    {
+      "number": 22,
+      "name": "basic_numbers_1",
+      "title": "Números y Direcciones - Var 1",
+      "success": true,
+      "qualityScore": 100,
+      "tokens": 9360,
+      "cost": 0.02808,
+      "time": 109.396,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_numbers_1.md"
+    },
+    {
+      "number": 23,
+      "name": "basic_time_1",
+      "title": "Tiempo y Horarios - Var 1",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9365,
+      "cost": 0.028095000000000002,
+      "time": 110.482,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_time_1.md"
+    },
+    {
+      "number": 24,
+      "name": "basic_app_vocabulary_1",
+      "title": "Vocabulario de Apps (Uber, Rappi, DiDi) - Var 1",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9233,
+      "cost": 0.027699,
+      "time": 121.986,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_app_vocabulary_1-image-spec.md"
+    },
+    {
+      "number": 25,
+      "name": "intermediate_customer_service_1",
+      "title": "Servicio al Cliente en Inglés - Var 1",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9361,
+      "cost": 0.028082999999999997,
+      "time": 119.558,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\intermediate_customer_service_1.md"
+    },
+    {
+      "number": 26,
+      "name": "intermediate_complaints_1",
+      "title": "Manejo de Quejas y Problemas - Var 1",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9371,
+      "cost": 0.028113000000000003,
+      "time": 127.272,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\intermediate_complaints_1.md"
+    },
+    {
+      "number": 27,
+      "name": "emergency_phrases_1",
+      "title": "Frases de Emergencia - Var 1",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9365,
+      "cost": 0.028095000000000002,
+      "time": 116.562,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\emergency_phrases_1.md"
+    },
+    {
+      "number": 28,
+      "name": "basic_greetings_all_2",
+      "title": "Saludos Básicos en Inglés - Var 2",
+      "success": true,
+      "qualityScore": 80,
+      "tokens": 3920,
+      "cost": 0.01176,
+      "time": 47.216,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_greetings_all_2-audio-script.txt"
+    },
+    {
+      "number": 29,
+      "name": "basic_numbers_2",
+      "title": "Números y Direcciones - Var 2",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9360,
+      "cost": 0.02808,
+      "time": 111.835,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_numbers_2.md"
+    },
+    {
+      "number": 30,
+      "name": "safety_protocols_1",
+      "title": "Protocolos de Seguridad - Var 1",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9362,
+      "cost": 0.028086,
+      "time": 122.273,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\safety_protocols_1.md"
+    },
+    {
+      "number": 31,
+      "name": "intermediate_situations_2",
+      "title": "Situaciones Complejas en Entregas - Var 2",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9409,
+      "cost": 0.028227000000000002,
+      "time": 125.992,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_situations_2.md"
+    },
+    {
+      "number": 32,
+      "name": "intermediate_conversations_2",
+      "title": "Conversaciones con Clientes - Var 2",
+      "success": true,
+      "qualityScore": 80,
+      "tokens": 3713,
+      "cost": 0.011139,
+      "time": 45.408,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_conversations_2-audio-script.txt"
+    },
+    {
+      "number": 33,
+      "name": "intermediate_smalltalk_2",
+      "title": "Small Talk con Pasajeros - Var 2",
+      "success": true,
+      "qualityScore": 90,
+      "tokens": 9369,
+      "cost": 0.028107,
+      "time": 122.834,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_smalltalk_2.md"
+    },
+    {
+      "number": 34,
+      "name": "intermediate_audio_conversations_1",
+      "title": "Diálogos Reales con Pasajeros - Var 1",
+      "success": true,
+      "qualityScore": 80,
+      "tokens": 4865,
+      "cost": 0.014595,
+      "time": 66.737,
+      "filepath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_audio_conversations_1-audio-script.txt"
+    },
+    {
+      "number": 35,
+      "name": "intermediate_problems_2",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaEymjhZ6ZzAGCe3q7F\"}"
+    },
+    {
+      "number": 36,
+      "name": "intermediate_customer_service_2",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaEzbLpHmxwuY8Ujr4w\"}"
+    },
+    {
+      "number": 37,
+      "name": "intermediate_complaints_2",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF19awof95xDbHt7xV\"}"
+    },
+    {
+      "number": 38,
+      "name": "intermediate_audio_scenarios_1",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF1g5wJdKAo5WdozaB\"}"
+    },
+    {
+      "number": 39,
+      "name": "intermediate_weather_traffic_1",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF2KH8Xwi71RfUFJik\"}"
+    },
+    {
+      "number": 40,
+      "name": "uber_guide_1",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF2rXbQdvxnCyY7pAa\"}"
+    },
+    {
+      "number": 41,
+      "name": "advanced_professional_1",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF3NHJN4id7KGKVkMF\"}"
+    },
+    {
+      "number": 42,
+      "name": "advanced_video_1",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF3zExkeGtXGqWaA3V\"}"
+    },
+    {
+      "number": 43,
+      "name": "advanced_professional_service_1",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF4VzXLFwd2DHFHBt3\"}"
+    },
+    {
+      "number": 44,
+      "name": "advanced_cultural_1",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF52VvcvkvY195cjRh\"}"
+    },
+    {
+      "number": 45,
+      "name": "advanced_video_training_1",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF5ZF7aRaAViXxkmor\"}"
+    },
+    {
+      "number": 46,
+      "name": "advanced_business_english_1",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF64WKuLcDu6J2vQW2\"}"
+    },
+    {
+      "number": 47,
+      "name": "advanced_idioms_slang_1",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF6djkoa5YG9EcbDry\"}"
+    },
+    {
+      "number": 48,
+      "name": "advanced_accent_reduction_1",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF7JAxcTRoY9mBEJAu\"}"
+    },
+    {
+      "number": 49,
+      "name": "advanced_video_comprehensive_1",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF7qfT1iKQyHzkAo3Z\"}"
+    },
+    {
+      "number": 50,
+      "name": "rappi_guide_1",
+      "title": "Failed",
+      "success": false,
+      "error": "Generation failed: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CTsaF8KgUMMTq8ZmuziwV\"}"
+    }
+  ]
+}

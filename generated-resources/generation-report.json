@@ -1,0 +1,420 @@
+{
+  "timestamp": "2025-10-07T08:08:22.217Z",
+  "totalResources": 50,
+  "successful": 0,
+  "failed": 50,
+  "metrics": {
+    "avgQuality": null,
+    "totalTokens": 0,
+    "totalCost": 0,
+    "totalTime": 0
+  },
+  "qualityDistribution": {
+    "excellent": 0,
+    "good": 0,
+    "acceptable": 0,
+    "poor": 0
+  },
+  "results": [
+    {
+      "batchNumber": 1,
+      "resourceNumber": 1,
+      "template": "basic_phrases",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_phrases not found"
+    },
+    {
+      "batchNumber": 1,
+      "resourceNumber": 2,
+      "template": "basic_audio",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_audio not found"
+    },
+    {
+      "batchNumber": 1,
+      "resourceNumber": 3,
+      "template": "basic_visual",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_visual not found"
+    },
+    {
+      "batchNumber": 1,
+      "resourceNumber": 4,
+      "template": "basic_phrases",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_phrases not found"
+    },
+    {
+      "batchNumber": 1,
+      "resourceNumber": 5,
+      "template": "intermediate_situations",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_situations not found"
+    },
+    {
+      "batchNumber": 1,
+      "resourceNumber": 6,
+      "template": "basic_phrases",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_phrases not found"
+    },
+    {
+      "batchNumber": 1,
+      "resourceNumber": 7,
+      "template": "basic_audio",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_audio not found"
+    },
+    {
+      "batchNumber": 1,
+      "resourceNumber": 8,
+      "template": "basic_visual",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_visual not found"
+    },
+    {
+      "batchNumber": 1,
+      "resourceNumber": 9,
+      "template": "basic_phrases",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_phrases not found"
+    },
+    {
+      "batchNumber": 1,
+      "resourceNumber": 10,
+      "template": "basic_audio",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_audio not found"
+    },
+    {
+      "batchNumber": 2,
+      "resourceNumber": 11,
+      "template": "basic_greetings",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_greetings not found"
+    },
+    {
+      "batchNumber": 2,
+      "resourceNumber": 12,
+      "template": "basic_directions",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_directions not found"
+    },
+    {
+      "batchNumber": 2,
+      "resourceNumber": 13,
+      "template": "basic_audio_navigation",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_audio_navigation not found"
+    },
+    {
+      "batchNumber": 2,
+      "resourceNumber": 14,
+      "template": "basic_greetings",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_greetings not found"
+    },
+    {
+      "batchNumber": 2,
+      "resourceNumber": 15,
+      "template": "basic_directions",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_directions not found"
+    },
+    {
+      "batchNumber": 2,
+      "resourceNumber": 16,
+      "template": "intermediate_smalltalk",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_smalltalk not found"
+    },
+    {
+      "batchNumber": 2,
+      "resourceNumber": 17,
+      "template": "basic_greetings",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_greetings not found"
+    },
+    {
+      "batchNumber": 2,
+      "resourceNumber": 18,
+      "template": "basic_audio_navigation",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_audio_navigation not found"
+    },
+    {
+      "batchNumber": 2,
+      "resourceNumber": 19,
+      "template": "basic_directions",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_directions not found"
+    },
+    {
+      "batchNumber": 2,
+      "resourceNumber": 20,
+      "template": "basic_greetings",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_greetings not found"
+    },
+    {
+      "batchNumber": 3,
+      "resourceNumber": 21,
+      "template": "basic_greetings_all",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_greetings_all not found"
+    },
+    {
+      "batchNumber": 3,
+      "resourceNumber": 22,
+      "template": "basic_numbers",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_numbers not found"
+    },
+    {
+      "batchNumber": 3,
+      "resourceNumber": 23,
+      "template": "basic_time",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_time not found"
+    },
+    {
+      "batchNumber": 3,
+      "resourceNumber": 24,
+      "template": "basic_app_vocabulary",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_app_vocabulary not found"
+    },
+    {
+      "batchNumber": 3,
+      "resourceNumber": 25,
+      "template": "intermediate_customer_service",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_customer_service not found"
+    },
+    {
+      "batchNumber": 3,
+      "resourceNumber": 26,
+      "template": "intermediate_complaints",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_complaints not found"
+    },
+    {
+      "batchNumber": 3,
+      "resourceNumber": 27,
+      "template": "emergency_phrases",
+      "title": "Failed",
+      "success": false,
+      "error": "Template emergency_phrases not found"
+    },
+    {
+      "batchNumber": 3,
+      "resourceNumber": 28,
+      "template": "basic_greetings_all",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_greetings_all not found"
+    },
+    {
+      "batchNumber": 3,
+      "resourceNumber": 29,
+      "template": "basic_numbers",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_numbers not found"
+    },
+    {
+      "batchNumber": 3,
+      "resourceNumber": 30,
+      "template": "basic_app_vocabulary",
+      "title": "Failed",
+      "success": false,
+      "error": "Template basic_app_vocabulary not found"
+    },
+    {
+      "batchNumber": 4,
+      "resourceNumber": 31,
+      "template": "intermediate_situations",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_situations not found"
+    },
+    {
+      "batchNumber": 4,
+      "resourceNumber": 32,
+      "template": "intermediate_conversations",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_conversations not found"
+    },
+    {
+      "batchNumber": 4,
+      "resourceNumber": 33,
+      "template": "intermediate_smalltalk",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_smalltalk not found"
+    },
+    {
+      "batchNumber": 4,
+      "resourceNumber": 34,
+      "template": "intermediate_audio_conversations",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_audio_conversations not found"
+    },
+    {
+      "batchNumber": 4,
+      "resourceNumber": 35,
+      "template": "intermediate_problems",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_problems not found"
+    },
+    {
+      "batchNumber": 4,
+      "resourceNumber": 36,
+      "template": "intermediate_customer_service",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_customer_service not found"
+    },
+    {
+      "batchNumber": 4,
+      "resourceNumber": 37,
+      "template": "intermediate_complaints",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_complaints not found"
+    },
+    {
+      "batchNumber": 4,
+      "resourceNumber": 38,
+      "template": "intermediate_audio_scenarios",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_audio_scenarios not found"
+    },
+    {
+      "batchNumber": 4,
+      "resourceNumber": 39,
+      "template": "intermediate_weather_traffic",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_weather_traffic not found"
+    },
+    {
+      "batchNumber": 4,
+      "resourceNumber": 40,
+      "template": "intermediate_situations",
+      "title": "Failed",
+      "success": false,
+      "error": "Template intermediate_situations not found"
+    },
+    {
+      "batchNumber": 5,
+      "resourceNumber": 41,
+      "template": "advanced_professional",
+      "title": "Failed",
+      "success": false,
+      "error": "Template advanced_professional not found"
+    },
+    {
+      "batchNumber": 5,
+      "resourceNumber": 42,
+      "template": "advanced_video",
+      "title": "Failed",
+      "success": false,
+      "error": "Template advanced_video not found"
+    },
+    {
+      "batchNumber": 5,
+      "resourceNumber": 43,
+      "template": "advanced_professional_service",
+      "title": "Failed",
+      "success": false,
+      "error": "Template advanced_professional_service not found"
+    },
+    {
+      "batchNumber": 5,
+      "resourceNumber": 44,
+      "template": "advanced_cultural",
+      "title": "Failed",
+      "success": false,
+      "error": "Template advanced_cultural not found"
+    },
+    {
+      "batchNumber": 5,
+      "resourceNumber": 45,
+      "template": "advanced_video_training",
+      "title": "Failed",
+      "success": false,
+      "error": "Template advanced_video_training not found"
+    },
+    {
+      "batchNumber": 5,
+      "resourceNumber": 46,
+      "template": "advanced_business_english",
+      "title": "Failed",
+      "success": false,
+      "error": "Template advanced_business_english not found"
+    },
+    {
+      "batchNumber": 5,
+      "resourceNumber": 47,
+      "template": "advanced_idioms_slang",
+      "title": "Failed",
+      "success": false,
+      "error": "Template advanced_idioms_slang not found"
+    },
+    {
+      "batchNumber": 5,
+      "resourceNumber": 48,
+      "template": "advanced_accent_reduction",
+      "title": "Failed",
+      "success": false,
+      "error": "Template advanced_accent_reduction not found"
+    },
+    {
+      "batchNumber": 5,
+      "resourceNumber": 49,
+      "template": "advanced_video_comprehensive",
+      "title": "Failed",
+      "success": false,
+      "error": "Template advanced_video_comprehensive not found"
+    },
+    {
+      "batchNumber": 5,
+      "resourceNumber": 50,
+      "template": "advanced_professional",
+      "title": "Failed",
+      "success": false,
+      "error": "Template advanced_professional not found"
+    }
+  ]
+}

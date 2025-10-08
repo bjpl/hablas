@@ -1,0 +1,373 @@
+[dotenv@17.2.3] injecting env (2) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+[1m
+======================================================================[0m
+[1m🤖 GENERATING 50 RESOURCES - STRATEGIC BATCH PROCESS[0m
+[1m======================================================================
+[0m
+[36m📝 Starting ID: 7[0m
+[33m💰 Estimated Total Cost: $1.50 - $2.00[0m
+[33m⏱️  Estimated Total Time: 80-100 minutes[0m
+[33m
+⚠️  This will make 50 API calls. Press Ctrl+C to cancel...
+[0m
+[36m
+======================================================================[0m
+[1m🚀 BATCH 1: Generating 10 resources[0m
+[36m======================================================================
+[0m
+[36m
+[1/50] Generating from template: basic_phrases[0m
+[36m   Resource ID: 7[0m
+[31m   ❌ Failed: Template basic_phrases not found[0m
+[36m
+[2/50] Generating from template: basic_audio[0m
+[36m   Resource ID: 8[0m
+[31m   ❌ Failed: Template basic_audio not found[0m
+[36m
+[3/50] Generating from template: basic_visual[0m
+[36m   Resource ID: 9[0m
+[31m   ❌ Failed: Template basic_visual not found[0m
+[36m
+[4/50] Generating from template: basic_phrases[0m
+[36m   Resource ID: 10[0m
+[31m   ❌ Failed: Template basic_phrases not found[0m
+[36m
+[5/50] Generating from template: intermediate_situations[0m
+[36m   Resource ID: 11[0m
+[31m   ❌ Failed: Template intermediate_situations not found[0m
+[36m
+[6/50] Generating from template: basic_phrases[0m
+[36m   Resource ID: 12[0m
+[31m   ❌ Failed: Template basic_phrases not found[0m
+[36m
+[7/50] Generating from template: basic_audio[0m
+[36m   Resource ID: 13[0m
+[31m   ❌ Failed: Template basic_audio not found[0m
+[36m
+[8/50] Generating from template: basic_visual[0m
+[36m   Resource ID: 14[0m
+[31m   ❌ Failed: Template basic_visual not found[0m
+[36m
+[9/50] Generating from template: basic_phrases[0m
+[36m   Resource ID: 15[0m
+[31m   ❌ Failed: Template basic_phrases not found[0m
+[36m
+[10/50] Generating from template: basic_audio[0m
+[36m   Resource ID: 16[0m
+[31m   ❌ Failed: Template basic_audio not found[0m
+[36m
+======================================================================[0m
+[1m📊 BATCH 1 SUMMARY[0m
+[36m======================================================================
+[0m
+[32m✅ Successful: 0/10[0m
+[31m❌ Failed: 10/10[0m
+[31m
+❌ Failed Resources:[0m
+[31m   1. basic_phrases: Template basic_phrases not found[0m
+[31m   2. basic_audio: Template basic_audio not found[0m
+[31m   3. basic_visual: Template basic_visual not found[0m
+[31m   4. basic_phrases: Template basic_phrases not found[0m
+[31m   5. intermediate_situations: Template intermediate_situations not found[0m
+[31m   6. basic_phrases: Template basic_phrases not found[0m
+[31m   7. basic_audio: Template basic_audio not found[0m
+[31m   8. basic_visual: Template basic_visual not found[0m
+[31m   9. basic_phrases: Template basic_phrases not found[0m
+[31m   10. basic_audio: Template basic_audio not found[0m
+[0m[0m
+[33m
+💤 Waiting 5 seconds before next batch...
+[0m
+[36m
+======================================================================[0m
+[1m🚀 BATCH 2: Generating 10 resources[0m
+[36m======================================================================
+[0m
+[36m
+[11/50] Generating from template: basic_greetings[0m
+[36m   Resource ID: 17[0m
+[31m   ❌ Failed: Template basic_greetings not found[0m
+[36m
+[12/50] Generating from template: basic_directions[0m
+[36m   Resource ID: 18[0m
+[31m   ❌ Failed: Template basic_directions not found[0m
+[36m
+[13/50] Generating from template: basic_audio_navigation[0m
+[36m   Resource ID: 19[0m
+[31m   ❌ Failed: Template basic_audio_navigation not found[0m
+[36m
+[14/50] Generating from template: basic_greetings[0m
+[36m   Resource ID: 20[0m
+[31m   ❌ Failed: Template basic_greetings not found[0m
+[36m
+[15/50] Generating from template: basic_directions[0m
+[36m   Resource ID: 21[0m
+[31m   ❌ Failed: Template basic_directions not found[0m
+[36m
+[16/50] Generating from template: intermediate_smalltalk[0m
+[36m   Resource ID: 22[0m
+[31m   ❌ Failed: Template intermediate_smalltalk not found[0m
+[36m
+[17/50] Generating from template: basic_greetings[0m
+[36m   Resource ID: 23[0m
+[31m   ❌ Failed: Template basic_greetings not found[0m
+[36m
+[18/50] Generating from template: basic_audio_navigation[0m
+[36m   Resource ID: 24[0m
+[31m   ❌ Failed: Template basic_audio_navigation not found[0m
+[36m
+[19/50] Generating from template: basic_directions[0m
+[36m   Resource ID: 25[0m
+[31m   ❌ Failed: Template basic_directions not found[0m
+[36m
+[20/50] Generating from template: basic_greetings[0m
+[36m   Resource ID: 26[0m
+[31m   ❌ Failed: Template basic_greetings not found[0m
+[36m
+======================================================================[0m
+[1m📊 BATCH 2 SUMMARY[0m
+[36m======================================================================
+[0m
+[32m✅ Successful: 0/10[0m
+[31m❌ Failed: 10/10[0m
+[31m
+❌ Failed Resources:[0m
+[31m   11. basic_greetings: Template basic_greetings not found[0m
+[31m   12. basic_directions: Template basic_directions not found[0m
+[31m   13. basic_audio_navigation: Template basic_audio_navigation not found[0m
+[31m   14. basic_greetings: Template basic_greetings not found[0m
+[31m   15. basic_directions: Template basic_directions not found[0m
+[31m   16. intermediate_smalltalk: Template intermediate_smalltalk not found[0m
+[31m   17. basic_greetings: Template basic_greetings not found[0m
+[31m   18. basic_audio_navigation: Template basic_audio_navigation not found[0m
+[31m   19. basic_directions: Template basic_directions not found[0m
+[31m   20. basic_greetings: Template basic_greetings not found[0m
+[0m[0m
+[33m
+💤 Waiting 5 seconds before next batch...
+[0m
+[36m
+======================================================================[0m
+[1m🚀 BATCH 3: Generating 10 resources[0m
+[36m======================================================================
+[0m
+[36m
+[21/50] Generating from template: basic_greetings_all[0m
+[36m   Resource ID: 27[0m
+[31m   ❌ Failed: Template basic_greetings_all not found[0m
+[36m
+[22/50] Generating from template: basic_numbers[0m
+[36m   Resource ID: 28[0m
+[31m   ❌ Failed: Template basic_numbers not found[0m
+[36m
+[23/50] Generating from template: basic_time[0m
+[36m   Resource ID: 29[0m
+[31m   ❌ Failed: Template basic_time not found[0m
+[36m
+[24/50] Generating from template: basic_app_vocabulary[0m
+[36m   Resource ID: 30[0m
+[31m   ❌ Failed: Template basic_app_vocabulary not found[0m
+[36m
+[25/50] Generating from template: intermediate_customer_service[0m
+[36m   Resource ID: 31[0m
+[31m   ❌ Failed: Template intermediate_customer_service not found[0m
+[36m
+[26/50] Generating from template: intermediate_complaints[0m
+[36m   Resource ID: 32[0m
+[31m   ❌ Failed: Template intermediate_complaints not found[0m
+[36m
+[27/50] Generating from template: emergency_phrases[0m
+[36m   Resource ID: 33[0m
+[31m   ❌ Failed: Template emergency_phrases not found[0m
+[36m
+[28/50] Generating from template: basic_greetings_all[0m
+[36m   Resource ID: 34[0m
+[31m   ❌ Failed: Template basic_greetings_all not found[0m
+[36m
+[29/50] Generating from template: basic_numbers[0m
+[36m   Resource ID: 35[0m
+[31m   ❌ Failed: Template basic_numbers not found[0m
+[36m
+[30/50] Generating from template: basic_app_vocabulary[0m
+[36m   Resource ID: 36[0m
+[31m   ❌ Failed: Template basic_app_vocabulary not found[0m
+[36m
+======================================================================[0m
+[1m📊 BATCH 3 SUMMARY[0m
+[36m======================================================================
+[0m
+[32m✅ Successful: 0/10[0m
+[31m❌ Failed: 10/10[0m
+[31m
+❌ Failed Resources:[0m
+[31m   21. basic_greetings_all: Template basic_greetings_all not found[0m
+[31m   22. basic_numbers: Template basic_numbers not found[0m
+[31m   23. basic_time: Template basic_time not found[0m
+[31m   24. basic_app_vocabulary: Template basic_app_vocabulary not found[0m
+[31m   25. intermediate_customer_service: Template intermediate_customer_service not found[0m
+[31m   26. intermediate_complaints: Template intermediate_complaints not found[0m
+[31m   27. emergency_phrases: Template emergency_phrases not found[0m
+[31m   28. basic_greetings_all: Template basic_greetings_all not found[0m
+[31m   29. basic_numbers: Template basic_numbers not found[0m
+[31m   30. basic_app_vocabulary: Template basic_app_vocabulary not found[0m
+[0m[0m
+[33m
+💤 Waiting 5 seconds before next batch...
+[0m
+[36m
+======================================================================[0m
+[1m🚀 BATCH 4: Generating 10 resources[0m
+[36m======================================================================
+[0m
+[36m
+[31/50] Generating from template: intermediate_situations[0m
+[36m   Resource ID: 37[0m
+[31m   ❌ Failed: Template intermediate_situations not found[0m
+[36m
+[32/50] Generating from template: intermediate_conversations[0m
+[36m   Resource ID: 38[0m
+[31m   ❌ Failed: Template intermediate_conversations not found[0m
+[36m
+[33/50] Generating from template: intermediate_smalltalk[0m
+[36m   Resource ID: 39[0m
+[31m   ❌ Failed: Template intermediate_smalltalk not found[0m
+[36m
+[34/50] Generating from template: intermediate_audio_conversations[0m
+[36m   Resource ID: 40[0m
+[31m   ❌ Failed: Template intermediate_audio_conversations not found[0m
+[36m
+[35/50] Generating from template: intermediate_problems[0m
+[36m   Resource ID: 41[0m
+[31m   ❌ Failed: Template intermediate_problems not found[0m
+[36m
+[36/50] Generating from template: intermediate_customer_service[0m
+[36m   Resource ID: 42[0m
+[31m   ❌ Failed: Template intermediate_customer_service not found[0m
+[36m
+[37/50] Generating from template: intermediate_complaints[0m
+[36m   Resource ID: 43[0m
+[31m   ❌ Failed: Template intermediate_complaints not found[0m
+[36m
+[38/50] Generating from template: intermediate_audio_scenarios[0m
+[36m   Resource ID: 44[0m
+[31m   ❌ Failed: Template intermediate_audio_scenarios not found[0m
+[36m
+[39/50] Generating from template: intermediate_weather_traffic[0m
+[36m   Resource ID: 45[0m
+[31m   ❌ Failed: Template intermediate_weather_traffic not found[0m
+[36m
+[40/50] Generating from template: intermediate_situations[0m
+[36m   Resource ID: 46[0m
+[31m   ❌ Failed: Template intermediate_situations not found[0m
+[36m
+======================================================================[0m
+[1m📊 BATCH 4 SUMMARY[0m
+[36m======================================================================
+[0m
+[32m✅ Successful: 0/10[0m
+[31m❌ Failed: 10/10[0m
+[31m
+❌ Failed Resources:[0m
+[31m   31. intermediate_situations: Template intermediate_situations not found[0m
+[31m   32. intermediate_conversations: Template intermediate_conversations not found[0m
+[31m   33. intermediate_smalltalk: Template intermediate_smalltalk not found[0m
+[31m   34. intermediate_audio_conversations: Template intermediate_audio_conversations not found[0m
+[31m   35. intermediate_problems: Template intermediate_problems not found[0m
+[31m   36. intermediate_customer_service: Template intermediate_customer_service not found[0m
+[31m   37. intermediate_complaints: Template intermediate_complaints not found[0m
+[31m   38. intermediate_audio_scenarios: Template intermediate_audio_scenarios not found[0m
+[31m   39. intermediate_weather_traffic: Template intermediate_weather_traffic not found[0m
+[31m   40. intermediate_situations: Template intermediate_situations not found[0m
+[0m[0m
+[33m
+💤 Waiting 5 seconds before next batch...
+[0m
+[36m
+======================================================================[0m
+[1m🚀 BATCH 5: Generating 10 resources[0m
+[36m======================================================================
+[0m
+[36m
+[41/50] Generating from template: advanced_professional[0m
+[36m   Resource ID: 47[0m
+[31m   ❌ Failed: Template advanced_professional not found[0m
+[36m
+[42/50] Generating from template: advanced_video[0m
+[36m   Resource ID: 48[0m
+[31m   ❌ Failed: Template advanced_video not found[0m
+[36m
+[43/50] Generating from template: advanced_professional_service[0m
+[36m   Resource ID: 49[0m
+[31m   ❌ Failed: Template advanced_professional_service not found[0m
+[36m
+[44/50] Generating from template: advanced_cultural[0m
+[36m   Resource ID: 50[0m
+[31m   ❌ Failed: Template advanced_cultural not found[0m
+[36m
+[45/50] Generating from template: advanced_video_training[0m
+[36m   Resource ID: 51[0m
+[31m   ❌ Failed: Template advanced_video_training not found[0m
+[36m
+[46/50] Generating from template: advanced_business_english[0m
+[36m   Resource ID: 52[0m
+[31m   ❌ Failed: Template advanced_business_english not found[0m
+[36m
+[47/50] Generating from template: advanced_idioms_slang[0m
+[36m   Resource ID: 53[0m
+[31m   ❌ Failed: Template advanced_idioms_slang not found[0m
+[36m
+[48/50] Generating from template: advanced_accent_reduction[0m
+[36m   Resource ID: 54[0m
+[31m   ❌ Failed: Template advanced_accent_reduction not found[0m
+[36m
+[49/50] Generating from template: advanced_video_comprehensive[0m
+[36m   Resource ID: 55[0m
+[31m   ❌ Failed: Template advanced_video_comprehensive not found[0m
+[36m
+[50/50] Generating from template: advanced_professional[0m
+[36m   Resource ID: 56[0m
+[31m   ❌ Failed: Template advanced_professional not found[0m
+[36m
+======================================================================[0m
+[1m📊 BATCH 5 SUMMARY[0m
+[36m======================================================================
+[0m
+[32m✅ Successful: 0/10[0m
+[31m❌ Failed: 10/10[0m
+[31m
+❌ Failed Resources:[0m
+[31m   41. advanced_professional: Template advanced_professional not found[0m
+[31m   42. advanced_video: Template advanced_video not found[0m
+[31m   43. advanced_professional_service: Template advanced_professional_service not found[0m
+[31m   44. advanced_cultural: Template advanced_cultural not found[0m
+[31m   45. advanced_video_training: Template advanced_video_training not found[0m
+[31m   46. advanced_business_english: Template advanced_business_english not found[0m
+[31m   47. advanced_idioms_slang: Template advanced_idioms_slang not found[0m
+[31m   48. advanced_accent_reduction: Template advanced_accent_reduction not found[0m
+[31m   49. advanced_video_comprehensive: Template advanced_video_comprehensive not found[0m
+[31m   50. advanced_professional: Template advanced_professional not found[0m
+[0m[0m
+[35m
+======================================================================[0m
+[1m🎉 FINAL SUMMARY - 50 RESOURCES GENERATED[0m
+[35m======================================================================
+[0m
+[32m✅ Total Successful: 0/50[0m
+[31m❌ Total Failed: 50/50[0m
+[36m
+📊 Overall Metrics:[0m
+[36m   Average Quality: NaN/100[0m
+[36m   Total Tokens: 0[0m
+[36m   Total Cost: $0.00[0m
+[36m   Total Time: 0.0 minutes[0m
+[36m
+⭐ Quality Distribution:[0m
+[32m   Excellent (85-100): 0[0m
+[32m   Good (70-84): 0[0m
+[33m   Acceptable (60-69): 0[0m
+[31m   Needs Improvement (<60): 0[0m
+[36m
+📄 Detailed report saved: C:\Users\brand\Development\Project_Workspace\active-development\hablas\generated-resources\generation-report.json[0m
+[1m
+🎊 Generation complete!
+[0m

@@ -1,0 +1,380 @@
+# AUDIO SCRIPT: Direcciones en Inglés - Var 1
+
+**Total Duration**: 7:15 minutes
+**Target**: Conductores principiantes
+**Focus**: Navegación y direcciones básicas
+
+---
+
+## COMPLETE AUDIO SCRIPT
+
+```
+[00:00] - INTRODUCTION
+[Tone: Warm, encouraging, conversational]
+[Speaker: Spanish narrator - friendly voice]
+
+"¡Hola! Bienvenido a Hablas. Soy tu instructor de inglés para conductores.
+
+Hoy vamos a aprender las frases más importantes sobre direcciones en inglés. 
+Estas son las palabras que escucharás todos los días en tu app de navegación 
+y que necesitas entender perfectamente para llegar a tiempo.
+
+Este audio dura solo 7 minutos. Puedes escucharlo mientras esperas pasajeros 
+o antes de comenzar tu turno.
+
+Vamos a practicar cada frase DOS veces - primero despacio, luego la repites tú.
+No tengas pena. Aquí nadie te escucha. Es tu momento de practicar.
+
+¿Listo? ¡Empecemos!"
+
+[PAUSE: 2 seconds]
+
+---
+
+[00:45] - MAIN CONTENT BEGINS
+[Tone: Clear, instructional]
+[Speaker: Spanish narrator]
+
+"Primero, las direcciones básicas que escucharás en tu GPS."
+
+---
+
+[00:55] PHRASE 1: TURN LEFT
+[Tone: Clear, neutral]
+
+[Spanish]
+"Frase 1: La dirección más común. Girar a la izquierda."
+
+[English - Native speaker, 80% speed, clear enunciation]
+"Turn left"
+[Phonetic: tern left]
+
+[PAUSE: 3 seconds]
+
+[English - Repeat]
+"Turn left"
+
+[Spanish]
+"Gira a la izquierda. O también: Voltea a la izquierda."
+
+[PAUSE: 2 seconds]
+
+---
+
+[01:25] PHRASE 2: TURN RIGHT
+[Tone: Clear, neutral]
+
+[Spanish]
+"Frase 2: Girar a la derecha."
+
+[English - 80% speed]
+"Turn right"
+[Phonetic: tern rait]
+
+[PAUSE: 3 seconds]
+
+[English - Repeat]
+"Turn right"
+
+[Spanish]
+"Gira a la derecha. O: Voltea a la derecha."
+
+[PAUSE: 2 seconds]
+
+---
+
+[01:55] PHRASE 3: GO STRAIGHT
+[Tone: Clear, encouraging]
+
+[Spanish]
+"Frase 3: Seguir derecho. Muy fácil esta."
+
+[English - 80% speed]
+"Go straight"
+[Phonetic: gou streit]
+
+[PAUSE: 3 seconds]
+
+[English - Repeat]
+"Go straight"
+
+[Spanish]
+"Sigue derecho. O: Continúa recto."
+
+[PAUSE: 2 seconds]
+
+[Spanish - Tip]
+"Consejo: 'Straight' se pronuncia 'STREIT', no 'estraight'. 
+Practica: streit, streit, streit."
+
+[PAUSE: 1 second]
+
+---
+
+[02:35] PHRASE 4: MAKE A U-TURN
+[Tone: Instructional]
+
+[Spanish]
+"Frase 4: Cuando necesitas dar la vuelta en U."
+
+[English - 80% speed]
+"Make a U-turn"
+[Phonetic: meik a yu-tern]
+
+[PAUSE: 3 seconds]
+
+[English - Repeat]
+"Make a U-turn"
+
+[Spanish]
+"Haz un retorno. O: Da vuelta en U."
+
+[PAUSE: 2 seconds]
+
+---
+
+[03:10] PHRASE 5: IN 500 FEET
+[Tone: Clear, precise]
+
+[Spanish]
+"Frase 5: La distancia en pies. Tu GPS dirá esto constantemente."
+
+[English - 80% speed]
+"In 500 feet"
+[Phonetic: in faiv jándred fiit]
+
+[PAUSE: 3 seconds]
+
+[English - Repeat]
+"In 500 feet"
+
+[Spanish]
+"En 500 pies. Eso es aproximadamente 150 metros."
+
+[PAUSE: 2 seconds]
+
+[Spanish - Tip]
+"Recuerda: 500 feet son como una cuadra y media. 
+Cuando escuches esto, prepárate para voltear pronto."
+
+[PAUSE: 1 second]
+
+---
+
+[03:55] PHRASE 6: AT THE NEXT LIGHT
+[Tone: Instructional]
+
+[Spanish]
+"Frase 6: En el próximo semáforo."
+
+[English - 80% speed]
+"At the next light"
+[Phonetic: at de nekst lait]
+
+[PAUSE: 3 seconds]
+
+[English - Repeat]
+"At the next light"
+
+[Spanish]
+"En el siguiente semáforo. O: En la próxima luz."
+
+[PAUSE: 2 seconds]
+
+---
+
+[04:30] PHRASE 7: AT THE STOP SIGN
+[Tone: Clear]
+
+[Spanish]
+"Frase 7: En la señal de alto."
+
+[English - 80% speed]
+"At the stop sign"
+[Phonetic: at de stop sain]
+
+[PAUSE: 3 seconds]
+
+[English - Repeat]
+"At the stop sign"
+
+[Spanish]
+"En la señal de STOP. En el alto."
+
+[PAUSE: 2 seconds]
+
+---
+
+[05:05] PHRASE 8: YOUR DESTINATION IS ON THE LEFT
+[Tone: Informative]
+
+[Spanish]
+"Frase 8: Cuando llegas al destino. Esta es muy importante."
+
+[English - 80% speed]
+"Your destination is on the left"
+[Phonetic: yur des-ti-néi-shon is on de left]
+
+[PAUSE: 3 seconds]
+
+[English - Repeat]
+"Your destination is on the left"
+
+[Spanish]
+"Tu destino está a la izquierda."
+
+[PAUSE: 2 seconds]
+
+---
+
+[05:45] PHRASE 9: YOUR DESTINATION IS ON THE RIGHT
+[Tone: Informative]
+
+[Spanish]
+"Frase 9: Lo mismo, pero del otro lado."
+
+[English - 80% speed]
+"Your destination is on the right"
+[Phonetic: yur des-ti-néi-shon is on de rait]
+
+[PAUSE: 3 seconds]
+
+[English - Repeat]
+"Your destination is on the right"
+
+[Spanish]
+"Tu destino está a la derecha."
+
+[PAUSE: 2 seconds]
+
+---
+
+[06:20] PHRASE 10: YOU HAVE ARRIVED
+[Tone: Celebratory]
+
+[Spanish]
+"Frase 10: ¡Llegaste! La frase favorita de todos."
+
+[English - 80% speed]
+"You have arrived"
+[Phonetic: yu jav a-ráivd]
+
+[PAUSE: 3 seconds]
+
+[English - Repeat]
+"You have arrived"
+
+[Spanish]
+"Has llegado. Ya llegaste."
+
+[PAUSE: 2 seconds]
+
+---
+
+[06:55] - PRACTICE DRILL
+[Tone: Energetic, encouraging]
+[Speaker: Spanish narrator]
+
+"¡Excelente trabajo! Ahora vamos a practicar todas juntas, 
+a velocidad normal. Escucha y repite en voz alta."
+
+[PAUSE: 1 second]
+
+[English - Normal speed, clear]
+"Turn left"
+[PAUSE: 1 second]
+
+"Turn right"
+[PAUSE: 1 second]
+
+"Go straight"
+[PAUSE: 1 second]
+
+"Make a U-turn"
+[PAUSE: 1 second]
+
+"In 500 feet"
+[PAUSE: 1 second]
+
+"At the next light"
+[PAUSE: 1 second]
+
+"At the stop sign"
+[PAUSE: 1 second]
+
+"Your destination is on the left"
+[PAUSE: 1 second]
+
+"Your destination is on the right"
+[PAUSE: 1 second]
+
+"You have arrived"
+[PAUSE: 2 seconds]
+
+---
+
+[08:00] - CONCLUSION
+[Tone: Warm, motivational]
+[Speaker: Spanish narrator]
+
+"¡Felicidades! Ya conoces las 10 frases de direcciones más importantes 
+en inglés.
+
+Ahora cada vez que tu GPS hable, vas a entender perfectamente qué hacer.
+
+Mi consejo: Escucha este audio una vez al día por una semana. 
+Mientras manejas, repite las frases en voz alta. 
+En dos semanas, estas palabras van a ser automáticas para ti.
+
+También puedes descargar el PDF con todas estas frases y la pronunciación 
+escrita. Está en tu app de Hablas.
+
+Recuerda: cada palabra que aprendes es más dinero en tu bolsillo. 
+Menos tiempo perdido, más viajes completados, mejores propinas.
+
+¡Sigue practicando! Nos vemos en la próxima lección.
+
+¡Mucho éxito en la calle!"
+
+[END: 08:45]
+```
+
+---
+
+## PRODUCTION NOTES
+
+### VOICE TALENT REQUIREMENTS:
+- **Spanish Narrator**: Neutral Latin American accent, warm and encouraging tone
+- **English Narrator**: Clear North American accent (General American), professional GPS-like clarity
+- **Age Range**: 30-45 years old (relatable to target audience)
+
+### AUDIO QUALITY:
+- Studio quality recording
+- No background music during instruction (can add subtle music during intro/outro)
+- Clear separation between Spanish and English sections
+- Consistent volume levels
+
+### TIMING FLEXIBILITY:
+- Total duration may vary ±30 seconds based on natural speech patterns
+- Pauses are minimum durations - can extend if feels rushed
+- English repetitions should be identical in pronunciation
+
+### MOBILE OPTIMIZATION:
+- Export at 128kbps MP3 for smaller file size
+- Mono audio acceptable (reduces file size by 50%)
+- Include chapter markers at each phrase for easy navigation
+
+---
+
+## COMPANION PDF CONTENT SUGGESTIONS
+
+**Include in downloadable PDF:**
+1. All 10 phrases with phonetic spelling
+2. Visual icons for each direction (arrows)
+3. Distance conversion chart (feet to meters)
+4. Practice checklist
+5. QR code to next lesson
+
+---
+
+**Content complete and ready for production! 🎙️**
