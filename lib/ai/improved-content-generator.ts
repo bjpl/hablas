@@ -708,7 +708,7 @@ function assessContentQuality(content: string, resource: Partial<Resource>): num
   if (!/\[.*\]/.test(content)) score -= 10
 
   // Check for structure (headings)
-  if (!(content.match(/^#{1,3}\s/gm)?.length || 0) >= 3) score -= 10
+  if ((content.match(/^#{1,3}\s/gm)?.length || 0) < 3) score -= 10
 
   // Check for examples
   if (!content.includes('ejemplo') && !content.includes('Example')) score -= 10

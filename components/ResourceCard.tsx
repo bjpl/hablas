@@ -1,17 +1,6 @@
 'use client'
 
-interface Resource {
-  id: number
-  title: string
-  description: string
-  type: 'pdf' | 'audio' | 'image' | 'video'
-  category: string
-  level: string
-  size: string
-  downloadUrl: string
-  tags: string[]
-  offline: boolean
-}
+import type { Resource } from '../data/resources'
 
 interface ResourceCardProps {
   resource: Resource

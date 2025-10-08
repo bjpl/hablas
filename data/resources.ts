@@ -25,7 +25,7 @@ export interface Resource {
   /** URL path to download the resource */
   downloadUrl: string
   /** Array of tags for categorization and filtering */
-  tags: string[]
+  tags: readonly string[] | string[]
   /** Whether the resource can be used offline */
   offline: boolean
 }
