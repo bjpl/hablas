@@ -26,6 +26,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
 
 # vercel
@@ -40,3 +41,6 @@ public/sw.js.map
 public/workbox-*.js
 public/workbox-*.js.map
 .vercel
+
+# Swarm coordination (local only)
+.swarm/
