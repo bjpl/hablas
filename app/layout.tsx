@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import { Providers } from './providers'
 
 export const metadata: Metadata = {
   title: 'Hablas - Aprende Inglés para Trabajo',
@@ -49,10 +50,12 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body className="min-h-screen bg-gray-50">
-        <a href="#main-content" className="skip-to-content">
-          Saltar al contenido principal
-        </a>
-        {children}
+        <Providers>
+          <a href="#main-content" className="skip-to-content">
+            Saltar al contenido principal
+          </a>
+          {children}
+        </Providers>
       </body>
     </html>
   )
