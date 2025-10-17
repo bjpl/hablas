@@ -54,22 +54,22 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
   }
 
   return (
-    <div className="card-resource flex flex-col">
+    <article className="card-resource flex flex-col">
       <div className="flex items-start justify-between mb-3">
-        <span className="text-2xl">{getTypeIcon(resource.type)}</span>
+        <span className="text-2xl" aria-hidden="true">{getTypeIcon(resource.type)}</span>
         {resource.offline && (
           <span className="text-sm tag-offline">
-            📱 Offline
+            <span aria-hidden="true">📱</span> Offline
           </span>
         )}
       </div>
 
-      <Link href={`/recursos/${resource.id}`}>
+      <Link href={`/recursos/${resource.id}`} aria-label={`Ver detalles de ${resource.title}`}>
         <h3 className="font-bold text-lg mb-2 hover:text-accent-blue transition-colors cursor-pointer">
           {resource.title}
         </h3>
       </Link>
-      <p className="text-sm text-gray-600 mb-3 flex-grow">{resource.description}</p>
+      <p className="text-sm text-gray-700 mb-3 flex-grow">{resource.description}</p>
 
       <div className="flex flex-wrap gap-1 mb-3">
         {resource.tags.map((tag, index) => (
@@ -79,7 +79,7 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
         ))}
       </div>
 
-      <div className="text-xs text-gray-500 mb-3">
+      <div className="text-xs text-gray-600 mb-3" aria-label={`Tamaño del archivo: ${resource.size}`}>
         Tamaño: {resource.size}
       </div>
 
@@ -87,32 +87,34 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
         <Link href={`/recursos/${resource.id}`} className="flex-1">
           <button
             className="w-full py-2 px-3 rounded-lg font-medium bg-accent-blue text-white hover:bg-opacity-90 transition-colors"
+            aria-label={`Ver detalles del recurso ${resource.title}`}
           >
             Ver recurso
           </button>
         </Link>
         <button
           onClick={handleDownloadClick}
-          className={`p-2 rounded-lg font-medium transition-colors ${
+          className={`p-2 rounded-lg font-medium transition-colors min-w-touch min-h-touch ${
             isDownloaded
               ? 'bg-accent-green bg-opacity-20 text-accent-green'
               : 'bg-gray-100 hover:bg-gray-200'
           }`}
-          aria-label="Descargar"
-          title="Descargar"
+          aria-label={isDownloaded ? `${resource.title} ya descargado` : `Descargar ${resource.title}`}
+          title={isDownloaded ? 'Ya descargado' : 'Descargar'}
         >
-          {isDownloaded ? '✓' : '📥'}
+          <span aria-hidden="true">{isDownloaded ? '✓' : '📥'}</span>
         </button>
         <button
           onClick={handleShare}
-          className="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
-          aria-label="Compartir"
+          className="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors min-w-touch min-h-touch"
+          aria-label={`Compartir ${resource.title}`}
         >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" role="img">
+            <title>Compartir</title>
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m9.032 4.026a3 3 0 10-4.732 2.684m4.732-2.684a3 3 0 00-4.732-2.684M6.316 10.658a3 3 0 10-4.732-2.684"/>
           </svg>
         </button>
       </div>
-    </div>
+    </article>
   )
 }

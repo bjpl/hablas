@@ -42,15 +42,22 @@ export default function ResourceLibrary({ category, level, searchQuery = '' }: R
   }
 
   return (
-    <section className="mb-8">
-      <h2 className="text-2xl font-bold mb-6">Recursos de Aprendizaje</h2>
-      
+    <section className="mb-8" aria-labelledby="resources-heading">
+      <h2 id="resources-heading" className="text-2xl font-bold mb-6">Recursos de Aprendizaje</h2>
+
+      {/* Screen reader announcement for filtered results */}
+      <div role="status" aria-live="polite" aria-atomic="true" className="sr-only">
+        {filteredResources.length === 0
+          ? 'No hay recursos disponibles con estos filtros'
+          : `${filteredResources.length} ${filteredResources.length === 1 ? 'recurso encontrado' : 'recursos encontrados'}`}
+      </div>
+
       {filteredResources.length === 0 ? (
-        <div className="text-center py-8 text-gray-500">
-          No hay recursos disponibles con estos filtros
+        <div className="text-center py-8 text-gray-600" role="alert">
+          No hay recursos disponibles con estos filtros. Intenta ajustar los filtros o la búsqueda.
         </div>
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" role="list" aria-label="Lista de recursos de aprendizaje">
           {filteredResources.map(resource => (
             <ResourceCard
               key={resource.id}
@@ -62,11 +69,11 @@ export default function ResourceLibrary({ category, level, searchQuery = '' }: R
         </div>
       )}
 
-      <div className="mt-8 p-4 bg-blue-50 rounded-lg">
-        <h3 className="font-bold mb-2">💡 Consejo</h3>
-        <p className="text-sm">
+      <div className="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-200" role="complementary" aria-label="Consejo sobre descarga de recursos">
+        <h3 className="font-bold mb-2 text-gray-900"><span aria-hidden="true">💡</span> Consejo</h3>
+        <p className="text-sm text-gray-800">
           Descarga los recursos cuando tengas WiFi para usarlos sin gastar datos mientras trabajas.
-          Los archivos marcados con 📱 funcionan sin conexión.
+          Los archivos marcados con <span aria-hidden="true">📱</span> <strong>Offline</strong> funcionan sin conexión.
         </p>
       </div>
     </section>

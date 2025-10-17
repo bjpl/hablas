@@ -1,0 +1,258 @@
+{
+  "id": "emerg-004",
+  "title": "Customer Conflicts and Disputes",
+  "description": "De-escalation and resolution strategies for serious customer conflicts",
+  "level": "All Levels",
+  "category": "emergency",
+  "subcategory": "conflict",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US conflict resolution",
+  "criticalVocabulary": [
+    {
+      "english": "Dispute",
+      "spanish": "Disputa / Desacuerdo",
+      "pronunciation": "dees-POO-tah / deh-sah-KWER-doh",
+      "context": "Disagreement or conflict"
+    },
+    {
+      "english": "Refund",
+      "spanish": "Reembolso",
+      "pronunciation": "reh-em-BOL-soh",
+      "context": "Money returned"
+    },
+    {
+      "english": "Escalate",
+      "spanish": "Escalar",
+      "pronunciation": "es-kah-LAR",
+      "context": "Increase to higher authority"
+    },
+    {
+      "english": "Resolution",
+      "spanish": "Resolución",
+      "pronunciation": "reh-soh-loo-see-ON",
+      "context": "Solution to problem"
+    },
+    {
+      "english": "Documentation",
+      "spanish": "Documentación",
+      "pronunciation": "doh-koo-men-tah-see-ON",
+      "context": "Written evidence"
+    },
+    {
+      "english": "Witness",
+      "spanish": "Testigo",
+      "pronunciation": "tes-TEE-goh",
+      "context": "Person who saw what happened"
+    }
+  ],
+  "conflictTypes": {
+    "fareDispute": {
+      "scenario": "Customer claims fare is too high or incorrect",
+      "deEscalation": [
+        "Stay calm and empathetic",
+        "Show them the fare breakdown in app",
+        "Explain factors (surge pricing, route, time)",
+        "Redirect to platform for fare disputes"
+      ],
+      "phrases": {
+        "english": "I understand your concern about the fare. The price is set by the app based on distance, time, and demand. I cannot change it, but you can dispute it through the app support.",
+        "spanish": "Entiendo su preocupación por la tarifa. El precio lo establece la aplicación según distancia, tiempo y demanda. No puedo cambiarlo, pero puede disputarlo a través del soporte de la aplicación.",
+        "pronunciation": "en-tee-EN-doh soo preh-oh-koo-pah-see-ON por lah tah-REE-fah..."
+      },
+      "documentation": "Screenshot fare breakdown, route taken, time stamps. Report through app immediately"
+    },
+    "serviceComplaint": {
+      "scenario": "Customer complains about your service quality",
+      "deEscalation": [
+        "Listen without interrupting",
+        "Acknowledge their feelings",
+        "Ask specific questions about the issue",
+        "Offer immediate solution if possible"
+      ],
+      "phrases": {
+        "english": "I'm sorry you feel that way. Can you tell me specifically what I can do to improve your experience right now?",
+        "spanish": "Lamento que se sienta así. ¿Puede decirme específicamente qué puedo hacer para mejorar su experiencia ahora mismo?",
+        "pronunciation": "lah-MEN-toh keh seh see-EN-tah ah-SEE..."
+      },
+      "recovery": "Service recovery: immediate action (adjust temperature, change route, etc.) can turn complaint into positive rating"
+    },
+    "routeDisagreement": {
+      "scenario": "Customer claims you took wrong or longer route",
+      "deEscalation": [
+        "Show them GPS route in app",
+        "Explain why (traffic, road closures, etc.)",
+        "Offer to change route if trip ongoing",
+        "Reference app navigation as your guide"
+      ],
+      "phrases": {
+        "english": "I followed the app's navigation to avoid traffic. Here's the route we took. If you prefer a different route, I'm happy to use it.",
+        "spanish": "Seguí la navegación de la aplicación para evitar tráfico. Aquí está la ruta que tomamos. Si prefiere una ruta diferente, con gusto la uso.",
+        "pronunciation": "seh-GHEE lah nah-veh-gah-see-ON deh lah ah-plee-kah-see-ON..."
+      },
+      "protection": "GPS records protect you. App shows exact route and time. Platform reviews this in disputes"
+    },
+    "personalConflict": {
+      "scenario": "Customer makes personal attacks or insults",
+      "deEscalation": [
+        "Do NOT respond to personal attacks",
+        "Stay professional no matter what",
+        "Give one warning about respectful communication",
+        "End trip if abuse continues"
+      ],
+      "phrases": {
+        "english": "I need us to communicate respectfully. If you cannot, I will have to end this trip.",
+        "spanish": "Necesito que nos comuniquemos respetuosamente. Si no puede, tendré que terminar este viaje.",
+        "pronunciation": "neh-seh-SEE-toh keh nohs koh-moo-nee-KEH-mohs res-peh-too-oh-sah-MEN-teh..."
+      },
+      "boundariesImportant": "You are never required to tolerate verbal abuse. Platform supports ending trips for this reason"
+    },
+    "intoxicatedConflict": {
+      "scenario": "Intoxicated customer becomes argumentative",
+      "deEscalation": [
+        "Do not argue with intoxicated person",
+        "Keep responses short and simple",
+        "Get to destination safely and quickly",
+        "Pull over if behavior escalates",
+        "Call police if you feel threatened"
+      ],
+      "phrases": {
+        "english": "I'm getting you home safely. Please remain calm and seated.",
+        "spanish": "Lo/La estoy llevando a casa de forma segura. Por favor manténgase calmado/a y sentado/a.",
+        "pronunciation": "loh/lah es-TOY yeh-VAN-doh ah KAH-sah deh FOR-mah seh-GOO-rah..."
+      },
+      "safety": "Your safety first. Intoxicated people are unpredictable. Trust your instincts. Pull over and call police if needed"
+    },
+    "fraudClaim": {
+      "scenario": "Customer threatens false report or bad rating unless you comply with unreasonable demand",
+      "deEscalation": [
+        "Stay calm - this is platform extortion",
+        "Do NOT comply with unreasonable demands",
+        "Document everything",
+        "Report to platform immediately after trip",
+        "Dashcam evidence invaluable here"
+      ],
+      "phrases": {
+        "english": "I understand you're upset. All trip details are recorded by the platform including GPS, time, and communication. I'll submit a report about this conversation.",
+        "spanish": "Entiendo que está molesto/a. Todos los detalles del viaje son registrados por la plataforma incluyendo GPS, tiempo y comunicación. Enviaré un reporte sobre esta conversación.",
+        "pronunciation": "en-tee-EN-doh keh es-TAH moh-LES-toh/tah..."
+      },
+      "platformProtection": "Platforms investigate threats and extortion. Your documentation protects you. These customers often deactivated"
+    }
+  },
+  "deEscalationTechniques": {
+    "activeListening": {
+      "technique": "Let customer fully express concern without interrupting",
+      "phrases": [
+        "Entiendo... (I understand...)",
+        "Escucho lo que dice... (I hear what you're saying...)",
+        "Debe ser frustrante... (That must be frustrating...)"
+      ]
+    },
+    "acknowledgment": {
+      "technique": "Validate feelings without necessarily agreeing with accusations",
+      "phrases": [
+        "Veo por qué eso le molestaría. (I see why that would upset you.)",
+        "Tiene derecho a estar insatisfecho si... (You have a right to be dissatisfied if...)"
+      ]
+    },
+    "proposeSolutions": {
+      "technique": "Move from problem to action",
+      "phrases": [
+        "¿Qué le ayudaría a resolver esto? (What would help resolve this for you?)",
+        "Esto es lo que puedo hacer... (This is what I can do...)",
+        "La plataforma puede ayudar con... (The platform can help with...)"
+      ]
+    },
+    "setCalm Boundaries": {
+      "technique": "Firm but respectful limits",
+      "phrases": [
+        "Quiero ayudar, pero necesito que hablemos con calma. (I want to help, but I need us to speak calmly.)",
+        "Entiendo su frustración, pero no puedo continuar si hay insultos. (I understand your frustration, but I cannot continue if there are insults.)"
+      ]
+    },
+    "knowWhenToEscalate": {
+      "technique": "Some conflicts require platform intervention",
+      "phrases": [
+        "Esto requiere intervención de la plataforma. Voy a reportarlo para que le ayuden. (This requires platform intervention. I'll report it so they can help you.)",
+        "Soporte puede manejar esto mejor que yo. (Support can handle this better than I can.)"
+      ]
+    }
+  },
+  "documentationEssentials": {
+    "whatToDocument": [
+      "Time and date of incident",
+      "Customer name (from app)",
+      "Trip ID / order number",
+      "Exact location of incident",
+      "Sequence of events",
+      "What customer said (quotes if possible)",
+      "Your responses",
+      "Any witnesses",
+      "Photos if relevant and safe",
+      "Screenshots of app interactions"
+    ],
+    "howToDocument": [
+      "Write immediately after incident while memory fresh",
+      "Be factual, not emotional",
+      "Use app reporting tools",
+      "Email yourself backup documentation",
+      "Save all app communications",
+      "Dashcam footage if you have one"
+    ],
+    "whyDocumentation": [
+      "Protects you in disputes",
+      "Platform bases decisions on evidence",
+      "Memory fades quickly",
+      "Ratings disputes require details",
+      "Legal protection if needed"
+    ]
+  },
+  "platformReporting": {
+    "immediateReport": [
+      "Use in-app reporting for all significant conflicts",
+      "Report before customer does - proactive better than reactive",
+      "Be honest and factual",
+      "Include all relevant details",
+      "Request platform review of trip",
+      "Ask for protection from retaliatory rating"
+    ],
+    "followUp": [
+      "Check email for platform response",
+      "Provide additional information if requested",
+      "Keep all correspondence",
+      "Don't contact customer directly",
+      "Let platform mediate"
+    ]
+  },
+  "culturalNotes": [
+    {
+      "topic": "Professional Dispute Resolution",
+      "note": "US system relies on documentation and platform mediation, not personal resolution",
+      "colombianComparison": "Less personal relationship-based than Colombian conflict resolution"
+    },
+    {
+      "topic": "Worker Rights",
+      "note": "You have right to refuse abusive customers and end trips for safety",
+      "colombianComparison": "More formal worker protections than Colombian informal economy"
+    },
+    {
+      "topic": "Evidence-Based System",
+      "note": "GPS, time stamps, and app communications are evidence. Document everything",
+      "colombianComparison": "More systematic than verbal Colombian agreements"
+    }
+  ],
+  "whenToInvolveLaw": {
+    "callPolice": [
+      "Physical threats or violence",
+      "Weapon present",
+      "Customer won't exit vehicle",
+      "You feel in danger",
+      "Property damage occurring",
+      "Customer attempting to drive away with you"
+    ],
+    "policeReport": {
+      "importance": "Police report strengthens your case with platform and provides legal protection",
+      "howTo": "Call 911 for immediate threats, or non-emergency line (311) for post-incident reports"
+    }
+  }
+}

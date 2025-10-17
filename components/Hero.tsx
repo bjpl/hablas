@@ -13,20 +13,20 @@ export default function Hero() {
         
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8" role="list" aria-label="Estadísticas de la plataforma">
           <div className="bg-white rounded-lg p-4 shadow-sm" role="listitem">
-            <div className="text-2xl font-bold text-rappi" aria-label="Más de 500">500+</div>
-            <div className="text-sm text-gray-600">Frases útiles</div>
+            <div className="text-2xl font-bold text-rappi" aria-label="Más de 500 frases útiles">500+</div>
+            <div className="text-sm text-gray-700">Frases útiles</div>
           </div>
           <div className="bg-white rounded-lg p-4 shadow-sm" role="listitem">
-            <div className="text-2xl font-bold text-green-500">24/7</div>
-            <div className="text-sm text-gray-600">Grupos WhatsApp</div>
+            <div className="text-2xl font-bold text-green-600" aria-label="Grupos de WhatsApp disponibles 24 horas, 7 días a la semana">24/7</div>
+            <div className="text-sm text-gray-700">Grupos WhatsApp</div>
           </div>
           <div className="bg-white rounded-lg p-4 shadow-sm" role="listitem">
-            <div className="text-2xl font-bold text-blue-500">100%</div>
-            <div className="text-sm text-gray-600">Gratis</div>
+            <div className="text-2xl font-bold text-blue-600" aria-label="100 por ciento gratis">100%</div>
+            <div className="text-sm text-gray-700">Gratis</div>
           </div>
           <div className="bg-white rounded-lg p-4 shadow-sm" role="listitem">
-            <div className="text-2xl font-bold text-purple-500">Offline</div>
-            <div className="text-sm text-gray-600">Sin datos</div>
+            <div className="text-2xl font-bold text-purple-600" aria-label="Funciona sin conexión">Offline</div>
+            <div className="text-sm text-gray-700">Sin datos</div>
           </div>
         </div>
 

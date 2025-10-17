@@ -1,0 +1,231 @@
+{
+  "id": "emerg-002",
+  "title": "Personal Safety - Threat and Danger Response",
+  "description": "Critical communication and actions when facing safety threats during gig work",
+  "level": "All Levels",
+  "category": "emergency",
+  "subcategory": "safety",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US personal safety",
+  "criticalVocabulary": [
+    {
+      "english": "Threat",
+      "spanish": "Amenaza",
+      "pronunciation": "ah-meh-NAH-sah",
+      "context": "Danger or intimidation"
+    },
+    {
+      "english": "Weapon",
+      "spanish": "Arma",
+      "pronunciation": "AR-mah",
+      "context": "Gun, knife, or dangerous object"
+    },
+    {
+      "english": "Police",
+      "spanish": "Policía",
+      "pronunciation": "poh-lee-SEE-ah",
+      "context": "Law enforcement"
+    },
+    {
+      "english": "Help",
+      "spanish": "Ayuda",
+      "pronunciation": "ah-YOO-dah",
+      "context": "Assistance needed"
+    },
+    {
+      "english": "Danger",
+      "spanish": "Peligro",
+      "pronunciation": "peh-LEE-groh",
+      "context": "Unsafe situation"
+    },
+    {
+      "english": "Safe",
+      "spanish": "Seguro / A salvo",
+      "pronunciation": "seh-GOO-roh / ah SAL-voh",
+      "context": "Out of danger"
+    }
+  ],
+  "emergencyPhrases": [
+    {
+      "english": "I'm calling the police",
+      "spanish": "Voy a llamar a la policía",
+      "pronunciation": "voy ah yah-MAR ah lah poh-lee-SEE-ah",
+      "context": "Deterrent statement",
+      "priority": "CRITICAL"
+    },
+    {
+      "english": "Get out of the car now",
+      "spanish": "Salga del carro ahora",
+      "pronunciation": "SAL-gah del KA-rroh ah-OH-rah",
+      "context": "Ending dangerous ride",
+      "priority": "CRITICAL"
+    },
+    {
+      "english": "I need help, I'm in danger",
+      "spanish": "Necesito ayuda, estoy en peligro",
+      "pronunciation": "neh-seh-SEE-toh ah-YOO-dah, es-TOY en peh-LEE-groh",
+      "context": "Emergency call",
+      "priority": "CRITICAL"
+    },
+    {
+      "english": "Stay back / Don't come closer",
+      "spanish": "Manténgase atrás / No se acerque",
+      "pronunciation": "man-TEN-gah-seh ah-TRAS / noh seh ah-SER-keh",
+      "context": "Creating distance",
+      "priority": "HIGH"
+    },
+    {
+      "english": "Leave me alone",
+      "spanish": "Déjeme en paz",
+      "pronunciation": "DEH-heh-meh en pas",
+      "context": "Clear rejection",
+      "priority": "HIGH"
+    }
+  ],
+  "threatScenarios": {
+    "intoxicatedAggressive": {
+      "scenario": "Intoxicated passenger becomes aggressive or threatening",
+      "immediateAction": [
+        "Pull over in well-lit public area",
+        "Turn on interior lights",
+        "Tell passenger to exit: 'Salga del carro ahora'",
+        "If they refuse, exit vehicle yourself and call 911",
+        "Use app emergency button",
+        "Do not engage in argument"
+      ],
+      "spanishPhrases": [
+        "El viaje ha terminado. Necesita salir ahora. (The trip is over. You need to exit now.)",
+        "Voy a llamar a la policía si no sale. (I will call police if you don't exit.)"
+      ]
+    },
+    "weaponThreat": {
+      "scenario": "Passenger displays or threatens with weapon",
+      "immediateAction": [
+        "Stay calm. Your life is more valuable than money or car",
+        "Comply with immediate demands",
+        "Look for opportunity to safely exit or escape",
+        "Remember: people before things, life before money",
+        "After safe, call 911 immediately",
+        "Note: description, direction traveled, any details"
+      ],
+      "spanishPhrases": [
+        "Está bien, está bien, tome lo que quiera. (Okay, okay, take whatever you want.)",
+        "No voy a resistir. (I won't resist.)"
+      ],
+      "afterSafety": "Call 911, then platform. Do not pursue. You are witness, not enforcer"
+    },
+    "suspiciousRequest": {
+      "scenario": "Passenger asks you to go to isolated area or makes uncomfortable request",
+      "immediateAction": [
+        "Trust your instincts",
+        "Refuse politely but firmly",
+        "Stay in public, well-lit areas",
+        "If they insist, end ride",
+        "Use app to document"
+      ],
+      "spanishPhrases": [
+        "No me siento cómodo con esa ubicación. (I'm not comfortable with that location.)",
+        "Solo puedo ir a direcciones que estén en la aplicación. (I can only go to addresses that are in the app.)"
+      ]
+    },
+    "followingOrStalking": {
+      "scenario": "You suspect you're being followed",
+      "immediateAction": [
+        "Do not go home",
+        "Drive to police station or fire station",
+        "Well-lit public area with witnesses",
+        "Call 911 while driving if possible",
+        "Make multiple right turns to confirm following",
+        "Use app emergency button"
+      ],
+      "spanishPhrases": [
+        "Estoy siendo seguido, necesito ayuda policial. (I'm being followed, I need police help.)"
+      ]
+    }
+  },
+  "safetyProtocol": [
+    {
+      "phase": "Prevention",
+      "actions": [
+        "Trust your gut - cancel ride if you feel unsafe before pickup",
+        "Check passenger rating before accepting",
+        "Verify passenger identity matches app",
+        "Keep doors locked until identity confirmed",
+        "Share trip details with friend/family",
+        "Work during daylight in unfamiliar areas when possible"
+      ]
+    },
+    {
+      "phase": "During Incident",
+      "actions": [
+        "Priority 1: Your safety",
+        "Priority 2: Escape if possible",
+        "Priority 3: Call for help when safe",
+        "Comply with immediate demands if weapon involved",
+        "Look for witnesses, cameras, public areas",
+        "Mental note of details for police report"
+      ]
+    },
+    {
+      "phase": "After Incident",
+      "actions": [
+        "Call 911 from safe location",
+        "Contact platform immediately",
+        "Get medical attention if needed",
+        "File police report - get case number",
+        "Document everything while memory fresh",
+        "Contact family/support system",
+        "Consider counseling - trauma is real"
+      ]
+    }
+  ],
+  "platformSafetyFeatures": {
+    "uber": {
+      "emergencyButton": "In-app 911 button shares location with dispatcher",
+      "shareTrip": "Share ETA and route with trusted contacts",
+      "rideCheck": "App detects unusual stops and checks on you",
+      "anonymizedPhone": "App masks your real phone number"
+    },
+    "lyft": {
+      "emergencyButton": "Smart 911 integration",
+      "shareETA": "Share trip details with friends",
+      "safetyCenter": "In-app safety tools",
+      "continuousBackground": "App monitors entire trip"
+    },
+    "doordash": {
+      "supportLine": "24/7 emergency support",
+      "safetyTips": "In-app safety guidance",
+      "incidentReport": "Fast reporting system"
+    }
+  },
+  "culturalNotes": [
+    {
+      "topic": "It's Okay to Refuse Service",
+      "note": "Your safety is more important than ratings. Cancel or end ride if you feel unsafe",
+      "colombianComparison": "You have more authority to refuse than traditional Colombian service roles"
+    },
+    {
+      "topic": "Police Response",
+      "note": "Police take threats against workers seriously. Always report incidents",
+      "colombianComparison": "More reliable emergency response than in many Colombian areas"
+    },
+    {
+      "topic": "No Hero Actions",
+      "note": "US culture does not expect you to fight or chase. Escape and report is correct response",
+      "colombianComparison": "Different from Colombian machismo culture - safety over pride"
+    },
+    {
+      "topic": "Worker Protection Laws",
+      "note": "You have legal protection as worker. Platforms must support your safety decisions",
+      "colombianComparison": "Stronger legal framework than Colombian informal economy"
+    }
+  ],
+  "importantNumbers": {
+    "emergency": "911 (Police, Fire, Medical)",
+    "nonEmergency": "311 (in most cities)",
+    "nationalDomesticViolence": "1-800-799-7233",
+    "uber": "1-800-593-7069",
+    "lyft": "1-855-865-9553",
+    "doordash": "855-973-1040"
+  }
+}

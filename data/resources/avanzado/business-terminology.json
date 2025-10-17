@@ -1,0 +1,128 @@
+{
+  "id": "adv-003",
+  "title": "Gig Economy Business Terminology",
+  "description": "Essential business vocabulary for navigating the US gig economy platforms and contracts",
+  "level": "Avanzado",
+  "category": "business-terminology",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US platform economy",
+  "vocabulary": [
+    {
+      "english": "Independent contractor",
+      "spanish": "Contratista independiente",
+      "pronunciation": "kon-trah-TEES-tah een-deh-pen-dee-EN-teh",
+      "context": "Your legal employment status (not employee)"
+    },
+    {
+      "english": "Commission",
+      "spanish": "Comisión",
+      "pronunciation": "koh-mee-see-ON",
+      "context": "Percentage platforms take from earnings"
+    },
+    {
+      "english": "Surge pricing / Peak hours",
+      "spanish": "Tarifa de demanda alta / Horas pico",
+      "pronunciation": "tah-REE-fah deh deh-MAN-dah AL-tah / OH-rahs PEE-koh",
+      "context": "Higher rates during busy periods"
+    },
+    {
+      "english": "Base rate",
+      "spanish": "Tarifa base",
+      "pronunciation": "tah-REE-fah BAH-seh",
+      "context": "Standard payment before bonuses"
+    },
+    {
+      "english": "Acceptance rate",
+      "spanish": "Tasa de aceptación",
+      "pronunciation": "TAH-sah deh ah-sep-tah-see-ON",
+      "context": "Percentage of requests you accept"
+    },
+    {
+      "english": "Completion rate",
+      "spanish": "Tasa de finalización",
+      "pronunciation": "TAH-sah deh fee-nah-lee-sah-see-ON",
+      "context": "Percentage of accepted jobs you complete"
+    },
+    {
+      "english": "Cancellation fee",
+      "spanish": "Tarifa de cancelación",
+      "pronunciation": "tah-REE-fah deh kan-seh-lah-see-ON",
+      "context": "Charge when customer cancels late"
+    },
+    {
+      "english": "Tax deduction",
+      "spanish": "Deducción de impuestos",
+      "pronunciation": "deh-dook-see-ON deh eem-PWES-tohs",
+      "context": "Business expenses that reduce taxes"
+    },
+    {
+      "english": "Mileage",
+      "spanish": "Kilometraje / Millaje",
+      "pronunciation": "kee-loh-meh-TRAH-heh / mee-YAH-heh",
+      "context": "Distance traveled; tax deductible"
+    },
+    {
+      "english": "Background check",
+      "spanish": "Verificación de antecedentes",
+      "pronunciation": "veh-ree-fee-kah-see-ON deh an-teh-seh-DEN-tehs",
+      "context": "Required screening for gig platforms"
+    }
+  ],
+  "phrases": [
+    {
+      "english": "I'm an independent contractor, not an employee",
+      "spanish": "Soy contratista independiente, no empleado",
+      "pronunciation": "soy kon-trah-TEES-tah een-deh-pen-dee-EN-teh, noh em-pleh-AH-doh",
+      "context": "Understanding your legal status"
+    },
+    {
+      "english": "I need to track my business expenses for taxes",
+      "spanish": "Necesito registrar mis gastos de negocio para impuestos",
+      "pronunciation": "neh-seh-SEE-toh reh-hees-TRAR mees GAS-tohs deh neh-GOH-see-oh PAH-rah eem-PWES-tohs",
+      "context": "Tax management responsibility"
+    },
+    {
+      "english": "The platform takes a 25% commission",
+      "spanish": "La plataforma cobra una comisión del 25%",
+      "pronunciation": "lah plah-tah-FOR-mah KOH-brah OO-nah koh-mee-see-ON del vayn-tee-SEEN-koh por-see-EN-toh",
+      "context": "Understanding platform fees"
+    },
+    {
+      "english": "I can deduct my vehicle expenses",
+      "spanish": "Puedo deducir los gastos de mi vehículo",
+      "pronunciation": "PWEH-doh deh-doo-SEER lohs GAS-tohs deh mee veh-EE-koo-loh",
+      "context": "Tax benefits of gig work"
+    }
+  ],
+  "culturalNotes": [
+    {
+      "topic": "Independent Contractor Status",
+      "note": "You are self-employed in US system - responsible for your own taxes, insurance, and expenses",
+      "colombianComparison": "Very different from Colombian employee protections; no benefits from platforms"
+    },
+    {
+      "topic": "Tax Obligations",
+      "note": "Must file quarterly estimated taxes; keep detailed records of income and expenses",
+      "colombianComparison": "More individual responsibility than Colombian employment tax withholding"
+    },
+    {
+      "topic": "Platform Algorithms",
+      "note": "Ratings, acceptance rates, and completion rates affect how many jobs you receive",
+      "colombianComparison": "Performance metrics directly impact earning opportunity"
+    }
+  ],
+  "practicalScenarios": [
+    {
+      "situation": "Explaining your work to others",
+      "spanishResponse": "Trabajo como contratista independiente para plataformas de economía colaborativa.",
+      "englishTranslation": "I work as an independent contractor for gig economy platforms.",
+      "tips": "Professional way to describe gig work"
+    },
+    {
+      "situation": "Discussing earnings with other drivers",
+      "spanishResponse": "Después de la comisión de la plataforma y los gastos, mi ganancia neta es...",
+      "englishTranslation": "After platform commission and expenses, my net earnings are...",
+      "tips": "Understanding the difference between gross and net income"
+    }
+  ]
+}

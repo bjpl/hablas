@@ -1,0 +1,110 @@
+{
+  "id": "adv-007",
+  "title": "Professional Complaint Handling",
+  "description": "Turn customer complaints into opportunities for excellent service recovery",
+  "level": "Avanzado",
+  "category": "complaint-handling",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US service recovery",
+  "vocabulary": [
+    {
+      "english": "Concern",
+      "spanish": "Preocupación / Inquietud",
+      "pronunciation": "preh-oh-koo-pah-see-ON / een-kee-eh-TOOD",
+      "context": "Softer word for complaint"
+    },
+    {
+      "english": "Issue",
+      "spanish": "Problema / Asunto",
+      "pronunciation": "proh-BLEH-mah / ah-SOON-toh",
+      "context": "Problem requiring attention"
+    },
+    {
+      "english": "Service recovery",
+      "spanish": "Recuperación del servicio",
+      "pronunciation": "reh-koo-peh-rah-see-ON del ser-VEE-see-oh",
+      "context": "Making up for service failure"
+    },
+    {
+      "english": "Valid concern",
+      "spanish": "Preocupación válida",
+      "pronunciation": "preh-oh-koo-pah-see-ON VAH-lee-dah",
+      "context": "Acknowledging legitimate complaint"
+    },
+    {
+      "english": "Compensate",
+      "spanish": "Compensar",
+      "pronunciation": "kom-pen-SAR",
+      "context": "Make amends for problem"
+    }
+  ],
+  "phrases": [
+    {
+      "english": "Thank you for bringing this to my attention",
+      "spanish": "Gracias por hacerme saber esto",
+      "pronunciation": "GRAH-see-ahs por ah-SER-meh sah-BER ES-toh",
+      "context": "Positive response to complaint"
+    },
+    {
+      "english": "You're absolutely right to be concerned about this",
+      "spanish": "Tiene toda la razón en preocuparse por esto",
+      "pronunciation": "tee-EH-neh TOH-dah lah rah-SON en preh-oh-koo-PAR-seh por ES-toh",
+      "context": "Validating customer feelings"
+    },
+    {
+      "english": "What can I do to make this right?",
+      "spanish": "¿Qué puedo hacer para corregir esto?",
+      "pronunciation": "keh PWEH-doh ah-SER PAH-rah koh-reh-HEER ES-toh",
+      "context": "Empowering customer in solution"
+    },
+    {
+      "english": "I will personally ensure this doesn't happen again",
+      "spanish": "Personalmente me aseguraré de que esto no vuelva a ocurrir",
+      "pronunciation": "per-soh-nal-MEN-teh meh ah-seh-goo-rah-REH deh keh ES-toh noh VWEL-vah ah oh-koo-REER",
+      "context": "Taking personal responsibility"
+    },
+    {
+      "english": "I've noted this in my records and reported it to support",
+      "spanish": "He registrado esto y lo he reportado a soporte",
+      "pronunciation": "eh reh-hees-TRAH-doh ES-toh ee loh eh reh-por-TAH-doh ah soh-POR-teh",
+      "context": "Documentation and escalation"
+    }
+  ],
+  "culturalNotes": [
+    {
+      "topic": "Service Recovery Paradox",
+      "note": "Excellent complaint handling can result in better ratings than if nothing went wrong",
+      "colombianComparison": "US customers appreciate proactive problem-solving and accountability"
+    },
+    {
+      "topic": "Don't Take It Personally",
+      "note": "Customer complaints are about the service, not about you - stay professional",
+      "colombianComparison": "Less personal than Colombian culture; focus on solution not relationship"
+    },
+    {
+      "topic": "Document Everything",
+      "note": "Use app features to document issues and your resolution attempts",
+      "colombianComparison": "More formal documentation than verbal Colombian dispute resolution"
+    }
+  ],
+  "practicalScenarios": [
+    {
+      "situation": "Customer complains about vehicle cleanliness",
+      "spanishResponse": "Tiene razón y me disculpo. Esto no cumple con mis estándares. Permítame limpiar esto inmediatamente, o si prefiere, puedo cancelar sin cargo para usted.",
+      "englishTranslation": "You're right and I apologize. This doesn't meet my standards. Let me clean this immediately, or if you prefer, I can cancel with no charge to you.",
+      "tips": "Acknowledge, apologize, offer immediate solution plus alternative"
+    },
+    {
+      "situation": "Customer says you were rude",
+      "spanishResponse": "Lamento mucho si mis palabras sonaron groseras - no fue mi intención en absoluto. Su comodidad es importante para mí. ¿Cómo puedo mejorar el resto de su experiencia?",
+      "englishTranslation": "I'm very sorry if my words sounded rude - that wasn't my intention at all. Your comfort is important to me. How can I improve the rest of your experience?",
+      "tips": "Don't argue about intent - apologize for impact and refocus on service"
+    },
+    {
+      "situation": "Delivery order is incorrect (not your fault)",
+      "spanishResponse": "Tiene toda la razón en estar molesto. Aunque no empaqué el pedido, lo reportaré inmediatamente y haré todo lo posible para ayudar a resolver esto con el restaurante y soporte.",
+      "englishTranslation": "You're absolutely right to be upset. Although I didn't pack the order, I'll report this immediately and do everything I can to help resolve this with the restaurant and support.",
+      "tips": "Validate feelings, clarify role, commit to advocacy"
+    }
+  ]
+}

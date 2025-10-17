@@ -1,0 +1,133 @@
+{
+  "id": "adv-009",
+  "title": "Professional Boundaries and Self-Protection",
+  "description": "Maintain professional boundaries and protect yourself from inappropriate requests or behavior",
+  "level": "Avanzado",
+  "category": "professional-boundaries",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US workplace boundaries",
+  "vocabulary": [
+    {
+      "english": "Boundary",
+      "spanish": "Límite / Frontera",
+      "pronunciation": "LEE-mee-teh / fron-TEH-rah",
+      "context": "Professional limit"
+    },
+    {
+      "english": "Inappropriate",
+      "spanish": "Inapropiado",
+      "pronunciation": "een-ah-proh-pee-AH-doh",
+      "context": "Unacceptable behavior"
+    },
+    {
+      "english": "Harassment",
+      "spanish": "Acoso",
+      "pronunciation": "ah-KOH-soh",
+      "context": "Unwelcome behavior"
+    },
+    {
+      "english": "Uncomfortable",
+      "spanish": "Incómodo",
+      "pronunciation": "een-KOH-moh-doh",
+      "context": "Feeling uneasy"
+    },
+    {
+      "english": "Report",
+      "spanish": "Reportar / Denunciar",
+      "pronunciation": "reh-por-TAR / deh-noon-see-AR",
+      "context": "Inform platform of issue"
+    },
+    {
+      "english": "Safety",
+      "spanish": "Seguridad",
+      "pronunciation": "seh-goo-ree-DAD",
+      "context": "Personal protection"
+    }
+  ],
+  "phrases": [
+    {
+      "english": "I'm not comfortable with that",
+      "spanish": "No me siento cómodo/a con eso",
+      "pronunciation": "noh meh see-EN-toh KOH-moh-doh kon EH-soh",
+      "context": "Declining inappropriate request"
+    },
+    {
+      "english": "That's outside the scope of my service",
+      "spanish": "Eso está fuera del alcance de mi servicio",
+      "pronunciation": "EH-soh es-TAH FWEH-rah del al-KAN-seh deh mee ser-VEE-see-oh",
+      "context": "Professional boundary setting"
+    },
+    {
+      "english": "I need to end this trip for safety reasons",
+      "spanish": "Necesito terminar este viaje por razones de seguridad",
+      "pronunciation": "neh-seh-SEE-toh ter-mee-NAR ES-teh vee-AH-heh por rah-SOH-nes deh seh-goo-ree-DAD",
+      "context": "Terminating unsafe situation"
+    },
+    {
+      "english": "I will report this to the platform",
+      "spanish": "Voy a reportar esto a la plataforma",
+      "pronunciation": "voy ah reh-por-TAR ES-toh ah lah plah-tah-FOR-mah",
+      "context": "Warning of consequence"
+    },
+    {
+      "english": "Please respect my professional boundaries",
+      "spanish": "Por favor respete mis límites profesionales",
+      "pronunciation": "por fah-VOR res-PEH-teh mees LEE-mee-tes proh-feh-see-oh-NAH-les",
+      "context": "Direct boundary assertion"
+    }
+  ],
+  "culturalNotes": [
+    {
+      "topic": "Zero Tolerance for Harassment",
+      "note": "Platforms take harassment seriously. You have the right to refuse service and report immediately",
+      "colombianComparison": "More formal worker protection systems than in Colombian informal economy"
+    },
+    {
+      "topic": "Personal Information",
+      "note": "Never share personal phone number, address, or social media. Keep all contact through app",
+      "colombianComparison": "Stricter privacy boundaries than Colombian relationship-building culture"
+    },
+    {
+      "topic": "Romantic/Sexual Advances",
+      "note": "Any romantic or sexual advance from customer is inappropriate and reportable",
+      "colombianComparison": "US workplace has stricter boundaries than Colombian flirtation culture"
+    },
+    {
+      "topic": "Your Safety First",
+      "note": "Trust your instincts. You can end service if you feel unsafe - platform will support you",
+      "colombianComparison": "You have more authority to refuse service than traditional Colombian service roles"
+    }
+  ],
+  "practicalScenarios": [
+    {
+      "situation": "Customer asks for your personal phone number",
+      "spanishResponse": "Por política de la plataforma, toda comunicación debe ser a través de la aplicación para protección de ambos.",
+      "englishTranslation": "Per platform policy, all communication must be through the app for both our protection.",
+      "tips": "Reference platform policy, not personal preference"
+    },
+    {
+      "situation": "Customer makes romantic advance",
+      "spanishResponse": "Agradezco el comentario, pero mantengo relaciones estrictamente profesionales con los clientes.",
+      "englishTranslation": "I appreciate the comment, but I maintain strictly professional relationships with customers.",
+      "tips": "Polite but firm. Document and report after trip"
+    },
+    {
+      "situation": "Intoxicated customer behavior becomes concerning",
+      "spanishResponse": "Por su seguridad y la mía, necesito que permanezca sentado/a y tranquilo/a. Si no puede, tendré que terminar el viaje.",
+      "englishTranslation": "For your safety and mine, I need you to remain seated and calm. If you cannot, I'll have to end the trip.",
+      "tips": "Safety first. Pull over if necessary. Call platform support or 911 if threatened"
+    },
+    {
+      "situation": "Customer asks you to break law (speed, run red light, etc.)",
+      "spanishResponse": "No puedo hacer eso ya que viola la ley y las políticas de la plataforma. Podría perder mi capacidad de trabajar.",
+      "englishTranslation": "I cannot do that as it violates the law and platform policies. I could lose my ability to work.",
+      "tips": "Reference both law and economic consequence"
+    },
+    {
+      "situation": "Customer asks you to wait without pay or off-app",
+      "spanishResponse": "Con gusto puedo esperar, pero necesito que esto se registre en la aplicación para que ambos estemos protegidos y se calcule correctamente.",
+      "englishTranslation": "I'm happy to wait, but I need this recorded in the app so we're both protected and it's calculated correctly.",
+      "tips": "Always keep transactions on platform for your protection"
+    }
+  ]
+}

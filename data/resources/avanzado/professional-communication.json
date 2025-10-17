@@ -1,0 +1,104 @@
+{
+  "id": "adv-001",
+  "title": "Professional Communication Essentials",
+  "description": "Master formal business communication for professional gig work interactions",
+  "level": "Avanzado",
+  "category": "professional-communication",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US-Colombia business interactions",
+  "vocabulary": [
+    {
+      "english": "Professional",
+      "spanish": "Profesional",
+      "pronunciation": "pro-feh-see-oh-NAL",
+      "context": "Used to describe conduct and appearance"
+    },
+    {
+      "english": "Respectful",
+      "spanish": "Respetuoso/a",
+      "pronunciation": "reh-speh-too-OH-so",
+      "context": "Essential quality in all customer interactions"
+    },
+    {
+      "english": "Courteous",
+      "spanish": "Cortés",
+      "pronunciation": "kor-TES",
+      "context": "Shows good manners and politeness"
+    },
+    {
+      "english": "Prompt",
+      "spanish": "Puntual",
+      "pronunciation": "poon-too-AL",
+      "context": "Critical for time-sensitive gig work"
+    },
+    {
+      "english": "Reliable",
+      "spanish": "Confiable",
+      "pronunciation": "kon-fee-AH-bleh",
+      "context": "Builds customer trust and repeat business"
+    }
+  ],
+  "phrases": [
+    {
+      "english": "Thank you for choosing my service",
+      "spanish": "Gracias por elegir mi servicio",
+      "pronunciation": "GRAH-see-ahs por eh-leh-HEER mee ser-VEE-see-oh",
+      "context": "Professional greeting for customers"
+    },
+    {
+      "english": "I'm here to help you",
+      "spanish": "Estoy aquí para ayudarle",
+      "pronunciation": "es-TOY ah-KEE PAH-rah ah-yoo-DAR-leh",
+      "context": "Shows willingness to assist"
+    },
+    {
+      "english": "Please let me know if you need anything",
+      "spanish": "Por favor, avíseme si necesita algo",
+      "pronunciation": "por fah-VOR, ah-VEE-seh-meh see neh-seh-SEE-tah AL-go",
+      "context": "Proactive customer service"
+    },
+    {
+      "english": "I apologize for the inconvenience",
+      "spanish": "Disculpe las molestias",
+      "pronunciation": "dees-KOOL-peh lahs moh-LES-tee-ahs",
+      "context": "Professional apology for delays or issues"
+    },
+    {
+      "english": "I will resolve this immediately",
+      "spanish": "Lo resolveré de inmediato",
+      "pronunciation": "loh reh-sol-veh-REH deh een-meh-dee-AH-toh",
+      "context": "Takes ownership of problems"
+    }
+  ],
+  "culturalNotes": [
+    {
+      "topic": "Formality in US Business",
+      "note": "American customers appreciate friendly professionalism - not too formal, but always respectful",
+      "colombianComparison": "More relaxed than traditional Colombian formal business speech"
+    },
+    {
+      "topic": "Direct Communication",
+      "note": "US culture values direct, clear communication. It's okay to ask clarifying questions",
+      "colombianComparison": "Less indirect than typical Colombian communication style"
+    },
+    {
+      "topic": "Time Sensitivity",
+      "note": "Americans place high value on punctuality and respecting others' time",
+      "colombianComparison": "Stricter time expectations than Colombian 'hora colombiana'"
+    }
+  ],
+  "practicalScenarios": [
+    {
+      "situation": "Meeting a new customer for the first time",
+      "spanishResponse": "Buenas tardes, soy [nombre]. Gracias por elegir mi servicio hoy.",
+      "englishTranslation": "Good afternoon, I'm [name]. Thank you for choosing my service today.",
+      "tips": "Make eye contact, smile, and speak clearly"
+    },
+    {
+      "situation": "Customer asks for a special accommodation",
+      "spanishResponse": "Con mucho gusto. Permítame ver qué puedo hacer por usted.",
+      "englishTranslation": "With pleasure. Let me see what I can do for you.",
+      "tips": "Show willingness even if you're unsure you can accommodate"
+    }
+  ]
+}

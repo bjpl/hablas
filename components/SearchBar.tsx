@@ -34,8 +34,9 @@ export default function SearchBar({ onSearch, placeholder = "Buscar recursos..."
         />
 
         {/* Search icon */}
-        <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" aria-hidden="true">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img">
+            <title>Buscar</title>
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
         </div>
@@ -44,10 +45,12 @@ export default function SearchBar({ onSearch, placeholder = "Buscar recursos..."
         {query && (
           <button
             onClick={handleClear}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors min-w-touch min-h-touch"
             aria-label="Limpiar búsqueda"
+            type="button"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" role="img">
+              <title>Cerrar</title>
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
@@ -56,8 +59,8 @@ export default function SearchBar({ onSearch, placeholder = "Buscar recursos..."
 
       {/* Search hints */}
       {query && (
-        <div className="mt-2 text-sm text-gray-600">
-          <span className="font-medium">💡 Consejo:</span> Prueba buscar "saludos", "números", "emergencia", "uber", etc.
+        <div className="mt-2 text-sm text-gray-700" role="status" aria-live="polite">
+          <span className="font-medium"><span aria-hidden="true">💡</span> Consejo:</span> Prueba buscar <span lang="en">"saludos"</span>, <span lang="en">"números"</span>, <span lang="en">"emergencia"</span>, <span lang="en">"uber"</span>, etc.
         </div>
       )}
     </div>

@@ -1,0 +1,343 @@
+{
+  "id": "app-003",
+  "title": "DoorDash Delivery - Essential Vocabulary and Scenarios",
+  "description": "Platform-specific communication for DoorDash delivery drivers (Dashers)",
+  "level": "Intermediate-Avanzado",
+  "category": "app-specific",
+  "subcategory": "food-delivery-doordash",
+  "targetAudience": "doordash-drivers",
+  "culturalContext": "US DoorDash platform",
+  "platformVocabulary": [
+    {
+      "english": "Dasher",
+      "spanish": "Dasher / Repartidor",
+      "pronunciation": "dasher / reh-par-tee-DOR",
+      "context": "DoorDash delivery driver"
+    },
+    {
+      "english": "Dash / Dashing",
+      "spanish": "Dash / Repartiendo",
+      "pronunciation": "dash / reh-par-tee-EN-doh",
+      "context": "Actively working on DoorDash"
+    },
+    {
+      "english": "Peak Pay",
+      "spanish": "Pago pico / Bonificación de hora pico",
+      "pronunciation": "PAH-goh PEE-koh / boh-nee-fee-kah-see-ON",
+      "context": "Extra money per delivery during busy times"
+    },
+    {
+      "english": "Base pay",
+      "spanish": "Pago base",
+      "pronunciation": "PAH-goh BAH-seh",
+      "context": "Minimum guaranteed payment per delivery"
+    },
+    {
+      "english": "Completion rate",
+      "spanish": "Tasa de finalización",
+      "pronunciation": "TAH-sah deh fee-nah-lee-sah-see-ON",
+      "context": "Percentage of accepted orders you complete"
+    },
+    {
+      "english": "Acceptance rate",
+      "spanish": "Tasa de aceptación",
+      "pronunciation": "TAH-sah deh ah-sep-tah-see-ON",
+      "context": "Percentage of offers you accept"
+    },
+    {
+      "english": "Hot Bag / Red Card",
+      "spanish": "Bolsa térmica / Tarjeta Roja",
+      "pronunciation": "BOL-sah TER-mee-kah / tar-HEH-tah ROH-hah",
+      "context": "Required insulated bag and payment card"
+    },
+    {
+      "english": "Stacked order",
+      "spanish": "Pedido apilado",
+      "pronunciation": "peh-DEE-doh ah-pee-LAH-doh",
+      "context": "Multiple deliveries at once"
+    }
+  ],
+  "commonScenarios": {
+    "restaurantPickup": {
+      "arrival": {
+        "phrases": [
+          {
+            "english": "Hi, I'm here to pick up a DoorDash order for [customer name]",
+            "spanish": "Hola, estoy aquí para recoger un pedido de DoorDash para [nombre del cliente]",
+            "pronunciation": "OH-lah, es-TOY ah-KEE PAH-rah reh-koh-HER oon peh-DEE-doh deh DoorDash",
+            "context": "First thing to say when entering restaurant"
+          },
+          {
+            "english": "I have order number [####]",
+            "spanish": "Tengo el pedido número [####]",
+            "pronunciation": "TEN-go el peh-DEE-doh NOO-meh-roh",
+            "context": "Providing order identifier"
+          }
+        ],
+        "tip": "Always confirm customer name matches app. Don't take wrong order"
+      },
+      "delayedOrder": {
+        "phrases": [
+          {
+            "english": "How much longer for the order?",
+            "spanish": "¿Cuánto tiempo más para el pedido?",
+            "pronunciation": "KWAN-toh tee-EM-poh mahs PAH-rah el peh-DEE-doh",
+            "context": "When order not ready at promised time"
+          },
+          {
+            "english": "I'll need to notify the customer about the delay",
+            "spanish": "Necesitaré notificar al cliente sobre la demora",
+            "pronunciation": "neh-seh-see-tah-REH noh-tee-fee-KAR al klee-EN-teh",
+            "context": "Explaining why delay matters"
+          }
+        ],
+        "protocol": [
+          "Wait 10 minutes past pickup time",
+          "Contact customer through app about delay",
+          "Can unassign after 10+ minutes without penalty (affects completion rate slightly)",
+          "Use 'Order not ready' option in app to document"
+        ]
+      },
+      "orderIssues": {
+        "phrases": [
+          {
+            "english": "The restaurant is closed",
+            "spanish": "El restaurante está cerrado",
+            "pronunciation": "el res-tow-RAN-teh es-TAH seh-RAH-doh",
+            "context": "Must report through app for half-pay"
+          },
+          {
+            "english": "They're out of [item]",
+            "spanish": "No tienen [artículo] / Se les acabó [artículo]",
+            "pronunciation": "noh tee-EH-nen / seh les ah-kah-BOH",
+            "context": "Item unavailable - must contact customer"
+          },
+          {
+            "english": "The order looks incorrect or incomplete",
+            "spanish": "El pedido parece incorrecto o incompleto",
+            "pronunciation": "el peh-DEE-doh pah-REH-seh een-koh-REK-toh",
+            "context": "Verifying order contents"
+          }
+        ],
+        "never": "NEVER open sealed food bags. Take restaurant's word that order is complete"
+      }
+    },
+    "customerDelivery": {
+      "contactlessDelivery": {
+        "note": "Most DoorDash orders are contactless - leave at door",
+        "phrases": [
+          {
+            "english": "[Text through app] Your order has been delivered to [location]. Enjoy!",
+            "spanish": "Su pedido ha sido entregado en [ubicación]. ¡Buen provecho!",
+            "pronunciation": "soo peh-DEE-doh ah SEE-doh en-treh-GAH-doh",
+            "context": "Standard delivery message"
+          }
+        ],
+        "procedure": [
+          "Take photo of food at door (required by app)",
+          "Include house number or door in photo",
+          "Send delivery message",
+          "Complete delivery in app"
+        ]
+      },
+      "handItToMe": {
+        "phrases": [
+          {
+            "english": "Hi! DoorDash delivery for [name]",
+            "spanish": "¡Hola! Entrega de DoorDash para [nombre]",
+            "pronunciation": "OH-lah! en-TREH-gah deh DoorDash PAH-rah",
+            "context": "When customer answers door"
+          },
+          {
+            "english": "Have a great day! Enjoy your meal!",
+            "spanish": "¡Que tenga un excelente día! ¡Buen provecho!",
+            "pronunciation": "keh TEN-gah oon ek-seh-LEN-teh DEE-ah",
+            "context": "Professional farewell"
+          }
+        ],
+        "note": "Keep interaction brief and professional - food delivery is less social than rideshare"
+      },
+      "unableToDeliver": {
+        "phrases": [
+          {
+            "english": "[Text] I'm at your delivery address but unable to locate you. Please provide additional instructions.",
+            "spanish": "Estoy en su dirección de entrega pero no puedo ubicarlo/a. Por favor provea instrucciones adicionales.",
+            "pronunciation": "es-TOY en soo dee-rek-see-ON deh en-TREH-gah",
+            "context": "Can't find customer"
+          }
+        ],
+        "protocol": [
+          "Call customer through app",
+          "Text if no answer",
+          "Wait 5 minutes at location",
+          "Start timer in app",
+          "When timer expires, can leave food in safe spot and complete delivery",
+          "Take photo documentation"
+        ]
+      },
+      "apartments": {
+        "challenges": "Often hardest deliveries - vague instructions, locked gates, confusing layouts",
+        "phrases": [
+          {
+            "english": "[Text] I'm at the gate/lobby. What's the access code? / Which building?",
+            "spanish": "Estoy en el portón/lobby. ¿Cuál es el código de acceso? / ¿Cuál edificio?",
+            "pronunciation": "es-TOY en el por-TONE/lobby",
+            "context": "Common apartment questions"
+          }
+        ],
+        "tips": [
+          "Take photo of customer's delivery instructions before leaving",
+          "Use flashlight at night for building/door numbers",
+          "Don't feel bad about calling - better than wrong delivery"
+        ]
+      }
+    }
+  },
+  "doordashSpecifics": {
+    "acceptanceRate": {
+      "importance": "Does NOT affect account standing (unlike completion rate)",
+      "freedom": "Can decline low-pay or far-distance orders without penalty",
+      "strategy": "Only accept orders that make financial sense ($1.50-2 per mile minimum)",
+      "topDasher": "Need 70% acceptance rate for Top Dasher status - not always worth it"
+    },
+    "completionRate": {
+      "importance": "CRITICAL - must maintain 80% or higher",
+      "deactivation": "Below 80% = deactivation risk",
+      "affects": "Unassigning orders after accepting",
+      "strategy": "Only accept orders you're confident you can complete"
+    },
+    "peakPay": {
+      "how ItWorks": "Extra $1-5 per delivery during busy times in specific zones",
+      "display": "Shown on map with + amount",
+      "catch": "Can oversaturate zone with drivers - sometimes worse than no peak pay"
+    },
+    "redCardOrders": {
+      "explanation": "Some orders require you to pay with Red Card at restaurant",
+      "process": [
+        "Order and pay at counter using Red Card",
+        "Keep receipt",
+        "DoorDash reimburses immediately"
+      ],
+      "phrases": {
+        "english": "I'm ordering for DoorDash and paying with this card",
+        "spanish": "Estoy ordenando para DoorDash y pagando con esta tarjeta",
+        "pronunciation": "es-TOY or-deh-NAN-doh PAH-rah DoorDash"
+      },
+      "issues": "If Red Card declines, contact support immediately - don't use personal money"
+    },
+    "stackedOrders": {
+      "pros": "More money, less driving between orders",
+      "cons": "One customer gets food later/colder",
+      "strategy": "Check that both deliveries are close together",
+      "canDecline": "Can unassign one order from stack if it's not worth it"
+    }
+  },
+  "earningsOptimization": {
+    "orderSelection": {
+      "minimumPay": "$1.50-2 per mile is standard minimum",
+      "hiddenTips": "DoorDash hides tips above $4 - order might pay more than shown",
+      "redFlags": [
+        "$2-3 orders going 5+ miles",
+        "Apartment deliveries late at night",
+        "Restaurants consistently slow",
+        "Orders to businesses during closed hours"
+      ]
+    },
+    "hotspots": {
+      "feature": "App shows busy restaurant areas",
+      "reality": "Sometimes inaccurate - trust your local knowledge",
+      "strategy": "Position between multiple popular restaurants, not in hotspot center"
+    },
+    "timeManagement": {
+      "peakHours": "Lunch (11am-1:30pm), Dinner (5:30pm-9pm), Late night Fri-Sat (10pm-1am)",
+      "slowTimes": "2pm-5pm typically dead - not worth working",
+      "scheduling": "Don't need to schedule - can Dash Now during busy times"
+    },
+    "multiApping": {
+      "concept": "Run DoorDash, Uber Eats, Grubhub simultaneously",
+      "strategy": "Accept best-paying order from any app, pause others",
+      "warning": "Can hurt completion rate if you're not careful - don't double-book"
+    }
+  },
+  "foodSafety": {
+    "hotBag": {
+      "required": "Must use insulated hot bag - customer can see if you don't in app",
+      "benefit": "Food stays hot = better tips and ratings",
+      "multiple": "Consider buying extra bags for large or multiple orders"
+    },
+    "drinks": {
+      "challenge": "Spills hurt ratings significantly",
+      "solutions": [
+        "Use cup holders",
+        "Place in floor behind front seat (most stable)",
+        "Ask restaurant to seal lids with tape",
+        "Drive extra carefully with drinks"
+      ]
+    },
+    "tampering": {
+      "rule": "NEVER open sealed food bags or eat customer's food",
+      "photos": "Customer can see photo evidence",
+      "consequence": "Instant deactivation for tampering"
+    }
+  },
+  "challengingSituations": {
+    "noTipOrders": {
+      "identification": "$2-3 pay for any distance = no tip",
+      "decision": "Most experienced Dashers decline these",
+      "phrase": "No tip, no trip" (common Dasher saying)",
+      "exception": "If very short distance (under 1 mile) and on your route"
+    },
+    "customerRequestsChange": {
+      "scenario": "Customer texts asking for different item or extra item",
+      "response": {
+        "english": "I've already picked up your order. Please contact DoorDash support for order changes.",
+        "spanish": "Ya recogí su pedido. Por favor contacte al soporte de DoorDash para cambios de pedido.",
+        "pronunciation": "yah reh-koh-HEE soo peh-DEE-doh"
+      },
+      "rule": "Don't go back to restaurant or buy extra items with your money"
+    },
+    "unsafeNeighborhoods": {
+      "right": "You can decline deliveries to areas where you don't feel safe",
+      "timing": "Night deliveries to unfamiliar areas - trust your instincts",
+      "protection": "Don't risk your safety for any amount of money"
+    }
+  },
+  "culturalNotes": [
+    {
+      "topic": "Minimal Interaction",
+      "note": "Food delivery has less customer interaction than rideshare - most are contactless",
+      "colombianComparison": "Much less social than Colombian delivery culture"
+    },
+    {
+      "topic": "Time Sensitivity",
+      "note": "Hot food going cold creates urgency - customers are watching ETA in app",
+      "colombianComparison": "Similar urgency to Colombian food delivery"
+    },
+    {
+      "topic": "Tip Culture",
+      "note": "Customers pre-tip when ordering. No tip = they don't value service. Decline appropriately",
+      "colombianComparison": "More formalized than Colombian propina system"
+    },
+    {
+      "topic": "Restaurant Relationships",
+      "note": "Being polite and patient with restaurant staff leads to faster service",
+      "colombianComparison": "Similar to Colombian respect for food service workers"
+    }
+  ],
+  "topDasherProgram": {
+    "requirements": [
+      "200 lifetime deliveries",
+      "100 deliveries in last month",
+      "4.7+ customer rating",
+      "70%+ acceptance rate",
+      "95%+ completion rate",
+      "Measured monthly 15th-end of month"
+    ],
+    "benefits": [
+      "Dash anytime without scheduling",
+      "Priority access to high-value orders (allegedly)",
+      "Higher catering order priority"
+    ],
+    "debate": "Many Dashers debate if 70% acceptance rate requirement is worth it - accepting bad orders to maintain rate"
+  }
+}

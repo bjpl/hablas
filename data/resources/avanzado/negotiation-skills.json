@@ -1,0 +1,122 @@
+{
+  "id": "adv-004",
+  "title": "Professional Negotiation Skills",
+  "description": "Navigate customer requests, rate discussions, and conflict resolution professionally",
+  "level": "Avanzado",
+  "category": "negotiation",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US business negotiation",
+  "vocabulary": [
+    {
+      "english": "Reasonable",
+      "spanish": "Razonable",
+      "pronunciation": "rah-soh-NAH-bleh",
+      "context": "Fair and sensible request or offer"
+    },
+    {
+      "english": "Policy",
+      "spanish": "Política / Norma",
+      "pronunciation": "poh-LEE-tee-kah / NOR-mah",
+      "context": "Platform rules you must follow"
+    },
+    {
+      "english": "Compromise",
+      "spanish": "Compromiso / Punto medio",
+      "pronunciation": "kohm-proh-MEE-soh / POON-toh MEH-dee-oh",
+      "context": "Finding middle ground solution"
+    },
+    {
+      "english": "Firm but polite",
+      "spanish": "Firme pero cortés",
+      "pronunciation": "FEER-meh PEH-roh kor-TES",
+      "context": "Professional boundary setting"
+    },
+    {
+      "english": "Alternative",
+      "spanish": "Alternativa",
+      "pronunciation": "al-ter-nah-TEE-vah",
+      "context": "Different option or solution"
+    }
+  ],
+  "phrases": [
+    {
+      "english": "I understand your request, but I need to follow platform policies",
+      "spanish": "Entiendo su solicitud, pero debo seguir las políticas de la plataforma",
+      "pronunciation": "en-tee-EN-doh soo soh-lee-see-TOOD, PEH-roh DEH-boh seh-GEER lahs poh-LEE-tee-kahs deh lah plah-tah-FOR-mah",
+      "context": "Politely declining against-policy requests"
+    },
+    {
+      "english": "Let's find a solution that works for both of us",
+      "spanish": "Busquemos una solución que funcione para ambos",
+      "pronunciation": "boos-KEH-mohs OO-nah soh-loo-see-ON keh foon-see-OH-neh PAH-rah am-BOHS",
+      "context": "Collaborative problem-solving approach"
+    },
+    {
+      "english": "I can offer you this alternative",
+      "spanish": "Puedo ofrecerle esta alternativa",
+      "pronunciation": "PWEH-doh oh-freh-SER-leh ES-tah al-ter-nah-TEE-vah",
+      "context": "Proposing different option"
+    },
+    {
+      "english": "That's outside of what I can provide",
+      "spanish": "Eso está fuera de lo que puedo ofrecer",
+      "pronunciation": "EH-soh es-TAH FWEH-rah deh loh keh PWEH-doh oh-freh-SER",
+      "context": "Setting clear boundaries"
+    },
+    {
+      "english": "I need to maintain my service standards",
+      "spanish": "Necesito mantener mis estándares de servicio",
+      "pronunciation": "neh-seh-SEE-toh man-teh-NER mees es-TAN-dah-rehs deh ser-VEE-see-oh",
+      "context": "Professional justification for limits"
+    },
+    {
+      "english": "I appreciate your flexibility",
+      "spanish": "Agradezco su flexibilidad",
+      "pronunciation": "ah-grah-DES-koh soo flek-see-bee-lee-DAD",
+      "context": "When customer accepts compromise"
+    }
+  ],
+  "culturalNotes": [
+    {
+      "topic": "Direct Communication",
+      "note": "Americans appreciate clear, direct statements of what you can and cannot do",
+      "colombianComparison": "More direct than Colombian indirect communication style"
+    },
+    {
+      "topic": "Professional Boundaries",
+      "note": "It's acceptable and expected to set clear limits on services while remaining polite",
+      "colombianComparison": "US culture supports saying 'no' professionally; not seen as rude"
+    },
+    {
+      "topic": "Problem-Solving Focus",
+      "note": "Focus on solutions and alternatives rather than problems or excuses",
+      "colombianComparison": "Action-oriented approach valued over relationship-focused explanations"
+    }
+  ],
+  "practicalScenarios": [
+    {
+      "situation": "Customer asks you to exceed speed limit",
+      "spanishResponse": "Entiendo que tiene prisa, pero por su seguridad y la mía, debo respetar los límites de velocidad. Haré todo lo posible por tomar la ruta más rápida.",
+      "englishTranslation": "I understand you're in a hurry, but for your safety and mine, I must respect speed limits. I'll do everything possible to take the fastest route.",
+      "tips": "Acknowledge their need while maintaining safety boundaries"
+    },
+    {
+      "situation": "Customer requests off-app payment",
+      "spanishResponse": "Para protección de ambos, todos los pagos deben procesarse a través de la aplicación. Es una política de la plataforma que debo seguir.",
+      "englishTranslation": "For both our protection, all payments must be processed through the app. It's a platform policy I must follow.",
+      "tips": "Reference platform policy for support in declining"
+    },
+    {
+      "situation": "Customer wants extra stops not in app",
+      "spanishResponse": "Con mucho gusto puedo agregar paradas, pero necesito que las añada en la aplicación para que el costo y el tiempo se calculen correctamente.",
+      "englishTranslation": "I'm happy to add stops, but I need you to add them in the app so the cost and time are calculated correctly.",
+      "tips": "Offer solution that follows proper procedures"
+    },
+    {
+      "situation": "Negotiating wait time compensation",
+      "spanishResponse": "He esperado [X] minutos. ¿Podría iniciar el viaje en la aplicación para que se registre el tiempo de espera?",
+      "englishTranslation": "I've waited [X] minutes. Could you start the trip in the app so the wait time is recorded?",
+      "tips": "Politely request proper compensation for waiting"
+    }
+  ]
+}
