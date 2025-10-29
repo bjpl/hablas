@@ -39,6 +39,27 @@ function cleanBoxCharacters(text: string): string {
     .replace(/\n{3,}/g, '\n\n')  // Max 2 consecutive newlines
 }
 
+// Helper: Clean audio script formatting (remove production directions)
+function cleanAudioScript(text: string): string {
+  return text
+    .split('\n')
+    .filter(line => {
+      const trimmed = line.trim()
+      // Remove production directions and metadata
+      if (trimmed.startsWith('**[')) return false  // [Speaker:], [Tone:], [Pause:], etc
+      if (trimmed.startsWith('## [')) return false  // Timestamps
+      if (trimmed.startsWith('### [')) return false  // Section timestamps
+      if (trimmed.match(/^\*\*Total Duration\*\*/)) return false
+      if (trimmed.match(/^\*\*Target\*\*/)) return false
+      if (trimmed.match(/^\*\*Language\*\*/)) return false
+      if (trimmed === '---') return false  // Dividers
+      return true
+    })
+    .map(line => line.trim())
+    .filter(line => line.length > 0)
+    .join('\n\n')  // Add spacing between lines for readability
+}
+
 // Server component wrapper - load and clean content at build time
 export default async function ResourceDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
@@ -53,8 +74,14 @@ export default async function ResourceDetailPage({ params }: { params: Promise<{
       const publicPath = path.join(process.cwd(), 'public', resource.downloadUrl)
       const rawContent = fs.readFileSync(publicPath, 'utf-8')
 
-      // Clean box characters at build time so static HTML is clean
-      contentText = cleanBoxCharacters(rawContent)
+      // Clean content based on resource type
+      if (resource.type === 'audio') {
+        // Audio scripts need special cleaning to remove production directions
+        contentText = cleanAudioScript(rawContent)
+      } else {
+        // Other resources just need box characters removed
+        contentText = cleanBoxCharacters(rawContent)
+      }
     } catch (error) {
       console.error(`Error loading content for resource ${resourceId}:`, error)
       contentText = ''
