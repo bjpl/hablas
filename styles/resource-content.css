@@ -25,61 +25,40 @@
 }
 
 /* ============================================
-   Phrase Boxes (Box-Drawing Characters)
+   Elegant Phrase Cards (NO ASCII/Box-Drawing)
    ============================================ */
-.phrase-box,
-.resource-content pre.phrase-box {
-  font-family: 'Courier New', Courier, 'Lucida Console', Monaco, monospace;
-  background: linear-gradient(135deg, #4a90e2 0%, #50c9c3 100%);
-  color: #ffffff;
-  padding: 2rem 2.5rem;
-  margin: 2rem 0;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 24px rgba(74, 144, 226, 0.25),
-              0 4px 12px rgba(0, 0, 0, 0.1),
-              inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  white-space: pre-wrap;
-  overflow-x: auto;
-  position: relative;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.phrase-card {
+  background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(80, 201, 195, 0.05) 100%);
+  border-left: 4px solid #4a90e2;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.phrase-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
+}
+
+.phrase-card p {
+  margin: 0.75rem 0;
   line-height: 1.6;
-  font-size: 1rem;
 }
 
-.phrase-box:hover {
-  transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 12px 32px rgba(74, 144, 226, 0.35),
-              0 6px 16px rgba(0, 0, 0, 0.15),
-              inset 0 1px 0 rgba(255, 255, 255, 0.3);
+/* Hide any ASCII/box-drawing characters */
+.resource-content pre {
+  display: none !important;
 }
 
-.phrase-box::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg,
-    rgba(255, 255, 255, 0.15) 0%,
-    rgba(255, 255, 255, 0.05) 50%,
-    transparent 100%);
-  border-radius: 16px;
-  pointer-events: none;
-}
-
-.phrase-box::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.1), transparent 70%);
-  border-radius: 16px;
-  pointer-events: none;
+.resource-content code {
+  background: rgba(74, 144, 226, 0.08);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Consolas', monospace;
+  font-size: 0.9em;
+  color: #2d4a6f;
 }
 
 /* ============================================

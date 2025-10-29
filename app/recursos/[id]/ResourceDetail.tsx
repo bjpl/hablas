@@ -5,9 +5,7 @@ import { useEffect, useState } from 'react'
 import { resources } from '@/data/resources'
 import ReactMarkdown from 'react-markdown'
 import AudioPlayer from '@/components/AudioPlayer'
-
-// Box-drawing character detection regex
-const BOX_DRAWING_REGEX = /^[┌│└├─┐┤┘┬┴┼╔╗╚╝╠╣╦╩╬═║]+/
+import PhraseCard from '@/components/PhraseCard'
 
 // Types for JSON content structures
 interface VocabularyItem {
@@ -321,60 +319,57 @@ export default function ResourceDetail({ id }: { id: string }) {
     )
   }
 
-  // Component: PhraseBox - Styled box-drawing character renderer
-  const PhraseBox = ({ content }: { content: string }) => {
-    return (
-      <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 border-2 border-indigo-300 shadow-lg hover:shadow-xl transition-all duration-300 mb-6">
-        <div className="bg-white rounded-lg p-5 border border-indigo-200 shadow-inner">
-          <pre className="font-mono text-sm leading-relaxed text-gray-800 overflow-x-auto whitespace-pre">
-            {content}
-          </pre>
-        </div>
-      </div>
-    )
-  }
+  // Function: Parse markdown into structured phrase cards
+  const parseMarkdownToPhrases = (text: string): Array<any> => {
+    const phrases: Array<any> = []
 
-  // Function: Detect and extract box-drawing sections
-  const detectBoxSections = (text: string): Array<{ type: 'box' | 'text', content: string }> => {
-    const lines = text.split('\n')
-    const sections: Array<{ type: 'box' | 'text', content: string }> = []
-    let currentBox: string[] = []
-    let currentText: string[] = []
+    // Split by headings or phrase blocks
+    const sections = text.split(/\n#{1,3}\s+/).filter(s => s.trim())
 
-    const flushText = () => {
-      if (currentText.length > 0) {
-        sections.push({ type: 'text', content: currentText.join('\n') })
-        currentText = []
+    for (const section of sections) {
+      const lines = section.split('\n').filter(l => l.trim())
+
+      if (lines.length === 0) continue
+
+      const phraseData: any = {}
+
+      // Extract structured data from markdown patterns
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim()
+
+        // English phrase (bold or first line)
+        if (line.match(/^\*\*(.+?)\*\*/) || (!phraseData.english && i === 0)) {
+          phraseData.english = line.replace(/^\*\*|\*\*$/g, '').trim()
+        }
+        // Spanish translation (italics or contains common Spanish words)
+        else if (line.match(/^\*(.+?)\*/) || line.match(/^[A-ZÁÉÍÓÚÑ]/)) {
+          phraseData.spanish = line.replace(/^\*|\*$/g, '').trim()
+        }
+        // Pronunciation (contains phonetic markers)
+        else if (line.match(/\[.+?\]/) || line.toLowerCase().includes('pronunciation')) {
+          phraseData.pronunciation = line.replace(/[\[\]]/g, '').replace(/pronunciation:?/gi, '').trim()
+        }
+        // Context (starts with "Use:" or "Context:")
+        else if (line.match(/^(Use|Context|When):/i)) {
+          phraseData.context = line.replace(/^(Use|Context|When):?\s*/i, '').trim()
+        }
+        // Example (starts with "Example:" or contains quotes)
+        else if (line.match(/^Example:/i) || line.match(/[""].*[""]/)) {
+          phraseData.example = line.replace(/^Example:?\s*/i, '').replace(/[""]/g, '"').trim()
+        }
+        // Tip (starts with "Tip:" or "Note:")
+        else if (line.match(/^(Tip|Note|Remember):/i)) {
+          phraseData.tip = line.replace(/^(Tip|Note|Remember):?\s*/i, '').trim()
+        }
+      }
+
+      // Only add if we have at least english and spanish
+      if (phraseData.english && phraseData.spanish) {
+        phrases.push(phraseData)
       }
     }
 
-    const flushBox = () => {
-      if (currentBox.length > 0) {
-        sections.push({ type: 'box', content: currentBox.join('\n') })
-        currentBox = []
-      }
-    }
-
-    lines.forEach((line) => {
-      const isBoxLine = BOX_DRAWING_REGEX.test(line.trim())
-
-      if (isBoxLine) {
-        flushText()
-        currentBox.push(line)
-      } else if (currentBox.length > 0 && line.trim().startsWith('│')) {
-        // Continue box if line starts with vertical bar
-        currentBox.push(line)
-      } else {
-        flushBox()
-        currentText.push(line)
-      }
-    })
-
-    // Flush remaining content
-    flushBox()
-    flushText()
-
-    return sections
+    return phrases
   }
 
   if (!resource) {
@@ -586,82 +581,95 @@ export default function ResourceDetail({ id }: { id: string }) {
                   {content}
                 </pre>
               ) : (() => {
-                // Markdown content with box-drawing detection
-                const sections = detectBoxSections(content)
+                // Parse markdown content into phrase cards
+                const phrases = parseMarkdownToPhrases(content)
 
+                // If we successfully parsed phrases, render as cards
+                if (phrases.length > 0) {
+                  return (
+                    <div className="space-y-6">
+                      <div className="mb-8">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-2 flex items-center gap-3">
+                          <span aria-hidden="true">💬</span>
+                          Frases Útiles
+                        </h2>
+                        <p className="text-gray-600">
+                          Aprende estas expresiones comunes y mejora tu español conversacional
+                        </p>
+                      </div>
+
+                      <div className="grid gap-6 md:grid-cols-2">
+                        {phrases.map((phrase, index) => (
+                          <PhraseCard key={index} phrase={phrase} />
+                        ))}
+                      </div>
+                    </div>
+                  )
+                }
+
+                // Fallback to regular markdown rendering
                 return (
-                  <div>
-                    {sections.map((section, index) => {
-                      if (section.type === 'box') {
-                        return <PhraseBox key={index} content={section.content} />
-                      } else {
-                        return (
-                          <ReactMarkdown
-                            key={index}
-                            components={{
-                              h1: ({ children }) => (
-                                <h1 className="text-3xl font-bold mt-8 mb-4 text-gray-900">
-                                  {children}
-                                </h1>
-                              ),
-                              h2: ({ children }) => (
-                                <h2 className="text-2xl font-bold mt-6 mb-3 text-gray-800">
-                                  {children}
-                                </h2>
-                              ),
-                              h3: ({ children }) => (
-                                <h3 className="text-xl font-bold mt-4 mb-2 text-gray-800">
-                                  {children}
-                                </h3>
-                              ),
-                              p: ({ children }) => (
-                                <p className="mb-4 text-gray-700 leading-relaxed">
-                                  {children}
-                                </p>
-                              ),
-                              ul: ({ children }) => (
-                                <ul className="list-disc list-inside mb-4 space-y-2">
-                                  {children}
-                                </ul>
-                              ),
-                              ol: ({ children }) => (
-                                <ol className="list-decimal list-inside mb-4 space-y-2">
-                                  {children}
-                                </ol>
-                              ),
-                              pre: ({ children }) => (
-                                <pre className="bg-gray-50 p-4 rounded-lg overflow-x-auto mb-4 border border-gray-200 font-mono text-sm">
-                                  {children}
-                                </pre>
-                              ),
-                              code: ({ children }) => (
-                                <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
-                                  {children}
-                                </code>
-                              ),
-                              blockquote: ({ children }) => (
-                                <blockquote className="border-l-4 border-accent-blue pl-4 italic my-4 text-gray-700">
-                                  {children}
-                                </blockquote>
-                              ),
-                              hr: () => (
-                                <hr className="my-8 border-gray-300" />
-                              ),
-                              table: ({ children }) => (
-                                <div className="overflow-x-auto mb-4">
-                                  <table className="min-w-full divide-y divide-gray-200">
-                                    {children}
-                                  </table>
-                                </div>
-                              ),
-                            }}
-                          >
-                            {section.content}
-                          </ReactMarkdown>
-                        )
-                      }
-                    })}
-                  </div>
+                  <ReactMarkdown
+                    components={{
+                      h1: ({ children }) => (
+                        <h1 className="text-3xl font-bold mt-8 mb-4 text-gray-900">
+                          {children}
+                        </h1>
+                      ),
+                      h2: ({ children }) => (
+                        <h2 className="text-2xl font-bold mt-6 mb-3 text-gray-800">
+                          {children}
+                        </h2>
+                      ),
+                      h3: ({ children }) => (
+                        <h3 className="text-xl font-bold mt-4 mb-2 text-gray-800">
+                          {children}
+                        </h3>
+                      ),
+                      p: ({ children }) => (
+                        <p className="mb-4 text-gray-700 leading-relaxed">
+                          {children}
+                        </p>
+                      ),
+                      ul: ({ children }) => (
+                        <ul className="list-disc list-inside mb-4 space-y-2">
+                          {children}
+                        </ul>
+                      ),
+                      ol: ({ children }) => (
+                        <ol className="list-decimal list-inside mb-4 space-y-2">
+                          {children}
+                        </ol>
+                      ),
+                      pre: ({ children }) => (
+                        <pre className="bg-gray-50 p-4 rounded-lg overflow-x-auto mb-4 border border-gray-200 font-mono text-sm">
+                          {children}
+                        </pre>
+                      ),
+                      code: ({ children }) => (
+                        <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
+                          {children}
+                        </code>
+                      ),
+                      blockquote: ({ children }) => (
+                        <blockquote className="border-l-4 border-accent-blue pl-4 italic my-4 text-gray-700">
+                          {children}
+                        </blockquote>
+                      ),
+                      hr: () => (
+                        <hr className="my-8 border-gray-300" />
+                      ),
+                      table: ({ children }) => (
+                        <div className="overflow-x-auto mb-4">
+                          <table className="min-w-full divide-y divide-gray-200">
+                            {children}
+                          </table>
+                        </div>
+                      ),
+                    }}
+                  >
+                    {content}
+                  </ReactMarkdown>
                 )
               })()}
             </div>
