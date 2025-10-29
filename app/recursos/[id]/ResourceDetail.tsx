@@ -377,18 +377,18 @@ export default function ResourceDetail({ id }: { id: string }) {
               <p className="text-gray-600 mb-6 text-lg leading-relaxed">{resource.description}</p>
 
               <div className="flex flex-wrap gap-3 mb-5">
-                <span className="px-4 py-2 bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 text-sm rounded-full font-semibold shadow-sm">
+                <span className="px-4 py-2 bg-blue-100 text-blue-800 text-sm rounded font-semibold">
                   {levelLabels[resource.level]}
                 </span>
-                <span className="px-4 py-2 bg-gradient-to-r from-green-100 to-green-200 text-green-800 text-sm rounded-full font-semibold shadow-sm">
+                <span className="px-4 py-2 bg-green-100 text-green-800 text-sm rounded font-semibold">
                   {categoryLabels[resource.category]}
                 </span>
-                <span className="px-4 py-2 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">
-                  📦 {resource.size}
+                <span className="px-4 py-2 bg-gray-100 text-gray-700 text-sm rounded font-medium">
+                  {resource.size}
                 </span>
                 {resource.offline && (
-                  <span className="px-4 py-2 bg-gradient-to-r from-purple-100 to-purple-200 text-purple-800 text-sm rounded-full font-semibold shadow-sm">
-                    📱 Disponible offline
+                  <span className="px-4 py-2 bg-purple-100 text-purple-800 text-sm rounded font-semibold">
+                    Disponible offline
                   </span>
                 )}
               </div>
@@ -413,9 +413,9 @@ export default function ResourceDetail({ id }: { id: string }) {
           <a
             href={resource.downloadUrl}
             download
-            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-accent-green to-green-600 text-white text-center rounded-xl font-semibold hover:from-green-600 hover:to-accent-green shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 bg-accent-green text-white text-center rounded font-semibold hover:bg-green-700 transition-colors"
           >
-            <span className="text-xl">📥</span> Descargar recurso
+            Descargar recurso
           </a>
         </div>
 
@@ -622,7 +622,7 @@ export default function ResourceDetail({ id }: { id: string }) {
         <div className="mt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <button
             onClick={() => router.push('/')}
-            className="w-full sm:w-auto px-8 py-3 bg-gray-200 text-gray-700 rounded-xl font-semibold hover:bg-gray-300 hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5"
+            className="w-full sm:w-auto px-8 py-3 bg-gray-200 text-gray-700 rounded font-semibold hover:bg-gray-300 transition-colors"
           >
             ← Volver a recursos
           </button>
@@ -632,7 +632,7 @@ export default function ResourceDetail({ id }: { id: string }) {
             {resourceId > 1 && (
               <button
                 onClick={() => router.push(`/recursos/${resourceId - 1}`)}
-                className="flex-1 sm:flex-none px-6 py-3 bg-gradient-to-r from-accent-blue to-blue-600 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-accent-blue shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+                className="flex-1 sm:flex-none px-6 py-3 bg-accent-blue text-white rounded font-semibold hover:bg-blue-700 transition-colors"
               >
                 ← Anterior
               </button>
@@ -640,7 +640,7 @@ export default function ResourceDetail({ id }: { id: string }) {
             {resourceId < resources.length && (
               <button
                 onClick={() => router.push(`/recursos/${resourceId + 1}`)}
-                className="flex-1 sm:flex-none px-6 py-3 bg-gradient-to-r from-accent-blue to-blue-600 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-accent-blue shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
+                className="flex-1 sm:flex-none px-6 py-3 bg-accent-blue text-white rounded font-semibold hover:bg-blue-700 transition-colors"
               >
                 Siguiente →
               </button>
