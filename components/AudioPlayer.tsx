@@ -148,7 +148,7 @@ export default function AudioPlayer({
     }
   };
 
-  const handleError = (e: Event) => {
+  const handleError = () => {
     const audio = audioRef.current;
     let errorMessage = 'Error al cargar el audio';
 
