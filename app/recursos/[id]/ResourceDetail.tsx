@@ -425,11 +425,11 @@ export default function ResourceDetail({ id }: { id: string }) {
         </div>
 
         {/* Audio Player - Show above content for audio resources */}
-        {!loading && !error && resource.type === 'audio' && audioMetadata && (
+        {!loading && !error && resource.type === 'audio' && (
           <div className="mb-6">
             <AudioPlayer
               title={resource.title}
-              audioUrl={undefined}
+              audioUrl={audioMetadata?.file ? `/hablas${audioMetadata.file}` : `/hablas/audio/resource-${resourceId}.mp3`}
               metadata={audioMetadata}
               resourceId={resource.id}
               enhanced={true}
