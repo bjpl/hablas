@@ -63,6 +63,19 @@ export default function ResourceDetail({ id }: { id: string }) {
       return
     }
 
+    // Load audio metadata if this is an audio resource
+    if (resource.type === 'audio') {
+      const basePath = process.env.NODE_ENV === 'production' ? '/hablas' : ''
+      fetch(`${basePath}/audio/metadata.json`)
+        .then(res => res.json())
+        .then(data => {
+          if (data.resources && data.resources[resourceId]) {
+            setAudioMetadata(data.resources[resourceId])
+          }
+        })
+        .catch(err => console.log('Audio metadata not available'))
+    }
+
     // Fetch the content (add basePath for GitHub Pages)
     const basePath = process.env.NODE_ENV === 'production' ? '/hablas' : ''
     fetch(`${basePath}${resource.downloadUrl}`)
