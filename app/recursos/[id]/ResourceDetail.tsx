@@ -63,8 +63,9 @@ export default function ResourceDetail({ id }: { id: string }) {
       return
     }
 
-    // Fetch the content
-    fetch(resource.downloadUrl)
+    // Fetch the content (add basePath for GitHub Pages)
+    const basePath = process.env.NODE_ENV === 'production' ? '/hablas' : ''
+    fetch(`${basePath}${resource.downloadUrl}`)
       .then(response => {
         if (!response.ok) throw new Error('Error loading content')
         return response.text()
