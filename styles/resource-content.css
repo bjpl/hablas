@@ -3,15 +3,20 @@
    Elegant rendering for phrases, markdown, and content
    ============================================ */
 
+/* Import elegant serif fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
 /* ============================================
    Typography Base
    ============================================ */
 .resource-content {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  line-height: 1.7;
-  color: #2c3e50;
+  line-height: 1.8;
+  color: #1e3a5f;
   max-width: 100%;
   word-wrap: break-word;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
 }
 
 .resource-content * {
@@ -25,24 +30,29 @@
 .phrase-box,
 .resource-content pre.phrase-box {
   font-family: 'Courier New', Courier, 'Lucida Console', Monaco, monospace;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4a90e2 0%, #50c9c3 100%);
   color: #ffffff;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  border-radius: 12px;
-  border: 2px solid #5a67d8;
-  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3),
-              0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 2rem 2.5rem;
+  margin: 2rem 0;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(74, 144, 226, 0.25),
+              0 4px 12px rgba(0, 0, 0, 0.1),
+              inset 0 1px 0 rgba(255, 255, 255, 0.2);
   white-space: pre-wrap;
   overflow-x: auto;
   position: relative;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 .phrase-box:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4),
-              0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 32px rgba(74, 144, 226, 0.35),
+              0 6px 16px rgba(0, 0, 0, 0.15),
+              inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .phrase-box::before {
@@ -52,13 +62,28 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
-  border-radius: 10px;
+  background: linear-gradient(135deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    transparent 100%);
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+.phrase-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.1), transparent 70%);
+  border-radius: 16px;
   pointer-events: none;
 }
 
 /* ============================================
-   Headers
+   Headers - Elegant Serif Typography
    ============================================ */
 .resource-content h1,
 .resource-content h2,
@@ -66,99 +91,139 @@
 .resource-content h4,
 .resource-content h5,
 .resource-content h6 {
-  font-weight: 700;
-  color: #1a202c;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-weight: 600;
+  color: #0f2557;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
   line-height: 1.3;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease;
 }
 
 .resource-content h1 {
-  font-size: 2.5rem;
-  border-bottom: 3px solid #667eea;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.75rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0f2557 0%, #1e5ba8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-bottom: 3px solid #4a90e2;
+  padding-bottom: 0.75rem;
+  margin-bottom: 2rem;
 }
 
 .resource-content h2 {
-  font-size: 2rem;
-  border-bottom: 2px solid #764ba2;
-  padding-bottom: 0.4rem;
+  font-size: 2.25rem;
+  color: #1e3a5f;
+  border-bottom: 2px solid #50c9c3;
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
 }
 
 .resource-content h3 {
-  font-size: 1.75rem;
-  color: #2d3748;
+  font-size: 1.875rem;
+  color: #2d4a6f;
   position: relative;
-  padding-left: 1rem;
+  padding-left: 1.25rem;
+  margin-top: 2.5rem;
 }
 
 .resource-content h3::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 0.25rem;
-  bottom: 0.25rem;
-  width: 4px;
-  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
-  border-radius: 2px;
+  top: 0.3rem;
+  bottom: 0.3rem;
+  width: 5px;
+  background: linear-gradient(180deg, #4a90e2 0%, #50c9c3 100%);
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
 }
 
 .resource-content h4 {
   font-size: 1.5rem;
-  color: #2d3748;
+  color: #2d4a6f;
+  font-weight: 600;
 }
 
 .resource-content h5 {
   font-size: 1.25rem;
-  color: #4a5568;
+  color: #456080;
+  font-weight: 600;
 }
 
 .resource-content h6 {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: #567a99;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 /* ============================================
    Paragraphs
    ============================================ */
 .resource-content p {
-  margin: 1rem 0;
-  color: #4a5568;
-  font-size: 1rem;
+  margin: 1.25rem 0;
+  color: #3d5a7a;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.resource-content p:first-of-type {
+  font-size: 1.1rem;
+  color: #2d4a6f;
 }
 
 /* ============================================
    Blockquotes
    ============================================ */
 .resource-content blockquote {
-  margin: 1.5rem 0;
-  padding: 1rem 1.5rem;
-  background: #f7fafc;
-  border-left: 4px solid #667eea;
-  border-radius: 0 8px 8px 0;
-  color: #2d3748;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8f4f8 100%);
+  border-left: 5px solid #4a90e2;
+  border-radius: 0 12px 12px 0;
+  color: #2d4a6f;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
   font-style: italic;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
+  position: relative;
+}
+
+.resource-content blockquote::before {
+  content: '"';
+  position: absolute;
+  top: -0.25rem;
+  left: 1rem;
+  font-size: 4rem;
+  color: rgba(74, 144, 226, 0.2);
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
 }
 
 .resource-content blockquote p {
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
+  position: relative;
+  z-index: 1;
 }
 
 .resource-content blockquote cite {
   display: block;
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
-  color: #718096;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #567a99;
   font-style: normal;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .resource-content blockquote cite::before {
   content: '— ';
+  color: #4a90e2;
 }
 
 /* ============================================
@@ -201,18 +266,19 @@
 .resource-content pre .number { color: #fbb6ce; }
 
 /* ============================================
-   Lists
+   Lists - Elegant Markers
    ============================================ */
 .resource-content ul,
 .resource-content ol {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   padding-left: 2rem;
 }
 
 .resource-content li {
-  margin: 0.5rem 0;
-  color: #4a5568;
-  line-height: 1.7;
+  margin: 0.75rem 0;
+  color: #3d5a7a;
+  line-height: 1.8;
+  font-size: 1.05rem;
 }
 
 .resource-content ul > li {
@@ -221,12 +287,18 @@
 }
 
 .resource-content ul > li::before {
-  content: '▹';
+  content: '◆';
   position: absolute;
   left: -1.5rem;
-  color: #667eea;
-  font-weight: bold;
-  font-size: 1.2em;
+  color: #4a90e2;
+  font-weight: normal;
+  font-size: 0.8em;
+  top: 0.4em;
+  transition: transform 0.2s ease;
+}
+
+.resource-content ul > li:hover::before {
+  transform: scale(1.2);
 }
 
 .resource-content ol {
@@ -240,86 +312,146 @@
 }
 
 .resource-content ol > li::before {
-  content: counter(item) '.';
+  content: counter(item);
   position: absolute;
   left: -2rem;
-  color: #667eea;
-  font-weight: 700;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: linear-gradient(135deg, #4a90e2, #50c9c3);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 6px rgba(74, 144, 226, 0.3);
 }
 
 /* Nested lists */
 .resource-content li > ul,
 .resource-content li > ol {
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
 }
 
 /* ============================================
-   Tables
+   Tables - Professional Styling
    ============================================ */
 .resource-content table {
   width: 100%;
-  margin: 1.5rem 0;
-  border-collapse: collapse;
-  border-radius: 8px;
+  margin: 2rem 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(74, 144, 226, 0.15),
+              0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0eaf5;
 }
 
 .resource-content thead {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4a90e2 0%, #50c9c3 100%);
   color: #ffffff;
 }
 
 .resource-content thead th {
-  padding: 1rem;
+  padding: 1.25rem 1.5rem;
   text-align: left;
   font-weight: 600;
   font-size: 0.95rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  border: none;
 }
 
 .resource-content tbody tr {
-  border-bottom: 1px solid #e2e8f0;
-  transition: background-color 0.2s ease;
+  border-bottom: 1px solid #e0eaf5;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resource-content tbody tr:nth-child(odd) {
+  background-color: #ffffff;
 }
 
 .resource-content tbody tr:nth-child(even) {
-  background-color: #f7fafc;
+  background-color: #f8fbff;
 }
 
 .resource-content tbody tr:hover {
-  background-color: #edf2f7;
+  background-color: #e8f4f8;
+  transform: scale(1.01);
+}
+
+.resource-content tbody tr:last-child {
+  border-bottom: none;
 }
 
 .resource-content tbody td {
-  padding: 0.875rem 1rem;
-  color: #4a5568;
+  padding: 1rem 1.5rem;
+  color: #3d5a7a;
+  font-size: 1rem;
+  border: none;
 }
 
 /* ============================================
-   Links
+   Links - Elegant Underlines
    ============================================ */
 .resource-content a {
-  color: #667eea;
+  color: #4a90e2;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  font-weight: 500;
+  position: relative;
+}
+
+.resource-content a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #4a90e2, #50c9c3);
+  transition: width 0.3s ease;
 }
 
 .resource-content a:hover {
-  color: #764ba2;
-  border-bottom-color: #764ba2;
+  color: #2d6ba8;
+}
+
+.resource-content a:hover::after {
+  width: 100%;
 }
 
 /* ============================================
-   Horizontal Rules
+   Horizontal Rules - Elegant Dividers
    ============================================ */
 .resource-content hr {
-  margin: 2rem 0;
+  margin: 3rem 0;
   border: none;
-  height: 2px;
-  background: linear-gradient(90deg, transparent 0%, #667eea 50%, transparent 100%);
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    #4a90e2 25%,
+    #50c9c3 50%,
+    #4a90e2 75%,
+    transparent 100%);
+  position: relative;
+  opacity: 0.6;
+}
+
+.resource-content hr::after {
+  content: '✦';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 0 1rem;
+  color: #4a90e2;
+  font-size: 1.2rem;
 }
 
 /* ============================================
@@ -334,16 +466,119 @@
 }
 
 /* ============================================
-   Strong and Emphasis
+   Strong and Emphasis - Enhanced Typography
    ============================================ */
 .resource-content strong {
   font-weight: 700;
-  color: #2d3748;
+  color: #0f2557;
+  letter-spacing: 0.01em;
+  position: relative;
+  background: linear-gradient(180deg, transparent 60%, rgba(74, 144, 226, 0.15) 60%);
 }
 
 .resource-content em {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
   font-style: italic;
-  color: #4a5568;
+  color: #2d4a6f;
+  font-size: 1.05em;
+  letter-spacing: 0.01em;
+}
+
+/* ============================================
+   Card-Based Content Sections
+   ============================================ */
+.resource-content .content-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 16px rgba(74, 144, 226, 0.12),
+              0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0eaf5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-content .content-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(74, 144, 226, 0.18),
+              0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Alternating section backgrounds */
+.resource-content section:nth-of-type(odd) {
+  background: linear-gradient(135deg, #f8fbff 0%, #ffffff 100%);
+  padding: 2rem;
+  margin: 2rem -2rem;
+  border-radius: 8px;
+}
+
+.resource-content section:nth-of-type(even) {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+  padding: 2rem;
+  margin: 2rem -2rem;
+  border-radius: 8px;
+}
+
+/* Phrase cards for better organization */
+.resource-content .phrase-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid #4a90e2;
+  box-shadow: 0 2px 12px rgba(74, 144, 226, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resource-content .phrase-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 16px rgba(74, 144, 226, 0.15);
+}
+
+.resource-content .phrase-english {
+  font-size: 1.1rem;
+  color: #0f2557;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.resource-content .phrase-spanish {
+  font-size: 1.15rem;
+  color: #4a90e2;
+  font-weight: 700;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  margin-bottom: 0.5rem;
+}
+
+.resource-content .phrase-pronunciation {
+  font-size: 0.95rem;
+  color: #567a99;
+  font-style: italic;
+  font-family: 'Courier New', monospace;
+}
+
+/* Icon integration */
+.resource-content .icon-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resource-content .icon-text::before {
+  content: '○';
+  color: #4a90e2;
+  font-size: 1.2em;
+}
+
+/* Accent highlights */
+.resource-content .highlight {
+  background: linear-gradient(135deg,
+    rgba(74, 144, 226, 0.15),
+    rgba(80, 201, 195, 0.15));
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  border-left: 3px solid #4a90e2;
+  font-weight: 500;
 }
 
 /* ============================================
@@ -351,28 +586,28 @@
    ============================================ */
 @media (max-width: 768px) {
   .resource-content {
-    font-size: 0.95rem;
-    line-height: 1.65;
+    font-size: 1rem;
+    line-height: 1.7;
   }
 
   .resource-content h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
   .resource-content h2 {
-    font-size: 1.75rem;
+    font-size: 1.875rem;
   }
 
   .resource-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
   }
 
   .resource-content h4 {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
   }
 
   .resource-content h5 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 
   .resource-content h6 {
@@ -381,62 +616,105 @@
 
   .phrase-box,
   .resource-content pre.phrase-box {
-    padding: 1rem;
-    margin: 1rem 0;
-    font-size: 0.9rem;
+    padding: 1.5rem 1.75rem;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
   }
 
   .resource-content blockquote {
-    padding: 0.875rem 1rem;
-    margin: 1rem 0;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .resource-content blockquote::before {
+    font-size: 3rem;
   }
 
   .resource-content pre {
-    padding: 1rem;
-    font-size: 0.85rem;
+    padding: 1.25rem;
+    font-size: 0.9rem;
   }
 
   .resource-content table {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .resource-content thead th,
   .resource-content tbody td {
-    padding: 0.75rem 0.5rem;
+    padding: 1rem 0.75rem;
   }
 
   .resource-content ul,
   .resource-content ol {
-    padding-left: 1.5rem;
+    padding-left: 1.75rem;
+  }
+
+  .resource-content section:nth-of-type(odd),
+  .resource-content section:nth-of-type(even) {
+    margin: 1.5rem -1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .resource-content .content-card,
+  .resource-content .phrase-card {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
   }
 }
 
 @media (max-width: 480px) {
   .resource-content {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .resource-content h1 {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   .resource-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
   }
 
   .resource-content h3 {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
   }
 
   .phrase-box,
   .resource-content pre.phrase-box {
-    padding: 0.875rem;
-    font-size: 0.85rem;
+    padding: 1.25rem 1.5rem;
+    font-size: 0.9rem;
   }
 
   .resource-content pre {
-    padding: 0.875rem;
-    font-size: 0.8rem;
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .resource-content blockquote {
+    padding: 1rem 1.25rem;
+  }
+
+  .resource-content blockquote::before {
+    font-size: 2.5rem;
+  }
+
+  .resource-content section:nth-of-type(odd),
+  .resource-content section:nth-of-type(even) {
+    margin: 1rem -0.5rem;
+    padding: 1.25rem 0.75rem;
+  }
+
+  .resource-content .content-card,
+  .resource-content .phrase-card {
+    padding: 1.25rem;
+  }
+
+  .resource-content .phrase-spanish {
+    font-size: 1.05rem;
+  }
+
+  .resource-content .phrase-english {
+    font-size: 1rem;
   }
 }
 
@@ -446,28 +724,40 @@
 @media print {
   .phrase-box,
   .resource-content pre.phrase-box {
-    background: #f7fafc !important;
-    color: #1a202c !important;
-    border: 2px solid #667eea !important;
+    background: #f0f7ff !important;
+    color: #0f2557 !important;
+    border: 2px solid #4a90e2 !important;
     box-shadow: none !important;
   }
 
   .resource-content a {
-    color: #1a202c !important;
+    color: #0f2557 !important;
     text-decoration: underline !important;
   }
 
-  .resource-content table {
+  .resource-content a::after {
+    display: none !important;
+  }
+
+  .resource-content table,
+  .resource-content .content-card,
+  .resource-content .phrase-card {
     box-shadow: none !important;
+    border: 1px solid #e0eaf5 !important;
+  }
+
+  .resource-content section:nth-of-type(odd),
+  .resource-content section:nth-of-type(even) {
+    background: #ffffff !important;
   }
 }
 
 /* ============================================
-   Accessibility
+   Accessibility - Enhanced Focus & Contrast
    ============================================ */
 .resource-content :focus-visible {
-  outline: 2px solid #667eea;
-  outline-offset: 2px;
+  outline: 3px solid #4a90e2;
+  outline-offset: 3px;
   border-radius: 4px;
 }
 
@@ -477,13 +767,30 @@
     color: #000000;
   }
 
+  .resource-content h1,
+  .resource-content h2,
+  .resource-content h3,
+  .resource-content h4,
+  .resource-content h5,
+  .resource-content h6 {
+    color: #000000;
+    background: none;
+    -webkit-text-fill-color: unset;
+  }
+
   .phrase-box,
   .resource-content pre.phrase-box {
     border-width: 3px;
+    border-color: #000000;
   }
 
   .resource-content a {
     text-decoration: underline;
+    color: #0000EE;
+  }
+
+  .resource-content strong {
+    background: none;
   }
 }
 
@@ -491,7 +798,14 @@
 @media (prefers-reduced-motion: reduce) {
   .phrase-box,
   .resource-content tbody tr,
-  .resource-content a {
+  .resource-content a,
+  .resource-content .content-card,
+  .resource-content .phrase-card,
+  .resource-content ul > li::before {
+    transition: none !important;
+  }
+
+  .resource-content a::after {
     transition: none !important;
   }
 }
