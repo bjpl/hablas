@@ -91,11 +91,14 @@ export default function ResourceDetail({ id }: { id: string }) {
           if (parsed && typeof parsed === 'object' && parsed.type) {
             setJsonContent(parsed)
           } else {
-            setContent(text)
+            // Clean box-drawing characters from markdown
+            const cleaned = text.replace(/[─│┌┐└┘├┤┬┴┼╔╗╚╝╠╣╦╩╬═║]/g, '')
+            setContent(cleaned)
           }
         } catch {
-          // Not JSON, treat as regular content
-          setContent(text)
+          // Not JSON, clean box-drawing characters
+          const cleaned = text.replace(/[─│┌┐└┘├┤┬┴┼╔╗╚╝╠╣╦╩╬═║]/g, '')
+          setContent(cleaned)
         }
 
         // Extract audio metadata if this is an audio resource
