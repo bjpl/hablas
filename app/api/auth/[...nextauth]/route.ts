@@ -5,7 +5,7 @@ import CredentialsProvider from 'next-auth/providers/credentials'
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'admin@hablas.co'
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'change-me-in-production'
 
-export const authOptions: NextAuthOptions = {
+const authOptions: NextAuthOptions = {
   providers: [
     CredentialsProvider({
       name: 'Admin Credentials',
