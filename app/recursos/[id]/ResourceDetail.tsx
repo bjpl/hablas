@@ -47,11 +47,11 @@ interface JsonResourceContent {
   phrases?: PhraseData[]
 }
 
-export default function ResourceDetail({ id }: { id: string }) {
+export default function ResourceDetail({ id, initialContent = '' }: { id: string; initialContent?: string }) {
   const router = useRouter()
-  const [content, setContent] = useState<string>('')
+  const [content, setContent] = useState<string>(initialContent)
   const [jsonContent, setJsonContent] = useState<JsonResourceContent | null>(null)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [audioMetadata, setAudioMetadata] = useState<any>(null)
 
@@ -61,8 +61,26 @@ export default function ResourceDetail({ id }: { id: string }) {
   useEffect(() => {
     if (!resource) {
       setError('Recurso no encontrado')
-      setLoading(false)
       return
+    }
+
+    // If we have initial content from server, parse it immediately
+    if (initialContent) {
+      try {
+        const parsed = JSON.parse(initialContent)
+        if (parsed && typeof parsed === 'object' && parsed.type) {
+          setJsonContent(parsed)
+        } else {
+          setContent(initialContent)
+        }
+      } catch {
+        setContent(initialContent)
+      }
+
+      // Extract audio metadata if this is an audio resource
+      if (resource.type === 'audio') {
+        extractAudioMetadata(initialContent)
+      }
     }
 
     // Load audio metadata if this is an audio resource
@@ -77,42 +95,7 @@ export default function ResourceDetail({ id }: { id: string }) {
         })
         .catch(err => console.log('Audio metadata not available'))
     }
-
-    // Fetch the content (add basePath for GitHub Pages)
-    const basePath = process.env.NODE_ENV === 'production' ? '/hablas' : ''
-    fetch(`${basePath}${resource.downloadUrl}`)
-      .then(response => {
-        if (!response.ok) throw new Error('Error loading content')
-        return response.text()
-      })
-      .then(text => {
-        // Try to parse as JSON first
-        try {
-          const parsed = JSON.parse(text)
-          if (parsed && typeof parsed === 'object' && parsed.type) {
-            setJsonContent(parsed)
-          } else {
-            // Keep original text - box characters will be handled by CSS
-            setContent(text)
-          }
-        } catch {
-          // Not JSON, keep original text
-          setContent(text)
-        }
-
-        // Extract audio metadata if this is an audio resource
-        if (resource.type === 'audio') {
-          extractAudioMetadata(text)
-        }
-
-        setLoading(false)
-      })
-      .catch(err => {
-        setError('No se pudo cargar el contenido')
-        setLoading(false)
-        console.error('Error loading resource:', err)
-      })
-  }, [resource])
+  }, [resource, initialContent])
 
   // Extract audio metadata from script content
   const extractAudioMetadata = (scriptContent: string) => {
@@ -251,58 +234,6 @@ export default function ResourceDetail({ id }: { id: string }) {
     )
   }
 
-  // Function: Parse markdown into structured phrase cards
-  const parseMarkdownToPhrases = (text: string): Array<any> => {
-    const phrases: Array<any> = []
-
-    // Split by headings or phrase blocks
-    const sections = text.split(/\n#{1,3}\s+/).filter(s => s.trim())
-
-    for (const section of sections) {
-      const lines = section.split('\n').filter(l => l.trim())
-
-      if (lines.length === 0) continue
-
-      const phraseData: any = {}
-
-      // Extract structured data from markdown patterns
-      for (let i = 0; i < lines.length; i++) {
-        const line = lines[i].trim()
-
-        // English phrase (bold or first line)
-        if (line.match(/^\*\*(.+?)\*\*/) || (!phraseData.english && i === 0)) {
-          phraseData.english = line.replace(/^\*\*|\*\*$/g, '').trim()
-        }
-        // Spanish translation (italics or contains common Spanish words)
-        else if (line.match(/^\*(.+?)\*/) || line.match(/^[A-ZÁÉÍÓÚÑ]/)) {
-          phraseData.spanish = line.replace(/^\*|\*$/g, '').trim()
-        }
-        // Pronunciation (contains phonetic markers)
-        else if (line.match(/\[.+?\]/) || line.toLowerCase().includes('pronunciation')) {
-          phraseData.pronunciation = line.replace(/[\[\]]/g, '').replace(/pronunciation:?/gi, '').trim()
-        }
-        // Context (starts with "Use:" or "Context:")
-        else if (line.match(/^(Use|Context|When):/i)) {
-          phraseData.context = line.replace(/^(Use|Context|When):?\s*/i, '').trim()
-        }
-        // Example (starts with "Example:" or contains quotes)
-        else if (line.match(/^Example:/i) || line.match(/[""].*[""]/)) {
-          phraseData.example = line.replace(/^Example:?\s*/i, '').replace(/[""]/g, '"').trim()
-        }
-        // Tip (starts with "Tip:" or "Note:")
-        else if (line.match(/^(Tip|Note|Remember):/i)) {
-          phraseData.tip = line.replace(/^(Tip|Note|Remember):?\s*/i, '').trim()
-        }
-      }
-
-      // Only add if we have at least english and spanish
-      if (phraseData.english && phraseData.spanish) {
-        phrases.push(phraseData)
-      }
-    }
-
-    return phrases
-  }
 
   if (!resource) {
     return (
@@ -510,34 +441,8 @@ export default function ResourceDetail({ id }: { id: string }) {
                     {content}
                   </pre>
                 </div>
-              ) : (() => {
-                // Parse markdown content into phrase cards
-                const phrases = parseMarkdownToPhrases(content)
-
-                // If we successfully parsed phrases, render as simple text
-                if (phrases.length > 0) {
-                  return (
-                    <div className="space-y-6">
-                      <div className="mb-6">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                          Frases Útiles
-                        </h2>
-                        <p className="text-gray-600">
-                          Aprende estas expresiones comunes y mejora tu español conversacional
-                        </p>
-                      </div>
-
-                      <div className="space-y-4">
-                        {phrases.map((phrase, index) => (
-                          <PhraseList key={index} phrase={phrase} />
-                        ))}
-                      </div>
-                    </div>
-                  )
-                }
-
-                // Fallback to regular markdown rendering
-                return (
+              ) : (
+                // Render all content as markdown to preserve full resource content
                   <div className="resource-content">
                     <ReactMarkdown
                       components={{
@@ -603,8 +508,7 @@ export default function ResourceDetail({ id }: { id: string }) {
                       {content}
                     </ReactMarkdown>
                   </div>
-                )
-              })()}
+                )}
             </div>
           )}
         </div>
