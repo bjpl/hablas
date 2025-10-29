@@ -242,7 +242,7 @@ async function retryFailedResource(
     return {
       number: newId,
       name: failedResource.name,
-      title: resource.title,
+      title: resource.title || failedResource.title || 'Untitled Resource',
       success: true,
       qualityScore,
       tokens: result.metadata.tokensUsed,

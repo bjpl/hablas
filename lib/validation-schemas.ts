@@ -164,7 +164,7 @@ export const fileUploadSchema = z.object({
     'image/webp',
     'video/mp4'
   ], {
-    errorMap: () => ({ message: 'Invalid file type' })
+    message: 'Invalid file type'
   })
 })
 

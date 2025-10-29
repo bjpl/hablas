@@ -7,6 +7,14 @@
 
 import DOMPurify from 'dompurify'
 
+// Type for sanitize configuration
+type SanitizeConfig = {
+  ALLOWED_TAGS?: string[]
+  ALLOWED_ATTR?: string[]
+  ALLOWED_URI_REGEXP?: RegExp
+  [key: string]: any
+}
+
 /**
  * Sanitize HTML content to prevent XSS attacks
  *
@@ -16,10 +24,10 @@ import DOMPurify from 'dompurify'
  */
 export function sanitizeHtml(
   dirty: string,
-  options?: DOMPurify.Config
+  options?: SanitizeConfig
 ): string {
   // Default config: strip scripts, iframes, and dangerous attributes
-  const defaultConfig: DOMPurify.Config = {
+  const defaultConfig: SanitizeConfig = {
     ALLOWED_TAGS: [
       'p', 'br', 'strong', 'em', 'u', 'a', 'ul', 'ol', 'li',
       'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote', 'code', 'pre'
