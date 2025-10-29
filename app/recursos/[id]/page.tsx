@@ -28,7 +28,19 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   }
 }
 
-// Server component wrapper - load content at build time
+// Helper: Clean box-drawing characters from content at build time
+function cleanBoxCharacters(text: string): string {
+  // Remove box drawing characters and pipe separators
+  return text
+    .replace(/┌[─]+┐/g, '')  // Remove top borders
+    .replace(/└[─]+┘/g, '')  // Remove bottom borders
+    .replace(/^│\s*/gm, '')  // Remove left borders
+    .replace(/\s*│$/gm, '')  // Remove right borders
+    .replace(/^[─]+$/gm, '') // Remove horizontal lines
+    .trim()
+}
+
+// Server component wrapper - load and clean content at build time
 export default async function ResourceDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const resourceId = parseInt(id)
@@ -40,7 +52,10 @@ export default async function ResourceDetailPage({ params }: { params: Promise<{
     try {
       // Read content file at build time from public directory
       const publicPath = path.join(process.cwd(), 'public', resource.downloadUrl)
-      contentText = fs.readFileSync(publicPath, 'utf-8')
+      const rawContent = fs.readFileSync(publicPath, 'utf-8')
+
+      // Clean box characters at build time so static HTML is clean
+      contentText = cleanBoxCharacters(rawContent)
     } catch (error) {
       console.error(`Error loading content for resource ${resourceId}:`, error)
       contentText = ''

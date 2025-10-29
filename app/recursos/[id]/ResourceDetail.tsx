@@ -442,10 +442,10 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                   </pre>
                 </div>
               ) : (
-                // Render all content as markdown to preserve full resource content
-                  <div className="resource-content">
-                    <ReactMarkdown
-                      components={{
+                // Render all content as clean markdown (boxes already cleaned server-side)
+                <div className="resource-content">
+                  <ReactMarkdown
+                    components={{
                       h1: ({ children }) => (
                         <h1 className="text-3xl font-bold mt-8 mb-4 text-gray-900">
                           {children}
@@ -476,13 +476,6 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                           {children}
                         </ol>
                       ),
-                      pre: ({ children }) => (
-                        <div className="resource-content">
-                          <pre className="whitespace-pre-wrap bg-transparent border-none p-0 mb-6 font-sans text-base leading-relaxed">
-                            {children}
-                          </pre>
-                        </div>
-                      ),
                       code: ({ children }) => (
                         <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
                           {children}
@@ -504,11 +497,11 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                         </div>
                       ),
                     }}
-                    >
-                      {content}
-                    </ReactMarkdown>
-                  </div>
-                )}
+                  >
+                    {content}
+                  </ReactMarkdown>
+                </div>
+              )}
             </div>
           )}
         </div>
