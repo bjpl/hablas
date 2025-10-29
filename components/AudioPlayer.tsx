@@ -201,38 +201,29 @@ export default function AudioPlayer({
   // Enhanced player for resource detail pages
   if (enhanced && title) {
     return (
-      <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-lg p-6 border-2 border-purple-200 shadow-lg">
-        <div className="flex items-start gap-3 mb-4">
-          <span className="text-3xl" aria-hidden="true">🎧</span>
-          <div className="flex-1">
-            <h3 className="text-xl font-bold text-gray-900 mb-1">{title}</h3>
-            {metadata && (
-              <div className="flex flex-wrap gap-2 text-sm text-gray-600">
-                {metadata.duration && (
-                  <span className="px-2 py-1 bg-white rounded border border-purple-200">
-                    ⏱️ {metadata.duration}
-                  </span>
-                )}
-                {metadata.narrator && (
-                  <span className="px-2 py-1 bg-white rounded border border-purple-200">
-                    🎙️ {metadata.narrator}
-                  </span>
-                )}
-                {metadata.accent && (
-                  <span className="px-2 py-1 bg-white rounded border border-purple-200">
-                    🗣️ {metadata.accent}
-                  </span>
-                )}
-              </div>
-            )}
-          </div>
+      <div className="bg-white rounded-lg p-6 border border-gray-200">
+        <div className="mb-4">
+          <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
+          {metadata && (
+            <div className="flex flex-wrap gap-3 text-sm text-gray-600">
+              {metadata.duration && (
+                <span>Duración: {metadata.duration}</span>
+              )}
+              {metadata.narrator && (
+                <span>Voz: {metadata.narrator}</span>
+              )}
+              {metadata.accent && (
+                <span>Acento: {metadata.accent}</span>
+              )}
+            </div>
+          )}
         </div>
 
         {!audioUrl ? (
           <div className="text-center py-4">
-            <div className="bg-purple-100 rounded-lg p-4 border border-purple-300">
-              <p className="text-purple-900 font-medium mb-2">📋 Guión de Audio Disponible</p>
-              <p className="text-sm text-purple-800">
+            <div className="bg-gray-50 rounded p-4 border border-gray-200">
+              <p className="text-gray-900 font-medium mb-2">Guión de Audio Disponible</p>
+              <p className="text-sm text-gray-700">
                 El archivo de audio estará disponible próximamente.
                 Por ahora, puedes ver el guión completo abajo con las frases y pronunciación.
               </p>
@@ -240,16 +231,16 @@ export default function AudioPlayer({
           </div>
         ) : error ? (
           <div className="text-center py-4">
-            <div className="bg-red-100 rounded-lg p-4 border border-red-300">
-              <p className="text-red-900 font-medium mb-2">⚠️ Error al cargar el audio</p>
+            <div className="bg-red-50 rounded p-4 border border-red-200">
+              <p className="text-red-900 font-medium mb-2">Error al cargar el audio</p>
               <p className="text-sm text-red-800">{error}</p>
               <p className="text-xs text-red-700 mt-2">URL: {audioUrl}</p>
             </div>
           </div>
         ) : isLoading ? (
           <div className="text-center py-4">
-            <div className="bg-blue-100 rounded-lg p-4 border border-blue-300">
-              <p className="text-blue-900 font-medium">⏳ Cargando audio...</p>
+            <div className="bg-gray-50 rounded p-4 border border-gray-200">
+              <p className="text-gray-900 font-medium">Cargando audio...</p>
             </div>
           </div>
         ) : (
@@ -261,7 +252,7 @@ export default function AudioPlayer({
                 max={duration || 0}
                 value={currentTime}
                 onChange={handleSeek}
-                className="w-full h-2 bg-purple-200 rounded-lg appearance-none cursor-pointer accent-purple-600"
+                className="w-full h-2 bg-gray-200 rounded appearance-none cursor-pointer accent-blue-600"
                 aria-label="Progreso del audio"
               />
               <div className="flex justify-between text-xs text-gray-600">
@@ -273,7 +264,7 @@ export default function AudioPlayer({
             <div className="flex items-center justify-center gap-3">
               <button
                 onClick={() => skipTime(-10)}
-                className="p-3 bg-white rounded-full border-2 border-purple-300 hover:bg-purple-100 transition-colors focus:ring-2 focus:ring-purple-400 focus:outline-none"
+                className="p-3 bg-white rounded border border-gray-300 hover:bg-gray-50 transition-colors focus:ring-2 focus:ring-blue-400 focus:outline-none"
                 aria-label="Retroceder 10 segundos"
               >
                 ⏪
@@ -281,7 +272,7 @@ export default function AudioPlayer({
 
               <button
                 onClick={handleToggle}
-                className="p-4 bg-purple-600 rounded-full hover:bg-purple-700 transition-colors focus:ring-2 focus:ring-purple-400 focus:outline-none shadow-lg"
+                className="p-4 bg-blue-600 rounded hover:bg-blue-700 transition-colors focus:ring-2 focus:ring-blue-400 focus:outline-none"
                 aria-label={isPlaying ? 'Pausar' : 'Reproducir'}
               >
                 {isPlaying ? <Pause className="w-6 h-6 text-white" /> : <Play className="w-6 h-6 text-white ml-0.5" />}
@@ -289,7 +280,7 @@ export default function AudioPlayer({
 
               <button
                 onClick={() => skipTime(10)}
-                className="p-3 bg-white rounded-full border-2 border-purple-300 hover:bg-purple-100 transition-colors focus:ring-2 focus:ring-purple-400 focus:outline-none"
+                className="p-3 bg-white rounded border border-gray-300 hover:bg-gray-50 transition-colors focus:ring-2 focus:ring-blue-400 focus:outline-none"
                 aria-label="Adelantar 10 segundos"
               >
                 ⏩
@@ -303,10 +294,10 @@ export default function AudioPlayer({
                   <button
                     key={rate}
                     onClick={() => changePlaybackRate(rate)}
-                    className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                    className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
                       playbackRate === rate
-                        ? 'bg-purple-600 text-white'
-                        : 'bg-white text-gray-700 border border-purple-200 hover:bg-purple-100'
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
                     }`}
                     aria-label={`Velocidad ${rate}x`}
                   >
@@ -316,13 +307,10 @@ export default function AudioPlayer({
               </div>
             </div>
 
-            <div className="bg-purple-100 rounded-lg p-3 border border-purple-300">
-              <p className="text-sm text-purple-900 flex items-center gap-2">
-                <span>💡</span>
-                <span>
-                  <strong>Consejo:</strong> Escucha este audio varias veces para mejorar tu pronunciación.
-                  Usa la velocidad 0.75x para practicar palabras difíciles.
-                </span>
+            <div className="bg-gray-50 rounded p-3 border border-gray-200">
+              <p className="text-sm text-gray-700">
+                <strong>Consejo:</strong> Escucha este audio varias veces para mejorar tu pronunciación.
+                Usa la velocidad 0.75x para practicar palabras difíciles.
               </p>
             </div>
           </div>

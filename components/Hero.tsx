@@ -2,7 +2,7 @@
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-b from-green-50 to-white px-4 py-12" aria-labelledby="hero-heading">
+    <section className="bg-white px-4 py-12" aria-labelledby="hero-heading">
       <div className="max-w-4xl mx-auto text-center">
         <h1 id="hero-heading" className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">
           Aprende Inglés Para Tu Trabajo
@@ -30,8 +30,8 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 text-left" role="note" aria-label="Beneficios del inglés">
-          <p className="text-sm">
+        <div className="bg-gray-50 border-l-4 border-gray-400 p-4 text-left" role="note" aria-label="Beneficios del inglés">
+          <p className="text-sm text-gray-700">
             <strong>¿Por qué inglés?</strong> Los clientes extranjeros pagan mejor,
             dan mejores propinas y califican mejor cuando puedes comunicarte en inglés básico.
           </p>

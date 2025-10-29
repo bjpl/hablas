@@ -42,7 +42,7 @@ export default function WhatsAppCTA({ title, description, members, link }: Whats
       </button>
 
       <footer className="mt-3 text-xs text-gray-600">
-        <p aria-label="Reglas del grupo"><span aria-hidden="true">📋</span> <strong>Reglas:</strong> Respeto, solo inglés para trabajo, no spam</p>
+        <p aria-label="Reglas del grupo"><strong>Reglas:</strong> Respeto, solo inglés para trabajo, no spam</p>
       </footer>
     </article>
   )

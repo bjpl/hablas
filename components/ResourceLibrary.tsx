@@ -69,11 +69,11 @@ export default function ResourceLibrary({ category, level, searchQuery = '' }: R
         </div>
       )}
 
-      <div className="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-200" role="complementary" aria-label="Consejo sobre descarga de recursos">
-        <h3 className="font-bold mb-2 text-gray-900"><span aria-hidden="true">💡</span> Consejo</h3>
-        <p className="text-sm text-gray-800">
+      <div className="mt-8 p-4 bg-gray-50 rounded border border-gray-200" role="complementary" aria-label="Consejo sobre descarga de recursos">
+        <h3 className="font-bold mb-2 text-gray-900">Consejo</h3>
+        <p className="text-sm text-gray-700">
           Descarga los recursos cuando tengas WiFi para usarlos sin gastar datos mientras trabajas.
-          Los archivos marcados con <span aria-hidden="true">📱</span> <strong>Offline</strong> funcionan sin conexión.
+          Los archivos marcados con <strong>Offline</strong> funcionan sin conexión.
         </p>
       </div>
     </section>

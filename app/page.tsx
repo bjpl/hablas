@@ -77,9 +77,9 @@ export default function Home() {
             <button
               onClick={() => setSelectedCategory('all')}
               aria-pressed={selectedCategory === 'all'}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
                 selectedCategory === 'all'
-                  ? 'bg-accent-blue text-white shadow-md'
+                  ? 'bg-accent-blue text-white'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
@@ -88,9 +88,9 @@ export default function Home() {
             <button
               onClick={() => setSelectedCategory('repartidor')}
               aria-pressed={selectedCategory === 'repartidor'}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
                 selectedCategory === 'repartidor'
-                  ? 'bg-rappi text-white shadow-md'
+                  ? 'bg-rappi text-white'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
@@ -99,9 +99,9 @@ export default function Home() {
             <button
               onClick={() => setSelectedCategory('conductor')}
               aria-pressed={selectedCategory === 'conductor'}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
                 selectedCategory === 'conductor'
-                  ? 'bg-uber text-white shadow-md'
+                  ? 'bg-uber text-white'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
@@ -114,9 +114,9 @@ export default function Home() {
             <button
               onClick={() => setSelectedLevel('all')}
               aria-pressed={selectedLevel === 'all'}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
                 selectedLevel === 'all'
-                  ? 'bg-accent-green text-white shadow-md'
+                  ? 'bg-accent-green text-white'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
@@ -125,9 +125,9 @@ export default function Home() {
             <button
               onClick={() => setSelectedLevel('basico')}
               aria-pressed={selectedLevel === 'basico'}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
                 selectedLevel === 'basico'
-                  ? 'bg-accent-green text-white shadow-md'
+                  ? 'bg-accent-green text-white'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
@@ -136,9 +136,9 @@ export default function Home() {
             <button
               onClick={() => setSelectedLevel('intermedio')}
               aria-pressed={selectedLevel === 'intermedio'}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
                 selectedLevel === 'intermedio'
-                  ? 'bg-accent-green text-white shadow-md'
+                  ? 'bg-accent-green text-white'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
@@ -157,7 +157,7 @@ export default function Home() {
       <footer className="bg-gray-100 px-4 py-8 mt-12">
         <div className="max-w-6xl mx-auto text-center text-sm text-gray-600">
           <p className="mb-2">Hablas.co - Recursos gratuitos para trabajadores colombianos</p>
-          <p>Hecho con ❤️ en Medellín para toda Colombia</p>
+          <p>Hecho en Medellín para toda Colombia</p>
         </div>
       </footer>
     </main>

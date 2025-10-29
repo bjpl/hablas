@@ -36,14 +36,14 @@ export default function PhraseBox({ content }: PhraseBoxProps) {
   }
 
   return (
-    <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-2xl p-8 border-2 border-indigo-200 shadow-lg hover:shadow-2xl transition-all duration-300 my-6">
+    <div className="my-6">
       {/* English - Primary phrase */}
       {data.english && (
-        <div className="mb-6">
-          <div className="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wide rounded-full mb-3">
+        <div className="mb-4">
+          <div className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2">
             English
           </div>
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+          <h3 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
             {data.english}
           </h3>
         </div>
@@ -51,15 +51,15 @@ export default function PhraseBox({ content }: PhraseBoxProps) {
 
       {/* Spanish translation */}
       {data.spanish && (
-        <div className="mb-5 bg-white bg-opacity-60 rounded-xl p-5 border border-indigo-100">
-          <p className="text-xl md:text-2xl font-semibold text-indigo-700 mb-2" lang="es">
-            🗣️ {data.spanish}
+        <div className="mb-4">
+          <p className="text-lg md:text-xl font-semibold text-gray-800 mb-1" lang="es">
+            {data.spanish}
           </p>
 
           {/* Pronunciation */}
           {data.pronunciation && (
-            <p className="text-sm text-gray-600 italic mt-2 font-mono">
-              🔊 {data.pronunciation}
+            <p className="text-sm text-gray-600 italic">
+              {data.pronunciation}
             </p>
           )}
         </div>
@@ -67,32 +67,23 @@ export default function PhraseBox({ content }: PhraseBoxProps) {
 
       {/* Context - When to use */}
       {data.context && (
-        <div className="mb-4 bg-green-50 border-l-4 border-green-400 rounded-r-lg p-4">
-          <p className="text-sm text-gray-800 leading-relaxed">
-            <span className="font-bold text-green-700">Usa cuando:</span> {data.context}
-          </p>
-        </div>
+        <p className="mb-3 text-sm text-gray-700">
+          <span className="font-semibold">Usa cuando:</span> {data.context}
+        </p>
       )}
 
       {/* Example */}
       {data.example && (
-        <div className="mb-4 bg-purple-50 border-l-4 border-purple-400 rounded-r-lg p-4">
-          <p className="text-sm text-gray-800 leading-relaxed">
-            <span className="font-bold text-purple-700">Ejemplo real:</span> {data.example}
-          </p>
-        </div>
+        <p className="mb-3 text-sm text-gray-700">
+          <span className="font-semibold">Ejemplo real:</span> {data.example}
+        </p>
       )}
 
       {/* Tip */}
       {data.tip && (
-        <div className="bg-yellow-50 border-2 border-yellow-300 rounded-xl p-4 flex gap-3">
-          <span className="text-2xl flex-shrink-0">💡</span>
-          <div className="flex-1">
-            <p className="text-sm text-gray-900 leading-relaxed">
-              <span className="font-bold text-yellow-800">TIP:</span> {data.tip}
-            </p>
-          </div>
-        </div>
+        <p className="text-sm text-gray-700">
+          <span className="font-semibold">TIP:</span> {data.tip}
+        </p>
       )}
     </div>
   )

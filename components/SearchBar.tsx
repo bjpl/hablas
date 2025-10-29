@@ -60,7 +60,7 @@ export default function SearchBar({ onSearch, placeholder = "Buscar recursos..."
       {/* Search hints */}
       {query && (
         <div className="mt-2 text-sm text-gray-700" role="status" aria-live="polite">
-          <span className="font-medium"><span aria-hidden="true">💡</span> Consejo:</span> Prueba buscar <span lang="en">"saludos"</span>, <span lang="en">"números"</span>, <span lang="en">"emergencia"</span>, <span lang="en">"uber"</span>, etc.
+          <span className="font-medium">Consejo:</span> Prueba buscar <span lang="en">"saludos"</span>, <span lang="en">"números"</span>, <span lang="en">"emergencia"</span>, <span lang="en">"uber"</span>, etc.
         </div>
       )}
     </div>
