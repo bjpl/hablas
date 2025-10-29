@@ -59,7 +59,6 @@ export const resources: Resource[] = [
       "pronunciación"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-2.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_1-audio-script.txt"
   },
   {
@@ -99,7 +98,6 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-4.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_2.md"
   },
   {
@@ -139,7 +137,6 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-6.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_3.md"
   },
   {
@@ -161,7 +158,6 @@ export const resources: Resource[] = [
     "offline": true,
     "audioUrl": "/audio/resource-7.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_2-audio-script.txt",
-    "audioUrl": "/audio/resource-7.mp3"
   },
   {
     "id": 8,
@@ -200,7 +196,6 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-9.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_4.md"
   },
   {
@@ -223,7 +218,6 @@ export const resources: Resource[] = [
     "offline": true,
     "audioUrl": "/audio/resource-10.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_conversations_1-audio-script.txt",
-    "audioUrl": "/audio/resource-10.mp3"
   },
   {
     "id": 11,
@@ -268,7 +262,6 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-12.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_directions_1.md"
   },
   {
@@ -293,7 +286,6 @@ export const resources: Resource[] = [
     "offline": true,
     "audioUrl": "/audio/resource-13.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_audio_navigation_1-audio-script.txt",
-    "audioUrl": "/audio/resource-13.mp3"
   },
   {
     "id": 14,
@@ -338,7 +330,6 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-15.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_directions_2.md"
   },
   {
@@ -383,7 +374,6 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-17.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_3.md"
   },
   {
@@ -408,7 +398,6 @@ export const resources: Resource[] = [
     "offline": true,
     "audioUrl": "/audio/resource-18.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_audio_navigation_2-audio-script.txt",
-    "audioUrl": "/audio/resource-18.mp3"
   },
   {
     "id": 19,
@@ -451,7 +440,6 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-20.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_problems_1.md"
   },
   {
@@ -471,7 +459,6 @@ export const resources: Resource[] = [
     "offline": true,
     "audioUrl": "/audio/resource-21.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_greetings_all_1-audio-script.txt",
-    "audioUrl": "/audio/resource-21.mp3"
   },
   {
     "id": 22,
@@ -507,7 +494,6 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-23.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_time_1.md"
   },
   {
@@ -544,7 +530,6 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-25.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\intermediate_customer_service_1.md"
   },
   {
@@ -581,7 +566,6 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-27.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\emergency_phrases_1.md"
   },
   {
@@ -601,7 +585,6 @@ export const resources: Resource[] = [
     "offline": true,
     "audioUrl": "/audio/resource-28.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_greetings_all_2-audio-script.txt",
-    "audioUrl": "/audio/resource-28.mp3"
   },
   {
     "id": 29,
@@ -637,7 +620,6 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-30.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\safety_protocols_1.md"
   },
   {
@@ -678,7 +660,6 @@ export const resources: Resource[] = [
       "pronunciación"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-32.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_conversations_2-audio-script.txt",
     "audioUrl": "/audio/resource-32.mp3"
   },
@@ -701,7 +682,6 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-33.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_smalltalk_2.md"
   },
   {
@@ -725,7 +705,6 @@ export const resources: Resource[] = [
     "offline": true,
     "audioUrl": "/audio/resource-34.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_audio_conversations_1-audio-script.txt",
-    "audioUrl": "/audio/resource-34.mp3"
   },
   // JSON-converted resources (IDs 35-59) - Added 2025-10-28
   {
@@ -753,7 +732,6 @@ export const resources: Resource[] = [
     "downloadUrl": "/docs/resources/converted/avanzado/complaint-handling.md",
     "tags": ["avanzado", "complaint-handling", "gig-workers", "professional", "business", "pdf"],
     "offline": true,
-    "audioUrl": "/audio/resource-36.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\complaint-handling.md"
   },
   {
@@ -911,7 +889,6 @@ export const resources: Resource[] = [
     "downloadUrl": "/docs/resources/converted/emergency/medical-emergencies.md",
     "tags": ["emergency", "medical", "gig-workers", "intermedio", "safety", "health", "pdf"],
     "offline": true,
-    "audioUrl": "/audio/emergency-var1-en.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\medical-emergencies.md"
   },
   {
