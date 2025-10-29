@@ -6,6 +6,7 @@ import { resources } from '@/data/resources'
 import ReactMarkdown from 'react-markdown'
 import AudioPlayer from '@/components/AudioPlayer'
 import PhraseCard from '@/components/PhraseCard'
+import PhraseBox from '@/components/PhraseBox'
 
 // Types for JSON content structures
 interface VocabularyItem {
@@ -657,13 +658,26 @@ export default function ResourceDetail({ id }: { id: string }) {
                           {children}
                         </ol>
                       ),
-                      pre: ({ children }) => (
-                        <div className="resource-content">
-                          <pre className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl overflow-x-auto mb-6 border-l-4 border-blue-500 shadow-sm hover:shadow-md transition-all">
-                            {children}
-                          </pre>
-                        </div>
-                      ),
+                      pre: ({ children }) => {
+                        // Extract text content
+                        const textContent = typeof children === 'string'
+                          ? children
+                          : children?.toString() || ''
+
+                        // Check if this looks like a phrase box
+                        if (textContent.includes('**English**:') || textContent.includes('**Español**:')) {
+                          return <PhraseBox content={textContent} />
+                        }
+
+                        // Regular pre tag for other content
+                        return (
+                          <div className="resource-content">
+                            <pre className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl overflow-x-auto mb-6 border-l-4 border-gray-400 shadow-sm hover:shadow-md transition-all font-mono text-sm">
+                              {children}
+                            </pre>
+                          </div>
+                        )
+                      },
                       code: ({ children }) => (
                         <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
                           {children}
