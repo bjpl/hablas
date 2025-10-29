@@ -101,7 +101,6 @@ export const resources: Resource[] = [
     ],
     "offline": true,
     "audioUrl": "/audio/resource-4.mp3",
-    "audioUrl": "/audio/frases-esenciales-var2-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_2.md"
   },
   {
@@ -142,7 +141,6 @@ export const resources: Resource[] = [
     ],
     "offline": true,
     "audioUrl": "/audio/resource-6.mp3",
-    "audioUrl": "/audio/frases-esenciales-var3-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_3.md"
   },
   {
@@ -249,7 +247,6 @@ export const resources: Resource[] = [
     ],
     "offline": true,
     "audioUrl": "/audio/resource-11.mp3",
-    "audioUrl": "/audio/saludos-var1-en.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_1.md"
   },
   {
@@ -320,7 +317,6 @@ export const resources: Resource[] = [
     ],
     "offline": true,
     "audioUrl": "/audio/resource-14.mp3",
-    "audioUrl": "/audio/saludos-var2-en.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_2.md"
   },
   {
@@ -389,7 +385,6 @@ export const resources: Resource[] = [
     ],
     "offline": true,
     "audioUrl": "/audio/resource-17.mp3",
-    "audioUrl": "/audio/saludos-var3-en.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_3.md"
   },
   {
@@ -497,7 +492,6 @@ export const resources: Resource[] = [
     ],
     "offline": true,
     "audioUrl": "/audio/resource-22.mp3",
-    "audioUrl": "/audio/numeros-direcciones-var1-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_numbers_1.md"
   },
   {
@@ -515,7 +509,6 @@ export const resources: Resource[] = [
     ],
     "offline": true,
     "audioUrl": "/audio/resource-23.mp3",
-    "audioUrl": "/audio/tiempo-var1-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_time_1.md"
   },
   {
@@ -590,7 +583,6 @@ export const resources: Resource[] = [
     ],
     "offline": true,
     "audioUrl": "/audio/resource-27.mp3",
-    "audioUrl": "/audio/emergencia-var1-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\emergency_phrases_1.md"
   },
   {
@@ -630,7 +622,6 @@ export const resources: Resource[] = [
     ],
     "offline": true,
     "audioUrl": "/audio/resource-29.mp3",
-    "audioUrl": "/audio/numeros-direcciones-var2-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_numbers_2.md"
   },
   {
