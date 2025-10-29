@@ -92,23 +92,21 @@ export default function ResourceDetail({ id }: { id: string }) {
           if (parsed && typeof parsed === 'object' && parsed.type) {
             setJsonContent(parsed)
           } else {
-            // Clean box-drawing characters and normalize whitespace
+            // Clean box-drawing characters but PRESERVE markdown structure
             const cleaned = text
               .replace(/[─│┌┐└┘├┤┬┴┼╔╗╚╝╠╣╦╩╬═║]/g, '')  // Remove box chars
               .split('\n')
               .map(line => line.trim())                    // Trim each line
-              .filter(line => line.length > 0)             // Remove empty lines
-              .join('\n')
+              .join('\n')                                  // Keep ALL lines (empty lines = markdown structure!)
             setContent(cleaned)
           }
         } catch {
-          // Not JSON, clean box-drawing characters and normalize
+          // Not JSON, clean box-drawing characters but PRESERVE markdown structure
           const cleaned = text
             .replace(/[─│┌┐└┘├┤┬┴┼╔╗╚╝╠╣╦╩╬═║]/g, '')
             .split('\n')
             .map(line => line.trim())
-            .filter(line => line.length > 0)
-            .join('\n')
+            .join('\n')                                  // Keep ALL lines (empty lines = markdown structure!)
           setContent(cleaned)
         }
 
