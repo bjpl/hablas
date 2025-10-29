@@ -1,0 +1,5 @@
+# Azure TTS Audio Generation Requirements
+# Install with: pip install -r scripts/azure-audio-requirements.txt
+
+azure-cognitiveservices-speech>=1.35.0
+tqdm>=4.66.0

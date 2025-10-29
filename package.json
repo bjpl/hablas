@@ -28,7 +28,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "generate:audio-specs": "node scripts/generate-audio-specs.js"
+    "generate:audio-specs": "node scripts/generate-audio-specs.js",
+    "generate:audio-metadata": "tsx scripts/create-audio-metadata.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.65.0",

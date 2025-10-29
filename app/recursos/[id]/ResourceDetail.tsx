@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { resources } from '@/data/resources'
 import ReactMarkdown from 'react-markdown'
+import AudioPlayer from '@/components/AudioPlayer'
 
 // Types for JSON content structures
 interface VocabularyItem {
@@ -50,6 +51,7 @@ export default function ResourceDetail({ id }: { id: string }) {
   const [jsonContent, setJsonContent] = useState<JsonResourceContent | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [audioMetadata, setAudioMetadata] = useState<any>(null)
 
   const resourceId = parseInt(id)
   const resource = resources.find(r => r.id === resourceId)
@@ -80,6 +82,12 @@ export default function ResourceDetail({ id }: { id: string }) {
           // Not JSON, treat as regular content
           setContent(text)
         }
+
+        // Extract audio metadata if this is an audio resource
+        if (resource.type === 'audio') {
+          extractAudioMetadata(text)
+        }
+
         setLoading(false)
       })
       .catch(err => {
@@ -88,6 +96,30 @@ export default function ResourceDetail({ id }: { id: string }) {
         console.error('Error loading resource:', err)
       })
   }, [resource])
+
+  // Extract audio metadata from script content
+  const extractAudioMetadata = (scriptContent: string) => {
+    const metadata: any = {}
+
+    // Extract duration
+    const durationMatch = scriptContent.match(/\*\*Total Duration\*\*:\s*([^\n]+)/i)
+    if (durationMatch) metadata.duration = durationMatch[1].trim()
+
+    // Extract voice info
+    const narratorMatch = scriptContent.match(/\*\*Spanish Narrator\*\*:\s*([^\n]+)/i)
+    if (narratorMatch) metadata.narrator = narratorMatch[1].split(',')[0].trim()
+
+    // Extract accent info
+    const accentMatch = scriptContent.match(/accent.*?\(([^)]+)\)/i)
+    if (accentMatch) metadata.accent = accentMatch[1].trim()
+
+    // Default values
+    if (!metadata.duration) metadata.duration = 'Duración variable'
+    if (!metadata.narrator) metadata.narrator = 'Voz profesional bilingüe'
+    if (!metadata.accent) metadata.accent = 'Latinoamericano neutral'
+
+    setAudioMetadata(metadata)
+  }
 
   // Component: VocabularyCard
   const VocabularyCard = ({ item }: { item: VocabularyItem }) => (
@@ -377,6 +409,19 @@ export default function ResourceDetail({ id }: { id: string }) {
             📥 Descargar recurso
           </a>
         </div>
+
+        {/* Audio Player - Show above content for audio resources */}
+        {!loading && !error && resource.type === 'audio' && audioMetadata && (
+          <div className="mb-6">
+            <AudioPlayer
+              title={resource.title}
+              audioUrl={undefined}
+              metadata={audioMetadata}
+              resourceId={resource.id}
+              enhanced={true}
+            />
+          </div>
+        )}
 
         {/* Content display */}
         <div className="bg-white rounded-lg shadow-sm p-6">

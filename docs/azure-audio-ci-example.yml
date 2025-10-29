@@ -1,0 +1,77 @@
+# Example GitHub Actions workflow for automated audio generation
+# Save to: .github/workflows/generate-audio.yml
+
+name: Generate Audio Files
+
+on:
+  # Run when audio-specs directory changes
+  push:
+    paths:
+      - 'audio-specs/**/*.json'
+    branches:
+      - main
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  generate-audio:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r scripts/azure-audio-requirements.txt
+
+      - name: Generate audio files
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          python scripts/generate-azure-audio.py
+
+      - name: Upload audio artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: generated-audio
+          path: public/audio/
+          retention-days: 90
+
+      - name: Deploy to CDN (optional)
+        if: github.ref == 'refs/heads/main'
+        run: |
+          # Example: Upload to S3, Azure Blob, or other CDN
+          # aws s3 sync public/audio/ s3://your-bucket/audio/ --delete
+          echo "Deploy to your CDN here"
+
+      - name: Create summary
+        run: |
+          echo "### Audio Generation Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          python -c "
+          import json
+          with open('public/audio/metadata.json') as f:
+              meta = json.load(f)
+              stats = meta['statistics']
+              print(f\"- Total resources: {stats['total_resources']}\")
+              print(f\"- Successfully generated: {stats['successful']}\")
+              print(f\"- Failed: {stats['failed']}\")
+              print(f\"- Estimated cost: \${stats['estimated_cost_usd']:.4f} USD\")
+          " >> $GITHUB_STEP_SUMMARY
+
+# Required GitHub Secrets:
+# - AZURE_SPEECH_KEY: Your Azure Speech Service key
+# - AZURE_SPEECH_REGION: Your Azure region (e.g., 'eastus')
+#
+# To set secrets:
+# 1. Go to repository Settings > Secrets and variables > Actions
+# 2. Click "New repository secret"
+# 3. Add AZURE_SPEECH_KEY and AZURE_SPEECH_REGION
