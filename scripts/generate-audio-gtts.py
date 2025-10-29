@@ -6,6 +6,7 @@ Matches sinonimos_de_ver pattern but uses free gTTS
 
 import json
 import os
+import time
 from pathlib import Path
 from gtts import gTTS
 
@@ -22,19 +23,51 @@ VOICE_MAPPING = {
     34: {'lang': 'en', 'tld': 'us', 'name': 'American English'}         # Dialogues
 }
 
+def clean_audio_script(text):
+    """Clean audio script - remove production directions and formatting"""
+    cleaned_lines = []
+
+    for line in text.split('\n'):
+        trimmed = line.strip()
+
+        # Skip production directions and metadata
+        if trimmed.startswith('**['):  # [Speaker:], [Tone:], [Pause:], etc
+            continue
+        if trimmed.startswith('## ['):  # Timestamps
+            continue
+        if trimmed.startswith('### ['):  # Section timestamps
+            continue
+        if trimmed.startswith('**Total Duration'):
+            continue
+        if trimmed.startswith('**Target'):
+            continue
+        if trimmed.startswith('**Language'):
+            continue
+        if trimmed == '---':  # Dividers
+            continue
+        if trimmed.startswith('# '):  # Section headers
+            continue
+
+        # Keep actual content (dialogue in quotes)
+        if trimmed:
+            cleaned_lines.append(trimmed)
+
+    # Join and add spacing for natural speech
+    return '\n\n'.join(cleaned_lines)
+
 def read_audio_script(resource_id):
     """Read content from generated-resources audio script files"""
     # Map resource IDs to actual file paths
     file_mapping = {
-        2: 'generated-resources/50-batch/repartidor/basic_audio_1-audio-script.txt',
-        7: 'generated-resources/50-batch/repartidor/basic_audio_2-audio-script.txt',
-        10: 'generated-resources/50-batch/repartidor/intermediate_conversations_1-audio-script.txt',
-        13: 'generated-resources/50-batch/conductor/basic_audio_navigation_1-audio-script.txt',
-        18: 'generated-resources/50-batch/conductor/basic_audio_navigation_2-audio-script.txt',
-        21: 'generated-resources/50-batch/all/basic_greetings_all_1-audio-script.txt',
-        28: 'generated-resources/50-batch/all/basic_greetings_all_2-audio-script.txt',
-        32: 'generated-resources/50-batch/repartidor/intermediate_conversations_2-audio-script.txt',
-        34: 'generated-resources/50-batch/conductor/intermediate_audio_conversations_1-audio-script.txt',
+        2: 'public/generated-resources/50-batch/repartidor/basic_audio_1-audio-script.txt',
+        7: 'public/generated-resources/50-batch/repartidor/basic_audio_2-audio-script.txt',
+        10: 'public/generated-resources/50-batch/repartidor/intermediate_conversations_1-audio-script.txt',
+        13: 'public/generated-resources/50-batch/conductor/basic_audio_navigation_1-audio-script.txt',
+        18: 'public/generated-resources/50-batch/conductor/basic_audio_navigation_2-audio-script.txt',
+        21: 'public/generated-resources/50-batch/all/basic_greetings_all_1-audio-script.txt',
+        28: 'public/generated-resources/50-batch/all/basic_greetings_all_2-audio-script.txt',
+        32: 'public/generated-resources/50-batch/repartidor/intermediate_conversations_2-audio-script.txt',
+        34: 'public/generated-resources/50-batch/conductor/intermediate_audio_conversations_1-audio-script.txt',
     }
 
     script_path = file_mapping.get(resource_id)
@@ -43,10 +76,7 @@ def read_audio_script(resource_id):
 
     with open(script_path, 'r', encoding='utf-8') as f:
         content = f.read()
-        # Extract text to speak (remove markdown headers and metadata)
-        lines = [line.strip() for line in content.split('\n')
-                if line.strip() and not line.startswith('#') and not line.startswith('**')]
-        return '\n'.join(lines[:50])  # Limit to first 50 lines
+        return clean_audio_script(content)
 
 def generate_audio(resource_id, voice_config, output_dir):
     """Generate MP3 audio file using gTTS"""
@@ -135,11 +165,16 @@ def main():
     output_dir = 'public/audio'
     os.makedirs(output_dir, exist_ok=True)
 
-    # Generate audio files
+    # Generate audio files (with delay to avoid rate limiting)
     success_count = 0
-    for resource_id, voice_config in VOICE_MAPPING.items():
+    for i, (resource_id, voice_config) in enumerate(VOICE_MAPPING.items()):
         if generate_audio(resource_id, voice_config, output_dir):
             success_count += 1
+
+        # Add delay between requests to avoid rate limiting
+        if i < len(VOICE_MAPPING) - 1:
+            print("   ⏳ Waiting 10 seconds to avoid rate limits...")
+            time.sleep(10)
 
     # Create metadata
     create_metadata(output_dir)

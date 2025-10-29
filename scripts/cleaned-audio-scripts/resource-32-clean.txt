@@ -1,0 +1,153 @@
+## Diálogos Completos para Escenarios de Entrega
+
+**Level**: Intermedio
+
+**Category**: Delivery Drivers
+
+"¡Hola! Bienvenido a Hablas. Soy tu instructor y hoy vamos a practicar conversaciones completas con clientes en inglés.
+
+En esta lección, aprenderás diálogos reales que puedes usar desde que llegas hasta que terminas la entrega. Son frases que miles de repartidores usan todos los días en Estados Unidos.
+
+Te recomiendo escuchar esta lección dos o tres veces. La primera vez solo escucha. La segunda vez, repite en voz alta. Y recuerda: no necesitas ser perfecto, solo necesitas comunicarte.
+
+¡Vamos a empezar!"
+
+"Escenario 1: Acabas de llegar y el cliente no está afuera. Necesitas avisarle."
+
+"Hi, I'm here with your DoorDash order"
+
+"Hi, I'm here with your DoorDash order"
+
+"Hola, estoy aquí con su pedido de DoorDash"
+
+"Consejo: Di esto cuando llegues, especialmente si llamaste o tocaste el timbre. Cambia 'DoorDash' por 'Uber Eats' o 'Rappi' según tu app."
+
+"Frase 2: Necesitas confirmar que es la persona correcta."
+
+"Are you Maria?"
+
+"Are you Maria?"
+
+"¿Es usted María?"
+
+"Usa el nombre que aparece en la app. Es importante para la seguridad y para confirmar la entrega correcta."
+
+"Frase 3: El momento de entregar el pedido."
+
+"Here's your order from Chipotle. Everything is in the bag."
+
+"Here's your order from Chipotle. Everything is in the bag."
+
+"Aquí está su pedido de Chipotle. Todo está en la bolsa."
+
+"Esta frase es perfecta porque confirmas dos cosas: de qué restaurante es el pedido y que todo está incluido. Esto evita preguntas."
+
+"Frase 4: Cuando entregas bebidas, es bueno avisar."
+
+"Careful, there are drinks in here"
+
+"Careful, there are drinks in here"
+
+"Cuidado, hay bebidas aquí adentro"
+
+"Di esto cuando entregas la bolsa. Ayuda a que el cliente tenga cuidado y no derrame nada. Es un detalle profesional."
+
+"Frase 5: Terminando la entrega de manera profesional."
+
+"You're all set. Have a great day!"
+
+"You're all set. Have a great day!"
+
+"Está todo listo. ¡Que tenga un excelente día!"
+
+"'You're all set' significa 'ya está todo'. Es una forma natural de decir que la entrega está completa. Terminar con 'Have a great day' deja una buena impresión."
+
+"Ahora vamos a escuchar todo el diálogo completo, como una conversación real. Presta atención a cómo fluye naturalmente."
+
+"Hi, I'm here with your DoorDash order."
+
+"Are you Maria?"
+
+"Great! Here's your order from Chipotle. Everything is in the bag."
+
+"Careful, there are drinks in here."
+
+"You're all set. Have a great day!"
+
+"¿Escuchaste cómo suena natural? Ahora lo escucharás una vez más con pausas para que repitas cada frase."
+
+"¡Perfecto! Ahora es tu turno de practicar. Voy a decir cada frase en inglés, y tú repites en voz alta durante la pausa. ¡Vamos!"
+
+"Hi, I'm here with your DoorDash order"
+
+"Are you Maria?"
+
+"Here's your order from Chipotle. Everything is in the bag."
+
+"Careful, there are drinks in here"
+
+"You're all set. Have a great day!"
+
+"¡Excelente trabajo! Cada vez que practicas, tu confianza crece."
+
+"¡Felicitaciones! Acabas de aprender un diálogo completo para entregas.
+
+Hoy practicaste cinco frases esenciales:
+
+- Cómo anunciar tu llegada
+
+- Cómo confirmar el nombre del cliente
+
+- Cómo entregar el pedido profesionalmente
+
+- Cómo advertir sobre bebidas
+
+- Y cómo despedirte de manera amigable
+
+Mi recomendación: escucha esta lección todos los días durante una semana mientras manejas o antes de empezar tu turno. La repetición es la clave.
+
+Recuerda: cada entrega es una oportunidad para practicar. No tengas miedo de cometer errores. Los clientes aprecian el esfuerzo.
+
+Si esta lección te ayudó, descarga el PDF con todas las frases escritas. Y sigue practicando con las otras lecciones de Hablas.
+
+¡Nos vemos en la próxima lección! Keep going, you're doing great!"
+
+## PRODUCTION NOTES
+
+### Voice Talent Requirements:
+
+- **Spanish Narrator**: Neutral Latin American accent, warm and encouraging
+
+- **English Male Voice**: Clear American accent, patient delivery
+
+- **English Female Voice**: Clear American accent, friendly tone
+
+### Audio Quality:
+
+- Sample rate: 44.1kHz
+
+- Format: MP3, 128kbps (for mobile optimization)
+
+- Background: Clean, minimal ambient sound
+
+- Music: Soft instrumental bed at -25dB during intro/outro only
+
+### Accessibility:
+
+- Clear enunciation at 80-90% normal speed
+
+- 3-second pauses for comprehension
+
+- 4-second pauses for repetition practice
+
+- No overlapping audio elements
+
+### Mobile Optimization:
+
+- File size: Under 8MB for easy download
+
+- Chapter markers at each phrase for easy navigation
+
+- Downloadable transcript PDF available
+
+**END OF SCRIPT**

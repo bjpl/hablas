@@ -1,0 +1,179 @@
+"¡Hola, repartidor! Bienvenido a Hablas. Soy tu instructor de inglés para domiciliarios.
+
+En los próximos siete minutos, vas a aprender ocho frases esenciales en inglés para tus entregas diarias. Frases que vas a usar HOY mismo con tus clientes.
+
+Cada frase la escucharás DOS veces en inglés, pronunciada lentamente y con claridad. Después te doy la traducción en español.
+
+Mi consejo: Escucha este audio completo primero. Luego, repítelo mientras manejas o esperas pedidos. La repetición es la clave.
+
+¿Listo? ¡Vamos a empezar!"
+
+"Frase número uno: Cuando llegas a la dirección del cliente."
+
+"Hi, I have your delivery"
+
+"Hi, I have your delivery"
+
+"En español: Hola, tengo su entrega.
+
+Esta es LA frase más importante. Simple, directa, profesional. Úsala siempre al llegar."
+
+"Frase dos: Para confirmar que es la persona correcta."
+
+"Are you Michael?"
+
+"Are you Michael?"
+
+"¿Usted es Michael?
+
+Cambia 'Michael' por el nombre en la app. Esto evita entregas equivocadas y te protege. Siempre confirma el nombre."
+
+"Frase tres: Al entregar el pedido al cliente."
+
+"Here's your order from Chipotle"
+
+"Here's your order from Chipotle"
+
+"Aquí está su pedido de Chipotle.
+
+Reemplaza 'Chipotle' con el nombre del restaurante. Esto le da confianza al cliente de que es su pedido correcto."
+
+"Frase cuatro: Cuando necesitas confirmación del cliente."
+
+"Can you confirm the code, please?"
+
+"Can you confirm the code, please?"
+
+"¿Puede confirmar el código, por favor?
+
+Úsala cuando la app pide código de confirmación. Muy importante para pedidos de alto valor."
+
+"Frase cinco: Para despedirte profesionalmente."
+
+"Have a great day!"
+
+"Have a great day!"
+
+"¡Que tenga un excelente día!
+
+Una despedida amable aumenta tus propinas. Es corta, fácil, y siempre funciona."
+
+"Frase seis: Cuando no puedes acceder al edificio o casa."
+
+"I'm outside, can you come out?"
+
+"I'm outside, can you come out?"
+
+"Estoy afuera, ¿puede salir?
+
+Perfecta para edificios con portero, condominios cerrados, o cuando no encuentras el apartamento."
+
+"Frase siete: Para entregas sin contacto."
+
+"I left it at the door"
+
+"I left it at the door"
+
+"Lo dejé en la puerta.
+
+Úsala al enviar mensaje o si el cliente abre cuando ya te vas. Muy común en entregas contactless."
+
+"Frase ocho: Cuando el cliente te da propina en efectivo."
+
+"Thank you so much!"
+
+"Thank you so much!"
+
+"¡Muchas gracias!
+
+Simple pero poderosa. 'So much' añade énfasis y sinceridad. Los clientes lo aprecian."
+
+"¡Excelente! Ahora viene la práctica rápida. Voy a decir las ocho frases en inglés a velocidad normal. Repite después de cada una en voz alta.
+
+¿Listo? ¡Aquí vamos!"
+
+"Hi, I have your delivery"
+
+"Are you Michael?"
+
+"Here's your order from Chipotle"
+
+"Can you confirm the code, please?"
+
+"Have a great day!"
+
+"I'm outside, can you come out?"
+
+"I left it at the door"
+
+"Thank you so much!"
+
+"¡Muy bien! ¡Lo estás haciendo increíble!"
+
+"Felicidades, repartidor. Acabas de aprender ocho frases esenciales en inglés.
+
+Estas frases van a hacer tu trabajo más fácil, más profesional, y van a aumentar tus propinas.
+
+Mi recomendación: Escucha este audio dos veces al día durante una semana. Mañana, temprano, antes de tu primer pedido. Y en la noche, antes de dormir.
+
+Descarga el PDF con las frases escritas desde la app Hablas.
+
+Recuerda: Cada palabra que aprendes es dinero en tu bolsillo.
+
+¡Nos vemos en la siguiente lección!"
+
+## 📋 PRODUCTION NOTES
+
+### Voice Casting:
+
+- **Spanish Narrator**: Neutral Latin American accent (Colombian or Mexican preferred), warm, encouraging tone, 30-45 years old sound
+
+- **English Speaker**: Native North American English (General American accent), clear enunciation, friendly professional tone
+
+### Audio Quality:
+
+- Sample rate: 44.1kHz
+
+- Format: MP3, 128kbps (optimized for mobile)
+
+- Background: Clean, minimal ambient sound
+
+- Music: Soft background music at -30dB during intro/outro only
+
+### Timing Precision:
+
+- Total script: 7:15 minutes
+
+- Allows for natural breathing and pacing
+
+- Pauses are CRITICAL for learning retention
+
+### Mobile Optimization:
+
+- File size: ~7MB
+
+- Downloadable for offline use
+
+- Resume playback capability
+
+- Speed control option (0.75x, 1x, 1.25x)
+
+## 🎯 LEARNING OUTCOMES
+
+After completing this audio, drivers will be able to:
+
+1. ✅ Greet customers professionally in English
+
+2. ✅ Confirm customer identity and delivery details
+
+3. ✅ Handle access issues politely
+
+4. ✅ Complete contactless deliveries with proper communication
+
+5. ✅ Thank customers appropriately
+
+6. ✅ Increase confidence in customer interactions
+
+7. ✅ Improve tip potential through professional English use
+
+**Next Recommended Audio**: "Pronunciación: Problemas en Entregas - Var 1"
