@@ -35,7 +35,8 @@ export default function AudioPlayer({
   enhanced = false
 }: AudioPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [error, setError] = useState<string | null>(audioUrl ? null : 'Audio próximamente disponible');
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [playbackRate, setPlaybackRate] = useState(1);
@@ -50,18 +51,33 @@ export default function AudioPlayer({
 
   useEffect(() => {
     const audio = audioRef.current;
-    if (!audio || !audioUrl) return;
+    if (!audio || !audioUrl) {
+      setIsLoading(false);
+      setError(audioUrl ? null : 'No hay archivo de audio disponible');
+      return;
+    }
+
+    setIsLoading(true);
+    setError(null);
 
     const handleLoadedMetadata = () => {
       setDuration(audio.duration);
+      setIsLoading(false);
+      setError(null);
     };
 
     const handleTimeUpdate = () => {
       setCurrentTime(audio.currentTime);
     };
 
+    const handleCanPlay = () => {
+      setIsLoading(false);
+      setError(null);
+    };
+
     audio.addEventListener('loadedmetadata', handleLoadedMetadata);
     audio.addEventListener('timeupdate', handleTimeUpdate);
+    audio.addEventListener('canplay', handleCanPlay);
 
     // Auto-stop when component unmounts
     return () => {
@@ -74,6 +90,7 @@ export default function AudioPlayer({
       }
       audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
       audio.removeEventListener('timeupdate', handleTimeUpdate);
+      audio.removeEventListener('canplay', handleCanPlay);
     };
   }, [audioUrl]);
 
@@ -131,9 +148,33 @@ export default function AudioPlayer({
     }
   };
 
-  const handleError = () => {
-    setError('Error al cargar el audio');
+  const handleError = (e: Event) => {
+    const audio = audioRef.current;
+    let errorMessage = 'Error al cargar el audio';
+
+    if (audio?.error) {
+      switch (audio.error.code) {
+        case MediaError.MEDIA_ERR_ABORTED:
+          errorMessage = 'Carga de audio cancelada';
+          break;
+        case MediaError.MEDIA_ERR_NETWORK:
+          errorMessage = 'Error de red al cargar el audio';
+          break;
+        case MediaError.MEDIA_ERR_DECODE:
+          errorMessage = 'Error al decodificar el archivo de audio';
+          break;
+        case MediaError.MEDIA_ERR_SRC_NOT_SUPPORTED:
+          errorMessage = 'Formato de audio no soportado o archivo no encontrado';
+          break;
+        default:
+          errorMessage = 'Error desconocido al cargar el audio';
+      }
+    }
+
+    console.error('Audio error:', { url: audioUrl, error: audio?.error, message: errorMessage });
+    setError(errorMessage);
     setIsPlaying(false);
+    setIsLoading(false);
     if (currentlyPlaying === audioRef.current) {
       currentlyPlaying = null;
     }
@@ -187,7 +228,7 @@ export default function AudioPlayer({
           </div>
         </div>
 
-        {error && !audioUrl && (
+        {!audioUrl ? (
           <div className="text-center py-4">
             <div className="bg-purple-100 rounded-lg p-4 border border-purple-300">
               <p className="text-purple-900 font-medium mb-2">📋 Guión de Audio Disponible</p>
@@ -197,9 +238,21 @@ export default function AudioPlayer({
               </p>
             </div>
           </div>
-        )}
-
-        {audioUrl && !error && (
+        ) : error ? (
+          <div className="text-center py-4">
+            <div className="bg-red-100 rounded-lg p-4 border border-red-300">
+              <p className="text-red-900 font-medium mb-2">⚠️ Error al cargar el audio</p>
+              <p className="text-sm text-red-800">{error}</p>
+              <p className="text-xs text-red-700 mt-2">URL: {audioUrl}</p>
+            </div>
+          </div>
+        ) : isLoading ? (
+          <div className="text-center py-4">
+            <div className="bg-blue-100 rounded-lg p-4 border border-blue-300">
+              <p className="text-blue-900 font-medium">⏳ Cargando audio...</p>
+            </div>
+          </div>
+        ) : (
           <div className="space-y-4">
             <div className="space-y-2">
               <input
@@ -297,7 +350,7 @@ export default function AudioPlayer({
       {/* Play/Pause Button */}
       <button
         onClick={handleToggle}
-        disabled={!!error}
+        disabled={!!error || isLoading || !audioUrl}
         className={`
           flex items-center justify-center
           w-10 h-10 rounded-full
@@ -306,15 +359,19 @@ export default function AudioPlayer({
           ${
             isPlaying
               ? 'bg-accent-green text-white shadow-lg scale-105'
-              : error
+              : error || !audioUrl
               ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+              : isLoading
+              ? 'bg-blue-400 text-white cursor-wait'
               : 'bg-accent-green hover:bg-green-600 text-white shadow-md hover:shadow-lg hover:scale-105'
           }
         `}
-        aria-label={isPlaying ? 'Pausar audio' : 'Reproducir audio'}
+        aria-label={isLoading ? 'Cargando audio' : isPlaying ? 'Pausar audio' : 'Reproducir audio'}
         aria-pressed={isPlaying}
       >
-        {isPlaying ? (
+        {isLoading ? (
+          <span className="animate-spin">⏳</span>
+        ) : isPlaying ? (
           <Pause className="w-5 h-5" aria-hidden="true" />
         ) : (
           <Play className="w-5 h-5 ml-0.5" aria-hidden="true" />
@@ -329,9 +386,14 @@ export default function AudioPlayer({
         </div>
       )}
 
+      {/* Loading State Indicator */}
+      {isLoading && !isPlaying && (
+        <span className="text-sm text-blue-600">Cargando...</span>
+      )}
+
       {/* Error Message */}
       {error && (
-        <span className="text-sm text-red-600" role="alert">
+        <span className="text-sm text-red-600" role="alert" title={audioUrl || 'No URL'}>
           {error}
         </span>
       )}

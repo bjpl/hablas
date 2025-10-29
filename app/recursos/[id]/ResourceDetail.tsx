@@ -354,45 +354,45 @@ export default function ResourceDetail({ id }: { id: string }) {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-10">
-        <div className="max-w-4xl mx-auto px-4 py-4 flex items-center gap-4">
+      <header className="bg-white shadow-md sticky top-0 z-10 border-b border-gray-200">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-5 flex items-center gap-4">
           <button
             onClick={() => router.push('/')}
-            className="text-accent-blue hover:text-blue-700 font-medium"
+            className="text-accent-blue hover:text-blue-700 font-semibold transition-colors duration-200 flex items-center gap-2"
             aria-label="Volver al inicio"
           >
-            ← Volver
+            <span className="text-xl">←</span> Volver
           </button>
           <div className="flex-1">
-            <h1 className="text-lg font-bold line-clamp-1">{resource.title}</h1>
+            <h1 className="text-xl font-bold line-clamp-1 text-gray-900">{resource.title}</h1>
           </div>
         </div>
       </header>
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto px-4 py-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8">
         {/* Resource metadata card */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
-          <div className="flex items-start gap-4 mb-4">
-            <span className="text-4xl">{typeIcons[resource.type]}</span>
+        <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 mb-8 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+          <div className="flex items-start gap-6 mb-6">
+            <span className="text-5xl transition-transform hover:scale-110 duration-200">{typeIcons[resource.type]}</span>
             <div className="flex-1">
-              <h2 className="text-2xl font-bold mb-2">{resource.title}</h2>
-              <p className="text-gray-600 mb-4">{resource.description}</p>
+              <h2 className="text-3xl font-bold mb-3 text-gray-900 leading-tight">{resource.title}</h2>
+              <p className="text-gray-600 mb-6 text-lg leading-relaxed">{resource.description}</p>
 
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full font-medium">
+              <div className="flex flex-wrap gap-3 mb-5">
+                <span className="px-4 py-2 bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 text-sm rounded-full font-semibold shadow-sm">
                   {levelLabels[resource.level]}
                 </span>
-                <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full font-medium">
+                <span className="px-4 py-2 bg-gradient-to-r from-green-100 to-green-200 text-green-800 text-sm rounded-full font-semibold shadow-sm">
                   {categoryLabels[resource.category]}
                 </span>
-                <span className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
-                  {resource.size}
+                <span className="px-4 py-2 bg-gray-100 text-gray-700 text-sm rounded-full font-medium">
+                  📦 {resource.size}
                 </span>
                 {resource.offline && (
-                  <span className="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">
+                  <span className="px-4 py-2 bg-gradient-to-r from-purple-100 to-purple-200 text-purple-800 text-sm rounded-full font-semibold shadow-sm">
                     📱 Disponible offline
                   </span>
                 )}
@@ -404,7 +404,7 @@ export default function ResourceDetail({ id }: { id: string }) {
                   {resource.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="px-2 py-1 bg-gray-50 text-gray-600 text-xs rounded border border-gray-200"
+                      className="px-3 py-1.5 bg-gray-50 text-gray-600 text-xs rounded-lg border border-gray-200 font-medium hover:bg-gray-100 transition-colors"
                     >
                       {tag}
                     </span>
@@ -418,38 +418,41 @@ export default function ResourceDetail({ id }: { id: string }) {
           <a
             href={resource.downloadUrl}
             download
-            className="inline-block w-full sm:w-auto px-6 py-3 bg-accent-green text-white text-center rounded-lg font-medium hover:bg-opacity-90 transition-colors"
+            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-accent-green to-green-600 text-white text-center rounded-xl font-semibold hover:from-green-600 hover:to-accent-green shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
           >
-            📥 Descargar recurso
+            <span className="text-xl">📥</span> Descargar recurso
           </a>
         </div>
 
         {/* Audio Player - Show above content for audio resources */}
         {!loading && !error && resource.type === 'audio' && (
-          <div className="mb-6">
-            <AudioPlayer
-              title={resource.title}
-              audioUrl={audioMetadata?.file ? `/hablas${audioMetadata.file}` : `/hablas/audio/resource-${resourceId}.mp3`}
-              metadata={audioMetadata}
-              resourceId={resource.id}
-              enhanced={true}
-            />
+          <div className="mb-8">
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-lg p-6 border-2 border-blue-200">
+              <AudioPlayer
+                title={resource.title}
+                audioUrl={audioMetadata?.file ? `/hablas${audioMetadata.file}` : `/hablas/audio/resource-${resourceId}.mp3`}
+                metadata={audioMetadata}
+                resourceId={resource.id}
+                enhanced={true}
+              />
+            </div>
           </div>
         )}
 
         {/* Content display */}
-        <div className="bg-white rounded-lg shadow-sm p-6">
+        <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 border border-gray-200">
           {loading && (
-            <div className="text-center py-12">
-              <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-accent-blue"></div>
-              <p className="mt-4 text-gray-600">Cargando contenido...</p>
+            <div className="text-center py-16">
+              <div className="inline-block animate-spin rounded-full h-16 w-16 border-4 border-gray-200 border-t-accent-blue"></div>
+              <p className="mt-6 text-gray-600 font-medium text-lg">Cargando contenido...</p>
             </div>
           )}
 
           {error && (
-            <div className="text-center py-12 text-red-600">
-              <p className="font-medium">{error}</p>
-              <p className="text-sm mt-2">Intenta descargar el recurso directamente</p>
+            <div className="text-center py-16">
+              <div className="text-red-500 text-5xl mb-4">⚠️</div>
+              <p className="font-bold text-red-600 text-xl mb-2">{error}</p>
+              <p className="text-sm text-gray-600">Intenta descargar el recurso directamente</p>
             </div>
           )}
 
@@ -592,20 +595,20 @@ export default function ResourceDetail({ id }: { id: string }) {
         </div>
 
         {/* Bottom navigation */}
-        <div className="mt-6 flex justify-between items-center">
+        <div className="mt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <button
             onClick={() => router.push('/')}
-            className="px-6 py-3 bg-gray-200 text-gray-700 rounded-lg font-medium hover:bg-gray-300 transition-colors"
+            className="w-full sm:w-auto px-8 py-3 bg-gray-200 text-gray-700 rounded-xl font-semibold hover:bg-gray-300 hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5"
           >
             ← Volver a recursos
           </button>
 
           {/* Next/Previous resource navigation */}
-          <div className="flex gap-2">
+          <div className="flex gap-3 w-full sm:w-auto">
             {resourceId > 1 && (
               <button
                 onClick={() => router.push(`/recursos/${resourceId - 1}`)}
-                className="px-4 py-2 bg-accent-blue text-white rounded-lg hover:bg-opacity-90 transition-colors"
+                className="flex-1 sm:flex-none px-6 py-3 bg-gradient-to-r from-accent-blue to-blue-600 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-accent-blue shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
               >
                 ← Anterior
               </button>
@@ -613,7 +616,7 @@ export default function ResourceDetail({ id }: { id: string }) {
             {resourceId < resources.length && (
               <button
                 onClick={() => router.push(`/recursos/${resourceId + 1}`)}
-                className="px-4 py-2 bg-accent-blue text-white rounded-lg hover:bg-opacity-90 transition-colors"
+                className="flex-1 sm:flex-none px-6 py-3 bg-gradient-to-r from-accent-blue to-blue-600 text-white rounded-xl font-semibold hover:from-blue-600 hover:to-accent-blue shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5"
               >
                 Siguiente →
               </button>

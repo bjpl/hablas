@@ -58,7 +58,8 @@ export const resources: Resource[] = [
       "pronunciación"
     ],
     "offline": true,
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_1-audio-script.txt"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_1-audio-script.txt",
+    "audioUrl": "/audio/resource-2.mp3"
   },
   {
     "id": 3,
@@ -153,7 +154,8 @@ export const resources: Resource[] = [
       "pronunciación"
     ],
     "offline": true,
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_2-audio-script.txt"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_2-audio-script.txt",
+    "audioUrl": "/audio/resource-7.mp3"
   },
   {
     "id": 8,
@@ -211,7 +213,8 @@ export const resources: Resource[] = [
       "pronunciación"
     ],
     "offline": true,
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_conversations_1-audio-script.txt"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_conversations_1-audio-script.txt",
+    "audioUrl": "/audio/resource-10.mp3"
   },
   {
     "id": 11,
@@ -277,7 +280,8 @@ export const resources: Resource[] = [
       "pronunciación"
     ],
     "offline": true,
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_audio_navigation_1-audio-script.txt"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_audio_navigation_1-audio-script.txt",
+    "audioUrl": "/audio/resource-13.mp3"
   },
   {
     "id": 14,
@@ -386,7 +390,8 @@ export const resources: Resource[] = [
       "pronunciación"
     ],
     "offline": true,
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_audio_navigation_2-audio-script.txt"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_audio_navigation_2-audio-script.txt",
+    "audioUrl": "/audio/resource-18.mp3"
   },
   {
     "id": 19,
@@ -445,7 +450,8 @@ export const resources: Resource[] = [
       "pronunciación"
     ],
     "offline": true,
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_greetings_all_1-audio-script.txt"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_greetings_all_1-audio-script.txt",
+    "audioUrl": "/audio/resource-21.mp3"
   },
   {
     "id": 22,
@@ -567,7 +573,8 @@ export const resources: Resource[] = [
       "pronunciación"
     ],
     "offline": true,
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_greetings_all_2-audio-script.txt"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_greetings_all_2-audio-script.txt",
+    "audioUrl": "/audio/resource-28.mp3"
   },
   {
     "id": 29,
@@ -641,7 +648,8 @@ export const resources: Resource[] = [
       "pronunciación"
     ],
     "offline": true,
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_conversations_2-audio-script.txt"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_conversations_2-audio-script.txt",
+    "audioUrl": "/audio/resource-32.mp3"
   },
   {
     "id": 33,
@@ -683,7 +691,8 @@ export const resources: Resource[] = [
       "pronunciación"
     ],
     "offline": true,
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_audio_conversations_1-audio-script.txt"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_audio_conversations_1-audio-script.txt",
+    "audioUrl": "/audio/resource-34.mp3"
   },
   // JSON-converted resources (IDs 35-59) - Added 2025-10-28
   {
