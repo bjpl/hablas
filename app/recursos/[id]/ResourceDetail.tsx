@@ -580,9 +580,11 @@ export default function ResourceDetail({ id }: { id: string }) {
                 </div>
               ) : resource.type === 'audio' ? (
                 // Audio content: display as plain text with formatting
-                <pre className="whitespace-pre-wrap font-sans text-sm leading-relaxed">
-                  {content}
-                </pre>
+                <div className="resource-content">
+                  <pre className="whitespace-pre-wrap font-sans text-sm leading-relaxed">
+                    {content}
+                  </pre>
+                </div>
               ) : (() => {
                 // Parse markdown content into phrase cards
                 const phrases = parseMarkdownToPhrases(content)
@@ -612,8 +614,9 @@ export default function ResourceDetail({ id }: { id: string }) {
 
                 // Fallback to regular markdown rendering
                 return (
-                  <ReactMarkdown
-                    components={{
+                  <div className="resource-content">
+                    <ReactMarkdown
+                      components={{
                       h1: ({ children }) => (
                         <h1 className="text-3xl font-bold mt-8 mb-4 text-gray-900">
                           {children}
@@ -645,9 +648,11 @@ export default function ResourceDetail({ id }: { id: string }) {
                         </ol>
                       ),
                       pre: ({ children }) => (
-                        <pre className="bg-gray-50 p-4 rounded-lg overflow-x-auto mb-4 border border-gray-200 font-mono text-sm">
-                          {children}
-                        </pre>
+                        <div className="resource-content">
+                          <pre className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl overflow-x-auto mb-6 border-l-4 border-blue-500 shadow-sm hover:shadow-md transition-all">
+                            {children}
+                          </pre>
+                        </div>
                       ),
                       code: ({ children }) => (
                         <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
@@ -670,9 +675,10 @@ export default function ResourceDetail({ id }: { id: string }) {
                         </div>
                       ),
                     }}
-                  >
-                    {content}
-                  </ReactMarkdown>
+                    >
+                      {content}
+                    </ReactMarkdown>
+                  </div>
                 )
               })()}
             </div>
