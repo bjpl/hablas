@@ -30,14 +30,13 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 
 // Helper: Clean box-drawing characters from content at build time
 function cleanBoxCharacters(text: string): string {
-  // Remove box drawing characters and pipe separators
+  // Remove ALL box-drawing characters globally
   return text
-    .replace(/┌[─]+┐/g, '')  // Remove top borders
-    .replace(/└[─]+┘/g, '')  // Remove bottom borders
-    .replace(/^│\s*/gm, '')  // Remove left borders
-    .replace(/\s*│$/gm, '')  // Remove right borders
-    .replace(/^[─]+$/gm, '') // Remove horizontal lines
-    .trim()
+    .replace(/[┌┐└┘├┤┬┴┼─│═║╔╗╚╝╠╣╦╩╬]/g, '')  // Remove all box chars
+    .split('\n')
+    .map(line => line.trim())  // Trim each line
+    .join('\n')  // Preserve line breaks
+    .replace(/\n{3,}/g, '\n\n')  // Max 2 consecutive newlines
 }
 
 // Server component wrapper - load and clean content at build time
