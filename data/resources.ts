@@ -60,8 +60,7 @@ export const resources: Resource[] = [
     ],
     "offline": true,
     "audioUrl": "/audio/resource-2.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_1-audio-script.txt",
-    "audioUrl": "/audio/resource-2.mp3"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_1-audio-script.txt"
   },
   {
     "id": 3,
