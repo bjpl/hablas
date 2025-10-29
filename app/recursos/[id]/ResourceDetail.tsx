@@ -6,6 +6,9 @@ import { resources } from '@/data/resources'
 import ReactMarkdown from 'react-markdown'
 import AudioPlayer from '@/components/AudioPlayer'
 
+// Box-drawing character detection regex
+const BOX_DRAWING_REGEX = /^[┌│└├─┐┤┘┬┴┼╔╗╚╝╠╣╦╩╬═║]+/
+
 // Types for JSON content structures
 interface VocabularyItem {
   word: string
@@ -318,6 +321,62 @@ export default function ResourceDetail({ id }: { id: string }) {
     )
   }
 
+  // Component: PhraseBox - Styled box-drawing character renderer
+  const PhraseBox = ({ content }: { content: string }) => {
+    return (
+      <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 border-2 border-indigo-300 shadow-lg hover:shadow-xl transition-all duration-300 mb-6">
+        <div className="bg-white rounded-lg p-5 border border-indigo-200 shadow-inner">
+          <pre className="font-mono text-sm leading-relaxed text-gray-800 overflow-x-auto whitespace-pre">
+            {content}
+          </pre>
+        </div>
+      </div>
+    )
+  }
+
+  // Function: Detect and extract box-drawing sections
+  const detectBoxSections = (text: string): Array<{ type: 'box' | 'text', content: string }> => {
+    const lines = text.split('\n')
+    const sections: Array<{ type: 'box' | 'text', content: string }> = []
+    let currentBox: string[] = []
+    let currentText: string[] = []
+
+    const flushText = () => {
+      if (currentText.length > 0) {
+        sections.push({ type: 'text', content: currentText.join('\n') })
+        currentText = []
+      }
+    }
+
+    const flushBox = () => {
+      if (currentBox.length > 0) {
+        sections.push({ type: 'box', content: currentBox.join('\n') })
+        currentBox = []
+      }
+    }
+
+    lines.forEach((line) => {
+      const isBoxLine = BOX_DRAWING_REGEX.test(line.trim())
+
+      if (isBoxLine) {
+        flushText()
+        currentBox.push(line)
+      } else if (currentBox.length > 0 && line.trim().startsWith('│')) {
+        // Continue box if line starts with vertical bar
+        currentBox.push(line)
+      } else {
+        flushBox()
+        currentText.push(line)
+      }
+    })
+
+    // Flush remaining content
+    flushBox()
+    flushText()
+
+    return sections
+  }
+
   if (!resource) {
     return (
       <main className="min-h-screen p-4 max-w-4xl mx-auto">
@@ -526,70 +585,85 @@ export default function ResourceDetail({ id }: { id: string }) {
                 <pre className="whitespace-pre-wrap font-sans text-sm leading-relaxed">
                   {content}
                 </pre>
-              ) : (
-                // Markdown content
-                <ReactMarkdown
-                  components={{
-                    h1: ({ children }) => (
-                      <h1 className="text-3xl font-bold mt-8 mb-4 text-gray-900">
-                        {children}
-                      </h1>
-                    ),
-                    h2: ({ children }) => (
-                      <h2 className="text-2xl font-bold mt-6 mb-3 text-gray-800">
-                        {children}
-                      </h2>
-                    ),
-                    h3: ({ children }) => (
-                      <h3 className="text-xl font-bold mt-4 mb-2 text-gray-800">
-                        {children}
-                      </h3>
-                    ),
-                    p: ({ children }) => (
-                      <p className="mb-4 text-gray-700 leading-relaxed">
-                        {children}
-                      </p>
-                    ),
-                    ul: ({ children }) => (
-                      <ul className="list-disc list-inside mb-4 space-y-2">
-                        {children}
-                      </ul>
-                    ),
-                    ol: ({ children }) => (
-                      <ol className="list-decimal list-inside mb-4 space-y-2">
-                        {children}
-                      </ol>
-                    ),
-                    pre: ({ children }) => (
-                      <pre className="bg-gray-50 p-4 rounded-lg overflow-x-auto mb-4 border border-gray-200">
-                        {children}
-                      </pre>
-                    ),
-                    code: ({ children }) => (
-                      <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
-                        {children}
-                      </code>
-                    ),
-                    blockquote: ({ children }) => (
-                      <blockquote className="border-l-4 border-accent-blue pl-4 italic my-4 text-gray-700">
-                        {children}
-                      </blockquote>
-                    ),
-                    hr: () => (
-                      <hr className="my-8 border-gray-300" />
-                    ),
-                    table: ({ children }) => (
-                      <div className="overflow-x-auto mb-4">
-                        <table className="min-w-full divide-y divide-gray-200">
-                          {children}
-                        </table>
-                      </div>
-                    ),
-                  }}
-                >
-                  {content}
-                </ReactMarkdown>
-              )}
+              ) : (() => {
+                // Markdown content with box-drawing detection
+                const sections = detectBoxSections(content)
+
+                return (
+                  <div>
+                    {sections.map((section, index) => {
+                      if (section.type === 'box') {
+                        return <PhraseBox key={index} content={section.content} />
+                      } else {
+                        return (
+                          <ReactMarkdown
+                            key={index}
+                            components={{
+                              h1: ({ children }) => (
+                                <h1 className="text-3xl font-bold mt-8 mb-4 text-gray-900">
+                                  {children}
+                                </h1>
+                              ),
+                              h2: ({ children }) => (
+                                <h2 className="text-2xl font-bold mt-6 mb-3 text-gray-800">
+                                  {children}
+                                </h2>
+                              ),
+                              h3: ({ children }) => (
+                                <h3 className="text-xl font-bold mt-4 mb-2 text-gray-800">
+                                  {children}
+                                </h3>
+                              ),
+                              p: ({ children }) => (
+                                <p className="mb-4 text-gray-700 leading-relaxed">
+                                  {children}
+                                </p>
+                              ),
+                              ul: ({ children }) => (
+                                <ul className="list-disc list-inside mb-4 space-y-2">
+                                  {children}
+                                </ul>
+                              ),
+                              ol: ({ children }) => (
+                                <ol className="list-decimal list-inside mb-4 space-y-2">
+                                  {children}
+                                </ol>
+                              ),
+                              pre: ({ children }) => (
+                                <pre className="bg-gray-50 p-4 rounded-lg overflow-x-auto mb-4 border border-gray-200 font-mono text-sm">
+                                  {children}
+                                </pre>
+                              ),
+                              code: ({ children }) => (
+                                <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
+                                  {children}
+                                </code>
+                              ),
+                              blockquote: ({ children }) => (
+                                <blockquote className="border-l-4 border-accent-blue pl-4 italic my-4 text-gray-700">
+                                  {children}
+                                </blockquote>
+                              ),
+                              hr: () => (
+                                <hr className="my-8 border-gray-300" />
+                              ),
+                              table: ({ children }) => (
+                                <div className="overflow-x-auto mb-4">
+                                  <table className="min-w-full divide-y divide-gray-200">
+                                    {children}
+                                  </table>
+                                </div>
+                              ),
+                            }}
+                          >
+                            {section.content}
+                          </ReactMarkdown>
+                        )
+                      }
+                    })}
+                  </div>
+                )
+              })()}
             </div>
           )}
         </div>

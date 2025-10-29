@@ -1,0 +1,10 @@
+# Audio Generation Dependencies for Hablas
+# Install with: pip install -r requirements-audio.txt
+
+# Google Text-to-Speech library
+gtts>=2.5.0
+
+# Additional dependencies (auto-installed with gTTS)
+# requests>=2.31.0
+# click>=8.1.0
+# gtts-token>=1.1.4

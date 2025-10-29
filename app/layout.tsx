@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import '@/styles/resource-content.css'
 import { Providers } from './providers'
 import ErrorBoundary from '@/components/ErrorBoundary'
 

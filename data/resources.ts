@@ -39,6 +39,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
+    "audioUrl": "/audio/frases-esenciales-var1-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_1.md"
   },
   {
@@ -97,6 +98,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
+    "audioUrl": "/audio/frases-esenciales-var2-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_2.md"
   },
   {
@@ -135,6 +137,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
+    "audioUrl": "/audio/frases-esenciales-var3-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_3.md"
   },
   {
@@ -236,6 +239,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
+    "audioUrl": "/audio/saludos-var1-en.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_1.md"
   },
   {
@@ -303,6 +307,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
+    "audioUrl": "/audio/saludos-var2-en.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_2.md"
   },
   {
@@ -368,6 +373,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
+    "audioUrl": "/audio/saludos-var3-en.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_3.md"
   },
   {
@@ -470,6 +476,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
+    "audioUrl": "/audio/numeros-direcciones-var1-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_numbers_1.md"
   },
   {
@@ -486,6 +493,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
+    "audioUrl": "/audio/tiempo-var1-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_time_1.md"
   },
   {
@@ -556,6 +564,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
+    "audioUrl": "/audio/emergencia-var1-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\emergency_phrases_1.md"
   },
   {
@@ -593,6 +602,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
+    "audioUrl": "/audio/numeros-direcciones-var2-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_numbers_2.md"
   },
   {
@@ -875,6 +885,7 @@ export const resources: Resource[] = [
     "downloadUrl": "/docs/resources/converted/emergency/medical-emergencies.md",
     "tags": ["emergency", "medical", "gig-workers", "intermedio", "safety", "health", "pdf"],
     "offline": true,
+    "audioUrl": "/audio/emergency-var1-en.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\medical-emergencies.md"
   },
   {
@@ -901,6 +912,7 @@ export const resources: Resource[] = [
     "downloadUrl": "/docs/resources/converted/emergency/safety-concerns.md",
     "tags": ["emergency", "safety", "gig-workers", "intermedio", "pdf"],
     "offline": true,
+    "audioUrl": "/audio/emergency-var2-en.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\safety-concerns.md"
   },
   {

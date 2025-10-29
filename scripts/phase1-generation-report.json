@@ -1,0 +1,86 @@
+{
+  "timestamp": "2025-10-28T23:04:07.050445",
+  "summary": {
+    "total_resources": 12,
+    "successful": 12,
+    "failed": 0,
+    "success_rate": "100.0%",
+    "total_audio_size_mb": "1.37",
+    "total_phrases": 84
+  },
+  "successful_resources": [
+    {
+      "id": 1,
+      "title": "Frases Esenciales - Variación 1",
+      "filename": "frases-esenciales-var1-es.mp3",
+      "size_kb": "131.06"
+    },
+    {
+      "id": 4,
+      "title": "Frases Esenciales - Variación 2",
+      "filename": "frases-esenciales-var2-es.mp3",
+      "size_kb": "125.06"
+    },
+    {
+      "id": 6,
+      "title": "Frases Esenciales - Variación 3",
+      "filename": "frases-esenciales-var3-es.mp3",
+      "size_kb": "121.12"
+    },
+    {
+      "id": 11,
+      "title": "Saludos Pasajeros - Variación 1",
+      "filename": "saludos-var1-en.mp3",
+      "size_kb": "127.88"
+    },
+    {
+      "id": 14,
+      "title": "Saludos Pasajeros - Variación 2",
+      "filename": "saludos-var2-en.mp3",
+      "size_kb": "106.31"
+    },
+    {
+      "id": 17,
+      "title": "Saludos Pasajeros - Variación 3",
+      "filename": "saludos-var3-en.mp3",
+      "size_kb": "120.00"
+    },
+    {
+      "id": 22,
+      "title": "Números y Direcciones - Variación 1",
+      "filename": "numeros-direcciones-var1-es.mp3",
+      "size_kb": "90.56"
+    },
+    {
+      "id": 23,
+      "title": "Tiempo y Horarios",
+      "filename": "tiempo-var1-es.mp3",
+      "size_kb": "116.44"
+    },
+    {
+      "id": 27,
+      "title": "Frases de Emergencia",
+      "filename": "emergencia-var1-es.mp3",
+      "size_kb": "128.25"
+    },
+    {
+      "id": 29,
+      "title": "Números y Direcciones - Variación 2",
+      "filename": "numeros-direcciones-var2-es.mp3",
+      "size_kb": "97.88"
+    },
+    {
+      "id": 48,
+      "title": "Medical Emergencies",
+      "filename": "emergency-var1-en.mp3",
+      "size_kb": "120.00"
+    },
+    {
+      "id": 50,
+      "title": "Personal Safety",
+      "filename": "emergency-var2-en.mp3",
+      "size_kb": "113.62"
+    }
+  ],
+  "failed_resources": []
+}
