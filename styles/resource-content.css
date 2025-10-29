@@ -47,54 +47,42 @@
   line-height: 1.6;
 }
 
-/* Transform box-drawing into elegant cards */
+/* Simple elegant pre blocks - no cards, just typography */
 .resource-content pre {
-  background: linear-gradient(135deg, rgba(74, 144, 226, 0.08) 0%, rgba(80, 201, 195, 0.08) 100%);
-  border-left: 4px solid #4a90e2;
-  border-radius: 12px;
-  padding: 1.5rem 2rem;
+  background: transparent;
+  border: none;
+  padding: 0;
   margin: 1.5rem 0;
-  line-height: 1.7;
+  line-height: 1.8;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #2d4a6f;
   white-space: pre-wrap;
   word-wrap: break-word;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s, box-shadow 0.2s;
-  overflow-x: auto;
 }
 
-.resource-content pre:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
-}
-
-/* Hide only the box-drawing characters, not content */
-.resource-content pre {
-  /* Replace box chars with clean spacing */
-  text-rendering: optimizeLegibility;
-}
-
-/* Style inline code */
-.resource-content code {
-  background: rgba(74, 144, 226, 0.08);
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
-  font-family: 'Monaco', 'Consolas', monospace;
-  font-size: 0.9em;
-  color: #2d4a6f;
-}
-
-/* Enhanced pre styling for phrase boxes */
-.resource-content pre strong {
-  color: #0f2557;
+/* Bold text (English labels, section headers) */
+.resource-content pre strong,
+.resource-content strong {
+  color: #1a365d;
   font-weight: 600;
 }
 
-.resource-content pre em {
-  color: #4a90e2;
-  font-style: normal;
+/* Emojis and special markers */
+.resource-content pre {
+  /* Nice spacing and readability */
+  text-rendering: optimizeLegibility;
+}
+
+/* Inline code */
+.resource-content code {
+  background: #f7fafc;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Consolas', monospace;
+  font-size: 0.9em;
+  color: #2d3748;
+  border: 1px solid #e2e8f0;
 }
 
 /* ============================================
