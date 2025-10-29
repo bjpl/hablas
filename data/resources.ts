@@ -18,6 +18,7 @@ export interface Resource {
   tags: readonly string[] | string[]
   offline: boolean
   contentPath?: string // Optional: absolute path to source file (for development/debugging)
+  audioUrl?: string // Optional: path to MP3 audio file
 }
 
 export const resources: Resource[] = [

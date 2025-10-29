@@ -2,140 +2,69 @@
   "resources": {
     "2": {
       "file": "/audio/resource-2.mp3",
-      "voice": "co_female_1",
-      "text": "Pronunciación: Entregas - Var 1",
-      "duration": "7:15 minutes",
-      "level": "basico",
-      "category": "repartidor"
+      "voice": "co_spanish",
+      "accent": "Colombian Spanish"
     },
     "7": {
       "file": "/audio/resource-7.mp3",
-      "voice": "co_female_1",
-      "text": "Pronunciación: Entregas - Var 2",
-      "duration": "7:15 minutes",
-      "level": "basico",
-      "category": "repartidor"
+      "voice": "co_spanish",
+      "accent": "Colombian Spanish"
     },
     "10": {
       "file": "/audio/resource-10.mp3",
-      "voice": "co_female_1",
-      "text": "Conversaciones con Clientes - Var 1",
-      "duration": "7:15 minutes",
-      "level": "basico",
-      "category": "repartidor"
+      "voice": "mx_spanish",
+      "accent": "Mexican Spanish"
     },
     "13": {
       "file": "/audio/resource-13.mp3",
-      "voice": "co_female_1",
-      "text": "Audio: Direcciones en Inglés - Var 1",
-      "duration": "7:15 minutes",
-      "level": "basico",
-      "category": "conductor"
+      "voice": "us_english",
+      "accent": "American English"
     },
     "18": {
       "file": "/audio/resource-18.mp3",
-      "voice": "co_female_1",
-      "text": "Audio: Direcciones en Inglés - Var 2",
-      "duration": "Unknown",
-      "level": "basico",
-      "category": "conductor"
+      "voice": "us_english",
+      "accent": "American English"
     },
     "21": {
       "file": "/audio/resource-21.mp3",
-      "voice": "co_female_1",
-      "text": "Saludos Básicos en Inglés - Var 1",
-      "duration": "7:15 minutes",
-      "level": "basico",
-      "category": "all"
+      "voice": "co_spanish",
+      "accent": "Colombian Spanish"
     },
     "28": {
       "file": "/audio/resource-28.mp3",
-      "voice": "co_female_1",
-      "text": "Saludos Básicos en Inglés - Var 2",
-      "duration": "7:15 minutes",
-      "level": "basico",
-      "category": "all"
+      "voice": "co_spanish",
+      "accent": "Colombian Spanish"
     },
     "32": {
       "file": "/audio/resource-32.mp3",
-      "voice": "co_female_1",
-      "text": "Conversaciones con Clientes - Var 2",
-      "duration": "7:15 minutes",
-      "level": "basico",
-      "category": "repartidor"
+      "voice": "mx_spanish",
+      "accent": "Mexican Spanish"
     },
     "34": {
       "file": "/audio/resource-34.mp3",
-      "voice": "co_female_1",
-      "text": "Diálogos Reales con Pasajeros - Var 1",
-      "duration": "7:15 minutes",
-      "level": "basico",
-      "category": "conductor"
+      "voice": "us_english",
+      "accent": "American English"
     }
   },
   "voices": {
-    "co_female_1": {
-      "name": "es-CO-SalomeNeural",
+    "co_spanish": {
+      "name": "es-CO (gTTS)",
       "region": "CO",
-      "gender": "female",
-      "description": "Warm, clear Colombian female voice"
+      "gender": "neutral",
+      "description": "Colombian Spanish accent"
     },
-    "co_female_2": {
-      "name": "es-CO-GonzaloNeural",
-      "region": "CO",
-      "gender": "male",
-      "description": "Professional Colombian male voice"
-    },
-    "mx_female_1": {
-      "name": "es-MX-DaliaNeural",
+    "mx_spanish": {
+      "name": "es-MX (gTTS)",
       "region": "MX",
-      "gender": "female",
-      "description": "Friendly Mexican female voice"
+      "gender": "neutral",
+      "description": "Mexican Spanish accent"
     },
-    "mx_male_1": {
-      "name": "es-MX-JorgeNeural",
-      "region": "MX",
-      "gender": "male",
-      "description": "Clear Mexican male voice"
-    },
-    "us_female_1": {
-      "name": "en-US-JennyNeural",
+    "us_english": {
+      "name": "en-US (gTTS)",
       "region": "US",
-      "gender": "female",
-      "description": "Neutral American English female voice"
-    },
-    "us_male_1": {
-      "name": "en-US-GuyNeural",
-      "region": "US",
-      "gender": "male",
-      "description": "Clear American English male voice"
-    },
-    "es_female_1": {
-      "name": "es-ES-ElviraNeural",
-      "region": "ES",
-      "gender": "female",
-      "description": "Clear Spanish female voice"
-    },
-    "es_male_1": {
-      "name": "es-ES-AlvaroNeural",
-      "region": "ES",
-      "gender": "male",
-      "description": "Professional Spanish male voice"
+      "gender": "neutral",
+      "description": "American English accent"
     }
   },
-  "statistics": {
-    "totalResources": 9,
-    "voiceDistribution": {
-      "co_female_1": 9
-    },
-    "levelDistribution": {
-      "basico": 9
-    },
-    "categoryDistribution": {
-      "repartidor": 4,
-      "conductor": 3,
-      "all": 2
-    },
-    "generatedAt": "2025-10-29T02:42:05.597Z"
-  }
+  "generatedAt": "2025-10-29"
 }
