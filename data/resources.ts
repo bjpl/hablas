@@ -40,7 +40,6 @@ export const resources: Resource[] = [
     ],
     "offline": true,
     "audioUrl": "/audio/resource-1.mp3",
-    "audioUrl": "/audio/frases-esenciales-var1-es.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_1.md"
   },
   {
