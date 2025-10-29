@@ -6,6 +6,7 @@ import { resources } from '@/data/resources'
 import ReactMarkdown from 'react-markdown'
 import AudioPlayer from '@/components/AudioPlayer'
 import PhraseCard from '@/components/PhraseCard'
+import PhraseBox from '@/components/PhraseBox'
 
 // Types for JSON content structures
 interface VocabularyItem {
@@ -91,22 +92,12 @@ export default function ResourceDetail({ id }: { id: string }) {
           if (parsed && typeof parsed === 'object' && parsed.type) {
             setJsonContent(parsed)
           } else {
-            // Clean box-drawing characters but PRESERVE markdown structure
-            const cleaned = text
-              .replace(/[─│┌┐└┘├┤┬┴┼╔╗╚╝╠╣╦╩╬═║]/g, '')  // Remove box chars
-              .split('\n')
-              .map(line => line.trim())                    // Trim each line
-              .join('\n')                                  // Keep ALL lines (empty lines = markdown structure!)
-            setContent(cleaned)
+            // Keep original text - box characters will be handled by CSS
+            setContent(text)
           }
         } catch {
-          // Not JSON, clean box-drawing characters but PRESERVE markdown structure
-          const cleaned = text
-            .replace(/[─│┌┐└┘├┤┬┴┼╔╗╚╝╠╣╦╩╬═║]/g, '')
-            .split('\n')
-            .map(line => line.trim())
-            .join('\n')                                  // Keep ALL lines (empty lines = markdown structure!)
-          setContent(cleaned)
+          // Not JSON, keep original text
+          setContent(text)
         }
 
         // Extract audio metadata if this is an audio resource
