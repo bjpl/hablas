@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "resourceId": 21,
+    "title": "Saludos Básicos en Inglés - Var 1",
+    "category": "all",
+    "level": "basico",
+    "language": "Bilingual (Spanish/English)",
+    "targetAudience": "General audience",
+    "estimatedDuration": "7:15 minutes",
+    "createdAt": "2025-10-29T01:42:10.191Z"
+  },
+  "recording": {
+    "format": "MP3",
+    "bitrate": "128kbps",
+    "sampleRate": "44.1kHz",
+    "channels": "Stereo",
+    "codec": "MPEG-1 Audio Layer 3"
+  },
+  "voiceProfile": {
+    "speakerType": "Dual speaker (Spanish narrator + English native)",
+    "accent": "Neutral American English, Neutral Latin American Spanish",
+    "gender": "Male or Female (clear, warm voice)",
+    "ageRange": "30-45 years",
+    "tone": "Warm, encouraging, professional",
+    "characteristics": [
+      "Clear articulation in both languages",
+      "Patient and supportive teaching style",
+      "Culturally appropriate delivery",
+      "Consistent pacing throughout",
+      "Motivational and engaging"
+    ]
+  },
+  "production": {
+    "pace": "Slow for beginners (80% speed for English phrases)",
+    "baseSpeed": "150 words per minute for Spanish, 120 WPM for English",
+    "emphasisStyle": "Natural stress on key vocabulary, clear enunciation",
+    "pauseGuidelines": {
+      "betweenPhrases": "3 seconds (for repetition)",
+      "betweenSections": "2 seconds (for transition)",
+      "forRepetition": "1.5 seconds (during rapid practice)"
+    },
+    "backgroundMusic": {
+      "enabled": true,
+      "volume": "-30dB (subtle, non-intrusive)",
+      "placement": "Intro and outro sections only"
+    }
+  },
+  "content": {
+    "sourceFile": "/generated-resources/50-batch/all/basic_greetings_all_1-audio-script.txt",
+    "totalSegments": 9,
+    "segments": [
+      {
+        "timestamp": "00:00 - 00:45",
+        "duration": "~42s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "neutral",
+        "text": "¡Hola! Bienvenido a Hablas. Soy tu instructor, y hoy vamos a aprender los saludos más importantes en inglés para tu trabajo.\n\nEn los próximos 7 minutos, aprenderás 6 frases esenciales que usarás todos los días con tus clientes. Son frases simples pero muy poderosas.\n\nEscucha con atención. Después de cada frase en inglés, habrá una pausa para que TÚ repitas en voz alta. No tengas miedo de hablar. Nadie te está escuchando. Esta es tu práctica.\n\n¿Listo? Vamos a empezar con lo más básico: cómo saludar a tus clientes.",
+        "notes": "INTRODUCCIÓN",
+        "emphasis": [],
+        "pace": "normal"
+      },
+      {
+        "timestamp": "00:47",
+        "duration": "~32s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "neutral",
+        "text": "Frase número 1: Cuando llegas a recoger un pedido o a recoger un pasajero en la mañana, antes del mediodía.\nGood morning!\nGood morning!\nTraducción: Buenos días. Úsalo desde que amanece hasta las 12 del mediodía.",
+        "notes": "FRASE 1: SALUDO GENERAL - MAÑANA",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "01:35",
+        "duration": "~28s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "neutral",
+        "text": "Frase número 2: Desde el mediodía hasta que oscurece, aproximadamente hasta las 6 o 7 de la tarde.\nGood afternoon!\nGood afternoon!\nTraducción: Buenas tardes. Perfecto para entregas del almuerzo y la tarde.",
+        "notes": "FRASE 2: SALUDO GENERAL - TARDE",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "02:25",
+        "duration": "~36s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "neutral",
+        "text": "Frase número 3: Cuando ya está oscuro, después de las 6 o 7 de la tarde.\nGood evening!\nGood evening!\nTraducción: Buenas noches para saludar. Usa esto para entregas nocturnas.\nNota importante: 'Good evening' es para SALUDAR cuando llegas. Más adelante aprenderás cómo despedirte.",
+        "notes": "FRASE 3: SALUDO GENERAL - NOCHE",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "03:20",
+        "duration": "~27s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "neutral",
+        "text": "Frase número 4: Un saludo que puedes usar a cualquier hora del día, más informal y relajado.\nHello!\nHello!\nTraducción: Hola. Simple y efectivo. Funciona en la mañana, tarde o noche.",
+        "notes": "FRASE 4: SALUDO INFORMAL TODO EL DÍA",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "04:05",
+        "duration": "~34s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "neutral",
+        "text": "Frase número 5: Aún más casual. Perfecto para clientes jóvenes o ambientes relajados.\nHi!\nHi!\nTraducción: Hola, versión corta. Muy común en Estados Unidos.\nConsejo: 'Hi' es perfecto cuando el cliente es joven o cuando ya lo has visto antes.",
+        "notes": "FRASE 5: SALUDO MUY CASUAL",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "04:55",
+        "duration": "~38s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "neutral",
+        "text": "Frase número 6: Después de saludar, puedes preguntar esto para ser más amable y profesional.\nHow are you?\nHow are you?\nTraducción: ¿Cómo estás? o ¿Cómo está usted?\nÚsalo así: Primero saluda - 'Good morning' - y luego pregunta - 'How are you?' Los clientes aprecian mucho esta cortesía.",
+        "notes": "FRASE 6: PREGUNTA AMABLE",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "05:45 - 06:35",
+        "duration": "~44s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "neutral",
+        "text": "¡Excelente! Ahora vamos a practicar todas las frases más rápido. Escucha y repite cada una. ¡Vamos!\nGood morning!\nGood afternoon!\nGood evening!\nHello!\nHi!\nHow are you?\n¡Perfecto! Ahora una vez más, con confianza:\nGood morning!\nGood afternoon!\nGood evening!\nHello!\nHi!\nHow are you?",
+        "notes": "PRÁCTICA RÁPIDA",
+        "emphasis": [],
+        "pace": "normal"
+      },
+      {
+        "timestamp": "06:35 - 07:15",
+        "duration": "~101s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "neutral",
+        "text": "¡Felicidades! Acabas de aprender 6 saludos esenciales en inglés.\n\nRecuerda:\n- 'Good morning' - antes del mediodía\n- 'Good afternoon' - desde el mediodía hasta las 6 o 7 PM\n- 'Good evening' - cuando ya está oscuro\n- 'Hello' y 'Hi' - funcionan todo el día\n- 'How are you?' - después de cualquier saludo\n\nEstos saludos van a mejorar tu experiencia con los clientes inmediatamente. Van a ver que te esfuerzas, y eso significa mejores propinas.\n\nMi consejo: Practica estas frases hoy mismo. Di 'Good morning' a tu primer cliente de mañana. Verás la diferencia.\n\nDescarga el PDF de esta lección en la aplicación Hablas para repasar cuando quieras.\n\nNos vemos en la próxima lección donde aprenderás cómo RESPONDER cuando el cliente te dice 'How are you?'\n\n¡Sigue adelante! Cada palabra que aprendes es dinero en tu bolsillo.\n\n¡Hasta pronto!",
+        "notes": "CONCLUSIÓN",
+        "emphasis": [
+          "END OF SCRIPT"
+        ],
+        "pace": "normal"
+      }
+    ]
+  },
+  "optimization": {
+    "targetFileSize": "~7-10MB (optimized for mobile)",
+    "offlineCapable": true,
+    "resumePlayback": true,
+    "speedControl": [
+      "0.75x",
+      "1x",
+      "1.25x",
+      "1.5x"
+    ],
+    "quality": "High (optimized for speech clarity)"
+  }
+}

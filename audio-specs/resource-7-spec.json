@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "resourceId": 7,
+    "title": "Pronunciación: Entregas - Var 2",
+    "category": "repartidor",
+    "level": "basico",
+    "language": "Bilingual (Spanish/English)",
+    "targetAudience": "Delivery drivers (Beginner level)",
+    "estimatedDuration": "7:15 minutes",
+    "createdAt": "2025-10-29T01:42:10.186Z"
+  },
+  "recording": {
+    "format": "MP3",
+    "bitrate": "128kbps",
+    "sampleRate": "44.1kHz",
+    "channels": "Stereo",
+    "codec": "MPEG-1 Audio Layer 3"
+  },
+  "voiceProfile": {
+    "speakerType": "Dual speaker (Spanish narrator + English native)",
+    "accent": "Neutral American English, Neutral Latin American Spanish",
+    "gender": "Male or Female (clear, warm voice)",
+    "ageRange": "30-45 years",
+    "tone": "Warm, encouraging, professional",
+    "characteristics": [
+      "Clear articulation in both languages",
+      "Patient and supportive teaching style",
+      "Culturally appropriate delivery",
+      "Consistent pacing throughout",
+      "Motivational and engaging"
+    ]
+  },
+  "production": {
+    "pace": "Slow for beginners (80% speed for English phrases)",
+    "baseSpeed": "150 words per minute for Spanish, 120 WPM for English",
+    "emphasisStyle": "Natural stress on key vocabulary, clear enunciation",
+    "pauseGuidelines": {
+      "betweenPhrases": "3 seconds (for repetition)",
+      "betweenSections": "2 seconds (for transition)",
+      "forRepetition": "1.5 seconds (during rapid practice)"
+    },
+    "backgroundMusic": {
+      "enabled": true,
+      "volume": "-30dB (subtle, non-intrusive)",
+      "placement": "Intro and outro sections only"
+    }
+  },
+  "content": {
+    "sourceFile": "/generated-resources/50-batch/repartidor/basic_audio_2-audio-script.txt",
+    "totalSegments": 9,
+    "segments": [
+      {
+        "timestamp": "00:00 - 00:50",
+        "duration": "~39s",
+        "speaker": "Spanish narrator - conversational pace",
+        "language": "spanish",
+        "tone": "Warm, encouraging, friendly",
+        "text": "¡Hola! Bienvenido a Hablas. Soy tu instructor de inglés para repartidores.\n\nEn esta lección de audio, vas a aprender 6 frases esenciales para tus entregas diarias. Cada frase la escucharás dos veces en inglés, con pronunciación clara y lenta.\n\nPuedes escuchar este audio mientras manejas, descansas, o esperas tu próximo pedido. \n\nTe recomiendo repetir cada frase en voz alta. No te preocupes por la perfección. Lo importante es practicar.\n\n¿Listo? Vamos a empezar.",
+        "notes": "INTRODUCCIÓN",
+        "emphasis": [],
+        "pace": "normal"
+      },
+      {
+        "timestamp": "00:50 - 01:30",
+        "duration": "~47s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "Clear, professional",
+        "text": "Frase 1: Cuando llegas al lugar de entrega y necesitas avisar al cliente.\nI'm outside with your delivery\nI'm outside with your delivery\nTraducción: Estoy afuera con tu entrega.\n\nPronunciación: AIM AUT-SAID WIZ YOR DI-LI-VE-RI\nUsa esta frase cuando llegues y el cliente no salga. Es más profesional que tocar el timbre muchas veces.",
+        "notes": "PHRASE 1: ARRIVAL NOTIFICATION",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "01:30 - 02:10",
+        "duration": "~42s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "Polite, questioning",
+        "text": "Frase 2: Para confirmar que estás entregando a la persona correcta.\nAre you Maria?\nAre you Maria?\nTraducción: ¿Eres María?\n\nPronunciación: AR YU MA-RI-A\nReemplaza 'Maria' con el nombre que aparece en la aplicación. Esto previene entregas equivocadas y te protege.",
+        "notes": "PHRASE 2: CONFIRMING THE RECIPIENT",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "02:10 - 02:55",
+        "duration": "~49s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "Friendly, professional",
+        "text": "Frase 3: En el momento de entregar el pedido al cliente.\nHere's your order from Chipotle\nHere's your order from Chipotle\nTraducción: Aquí está su pedido de Chipotle.\n\nPronunciación: HIRS YOR OR-DER FROM CHI-POT-LEI\nSiempre menciona el nombre del restaurante. Puedes decir: 'from McDonald's', 'from Subway', 'from Taco Bell'. Esto ayuda al cliente a confirmar que es su pedido correcto.",
+        "notes": "PHRASE 3: HANDING OVER THE ORDER",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "02:55 - 03:40",
+        "duration": "~54s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "Polite, seeking assistance",
+        "text": "Frase 4: Cuando no encuentras la dirección o el apartamento exacto.\nCan you help me find your apartment?\nCan you help me find your apartment?\nTraducción: ¿Puede ayudarme a encontrar su apartamento?\n\nPronunciación: KEN YU HELP MI FAIND YOR A-PART-MENT\nEsta frase es muy útil en edificios grandes o complejos. También puedes decir: 'Can you help me find your house?' para casas. Los clientes siempre prefieren ayudarte a que su comida llegue fría.",
+        "notes": "PHRASE 4: ASKING FOR LOCATION HELP",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "03:40 - 04:25",
+        "duration": "~51s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "Professional, careful",
+        "text": "Frase 5: Cuando entregas bebidas y quieres prevenir derrames.\nThe drinks are on top, please be careful\nThe drinks are on top, please be careful\nTraducción: Las bebidas están arriba, por favor tenga cuidado.\n\nPronunciación: DA DRINKS AR ON TOP, PLIS BI KER-FUL\nEsta frase te protege de malas calificaciones. Si el cliente derrama algo, ya lo advertiste. Muestra que eres profesional y te importa la calidad.",
+        "notes": "PHRASE 5: DRINK SAFETY CHECK",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "04:25 - 05:10",
+        "duration": "~49s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "Warm, friendly, professional",
+        "text": "Frase 6: Para despedirte del cliente de manera profesional.\nHave a great day!\nHave a great day!\nTraducción: ¡Que tenga un excelente día!\n\nPronunciación: HAV A GREIT DEI\nUna despedida amable puede mejorar tu propina. También puedes decir: 'Have a good night' después de las 6 PM, o 'Enjoy your meal' que significa disfruta tu comida.",
+        "notes": "PHRASE 6: POLITE CLOSING",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "05:10 - 06:30",
+        "duration": "~57s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "Energetic, encouraging",
+        "text": "¡Excelente! Ahora vamos a practicar todas las frases de nuevo. Esta vez a velocidad normal. Repite después de cada frase.\nI'm outside with your delivery\nAre you Maria?\nHere's your order from Chipotle\nCan you help me find your apartment?\nThe drinks are on top, please be careful\nHave a great day!\n¡Muy bien! Ya conoces 6 frases profesionales para tus entregas.",
+        "notes": "PRÁCTICA RÁPIDA",
+        "emphasis": [],
+        "pace": "normal"
+      },
+      {
+        "timestamp": "06:30 - 07:15",
+        "duration": "~106s",
+        "speaker": "Unknown",
+        "language": "bilingual",
+        "tone": "Motivational, supportive, empowering",
+        "text": "Felicitaciones por completar esta lección. \n\nAhora tienes 6 frases que puedes usar hoy mismo en tus entregas.\n\nMi recomendación: Escucha este audio 3 veces. La primera vez solo escucha. La segunda vez repite en voz alta. La tercera vez practica mientras imaginas una entrega real.\n\nRecuerda: Cada cliente es una oportunidad para practicar tu inglés. No tengas miedo de cometer errores. Los clientes aprecian el esfuerzo.\n\nEn la aplicación de Hablas puedes descargar el PDF con todas estas frases escritas y su pronunciación.\n\nSigue practicando. Tu inglés mejora con cada entrega.\n\n¡Nos vemos en la próxima lección!",
+        "notes": "CONCLUSIÓN",
+        "emphasis": [
+          "END OF AUDIO SCRIPT"
+        ],
+        "pace": "normal"
+      }
+    ]
+  },
+  "optimization": {
+    "targetFileSize": "~7-10MB (optimized for mobile)",
+    "offlineCapable": true,
+    "resumePlayback": true,
+    "speedControl": [
+      "0.75x",
+      "1x",
+      "1.25x",
+      "1.5x"
+    ],
+    "quality": "High (optimized for speech clarity)"
+  }
+}

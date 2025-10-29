@@ -1,0 +1,369 @@
+# Tax Management and Business Expenses for Gig Workers
+
+**Level:** Avanzado
+**Category:** app-specific
+**Subcategory:** financial-management
+**Target Audience:** all-gig-workers
+**Cultural Context:** US tax system for contractors
+
+## Description
+
+Essential vocabulary and procedures for managing taxes as independent contractor
+
+## Vocabulary
+
+| English | Spanish | Pronunciation | Context |
+|---------|---------|---------------|---------|
+| Independent contractor / Self-employed | Contratista independiente / Trabajador autónomo | *kon-trah-TEES-tah een-deh-pen-dee-EN-teh / trah-bah-hah-DOR ow-TOH-noh-moh* | Your legal employment status (NOT employee) |
+| Tax deduction / Write-off | Deducción de impuestos / Gasto deducible | *deh-dook-see-ON deh eem-PWES-tohs / GAS-toh deh-doo-SEE-bleh* | Business expense that reduces taxable income |
+| Quarterly estimated taxes | Impuestos estimados trimestrales | *eem-PWES-tohs es-tee-MAH-dohs tree-mes-TRAH-les* | Tax payments made four times per year |
+| Form 1099-NEC / 1099-K | Formulario 1099-NEC / 1099-K | *for-moo-LAH-ree-oh mil noh-VEN-tah ee nweh-veh* | Tax form showing your annual earnings from platforms |
+| Schedule C | Anexo C / Schedule C | *ah-NEK-soh seh / schedule seh* | Tax form for reporting business profit or loss |
+| Self-employment tax | Impuesto de trabajo autónomo | *eem-PWES-toh deh trah-BAH-hoh ow-TOH-noh-moh* | Additional 15.3% tax for Social Security and Medicare |
+| Mileage / Standard mileage rate | Kilometraje / Tarifa estándar por milla | *kee-loh-meh-TRAH-heh / tah-REE-fah es-TAN-dar* | IRS allows deduction of $0.655 per mile (2023 rate) |
+
+## Cultural Notes
+
+### Self-Employment Responsibility
+
+US system puts all tax responsibility on you. No employer withholds or manages taxes
+
+**Colombian Comparison:** Very different from Colombian employment tax withholding system
+
+### Documentation Culture
+
+IRS requires extensive documentation. Verbal agreements or memory not sufficient
+
+**Colombian Comparison:** More documentation-heavy than Colombian informal economy
+
+### Tax Compliance Importance
+
+IRS has significant enforcement power. Not paying taxes = serious legal consequences
+
+**Colombian Comparison:** More systematic enforcement than in many Colombian contexts
+
+### Professional Help Value
+
+Paying for CPA or tax software is normal and wise investment for self-employed
+
+**Colombian Comparison:** More common to use professional help than in Colombian informal economy
+
+## Tax Basics
+
+```json
+{
+  "employmentStatus": {
+    "reality": "You are NOT an employee of Uber, Lyft, DoorDash, etc.",
+    "status": "Independent contractor / self-employed business owner",
+    "implications": [
+      "No taxes withheld from payments - you must pay them",
+      "No employer benefits (health insurance, 401k, unemployment)",
+      "Must pay both employee AND employer portion of Social Security/Medicare (15.3%)",
+      "But: Can deduct business expenses that employees cannot"
+    ]
+  },
+  "taxRates": {
+    "federalIncome": "10-37% depending on total income (progressive brackets)",
+    "selfEmployment": "15.3% (Social Security 12.4% + Medicare 2.9%)",
+    "state": "0-13% depending on state (some states have no income tax)",
+    "local": "Varies by city/county",
+    "total": "Typically 25-40% of net profit goes to taxes"
+  },
+  "quarterly Payments": {
+    "requirement": "Must pay estimated taxes quarterly if you owe $1,000+ annually",
+    "dueDates": [
+      "Q1: April 15 (January-March income)",
+      "Q2: June 15 (April-May income)",
+      "Q3: September 15 (June-August income)",
+      "Q4: January 15 of next year (September-December income)"
+    ],
+    "penalty": "Underpayment penalty + interest if you don't pay enough quarterly",
+    "howTo": "IRS Form 1040-ES or pay online at irs.gov/payments"
+  }
+}
+```
+
+## Deductible Expenses
+
+```json
+{
+  "vehicle": {
+    "twoMethods": "Standard mileage rate OR actual expenses (choose most beneficial)",
+    "standardMileage": {
+      "rate": "$0.655 per business mile (2023 - check current year)",
+      "includes": "Gas, maintenance, depreciation, insurance",
+      "tracking": "MUST track every business mile with log",
+      "example": "10,000 business miles × $0.655 = $6,550 deduction"
+    },
+    "actualExpenses": {
+      "includes": [
+        "Gas",
+        "Oil changes and maintenance",
+        "Repairs",
+        "Tires",
+        "Car washes",
+        "Insurance",
+        "Registration and fees",
+        "Lease payments or depreciation",
+        "Parking and tolls for business"
+      ],
+      "calculation": "Total expenses × business use percentage",
+      "example": "If 80% business use, deduct 80% of all vehicle expenses",
+      "complexity": "More tracking required but can be higher deduction"
+    },
+    "cannotDeduct": [
+      "Commute from home to first ride (and last ride back home)",
+      "Personal trips",
+      "Traffic tickets",
+      "Personal portion of insurance"
+    ]
+  },
+  "phone": {
+    "deductible": "Business use percentage of phone bill and phone purchase",
+    "typical": "80-90% business use for rideshare (higher than typical job)",
+    "calculation": "Monthly bill $100 × 80% business = $80/month deduction",
+    "tracking": "Review phone usage; most time is for gig apps"
+  },
+  "supplies": {
+    "deductible": [
+      "Phone chargers and mounts",
+      "Insulated delivery bags",
+      "Water bottles for passengers",
+      "Tissues, mints, gum",
+      "First aid kit",
+      "Cleaning supplies for vehicle",
+      "Dash cam",
+      "Jumper cables and emergency kit"
+    ],
+    "fullyDeductible": "100% business use items"
+  },
+  "services": {
+    "deductible": [
+      "Accountant or tax preparer fees",
+      "QuickBooks or tax tracking software",
+      "Roadside assistance (AAA)",
+      "Background check fees",
+      "Vehicle inspections required by platform"
+    ]
+  },
+  "other": {
+    "deductible": [
+      "Platform service fees (if you pay any)",
+      "Bottled water and snacks for passengers",
+      "Parking fees during work",
+      "Tolls for work trips",
+      "Car wash expenses",
+      "Meals during work (50% deductible)",
+      "Work-related training or courses"
+    ]
+  }
+}
+```
+
+## Record Keeping
+
+```json
+{
+  "criticalRule": "No documentation = no deduction. IRS requires proof",
+  "mileageLog": {
+    "required": [
+      "Date of trip",
+      "Starting location",
+      "Ending location",
+      "Purpose (passenger pickup, food delivery, etc.)",
+      "Miles driven"
+    ],
+    "methods": [
+      "Stride Tax app (free, automatic)",
+      "Everlance app",
+      "Hurdlr app",
+      "Paper logbook (backup)",
+      "Platform mileage reports (supplement only - not complete)"
+    ],
+    "frequency": "Track EVERY business trip. Recreating months later = IRS rejection"
+  },
+  "receipts": {
+    "keep": "All receipts for business expenses over $75. Under $75 can use credit card statement",
+    "duration": "Keep for 3 years minimum (IRS can audit back 3 years, 6 if major issues)",
+    "method": [
+      "Photo every receipt immediately with phone",
+      "Use Expensify, QuickBooks Self-Employed, or similar app",
+      "Store in cloud (Google Drive, Dropbox) - never lose them",
+      "Organize by category and month"
+    ]
+  },
+  "incomeTracking": {
+    "platforms": "Platforms provide annual summary (1099 forms)",
+    "tips": "Track cash tips separately - platforms don't report these",
+    "bonuses": "Track all bonuses and incentives",
+    "weekly": "Download weekly earnings summary from each platform as backup"
+  }
+}
+```
+
+## Calculating Net Income
+
+```json
+{
+  "example": {
+    "grossEarnings": "$50,000 (what platforms paid you)",
+    "minus": {
+      "mileage": "$19,650 (30,000 miles × $0.655)",
+      "phone": "$960 (80% of $1,200 annual)",
+      "supplies": "$500 (water, chargers, etc.)",
+      "carWash": "$600",
+      "tolls": "$300",
+      "other": "$490"
+    },
+    "totalDeductions": "$22,500",
+    "netIncome": "$27,500 (this is your taxable income)",
+    "taxes": {
+      "selfEmployment": "$3,883 (15.3% of $27,500, with half-deduction)",
+      "federal": "$2,200 (approximately, depends on filing status)",
+      "state": "$1,375 (5% state rate example)",
+      "total": "$7,458 estimated total tax"
+    },
+    "takeHome": "$20,042 after all taxes"
+  },
+  "important": "This is why tracking expenses is CRITICAL. $50k gross becomes $20k take-home"
+}
+```
+
+## Tax Filing
+
+```json
+{
+  "forms": [
+    {
+      "form": "Schedule C (Form 1040)",
+      "purpose": "Report business income and expenses",
+      "who": "All self-employed individuals"
+    },
+    {
+      "form": "Schedule SE",
+      "purpose": "Calculate self-employment tax (Social Security + Medicare)",
+      "who": "If net earnings over $400"
+    },
+    {
+      "form": "Form 1040",
+      "purpose": "Main tax return form",
+      "who": "Everyone"
+    }
+  ],
+  "timing": {
+    "deadline": "April 15 (or next business day)",
+    "extension": "Can file extension to October 15, but must pay estimated tax by April 15",
+    "penalty": "Failure to file or pay = penalties and interest"
+  },
+  "howToFile": [
+    "TurboTax Self-Employed (user-friendly, $119-169)",
+    "H&R Block Self-Employed",
+    "FreeTaxUSA (less expensive option)",
+    "Accountant/CPA (recommended if earnings over $50k or complex situation)",
+    "IRS Free File (if income under $73k)"
+  ]
+}
+```
+
+## Common Mistakes
+
+```json
+{
+  "notTrackingMileage": {
+    "error": "Thinking platform tracking is enough (it's not - often incomplete)",
+    "consequence": "Lose thousands in deductions. Example: 25,000 miles not tracked = $16,375 lost deduction",
+    "solution": "Use Stride or Everlance from Day 1"
+  },
+  "notPayingQuarterly": {
+    "error": "Waiting until April to pay all taxes",
+    "consequence": "Underpayment penalty plus huge bill you may not have saved for",
+    "solution": "Set aside 25-30% of each payment immediately. Pay IRS quarterly"
+  },
+  "mixingPersonalBusiness": {
+    "error": "Not separating personal and business vehicle use",
+    "consequence": "Can't claim business deductions on personal use. IRS audit risk",
+    "solution": "Track every trip. If you make personal trip, note it as personal"
+  },
+  "noReceipts": {
+    "error": "Claiming deductions without receipts",
+    "consequence": "IRS audit = deductions disallowed + penalties + interest",
+    "solution": "Photo every receipt immediately. Use app to organize"
+  },
+  "wrongMethod": {
+    "error": "Using standard mileage when actual expenses would be better (or vice versa)",
+    "consequence": "Paying more tax than necessary",
+    "solution": "Calculate both methods or use tax software that compares"
+  }
+}
+```
+
+## State Specifics
+
+```json
+{
+  "noIncomeTaxStates": [
+    "Alaska",
+    "Florida",
+    "Nevada",
+    "South Dakota",
+    "Tennessee (starting 2021)",
+    "Texas",
+    "Washington",
+    "Wyoming"
+  ],
+  "note": "Still must pay federal and self-employment tax",
+  "highTaxStates": "California (up to 13.3%), New York (8.82%), Hawaii (11%)",
+  "additionalLocal": "Some cities (NYC, San Francisco) have additional income taxes"
+}
+```
+
+## Help Resources
+
+```json
+{
+  "free": [
+    "IRS.gov - Free tax information and forms",
+    "VITA (Volunteer Income Tax Assistance) - Free tax prep for income under $60k",
+    "Score.org - Free small business mentoring",
+    "Gig worker Facebook groups for peer advice"
+  ],
+  "paid": [
+    "CPA specializing in self-employment ($200-500 for tax prep)",
+    "QuickBooks Self-Employed ($15/month - tracks income, expenses, mileage)",
+    "TurboTax Self-Employed ($119-169/year)",
+    "Stride Tax (free app for mileage and expense tracking)"
+  ],
+  "spanish": [
+    "Many VITA sites have Spanish-speaking volunteers",
+    "TurboTax available in Spanish",
+    "IRS has Spanish language forms and publications (irs.gov/spanish)"
+  ]
+}
+```
+
+## Conversation Phrases
+
+```json
+{
+  "explainingToOthers": {
+    "english": "I'm self-employed as an independent contractor. I have to handle my own taxes and business expenses.",
+    "spanish": "Soy trabajador autónomo como contratista independiente. Tengo que manejar mis propios impuestos y gastos de negocio.",
+    "pronunciation": "soy trah-bah-hah-DOR ow-TOH-noh-moh"
+  },
+  "askingForHelp": {
+    "english": "Do you know a good accountant who works with self-employed people?",
+    "spanish": "¿Conoce un buen contador que trabaje con personas que trabajan por cuenta propia?",
+    "pronunciation": "koh-NOH-seh oon bwen kon-tah-DOR"
+  },
+  "bankDiscussion": {
+    "english": "I need to set aside money for quarterly tax payments.",
+    "spanish": "Necesito apartar dinero para pagos de impuestos trimestrales.",
+    "pronunciation": "neh-seh-SEE-toh ah-par-TAR dee-NEH-roh"
+  }
+}
+```
+
+---
+
+*Generated from: app-006*
+*Source: JSON Resources Integration Script*

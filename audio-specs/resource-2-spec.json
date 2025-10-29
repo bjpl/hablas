@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "resourceId": 2,
+    "title": "Pronunciación: Entregas - Var 1",
+    "category": "repartidor",
+    "level": "basico",
+    "language": "Bilingual (Spanish/English)",
+    "targetAudience": "Delivery drivers (Beginner level)",
+    "estimatedDuration": "7:15 minutes",
+    "createdAt": "2025-10-29T01:42:10.182Z"
+  },
+  "recording": {
+    "format": "MP3",
+    "bitrate": "128kbps",
+    "sampleRate": "44.1kHz",
+    "channels": "Stereo",
+    "codec": "MPEG-1 Audio Layer 3"
+  },
+  "voiceProfile": {
+    "speakerType": "Dual speaker (Spanish narrator + English native)",
+    "accent": "Neutral American English, Neutral Latin American Spanish",
+    "gender": "Male or Female (clear, warm voice)",
+    "ageRange": "30-45 years",
+    "tone": "Warm, encouraging, professional",
+    "characteristics": [
+      "Clear articulation in both languages",
+      "Patient and supportive teaching style",
+      "Culturally appropriate delivery",
+      "Consistent pacing throughout",
+      "Motivational and engaging"
+    ]
+  },
+  "production": {
+    "pace": "Slow for beginners (80% speed for English phrases)",
+    "baseSpeed": "150 words per minute for Spanish, 120 WPM for English",
+    "emphasisStyle": "Natural stress on key vocabulary, clear enunciation",
+    "pauseGuidelines": {
+      "betweenPhrases": "3 seconds (for repetition)",
+      "betweenSections": "2 seconds (for transition)",
+      "forRepetition": "1.5 seconds (during rapid practice)"
+    },
+    "backgroundMusic": {
+      "enabled": true,
+      "volume": "-30dB (subtle, non-intrusive)",
+      "placement": "Intro and outro sections only"
+    }
+  },
+  "content": {
+    "sourceFile": "/generated-resources/50-batch/repartidor/basic_audio_1-audio-script.txt",
+    "totalSegments": 11,
+    "segments": [
+      {
+        "timestamp": "00:00 - 00:50",
+        "duration": "~43s",
+        "speaker": "Spanish narrator - friendly male/female voice",
+        "language": "spanish",
+        "tone": "Warm, encouraging, energetic",
+        "text": "¡Hola, repartidor! Bienvenido a Hablas. Soy tu instructor de inglés para domiciliarios.\n\nEn los próximos siete minutos, vas a aprender ocho frases esenciales en inglés para tus entregas diarias. Frases que vas a usar HOY mismo con tus clientes.\n\nCada frase la escucharás DOS veces en inglés, pronunciada lentamente y con claridad. Después te doy la traducción en español.\n\nMi consejo: Escucha este audio completo primero. Luego, repítelo mientras manejas o esperas pedidos. La repetición es la clave.\n\n¿Listo? ¡Vamos a empezar!",
+        "notes": "INTRODUCCIÓN",
+        "emphasis": [],
+        "pace": "normal"
+      },
+      {
+        "timestamp": "00:50",
+        "duration": "~33s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Professional, friendly",
+        "text": "Frase número uno: Cuando llegas a la dirección del cliente.\nHi, I have your delivery\nHi, I have your delivery\nEn español: Hola, tengo su entrega.\n\nEsta es LA frase más importante. Simple, directa, profesional. Úsala siempre al llegar.",
+        "notes": "FRASE 1: LLEGADA AL CLIENTE",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "01:35",
+        "duration": "~31s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Polite, questioning",
+        "text": "Frase dos: Para confirmar que es la persona correcta.\nAre you Michael?\nAre you Michael?\n¿Usted es Michael?\n\nCambia 'Michael' por el nombre en la app. Esto evita entregas equivocadas y te protege. Siempre confirma el nombre.",
+        "notes": "FRASE 2: CONFIRMANDO NOMBRE",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "02:20",
+        "duration": "~33s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Clear, professional",
+        "text": "Frase tres: Al entregar el pedido al cliente.\nHere's your order from Chipotle\nHere's your order from Chipotle\nAquí está su pedido de Chipotle.\n\nReemplaza 'Chipotle' con el nombre del restaurante. Esto le da confianza al cliente de que es su pedido correcto.",
+        "notes": "FRASE 3: ENTREGANDO EL PEDIDO",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "03:05",
+        "duration": "~32s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Polite, clear",
+        "text": "Frase cuatro: Cuando necesitas confirmación del cliente.\nCan you confirm the code, please?\nCan you confirm the code, please?\n¿Puede confirmar el código, por favor?\n\nÚsala cuando la app pide código de confirmación. Muy importante para pedidos de alto valor.",
+        "notes": "FRASE 4: PIDIENDO FIRMA O CÓDIGO",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "03:50",
+        "duration": "~28s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Friendly, warm",
+        "text": "Frase cinco: Para despedirte profesionalmente.\nHave a great day!\nHave a great day!\n¡Que tenga un excelente día!\n\nUna despedida amable aumenta tus propinas. Es corta, fácil, y siempre funciona.",
+        "notes": "FRASE 5: DESPEDIDA PROFESIONAL",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "04:30",
+        "duration": "~32s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Polite, helpful",
+        "text": "Frase seis: Cuando no puedes acceder al edificio o casa.\nI'm outside, can you come out?\nI'm outside, can you come out?\nEstoy afuera, ¿puede salir?\n\nPerfecta para edificios con portero, condominios cerrados, o cuando no encuentras el apartamento.",
+        "notes": "FRASE 6: PROBLEMA CON ACCESO",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "05:10",
+        "duration": "~33s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Clear, informative",
+        "text": "Frase siete: Para entregas sin contacto.\nI left it at the door\nI left it at the door\nLo dejé en la puerta.\n\nÚsala al enviar mensaje o si el cliente abre cuando ya te vas. Muy común en entregas contactless.",
+        "notes": "FRASE 7: DEJANDO EN LA PUERTA",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "05:50",
+        "duration": "~30s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Grateful, warm",
+        "text": "Frase ocho: Cuando el cliente te da propina en efectivo.\nThank you so much!\nThank you so much!\n¡Muchas gracias!\n\nSimple pero poderosa. 'So much' añade énfasis y sinceridad. Los clientes lo aprecian.",
+        "notes": "FRASE 8: AGRADECIENDO",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "06:20 - 07:00",
+        "duration": "~53s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Energetic, motivating",
+        "text": "¡Excelente! Ahora viene la práctica rápida. Voy a decir las ocho frases en inglés a velocidad normal. Repite después de cada una en voz alta.\n\n¿Listo? ¡Aquí vamos!\nHi, I have your delivery\nAre you Michael?\nHere's your order from Chipotle\nCan you confirm the code, please?\nHave a great day!\nI'm outside, can you come out?\nI left it at the door\nThank you so much!\n¡Muy bien! ¡Lo estás haciendo increíble!",
+        "notes": "PRÁCTICA RÁPIDA",
+        "emphasis": [],
+        "pace": "normal (100%)"
+      },
+      {
+        "timestamp": "07:00 - 07:15",
+        "duration": "~113s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Encouraging, motivational",
+        "text": "Felicidades, repartidor. Acabas de aprender ocho frases esenciales en inglés.\n\nEstas frases van a hacer tu trabajo más fácil, más profesional, y van a aumentar tus propinas.\n\nMi recomendación: Escucha este audio dos veces al día durante una semana. Mañana, temprano, antes de tu primer pedido. Y en la noche, antes de dormir.\n\nDescarga el PDF con las frases escritas desde la app Hablas.\n\nRecuerda: Cada palabra que aprendes es dinero en tu bolsillo.\n\n¡Nos vemos en la siguiente lección!\nPronunciación: Problemas en Entregas - Var 1",
+        "notes": "CONCLUSIÓN",
+        "emphasis": [],
+        "pace": "normal"
+      }
+    ]
+  },
+  "optimization": {
+    "targetFileSize": "~7-10MB (optimized for mobile)",
+    "offlineCapable": true,
+    "resumePlayback": true,
+    "speedControl": [
+      "0.75x",
+      "1x",
+      "1.25x",
+      "1.5x"
+    ],
+    "quality": "High (optimized for speech clarity)"
+  }
+}

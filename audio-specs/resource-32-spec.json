@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "resourceId": 32,
+    "title": "Conversaciones con Clientes - Var 2",
+    "category": "repartidor",
+    "level": "basico",
+    "language": "Bilingual (Spanish/English)",
+    "targetAudience": "General audience",
+    "estimatedDuration": "7:15 minutes",
+    "createdAt": "2025-10-29T01:42:10.194Z"
+  },
+  "recording": {
+    "format": "MP3",
+    "bitrate": "128kbps",
+    "sampleRate": "44.1kHz",
+    "channels": "Stereo",
+    "codec": "MPEG-1 Audio Layer 3"
+  },
+  "voiceProfile": {
+    "speakerType": "Dual speaker (Spanish narrator + English native)",
+    "accent": "Neutral American English, Neutral Latin American Spanish",
+    "gender": "Male or Female (clear, warm voice)",
+    "ageRange": "30-45 years",
+    "tone": "Warm, encouraging, professional",
+    "characteristics": [
+      "Clear articulation in both languages",
+      "Patient and supportive teaching style",
+      "Culturally appropriate delivery",
+      "Consistent pacing throughout",
+      "Motivational and engaging"
+    ]
+  },
+  "production": {
+    "pace": "Slow for beginners (80% speed for English phrases)",
+    "baseSpeed": "150 words per minute for Spanish, 120 WPM for English",
+    "emphasisStyle": "Natural stress on key vocabulary, clear enunciation",
+    "pauseGuidelines": {
+      "betweenPhrases": "3 seconds (for repetition)",
+      "betweenSections": "2 seconds (for transition)",
+      "forRepetition": "1.5 seconds (during rapid practice)"
+    },
+    "backgroundMusic": {
+      "enabled": true,
+      "volume": "-30dB (subtle, non-intrusive)",
+      "placement": "Intro and outro sections only"
+    }
+  },
+  "content": {
+    "sourceFile": "/generated-resources/50-batch/repartidor/intermediate_conversations_2-audio-script.txt",
+    "totalSegments": 9,
+    "segments": [
+      {
+        "timestamp": "00:00 - 00:45",
+        "duration": "~42s",
+        "speaker": "Spanish narrator - friendly voice",
+        "language": "spanish",
+        "tone": "Warm, encouraging, energetic",
+        "text": "¡Hola! Bienvenido a Hablas. Soy tu instructor y hoy vamos a practicar conversaciones completas con clientes en inglés.\n\nEn esta lección, aprenderás diálogos reales que puedes usar desde que llegas hasta que terminas la entrega. Son frases que miles de repartidores usan todos los días en Estados Unidos.\n\nTe recomiendo escuchar esta lección dos o tres veces. La primera vez solo escucha. La segunda vez, repite en voz alta. Y recuerda: no necesitas ser perfecto, solo necesitas comunicarte.\n\n¡Vamos a empezar!",
+        "notes": "INTRODUCTION",
+        "emphasis": [],
+        "pace": "normal"
+      },
+      {
+        "timestamp": "00:47",
+        "duration": "~48s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Professional, clear",
+        "text": "Escenario 1: Acabas de llegar y el cliente no está afuera. Necesitas avisarle.\nHi, I'm here with your DoorDash order\nHi, I'm here with your DoorDash order\nHola, estoy aquí con su pedido de DoorDash\nConsejo: Di esto cuando llegues, especialmente si llamaste o tocaste el timbre. Cambia 'DoorDash' por 'Uber Eats' o 'Rappi' según tu app.",
+        "notes": "ESCENARIO 1: LLEGANDO AL LUGAR DE ENTREGA",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "01:35",
+        "duration": "~38s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Polite, questioning",
+        "text": "Frase 2: Necesitas confirmar que es la persona correcta.\nAre you Maria?\nAre you Maria?\n¿Es usted María?\nUsa el nombre que aparece en la app. Es importante para la seguridad y para confirmar la entrega correcta.",
+        "notes": "FRASE 2: CONFIRMAR NOMBRE DEL CLIENTE",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "02:20",
+        "duration": "~48s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Friendly, professional",
+        "text": "Frase 3: El momento de entregar el pedido.\nHere's your order from Chipotle. Everything is in the bag.\nHere's your order from Chipotle. Everything is in the bag.\nAquí está su pedido de Chipotle. Todo está en la bolsa.\nEsta frase es perfecta porque confirmas dos cosas: de qué restaurante es el pedido y que todo está incluido. Esto evita preguntas.",
+        "notes": "FRASE 3: ENTREGANDO EL PEDIDO",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "03:10",
+        "duration": "~42s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Careful, clear",
+        "text": "Frase 4: Cuando entregas bebidas, es bueno avisar.\nCareful, there are drinks in here\nCareful, there are drinks in here\nCuidado, hay bebidas aquí adentro\nDi esto cuando entregas la bolsa. Ayuda a que el cliente tenga cuidado y no derrame nada. Es un detalle profesional.",
+        "notes": "FRASE 4: CUANDO HAY BEBIDAS",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "03:55",
+        "duration": "~47s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Warm, friendly",
+        "text": "Frase 5: Terminando la entrega de manera profesional.\nYou're all set. Have a great day!\nYou're all set. Have a great day!\nEstá todo listo. ¡Que tenga un excelente día!\n'You're all set' significa 'ya está todo'. Es una forma natural de decir que la entrega está completa. Terminar con 'Have a great day' deja una buena impresión.",
+        "notes": "FRASE 5: DESPEDIDA PROFESIONAL",
+        "emphasis": [],
+        "pace": "slow (80%)"
+      },
+      {
+        "timestamp": "04:45",
+        "duration": "~57s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Confident, natural pace",
+        "text": "Ahora vamos a escuchar todo el diálogo completo, como una conversación real. Presta atención a cómo fluye naturalmente.\nHi, I'm here with your DoorDash order.\nAre you Maria?\nGreat! Here's your order from Chipotle. Everything is in the bag.\nCareful, there are drinks in here.\nYou're all set. Have a great day!\n¿Escuchaste cómo suena natural? Ahora lo escucharás una vez más con pausas para que repitas cada frase.",
+        "notes": "ESCENARIO COMPLETO: TODO JUNTO",
+        "emphasis": [],
+        "pace": "normal"
+      },
+      {
+        "timestamp": "05:45 - 06:35",
+        "duration": "~66s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Energetic, encouraging",
+        "text": "¡Perfecto! Ahora es tu turno de practicar. Voy a decir cada frase en inglés, y tú repites en voz alta durante la pausa. ¡Vamos!\nHi, I'm here with your DoorDash order\nAre you Maria?\nHere's your order from Chipotle. Everything is in the bag.\nCareful, there are drinks in here\nYou're all set. Have a great day!\n¡Excelente trabajo! Cada vez que practicas, tu confianza crece.",
+        "notes": "PRACTICE DRILL",
+        "emphasis": [],
+        "pace": "normal"
+      },
+      {
+        "timestamp": "06:35 - 07:15",
+        "duration": "~105s",
+        "speaker": "Spanish narrator",
+        "language": "spanish",
+        "tone": "Motivational, supportive",
+        "text": "¡Felicitaciones! Acabas de aprender un diálogo completo para entregas.\n\nHoy practicaste cinco frases esenciales:\n- Cómo anunciar tu llegada\n- Cómo confirmar el nombre del cliente\n- Cómo entregar el pedido profesionalmente\n- Cómo advertir sobre bebidas\n- Y cómo despedirte de manera amigable\n\nMi recomendación: escucha esta lección todos los días durante una semana mientras manejas o antes de empezar tu turno. La repetición es la clave.\n\nRecuerda: cada entrega es una oportunidad para practicar. No tengas miedo de cometer errores. Los clientes aprecian el esfuerzo.\n\nSi esta lección te ayudó, descarga el PDF con todas las frases escritas. Y sigue practicando con las otras lecciones de Hablas.\n\n¡Nos vemos en la próxima lección! Keep going, you're doing great!",
+        "notes": "CONCLUSION",
+        "emphasis": [
+          "END OF SCRIPT"
+        ],
+        "pace": "normal"
+      }
+    ]
+  },
+  "optimization": {
+    "targetFileSize": "~7-10MB (optimized for mobile)",
+    "offlineCapable": true,
+    "resumePlayback": true,
+    "speedControl": [
+      "0.75x",
+      "1x",
+      "1.25x",
+      "1.5x"
+    ],
+    "quality": "High (optimized for speech clarity)"
+  }
+}

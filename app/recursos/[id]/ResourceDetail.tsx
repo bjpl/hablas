@@ -5,9 +5,49 @@ import { useEffect, useState } from 'react'
 import { resources } from '@/data/resources'
 import ReactMarkdown from 'react-markdown'
 
+// Types for JSON content structures
+interface VocabularyItem {
+  word: string
+  pronunciation: string
+  translation: string
+  context?: string
+  example?: string
+}
+
+interface CulturalNoteData {
+  title: string
+  content: string
+  importance: 'high' | 'medium' | 'low'
+  region?: string
+}
+
+interface PracticalScenarioData {
+  title: string
+  situation: string
+  phrases: Array<{ spanish: string; pronunciation: string; english: string }>
+  tips?: string[]
+}
+
+interface PhraseData {
+  spanish: string
+  pronunciation: string
+  english: string
+  formality?: 'formal' | 'informal' | 'neutral'
+  context?: string
+}
+
+interface JsonResourceContent {
+  type: 'vocabulary' | 'cultural' | 'scenarios' | 'phrases'
+  vocabulary?: VocabularyItem[]
+  culturalNotes?: CulturalNoteData[]
+  scenarios?: PracticalScenarioData[]
+  phrases?: PhraseData[]
+}
+
 export default function ResourceDetail({ id }: { id: string }) {
   const router = useRouter()
   const [content, setContent] = useState<string>('')
+  const [jsonContent, setJsonContent] = useState<JsonResourceContent | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
@@ -28,7 +68,18 @@ export default function ResourceDetail({ id }: { id: string }) {
         return response.text()
       })
       .then(text => {
-        setContent(text)
+        // Try to parse as JSON first
+        try {
+          const parsed = JSON.parse(text)
+          if (parsed && typeof parsed === 'object' && parsed.type) {
+            setJsonContent(parsed)
+          } else {
+            setContent(text)
+          }
+        } catch {
+          // Not JSON, treat as regular content
+          setContent(text)
+        }
         setLoading(false)
       })
       .catch(err => {
@@ -37,6 +88,189 @@ export default function ResourceDetail({ id }: { id: string }) {
         console.error('Error loading resource:', err)
       })
   }, [resource])
+
+  // Component: VocabularyCard
+  const VocabularyCard = ({ item }: { item: VocabularyItem }) => (
+    <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200 hover:shadow-lg transition-all duration-300 focus-within:ring-2 focus-within:ring-blue-400">
+      <div className="flex items-start justify-between mb-3">
+        <h3 className="text-2xl font-bold text-gray-900" lang="es">{item.word}</h3>
+        <span className="text-xl" aria-hidden="true">💬</span>
+      </div>
+      <div className="space-y-2">
+        <p className="text-gray-600 italic" aria-label="Pronunciación">
+          🗣️ {item.pronunciation}
+        </p>
+        <p className="text-lg font-medium text-indigo-900" lang="en">
+          {item.translation}
+        </p>
+        {item.context && (
+          <p className="text-sm text-gray-700 mt-3 pl-4 border-l-4 border-indigo-300">
+            <span className="font-semibold">Contexto:</span> {item.context}
+          </p>
+        )}
+        {item.example && (
+          <p className="text-sm text-gray-600 mt-2 bg-white p-3 rounded border border-gray-200">
+            <span className="font-semibold">Ejemplo:</span> {item.example}
+          </p>
+        )}
+      </div>
+    </div>
+  )
+
+  // Component: CulturalNote
+  const CulturalNote = ({ note }: { note: CulturalNoteData }) => {
+    const importanceColors = {
+      high: 'from-red-50 to-orange-50 border-red-300',
+      medium: 'from-yellow-50 to-amber-50 border-yellow-300',
+      low: 'from-green-50 to-emerald-50 border-green-300'
+    }
+    const importanceIcons = {
+      high: '🔴',
+      medium: '🟡',
+      low: '🟢'
+    }
+    const importanceLabels = {
+      high: 'Alta importancia',
+      medium: 'Importancia media',
+      low: 'Información adicional'
+    }
+
+    return (
+      <div
+        className={`bg-gradient-to-br ${importanceColors[note.importance]} rounded-lg p-6 border-2 hover:shadow-lg transition-all duration-300`}
+        role="article"
+        aria-labelledby={`cultural-note-${note.title.replace(/\s+/g, '-')}`}
+      >
+        <div className="flex items-start gap-3 mb-3">
+          <span className="text-2xl" aria-hidden="true">🌍</span>
+          <div className="flex-1">
+            <h3
+              id={`cultural-note-${note.title.replace(/\s+/g, '-')}`}
+              className="text-xl font-bold text-gray-900 mb-1"
+            >
+              {note.title}
+            </h3>
+            <div className="flex items-center gap-2 text-sm">
+              <span aria-label={importanceLabels[note.importance]}>
+                {importanceIcons[note.importance]} {importanceLabels[note.importance]}
+              </span>
+              {note.region && (
+                <span className="px-2 py-1 bg-white rounded text-gray-700 text-xs">
+                  📍 {note.region}
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+        <p className="text-gray-700 leading-relaxed">{note.content}</p>
+      </div>
+    )
+  }
+
+  // Component: PracticalScenario
+  const PracticalScenario = ({ scenario }: { scenario: PracticalScenarioData }) => {
+    const [expanded, setExpanded] = useState(false)
+
+    return (
+      <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-6 border-2 border-purple-200 hover:shadow-lg transition-all duration-300">
+        <div className="flex items-start gap-3 mb-4">
+          <span className="text-2xl" aria-hidden="true">🎭</span>
+          <div className="flex-1">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">{scenario.title}</h3>
+            <p className="text-gray-700 italic">{scenario.situation}</p>
+          </div>
+        </div>
+
+        <button
+          onClick={() => setExpanded(!expanded)}
+          className="w-full py-2 px-4 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition-colors focus:ring-2 focus:ring-purple-400 focus:outline-none mb-3"
+          aria-expanded={expanded}
+          aria-controls={`scenario-phrases-${scenario.title.replace(/\s+/g, '-')}`}
+        >
+          {expanded ? '▼ Ocultar frases' : '▶ Ver frases útiles'}
+        </button>
+
+        <div
+          id={`scenario-phrases-${scenario.title.replace(/\s+/g, '-')}`}
+          className={`space-y-3 overflow-hidden transition-all duration-300 ${
+            expanded ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
+          }`}
+        >
+          {scenario.phrases.map((phrase, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg p-4 border border-purple-200 hover:border-purple-400 transition-colors"
+            >
+              <p className="text-lg font-semibold text-gray-900 mb-1" lang="es">
+                {phrase.spanish}
+              </p>
+              <p className="text-sm text-gray-600 italic mb-2">🗣️ {phrase.pronunciation}</p>
+              <p className="text-sm text-purple-900" lang="en">{phrase.english}</p>
+            </div>
+          ))}
+
+          {scenario.tips && scenario.tips.length > 0 && (
+            <div className="bg-purple-100 rounded-lg p-4 mt-4 border border-purple-300">
+              <h4 className="font-bold text-purple-900 mb-2 flex items-center gap-2">
+                💡 Consejos prácticos
+              </h4>
+              <ul className="space-y-1 text-sm text-gray-700">
+                {scenario.tips.map((tip, index) => (
+                  <li key={index} className="flex items-start gap-2">
+                    <span className="text-purple-600 mt-0.5">•</span>
+                    <span>{tip}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+    )
+  }
+
+  // Component: PhraseList
+  const PhraseList = ({ phrase }: { phrase: PhraseData }) => {
+    const formalityColors = {
+      formal: 'bg-blue-50 border-blue-300',
+      informal: 'bg-green-50 border-green-300',
+      neutral: 'bg-gray-50 border-gray-300'
+    }
+    const formalityLabels = {
+      formal: 'Formal',
+      informal: 'Informal',
+      neutral: 'Neutral'
+    }
+
+    return (
+      <div
+        className={`${phrase.formality ? formalityColors[phrase.formality] : 'bg-gray-50 border-gray-300'} rounded-lg p-5 border-2 hover:shadow-md transition-all duration-300 focus-within:ring-2 focus-within:ring-accent-blue`}
+        tabIndex={0}
+      >
+        <div className="flex items-start justify-between mb-3">
+          <div className="flex-1">
+            <p className="text-xl font-bold text-gray-900 mb-1" lang="es">
+              {phrase.spanish}
+            </p>
+            <p className="text-sm text-gray-600 italic">🗣️ {phrase.pronunciation}</p>
+          </div>
+          {phrase.formality && (
+            <span className="px-3 py-1 bg-white rounded-full text-xs font-medium text-gray-700 border border-gray-300">
+              {formalityLabels[phrase.formality]}
+            </span>
+          )}
+        </div>
+        <p className="text-base text-gray-800 mb-2" lang="en">
+          ➜ {phrase.english}
+        </p>
+        {phrase.context && (
+          <p className="text-sm text-gray-600 mt-3 pl-4 border-l-4 border-gray-400">
+            <span className="font-semibold">Uso:</span> {phrase.context}
+          </p>
+        )}
+      </div>
+    )
+  }
 
   if (!resource) {
     return (
@@ -160,9 +394,72 @@ export default function ResourceDetail({ id }: { id: string }) {
             </div>
           )}
 
-          {!loading && !error && content && (
+          {!loading && !error && (jsonContent || content) && (
             <div className="prose prose-sm sm:prose max-w-none">
-              {resource.type === 'audio' ? (
+              {jsonContent ? (
+                // Render JSON structured content
+                <div className="space-y-6">
+                  {/* Vocabulary Section */}
+                  {jsonContent.vocabulary && jsonContent.vocabulary.length > 0 && (
+                    <section aria-labelledby="vocabulary-section">
+                      <h2 id="vocabulary-section" className="text-3xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+                        <span aria-hidden="true">📚</span>
+                        Vocabulario
+                      </h2>
+                      <div className="grid gap-4 md:grid-cols-2">
+                        {jsonContent.vocabulary.map((item, index) => (
+                          <VocabularyCard key={index} item={item} />
+                        ))}
+                      </div>
+                    </section>
+                  )}
+
+                  {/* Cultural Notes Section */}
+                  {jsonContent.culturalNotes && jsonContent.culturalNotes.length > 0 && (
+                    <section aria-labelledby="cultural-section" className="mt-8">
+                      <h2 id="cultural-section" className="text-3xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+                        <span aria-hidden="true">🌍</span>
+                        Notas Culturales
+                      </h2>
+                      <div className="space-y-4">
+                        {jsonContent.culturalNotes.map((note, index) => (
+                          <CulturalNote key={index} note={note} />
+                        ))}
+                      </div>
+                    </section>
+                  )}
+
+                  {/* Practical Scenarios Section */}
+                  {jsonContent.scenarios && jsonContent.scenarios.length > 0 && (
+                    <section aria-labelledby="scenarios-section" className="mt-8">
+                      <h2 id="scenarios-section" className="text-3xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+                        <span aria-hidden="true">🎭</span>
+                        Escenarios Prácticos
+                      </h2>
+                      <div className="space-y-4">
+                        {jsonContent.scenarios.map((scenario, index) => (
+                          <PracticalScenario key={index} scenario={scenario} />
+                        ))}
+                      </div>
+                    </section>
+                  )}
+
+                  {/* Phrases Section */}
+                  {jsonContent.phrases && jsonContent.phrases.length > 0 && (
+                    <section aria-labelledby="phrases-section" className="mt-8">
+                      <h2 id="phrases-section" className="text-3xl font-bold mb-6 text-gray-900 flex items-center gap-3">
+                        <span aria-hidden="true">💬</span>
+                        Frases Útiles
+                      </h2>
+                      <div className="space-y-3">
+                        {jsonContent.phrases.map((phrase, index) => (
+                          <PhraseList key={index} phrase={phrase} />
+                        ))}
+                      </div>
+                    </section>
+                  )}
+                </div>
+              ) : resource.type === 'audio' ? (
                 // Audio content: display as plain text with formatting
                 <pre className="whitespace-pre-wrap font-sans text-sm leading-relaxed">
                   {content}

@@ -27,7 +27,8 @@
     "resource:integrate": "tsx scripts/integrate-resources.ts",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "generate:audio-specs": "node scripts/generate-audio-specs.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.65.0",
@@ -46,6 +47,7 @@
     "@supabase/supabase-js": "^2.58.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/dompurify": "^3.2.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^22.0.0",
@@ -54,7 +56,9 @@
     "autoprefixer": "^10.4.0",
     "eslint": "^9.0.0",
     "eslint-config-next": "^15.0.0",
+    "gray-matter": "^4.0.3",
     "jest": "^30.2.0",
+    "jest-axe": "^10.0.0",
     "jest-environment-jsdom": "^30.2.0",
     "jsdom": "^27.0.0",
     "postcss": "^8.4.0",

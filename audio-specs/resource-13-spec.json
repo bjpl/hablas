@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "resourceId": 13,
+    "title": "Audio: Direcciones en Inglés - Var 1",
+    "category": "conductor",
+    "level": "basico",
+    "language": "Bilingual (Spanish/English)",
+    "targetAudience": "Conductores principiantes",
+    "estimatedDuration": "7:15 minutes",
+    "createdAt": "2025-10-29T01:42:10.189Z"
+  },
+  "recording": {
+    "format": "MP3",
+    "bitrate": "128kbps",
+    "sampleRate": "44.1kHz",
+    "channels": "Stereo",
+    "codec": "MPEG-1 Audio Layer 3"
+  },
+  "voiceProfile": {
+    "speakerType": "Dual speaker (Spanish narrator + English native)",
+    "accent": "Neutral American English, Neutral Latin American Spanish",
+    "gender": "Male or Female (clear, warm voice)",
+    "ageRange": "30-45 years",
+    "tone": "Warm, encouraging, professional",
+    "characteristics": [
+      "Clear articulation in both languages",
+      "Patient and supportive teaching style",
+      "Culturally appropriate delivery",
+      "Consistent pacing throughout",
+      "Motivational and engaging"
+    ]
+  },
+  "production": {
+    "pace": "Slow for beginners (80% speed for English phrases)",
+    "baseSpeed": "150 words per minute for Spanish, 120 WPM for English",
+    "emphasisStyle": "Natural stress on key vocabulary, clear enunciation",
+    "pauseGuidelines": {
+      "betweenPhrases": "3 seconds (for repetition)",
+      "betweenSections": "2 seconds (for transition)",
+      "forRepetition": "1.5 seconds (during rapid practice)"
+    },
+    "backgroundMusic": {
+      "enabled": true,
+      "volume": "-30dB (subtle, non-intrusive)",
+      "placement": "Intro and outro sections only"
+    }
+  },
+  "content": {
+    "sourceFile": "/generated-resources/50-batch/conductor/basic_audio_navigation_1-audio-script.txt",
+    "totalSegments": 0,
+    "segments": []
+  },
+  "optimization": {
+    "targetFileSize": "~7-10MB (optimized for mobile)",
+    "offlineCapable": true,
+    "resumePlayback": true,
+    "speedControl": [
+      "0.75x",
+      "1x",
+      "1.25x",
+      "1.5x"
+    ],
+    "quality": "High (optimized for speech clarity)"
+  }
+}

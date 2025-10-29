@@ -284,7 +284,7 @@
     "noTipOrders": {
       "identification": "$2-3 pay for any distance = no tip",
       "decision": "Most experienced Dashers decline these",
-      "phrase": "No tip, no trip" (common Dasher saying)",
+      "phrase": "No tip, no trip (common Dasher saying)",
       "exception": "If very short distance (under 1 mile) and on your route"
     },
     "customerRequestsChange": {
