@@ -1,7 +1,15 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { Play, Pause, Volume2 } from 'lucide-react';
+import { Play, Pause, Volume2, Download, RotateCcw, Volume1, VolumeX } from 'lucide-react';
+import {
+  preloadAudio,
+  isAudioCached,
+  downloadAudio,
+  savePlaybackPosition,
+  getPlaybackPosition,
+  clearPlaybackPosition
+} from '@/lib/audio-utils';
 
 interface AudioMetadata {
   duration?: string;
@@ -40,6 +48,10 @@ export default function AudioPlayer({
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [playbackRate, setPlaybackRate] = useState(1);
+  const [volume, setVolume] = useState(1);
+  const [isLooping, setIsLooping] = useState(false);
+  const [isCached, setIsCached] = useState(false);
+  const [isDownloading, setIsDownloading] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const formatTime = (seconds: number): string => {
@@ -60,14 +72,40 @@ export default function AudioPlayer({
     setIsLoading(true);
     setError(null);
 
+    // Preload audio in background
+    preloadAudio(audioUrl, { resourceId }).catch(err => {
+      console.warn('Background preload failed:', err);
+    });
+
+    // Check cache status
+    isAudioCached(audioUrl).then(status => {
+      setIsCached(status.isCached);
+    });
+
+    // Restore playback position if exists
+    const savedPosition = getPlaybackPosition(audioUrl);
+    if (savedPosition > 0 && savedPosition < audio.duration - 1) {
+      audio.currentTime = savedPosition;
+    }
+
     const handleLoadedMetadata = () => {
       setDuration(audio.duration);
       setIsLoading(false);
       setError(null);
+
+      // Restore position after metadata loaded
+      const savedPosition = getPlaybackPosition(audioUrl);
+      if (savedPosition > 0 && savedPosition < audio.duration - 1) {
+        audio.currentTime = savedPosition;
+      }
     };
 
     const handleTimeUpdate = () => {
       setCurrentTime(audio.currentTime);
+      // Save position every 2 seconds
+      if (Math.floor(audio.currentTime) % 2 === 0) {
+        savePlaybackPosition(audioUrl, audio.currentTime);
+      }
     };
 
     const handleCanPlay = () => {
@@ -82,8 +120,8 @@ export default function AudioPlayer({
     // Auto-stop when component unmounts
     return () => {
       if (audioRef.current) {
+        savePlaybackPosition(audioUrl, audioRef.current.currentTime);
         audioRef.current.pause();
-        audioRef.current.currentTime = 0;
         if (currentlyPlaying === audioRef.current) {
           currentlyPlaying = null;
         }
@@ -92,7 +130,7 @@ export default function AudioPlayer({
       audio.removeEventListener('timeupdate', handleTimeUpdate);
       audio.removeEventListener('canplay', handleCanPlay);
     };
-  }, [audioUrl]);
+  }, [audioUrl, resourceId]);
 
   useEffect(() => {
     // Handle autoplay if enabled
@@ -142,10 +180,60 @@ export default function AudioPlayer({
   };
 
   const handleEnded = () => {
-    setIsPlaying(false);
-    if (currentlyPlaying === audioRef.current) {
-      currentlyPlaying = null;
+    if (!isLooping) {
+      setIsPlaying(false);
+      if (currentlyPlaying === audioRef.current) {
+        currentlyPlaying = null;
+      }
+      // Clear position when finished
+      if (audioUrl) {
+        clearPlaybackPosition(audioUrl);
+      }
     }
+  };
+
+  const toggleLoop = () => {
+    if (audioRef.current) {
+      audioRef.current.loop = !isLooping;
+      setIsLooping(!isLooping);
+    }
+  };
+
+  const handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!audioRef.current) return;
+    const newVolume = parseFloat(e.target.value);
+    audioRef.current.volume = newVolume;
+    setVolume(newVolume);
+  };
+
+  const toggleMute = () => {
+    if (!audioRef.current) return;
+    if (volume > 0) {
+      audioRef.current.volume = 0;
+      setVolume(0);
+    } else {
+      audioRef.current.volume = 1;
+      setVolume(1);
+    }
+  };
+
+  const handleDownload = async () => {
+    if (!audioUrl) return;
+
+    setIsDownloading(true);
+    const filename = title
+      ? `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}.mp3`
+      : audioUrl.split('/').pop();
+
+    const result = await downloadAudio(audioUrl, filename);
+
+    if (result.success) {
+      setIsCached(true);
+    } else {
+      setError(result.error || 'Error al descargar el audio');
+    }
+
+    setIsDownloading(false);
   };
 
   const handleError = () => {
@@ -287,24 +375,90 @@ export default function AudioPlayer({
               </button>
             </div>
 
-            <div className="flex items-center justify-center gap-2">
+            <div className="flex items-center justify-center gap-2 flex-wrap">
               <span className="text-sm text-gray-700 font-medium">Velocidad:</span>
-              <div className="flex gap-1">
-                {[0.75, 1, 1.25, 1.5].map((rate) => (
+              <div className="flex gap-1 flex-wrap justify-center">
+                {[0.5, 0.75, 1, 1.25, 1.5].map((rate) => (
                   <button
                     key={rate}
                     onClick={() => changePlaybackRate(rate)}
-                    className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
+                    className={`px-3 py-1.5 rounded text-sm font-medium transition-colors min-w-[48px] min-h-[44px] ${
                       playbackRate === rate
                         ? 'bg-blue-600 text-white'
-                        : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
+                        : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 active:bg-gray-100'
                     }`}
                     aria-label={`Velocidad ${rate}x`}
+                    aria-pressed={playbackRate === rate}
                   >
                     {rate}x
                   </button>
                 ))}
               </div>
+            </div>
+
+            <div className="flex items-center justify-center gap-3 flex-wrap">
+              {/* Loop Toggle */}
+              <button
+                onClick={toggleLoop}
+                className={`px-4 py-2 rounded flex items-center gap-2 min-h-[44px] transition-colors ${
+                  isLooping
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
+                }`}
+                aria-label={isLooping ? 'Desactivar repetición' : 'Activar repetición'}
+                aria-pressed={isLooping}
+              >
+                <RotateCcw className="w-4 h-4" />
+                <span className="text-sm font-medium">{isLooping ? 'Repitiendo' : 'Repetir'}</span>
+              </button>
+
+              {/* Download Button */}
+              <button
+                onClick={handleDownload}
+                disabled={isDownloading || !audioUrl}
+                className={`px-4 py-2 rounded flex items-center gap-2 min-h-[44px] transition-colors ${
+                  isCached
+                    ? 'bg-green-50 text-green-700 border border-green-300'
+                    : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 active:bg-gray-100'
+                } disabled:opacity-50 disabled:cursor-not-allowed`}
+                aria-label={isCached ? 'Audio descargado' : 'Descargar audio para uso sin conexión'}
+              >
+                <Download className="w-4 h-4" />
+                <span className="text-sm font-medium">
+                  {isDownloading ? 'Descargando...' : isCached ? 'Descargado' : 'Descargar'}
+                </span>
+              </button>
+            </div>
+
+            {/* Volume Control */}
+            <div className="flex items-center gap-3">
+              <button
+                onClick={toggleMute}
+                className="p-2 rounded hover:bg-gray-100 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+                aria-label={volume === 0 ? 'Activar sonido' : 'Silenciar'}
+              >
+                {volume === 0 ? (
+                  <VolumeX className="w-5 h-5 text-gray-700" />
+                ) : volume < 0.5 ? (
+                  <Volume1 className="w-5 h-5 text-gray-700" />
+                ) : (
+                  <Volume2 className="w-5 h-5 text-gray-700" />
+                )}
+              </button>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step="0.05"
+                value={volume}
+                onChange={handleVolumeChange}
+                className="flex-1 h-2 bg-gray-200 rounded appearance-none cursor-pointer accent-blue-600"
+                aria-label="Control de volumen"
+                aria-valuemin={0}
+                aria-valuemax={100}
+                aria-valuenow={Math.round(volume * 100)}
+              />
+              <span className="text-sm text-gray-600 min-w-[3ch]">{Math.round(volume * 100)}%</span>
             </div>
 
             <div className="bg-gray-50 rounded p-3 border border-gray-200">
@@ -322,6 +476,7 @@ export default function AudioPlayer({
           onEnded={handleEnded}
           onError={handleError}
           preload="metadata"
+          loop={isLooping}
           className="hidden"
         />
       </div>
@@ -393,6 +548,7 @@ export default function AudioPlayer({
         onEnded={handleEnded}
         onError={handleError}
         preload="metadata"
+        loop={isLooping}
         aria-label={label}
         className="hidden"
       >
