@@ -127,7 +127,7 @@ def convert_to_ssml(script_text: str, resource_id: int) -> str:
     return '\n'.join(ssml_parts)
 
 def main():
-    input_dir = Path('scripts/cleaned-audio-scripts')
+    input_dir = Path('scripts/pure-dialogue-scripts')  # Use PURE dialogue (no narrator instructions)
     output_dir = Path('scripts/ssml-audio-scripts')
     output_dir.mkdir(exist_ok=True)
 
