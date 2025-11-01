@@ -59,6 +59,9 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
   const resourceId = parseInt(id)
   const resource = resources.find(r => r.id === resourceId)
 
+  // BasePath for GitHub Pages
+  const basePath = process.env.NODE_ENV === 'production' ? '/hablas' : ''
+
   useEffect(() => {
     if (!resource) {
       setError('Recurso no encontrado')
@@ -351,16 +354,25 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                   setDownloadingResource(true);
                   setDownloadSuccess(null);
                   try {
+                    // Fetch the resource content first, then download
+                    const resourceUrl = `${basePath}${resource.downloadUrl}`;
+                    const response = await fetch(resourceUrl);
+                    if (!response.ok) throw new Error('Resource not found');
+                    const blob = await response.blob();
+                    const url = window.URL.createObjectURL(blob);
                     const link = document.createElement('a');
-                    link.href = resource.downloadUrl;
+                    link.href = url;
                     link.download = `Hablas_${resource.id}_${resource.title.replace(/[^a-z0-9]/gi, '_').substring(0, 40)}.md`;
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
+                    window.URL.revokeObjectURL(url);
                     setDownloadSuccess('✓ Recurso descargado exitosamente');
                     setTimeout(() => setDownloadSuccess(null), 3000);
                   } catch (err) {
                     console.error('Download failed:', err);
+                    setDownloadSuccess('❌ Error al descargar - intenta de nuevo');
+                    setTimeout(() => setDownloadSuccess(null), 3000);
                   } finally {
                     setDownloadingResource(false);
                   }
@@ -399,8 +411,10 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                     setDownloadingAudio(true);
                     setDownloadSuccess(null);
                     try {
-                      // Fetch and download audio
-                      const response = await fetch(resource.audioUrl);
+                      // Fetch and download audio with basePath
+                      const audioUrl = `${basePath}${resource.audioUrl}`;
+                      const response = await fetch(audioUrl);
+                      if (!response.ok) throw new Error('Audio not found');
                       const blob = await response.blob();
                       const url = window.URL.createObjectURL(blob);
                       const link = document.createElement('a');
@@ -414,6 +428,8 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                       setTimeout(() => setDownloadSuccess(null), 3000);
                     } catch (err) {
                       console.error('Audio download failed:', err);
+                      setDownloadSuccess('❌ Error al descargar audio');
+                      setTimeout(() => setDownloadSuccess(null), 3000);
                     } finally {
                       setDownloadingAudio(false);
                     }
@@ -454,7 +470,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
             <div className="bg-white rounded shadow-md p-6 border border-gray-200">
               <AudioPlayer
                 title={resource.title}
-                audioUrl={resource.audioUrl}
+                audioUrl={`${basePath}${resource.audioUrl}`}
                 metadata={audioMetadata}
                 resourceId={resource.id}
                 enhanced={true}
