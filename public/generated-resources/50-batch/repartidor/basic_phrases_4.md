@@ -575,4 +575,73 @@ Este manual contiene las 30 frases más importantes que necesitas para trabajar 
 │                                                          │
 │ 💡 **TIP**: Sé honesto inmediatamente. Ofrece que       │
 │ contacten soporte para reembolso si es necesario.       │
-└─────
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "There was a small accident." = Hubo un pequeño accidente = [thair wuz uh smol AK-si-dent]
+- "I apologize for the mess." = Me disculpo por el desorden = [ai uh-POL-uh-jaiz for thuh mes]
+
+---
+
+### Frase 24: Llamada del cliente
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm on my way."                           │
+│                                                          │
+│ 🗣️ **Español**: Estoy en camino.                        │
+│ 🔊 **Pronunciación**: [aim on mai way]                  │
+│                                                          │
+│ **Usa cuando**: Cliente llama preguntando dónde estás   │
+│ **Ejemplo real**: Teléfono suena mientras manejas,      │
+│ respondes de forma breve y segura                        │
+│                                                          │
+│ 💡 **TIP**: Mantén llamadas cortas mientras manejas.    │
+│ Seguridad primero. Si necesitas hablar más, detente.    │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I'll be there soon." = Llegaré pronto = [ail bee thair suun]
+- "Five minutes away." = A cinco minutos = [faiv MIN-its uh-way]
+
+---
+
+### Frase 25-30: Situaciones Finales
+
+┌─────────────────────────────────────────────────────────┐
+│ Frases 25-30 cubren: Despedidas profesionales,         │
+│ manejo de propinas, problemas de último minuto,         │
+│ y cierre de entregas exitosas.                          │
+│                                                          │
+│ Consulta el audio completo para estas frases.           │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# Resumen Final
+
+## ✅ Completaste el Manual Variación 4
+
+Has aprendido 30 frases esenciales para domiciliarios, con enfoque en:
+- Comunicación con restaurantes
+- Manejo de problemas de pedidos
+- Situaciones de último minuto
+- Despedidas profesionales
+
+## 📚 Recursos Relacionados
+
+- **Variación 1**: Frases básicas de llegada y confirmación
+- **Variación 2**: Problemas de acceso y direcciones
+- **Variación 3**: Entregas sin contacto
+- **Audio Scripts**: Pronunciación detallada
+
+## 🎯 Próximos Pasos
+
+1. ✅ Descarga este recurso para uso offline
+2. ✅ Practica 3-5 frases por día
+3. ✅ Únete a la comunidad en WhatsApp
+4. ✅ Comparte con otros domiciliarios
+
+---
+
+*Recurso creado por Hablas.co para la comunidad colombiana*
+*Versión 1.2 - Noviembre 2025*

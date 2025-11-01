@@ -542,4 +542,92 @@ Este manual te prepara para manejar las situaciones más complicadas en entregas
 │ **Usa cuando**: Cliente pide que hagas paradas extras,  │
 │ compres algo más, o cualquier cosa fuera de la entrega  │
 │ **Ejemplo real**: "Can you stop at the store and get me │
-│ cigarettes?" o "Come inside
+│ cigarettes?" o "Come inside for a drink". Di NO firme   │
+│ pero respetuosamente.                                    │
+│                                                          │
+│ 💡 **TIP**: NUNCA hagas paradas no autorizadas o entres │
+│ a casas. Es contra las reglas de la app y peligroso.    │
+│ Reporta comportamiento inapropiado en la app.           │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "That's against company policy." = Eso va contra la política de la empresa = [thats uh-GENST KUM-puh-nee POL-i-see]
+- "I'm sorry, I have other deliveries." = Lo siento, tengo otras entregas = [aim SOR-ee, ai hav UH-ther dih-LIV-uh-reez]
+
+---
+
+### Frase 20: Finalizando con profesionalismo
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Thank you and have a great evening!"      │
+│                                                          │
+│ 🗣️ **Español**: ¡Gracias y que tengas una gran noche!   │
+│ 🔊 **Pronunciación**: [thank yuu and hav uh grait       │
+│                       EEV-ning]                          │
+│                                                          │
+│ **Usa cuando**: Despedida final después de manejar      │
+│ situación difícil exitosamente                           │
+│ **Ejemplo real**: Resolviste un problema, cliente       │
+│ agradece, terminas con profesionalismo                   │
+│                                                          │
+│ 💡 **TIP**: Termina SIEMPRE positivamente, sin importar │
+│ qué tan difícil fue la entrega. Última impresión cuenta.│
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Take care!" = ¡Cuídate! = [taik kair]
+- "Have a wonderful night!" = ¡Que tengas una noche maravillosa! = [hav uh WUN-der-ful nait]
+
+---
+
+# Resumen: Situaciones Intermedias
+
+## ✅ Has Completado 20 Situaciones Difíciles
+
+Este manual cubrió situaciones complejas que requieren:
+- **Firmeza profesional** (decir no cuando es necesario)
+- **Empatía** (entender frustración del cliente)
+- **Límites claros** (proteger tu seguridad y tiempo)
+- **Comunicación efectiva** (resolver problemas rápido)
+
+## 🎯 Habilidades Desarrolladas
+
+Después de dominar estas frases, puedes:
+- ✅ Manejar quejas sin ponerte nervioso
+- ✅ Establecer límites profesionales
+- ✅ Protegerte de situaciones peligrosas
+- ✅ Convertir situaciones difíciles en éxitos
+- ✅ Mantener calma bajo presión
+
+## 💪 Tips para Situaciones Difíciles
+
+### 1. **Mantén la Calma**
+Tu tono de voz es el 60% de la comunicación. Habla despacio y tranquilo.
+
+### 2. **Sé Firme Pero Amable**
+Puedes decir "no" sin ser grosero. "I'm sorry, I can't" es perfectamente aceptable.
+
+### 3. **Documenta Todo**
+Toma fotos, screenshots de mensajes, nota de hora. Te protege.
+
+### 4. **Conoce Tus Derechos**
+No tienes que tolerar abuso. Reporta en la app. Tu seguridad es primero.
+
+### 5. **Aprende de Cada Situación**
+Cada problema resuelto = más experiencia = mejor preparado para la próxima.
+
+## 📱 Siguiente Nivel
+
+Estás listo para:
+- **Conversaciones avanzadas** con clientes
+- **Inglés para emergencias** (accidentes, problemas serios)
+- **Negociación** (propinas, problemas de pago)
+
+---
+
+**¡Bien hecho! Ahora tienes las herramientas para manejar el 95% de entregas difíciles! 🚴💨**
+
+---
+
+*hablas.co - Tu compañero en el camino al éxito*
+*Noviembre 2025*

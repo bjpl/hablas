@@ -521,9 +521,44 @@ Este manual te enseñará a manejar las situaciones más difíciles en entregas:
 │ es suficiente y profesional.                             │
 └─────────────────────────────────────────────────────────┘
 
-### Frase 24: Dar tiempo estimado de llegada
+---
+
+### Frase 24: Dar tiempo estimado
 
 ┌─────────────────────────────────────────────────────────┐
-│ **English**: "I'm about 5 minutes away from you right   │
-│ now."                                                    │
+│ **English**: "I'm about 5 minutes away from you."       │
 │                                                          │
+│ 🗣️ **Español**: Estoy a unos 5 minutos de ti.           │
+│ 🔊 **Pronunciación**: [aim uh-BAUT faiv MIN-its uh-WAY  │
+│                       from yuu]                          │
+│                                                          │
+│ **Usa cuando**: Cliente llama preguntando cuándo llegas │
+│ **Ejemplo real**: Mensaje o llamada "Where are you?"    │
+│ Respondes con tiempo específico                          │
+│                                                          │
+│ 💡 **TIP**: Siempre di un poco más tiempo del real.     │
+│ Mejor llegar "temprano" que tarde.                      │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Almost there!" = ¡Ya casi llego! = [OL-most thair]
+- "I'm 2 minutes away." = Estoy a 2 minutos = [aim too MIN-its uh-WAY]
+
+---
+
+# Resumen y Próximos Pasos
+
+## ✅ Manual Completo: Situaciones Intermedias Parte 2
+
+Has aprendido a manejar situaciones complejas de entrega con confianza y profesionalismo.
+
+## 🎯 Próximas Acciones
+
+1. ✅ Descarga para uso offline
+2. ✅ Practica con audio
+3. ✅ Comparte con compañeros
+4. ✅ Consulta recursos avanzados en hablas.co
+
+---
+
+*Creado para domiciliarios colombianos - Noviembre 2025*
