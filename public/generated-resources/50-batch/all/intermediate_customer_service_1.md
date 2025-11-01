@@ -530,3 +530,14 @@ Dominarás 40+ frases profesionales en inglés para brindar un servicio al clien
 **Variaciones**:
 - "Enjoy!" = ¡Disfruta! = [en-JOY] (más casual)
 - "Hope you enjoy it!" = 
+---
+
+# Resumen
+
+## ✅ Recurso Completo
+
+Descarga para uso offline y practica regularmente.
+
+---
+
+*hablas.co - Noviembre 2025*

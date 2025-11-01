@@ -576,3 +576,14 @@ Aprenderás a decir la hora en inglés, hablar sobre tiempos de espera, duracion
 # Sección 6: Horarios de Trabajo
 
 ### Frase 24: Decir
+---
+
+# Resumen
+
+## ✅ Recurso Completo
+
+Descarga para uso offline y practica regularmente.
+
+---
+
+*hablas.co - Noviembre 2025*

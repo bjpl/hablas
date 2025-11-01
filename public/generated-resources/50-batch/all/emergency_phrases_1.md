@@ -564,3 +564,14 @@ Aprenderás las 30 frases más importantes para manejar emergencias mientras tra
 │ 🗣️ **Español**: No me siento seguro. Necesito           │
 │ cancelar.                                                │
 │ 🔊 **Pronunciación**: [ai dont fiil seif. ai nii
+---
+
+# Resumen
+
+## ✅ Recurso Completo
+
+Descarga para uso offline y practica regularmente.
+
+---
+
+*hablas.co - Noviembre 2025*

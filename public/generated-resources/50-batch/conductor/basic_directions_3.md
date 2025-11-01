@@ -585,3 +585,14 @@ Dominarás el vocabulario esencial de direcciones y navegación GPS en inglés. 
 │ y ofreces acercarte más a la puerta                      │
 │                                                          │
 │ 
+---
+
+# Resumen
+
+## ✅ Recurso Completo
+
+Descarga para uso offline y practica regularmente.
+
+---
+
+*hablas.co - Noviembre 2025*

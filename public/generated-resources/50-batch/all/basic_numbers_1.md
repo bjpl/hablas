@@ -604,3 +604,14 @@ Aprenderás a decir números, direcciones y referencias geográficas en inglés 
 - **South** = Sur = [south]
 - **East** = Este = [eest]
 - **West** = Oeste =
+---
+
+# Resumen
+
+## ✅ Recurso Completo
+
+Descarga para uso offline y practica regularmente.
+
+---
+
+*hablas.co - Noviembre 2025*

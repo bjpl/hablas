@@ -578,3 +578,14 @@ Este manual te enseña el vocabulario esencial para entender direcciones en ingl
 │                                                          │
 │ **Usa cuando**: Llegas al destino final                 │
 │
+---
+
+# Resumen
+
+## ✅ Recurso Completo
+
+Descarga para uso offline y practica regularmente.
+
+---
+
+*hablas.co - Noviembre 2025*

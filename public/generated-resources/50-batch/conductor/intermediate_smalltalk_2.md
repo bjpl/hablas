@@ -540,3 +540,14 @@ Aprenderás a mantener conversaciones ligeras y naturales con tus pasajeros sobr
 │ hotel/aeropuerto                                        │
 │ **Ejemplo real**: Recoges en aeropuerto o hotel,        │
 │ preguntas para saber si ofrecer información             │
+---
+
+# Resumen
+
+## ✅ Recurso Completo
+
+Descarga para uso offline y practica regularmente.
+
+---
+
+*hablas.co - Noviembre 2025*

@@ -538,3 +538,14 @@ En este manual aprenderás a comunicar problemas de seguridad en inglés de mane
 │                                                          │
 │ **Usa cuando**: Llegas a edificio o comunidad cerrada   │
 │ sin forma de entrar
+---
+
+# Resumen
+
+## ✅ Recurso Completo
+
+Descarga para uso offline y practica regularmente.
+
+---
+
+*hablas.co - Noviembre 2025*

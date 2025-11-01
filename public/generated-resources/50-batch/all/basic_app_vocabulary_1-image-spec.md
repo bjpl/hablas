@@ -782,3 +782,14 @@ Help/Support screen showing common issue categories with icons
    🔊 [í-shu]
    🎨 Highlight: Orange circle
    📝 Note: "Issue =
+---
+
+# Resumen
+
+## ✅ Recurso Completo
+
+Descarga para uso offline y practica regularmente.
+
+---
+
+*hablas.co - Noviembre 2025*

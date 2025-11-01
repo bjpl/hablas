@@ -560,3 +560,14 @@ Aprenderás a mantener conversaciones ligeras y naturales con tus pasajeros sobr
 │ profesional                                              │
 │ **Ejemplo real**: Son las 8am un lunes, recoges a       │
 │ alguien con laptop, preguntas
+---
+
+# Resumen
+
+## ✅ Recurso Completo
+
+Descarga para uso offline y practica regularmente.
+
+---
+
+*hablas.co - Noviembre 2025*

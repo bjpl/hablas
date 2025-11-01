@@ -519,3 +519,14 @@ Aprenderás a manejar profesionalmente situaciones complicadas como cancelacione
 │                                                          │
 │ 🗣️ **Español**: Lo siento, tengo alergias. Necesitas    │
 │ pedir un conductor que acept
+---
+
+# Resumen
+
+## ✅ Recurso Completo
+
+Descarga para uso offline y practica regularmente.
+
+---
+
+*hablas.co - Noviembre 2025*
