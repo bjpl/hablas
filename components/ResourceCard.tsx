@@ -56,12 +56,12 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
   return (
     <article className="card-resource flex flex-col h-full">
       <div className="flex items-start justify-between mb-4">
-        <span className="text-3xl transition-transform hover:scale-110 duration-200" aria-hidden="true">
+        <span className="text-3xl" aria-hidden="true">
           {getTypeIcon(resource.type)}
         </span>
         {resource.offline && (
           <span className="text-xs tag-offline">
-            <span aria-hidden="true">📱</span> Offline
+            Offline
           </span>
         )}
       </div>
@@ -82,13 +82,13 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
       </div>
 
       <div className="text-xs text-gray-500 mb-4 font-medium" aria-label={`Tamaño del archivo: ${resource.size}`}>
-        📦 {resource.size}
+        {resource.size}
       </div>
 
       <div className="flex gap-2 mt-auto">
         <Link href={`/recursos/${resource.id}`} className="flex-1">
           <button
-            className="w-full py-3 px-4 rounded-lg font-semibold bg-accent-blue text-white hover:bg-opacity-90 hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5"
+            className="w-full py-3 px-4 rounded font-semibold bg-accent-blue text-white hover:bg-blue-700 transition-colors"
             aria-label={`Ver detalles del recurso ${resource.title}`}
           >
             Ver recurso
@@ -96,10 +96,10 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
         </Link>
         <button
           onClick={handleDownloadClick}
-          className={`p-3 rounded-lg font-medium transition-all duration-200 min-w-touch min-h-touch transform hover:-translate-y-0.5 ${
+          className={`p-3 rounded font-medium transition-colors min-w-touch min-h-touch ${
             isDownloaded
-              ? 'bg-accent-green bg-opacity-20 text-accent-green hover:bg-opacity-30'
-              : 'bg-gray-100 hover:bg-gray-200 hover:shadow-md'
+              ? 'bg-green-100 text-green-700 hover:bg-green-200'
+              : 'bg-gray-100 hover:bg-gray-200'
           }`}
           aria-label={isDownloaded ? `${resource.title} ya descargado` : `Descargar ${resource.title}`}
           title={isDownloaded ? 'Ya descargado' : 'Descargar'}
@@ -108,7 +108,7 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
         </button>
         <button
           onClick={handleShare}
-          className="p-3 rounded-lg bg-gray-100 hover:bg-gray-200 hover:shadow-md transition-all duration-200 min-w-touch min-h-touch transform hover:-translate-y-0.5"
+          className="p-3 rounded bg-gray-100 hover:bg-gray-200 transition-colors min-w-touch min-h-touch"
           aria-label={`Compartir ${resource.title}`}
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" role="img">
