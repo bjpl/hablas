@@ -682,9 +682,13 @@ function BilingualDialogueFormatter({ content }: { content: string }) {
       continue;
     }
 
-    // Main section headers (## with timestamps)
+    // Main section headers (## with timestamps) - Clean display without timestamps
     if (line.startsWith('##')) {
       const headerText = line.replace(/^##\s*/, '').replace(/\[.*?\]/g, '').trim();
+      // Skip if it's just metadata or intro sections students don't need
+      if (headerText.match(/INTRODUCCIÓN|CONTENIDO PRINCIPAL/i)) {
+        continue;
+      }
       formatted.push(
         <h3 key={i} className="text-xl font-bold text-gray-900 mt-8 mb-4 border-b-2 border-blue-600 pb-2 flex items-center gap-2">
           <span className="text-blue-600">🎯</span>
@@ -694,36 +698,30 @@ function BilingualDialogueFormatter({ content }: { content: string }) {
       continue;
     }
 
-    // Subsection headers (### with timestamps or phrases)
+    // Subsection headers (### with timestamps or phrases) - Show ONLY phrase headers
     if (line.startsWith('###')) {
       const headerText = line.replace(/^###\s*/, '').replace(/\[.*?\]/g, '').trim();
-      formatted.push(
-        <h4 key={i} className="text-lg font-semibold text-blue-700 mt-6 mb-3 border-l-4 border-blue-400 pl-4">
-          {headerText}
-        </h4>
-      );
+      // Only show if it looks like a phrase header (FRASE, Frase)
+      if (headerText.match(/FRASE|Frase/i)) {
+        formatted.push(
+          <h4 key={i} className="text-lg font-semibold text-blue-700 mt-6 mb-3 border-l-4 border-blue-400 pl-4">
+            {headerText}
+          </h4>
+        );
+      }
+      // Skip timestamp headers like ### [00:50] or ### [01:35]
       continue;
     }
 
-    // Metadata (Duration, Target, Language, etc.)
+    // Metadata (Duration, Target, Language, etc.) - SKIP (handled in collapsible sections)
     if (line.match(/^\*\*(Total Duration|Target|Language|Level|Category)\*\*/)) {
-      const parts = line.split(':');
-      formatted.push(
-        <div key={i} className="text-sm bg-blue-50 text-blue-800 px-4 py-2 rounded border-l-4 border-blue-500 mb-2 flex gap-2">
-          <span className="font-bold">{parts[0].replace(/\*\*/g, '')}:</span>
-          {parts[1] && <span className="font-normal">{parts[1]}</span>}
-        </div>
-      );
+      // Skip - this info is in the collapsible "Technical Specifications" panel
       continue;
     }
 
-    // Production directions (Speaker, Tone, Pause) - de-emphasized
+    // Production directions (Speaker, Tone, Pause) - SKIP COMPLETELY (not for students)
     if (line.match(/^\*\*\[(Speaker|Tone|Pause|PAUSE|Sound effect):/i)) {
-      formatted.push(
-        <div key={i} className="text-xs text-gray-400 bg-gray-50 px-3 py-1.5 rounded border-l-2 border-gray-300 my-2 font-mono">
-          <span className="opacity-60">{line.replace(/\*\*/g, '')}</span>
-        </div>
-      );
+      // Skip - students don't need to see production directions
       continue;
     }
 
@@ -833,13 +831,35 @@ function BilingualDialogueFormatter({ content }: { content: string }) {
       continue;
     }
 
-    // Regular paragraphs (instructions, explanations)
+    // Regular paragraphs (instructions, explanations) - Only meaningful student content
     if (line.length > 0) {
-      formatted.push(
-        <p key={i} className="text-gray-700 leading-relaxed my-2 text-base">
-          {line.replace(/\*\*/g, '')}
-        </p>
-      );
+      // Highlight instructor tips and learning advice
+      if (line.match(/^(Frase número|Mi consejo|En los próximos|Cada frase|Escucha|Esta es LA frase|Esta frase|Cambia|Memoriza|Di|Siempre|Usa|Pregunta)/i)) {
+        formatted.push(
+          <div key={i} className="my-3 p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
+            <p className="text-sm text-blue-900 leading-relaxed">
+              💬 <span className="font-medium">{line.replace(/\*\*/g, '').replace(/^"/, '').replace(/"$/, '')}</span>
+            </p>
+          </div>
+        );
+      } else if (line.match(/En español:/i)) {
+        // Spanish translations - highlight these
+        formatted.push(
+          <div key={i} className="my-2 p-2 bg-green-50 border-l-2 border-green-400 rounded">
+            <p className="text-sm text-green-900 font-medium">
+              {line.replace(/\*\*/g, '')}
+            </p>
+          </div>
+        );
+      } else if (!line.startsWith('[') && !line.includes('**[') && !line.match(/^\d+:\d+/)) {
+        // Only show if it's not a timestamp, script direction, or metadata
+        formatted.push(
+          <p key={i} className="text-gray-700 leading-relaxed my-2 text-base">
+            {line.replace(/\*\*/g, '')}
+          </p>
+        );
+      }
+      // Skip anything that looks like pure script direction
     }
   }
 
