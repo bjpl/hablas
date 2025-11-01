@@ -131,8 +131,8 @@ def main():
     output_dir = Path('scripts/ssml-audio-scripts')
     output_dir.mkdir(exist_ok=True)
 
-    # Audio script resource IDs
-    resource_ids = [2, 7, 10, 13, 18, 21, 28, 32, 34]
+    # ALL bilingual audio resource IDs (1-37)
+    resource_ids = list(range(1, 38))  # Resources 1 through 37
 
     print("🎙️  Converting Cleaned Scripts to Dual-Voice SSML")
     print("=" * 60)
@@ -156,7 +156,7 @@ def main():
                 32: 'intermediate_conversations_2-audio-script.txt',
                 34: 'intermediate_audio_conversations_1-audio-script.txt',
             }
-            script_file = input_dir / script_files.get(resource_id, f'resource-{resource_id}.txt')
+            script_file = input_dir / script_files.get(resource_id, f'resource-{resource_id}-extracted.txt')
         else:
             script_file = matches[0]
 

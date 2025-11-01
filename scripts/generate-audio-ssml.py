@@ -12,34 +12,23 @@ import os
 from pathlib import Path
 import edge_tts
 
-# Resource IDs to generate
-RESOURCE_IDS = [2, 7, 10, 13, 18, 21, 28, 32, 34]
+# ALL bilingual resource IDs to generate (1-37)
+RESOURCE_IDS = list(range(1, 38))  # Resources 1 through 37
 
-# Voice names (for reference - SSML files already have these embedded)
-VOICES = {
-    'spanish': {
-        2: 'es-CO-SalomeNeural',
-        7: 'es-CO-GonzaloNeural',
-        10: 'es-MX-DaliaNeural',
-        13: 'es-CO-SalomeNeural',
-        18: 'es-MX-DaliaNeural',
-        21: 'es-CO-SalomeNeural',
-        28: 'es-CO-GonzaloNeural',
-        32: 'es-MX-DaliaNeural',
-        34: 'es-CO-GonzaloNeural',
-    },
-    'english': {
-        2: 'en-US-JennyNeural',
-        7: 'en-US-GuyNeural',
-        10: 'en-US-JennyNeural',
-        13: 'en-US-GuyNeural',
-        18: 'en-US-JennyNeural',
-        21: 'en-US-JennyNeural',
-        28: 'en-US-GuyNeural',
-        32: 'en-US-JennyNeural',
-        34: 'en-US-GuyNeural',
+# Voice mapping for ALL 37 resources (alternate between voices for variety)
+def get_voices(resource_id):
+    """Get voice pair for resource ID"""
+    # Alternate patterns for variety
+    spanish_voices = ['es-CO-SalomeNeural', 'es-CO-GonzaloNeural', 'es-MX-DaliaNeural']
+    english_voices = ['en-US-JennyNeural', 'en-US-GuyNeural']
+
+    spanish_voice = spanish_voices[resource_id % 3]
+    english_voice = english_voices[resource_id % 2]
+
+    return {
+        'spanish': spanish_voice,
+        'english': english_voice
     }
-}
 
 async def generate_dual_voice_audio(resource_id: int):
     """Generate audio file from SSML with dual voices"""
@@ -50,8 +39,9 @@ async def generate_dual_voice_audio(resource_id: int):
         return False
 
     try:
+        voices = get_voices(resource_id)
         print(f"🎙️  Generating resource {resource_id}...")
-        print(f"   Voices: {VOICES['spanish'][resource_id]} (ES) + {VOICES['english'][resource_id]} (EN)")
+        print(f"   Voices: {voices['spanish']} (ES) + {voices['english']} (EN)")
 
         # Read SSML
         with open(ssml_file, 'r', encoding='utf-8') as f:
