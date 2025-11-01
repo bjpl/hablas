@@ -24,28 +24,6 @@
   padding: 0;
 }
 
-/* ============================================
-   Elegant Phrase Cards (NO ASCII/Box-Drawing)
-   ============================================ */
-.phrase-card {
-  background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(80, 201, 195, 0.05) 100%);
-  border-left: 4px solid #4a90e2;
-  padding: 1.5rem 2rem;
-  margin: 1.5rem 0;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.phrase-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
-}
-
-.phrase-card p {
-  margin: 0.75rem 0;
-  line-height: 1.6;
-}
 
 /* Simple elegant pre blocks - no cards, just typography */
 .resource-content pre {
@@ -522,21 +500,6 @@
   border-radius: 8px;
 }
 
-/* Phrase cards for better organization */
-.resource-content .phrase-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin: 1.5rem 0;
-  border-left: 4px solid #4a90e2;
-  box-shadow: 0 2px 12px rgba(74, 144, 226, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.resource-content .phrase-card:hover {
-  transform: translateX(4px);
-  box-shadow: 0 4px 16px rgba(74, 144, 226, 0.15);
-}
 
 .resource-content .phrase-english {
   font-size: 1.1rem;
@@ -617,12 +580,6 @@
     font-size: 1rem;
   }
 
-  .phrase-box,
-  .resource-content pre.phrase-box {
-    padding: 1.5rem 1.75rem;
-    margin: 1.5rem 0;
-    font-size: 0.95rem;
-  }
 
   .resource-content blockquote {
     padding: 1.25rem 1.5rem;
@@ -658,8 +615,7 @@
     padding: 1.5rem 1rem;
   }
 
-  .resource-content .content-card,
-  .resource-content .phrase-card {
+  .resource-content .content-card {
     padding: 1.5rem;
     margin: 1.5rem 0;
   }
@@ -682,11 +638,6 @@
     font-size: 1.375rem;
   }
 
-  .phrase-box,
-  .resource-content pre.phrase-box {
-    padding: 1.25rem 1.5rem;
-    font-size: 0.9rem;
-  }
 
   .resource-content pre {
     padding: 1rem;
@@ -707,8 +658,7 @@
     padding: 1.25rem 0.75rem;
   }
 
-  .resource-content .content-card,
-  .resource-content .phrase-card {
+  .resource-content .content-card {
     padding: 1.25rem;
   }
 
@@ -725,14 +675,6 @@
    Print Styles
    ============================================ */
 @media print {
-  .phrase-box,
-  .resource-content pre.phrase-box {
-    background: #f0f7ff !important;
-    color: #0f2557 !important;
-    border: 2px solid #4a90e2 !important;
-    box-shadow: none !important;
-  }
-
   .resource-content a {
     color: #0f2557 !important;
     text-decoration: underline !important;
@@ -743,8 +685,7 @@
   }
 
   .resource-content table,
-  .resource-content .content-card,
-  .resource-content .phrase-card {
+  .resource-content .content-card {
     box-shadow: none !important;
     border: 1px solid #e0eaf5 !important;
   }
@@ -781,11 +722,6 @@
     -webkit-text-fill-color: unset;
   }
 
-  .phrase-box,
-  .resource-content pre.phrase-box {
-    border-width: 3px;
-    border-color: #000000;
-  }
 
   .resource-content a {
     text-decoration: underline;
@@ -799,11 +735,9 @@
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
-  .phrase-box,
   .resource-content tbody tr,
   .resource-content a,
   .resource-content .content-card,
-  .resource-content .phrase-card,
   .resource-content ul > li::before {
     transition: none !important;
   }

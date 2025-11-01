@@ -5,8 +5,6 @@ import { useEffect, useState } from 'react'
 import { resources } from '@/data/resources'
 import ReactMarkdown from 'react-markdown'
 import AudioPlayer from '@/components/AudioPlayer'
-import PhraseCard from '@/components/PhraseCard'
-import PhraseBox from '@/components/PhraseBox'
 
 // Types for JSON content structures
 interface VocabularyItem {
