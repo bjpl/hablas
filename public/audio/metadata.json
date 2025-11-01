@@ -2,69 +2,103 @@
   "resources": {
     "2": {
       "file": "/audio/resource-2.mp3",
-      "voice": "co_spanish",
-      "accent": "Colombian Spanish"
+      "voice": "co_spanish_female",
+      "accent": "Colombian Spanish",
+      "duration": "~4 minutes",
+      "speaker": "Salome"
     },
     "7": {
       "file": "/audio/resource-7.mp3",
-      "voice": "co_spanish",
-      "accent": "Colombian Spanish"
+      "voice": "co_spanish_male",
+      "accent": "Colombian Spanish",
+      "duration": "~3 minutes",
+      "speaker": "Gonzalo"
     },
     "10": {
       "file": "/audio/resource-10.mp3",
-      "voice": "mx_spanish",
-      "accent": "Mexican Spanish"
+      "voice": "mx_spanish_female",
+      "accent": "Mexican Spanish",
+      "duration": "~7 minutes",
+      "speaker": "Dalia"
     },
     "13": {
       "file": "/audio/resource-13.mp3",
-      "voice": "us_english",
-      "accent": "American English"
+      "voice": "us_english_male",
+      "accent": "American English",
+      "duration": "~5 minutes",
+      "speaker": "Guy"
     },
     "18": {
       "file": "/audio/resource-18.mp3",
-      "voice": "us_english",
-      "accent": "American English"
+      "voice": "us_english_female",
+      "accent": "American English",
+      "duration": "~5 minutes",
+      "speaker": "Jenny"
     },
     "21": {
       "file": "/audio/resource-21.mp3",
-      "voice": "co_spanish",
-      "accent": "Colombian Spanish"
+      "voice": "co_spanish_female",
+      "accent": "Colombian Spanish",
+      "duration": "~5 minutes",
+      "speaker": "Salome"
     },
     "28": {
       "file": "/audio/resource-28.mp3",
-      "voice": "co_spanish",
-      "accent": "Colombian Spanish"
+      "voice": "co_spanish_male",
+      "accent": "Colombian Spanish",
+      "duration": "~3 minutes",
+      "speaker": "Gonzalo"
     },
     "32": {
       "file": "/audio/resource-32.mp3",
-      "voice": "mx_spanish",
-      "accent": "Mexican Spanish"
+      "voice": "mx_spanish_female",
+      "accent": "Mexican Spanish",
+      "duration": "~3 minutes",
+      "speaker": "Dalia"
     },
     "34": {
       "file": "/audio/resource-34.mp3",
-      "voice": "us_english",
-      "accent": "American English"
+      "voice": "us_english_male",
+      "accent": "American English",
+      "duration": "~7 minutes",
+      "speaker": "Guy"
     }
   },
   "voices": {
-    "co_spanish": {
-      "name": "es-CO (gTTS)",
+    "co_spanish_female": {
+      "name": "Salome (Microsoft Edge Neural)",
       "region": "CO",
-      "gender": "neutral",
-      "description": "Colombian Spanish accent"
+      "gender": "female",
+      "description": "Colombian Spanish - Natural, warm voice for instruction"
     },
-    "mx_spanish": {
-      "name": "es-MX (gTTS)",
+    "co_spanish_male": {
+      "name": "Gonzalo (Microsoft Edge Neural)",
+      "region": "CO",
+      "gender": "male",
+      "description": "Colombian Spanish - Clear, professional voice"
+    },
+    "mx_spanish_female": {
+      "name": "Dalia (Microsoft Edge Neural)",
       "region": "MX",
-      "gender": "neutral",
-      "description": "Mexican Spanish accent"
+      "gender": "female",
+      "description": "Mexican Spanish - Bright, engaging voice"
     },
-    "us_english": {
-      "name": "en-US (gTTS)",
+    "us_english_male": {
+      "name": "Guy (Microsoft Edge Neural)",
       "region": "US",
-      "gender": "neutral",
-      "description": "American English accent"
+      "gender": "male",
+      "description": "American English - Natural, conversational voice"
+    },
+    "us_english_female": {
+      "name": "Jenny (Microsoft Edge Neural)",
+      "region": "US",
+      "gender": "female",
+      "description": "American English - Clear, friendly voice"
     }
   },
-  "generatedAt": "2025-10-29"
+  "generatedAt": "2025-10-31",
+  "engine": "Microsoft Edge Neural TTS",
+  "quality": "High quality neural voices with natural prosody",
+  "cleanedContent": true,
+  "notes": "All audio regenerated with cleaned scripts - no production directions, markers, or metadata being read aloud. Pure dialogue and instruction only."
 }
