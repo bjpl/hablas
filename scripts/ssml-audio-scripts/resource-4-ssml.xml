@@ -1,41 +1,40 @@
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="es-CO">
   <voice name="en-US-JennyNeural">
-    <prosody rate="-20%">Hi, I have your delivery</prosody>
+    <prosody rate="-20%">Please sign here</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
-    <prosody rate="-20%">Hi, I have your delivery</prosody>
+    <prosody rate="-20%">Please sign here</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
   </voice>
   <voice name="es-CO-SalomeNeural">
-    <prosody rate="-20%">Hola, tengo su entrega</prosody>
+    <prosody rate="-20%">Firme aquí por favor</prosody>
     <break time="800ms"/>
+  <break time="500ms"/>
+  <break time="500ms"/>
+    <prosody rate="-20%">I need the code</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+    <prosody rate="-20%">I need the code</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+    <prosody rate="-20%">Necesito el código</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
   <break time="500ms"/>
   </voice>
   <voice name="en-US-JennyNeural">
-    <prosody rate="-20%">Thank you</prosody>
+    <prosody rate="-20%">What's the gate code?</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
-    <prosody rate="-20%">Thank you</prosody>
-    <break time="800ms"/>
-  <break time="500ms"/>
-  </voice>
-  <voice name="es-CO-SalomeNeural">
-    <prosody rate="-20%">Gracias</prosody>
-    <break time="800ms"/>
-  <break time="500ms"/>
-  </voice>
-  <voice name="en-US-JennyNeural">
-    <prosody rate="-20%">Have a great day</prosody>
-    <break time="800ms"/>
-  <break time="500ms"/>
-    <prosody rate="-20%">Have a great day</prosody>
+    <prosody rate="-20%">What's the gate code?</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
   </voice>
   <voice name="es-CO-SalomeNeural">
-    <prosody rate="-20%">Que tengas un gran día</prosody>
+    <prosody rate="-20%">¿Cuál es el código del portón?</prosody>
     <break time="800ms"/>
+  <break time="500ms"/>
   <break time="500ms"/>
   </voice>
 </speak>

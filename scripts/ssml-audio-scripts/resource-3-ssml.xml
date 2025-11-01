@@ -1,41 +1,48 @@
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="es-CO">
-  <voice name="en-US-JennyNeural">
-    <prosody rate="-20%">Hi, I have your delivery</prosody>
+  <voice name="es-CO-SalomeNeural">
+    <prosody rate="-20%">I'm outside</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
-    <prosody rate="-20%">Hi, I have your delivery</prosody>
+    <prosody rate="-20%">I'm outside</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+    <prosody rate="-20%">Estoy afuera</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+  <break time="500ms"/>
+    <prosody rate="-20%">Can you come out?</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+    <prosody rate="-20%">Can you come out?</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+    <prosody rate="-20%">¿Puede salir?</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+  <break time="500ms"/>
+  </voice>
+  <voice name="en-US-JennyNeural">
+    <prosody rate="-20%">Where should I leave it?</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+    <prosody rate="-20%">Where should I leave it?</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
   </voice>
   <voice name="es-CO-SalomeNeural">
-    <prosody rate="-20%">Hola, tengo su entrega</prosody>
+    <prosody rate="-20%">¿Dónde lo dejo?</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
-  </voice>
-  <voice name="en-US-JennyNeural">
-    <prosody rate="-20%">Thank you</prosody>
+  <break time="500ms"/>
+    <prosody rate="-20%">I left it at the door</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
-    <prosody rate="-20%">Thank you</prosody>
+    <prosody rate="-20%">I left it at the door</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
-  </voice>
-  <voice name="es-CO-SalomeNeural">
-    <prosody rate="-20%">Gracias</prosody>
+    <prosody rate="-20%">Lo dejé en la puerta</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
-  </voice>
-  <voice name="en-US-JennyNeural">
-    <prosody rate="-20%">Have a great day</prosody>
-    <break time="800ms"/>
-  <break time="500ms"/>
-    <prosody rate="-20%">Have a great day</prosody>
-    <break time="800ms"/>
-  <break time="500ms"/>
-  </voice>
-  <voice name="es-CO-SalomeNeural">
-    <prosody rate="-20%">Que tengas un gran día</prosody>
-    <break time="800ms"/>
   <break time="500ms"/>
   </voice>
 </speak>

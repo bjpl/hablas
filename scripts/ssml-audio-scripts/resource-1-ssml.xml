@@ -11,6 +11,49 @@
     <prosody rate="-20%">Hola, tengo su entrega</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
+  <break time="500ms"/>
+  </voice>
+  <voice name="en-US-JennyNeural">
+    <prosody rate="-20%">Are you Michael?</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+    <prosody rate="-20%">Are you Michael?</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+  </voice>
+  <voice name="es-CO-SalomeNeural">
+    <prosody rate="-20%">¿Usted es Michael?</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+  <break time="500ms"/>
+  </voice>
+  <voice name="en-US-JennyNeural">
+    <prosody rate="-20%">Here's your order</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+    <prosody rate="-20%">Here's your order</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+  </voice>
+  <voice name="es-CO-SalomeNeural">
+    <prosody rate="-20%">Aquí está su pedido</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+  <break time="500ms"/>
+  </voice>
+  <voice name="en-US-JennyNeural">
+    <prosody rate="-20%">Have a great day</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+    <prosody rate="-20%">Have a great day</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+  </voice>
+  <voice name="es-CO-SalomeNeural">
+    <prosody rate="-20%">Que tenga un gran día</prosody>
+    <break time="800ms"/>
+  <break time="500ms"/>
+  <break time="500ms"/>
   </voice>
   <voice name="en-US-JennyNeural">
     <prosody rate="-20%">Thank you</prosody>
@@ -24,18 +67,6 @@
     <prosody rate="-20%">Gracias</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
-  </voice>
-  <voice name="en-US-JennyNeural">
-    <prosody rate="-20%">Have a great day</prosody>
-    <break time="800ms"/>
-  <break time="500ms"/>
-    <prosody rate="-20%">Have a great day</prosody>
-    <break time="800ms"/>
-  <break time="500ms"/>
-  </voice>
-  <voice name="es-CO-SalomeNeural">
-    <prosody rate="-20%">Que tengas un gran día</prosody>
-    <break time="800ms"/>
   <break time="500ms"/>
   </voice>
 </speak>

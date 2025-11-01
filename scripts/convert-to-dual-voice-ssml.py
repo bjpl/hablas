@@ -127,7 +127,7 @@ def convert_to_ssml(script_text: str, resource_id: int) -> str:
     return '\n'.join(ssml_parts)
 
 def main():
-    input_dir = Path('scripts/pure-dialogue-scripts')  # Use PURE dialogue (no narrator instructions)
+    input_dir = Path('scripts/minimal-dialogue-scripts')  # Use MINIMAL dialogue (ONLY phrases)
     output_dir = Path('scripts/ssml-audio-scripts')
     output_dir.mkdir(exist_ok=True)
 
@@ -156,7 +156,7 @@ def main():
                 32: 'intermediate_conversations_2-audio-script.txt',
                 34: 'intermediate_audio_conversations_1-audio-script.txt',
             }
-            script_file = input_dir / script_files.get(resource_id, f'resource-{resource_id}-extracted.txt')
+            script_file = input_dir / script_files.get(resource_id, f'resource-{resource_id}-minimal.txt')
         else:
             script_file = matches[0]
 

@@ -11,6 +11,7 @@
     <prosody rate="-20%">Hola, tengo su entrega</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
+  <break time="500ms"/>
   </voice>
   <voice name="en-US-JennyNeural">
     <prosody rate="-20%">Thank you</prosody>
@@ -24,6 +25,7 @@
     <prosody rate="-20%">Gracias</prosody>
     <break time="800ms"/>
   <break time="500ms"/>
+  <break time="500ms"/>
   </voice>
   <voice name="en-US-JennyNeural">
     <prosody rate="-20%">Have a great day</prosody>
@@ -34,8 +36,9 @@
   <break time="500ms"/>
   </voice>
   <voice name="es-CO-SalomeNeural">
-    <prosody rate="-20%">Que tengas un gran día</prosody>
+    <prosody rate="-20%">Que tenga un gran día</prosody>
     <break time="800ms"/>
+  <break time="500ms"/>
   <break time="500ms"/>
   </voice>
 </speak>
