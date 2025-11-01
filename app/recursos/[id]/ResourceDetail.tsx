@@ -574,10 +574,15 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                           {children}
                         </ul>
                       ),
-                      ol: ({ children }) => (
-                        <ol className="list-decimal list-inside mb-4 space-y-2">
+                      ol: ({ children, ...props }) => (
+                        <ol {...props} className="mb-4 space-y-2 pl-6" style={{ listStyleType: 'decimal', listStylePosition: 'outside' }}>
                           {children}
                         </ol>
+                      ),
+                      li: ({ children, ...props }) => (
+                        <li {...props} className="ml-0 pl-2 text-gray-700">
+                          {children}
+                        </li>
                       ),
                       code: ({ children }) => (
                         <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
