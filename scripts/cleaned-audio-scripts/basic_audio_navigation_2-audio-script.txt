@@ -1,0 +1,132 @@
+**Duration**: 7:15 minutes
+```
+"¡Hola! Bienvenido a Hablas. Soy tu instructor de inglés para conductores.
+Hoy vamos a aprender frases esenciales de navegación y direcciones que usarás todos los días como conductor de Uber, Lyft o DiDi.
+En esta lección aprenderás 8 frases importantes para comunicarte con tus pasajeros sobre direcciones, rutas y llegadas.
+Escucha cada frase en inglés, repítela en voz alta durante las pausas, y al final tendremos una práctica rápida.
+¿Listo? ¡Vamos a empezar!"
+Frase 1: Cuando recoges al pasajero y quieres confirmar su destino.
+
+We're going to Main Street, right?
+
+We're going to Main Street, right?
+
+"Vamos a Main Street, ¿correcto?
+Nota importante: Usa 'right?' al final para confirmar.
+Siempre verifica el destino antes de arrancar."
+Frase 2: Para preguntar si el pasajero prefiere una ruta específica.
+
+Do you have a preferred route?
+
+Do you have a preferred route?
+
+"¿Tiene una ruta preferida?
+Esto muestra profesionalismo. Algunos pasajeros conocen atajos
+o quieren evitar ciertas calles."
+Frase 3: Cuando explicas por qué elegiste cierta ruta.
+
+I'm taking the highway. It's faster.
+
+I'm taking the highway. It's faster.
+
+"Voy a tomar la autopista. Es más rápido.
+Puedes cambiar 'highway' por 'freeway' o 'back roads'
+dependiendo de tu ruta."
+Frase 4: Para avisar sobre el tráfico.
+
+There's heavy traffic ahead.
+
+There's heavy traffic ahead.
+
+"Hay mucho tráfico adelante.
+Esto prepara al pasajero si el viaje será más largo.
+También puedes decir 'a lot of traffic' que es más simple."
+Frase 5: Para informar cuánto falta para llegar.
+
+We'll be there in five minutes.
+
+We'll be there in five minutes.
+
+"Llegaremos en cinco minutos.
+Cambia 'five' por el número que necesites:
+two minutes, ten minutes, fifteen minutes."
+Frase 6: Cuando necesitas instrucciones específicas del pasajero.
+
+Which entrance do you want?
+
+Which entrance do you want?
+
+"¿Cuál entrada quiere?
+Muy útil en aeropuertos, hoteles grandes, o edificios
+con múltiples entradas."
+Frase 7: Cuando llegas al destino.
+
+We're here. Is this good?
+
+We're here. Is this good?
+
+"Llegamos. ¿Está bien aquí?
+Simple y efectivo. Confirma que el lugar es correcto
+antes de terminar el viaje."
+Frase 8: Si el pasajero necesita que avances un poco más.
+
+I can pull up a bit more.
+
+I can pull up a bit more.
+
+"Puedo avanzar un poco más.
+Muestra excelente servicio al cliente.
+Úsalo cuando sea seguro avanzar."
+"¡Excelente! Ahora vamos a practicar todas las frases
+a velocidad normal. Repite después de cada una."
+We're going to Main Street, right?
+
+Do you have a preferred route?
+
+I'm taking the highway. It's faster.
+
+There's heavy traffic ahead.
+
+We'll be there in five minutes.
+
+Which entrance do you want?
+
+We're here. Is this good?
+
+I can pull up a bit more.
+
+¡Muy bien! Cada vez suena más natural.
+
+"¡Felicidades! Acabas de aprender 8 frases esenciales
+de navegación y direcciones en inglés.
+Estas frases te ayudarán a comunicarte profesionalmente
+con tus pasajeros todos los días.
+Mi recomendación: Escucha este audio tres veces esta semana.
+Practica las frases mientras manejas sin pasajeros.
+Descarga el PDF de esta lección en la app Hablas para
+tener todas las frases escritas.
+Recuerda: Cada palabra en inglés que aprendes es una inversión
+en mejores propinas y mejores calificaciones.
+¡Sigue adelante! Nos vemos en la próxima lección.
+¡Éxito en la calle!"
+```
+**Voice Talent Needed:**
+- 1 Spanish narrator (warm, encouraging, Latin American accent preferred)
+- 1 English narrator (clear, neutral American accent, capable of 80% speed)
+**Audio Quality:**
+- Studio quality recording
+- Remove background noise
+- Normalize volume levels
+- Add subtle background music (optional, very low volume)
+**Timing:**
+- Total duration: ~11 minutes (allows for natural speech variations)
+- Pauses are CRITICAL for learner repetition
+- English phrases at 80% speed for clarity
+**Mobile Optimization:**
+- Export in MP3 format, 128kbps
+- Include chapter markers for each phrase
+- File size target: Under 10MB
+📄 **PDF Download**: Written transcript with phonetics
+🎯 **Quick Reference Card**: All 8 phrases on one page
+📱 **Practice Mode**: Audio-only version with longer pauses
+⭐ **Next Lesson**: "Conversaciones con Pasajeros - Parte 1"

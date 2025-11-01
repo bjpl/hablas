@@ -1,0 +1,152 @@
+**Focus**: Navegación y direcciones básicas
+```
+"¡Hola! Bienvenido a Hablas. Soy tu instructor de inglés para conductores.
+Hoy vamos a aprender las frases más importantes sobre direcciones en inglés.
+Estas son las palabras que escucharás todos los días en tu app de navegación
+y que necesitas entender perfectamente para llegar a tiempo.
+Este audio dura solo 7 minutos. Puedes escucharlo mientras esperas pasajeros
+o antes de comenzar tu turno.
+Vamos a practicar cada frase DOS veces - primero despacio, luego la repites tú.
+No tengas pena. Aquí nadie te escucha. Es tu momento de practicar.
+¿Listo? ¡Empecemos!"
+Primero, las direcciones básicas que escucharás en tu GPS.
+
+Frase 1: La dirección más común. Girar a la izquierda.
+
+Turn left
+
+Turn left
+
+Gira a la izquierda. O también: Voltea a la izquierda.
+
+Frase 2: Girar a la derecha.
+
+Turn right
+
+Turn right
+
+Gira a la derecha. O: Voltea a la derecha.
+
+Frase 3: Seguir derecho. Muy fácil esta.
+
+Go straight
+
+Go straight
+
+Sigue derecho. O: Continúa recto.
+
+"Consejo: 'Straight' se pronuncia 'STREIT', no 'estraight'.
+Practica: streit, streit, streit."
+Frase 4: Cuando necesitas dar la vuelta en U.
+
+Make a U-turn
+
+Make a U-turn
+
+Haz un retorno. O: Da vuelta en U.
+
+Frase 5: La distancia en pies. Tu GPS dirá esto constantemente.
+
+In 500 feet
+
+In 500 feet
+
+En 500 pies. Eso es aproximadamente 150 metros.
+
+"Recuerda: 500 feet son como una cuadra y media.
+Cuando escuches esto, prepárate para voltear pronto."
+Frase 6: En el próximo semáforo.
+
+At the next light
+
+At the next light
+
+En el siguiente semáforo. O: En la próxima luz.
+
+Frase 7: En la señal de alto.
+
+At the stop sign
+
+At the stop sign
+
+En la señal de STOP. En el alto.
+
+Frase 8: Cuando llegas al destino. Esta es muy importante.
+
+Your destination is on the left
+
+Your destination is on the left
+
+Tu destino está a la izquierda.
+
+Frase 9: Lo mismo, pero del otro lado.
+
+Your destination is on the right
+
+Your destination is on the right
+
+Tu destino está a la derecha.
+
+Frase 10: ¡Llegaste! La frase favorita de todos.
+
+You have arrived
+
+You have arrived
+
+Has llegado. Ya llegaste.
+
+"¡Excelente trabajo! Ahora vamos a practicar todas juntas,
+a velocidad normal. Escucha y repite en voz alta."
+Turn left
+
+Turn right
+
+Go straight
+
+Make a U-turn
+
+In 500 feet
+
+At the next light
+
+At the stop sign
+
+Your destination is on the left
+
+Your destination is on the right
+
+You have arrived
+
+"¡Felicidades! Ya conoces las 10 frases de direcciones más importantes
+en inglés.
+Ahora cada vez que tu GPS hable, vas a entender perfectamente qué hacer.
+Mi consejo: Escucha este audio una vez al día por una semana.
+Mientras manejas, repite las frases en voz alta.
+En dos semanas, estas palabras van a ser automáticas para ti.
+También puedes descargar el PDF con todas estas frases y la pronunciación
+escrita. Está en tu app de Hablas.
+Recuerda: cada palabra que aprendes es más dinero en tu bolsillo.
+Menos tiempo perdido, más viajes completados, mejores propinas.
+¡Sigue practicando! Nos vemos en la próxima lección.
+¡Mucho éxito en la calle!"
+```
+- **Spanish Narrator**: Neutral Latin American accent, warm and encouraging tone
+- **English Narrator**: Clear North American accent (General American), professional GPS-like clarity
+- **Age Range**: 30-45 years old (relatable to target audience)
+- Studio quality recording
+- No background music during instruction (can add subtle music during intro/outro)
+- Clear separation between Spanish and English sections
+- Consistent volume levels
+- Total duration may vary ±30 seconds based on natural speech patterns
+- Pauses are minimum durations - can extend if feels rushed
+- English repetitions should be identical in pronunciation
+- Export at 128kbps MP3 for smaller file size
+- Mono audio acceptable (reduces file size by 50%)
+- Include chapter markers at each phrase for easy navigation
+**Include in downloadable PDF:**
+1. All 10 phrases with phonetic spelling
+2. Visual icons for each direction (arrows)
+3. Distance conversion chart (feet to meters)
+4. Practice checklist
+5. QR code to next lesson
+**Content complete and ready for production! 🎙️**
