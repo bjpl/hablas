@@ -294,13 +294,15 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
 
       {/* Content */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8">
-        {/* Resource metadata card */}
-        <div className="bg-white rounded shadow-md p-6 sm:p-8 mb-8 border border-gray-200">
+        {/* Enhanced Resource metadata card */}
+        <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-xl p-8 mb-8 border-2 border-gray-100">
           <div className="flex items-start gap-6 mb-6">
-            <span className="text-5xl transition-transform hover:scale-110 duration-200">{typeIcons[resource.type]}</span>
+            <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center text-4xl shadow-lg transform hover:rotate-6 transition-transform duration-300">
+              {typeIcons[resource.type]}
+            </div>
             <div className="flex-1">
-              <h2 className="text-3xl font-bold mb-3 text-gray-900 leading-tight">{resource.title}</h2>
-              <p className="text-gray-600 mb-6 text-lg leading-relaxed">{resource.description}</p>
+              <h2 className="text-4xl font-extrabold mb-4 bg-gradient-to-r from-blue-900 via-blue-700 to-cyan-700 bg-clip-text text-transparent leading-tight">{resource.title}</h2>
+              <p className="text-gray-700 mb-6 text-lg leading-relaxed font-medium">{resource.description}</p>
 
               <div className="flex flex-wrap gap-3 mb-5">
                 <span className="px-4 py-2 bg-blue-100 text-blue-800 text-sm rounded font-semibold">
@@ -704,9 +706,14 @@ function BilingualDialogueFormatter({ content }: { content: string }) {
       // Only show if it looks like a phrase header (FRASE, Frase)
       if (headerText.match(/FRASE|Frase/i)) {
         formatted.push(
-          <h4 key={i} className="text-lg font-semibold text-blue-700 mt-6 mb-3 border-l-4 border-blue-400 pl-4">
-            {headerText}
-          </h4>
+          <div key={i} className="mt-8 mb-4">
+            <div className="flex items-center gap-3 p-4 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg shadow-md">
+              <span className="text-3xl">🎯</span>
+              <h4 className="text-xl font-bold text-white">
+                {headerText}
+              </h4>
+            </div>
+          </div>
         );
       }
       // Skip timestamp headers like ### [00:50] or ### [01:35]
@@ -773,16 +780,22 @@ function BilingualDialogueFormatter({ content }: { content: string }) {
       if (isEnglish) {
         if (!isDuplicate) {
           formatted.push(
-            <div key={i} className="my-4 p-5 rounded-lg border-l-4 border-blue-600 bg-gradient-to-r from-blue-50 to-blue-25 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-start gap-3">
-                <span className="text-2xl mt-1">🇺🇸</span>
+            <div key={i} className="my-6 p-6 rounded-xl border-2 border-blue-500 bg-gradient-to-br from-blue-50 via-blue-25 to-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.01]">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-2xl shadow-md">
+                  🇺🇸
+                </div>
                 <div className="flex-1">
-                  <p className="text-lg font-bold text-blue-900 leading-relaxed" lang="en">
-                    {text}
+                  <p className="text-xl font-bold text-blue-900 leading-relaxed mb-3" lang="en" style={{fontFamily: 'system-ui, -apple-system, sans-serif'}}>
+                    "{text}"
                   </p>
-                  <div className="text-xs text-blue-600 mt-2 font-semibold uppercase tracking-wide flex items-center gap-2">
-                    English / Inglés
-                    <span className="bg-blue-200 px-2 py-0.5 rounded text-blue-900">🔁 Se repite 2x en audio</span>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="inline-flex items-center px-3 py-1 bg-blue-600 text-white text-xs font-bold uppercase tracking-wider rounded-full">
+                      English
+                    </span>
+                    <span className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-900 text-xs font-semibold rounded-full">
+                      🔁 Se repite 2x en audio
+                    </span>
                   </div>
                 </div>
               </div>
@@ -793,15 +806,19 @@ function BilingualDialogueFormatter({ content }: { content: string }) {
       } else if (isSpanish) {
         if (!isDuplicate) {
           formatted.push(
-            <div key={i} className="my-4 p-5 rounded-lg border-l-4 border-green-600 bg-gradient-to-r from-green-50 to-green-25 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-start gap-3">
-                <span className="text-2xl mt-1">🇪🇸</span>
+            <div key={i} className="my-6 p-6 rounded-xl border-2 border-green-500 bg-gradient-to-br from-green-50 via-green-25 to-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.01]">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-2xl shadow-md">
+                  🇪🇸
+                </div>
                 <div className="flex-1">
-                  <p className="text-lg font-bold text-green-900 leading-relaxed" lang="es">
-                    {text}
+                  <p className="text-xl font-bold text-green-900 leading-relaxed mb-3" lang="es" style={{fontFamily: 'system-ui, -apple-system, sans-serif'}}>
+                    "{text}"
                   </p>
-                  <div className="text-xs text-green-600 mt-2 font-semibold uppercase tracking-wide">
-                    Español / Spanish
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="inline-flex items-center px-3 py-1 bg-green-600 text-white text-xs font-bold uppercase tracking-wider rounded-full">
+                      Español
+                    </span>
                   </div>
                 </div>
               </div>
@@ -834,27 +851,29 @@ function BilingualDialogueFormatter({ content }: { content: string }) {
     // Regular paragraphs (instructions, explanations) - Only meaningful student content
     if (line.length > 0) {
       // Highlight instructor tips and learning advice
-      if (line.match(/^(Frase número|Mi consejo|En los próximos|Cada frase|Escucha|Esta es LA frase|Esta frase|Cambia|Memoriza|Di|Siempre|Usa|Pregunta)/i)) {
+      if (line.match(/^(Frase número|Mi consejo|En los próximos|Cada frase|Escucha|Esta es LA frase|Esta frase|Cambia|Memoriza|Di esto|Siempre|Usa|Pregunta)/i)) {
         formatted.push(
-          <div key={i} className="my-3 p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
-            <p className="text-sm text-blue-900 leading-relaxed">
-              💬 <span className="font-medium">{line.replace(/\*\*/g, '').replace(/^"/, '').replace(/"$/, '')}</span>
+          <div key={i} className="my-4 p-4 bg-gradient-to-r from-yellow-50 to-orange-50 border-l-4 border-yellow-500 rounded-lg shadow-sm">
+            <p className="text-base text-gray-800 leading-relaxed flex items-start gap-2">
+              <span className="text-xl flex-shrink-0">💡</span>
+              <span className="font-medium">{line.replace(/\*\*/g, '').replace(/^"/, '').replace(/"$/, '')}</span>
             </p>
           </div>
         );
       } else if (line.match(/En español:/i)) {
         // Spanish translations - highlight these
         formatted.push(
-          <div key={i} className="my-2 p-2 bg-green-50 border-l-2 border-green-400 rounded">
-            <p className="text-sm text-green-900 font-medium">
+          <div key={i} className="my-3 p-3 bg-gradient-to-r from-green-100 to-green-50 border-l-4 border-green-500 rounded-lg">
+            <p className="text-base text-green-900 font-semibold flex items-center gap-2">
+              <span className="text-lg">🗣️</span>
               {line.replace(/\*\*/g, '')}
             </p>
           </div>
         );
-      } else if (!line.startsWith('[') && !line.includes('**[') && !line.match(/^\d+:\d+/)) {
-        // Only show if it's not a timestamp, script direction, or metadata
+      } else if (!line.startsWith('[') && !line.includes('**[') && !line.match(/^\d+:\d+/) && line.length > 20) {
+        // Only show substantial content (not timestamps, script directions, or very short lines)
         formatted.push(
-          <p key={i} className="text-gray-700 leading-relaxed my-2 text-base">
+          <p key={i} className="text-gray-700 leading-relaxed my-3 text-base max-w-3xl">
             {line.replace(/\*\*/g, '')}
           </p>
         );
@@ -864,16 +883,21 @@ function BilingualDialogueFormatter({ content }: { content: string }) {
   }
 
   return (
-    <div className="space-y-4 max-w-4xl">
-      {/* Color guide */}
-      <div className="p-4 bg-gradient-to-r from-yellow-50 to-orange-50 border-l-4 border-yellow-500 rounded-lg shadow-sm">
-        <p className="text-sm text-yellow-900 flex items-center gap-2">
-          <span className="text-lg">💡</span>
-          <span className="font-bold">Guía de colores:</span>{' '}
-          <span className="text-blue-700 font-semibold">Azul = Inglés</span>
-          <span className="text-gray-400">|</span>
-          <span className="text-green-700 font-semibold">Verde = Español</span>
-        </p>
+    <div className="space-y-6 max-w-5xl mx-auto">
+      {/* Enhanced Color Guide */}
+      <div className="p-5 bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 rounded-2xl shadow-lg">
+        <div className="flex items-center justify-center gap-4 flex-wrap">
+          <span className="text-2xl">🎨</span>
+          <span className="text-white font-bold text-lg">Guía de Aprendizaje:</span>
+          <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+            <span className="text-2xl">🇺🇸</span>
+            <span className="text-white font-semibold">Azul = English</span>
+          </div>
+          <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+            <span className="text-2xl">🇪🇸</span>
+            <span className="text-white font-semibold">Verde = Español</span>
+          </div>
+        </div>
       </div>
 
       {/* Technical Specifications (Collapsible) */}
