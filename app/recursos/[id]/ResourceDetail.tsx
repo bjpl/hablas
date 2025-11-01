@@ -650,6 +650,7 @@ function BilingualDialogueFormatter({ content }: { content: string }) {
 
   const lines = content.split('\n');
   const formatted = [];
+  let lastDialogue = { text: '', language: '', index: -1 };
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
@@ -747,47 +748,60 @@ function BilingualDialogueFormatter({ content }: { content: string }) {
         isEnglish = !isSpanish && hasEnglishWords;
       }
 
+      // Check if this is a duplicate of the last dialogue (repeated for learning)
+      const isDuplicate = lastDialogue.text === text && i - lastDialogue.index < 10;
+
       if (isEnglish) {
-        formatted.push(
-          <div key={i} className="my-4 p-5 rounded-lg border-l-4 border-blue-600 bg-gradient-to-r from-blue-50 to-blue-25 shadow-sm hover:shadow-md transition-shadow">
-            <div className="flex items-start gap-3">
-              <span className="text-2xl mt-1">🇺🇸</span>
-              <div className="flex-1">
-                <p className="text-lg font-bold text-blue-900 leading-relaxed" lang="en">
-                  {text}
-                </p>
-                <div className="text-xs text-blue-600 mt-2 font-semibold uppercase tracking-wide">
-                  English / Inglés
+        if (!isDuplicate) {
+          formatted.push(
+            <div key={i} className="my-4 p-5 rounded-lg border-l-4 border-blue-600 bg-gradient-to-r from-blue-50 to-blue-25 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-start gap-3">
+                <span className="text-2xl mt-1">🇺🇸</span>
+                <div className="flex-1">
+                  <p className="text-lg font-bold text-blue-900 leading-relaxed" lang="en">
+                    {text}
+                  </p>
+                  <div className="text-xs text-blue-600 mt-2 font-semibold uppercase tracking-wide flex items-center gap-2">
+                    English / Inglés
+                    <span className="bg-blue-200 px-2 py-0.5 rounded text-blue-900">🔁 Se repite 2x en audio</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        );
+          );
+          lastDialogue = { text, language: 'english', index: i };
+        }
       } else if (isSpanish) {
-        formatted.push(
-          <div key={i} className="my-4 p-5 rounded-lg border-l-4 border-green-600 bg-gradient-to-r from-green-50 to-green-25 shadow-sm hover:shadow-md transition-shadow">
-            <div className="flex items-start gap-3">
-              <span className="text-2xl mt-1">🇪🇸</span>
-              <div className="flex-1">
-                <p className="text-lg font-bold text-green-900 leading-relaxed" lang="es">
-                  {text}
-                </p>
-                <div className="text-xs text-green-600 mt-2 font-semibold uppercase tracking-wide">
-                  Español / Spanish
+        if (!isDuplicate) {
+          formatted.push(
+            <div key={i} className="my-4 p-5 rounded-lg border-l-4 border-green-600 bg-gradient-to-r from-green-50 to-green-25 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-start gap-3">
+                <span className="text-2xl mt-1">🇪🇸</span>
+                <div className="flex-1">
+                  <p className="text-lg font-bold text-green-900 leading-relaxed" lang="es">
+                    {text}
+                  </p>
+                  <div className="text-xs text-green-600 mt-2 font-semibold uppercase tracking-wide">
+                    Español / Spanish
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        );
+          );
+          lastDialogue = { text, language: 'spanish', index: i };
+        }
       } else {
         // Neutral/unknown language
-        formatted.push(
-          <div key={i} className="my-4 p-4 rounded-lg border-l-4 border-gray-400 bg-gray-50">
-            <p className="text-base text-gray-800 leading-relaxed">
-              {text}
-            </p>
-          </div>
-        );
+        if (!isDuplicate) {
+          formatted.push(
+            <div key={i} className="my-4 p-4 rounded-lg border-l-4 border-gray-400 bg-gray-50">
+              <p className="text-base text-gray-800 leading-relaxed">
+                {text}
+              </p>
+            </div>
+          );
+          lastDialogue = { text, language: 'neutral', index: i };
+        }
       }
       continue;
     }
