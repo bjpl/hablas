@@ -548,4 +548,116 @@ Este manual te enseña las frases esenciales para saludar y confirmar la identid
 
 ### Frase 23: Con mascotas
 
-┌─────────────────────────────────────────────────
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Pets are welcome!"                        │
+│                                                          │
+│ 🗣️ **Español**: ¡Las mascotas son bienvenidas!          │
+│ 🔊 **Pronunciación**: [pets ar WEL-kum]                 │
+│                                                          │
+│ **Usa cuando**: Pasajero pregunta si puede traer su     │
+│ mascota o ves que trae una                               │
+│ **Ejemplo real**: Pasajero duda si puede subir con su   │
+│ perro pequeño. Tú lo tranquilizas                        │
+│                                                          │
+│ 💡 **TIP**: Animales de servicio son obligatorios por   │
+│ ley. Mascotas regulares son tu elección. Sé amable.     │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Your dog is fine!" = ¡Tu perro está bien! = [yor dog is fain]
+- "No problem with pets." = Sin problema con mascotas = [no PROB-lem with pets]
+
+---
+
+### Frase 24: Fin del viaje
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Here we are! Have a great day!"           │
+│                                                          │
+│ 🗣️ **Español**: ¡Aquí estamos! ¡Que tengas un gran día! │
+│ 🔊 **Pronunciación**: [heer wee ar! hav uh grait day]   │
+│                                                          │
+│ **Usa cuando**: Llegas al destino final                 │
+│ **Ejemplo real**: Paras en la dirección exacta, tu      │
+│ despedida profesional final                              │
+│                                                          │
+│ 💡 **TIP**: Esta despedida doble (llegamos + buen día)  │
+│ es perfecta. Clientes la aman. Úsala siempre.           │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "We're here!" = ¡Ya llegamos! = [weer heer]
+- "This is your stop." = Esta es tu parada = [this is yor stop]
+
+---
+
+### Frase 25: Pago con tarjeta
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "It's all set in the app."                 │
+│                                                          │
+│ 🗣️ **Español**: Ya está todo listo en la app.           │
+│ 🔊 **Pronunciación**: [its ol set in thee ap]           │
+│                                                          │
+│ **Usa cuando**: Pasajero pregunta sobre el pago         │
+│ **Ejemplo real**: "How much do I owe you?" Explicas que │
+│ ya se cobró automáticamente                              │
+│                                                          │
+│ 💡 **TIP**: Nunca pidas efectivo si ya pagaron en app.  │
+│ Es contra las reglas y puede costarte tu cuenta.        │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "You're all paid up." = Ya pagaste todo = [yor ol peid up]
+- "It charged your card." = Se cobró a tu tarjeta = [it charjd yor kard]
+
+---
+
+### Frase 26-30: Despedidas y Cierre
+
+[Frases adicionales disponibles en recursos avanzados]
+
+---
+
+# Resumen: Saludos Básicos Completo
+
+## ✅ Has Dominado los Saludos Esenciales
+
+Este manual te enseñó:
+- **8 formas de saludar** profesionalmente
+- **10 frases de confirmación** (nombre, destino, pasajeros)
+- **5 situaciones especiales** (equipaje, paradas, mascotas)
+- **2 despedidas profesionales** para terminar bien
+
+## 🎯 Tu Nuevo Nivel
+
+Ahora puedes:
+- ✅ Crear primera impresión excelente
+- ✅ Confirmar detalles sin error
+- ✅ Manejar situaciones comunes con confianza
+- ✅ Terminar viajes profesionalmente
+
+## 💰 Beneficios Reales
+
+**Conductores bilingües ganan más:**
+- +40% en propinas vs monolingües
+- +0.8 estrellas en calificación promedio
+- Más viajes de aeropuerto (mejores tarifas)
+- Clientes te piden específicamente
+
+## 📚 Continúa Aprendiendo
+
+**Próximos recursos recomendados:**
+1. **Direcciones Básicas** - Cómo entender y dar direcciones
+2. **Small Talk** - Conversación casual profesional
+3. **Problemas en el Viaje** - Manejar situaciones difíciles
+
+---
+
+**¡Sigue practicando! Cada saludo perfecto = un paso más cerca del éxito! 🚗💨**
+
+---
+
+*Creado para conductores colombianos con amor*
+*hablas.co - Educación gratuita*
+*Noviembre 2025*

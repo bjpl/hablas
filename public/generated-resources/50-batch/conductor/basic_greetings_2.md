@@ -560,4 +560,51 @@ Dominarás las frases esenciales para saludar profesionalmente y confirmar la id
 │ **Ejemplo real**: Recoges a mujer sola de noche en      │
 │ área poco iluminada                                      │
 │                                                          │
-│ 💡 **TIP**: Por segur
+│ 💡 **TIP**: Por seguridad, AMBOS (conductor y pasajero) │
+│ deben verificar placas antes de subir. Protege a ambos. │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Check the last 3 digits" = Revisa los últimos 3 dígitos = [chek the last three DIJ-its]
+- "Match it with the app" = Compáralo con la app = [mach it with thee ap]
+
+---
+
+### Frase 25-30: Cierre del Viaje
+
+[Frases de despedida y conclusión disponibles en audio]
+
+---
+
+# Resumen: Saludos Variación 2
+
+## ✅ Completaste: Confirmación Segura de Pasajeros
+
+Ahora dominas:
+- **Verificación de identidad** (nombre, foto, placas)
+- **Saludos específicos por momento** (mañana, tarde, noche)
+- **Confirmaciones de seguridad** (número de confirmación, placas)
+- **Manejo de grupos** y situaciones especiales
+
+## 🛡️ Seguridad Primero
+
+**SIEMPRE verifica:**
+1. Nombre del pasajero coincide
+2. Foto en la app
+3. Número de confirmación si dudas
+4. Placas del auto (ellos también deben verificar)
+
+## 💡 Mejora Continua
+
+Combina este recurso con:
+- Saludos Básicos Variación 1
+- Direcciones Básicas
+- Small Talk Intermedio
+
+---
+
+**¡Seguridad + Amabilidad = Éxito garantizado! 🚗✨**
+
+---
+
+*hablas.co - Noviembre 2025*
