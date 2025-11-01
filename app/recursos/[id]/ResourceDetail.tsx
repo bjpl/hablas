@@ -269,7 +269,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <main className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white shadow-md sticky top-0 z-10 border-b border-gray-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-5 flex items-center gap-4">
@@ -289,7 +289,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
       {/* Content */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8">
         {/* Resource metadata card */}
-        <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 mb-8 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-white rounded shadow-md p-6 sm:p-8 mb-8 border border-gray-200">
           <div className="flex items-start gap-6 mb-6">
             <span className="text-5xl transition-transform hover:scale-110 duration-200">{typeIcons[resource.type]}</span>
             <div className="flex-1">
@@ -342,7 +342,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
         {/* Audio Player - Show above content for audio resources */}
         {!loading && !error && resource.type === 'audio' && (
           <div className="mb-8">
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-lg p-6 border-2 border-blue-200">
+            <div className="bg-white rounded shadow-md p-6 border border-gray-200">
               <AudioPlayer
                 title={resource.title}
                 audioUrl={audioMetadata?.file ? `/hablas${audioMetadata.file}` : `/hablas/audio/resource-${resourceId}.mp3`}
@@ -355,7 +355,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
         )}
 
         {/* Content display */}
-        <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 border border-gray-200">
+        <div className="bg-white rounded shadow-md p-6 sm:p-8 border border-gray-200">
           {loading && (
             <div className="text-center py-16">
               <div className="inline-block animate-spin rounded-full h-16 w-16 border-4 border-gray-200 border-t-accent-blue"></div>

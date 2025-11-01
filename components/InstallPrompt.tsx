@@ -71,27 +71,26 @@ export default function InstallPrompt() {
       aria-labelledby="install-prompt-title"
       aria-describedby="install-prompt-description"
     >
-      <div className="bg-white rounded-lg shadow-2xl p-4 max-w-md mx-auto border-2 border-accent-green">
+      <div className="bg-white rounded shadow-lg p-4 max-w-md mx-auto border border-gray-300">
         <div className="flex items-start gap-4">
-          <div className="text-4xl flex-shrink-0" aria-hidden="true">📱</div>
           <div className="flex-1">
             <h3 id="install-prompt-title" className="font-bold text-lg mb-1 text-gray-900">
               Instala Hablas en tu teléfono
             </h3>
             <p id="install-prompt-description" className="text-sm text-gray-700 mb-3">
-              Accede rápido a todos los recursos sin necesidad de internet. ¡Perfecto para cuando estás trabajando!
+              Accede rápido a todos los recursos sin necesidad de internet. Perfecto para cuando estás trabajando!
             </p>
             <div className="flex gap-2">
               <button
                 onClick={handleInstall}
-                className="flex-1 px-4 py-2 bg-accent-green text-white rounded-lg font-medium hover:bg-opacity-90 transition-colors focus:outline-none focus:ring-2 focus:ring-accent-green focus:ring-offset-2"
+                className="flex-1 px-4 py-2 bg-accent-green text-white rounded font-medium hover:bg-green-700 transition-colors focus:outline-none focus:ring-2 focus:ring-accent-green focus:ring-offset-2"
                 aria-label="Instalar aplicación ahora"
               >
                 Instalar ahora
               </button>
               <button
                 onClick={handleDismiss}
-                className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg font-medium hover:bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
+                className="px-4 py-2 bg-gray-200 text-gray-700 rounded font-medium hover:bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
                 aria-label="Cerrar sugerencia de instalación"
               >
                 Ahora no
