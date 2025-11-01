@@ -52,6 +52,9 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [audioMetadata, setAudioMetadata] = useState<any>(null)
+  const [downloadingResource, setDownloadingResource] = useState(false)
+  const [downloadingAudio, setDownloadingAudio] = useState(false)
+  const [downloadSuccess, setDownloadSuccess] = useState<string | null>(null)
 
   const resourceId = parseInt(id)
   const resource = resources.find(r => r.id === resourceId)
@@ -330,44 +333,118 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
           </div>
 
           {/* Download buttons */}
-          <div className="flex flex-col sm:flex-row gap-3">
-            {/* Resource content download */}
-            <button
-              onClick={() => {
-                const link = document.createElement('a')
-                link.href = resource.downloadUrl
-                link.download = `${resource.title.replace(/[^a-z0-9]/gi, '_')}.md`
-                document.body.appendChild(link)
-                link.click()
-                document.body.removeChild(link)
-              }}
-              className="inline-flex items-center justify-center gap-3 flex-1 px-8 py-4 bg-accent-green text-white text-center rounded-lg font-semibold hover:bg-green-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-[1.02]"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              Descargar Recurso
-            </button>
-
-            {/* Audio download if available */}
-            {resource.audioUrl && (
-              <button
-                onClick={() => {
-                  const link = document.createElement('a')
-                  link.href = resource.audioUrl!
-                  link.download = `${resource.title.replace(/[^a-z0-9]/gi, '_')}.mp3`
-                  document.body.appendChild(link)
-                  link.click()
-                  document.body.removeChild(link)
-                }}
-                className="inline-flex items-center justify-center gap-3 flex-1 px-8 py-4 bg-accent-blue text-white text-center rounded-lg font-semibold hover:bg-blue-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-[1.02]"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+          <div className="space-y-3">
+            {/* Success message */}
+            {downloadSuccess && (
+              <div className="p-3 bg-green-100 border-l-4 border-green-500 rounded flex items-center gap-2 animate-fade-in">
+                <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                Descargar Audio
-              </button>
+                <span className="text-green-800 font-medium text-sm">{downloadSuccess}</span>
+              </div>
             )}
+
+            <div className="flex flex-col sm:flex-row gap-3">
+              {/* Resource content download */}
+              <button
+                onClick={async () => {
+                  setDownloadingResource(true);
+                  setDownloadSuccess(null);
+                  try {
+                    const link = document.createElement('a');
+                    link.href = resource.downloadUrl;
+                    link.download = `Hablas_${resource.id}_${resource.title.replace(/[^a-z0-9]/gi, '_').substring(0, 40)}.md`;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    setDownloadSuccess('✓ Recurso descargado exitosamente');
+                    setTimeout(() => setDownloadSuccess(null), 3000);
+                  } catch (err) {
+                    console.error('Download failed:', err);
+                  } finally {
+                    setDownloadingResource(false);
+                  }
+                }}
+                disabled={downloadingResource}
+                className={`inline-flex items-center justify-center gap-3 flex-1 px-8 py-4 text-white text-center rounded-lg font-semibold transition-all duration-200 shadow-md hover:shadow-lg ${
+                  downloadingResource
+                    ? 'bg-gray-400 cursor-not-allowed'
+                    : 'bg-accent-green hover:bg-green-700 transform hover:scale-[1.02] active:scale-[0.98]'
+                }`}
+              >
+                {downloadingResource ? (
+                  <>
+                    <svg className="animate-spin h-5 w-5" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Descargando...
+                  </>
+                ) : (
+                  <>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span>Descargar Recurso</span>
+                    <span className="text-xs opacity-80">({resource.size})</span>
+                  </>
+                )}
+              </button>
+
+              {/* Audio download if available */}
+              {resource.audioUrl && (
+                <button
+                  onClick={async () => {
+                    if (!resource.audioUrl) return;
+                    setDownloadingAudio(true);
+                    setDownloadSuccess(null);
+                    try {
+                      // Fetch and download audio
+                      const response = await fetch(resource.audioUrl);
+                      const blob = await response.blob();
+                      const url = window.URL.createObjectURL(blob);
+                      const link = document.createElement('a');
+                      link.href = url;
+                      link.download = `Hablas_${resource.id}_Audio.mp3`;
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                      window.URL.revokeObjectURL(url);
+                      setDownloadSuccess('✓ Audio descargado exitosamente');
+                      setTimeout(() => setDownloadSuccess(null), 3000);
+                    } catch (err) {
+                      console.error('Audio download failed:', err);
+                    } finally {
+                      setDownloadingAudio(false);
+                    }
+                  }}
+                  disabled={downloadingAudio}
+                  className={`inline-flex items-center justify-center gap-3 flex-1 px-8 py-4 text-white text-center rounded-lg font-semibold transition-all duration-200 shadow-md hover:shadow-lg ${
+                    downloadingAudio
+                      ? 'bg-gray-400 cursor-not-allowed'
+                      : 'bg-accent-blue hover:bg-blue-700 transform hover:scale-[1.02] active:scale-[0.98]'
+                  }`}
+                >
+                  {downloadingAudio ? (
+                    <>
+                      <svg className="animate-spin h-5 w-5" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Descargando...
+                    </>
+                  ) : (
+                    <>
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                      </svg>
+                      <span>Descargar Audio</span>
+                      <span className="text-xs opacity-80">(MP3)</span>
+                    </>
+                  )}
+                </button>
+              )}
+            </div>
           </div>
         </div>
 
@@ -568,6 +645,9 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
 
 // Bilingual Dialogue Formatter Component for Audio Scripts
 function BilingualDialogueFormatter({ content }: { content: string }) {
+  const [showTechSpecs, setShowTechSpecs] = useState(false);
+  const [showLearningOutcomes, setShowLearningOutcomes] = useState(false);
+
   const lines = content.split('\n');
   const formatted = [];
 
@@ -625,12 +705,47 @@ function BilingualDialogueFormatter({ content }: { content: string }) {
       continue;
     }
 
-    // Spanish dialogue (quoted text with Spanish characters/patterns)
+    // Dialogue detection (quoted text)
     if (line.startsWith('"') && line.endsWith('"')) {
       const text = line.slice(1, -1);
-      // Detect language
-      const isEnglish = /\b(the|you|your|are|have|is|can|will|do|delivery|order|customer|address)\b/i.test(text);
-      const isSpanish = /\b(hola|tengo|su|entrega|es|está|dónde|qué|cómo|puedo|favor|gracias|por|para)\b/i.test(text) || text.includes('¿') || text.includes('¡');
+
+      // Check context from previous lines (look for Speaker markers)
+      let speakerContext = 'unknown';
+      for (let j = i - 1; j >= Math.max(0, i - 3); j--) {
+        const prevLine = lines[j].trim();
+        if (prevLine.includes('[Speaker: English')) {
+          speakerContext = 'english';
+          break;
+        }
+        if (prevLine.includes('[Speaker: Spanish')) {
+          speakerContext = 'spanish';
+          break;
+        }
+      }
+
+      // Declare language flags
+      let isEnglish = false;
+      let isSpanish = false;
+
+      // Priority 1: Use speaker context if available (most reliable)
+      if (speakerContext === 'english') {
+        isEnglish = true;
+        isSpanish = false;
+      } else if (speakerContext === 'spanish') {
+        isEnglish = false;
+        isSpanish = true;
+      } else {
+        // Priority 2: Strong Spanish indicators (characters and common words)
+        const hasSpanishChars = /[¿¡áéíóúüñÁÉÍÓÚÜÑ]/.test(text);
+        const hasSpanishWords = /\b(hola|tengo|su|entrega|está?|dónde|qué|cómo|puedo|favor|gracias|por|para|cuando|llegas|cliente|pedido|confirmar|siempre|evita|protege|frase|número|uno|dos|tres)\b/i.test(text);
+
+        // Priority 3: English indicators (only if NOT Spanish)
+        const hasEnglishWords = /\b(delivery|order|customer|address|thank|sorry|problem|wait|here|there|where|what|how|michael|your|from)\b/i.test(text);
+
+        // Determine language (Spanish takes priority)
+        isSpanish = hasSpanishChars || hasSpanishWords;
+        isEnglish = !isSpanish && hasEnglishWords;
+      }
 
       if (isEnglish) {
         formatted.push(
@@ -694,14 +809,138 @@ function BilingualDialogueFormatter({ content }: { content: string }) {
   }
 
   return (
-    <div className="space-y-1 max-w-4xl">
-      <div className="mb-6 p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded">
-        <p className="text-sm text-yellow-900">
-          <span className="font-bold">💡 Guía de colores:</span>{' '}
-          <span className="text-blue-700 font-semibold">Azul = Inglés</span> | {' '}
+    <div className="space-y-4 max-w-4xl">
+      {/* Color guide */}
+      <div className="p-4 bg-gradient-to-r from-yellow-50 to-orange-50 border-l-4 border-yellow-500 rounded-lg shadow-sm">
+        <p className="text-sm text-yellow-900 flex items-center gap-2">
+          <span className="text-lg">💡</span>
+          <span className="font-bold">Guía de colores:</span>{' '}
+          <span className="text-blue-700 font-semibold">Azul = Inglés</span>
+          <span className="text-gray-400">|</span>
           <span className="text-green-700 font-semibold">Verde = Español</span>
         </p>
       </div>
+
+      {/* Technical Specifications (Collapsible) */}
+      <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+        <button
+          onClick={() => setShowTechSpecs(!showTechSpecs)}
+          className="w-full p-4 bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 transition-all duration-200 flex items-center justify-between group"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">🎙️</span>
+            <span className="font-bold text-gray-900 text-lg">Especificaciones Técnicas del Audio</span>
+          </div>
+          <svg
+            className={`w-6 h-6 text-gray-600 transition-transform duration-200 ${showTechSpecs ? 'rotate-180' : ''}`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        {showTechSpecs && (
+          <div className="p-6 bg-white space-y-4 animate-slide-down">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">🎤</span>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-1">Narrador en Español</h4>
+                  <p className="text-sm text-gray-700">Acento latinoamericano neutral (Colombiano o Mexicano preferido)</p>
+                  <p className="text-xs text-gray-500 mt-1">Tono: Cálido, alentador • Edad: 30-45 años</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">🇺🇸</span>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-1">Hablante Nativo en Inglés</h4>
+                  <p className="text-sm text-gray-700">Acento norteamericano general (General American)</p>
+                  <p className="text-xs text-gray-500 mt-1">Tono: Amigable profesional • Enunciación clara</p>
+                </div>
+              </div>
+            </div>
+            <div className="border-t border-gray-200 pt-4 mt-4">
+              <h4 className="font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                <span>⚙️</span> Especificaciones de Producción
+              </h4>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+                <div className="bg-gray-50 p-3 rounded">
+                  <div className="text-xs text-gray-500 mb-1">Frecuencia</div>
+                  <div className="font-semibold text-gray-900">44.1kHz</div>
+                </div>
+                <div className="bg-gray-50 p-3 rounded">
+                  <div className="text-xs text-gray-500 mb-1">Formato</div>
+                  <div className="font-semibold text-gray-900">MP3, 128kbps</div>
+                </div>
+                <div className="bg-gray-50 p-3 rounded">
+                  <div className="text-xs text-gray-500 mb-1">Duración</div>
+                  <div className="font-semibold text-gray-900">~7:15 min</div>
+                </div>
+                <div className="bg-gray-50 p-3 rounded">
+                  <div className="text-xs text-gray-500 mb-1">Tamaño</div>
+                  <div className="font-semibold text-gray-900">~7MB</div>
+                </div>
+              </div>
+              <div className="mt-3 flex flex-wrap gap-2">
+                <span className="text-xs bg-green-100 text-green-800 px-3 py-1 rounded-full font-medium">✓ Optimizado para móviles</span>
+                <span className="text-xs bg-blue-100 text-blue-800 px-3 py-1 rounded-full font-medium">✓ Uso offline</span>
+                <span className="text-xs bg-purple-100 text-purple-800 px-3 py-1 rounded-full font-medium">✓ Control de velocidad</span>
+                <span className="text-xs bg-orange-100 text-orange-800 px-3 py-1 rounded-full font-medium">✓ Pausas para aprendizaje</span>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Learning Outcomes (Collapsible) */}
+      <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+        <button
+          onClick={() => setShowLearningOutcomes(!showLearningOutcomes)}
+          className="w-full p-4 bg-gradient-to-r from-green-50 to-emerald-50 hover:from-green-100 hover:to-emerald-100 transition-all duration-200 flex items-center justify-between group"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-2xl">🎯</span>
+            <span className="font-bold text-gray-900 text-lg">¿Qué Aprenderás?</span>
+          </div>
+          <svg
+            className={`w-6 h-6 text-gray-600 transition-transform duration-200 ${showLearningOutcomes ? 'rotate-180' : ''}`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        {showLearningOutcomes && (
+          <div className="p-6 bg-white animate-slide-down">
+            <p className="text-sm text-gray-600 mb-4 italic">Al completar este audio, los repartidores podrán:</p>
+            <div className="space-y-3">
+              {[
+                { icon: '👋', text: 'Saludar clientes profesionalmente en inglés' },
+                { icon: '✓', text: 'Confirmar identidad del cliente y detalles de entrega' },
+                { icon: '🏢', text: 'Manejar problemas de acceso cortésmente' },
+                { icon: '📦', text: 'Completar entregas sin contacto con comunicación apropiada' },
+                { icon: '🙏', text: 'Agradecer a clientes apropiadamente' },
+                { icon: '💪', text: 'Aumentar confianza en interacciones con clientes' },
+                { icon: '💰', text: 'Mejorar potencial de propinas usando inglés profesional' },
+              ].map((outcome, index) => (
+                <div key={index} className="flex items-start gap-3 p-3 rounded-lg hover:bg-green-50 transition-colors">
+                  <span className="text-2xl flex-shrink-0">{outcome.icon}</span>
+                  <p className="text-gray-800 font-medium">{outcome.text}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border-l-4 border-blue-500">
+              <p className="text-sm text-gray-700">
+                <span className="font-bold text-blue-900">💡 Consejo:</span> Escucha el audio completo primero. Luego, repítelo mientras manejas o esperas pedidos. La repetición es la clave del éxito.
+              </p>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Content */}
       {formatted}
     </div>
   );
