@@ -10,6 +10,7 @@ import {
   getPlaybackPosition,
   clearPlaybackPosition
 } from '@/lib/audio-utils';
+import { useAudioContext } from '@/lib/contexts/AudioContext';
 
 interface AudioMetadata {
   duration?: string;
@@ -29,9 +30,6 @@ interface AudioPlayerProps {
   enhanced?: boolean;
 }
 
-// Track currently playing audio globally to auto-stop when new audio plays
-let currentlyPlaying: HTMLAudioElement | null = null;
-
 export default function AudioPlayer({
   audioUrl,
   label = 'Reproducir audio',
@@ -42,6 +40,7 @@ export default function AudioPlayer({
   resourceId,
   enhanced = false
 }: AudioPlayerProps) {
+  const { setCurrentAudio } = useAudioContext();
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -122,9 +121,7 @@ export default function AudioPlayer({
       if (audioRef.current) {
         savePlaybackPosition(audioUrl, audioRef.current.currentTime);
         audioRef.current.pause();
-        if (currentlyPlaying === audioRef.current) {
-          currentlyPlaying = null;
-        }
+        setCurrentAudio(null);
       }
       audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
       audio.removeEventListener('timeupdate', handleTimeUpdate);
@@ -143,15 +140,11 @@ export default function AudioPlayer({
     if (!audioRef.current) return;
 
     try {
-      // Stop any currently playing audio
-      if (currentlyPlaying && currentlyPlaying !== audioRef.current) {
-        currentlyPlaying.pause();
-        currentlyPlaying.currentTime = 0;
-      }
+      // Set as current audio (context will stop any other playing audio)
+      setCurrentAudio(audioRef.current);
 
       // Play this audio
       await audioRef.current.play();
-      currentlyPlaying = audioRef.current;
       setIsPlaying(true);
       setError(null);
     } catch (err) {
@@ -166,9 +159,7 @@ export default function AudioPlayer({
 
     audioRef.current.pause();
     setIsPlaying(false);
-    if (currentlyPlaying === audioRef.current) {
-      currentlyPlaying = null;
-    }
+    setCurrentAudio(null);
   };
 
   const handleToggle = () => {
@@ -182,9 +173,7 @@ export default function AudioPlayer({
   const handleEnded = () => {
     if (!isLooping) {
       setIsPlaying(false);
-      if (currentlyPlaying === audioRef.current) {
-        currentlyPlaying = null;
-      }
+      setCurrentAudio(null);
       // Clear position when finished
       if (audioUrl) {
         clearPlaybackPosition(audioUrl);
@@ -263,9 +252,7 @@ export default function AudioPlayer({
     setError(errorMessage);
     setIsPlaying(false);
     setIsLoading(false);
-    if (currentlyPlaying === audioRef.current) {
-      currentlyPlaying = null;
-    }
+    setCurrentAudio(null);
   };
 
   const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
