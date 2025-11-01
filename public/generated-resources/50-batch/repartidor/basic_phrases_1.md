@@ -560,4 +560,312 @@ Este manual contiene las 30 frases más importantes que necesitas para trabajar 
 └─────────────────────────────────────────────────────────┘
 
 **Variaciones**:
-- "Your order is at the door" = Tu pedido está en la puerta = [yor
+- "Your order is at the door" = Tu pedido está en la puerta = [yor OR-der is at the dor]
+- "I left it by the front door" = Lo dejé junto a la puerta principal = [ai left it bai the frunt dor]
+
+---
+
+### Frase 22: Problema con el pedido
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm sorry, something is missing."         │
+│                                                          │
+│ 🗣️ **Español**: Lo siento, algo falta.                  │
+│ 🔊 **Pronunciación**: [aim SO-ree, SUM-thing is         │
+│                       MIS-ing]                           │
+│                                                          │
+│ **Usa cuando**: Descubres que falta un artículo del     │
+│ pedido antes de entregar                                 │
+│ **Ejemplo real**: Revisas la bolsa y solo hay 2 items   │
+│ cuando deberían ser 3. Avisas al cliente de inmediato   │
+│                                                          │
+│ 💡 **TIP**: NUNCA te vayas sin avisar un problema.      │
+│ Honestidad = mejores calificaciones. Llama al           │
+│ restaurante para confirmar.                              │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "One item is missing" = Falta un artículo = [wun AI-tem is MIS-ing]
+- "The restaurant didn't include everything" = El restaurante no incluyó todo = [the RES-tuh-rant DID-nt in-KLOOD EV-ree-thing]
+
+---
+
+### Frase 23: Artículo dañado
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "The bag was torn, I'm very sorry."        │
+│                                                          │
+│ 🗣️ **Español**: La bolsa estaba rota, lo siento mucho.  │
+│ 🔊 **Pronunciación**: [the bag wuz torn, aim VE-ree     │
+│                       SO-ree]                            │
+│                                                          │
+│ **Usa cuando**: La bolsa o el pedido se dañó durante    │
+│ el transporte                                            │
+│ **Ejemplo real**: Un derrame, bolsa rota, o comida      │
+│ aplastada. Avisar con disculpa profesional              │
+│                                                          │
+│ 💡 **TIP**: Ofrece tomar fotos para el reporte. Esto    │
+│ muestra profesionalismo y te protege. La mayoría de     │
+│ clientes aprecian la honestidad.                         │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Something spilled in transit" = Algo se derramó en el camino = [SUM-thing spild in TRAN-sit]
+- "I apologize for the condition" = Me disculpo por la condición = [ai uh-POL-uh-jaiz for the kon-DISH-un]
+
+---
+
+### Frase 24: Pedir espera
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Please give me one moment."               │
+│                                                          │
+│ 🗣️ **Español**: Por favor dame un momento.              │
+│ 🔊 **Pronunciación**: [pleez giv mee wun MO-ment]       │
+│                                                          │
+│ **Usa cuando**: Necesitas verificar algo antes de       │
+│ completar la entrega                                     │
+│ **Ejemplo real**: Cliente pregunta algo mientras        │
+│ revisas la app o contactas al restaurante                │
+│                                                          │
+│ 💡 **TIP**: Es mejor pedir 30 segundos que dar          │
+│ información incorrecta. Los clientes aprecian cuidado.  │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "One second, please" = Un segundo, por favor = [wun SEK-und, pleez]
+- "Let me check" = Déjame revisar = [let mee chek]
+
+---
+
+### Frase 25: Problema de dirección
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I can't find the address."                │
+│                                                          │
+│ 🗣️ **Español**: No puedo encontrar la dirección.        │
+│ 🔊 **Pronunciación**: [ai kant faind the uh-DRES]       │
+│                                                          │
+│ **Usa cuando**: El GPS te llevó al lugar equivocado o   │
+│ no encuentras el número exacto                           │
+│ **Ejemplo real**: Estás en la calle correcta pero los   │
+│ números no coinciden. Llamas al cliente para ayuda      │
+│                                                          │
+│ 💡 **TIP**: Llama SIEMPRE que estés perdido. Es mejor   │
+│ que dar vueltas perdiendo tiempo y comida fría.         │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I'm at the location but don't see the building" = Estoy en la ubicación pero no veo el edificio = [aim at the lo-KAY-shun but dont see the BIL-ding]
+- "Can you help me find you?" = ¿Puedes ayudarme a encontrarte? = [kan yoo help mee faind yoo]
+
+---
+
+### Frase 26: Código de acceso
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "What's the gate code?"                     │
+│                                                          │
+│ 🗣️ **Español**: ¿Cuál es el código del portón?          │
+│ 🔊 **Pronunciación**: [wuts the gait koud]              │
+│                                                          │
+│ **Usa cuando**: Llegas a un edificio o complejo con     │
+│ portón/puerta cerrada con código                         │
+│ **Ejemplo real**: Apartamento con acceso controlado.    │
+│ GPS te llevó ahí pero no puedes entrar sin código       │
+│                                                          │
+│ 💡 **TIP**: Pregunta cortésmente. Si el cliente no      │
+│ responde en 2 minutos, usa "Call customer" en la app.   │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "How do I get in?" = ¿Cómo entro? = [hau doo ai get in]
+- "The gate is locked" = El portón está cerrado = [the gait is lokt]
+
+---
+
+### Frase 27: Retraso comunicado
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'll be there in five minutes."           │
+│                                                          │
+│ 🗣️ **Español**: Estaré ahí en cinco minutos.            │
+│ 🔊 **Pronunciación**: [ail bee thair in faiv MIN-its]   │
+│                                                          │
+│ **Usa cuando**: Hay tráfico o demora y quieres          │
+│ actualizar al cliente proactivamente                     │
+│ **Ejemplo real**: Pedido dice "20 min" pero llevas 15   │
+│ y aún faltan 5. Envías mensaje para tranquilizar        │
+│                                                          │
+│ 💡 **TIP**: Avisar proactivamente de retrasos = mejor   │
+│ propina. Clientes valoran la comunicación honesta.      │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Almost there!" = ¡Ya casi llego! = [OL-most thair]
+- "Two minutes away" = A dos minutos = [too MIN-its uh-WAY]
+
+---
+
+### Frase 28: Entrega a otra persona
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Are you receiving for Michael?"           │
+│                                                          │
+│ 🗣️ **Español**: ¿Estás recibiendo para Michael?         │
+│ 🔊 **Pronunciación**: [ar yoo ri-SEE-ving for           │
+│                       MAI-kul]                           │
+│                                                          │
+│ **Usa cuando**: Abre la puerta alguien diferente al     │
+│ nombre en la app                                         │
+│ **Ejemplo real**: App dice "Jennifer" pero abre un      │
+│ hombre. Confirmas que puede recibir por ella            │
+│                                                          │
+│ 💡 **TIP**: Siempre confirma. Esto previene entregas    │
+│ equivocadas y te protege si hay reclamo.                │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I have an order for Jennifer" = Tengo un pedido para Jennifer = [ai hav an OR-der for JEN-i-fer]
+- "Can you accept this delivery?" = ¿Puedes aceptar esta entrega? = [kan yoo ak-SEPT this di-LIV-uh-ree]
+
+---
+
+### Frase 29: Edificio equivocado
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Which building are you in?"               │
+│                                                          │
+│ 🗣️ **Español**: ¿En qué edificio estás?                 │
+│ 🔊 **Pronunciación**: [wich BIL-ding ar yoo in]         │
+│                                                          │
+│ **Usa cuando**: Complejo de apartamentos con varios     │
+│ edificios y no sabes cuál es el correcto                 │
+│ **Ejemplo real**: GPS te lleva al complejo pero hay 5   │
+│ edificios A, B, C, D, E y la app solo dice "#201"       │
+│                                                          │
+│ 💡 **TIP**: Muchos complejos no tienen señalización     │
+│ clara. Preguntar ahorra tiempo. Clientes entienden.     │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I'm in the parking lot" = Estoy en el estacionamiento = [aim in the PAR-king lot]
+- "I see Building A and B" = Veo Edificio A y B = [ai see BIL-ding ay and bee]
+
+---
+
+### Frase 30: Despedida final
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Have a great day!"                        │
+│                                                          │
+│ 🗣️ **Español**: ¡Que tengas un gran día!                │
+│ 🔊 **Pronunciación**: [hav uh grait day]                │
+│                                                          │
+│ **Usa cuando**: Después de completar CUALQUIER entrega  │
+│ exitosa - es tu frase final                             │
+│ **Ejemplo real**: Entregaste la comida, cliente dice    │
+│ gracias, tú respondes con esta despedida positiva       │
+│                                                          │
+│ 💡 **TIP**: Di esto con una SONRISA genuina. Es tu      │
+│ última impresión. Una despedida positiva = mejor        │
+│ propina y calificación perfecta.                         │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Have a good one!" = ¡Que lo pases bien! = [hav uh gud wun] (muy casual, amigable)
+- "Take care!" = ¡Cuídate! = [taik kair] (informal pero respetuoso)
+
+---
+
+# Resumen y Consejos Finales
+
+## ¿Qué has aprendido?
+
+En este manual has aprendido las **30 frases MÁS IMPORTANTES** para trabajar como domiciliario en Estados Unidos:
+
+**Saludos y Cortesía (1-5)**
+- Saludar profesionalmente
+- Presentarte como repartidor
+- Confirmaciones básicas
+
+**Entregas Efectivas (6-12)**
+- Confirmar ubicación
+- Manejar instrucciones especiales
+- Completar entregas sin contacto
+
+**Solución de Problemas (13-20)**
+- Artículos faltantes
+- Problemas de acceso
+- Retrasos y demoras
+
+**Comunicación Avanzada (21-30)**
+- Entregas sin contacto
+- Problemas con pedidos
+- Situaciones especiales
+- Despedidas profesionales
+
+## Estrategia para Dominar Estas Frases
+
+### Semana 1: Esenciales (Frases 1-10)
+- Practica 2 frases por día
+- Repite mientras manejas
+- Úsalas en cada entrega
+- ¡No tengas miedo de equivocarte!
+
+### Semana 2: Intermedias (Frases 11-20)
+- Añade 2 frases nuevas por día
+- Sigue practicando las primeras 10
+- Usa las nuevas cuando la situación lo requiera
+
+### Semana 3: Avanzadas (Frases 21-30)
+- Domina las situaciones especiales
+- Ya sabes las básicas de memoria
+- Enfócate en problemas comunes
+
+### Semana 4: Perfeccionamiento
+- Practica todas 30 frases
+- Trabaja en pronunciación
+- Añade tus propias variaciones
+
+## Tips de Oro para el Éxito
+
+### 1. **La Sonrisa Se Oye**
+Aunque el cliente no te vea, una sonrisa cambia tu tono de voz. Clientes lo notan = mejores propinas.
+
+### 2. **Despacio es Mejor que Incorrecto**
+Habla LENTO. Es mejor que te entiendan al 100% hablando despacio que hablar rápido y confundir.
+
+### 3. **Usa la App Como Ayuda**
+Muchas apps tienen mensajes pre-escritos en inglés. Combínalos con estas frases verbales.
+
+### 4. **Practica con Otros Domiciliarios**
+Forma un grupo de WhatsApp y practiquen entre ustedes. La comunidad ayuda.
+
+### 5. **No Te Rindas**
+Los primeros días son difíciles. En 2 semanas verás progreso. En 1 mes hablarás con confianza.
+
+## Errores Comunes a Evitar
+
+❌ **No digas "I no speak English"** - Di: "Sorry, can you speak slowly please?"
+❌ **No ignores al cliente** - Aunque no entiendas, di "One moment please"
+❌ **No inventes respuestas** - Si no sabes, di "Let me check"
+❌ **No te pongas nervioso** - Los clientes son pacientes si ven que intentas
+
+## Próximos Pasos
+
+✅ **Descarga este recurso** para tenerlo siempre offline
+✅ **Descarga el audio** (si disponible) para escuchar mientras trabajas
+✅ **Comparte con compañeros** domiciliarios que necesiten ayuda
+✅ **Únete a nuestra comunidad** de WhatsApp para más tips
+
+---
+
+**¿Preguntas? ¿Sugerencias?** Visita [hablas.co](https://hablas.co) para más recursos
+
+**¡Éxito en tus entregas! 🚴💨📦**
+
+---
+
+*Recurso creado por Hablas.co - Educación gratuita para trabajadores colombianos*
+*Versión 1.2 - Última actualización: Noviembre 2025*

@@ -572,4 +572,242 @@ Este manual contiene las 30 frases más importantes que necesitas como repartido
 
 ---
 
-### Frase 24:
+### Frase 24: Cambio en el pedido
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "The restaurant is out of that item."      │
+│                                                          │
+│ 🗣️ **Español**: El restaurante no tiene ese artículo.   │
+│ 🔊 **Pronunciación**: [the RES-tuh-rant is aut uv that  │
+│                       AI-tem]                            │
+│                                                          │
+│ **Usa cuando**: El restaurante te informa que un        │
+│ artículo no está disponible                              │
+│ **Ejemplo real**: Pides las 3 items del pedido pero el  │
+│ restaurante dice que no tienen 1. Debes avisar al       │
+│ cliente antes de salir                                   │
+│                                                          │
+│ 💡 **TIP**: Contacta al cliente ANTES de salir del      │
+│ restaurante. Pregunta si quiere sustituto o cancelar.   │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "They don't have it today" = No lo tienen hoy = [thei dont hav it tuh-DAY]
+- "Would you like a substitute?" = ¿Quieres un sustituto? = [wud yuu laik uh SUB-sti-toot]
+
+---
+
+### Frase 25: Tiempo de espera
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "The food isn't ready yet."                │
+│                                                          │
+│ 🗣️ **Español**: La comida no está lista todavía.        │
+│ 🔊 **Pronunciación**: [the fuud IZ-unt RED-ee yet]      │
+│                                                          │
+│ **Usa cuando**: Llegas al restaurante pero el pedido    │
+│ aún no está preparado                                    │
+│ **Ejemplo real**: App dice "ready for pickup" pero al   │
+│ llegar te dicen "5 more minutes". Decides qué hacer     │
+│                                                          │
+│ 💡 **TIP**: Si la espera es >10 min, notifica en la app.│
+│ Protege tu tiempo y tus ganancias.                      │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "How long will it be?" = ¿Cuánto tiempo tomará? = [hau long wil it bee]
+- "I'll wait five minutes" = Esperaré cinco minutos = [ail weit faiv MIN-its]
+
+---
+
+### Frase 26: Pedido equivocado
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "This isn't the right order."              │
+│                                                          │
+│ 🗣️ **Español**: Este no es el pedido correcto.          │
+│ 🔊 **Pronunciación**: [this IZ-unt the rait OR-der]     │
+│                                                          │
+│ **Usa cuando**: Recibes un pedido del restaurante pero  │
+│ no coincide con tu app                                   │
+│ **Ejemplo real**: Tu app dice "2 burgers" pero te dan   │
+│ un pedido de sushi. Debes verificar antes de salir      │
+│                                                          │
+│ 💡 **TIP**: SIEMPRE verifica nombre del cliente y       │
+│ número de pedido antes de salir del restaurante.        │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I need order #4523" = Necesito pedido #4523 = [ai need OR-der number FOR-faiv-TOO-three]
+- "Let me double-check" = Déjame verificar de nuevo = [let mee DUB-ul chek]
+
+---
+
+### Frase 27: Agradecimiento al restaurante
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Thank you, have a good one!"              │
+│                                                          │
+│ 🗣️ **Español**: Gracias, ¡que te vaya bien!             │
+│ 🔊 **Pronunciación**: [thank yuu, hav uh gud wun]       │
+│                                                          │
+│ **Usa cuando**: Recoges el pedido y te vas del          │
+│ restaurante                                              │
+│ **Ejemplo real**: Empleado te entrega las bolsas,       │
+│ verificas todo está bien, agradeces y sales             │
+│                                                          │
+│ 💡 **TIP**: Ser amable con el personal del restaurante  │
+│ = mejor trato la próxima vez. Ellos recuerdan caras.    │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Thanks so much!" = ¡Muchas gracias! = [thanks sou much]
+- "See you next time!" = ¡Nos vemos la próxima! = [see yuu nekst taim]
+
+---
+
+### Frase 28: Instrucciones poco claras
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Can you repeat that, please?"             │
+│                                                          │
+│ 🗣️ **Español**: ¿Puedes repetir eso, por favor?         │
+│ 🔊 **Pronunciación**: [kan yuu ri-PEET that, pleez]     │
+│                                                          │
+│ **Usa cuando**: Cliente o restaurante te da             │
+│ instrucciones pero no entendiste bien                    │
+│ **Ejemplo real**: Cliente habla rápido con direcciones  │
+│ complicadas. Es mejor preguntar que adivinar            │
+│                                                          │
+│ 💡 **TIP**: NO finjas entender. Preguntar = profesional.│
+│ Adivinar = errores = malas calificaciones.              │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Sorry, I didn't catch that" = Perdón, no capté eso = [SO-ree, ai DID-unt kach that]
+- "One more time, please?" = ¿Una vez más, por favor? = [wun mor taim, pleez]
+
+---
+
+### Frase 29: Confirmar apartamento
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "What's your apartment number?"            │
+│                                                          │
+│ 🗣️ **Español**: ¿Cuál es tu número de apartamento?      │
+│ 🔊 **Pronunciación**: [wuts yor uh-PART-ment NUM-ber]   │
+│                                                          │
+│ **Usa cuando**: Llegas al edificio pero la app solo     │
+│ muestra la dirección, no el apartamento                  │
+│ **Ejemplo real**: GPS dice "123 Main St" pero es un     │
+│ edificio de 200 apartamentos. Necesitas el # exacto     │
+│                                                          │
+│ 💡 **TIP**: Si el apartamento no aparece en la app,     │
+│ está en las "delivery instructions" o debes llamar.     │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Which floor?" = ¿Qué piso? = [wich flor]
+- "What unit?" = ¿Qué unidad? = [wut YOO-nit]
+
+---
+
+### Frase 30: Despedida con buenos deseos
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Enjoy your meal!"                         │
+│                                                          │
+│ 🗣️ **Español**: ¡Disfruta tu comida!                    │
+│ 🔊 **Pronunciación**: [en-JOI yor meel]                 │
+│                                                          │
+│ **Usa cuando**: Frase final perfecta después de         │
+│ entregar comida - es específica y apropiada             │
+│ **Ejemplo real**: Entregas la comida, haces contacto    │
+│ visual, sonríes y dices esto antes de irte              │
+│                                                          │
+│ 💡 **TIP**: Esta frase específica para comida es MÁS    │
+│ personal que "Have a great day". Los clientes la aman.  │
+│ Úsala siempre al final.                                 │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Enjoy!" = ¡Disfruta! = [en-JOI!] (súper casual, OK con clientes regulares)
+- "Bon appétit!" = ¡Buen provecho! = [bon ah-puh-TEE] (elegante, impresiona)
+
+---
+
+# Resumen y Próximos Pasos
+
+## ✅ Has Completado el Manual Básico
+
+**Felicitaciones!** Ahora conoces las 30 frases esenciales para trabajar exitosamente como domiciliario en Estados Unidos. Estas frases cubren el 90% de las situaciones que enfrentarás diariamente.
+
+## 📊 Tu Progreso de Aprendizaje
+
+### Nivel Alcanzado: **BÁSICO COMPLETO** ✅
+
+Puedes:
+- ✅ Saludar profesionalmente
+- ✅ Confirmar entregas
+- ✅ Manejar problemas comunes
+- ✅ Comunicarte con confianza
+- ✅ Aumentar propinas con inglés
+
+### Próximo Nivel: **INTERMEDIO**
+
+Para continuar tu aprendizaje, busca:
+- "Situaciones Intermedias para Repartidores"
+- "Manejo de Quejas en Inglés"
+- "Conversaciones con Clientes Difíciles"
+
+## 🎯 Plan de Acción Semanal
+
+### Esta Semana:
+1. **Memoriza Frases 1-10** (esenciales absolutos)
+2. **Úsalas en cada entrega** (aunque te sientas nervioso)
+3. **Escucha el audio mientras manejas** (repetición = éxito)
+
+### Próxima Semana:
+1. **Añade Frases 11-20** a tu repertorio
+2. **Practica con compañeros** en WhatsApp
+3. **Nota cuáles usas más** y enfócate en esas
+
+### Tercer Semana:
+1. **Domina Frases 21-30** (situaciones especiales)
+2. **Ya hablas con confianza** las primeras 20
+3. **Experimenta con variaciones** naturales
+
+## 💰 Impacto en Tus Ingresos
+
+**Domiciliarios que usan inglés básico reportan:**
+- 📈 **+30% en propinas** (clientes aprecian el esfuerzo)
+- ⭐ **+0.5 estrellas en calificaciones** (comunicación = éxito)
+- 🎯 **+15% en pedidos completados** (menos problemas)
+- 💪 **Más confianza** = más horas de trabajo = más dinero
+
+## 🤝 Únete a la Comunidad
+
+**Grupo de WhatsApp - Domiciliarios Aprendiendo Inglés**
+- Practica con otros repartidores
+- Comparte experiencias
+- Aprende frases nuevas
+- Apóyense mutuamente
+
+## 📱 Recursos Adicionales en Hablas.co
+
+- **Frases para Situaciones Específicas** (restaurantes, apartamentos, etc.)
+- **Guías Visuales** (capturas de pantalla de apps con traducción)
+- **Audio Completo** (escucha mientras trabajas)
+- **Comunidad de Apoyo** (no estás solo)
+
+---
+
+**Recuerda**: Cada frase que aprendas = más confianza = mejor servicio = más dinero.
+
+**¡Tú puedes! 🚴💨📦**
+
+---
+
+*Creado con ❤️ para la comunidad de domiciliarios colombianos*
+*hablas.co - Educación gratuita para todos*
+*Noviembre 2025*

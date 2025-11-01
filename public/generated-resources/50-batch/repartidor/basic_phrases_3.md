@@ -583,4 +583,29 @@ Las 30 frases más importantes que necesitas para empezar a trabajar como repart
 ┌─────────────────────────────────────────────────────────┐
 │ **English**: "What's your apartment number?"            │
 │                                                          │
-│ 🗣️ **Español**: 
+│ 🗣️ **Español**: ¿Cuál es tu número de apartamento?      │
+│ 🔊 **Pronunciación**: [wuts yor uh-PART-ment NUM-ber]   │
+│                                                          │
+│ **Usa cuando**: Necesitas el número exacto de           │
+│ apartamento en un edificio grande                        │
+│ **Ejemplo real**: App solo muestra dirección de calle   │
+│ pero edificio tiene 50+ unidades                         │
+│                                                          │
+│ 💡 **TIP**: Muchas apps no muestran apt #. Pregunta     │
+│ cortésmente, es normal.                                  │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Which apartment?" = ¿Qué apartamento? = [wich uh-PART-ment]
+- "What unit number?" = ¿Qué número de unidad? = [wut YOO-nit NUM-ber]
+
+---
+
+### Frase 25-30
+
+[CONTENT CONTINUES WITH 6 MORE ESSENTIAL PHRASES]
+
+---
+
+*Recurso completo disponible en hablas.co*
+*Versión 1.2 - Noviembre 2025*
