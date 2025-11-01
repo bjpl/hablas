@@ -372,12 +372,12 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
         </div>
 
         {/* Audio Player - Show above content for audio resources */}
-        {!loading && !error && resource.type === 'audio' && (
+        {!loading && !error && resource.audioUrl && (
           <div className="mb-8">
             <div className="bg-white rounded shadow-md p-6 border border-gray-200">
               <AudioPlayer
                 title={resource.title}
-                audioUrl={audioMetadata?.file ? `/hablas${audioMetadata.file}` : `/hablas/audio/resource-${resourceId}.mp3`}
+                audioUrl={resource.audioUrl}
                 metadata={audioMetadata}
                 resourceId={resource.id}
                 enhanced={true}
@@ -465,12 +465,8 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                   )}
                 </div>
               ) : resource.type === 'audio' ? (
-                // Audio content: display as plain text with formatting
-                <div className="resource-content">
-                  <pre className="whitespace-pre-wrap font-sans text-sm leading-relaxed">
-                    {content}
-                  </pre>
-                </div>
+                // Audio content: bilingual dialogue formatter
+                <BilingualDialogueFormatter content={content} />
               ) : (
                 // Render all content as clean markdown (boxes already cleaned server-side)
                 <div className="resource-content">
@@ -568,4 +564,145 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
       </div>
     </main>
   )
+}
+
+// Bilingual Dialogue Formatter Component for Audio Scripts
+function BilingualDialogueFormatter({ content }: { content: string }) {
+  const lines = content.split('\n');
+  const formatted = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+
+    // Skip empty lines
+    if (!line) {
+      formatted.push(<div key={i} className="h-3" />);
+      continue;
+    }
+
+    // Main section headers (## with timestamps)
+    if (line.startsWith('##')) {
+      const headerText = line.replace(/^##\s*/, '').replace(/\[.*?\]/g, '').trim();
+      formatted.push(
+        <h3 key={i} className="text-xl font-bold text-gray-900 mt-8 mb-4 border-b-2 border-blue-600 pb-2 flex items-center gap-2">
+          <span className="text-blue-600">🎯</span>
+          {headerText}
+        </h3>
+      );
+      continue;
+    }
+
+    // Subsection headers (### with timestamps or phrases)
+    if (line.startsWith('###')) {
+      const headerText = line.replace(/^###\s*/, '').replace(/\[.*?\]/g, '').trim();
+      formatted.push(
+        <h4 key={i} className="text-lg font-semibold text-blue-700 mt-6 mb-3 border-l-4 border-blue-400 pl-4">
+          {headerText}
+        </h4>
+      );
+      continue;
+    }
+
+    // Metadata (Duration, Target, Language, etc.)
+    if (line.match(/^\*\*(Total Duration|Target|Language|Level|Category)\*\*/)) {
+      const parts = line.split(':');
+      formatted.push(
+        <div key={i} className="text-sm bg-blue-50 text-blue-800 px-4 py-2 rounded border-l-4 border-blue-500 mb-2 flex gap-2">
+          <span className="font-bold">{parts[0].replace(/\*\*/g, '')}:</span>
+          {parts[1] && <span className="font-normal">{parts[1]}</span>}
+        </div>
+      );
+      continue;
+    }
+
+    // Production directions (Speaker, Tone, Pause) - de-emphasized
+    if (line.match(/^\*\*\[(Speaker|Tone|Pause|PAUSE|Sound effect):/i)) {
+      formatted.push(
+        <div key={i} className="text-xs text-gray-400 bg-gray-50 px-3 py-1.5 rounded border-l-2 border-gray-300 my-2 font-mono">
+          <span className="opacity-60">{line.replace(/\*\*/g, '')}</span>
+        </div>
+      );
+      continue;
+    }
+
+    // Spanish dialogue (quoted text with Spanish characters/patterns)
+    if (line.startsWith('"') && line.endsWith('"')) {
+      const text = line.slice(1, -1);
+      // Detect language
+      const isEnglish = /\b(the|you|your|are|have|is|can|will|do|delivery|order|customer|address)\b/i.test(text);
+      const isSpanish = /\b(hola|tengo|su|entrega|es|está|dónde|qué|cómo|puedo|favor|gracias|por|para)\b/i.test(text) || text.includes('¿') || text.includes('¡');
+
+      if (isEnglish) {
+        formatted.push(
+          <div key={i} className="my-4 p-5 rounded-lg border-l-4 border-blue-600 bg-gradient-to-r from-blue-50 to-blue-25 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex items-start gap-3">
+              <span className="text-2xl mt-1">🇺🇸</span>
+              <div className="flex-1">
+                <p className="text-lg font-bold text-blue-900 leading-relaxed" lang="en">
+                  {text}
+                </p>
+                <div className="text-xs text-blue-600 mt-2 font-semibold uppercase tracking-wide">
+                  English / Inglés
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      } else if (isSpanish) {
+        formatted.push(
+          <div key={i} className="my-4 p-5 rounded-lg border-l-4 border-green-600 bg-gradient-to-r from-green-50 to-green-25 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex items-start gap-3">
+              <span className="text-2xl mt-1">🇪🇸</span>
+              <div className="flex-1">
+                <p className="text-lg font-bold text-green-900 leading-relaxed" lang="es">
+                  {text}
+                </p>
+                <div className="text-xs text-green-600 mt-2 font-semibold uppercase tracking-wide">
+                  Español / Spanish
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      } else {
+        // Neutral/unknown language
+        formatted.push(
+          <div key={i} className="my-4 p-4 rounded-lg border-l-4 border-gray-400 bg-gray-50">
+            <p className="text-base text-gray-800 leading-relaxed">
+              {text}
+            </p>
+          </div>
+        );
+      }
+      continue;
+    }
+
+    // Dividers
+    if (line === '---') {
+      formatted.push(<hr key={i} className="my-6 border-t-2 border-gray-200" />);
+      continue;
+    }
+
+    // Regular paragraphs (instructions, explanations)
+    if (line.length > 0) {
+      formatted.push(
+        <p key={i} className="text-gray-700 leading-relaxed my-2 text-base">
+          {line.replace(/\*\*/g, '')}
+        </p>
+      );
+    }
+  }
+
+  return (
+    <div className="space-y-1 max-w-4xl">
+      <div className="mb-6 p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded">
+        <p className="text-sm text-yellow-900">
+          <span className="font-bold">💡 Guía de colores:</span>{' '}
+          <span className="text-blue-700 font-semibold">Azul = Inglés</span> | {' '}
+          <span className="text-green-700 font-semibold">Verde = Español</span>
+        </p>
+      </div>
+      {formatted}
+    </div>
+  );
 }
