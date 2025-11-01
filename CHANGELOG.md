@@ -11,8 +11,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Video tutorial resources
 - Interactive pronunciation practice
 - User progress tracking
-- Admin authentication system
-- API rate limiting
+
+## [1.2.0] - 2025-11-01
+
+### Added
+- Enhanced audio player with advanced controls (speed, loop, volume, seek)
+- Audio preloading and offline caching system
+- Service Worker audio cache for offline playback
+- Playback position persistence across page reloads
+- API rate limiting with Upstash Redis (optional, in-memory fallback)
+- Comprehensive security audit documentation
+- Setup guides for OAuth and Redis
+- Production deployment checklist
+- Static export migration plan
+
+### Changed
+- Restored 50 audio files (73MB) to public/audio directory
+- Enhanced AudioPlayer component with professional controls
+- Updated dependencies (11 packages including @anthropic-ai/sdk)
+- Improved environment variable documentation
+
+### Removed
+- Admin panel and authentication system (incompatible with static export)
+- NextAuth.js configuration (requires server-side rendering)
+- Authentication middleware and utilities
+- Admin-specific routes and components
+
+### Fixed
+- Missing audio files issue (were in build output, not committed)
+- Audio playback functionality across all 59 resources
+- Static export compatibility maintained
+
+### Documentation
+- Created retroactive daily reports for Oct 28-31 (41 commits documented)
+- Added comprehensive setup and deployment guides
+- Security audit findings documented
+- Migration options analyzed with recommendations
+
+### Security
+- Identified and documented static export vs NextAuth incompatibility
+- Reduced attack surface by removing authentication (no auth = no auth bugs)
+- Documented security considerations for static hosting
+- Recommended deployment options for future server features
 
 ## [1.1.0] - 2025-10-08
 
