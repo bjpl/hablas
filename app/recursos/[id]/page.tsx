@@ -39,31 +39,15 @@ function cleanBoxCharacters(text: string): string {
     .replace(/\n{3,}/g, '\n\n')  // Max 2 consecutive newlines
 }
 
-// Helper: Clean audio script formatting (remove production directions)
+// Helper: Clean audio script formatting (keep structure, remove only noise)
 function cleanAudioScript(text: string): string {
+  // Don't filter anything - let the BilingualDialogueFormatter handle display
+  // Just do basic cleanup
   return text
     .split('\n')
-    .filter(line => {
-      const trimmed = line.trim()
-      // Remove production directions and metadata
-      if (trimmed.startsWith('**[')) return false  // **[Speaker:], **[Tone:], **[Pause:]
-      if (trimmed.startsWith('[') && trimmed.includes(']')) return false  // [00:00], [Tone:], [Speaker:]
-      if (trimmed.startsWith('## [')) return false  // ## [Timestamps]
-      if (trimmed.startsWith('### [')) return false  // ### [Section timestamps]
-      if (trimmed.startsWith('# ')) return false  // # Headers
-      if (trimmed.startsWith('##')) return false  // ## Section headers
-      if (trimmed.match(/^\*\*Total Duration\*\*/)) return false
-      if (trimmed.match(/^\*\*Target\*\*/)) return false
-      if (trimmed.match(/^\*\*Language\*\*/)) return false
-      if (trimmed.match(/^\*\*Level\*\*/)) return false
-      if (trimmed.match(/^\*\*Category\*\*/)) return false
-      if (trimmed === '---') return false  // Dividers
-      if (trimmed === '```') return false  // Code blocks
-      return true
-    })
     .map(line => line.trim())
-    .filter(line => line.length > 0)
-    .join('\n\n')  // Add spacing between lines for readability
+    .join('\n')
+    .replace(/\n{3,}/g, '\n\n')  // Max 2 consecutive newlines
 }
 
 // Server component wrapper - load and clean content at build time
