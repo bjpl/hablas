@@ -46,13 +46,19 @@ function cleanAudioScript(text: string): string {
     .filter(line => {
       const trimmed = line.trim()
       // Remove production directions and metadata
-      if (trimmed.startsWith('**[')) return false  // [Speaker:], [Tone:], [Pause:], etc
-      if (trimmed.startsWith('## [')) return false  // Timestamps
-      if (trimmed.startsWith('### [')) return false  // Section timestamps
+      if (trimmed.startsWith('**[')) return false  // **[Speaker:], **[Tone:], **[Pause:]
+      if (trimmed.startsWith('[') && trimmed.includes(']')) return false  // [00:00], [Tone:], [Speaker:]
+      if (trimmed.startsWith('## [')) return false  // ## [Timestamps]
+      if (trimmed.startsWith('### [')) return false  // ### [Section timestamps]
+      if (trimmed.startsWith('# ')) return false  // # Headers
+      if (trimmed.startsWith('##')) return false  // ## Section headers
       if (trimmed.match(/^\*\*Total Duration\*\*/)) return false
       if (trimmed.match(/^\*\*Target\*\*/)) return false
       if (trimmed.match(/^\*\*Language\*\*/)) return false
+      if (trimmed.match(/^\*\*Level\*\*/)) return false
+      if (trimmed.match(/^\*\*Category\*\*/)) return false
       if (trimmed === '---') return false  // Dividers
+      if (trimmed === '```') return false  // Code blocks
       return true
     })
     .map(line => line.trim())
