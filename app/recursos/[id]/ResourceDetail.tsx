@@ -329,14 +329,46 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
             </div>
           </div>
 
-          {/* Download button */}
-          <a
-            href={resource.downloadUrl}
-            download
-            className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 bg-accent-green text-white text-center rounded font-semibold hover:bg-green-700 transition-colors"
-          >
-            Descargar recurso
-          </a>
+          {/* Download buttons */}
+          <div className="flex flex-col sm:flex-row gap-3">
+            {/* Resource content download */}
+            <button
+              onClick={() => {
+                const link = document.createElement('a')
+                link.href = resource.downloadUrl
+                link.download = `${resource.title.replace(/[^a-z0-9]/gi, '_')}.md`
+                document.body.appendChild(link)
+                link.click()
+                document.body.removeChild(link)
+              }}
+              className="inline-flex items-center justify-center gap-3 flex-1 px-8 py-4 bg-accent-green text-white text-center rounded-lg font-semibold hover:bg-green-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-[1.02]"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Descargar Recurso
+            </button>
+
+            {/* Audio download if available */}
+            {resource.audioUrl && (
+              <button
+                onClick={() => {
+                  const link = document.createElement('a')
+                  link.href = resource.audioUrl!
+                  link.download = `${resource.title.replace(/[^a-z0-9]/gi, '_')}.mp3`
+                  document.body.appendChild(link)
+                  link.click()
+                  document.body.removeChild(link)
+                }}
+                className="inline-flex items-center justify-center gap-3 flex-1 px-8 py-4 bg-accent-blue text-white text-center rounded-lg font-semibold hover:bg-blue-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-[1.02]"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                </svg>
+                Descargar Audio
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Audio Player - Show above content for audio resources */}
