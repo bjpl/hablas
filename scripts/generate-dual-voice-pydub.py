@@ -12,18 +12,17 @@ SYSTEMATIC APPROACH:
 Result: Native pronunciation for both languages!
 """
 
-import asyncio
 import os
+import sys
+
+# Add ffmpeg to PATH BEFORE importing pydub
+os.environ['PATH'] = r'C:\ffmpeg\bin' + os.pathsep + os.environ.get('PATH', '')
+
+import asyncio
 import re
 from pathlib import Path
 from pydub import AudioSegment
 import edge_tts
-
-# Set ffmpeg paths (BlueStacks includes ffmpeg)
-ffmpeg_path = r"C:\Program Files\BlueStacks_nxt\ffmpeg.exe"
-AudioSegment.converter = ffmpeg_path
-AudioSegment.ffmpeg = ffmpeg_path
-AudioSegment.ffprobe = ffmpeg_path  # Use ffmpeg for both (it includes ffprobe functionality)
 
 # Voice configuration
 VOICES = {
@@ -195,16 +194,23 @@ async def main():
 
     # Check for test mode
     test_mode = '--test' in sys.argv
-    resource_ids = [2] if test_mode else [2, 7, 10, 13, 18, 21, 28, 32, 34]
+
+    # Generate ALL 37 bilingual resources (or just test resource-2)
+    resource_ids = [2] if test_mode else list(range(1, 38))
 
     if test_mode:
         print("🧪 TEST MODE: Generating resource-2 only (first 3 phrases)")
+        print("=" * 70 + "\n")
+    else:
+        print(f"📊 Generating ALL {len(resource_ids)} resources")
+        print("   (Using source scripts where available, templates for others)")
         print("=" * 70 + "\n")
 
     success_count = 0
     for resource_id in resource_ids:
         if await generate_dual_voice_audio(resource_id, test_mode=test_mode):
             success_count += 1
+        await asyncio.sleep(2)  # Pause between resources
 
     print("\n" + "=" * 70)
     print(f"✅ Success: {success_count}/{len(resource_ids)} files generated")
