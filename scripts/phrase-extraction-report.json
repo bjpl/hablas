@@ -1,0 +1,393 @@
+[
+  {
+    "resourceId": 1,
+    "title": "Frases Esenciales para Entregas - Var 1",
+    "status": "success",
+    "phrasesFound": 50,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Good morning! I have a delivery for you.",
+      "I'm your Uber Eats driver.",
+      "Are you Sarah?"
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_1.md"
+  },
+  {
+    "resourceId": 2,
+    "title": "Pronunciación: Entregas - Var 1",
+    "status": "warning",
+    "phrasesFound": 0,
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_1-audio-script.txt"
+  },
+  {
+    "resourceId": 3,
+    "title": "Guía Visual: Entregas - Var 1",
+    "status": "warning",
+    "phrasesFound": 0,
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_visual_1-image-spec.md"
+  },
+  {
+    "resourceId": 4,
+    "title": "Frases Esenciales para Entregas - Var 2",
+    "status": "success",
+    "phrasesFound": 69,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Hi! Delivery for you.",
+      "Good evening! I have your food.",
+      "I'm from Uber Eats."
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_2.md"
+  },
+  {
+    "resourceId": 5,
+    "title": "Situaciones Complejas en Entregas - Var 1",
+    "status": "success",
+    "phrasesFound": 35,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Can you double-check this order? The customer requested extra items.",
+      "I apologize, but the restaurant didn't include the item. Would you like me to go back?",
+      "The customer has allergies. Did you prepare this without ingredient?"
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_situations_1.md"
+  },
+  {
+    "resourceId": 6,
+    "title": "Frases Esenciales para Entregas - Var 3",
+    "status": "success",
+    "phrasesFound": 71,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Hello! How are you?",
+      "I'm here for a pickup.",
+      "Good, thank you!"
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_3.md"
+  },
+  {
+    "resourceId": 7,
+    "title": "Pronunciación: Entregas - Var 2",
+    "status": "warning",
+    "phrasesFound": 0,
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_2-audio-script.txt"
+  },
+  {
+    "resourceId": 8,
+    "title": "Guía Visual: Entregas - Var 2",
+    "status": "warning",
+    "phrasesFound": 0,
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_visual_2-image-spec.md"
+  },
+  {
+    "resourceId": 9,
+    "title": "Frases Esenciales para Entregas - Var 4",
+    "status": "success",
+    "phrasesFound": 63,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Hello! I have your delivery.",
+      "Hello! Are you Maria?",
+      "Good morning! Here's your order."
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_4.md"
+  },
+  {
+    "resourceId": 10,
+    "title": "Conversaciones con Clientes - Var 1",
+    "status": "warning",
+    "phrasesFound": 0,
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_conversations_1-audio-script.txt"
+  },
+  {
+    "resourceId": 11,
+    "title": "Saludos y Confirmación de Pasajeros - Var 1",
+    "status": "success",
+    "phrasesFound": 56,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Good morning!",
+      "Hey! How's it going?",
+      "Hi! Welcome!"
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_1.md"
+  },
+  {
+    "resourceId": 12,
+    "title": "Direcciones y Navegación GPS - Var 1",
+    "status": "success",
+    "phrasesFound": 41,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Turn right",
+      "Go straight",
+      "Make a U-turn"
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_directions_1.md"
+  },
+  {
+    "resourceId": 13,
+    "title": "Audio: Direcciones en Inglés - Var 1",
+    "status": "warning",
+    "phrasesFound": 0,
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_audio_navigation_1-audio-script.txt"
+  },
+  {
+    "resourceId": 14,
+    "title": "Saludos y Confirmación de Pasajeros - Var 2",
+    "status": "success",
+    "phrasesFound": 58,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Hi! How are you?",
+      "Hi there! Are you waiting for an Uber?",
+      "Good morning! How's it going?"
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_2.md"
+  },
+  {
+    "resourceId": 15,
+    "title": "Direcciones y Navegación GPS - Var 2",
+    "status": "success",
+    "phrasesFound": 34,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Is this the correct address?",
+      "Do you want to change the destination?",
+      "Do you need to make a stop?"
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_directions_2.md"
+  },
+  {
+    "resourceId": 16,
+    "title": "Small Talk con Pasajeros - Var 1",
+    "status": "success",
+    "phrasesFound": 54,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Hey! How's it going today?",
+      "So we're heading to downtown, right?",
+      "Are you in a rush, or do you have time?"
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_smalltalk_1.md"
+  },
+  {
+    "resourceId": 17,
+    "title": "Saludos y Confirmación de Pasajeros - Var 3",
+    "status": "success",
+    "phrasesFound": 71,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Hello! Good morning!",
+      "Are you waiting for Uber?",
+      "I'm your driver."
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_3.md"
+  },
+  {
+    "resourceId": 18,
+    "title": "Audio: Direcciones en Inglés - Var 2",
+    "status": "warning",
+    "phrasesFound": 0,
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_audio_navigation_2-audio-script.txt"
+  },
+  {
+    "resourceId": 19,
+    "title": "Direcciones y Navegación GPS - Var 3",
+    "status": "success",
+    "phrasesFound": 43,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "What's the address?",
+      "Is it number 245?",
+      "Is this Main Street?"
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_directions_3.md"
+  },
+  {
+    "resourceId": 20,
+    "title": "Manejo de Situaciones Difíciles - Var 1",
+    "status": "success",
+    "phrasesFound": 26,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "I'm here at the pickup location. Are you on your way?",
+      "I can wait for two more minutes, then I'll have to cancel.",
+      "I'm sorry, but I've been waiting for five minutes. I have to cancel and take another ride."
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_problems_1.md"
+  },
+  {
+    "resourceId": 21,
+    "title": "Saludos Básicos en Inglés - Var 1",
+    "status": "warning",
+    "phrasesFound": 0,
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_greetings_all_1-audio-script.txt"
+  },
+  {
+    "resourceId": 22,
+    "title": "Números y Direcciones - Var 1",
+    "status": "success",
+    "phrasesFound": 24,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Is this number fifteen?",
+      "My number is five, five, five...",
+      "I'm looking for forty-five Oak Street."
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_numbers_1.md"
+  },
+  {
+    "resourceId": 23,
+    "title": "Tiempo y Horarios - Var 1",
+    "status": "success",
+    "phrasesFound": 76,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "It's three o'clock.",
+      "It's three thirty.",
+      "It's seven AM."
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_time_1.md"
+  },
+  {
+    "resourceId": 24,
+    "title": "Vocabulario de Apps (Uber, Rappi, DiDi) - Var 1",
+    "status": "warning",
+    "phrasesFound": 0,
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_app_vocabulary_1-image-spec.md"
+  },
+  {
+    "resourceId": 25,
+    "title": "Servicio al Cliente en Inglés - Var 1",
+    "status": "success",
+    "phrasesFound": 43,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Good morning! I have your delivery.",
+      "Are you Name?",
+      "I'm your driver from [Uber/Rappi]."
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\intermediate_customer_service_1.md"
+  },
+  {
+    "resourceId": 26,
+    "title": "Manejo de Quejas y Problemas - Var 1",
+    "status": "success",
+    "phrasesFound": 40,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "I can see there's an issue. Let me help you with that.",
+      "Could you please tell me what happened?",
+      "I completely understand your frustration."
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\intermediate_complaints_1.md"
+  },
+  {
+    "resourceId": 27,
+    "title": "Frases de Emergencia - Var 1",
+    "status": "success",
+    "phrasesFound": 47,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "I need help. There's been an accident.",
+      "I'm at street and street.",
+      "Someone is hurt. Please hurry."
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\emergency_phrases_1.md"
+  },
+  {
+    "resourceId": 28,
+    "title": "Saludos Básicos en Inglés - Var 2",
+    "status": "warning",
+    "phrasesFound": 0,
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_greetings_all_2-audio-script.txt"
+  },
+  {
+    "resourceId": 29,
+    "title": "Números y Direcciones - Var 2",
+    "status": "success",
+    "phrasesFound": 29,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Zero, one, two, three, four, five, six, seven, eight, nine, ten",
+      "Eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty",
+      "Twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred"
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_numbers_2.md"
+  },
+  {
+    "resourceId": 30,
+    "title": "Protocolos de Seguridad - Var 1",
+    "status": "success",
+    "phrasesFound": 25,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "I need to report a car accident. No one is injured, but we need police assistance.",
+      "I'm at the intersection of Main Street and 5th Avenue, near the gas station.",
+      "We need to exchange insurance information. Can I see your license and insurance card?"
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\safety_protocols_1.md"
+  },
+  {
+    "resourceId": 31,
+    "title": "Situaciones Complejas en Entregas - Var 2",
+    "status": "success",
+    "phrasesFound": 23,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "Can I double-check the order before I leave?",
+      "I see three items on the order. Are they all in here?",
+      "Hi, I'm sorry but the restaurant didn't include the item. I can go back if you'd like."
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_situations_2.md"
+  },
+  {
+    "resourceId": 32,
+    "title": "Conversaciones con Clientes - Var 2",
+    "status": "warning",
+    "phrasesFound": 0,
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_conversations_2-audio-script.txt"
+  },
+  {
+    "resourceId": 33,
+    "title": "Small Talk con Pasajeros - Var 2",
+    "status": "success",
+    "phrasesFound": 61,
+    "phrasesUsed": 20,
+    "samplePhrases": [
+      "How's your day going so far?",
+      "Nice weather we're having today.",
+      "Is the temperature okay for you?"
+    ],
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_smalltalk_2.md"
+  },
+  {
+    "resourceId": 34,
+    "title": "Diálogos Reales con Pasajeros - Var 1",
+    "status": "warning",
+    "phrasesFound": 0,
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_audio_conversations_1-audio-script.txt"
+  },
+  {
+    "resourceId": 35,
+    "title": "Gig Economy Business Terminology",
+    "status": "error",
+    "error": "Source file not found",
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\docs\\resources\\converted\\avanzado\\business-terminology.md"
+  },
+  {
+    "resourceId": 36,
+    "title": "Professional Complaint Handling",
+    "status": "error",
+    "error": "Source file not found",
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\docs\\resources\\converted\\avanzado\\complaint-handling.md"
+  },
+  {
+    "resourceId": 37,
+    "title": "Professional Conflict Resolution",
+    "status": "error",
+    "error": "Source file not found",
+    "sourcePath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\docs\\resources\\converted\\avanzado\\conflict-resolution.md"
+  }
+]
