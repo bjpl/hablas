@@ -30,8 +30,8 @@ describe('Resource Flow Integration', () => {
   describe('Resource Discovery Flow', () => {
     it('should allow user to find resources by category', () => {
       const resources = [
-        createMockResource({ id: '1', category: 'repartidor', title: 'Delivery Resource' }),
-        createMockResource({ id: '2', category: 'conductor', title: 'Driver Resource' }),
+        createMockResource({ id: 1, category: 'repartidor', title: 'Delivery Resource' }),
+        createMockResource({ id: 2, category: 'conductor', title: 'Driver Resource' }),
       ]
 
       // This would test filtering functionality
@@ -42,8 +42,8 @@ describe('Resource Flow Integration', () => {
 
     it('should allow user to find resources by level', () => {
       const resources = [
-        createMockResource({ id: '1', level: 'basico', title: 'Basic Resource' }),
-        createMockResource({ id: '2', level: 'avanzado', title: 'Advanced Resource' }),
+        createMockResource({ id: 1, level: 'basico', title: 'Basic Resource' }),
+        createMockResource({ id: 2, level: 'avanzado', title: 'Advanced Resource' }),
       ]
 
       const basicResources = resources.filter(r => r.level === 'basico')
@@ -53,8 +53,8 @@ describe('Resource Flow Integration', () => {
 
     it('should allow user to search by keywords', () => {
       const resources = [
-        createMockResource({ id: '1', title: 'Greetings Guide', tags: ['greetings'] }),
-        createMockResource({ id: '2', title: 'Numbers Tutorial', tags: ['numbers'] }),
+        createMockResource({ id: 1, title: 'Greetings Guide', tags: ['greetings'] }),
+        createMockResource({ id: 2, title: 'Numbers Tutorial', tags: ['numbers'] }),
       ]
 
       const searchQuery = 'greetings'
@@ -84,19 +84,19 @@ describe('Resource Flow Integration', () => {
     })
 
     it('should track resource views', () => {
-      const resource = createMockResource({ id: 'view-test' })
-      const viewCount = new Map<string, number>()
+      const resource = createMockResource({ id: 123 })
+      const viewCount = new Map<number, number>()
 
       // Simulate view tracking
       viewCount.set(resource.id, (viewCount.get(resource.id) || 0) + 1)
 
-      expect(viewCount.get('view-test')).toBe(1)
+      expect(viewCount.get(123)).toBe(1)
     })
   })
 
   describe('Resource Download Flow', () => {
     it('should track downloaded resources in localStorage', () => {
-      const resource = createMockResource({ id: 'download-test' })
+      const resource = createMockResource({ id: 456 })
 
       // Simulate download
       const downloaded = JSON.parse(localStorage.getItem('downloaded-resources') || '[]')
@@ -105,36 +105,36 @@ describe('Resource Flow Integration', () => {
 
       // Verify
       const stored = JSON.parse(localStorage.getItem('downloaded-resources') || '[]')
-      expect(stored).toContain('download-test')
+      expect(stored).toContain(456)
     })
 
     it('should mark resource as downloaded', () => {
-      const resource = createMockResource({ id: 'mark-test' })
-      const downloadedIds = new Set<string>()
+      const resource = createMockResource({ id: 789 })
+      const downloadedIds = new Set<number>()
 
       // Download
       downloadedIds.add(resource.id)
 
-      expect(downloadedIds.has('mark-test')).toBe(true)
+      expect(downloadedIds.has(789)).toBe(true)
     })
 
     it('should persist download state across sessions', () => {
-      const resource = createMockResource({ id: 'persist-test' })
+      const resource = createMockResource({ id: 321 })
 
       // First session: download
-      localStorage.setItem('downloaded-resources', JSON.stringify(['persist-test']))
+      localStorage.setItem('downloaded-resources', JSON.stringify([321]))
 
       // Second session: check
       const downloaded = JSON.parse(localStorage.getItem('downloaded-resources') || '[]')
-      expect(downloaded).toContain('persist-test')
+      expect(downloaded).toContain(321)
     })
   })
 
   describe('Offline Resource Flow', () => {
     it('should identify offline-capable resources', () => {
       const resources = [
-        createMockResource({ id: '1', offline: true }),
-        createMockResource({ id: '2', offline: false }),
+        createMockResource({ id: 1, offline: true }),
+        createMockResource({ id: 2, offline: false }),
       ]
 
       const offlineResources = resources.filter(r => r.offline)
@@ -143,9 +143,9 @@ describe('Resource Flow Integration', () => {
 
     it('should allow filtering by offline availability', () => {
       const resources = [
-        createMockResource({ id: '1', offline: true, title: 'Offline Resource' }),
-        createMockResource({ id: '2', offline: false, title: 'Online Resource' }),
-        createMockResource({ id: '3', offline: true, title: 'Another Offline' }),
+        createMockResource({ id: 1, offline: true, title: 'Offline Resource' }),
+        createMockResource({ id: 2, offline: false, title: 'Online Resource' }),
+        createMockResource({ id: 3, offline: true, title: 'Another Offline' }),
       ]
 
       const offlineOnly = resources.filter(r => r.offline)
@@ -156,11 +156,11 @@ describe('Resource Flow Integration', () => {
 
   describe('Resource Sharing Flow', () => {
     it('should generate shareable URL', () => {
-      const resource = createMockResource({ id: 'share-test' })
+      const resource = createMockResource({ id: 555 })
       const shareUrl = `https://hablas.dev/recursos/${resource.id}`
 
       expect(shareUrl).toContain('/recursos/')
-      expect(shareUrl).toContain(resource.id)
+      expect(shareUrl).toContain(String(resource.id))
     })
 
     it('should include resource info in share data', () => {
@@ -183,9 +183,9 @@ describe('Resource Flow Integration', () => {
 
   describe('Progress Tracking Flow', () => {
     it('should track user progress', () => {
-      const progress = new Map<string, { viewed: boolean, downloaded: boolean }>()
+      const progress = new Map<number, { viewed: boolean, downloaded: boolean }>()
 
-      const resource = createMockResource({ id: 'progress-test' })
+      const resource = createMockResource({ id: 888 })
 
       // View resource
       progress.set(resource.id, { viewed: true, downloaded: false })
@@ -218,7 +218,7 @@ describe('Resource Flow Integration', () => {
   describe('Analytics Integration', () => {
     it('should track resource view events', () => {
       const events: any[] = []
-      const resource = createMockResource({ id: 'analytics-view' })
+      const resource = createMockResource({ id: 111 })
 
       events.push({
         event: 'resource_view',
@@ -232,7 +232,7 @@ describe('Resource Flow Integration', () => {
 
     it('should track download events', () => {
       const events: any[] = []
-      const resource = createMockResource({ id: 'analytics-download' })
+      const resource = createMockResource({ id: 222 })
 
       events.push({
         event: 'resource_download',

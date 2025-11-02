@@ -1,0 +1,136 @@
+================================================================================
+HABLAS CONTENT AUDIT REPORT
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+Total Resources: 25
+Audio Files Available: 87
+Resources with Audio URL: 0 (0.0%)
+Resources WITHOUT Audio URL: 25
+Resources with Issues: 0
+Resources with Warnings: 0
+
+CONTENT STATISTICS
+--------------------------------------------------------------------------------
+Total Phrases: 87
+Total Vocabulary Items: 149
+Total Scenarios: 13
+Total Cultural Notes: 91
+
+CATEGORY BREAKDOWN
+--------------------------------------------------------------------------------
+  EMERGENCY: 8 resources (32.0%)
+  APP-SPECIFIC: 7 resources (28.0%)
+  BUSINESS-TERMINOLOGY: 1 resources (4.0%)
+  COMPLAINT-HANDLING: 1 resources (4.0%)
+  CONFLICT-RESOLUTION: 1 resources (4.0%)
+  CROSS-CULTURAL: 1 resources (4.0%)
+  CUSTOMER-SERVICE: 1 resources (4.0%)
+  EARNINGS-OPTIMIZATION: 1 resources (4.0%)
+  NEGOTIATION: 1 resources (4.0%)
+  PROFESSIONAL-BOUNDARIES: 1 resources (4.0%)
+  PROFESSIONAL-COMMUNICATION: 1 resources (4.0%)
+  TIME-MANAGEMENT: 1 resources (4.0%)
+
+AUDIO FILE MAPPING
+--------------------------------------------------------------------------------
+Total Audio Files: 87
+Resource-specific audio (resource-N.mp3): 37
+Variation audio files: 50
+
+RESOURCES WITHOUT AUDIO (9 resources)
+--------------------------------------------------------------------------------
+  [app-004] Airport Rideshare - Essential Procedures and Communication
+      Category: app-specific | Level: Intermediate-Avanzado
+  [app-003] DoorDash Delivery - Essential Vocabulary and Scenarios
+      Category: app-specific | Level: Intermediate-Avanzado
+  [app-002] Lyft Driver - Essential Scenarios and Vocabulary
+      Category: app-specific | Level: Intermediate-Avanzado
+  [app-007] Multi-App Strategy - Maximizing Gig Work Earnings
+      Category: app-specific | Level: Avanzado
+  [app-005] Platform Ratings System - Mastery Guide
+      Category: app-specific | Level: Avanzado
+  [app-006] Tax Management and Business Expenses for Gig Workers
+      Category: app-specific | Level: Avanzado
+  [app-001] Uber Driver - Essential Scenarios and Vocabulary
+      Category: app-specific | Level: Intermediate-Avanzado
+  [adv-003] Gig Economy Business Terminology
+      Category: business-terminology | Level: Avanzado
+  [adv-007] Professional Complaint Handling
+      Category: complaint-handling | Level: Avanzado
+  [adv-005] Professional Conflict Resolution
+      Category: conflict-resolution | Level: Avanzado
+  [adv-008] Cross-Cultural Professional Communication
+      Category: cross-cultural | Level: Avanzado
+  [adv-002] Customer Service Excellence
+      Category: customer-service | Level: Avanzado
+  [adv-010] Earnings Optimization Communication
+      Category: earnings-optimization | Level: Avanzado
+  [adv-004] Professional Negotiation Skills
+      Category: negotiation | Level: Avanzado
+  [adv-009] Professional Boundaries and Self-Protection
+      Category: professional-boundaries | Level: Avanzado
+  [adv-001] Professional Communication Essentials
+      Category: professional-communication | Level: Avanzado
+  [adv-006] Professional Time Management
+      Category: time-management | Level: Avanzado
+  [emerg-006] Vehicle Accident Procedures
+      Category: emergency | Level: All Levels
+  [emerg-004] Customer Conflicts and Disputes
+      Category: emergency | Level: All Levels
+  [emerg-008] Lost Items and Property Disputes
+      Category: emergency | Level: All Levels
+  [emerg-001] Medical Emergencies - Critical Communication
+      Category: emergency | Level: All Levels
+  [emerg-005] Payment Disputes and Financial Conflicts
+      Category: emergency | Level: All Levels
+  [emerg-002] Personal Safety - Threat and Danger Response
+      Category: emergency | Level: All Levels
+  [emerg-003] Vehicle Breakdown and Mechanical Emergencies
+      Category: emergency | Level: All Levels
+  [emerg-007] Severe Weather and Hazardous Conditions
+      Category: emergency | Level: All Levels
+Total: 25 resources need audio
+
+CRITICAL ISSUES
+--------------------------------------------------------------------------------
+  No critical issues found!
+
+WARNINGS & IMPROVEMENTS
+--------------------------------------------------------------------------------
+  No warnings!
+
+CONTENT GAPS & RECOMMENDATIONS
+--------------------------------------------------------------------------------
+  1. Low coverage in category:business-terminology: only 1 resources (4.0%)
+  2. Low coverage in category:complaint-handling: only 1 resources (4.0%)
+  3. Low coverage in category:conflict-resolution: only 1 resources (4.0%)
+  4. Low coverage in category:cross-cultural: only 1 resources (4.0%)
+  5. Low coverage in category:customer-service: only 1 resources (4.0%)
+  6. Low coverage in category:earnings-optimization: only 1 resources (4.0%)
+  7. Low coverage in category:negotiation: only 1 resources (4.0%)
+  8. Low coverage in category:professional-boundaries: only 1 resources (4.0%)
+  9. Low coverage in category:professional-communication: only 1 resources (4.0%)
+  10. Low coverage in category:time-management: only 1 resources (4.0%)
+  11. Missing emergency topics: breakdown
+  12. Limited advanced content: only 0 resources
+
+PRIORITY RECOMMENDATIONS
+--------------------------------------------------------------------------------
+  HIGH PRIORITY:
+    1. Generate audio files for 25 resources without audioUrl
+
+  MEDIUM PRIORITY:
+    1. Add missing pronunciations (0 resources)
+    2. Balance content across categories
+    3. Address 12 identified content gaps
+
+  LOW PRIORITY:
+    1. Enhance cultural context notes
+    2. Add more practical scenarios
+    3. Cross-link related resources
+
+================================================================================
+END OF REPORT
+================================================================================

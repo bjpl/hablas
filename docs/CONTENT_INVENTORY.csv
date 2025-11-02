@@ -1,0 +1,26 @@
+ID,Title,Category,Subcategory,Level,Audience,Has Audio,Phrases,Vocabulary,Scenarios,Cultural Notes,Issues,Warnings,File Path
+app-004,Airport Rideshare - Essential Procedures and Communication,app-specific,airport-rideshare,Intermediate-Avanzado,rideshare-drivers,No,0,6,0,4,0,0,data\resources\app-specific\airport-rideshare.json
+app-003,DoorDash Delivery - Essential Vocabulary and Scenarios,app-specific,food-delivery-doordash,Intermediate-Avanzado,doordash-drivers,No,12,8,2,4,0,0,data\resources\app-specific\doordash-delivery.json
+app-002,Lyft Driver - Essential Scenarios and Vocabulary,app-specific,rideshare-lyft,Intermediate-Avanzado,lyft-drivers,No,11,5,3,3,0,0,data\resources\app-specific\lyft-driver-essentials.json
+app-007,Multi-App Strategy - Maximizing Gig Work Earnings,app-specific,earnings-maximization,Avanzado,experienced-gig-workers,No,0,4,0,3,0,0,data\resources\app-specific\multi-app-strategy.json
+app-005,Platform Ratings System - Mastery Guide,app-specific,ratings-optimization,Avanzado,all-gig-workers,No,0,3,0,4,0,0,data\resources\app-specific\platform-ratings-mastery.json
+app-006,Tax Management and Business Expenses for Gig Workers,app-specific,financial-management,Avanzado,all-gig-workers,No,0,7,0,4,0,0,data\resources\app-specific\tax-and-expenses.json
+app-001,Uber Driver - Essential Scenarios and Vocabulary,app-specific,rideshare-uber,Intermediate-Avanzado,uber-drivers,No,14,7,3,3,0,0,data\resources\app-specific\uber-driver-essentials.json
+adv-003,Gig Economy Business Terminology,business-terminology,,Avanzado,gig-workers,No,4,10,0,3,0,0,data\resources\avanzado\business-terminology.json
+adv-007,Professional Complaint Handling,complaint-handling,,Avanzado,gig-workers,No,5,5,0,3,0,0,data\resources\avanzado\complaint-handling.json
+adv-005,Professional Conflict Resolution,conflict-resolution,,Avanzado,gig-workers,No,6,6,0,3,0,0,data\resources\avanzado\conflict-resolution.json
+adv-008,Cross-Cultural Professional Communication,cross-cultural,,Avanzado,gig-workers,No,3,5,0,8,0,0,data\resources\avanzado\cross-cultural-communication.json
+adv-002,Customer Service Excellence,customer-service,,Avanzado,gig-workers,No,5,5,0,3,0,0,data\resources\avanzado\customer-service-excellence.json
+adv-010,Earnings Optimization Communication,earnings-optimization,,Avanzado,gig-workers,No,5,5,0,4,0,0,data\resources\avanzado\earnings-optimization.json
+adv-004,Professional Negotiation Skills,negotiation,,Avanzado,gig-workers,No,6,5,0,3,0,0,data\resources\avanzado\negotiation-skills.json
+adv-009,Professional Boundaries and Self-Protection,professional-boundaries,,Avanzado,gig-workers,No,5,6,0,4,0,0,data\resources\avanzado\professional-boundaries.json
+adv-001,Professional Communication Essentials,professional-communication,,Avanzado,gig-workers,No,5,5,0,3,0,0,data\resources\avanzado\professional-communication.json
+adv-006,Professional Time Management,time-management,,Avanzado,gig-workers,No,6,6,0,3,0,0,data\resources\avanzado\time-management.json
+emerg-006,Vehicle Accident Procedures,emergency,accident,All Levels,gig-workers,No,0,7,0,4,0,0,data\resources\emergency\accident-procedures.json
+emerg-004,Customer Conflicts and Disputes,emergency,conflict,All Levels,gig-workers,No,0,6,0,3,0,0,data\resources\emergency\customer-conflict.json
+emerg-008,Lost Items and Property Disputes,emergency,property,All Levels,gig-workers,No,0,6,0,3,0,0,data\resources\emergency\lost-or-found-items.json
+emerg-001,Medical Emergencies - Critical Communication,emergency,medical,All Levels,gig-workers,No,0,8,0,4,0,0,data\resources\emergency\medical-emergencies.json
+emerg-005,Payment Disputes and Financial Conflicts,emergency,payment,All Levels,gig-workers,No,0,5,0,4,0,0,data\resources\emergency\payment-disputes.json
+emerg-002,Personal Safety - Threat and Danger Response,emergency,safety,All Levels,gig-workers,No,0,6,0,4,0,0,data\resources\emergency\safety-concerns.json
+emerg-003,Vehicle Breakdown and Mechanical Emergencies,emergency,vehicle,All Levels,gig-workers,No,0,7,5,3,0,0,data\resources\emergency\vehicle-breakdown.json
+emerg-007,Severe Weather and Hazardous Conditions,emergency,weather,All Levels,gig-workers,No,0,6,0,4,0,0,data\resources\emergency\weather-hazards.json

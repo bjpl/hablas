@@ -1,10 +1,10 @@
 
 # Hablas Platform - Functionality Test Report
 
-**Date**: 2025-11-02T05:07:20.537Z
+**Date**: 2025-11-02T06:25:50.341Z
 **Total Tests**: 13
-**Passed**: 12 (92.3%)
-**Failed**: 1
+**Passed**: 11 (84.6%)
+**Failed**: 2
 **Partial**: 0
 **Skipped**: 0
 
@@ -12,18 +12,23 @@
 
 | Status | Count | Percentage |
 |--------|-------|-----------|
-| PASS | 12 | 92.3% |
-| FAIL | 1 | 7.7% |
+| PASS | 11 | 84.6% |
+| FAIL | 2 | 15.4% |
 | PARTIAL | 0 | 0.0% |
 | SKIPPED | 0 | 0.0% |
 
 ## Detailed Test Results
 
 
-### PASS - npm run build
-- **Status**: PASS
-- **Notes**: Build completed successfully
+### FAIL - npm run build
+- **Status**: FAIL
+- **Notes**: Build failed
+- **Details**: ```
+Command failed: npm run build
+'next' is not recognized as an internal or external command,
+operable program or batch file.
 
+```
 
 
 ### FAIL - npm run typecheck
@@ -34,10 +39,9 @@
 > hablas@1.2.0 typecheck
 > tsc --noEmit
 
-__tests__/integration-resource-flow.test.tsx(33,30): error TS2322: Type 'string' is not assignable to type 'number'.
-__tests__/integration-resource-flow.test.tsx(34,30): error TS2322: Type 'string' is not assignable to type 'number'.
-__tests__/integration-resource-flow.test.tsx(45,30): error TS2322: Type 'string' is not assignable to type 'number'.
-__tests__/integration-resource-flow.test.tsx(46,30): error TS2322: Type 'string' is not assignable to ty
+.next/types/app/layout.ts(3,59): error TS2307: Cannot find module 'next/dist/lib/metadata/types/metadata-interface.js' or its corresponding type declarations.
+.next/types/app/page.ts(3,59): error TS2307: Cannot find module 'next/dist/lib/metadata/types/metadata-interface.js' or its corresponding type declarations.
+.next/types/app/recursos/[id]/page.ts(3,59): error TS2307: Cannot find module 'next/dist/lib/metadata/types/metadata-interface.js' or its co
 ```
 
 
