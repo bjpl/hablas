@@ -100,17 +100,37 @@ async def generate_dual_voice_audio(resource_id: int, test_mode=False):
         return False
 
     script_path = Path(f'scripts/cleaned-audio-scripts/{script_file}')
+
+    # If no cleaned script, use template
     if not script_path.exists():
-        print(f"⚠️  Script not found: {script_path}")
-        return False
+        # Use simple template for resources without source scripts
+        template_text = f"""Hi, I have your delivery
 
-    print(f"\n🎙️  Resource {resource_id}: {script_file}")
-    print(f"   Spanish Voice: {VOICES['spanish'][resource_id]}")
-    print(f"   English Voice: {VOICES['english'][resource_id]}")
+Hi, I have your delivery
 
-    # Read cleaned script
-    with open(script_path, 'r', encoding='utf-8') as f:
-        script_text = f.read()
+Hola, tengo su entrega
+
+Thank you
+
+Thank you
+
+Gracias
+
+Have a great day
+
+Have a great day
+
+Que tenga un gran día"""
+        script_text = template_text
+        print(f"   Using template (no source script)")
+    else:
+        # Read cleaned script
+        with open(script_path, 'r', encoding='utf-8') as f:
+            script_text = f.read()
+
+    print(f"\n🎙️  Resource {resource_id}: {script_file if script_file else 'template'}")
+    print(f"   Spanish Voice: {VOICES['spanish'].get(resource_id, 'es-CO-SalomeNeural')}")
+    print(f"   English Voice: {VOICES['english'].get(resource_id, 'en-US-JennyNeural')}")
 
     # Split into lines
     lines = [line.strip() for line in script_text.split('\n') if line.strip()]
