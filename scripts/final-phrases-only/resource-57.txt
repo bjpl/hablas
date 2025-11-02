@@ -1,0 +1,20 @@
+Rating / Score
+
+Rating / Score
+
+Calificación / Puntuación
+
+
+Deactivation threshold
+
+Deactivation threshold
+
+Umbral de desactivación
+
+
+Rolling average
+
+Rolling average
+
+Promedio móvil
+
