@@ -95,14 +95,17 @@ async def generate_dual_voice_audio(resource_id: int, test_mode=False):
     }
 
     script_file = script_mapping.get(resource_id)
+
+    # If no script file mapping, use template
     if not script_file:
-        print(f"⚠️  Resource {resource_id}: No script mapping")
-        return False
+        print(f"   No source script - using template")
+        script_file = None
+        script_path = None
+    else:
+        script_path = Path(f'scripts/cleaned-audio-scripts/{script_file}')
 
-    script_path = Path(f'scripts/cleaned-audio-scripts/{script_file}')
-
-    # If no cleaned script, use template
-    if not script_path.exists():
+    # If no cleaned script OR no mapping, use template
+    if not script_file or (script_path and not script_path.exists()):
         # Use simple template for resources without source scripts
         template_text = f"""Hi, I have your delivery
 
@@ -128,9 +131,13 @@ Que tenga un gran día"""
         with open(script_path, 'r', encoding='utf-8') as f:
             script_text = f.read()
 
+    # Get voices for this resource (with defaults)
+    spanish_voice = VOICES['spanish'].get(resource_id, 'es-CO-SalomeNeural')
+    english_voice = VOICES['english'].get(resource_id, 'en-US-JennyNeural')
+
     print(f"\n🎙️  Resource {resource_id}: {script_file if script_file else 'template'}")
-    print(f"   Spanish Voice: {VOICES['spanish'].get(resource_id, 'es-CO-SalomeNeural')}")
-    print(f"   English Voice: {VOICES['english'].get(resource_id, 'en-US-JennyNeural')}")
+    print(f"   Spanish Voice: {spanish_voice}")
+    print(f"   English Voice: {english_voice}")
 
     # Split into lines
     lines = [line.strip() for line in script_text.split('\n') if line.strip()]
@@ -151,7 +158,12 @@ Que tenga un gran día"""
     for i, line in enumerate(lines):
         # Detect language
         lang = detect_language(line)
-        voice = VOICES[lang][resource_id]
+
+        # Get voice (with fallback for resources not in mapping)
+        if lang == 'spanish':
+            voice = VOICES['spanish'].get(resource_id, 'es-CO-SalomeNeural')
+        else:
+            voice = VOICES['english'].get(resource_id, 'en-US-JennyNeural')
 
         # Generate this segment
         temp_file = temp_dir / f'segment_{segment_count:03d}.mp3'
