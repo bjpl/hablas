@@ -1,0 +1,122 @@
+{
+  "id": "adv-006",
+  "title": "Professional Time Management",
+  "description": "Communicate effectively about schedules, delays, and time commitments in gig work",
+  "level": "Avanzado",
+  "category": "time-management",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US punctuality expectations",
+  "vocabulary": [
+    {
+      "english": "Estimated arrival time (ETA)",
+      "spanish": "Hora estimada de llegada",
+      "pronunciation": "OH-rah es-tee-MAH-dah deh yeh-GAH-dah",
+      "context": "Critical information for customers"
+    },
+    {
+      "english": "Running late",
+      "spanish": "Llegando tarde / Con retraso",
+      "pronunciation": "yeh-GAN-doh TAR-deh / kon reh-TRAH-soh",
+      "context": "Being behind schedule"
+    },
+    {
+      "english": "On time",
+      "spanish": "A tiempo / Puntual",
+      "pronunciation": "ah tee-EM-poh / poon-too-AL",
+      "context": "Meeting scheduled time"
+    },
+    {
+      "english": "Traffic / Congestion",
+      "spanish": "Tráfico / Congestión",
+      "pronunciation": "TRAH-fee-koh / kon-hes-tee-ON",
+      "context": "Common delay cause"
+    },
+    {
+      "english": "Delay",
+      "spanish": "Demora / Retraso",
+      "pronunciation": "deh-MOH-rah / reh-TRAH-soh",
+      "context": "Time behind schedule"
+    },
+    {
+      "english": "Rush / Urgent",
+      "spanish": "Apurado / Urgente",
+      "pronunciation": "ah-poo-RAH-doh / oor-HEN-teh",
+      "context": "Time-sensitive situation"
+    }
+  ],
+  "phrases": [
+    {
+      "english": "I'll arrive in approximately 5 minutes",
+      "spanish": "Llegaré en aproximadamente 5 minutos",
+      "pronunciation": "yeh-gah-REH en ah-prok-see-mah-dah-MEN-teh SEEN-koh mee-NOO-tohs",
+      "context": "Giving accurate ETA"
+    },
+    {
+      "english": "I apologize for the delay. Traffic is heavy on this route",
+      "spanish": "Disculpe la demora. El tráfico está pesado en esta ruta",
+      "pronunciation": "dees-KOOL-peh lah deh-MOH-rah. el TRAH-fee-koh es-TAH peh-SAH-doh en ES-tah ROO-tah",
+      "context": "Explaining unavoidable delay"
+    },
+    {
+      "english": "I'm ahead of schedule",
+      "spanish": "Voy adelantado / Llego antes de lo previsto",
+      "pronunciation": "voy ah-deh-lan-TAH-doh / YEH-goh AN-tes deh loh preh-VEES-toh",
+      "context": "Arriving early"
+    },
+    {
+      "english": "What time do you need to be there?",
+      "spanish": "¿A qué hora necesita estar allí?",
+      "pronunciation": "ah keh OH-rah neh-seh-SEE-tah es-TAR ah-YEE",
+      "context": "Understanding customer time constraint"
+    },
+    {
+      "english": "We should arrive with time to spare",
+      "spanish": "Deberíamos llegar con tiempo de sobra",
+      "pronunciation": "deh-beh-REE-ah-mohs yeh-GAR kon tee-EM-poh deh SOH-brah",
+      "context": "Reassuring punctual arrival"
+    },
+    {
+      "english": "I'll update you if anything changes",
+      "spanish": "Le avisaré si algo cambia",
+      "pronunciation": "leh ah-vee-sah-REH see AL-go KAM-bee-ah",
+      "context": "Proactive communication commitment"
+    }
+  ],
+  "culturalNotes": [
+    {
+      "topic": "American Punctuality Culture",
+      "note": "Being on time is critical - even 5 minutes late requires communication and apology",
+      "colombianComparison": "Much stricter than 'hora colombiana' - lateness is seen as disrespectful"
+    },
+    {
+      "topic": "Proactive Communication",
+      "note": "Inform customers immediately of delays - don't wait for them to ask",
+      "colombianComparison": "More proactive communication expected than in Colombian culture"
+    },
+    {
+      "topic": "Time Estimates",
+      "note": "Give realistic ETAs - undercommit and overdeliver rather than vice versa",
+      "colombianComparison": "Americans prefer accurate pessimistic estimate over optimistic guess"
+    }
+  ],
+  "practicalScenarios": [
+    {
+      "situation": "Customer has flight to catch",
+      "spanishResponse": "Entiendo que tiene un vuelo. ¿A qué hora necesita estar en el aeropuerto? Tomaré la ruta más rápida y monitorizaré el tráfico.",
+      "englishTranslation": "I understand you have a flight. What time do you need to be at the airport? I'll take the fastest route and monitor traffic.",
+      "tips": "Show understanding of urgency and take proactive approach"
+    },
+    {
+      "situation": "Unexpected traffic delay",
+      "spanishResponse": "Disculpe, hay un accidente adelante que está causando demora. Nuestro nuevo tiempo estimado de llegada es [X]. ¿Le gustaría que tome una ruta alternativa?",
+      "englishTranslation": "Sorry, there's an accident ahead causing delays. Our new estimated arrival time is [X]. Would you like me to take an alternate route?",
+      "tips": "Explain cause, give new ETA, offer solution"
+    },
+    {
+      "situation": "Arriving earlier than expected",
+      "spanishResponse": "Buenas noticias - vamos adelantados. Llegaremos unos minutos antes de lo estimado.",
+      "englishTranslation": "Good news - we're ahead of schedule. We'll arrive a few minutes earlier than estimated.",
+      "tips": "Positive framing of early arrival"
+    }
+  ]
+}

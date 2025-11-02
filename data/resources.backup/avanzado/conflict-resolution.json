@@ -1,0 +1,128 @@
+{
+  "id": "adv-005",
+  "title": "Professional Conflict Resolution",
+  "description": "De-escalate tensions and resolve customer disputes professionally while protecting your ratings",
+  "level": "Avanzado",
+  "category": "conflict-resolution",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US customer service",
+  "vocabulary": [
+    {
+      "english": "Misunderstanding",
+      "spanish": "Malentendido",
+      "pronunciation": "mahl-en-ten-DEE-doh",
+      "context": "Communication breakdown"
+    },
+    {
+      "english": "Resolution",
+      "spanish": "Resolución",
+      "pronunciation": "reh-soh-loo-see-ON",
+      "context": "Solution to a problem"
+    },
+    {
+      "english": "Upset / Frustrated",
+      "spanish": "Molesto / Frustrado",
+      "pronunciation": "moh-LES-toh / froos-TRAH-doh",
+      "context": "Customer emotional state"
+    },
+    {
+      "english": "Calm",
+      "spanish": "Calmado / Tranquilo",
+      "pronunciation": "kahl-MAH-doh / trahn-KEE-loh",
+      "context": "Desired emotional state"
+    },
+    {
+      "english": "Complaint",
+      "spanish": "Queja",
+      "pronunciation": "KEH-hah",
+      "context": "Customer expressing dissatisfaction"
+    },
+    {
+      "english": "Documentation",
+      "spanish": "Documentación",
+      "pronunciation": "doh-koo-men-tah-see-ON",
+      "context": "Evidence for platform disputes"
+    }
+  ],
+  "phrases": [
+    {
+      "english": "I understand you're upset. Let's work together to fix this",
+      "spanish": "Entiendo que está molesto. Trabajemos juntos para resolver esto",
+      "pronunciation": "en-tee-EN-doh keh es-TAH moh-LES-toh. trah-bah-HEH-mohs HOON-tohs PAH-rah reh-sol-VER ES-toh",
+      "context": "Acknowledgment + action focus"
+    },
+    {
+      "english": "I take full responsibility for this error",
+      "spanish": "Asumo toda la responsabilidad por este error",
+      "pronunciation": "ah-SOO-moh TOH-dah lah res-pon-sah-bee-lee-DAD por ES-teh eh-RROR",
+      "context": "When mistake is your fault"
+    },
+    {
+      "english": "Let me make this right for you",
+      "spanish": "Permítame corregir esto para usted",
+      "pronunciation": "per-MEE-tah-meh koh-reh-HEER ES-toh PAH-rah oos-TED",
+      "context": "Solution-oriented response"
+    },
+    {
+      "english": "I need you to speak calmly so I can help you",
+      "spanish": "Necesito que hable con calma para poder ayudarle",
+      "pronunciation": "neh-seh-SEE-toh keh AH-bleh kon KAL-mah PAH-rah poh-DER ah-yoo-DAR-leh",
+      "context": "Requesting respectful communication"
+    },
+    {
+      "english": "I will contact support on your behalf",
+      "spanish": "Contactaré al soporte en su nombre",
+      "pronunciation": "kon-tak-tah-REH al soh-POR-teh en soo NOM-breh",
+      "context": "Escalating to platform"
+    },
+    {
+      "english": "Can we agree on this solution?",
+      "spanish": "¿Podemos acordar esta solución?",
+      "pronunciation": "poh-DEH-mohs ah-kor-DAR ES-tah soh-loo-see-ON",
+      "context": "Seeking mutual agreement"
+    }
+  ],
+  "culturalNotes": [
+    {
+      "topic": "Staying Calm Under Pressure",
+      "note": "US service culture expects workers to remain professional even with difficult customers",
+      "colombianComparison": "Similar expectation but you have less leverage as independent contractor"
+    },
+    {
+      "topic": "Documentation is Key",
+      "note": "Always document issues through app messages/photos to protect yourself in disputes",
+      "colombianComparison": "More formal dispute process than verbal Colombian agreements"
+    },
+    {
+      "topic": "When to Involve Platform",
+      "note": "Don't hesitate to contact platform support for threatening behavior or unreasonable demands",
+      "colombianComparison": "Platform has structured protocols for worker protection"
+    }
+  ],
+  "practicalScenarios": [
+    {
+      "situation": "Customer claims you took wrong route",
+      "spanishResponse": "Entiendo su preocupación. Seguí la ruta sugerida por la aplicación para evitar tráfico. ¿Prefiere que tome una ruta diferente?",
+      "englishTranslation": "I understand your concern. I followed the app's suggested route to avoid traffic. Would you prefer I take a different route?",
+      "tips": "Explain reasoning, offer alternative, stay calm"
+    },
+    {
+      "situation": "Customer is angry about wait time",
+      "spanishResponse": "Lamento mucho la demora. El tráfico está muy pesado hoy. Ya estamos en camino y haré todo lo posible por compensar el tiempo perdido.",
+      "englishTranslation": "I'm very sorry for the delay. Traffic is very heavy today. We're on our way now and I'll do everything possible to make up for lost time.",
+      "tips": "Apologize, explain without excuses, commit to action"
+    },
+    {
+      "situation": "Customer threatens bad rating over issue outside your control",
+      "spanishResponse": "Entiendo su frustración. Esta situación está fuera de mi control, pero estoy haciendo todo lo posible para ayudar. Si no está satisfecho, la plataforma puede revisar los detalles del viaje.",
+      "englishTranslation": "I understand your frustration. This situation is outside my control, but I'm doing everything possible to help. If you're not satisfied, the platform can review the trip details.",
+      "tips": "Acknowledge feeling, state facts, mention platform review process"
+    },
+    {
+      "situation": "Customer becomes verbally aggressive",
+      "spanishResponse": "Respeto su frustración, pero no puedo continuar si hay lenguaje ofensivo. Necesito que hablemos con respeto mutuo o tendré que finalizar el servicio y contactar a soporte.",
+      "englishTranslation": "I respect your frustration, but I cannot continue if there's offensive language. I need us to speak with mutual respect or I'll have to end the service and contact support.",
+      "tips": "Set firm boundary, give choice, mention consequences"
+    }
+  ]
+}

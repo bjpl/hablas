@@ -1,0 +1,127 @@
+{
+  "id": "adv-010",
+  "title": "Earnings Optimization Communication",
+  "description": "Professional communication to maximize tips, ratings, and repeat business",
+  "level": "Avanzado",
+  "category": "earnings-optimization",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US gig economy earnings",
+  "vocabulary": [
+    {
+      "english": "Tip / Gratuity",
+      "spanish": "Propina",
+      "pronunciation": "proh-PEE-nah",
+      "context": "Additional payment for good service"
+    },
+    {
+      "english": "Cash tip",
+      "spanish": "Propina en efectivo",
+      "pronunciation": "proh-PEE-nah en eh-fek-TEE-voh",
+      "context": "Physical money tip"
+    },
+    {
+      "english": "In-app tip",
+      "spanish": "Propina en la aplicación",
+      "pronunciation": "proh-PEE-nah en lah ah-plee-kah-see-ON",
+      "context": "Digital tip through platform"
+    },
+    {
+      "english": "Value-added service",
+      "spanish": "Servicio de valor agregado",
+      "pronunciation": "ser-VEE-see-oh deh vah-LOR ah-greh-GAH-doh",
+      "context": "Extra services beyond basic"
+    },
+    {
+      "english": "Referral",
+      "spanish": "Referencia / Recomendación",
+      "pronunciation": "reh-feh-REN-see-ah / reh-koh-men-dah-see-ON",
+      "context": "Recommending you to others"
+    }
+  ],
+  "phrases": [
+    {
+      "english": "I have water and phone chargers available if needed",
+      "spanish": "Tengo agua y cargadores de teléfono disponibles si los necesita",
+      "pronunciation": "TEN-go AH-gwah ee kar-gah-DOH-res deh teh-LEH-foh-noh dees-poh-NEE-bles see lohs neh-seh-SEE-tah",
+      "context": "Offering value-added amenities"
+    },
+    {
+      "english": "Please let me know your temperature preference",
+      "spanish": "Por favor, indíqueme su preferencia de temperatura",
+      "pronunciation": "por fah-VOR, een-DEE-keh-meh soo preh-feh-REN-see-ah deh tem-peh-rah-TOO-rah",
+      "context": "Proactive comfort inquiry"
+    },
+    {
+      "english": "I appreciate your business",
+      "spanish": "Agradezco su preferencia",
+      "pronunciation": "ah-grah-DES-koh soo preh-feh-REN-see-ah",
+      "context": "Professional thanks at end"
+    },
+    {
+      "english": "If you were satisfied with the service, I'd appreciate a 5-star rating",
+      "spanish": "Si quedó satisfecho con el servicio, agradecería una calificación de 5 estrellas",
+      "pronunciation": "see keh-DOH sah-tees-FEH-choh kon el ser-VEE-see-oh, ah-grah-deh-seh-REE-ah OO-nah kah-lee-fee-kah-see-ON deh SEEN-koh es-TREH-yahs",
+      "context": "Polite rating request"
+    },
+    {
+      "english": "Feel free to request me again through the app",
+      "spanish": "No dude en solicitarme nuevamente a través de la aplicación",
+      "pronunciation": "noh DOO-deh en soh-lee-see-TAR-meh nweh-vah-MEN-teh ah trah-VES deh lah ah-plee-kah-see-ON",
+      "context": "Encouraging repeat business"
+    }
+  ],
+  "culturalNotes": [
+    {
+      "topic": "Tipping Culture",
+      "note": "15-20% tips are standard for good service. Exceptional service can earn 25%+",
+      "colombianComparison": "Much more formalized and expected than Colombian propina culture"
+    },
+    {
+      "topic": "It's Okay to Ask for Ratings",
+      "note": "Politely asking for 5-star rating if service was good is culturally acceptable",
+      "colombianComparison": "More direct self-promotion than Colombian modesty culture"
+    },
+    {
+      "topic": "Small Investments, Big Returns",
+      "note": "Water bottles ($0.25 each) and phone chargers ($15 one-time) dramatically increase tips",
+      "colombianComparison": "US customers notice and reward thoughtful amenities"
+    },
+    {
+      "topic": "Professionalism = Earnings",
+      "note": "Professional appearance, clean vehicle, and courteous service directly correlate with earnings",
+      "colombianComparison": "Appearance standards higher than informal Colombian economy"
+    }
+  ],
+  "practicalScenarios": [
+    {
+      "situation": "Beginning of ride - set positive tone",
+      "spanishResponse": "Bienvenido/a. Tengo agua embotellada y cargadores si los necesita. La temperatura está en [X] - avíseme si quiere que la ajuste.",
+      "englishTranslation": "Welcome. I have bottled water and chargers if you need them. Temperature is at [X] - let me know if you'd like me to adjust it.",
+      "tips": "Offer amenities early, show attentiveness to comfort"
+    },
+    {
+      "situation": "Customer mentions they're a tourist",
+      "spanishResponse": "¡Qué bueno! Si necesita recomendaciones sobre qué ver o dónde comer, conozco bien el área.",
+      "englishTranslation": "How nice! If you need recommendations about what to see or where to eat, I know the area well.",
+      "tips": "Position yourself as helpful local resource - builds value"
+    },
+    {
+      "situation": "End of excellent service",
+      "spanishResponse": "Ha sido un placer servirle. Si todo estuvo bien, una calificación de 5 estrellas me ayuda mucho a seguir ofreciendo este nivel de servicio.",
+      "englishTranslation": "It's been a pleasure serving you. If everything was good, a 5-star rating helps me continue offering this level of service.",
+      "tips": "Link rating request to continued quality service"
+    },
+    {
+      "situation": "Customer has multiple stops",
+      "spanishResponse": "Sin problema. Tomaré la ruta más eficiente para todas sus paradas.",
+      "englishTranslation": "No problem. I'll take the most efficient route for all your stops.",
+      "tips": "Show flexibility - complex trips often yield higher tips"
+    },
+    {
+      "situation": "Helping with luggage",
+      "spanishResponse": "Permítame ayudarle con su equipaje. [Carefully handles bags]",
+      "englishTranslation": "Let me help you with your luggage. [Carefully handles bags]",
+      "tips": "Physical assistance with bags significantly increases tips"
+    }
+  ]
+}

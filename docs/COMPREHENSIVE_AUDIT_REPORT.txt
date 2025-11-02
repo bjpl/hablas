@@ -1,0 +1,329 @@
+====================================================================================================
+HABLAS PLATFORM - COMPREHENSIVE CONTENT AUDIT REPORT
+====================================================================================================
+Audit Date: 2025-11-02
+Total Resources Analyzed: 57
+Total Audio Files Available: 100
+
+EXECUTIVE SUMMARY
+----------------------------------------------------------------------------------------------------
+Total Resources: 57
+Resources with audioUrl field: 23 (40.4%)
+Audio files that exist on disk: 23
+Resources WITHOUT audioUrl: 34
+Resources with CRITICAL issues: 0
+Resources with warnings: 0
+
+CATEGORY DISTRIBUTION
+----------------------------------------------------------------------------------------------------
+
+CATEGORY:
+  all            :  30 resources ( 52.6%)
+  conductor      :  15 resources ( 26.3%)
+  repartidor     :  12 resources ( 21.1%)
+
+LEVEL:
+  basico         :  25 resources ( 43.9%)
+  intermedio     :  16 resources ( 28.1%)
+  avanzado       :  16 resources ( 28.1%)
+
+TYPE:
+  pdf            :  46 resources ( 80.7%)
+  audio          :   8 resources ( 14.0%)
+  image          :   3 resources (  5.3%)
+
+AUDIO COVERAGE ANALYSIS
+----------------------------------------------------------------------------------------------------
+Audio files in /public/audio/: 100
+Resources with audioUrl field: 23
+Audio files that actually exist: 23
+
+Available Audio Files:
+  - emergencia-var1-es.mp3
+  - emergency-var1-en.mp3
+  - emergency-var2-en.mp3
+  - frases-esenciales-var1-es.mp3
+  - frases-esenciales-var2-es.mp3
+  - frases-esenciales-var3-es.mp3
+  - numeros-direcciones-var1-es.mp3
+  - numeros-direcciones-var2-es.mp3
+  - resource-1.mp3
+  - resource-10.mp3
+  - resource-11.mp3
+  - resource-12.mp3
+  - resource-13.mp3
+  - resource-14.mp3
+  - resource-15.mp3
+  - resource-16.mp3
+  - resource-17.mp3
+  - resource-18.mp3
+  - resource-19.mp3
+  - resource-2-TEST.mp3
+  - resource-2.mp3
+  - resource-20.mp3
+  - resource-21.mp3
+  - resource-22.mp3
+  - resource-23.mp3
+  - resource-24.mp3
+  - resource-25.mp3
+  - resource-26.mp3
+  - resource-27.mp3
+  - resource-28.mp3
+  - resource-29.mp3
+  - resource-3.mp3
+  - resource-30.mp3
+  - resource-31.mp3
+  - resource-32.mp3
+  - resource-33.mp3
+  - resource-34.mp3
+  - resource-35.mp3
+  - resource-36.mp3
+  - resource-37.mp3
+  - resource-4.mp3
+  - resource-5.mp3
+  - resource-6.mp3
+  - resource-7.mp3
+  - resource-8.mp3
+  - resource-9.mp3
+  - saludos-var1-en.mp3
+  - saludos-var2-en.mp3
+  - saludos-var3-en.mp3
+  - tiempo-var1-es.mp3
+
+RESOURCES WITHOUT AUDIO (22 resources)
+----------------------------------------------------------------------------------------------------
+Total: 34 resources need audioUrl field
+
+[ID  4] Frases Esenciales para Entregas - Var 2
+        Category: repartidor   | Level: basico     | Type: pdf
+        Tags: entregas, delivery, rappi, basico
+
+[ID  6] Frases Esenciales para Entregas - Var 3
+        Category: repartidor   | Level: basico     | Type: pdf
+        Tags: entregas, delivery, rappi, basico
+
+[ID  9] Frases Esenciales para Entregas - Var 4
+        Category: repartidor   | Level: basico     | Type: pdf
+        Tags: entregas, delivery, rappi, basico
+
+[ID 12] Direcciones y Navegación GPS - Var 1
+        Category: conductor    | Level: basico     | Type: pdf
+        Tags: uber, didi, pasajeros, rideshare
+
+[ID 15] Direcciones y Navegación GPS - Var 2
+        Category: conductor    | Level: basico     | Type: pdf
+        Tags: uber, didi, pasajeros, rideshare
+
+[ID 17] Saludos y Confirmación de Pasajeros - Var 3
+        Category: conductor    | Level: basico     | Type: pdf
+        Tags: uber, didi, pasajeros, rideshare
+
+[ID 20] Manejo de Situaciones Difíciles - Var 1
+        Category: conductor    | Level: intermedio | Type: pdf
+        Tags: uber, didi, pasajeros, rideshare
+
+[ID 23] Tiempo y Horarios - Var 1
+        Category: all          | Level: basico     | Type: pdf
+        Tags: basico, pdf
+
+[ID 25] Servicio al Cliente en Inglés - Var 1
+        Category: all          | Level: intermedio | Type: pdf
+        Tags: customer-service, intermedio, pdf
+
+[ID 27] Frases de Emergencia - Var 1
+        Category: all          | Level: basico     | Type: pdf
+        Tags: emergencia, safety, basico, pdf
+
+[ID 30] Protocolos de Seguridad - Var 1
+        Category: all          | Level: intermedio | Type: pdf
+        Tags: intermedio, pdf
+
+[ID 33] Small Talk con Pasajeros - Var 2
+        Category: conductor    | Level: intermedio | Type: pdf
+        Tags: uber, didi, pasajeros, rideshare
+
+[ID 36] Professional Complaint Handling
+        Category: all          | Level: avanzado   | Type: pdf
+        Tags: avanzado, complaint-handling, gig-workers, professional
+
+[ID 38] Cross-Cultural Professional Communication
+        Category: all          | Level: avanzado   | Type: pdf
+        Tags: avanzado, cross-cultural, gig-workers, professional
+
+[ID 39] Customer Service Excellence
+        Category: all          | Level: avanzado   | Type: pdf
+        Tags: avanzado, customer-service, gig-workers, pdf
+
+[ID 40] Earnings Optimization Communication
+        Category: all          | Level: avanzado   | Type: pdf
+        Tags: avanzado, earnings-optimization, gig-workers, pdf
+
+[ID 41] Professional Negotiation Skills
+        Category: all          | Level: avanzado   | Type: pdf
+        Tags: avanzado, negotiation, gig-workers, professional
+
+[ID 42] Professional Boundaries and Self-Protection
+        Category: all          | Level: avanzado   | Type: pdf
+        Tags: avanzado, professional-boundaries, gig-workers, professional
+
+[ID 43] Professional Communication Essentials
+        Category: all          | Level: avanzado   | Type: pdf
+        Tags: avanzado, professional-communication, gig-workers, professional
+
+[ID 44] Professional Time Management
+        Category: all          | Level: avanzado   | Type: pdf
+        Tags: avanzado, time-management, gig-workers, professional
+
+[ID 45] Vehicle Accident Procedures
+        Category: all          | Level: intermedio | Type: pdf
+        Tags: emergency, accident, gig-workers, intermedio
+
+[ID 46] Customer Conflicts and Disputes
+        Category: all          | Level: intermedio | Type: pdf
+        Tags: emergency, conflict, gig-workers, intermedio
+
+[ID 47] Lost Items and Property Disputes
+        Category: all          | Level: intermedio | Type: pdf
+        Tags: emergency, property, gig-workers, intermedio
+
+[ID 48] Medical Emergencies - Critical Communication
+        Category: all          | Level: intermedio | Type: pdf
+        Tags: emergency, medical, gig-workers, intermedio
+
+[ID 49] Payment Disputes and Financial Conflicts
+        Category: all          | Level: intermedio | Type: pdf
+        Tags: emergency, payment, gig-workers, intermedio
+
+[ID 51] Vehicle Breakdown and Mechanical Emergencies
+        Category: all          | Level: intermedio | Type: pdf
+        Tags: emergency, vehicle, gig-workers, intermedio
+
+[ID 52] Severe Weather and Hazardous Conditions
+        Category: all          | Level: intermedio | Type: pdf
+        Tags: emergency, weather, gig-workers, intermedio
+
+[ID 53] Airport Rideshare - Essential Procedures and Communication
+        Category: conductor    | Level: avanzado   | Type: pdf
+        Tags: app-specific, airport-rideshare, rideshare-drivers, avanzado
+
+[ID 54] DoorDash Delivery - Essential Vocabulary and Scenarios
+        Category: conductor    | Level: avanzado   | Type: pdf
+        Tags: app-specific, food-delivery-doordash, doordash-drivers, avanzado
+
+[ID 55] Lyft Driver - Essential Scenarios and Vocabulary
+        Category: conductor    | Level: avanzado   | Type: pdf
+        Tags: app-specific, rideshare-lyft, lyft-drivers, avanzado
+
+[ID 56] Multi-App Strategy - Maximizing Gig Work Earnings
+        Category: all          | Level: avanzado   | Type: pdf
+        Tags: app-specific, earnings-maximization, experienced-gig-workers, avanzado
+
+[ID 57] Platform Ratings System - Mastery Guide
+        Category: all          | Level: avanzado   | Type: pdf
+        Tags: app-specific, ratings-optimization, all-gig-workers, avanzado
+
+[ID 58] Tax Management and Business Expenses for Gig Workers
+        Category: all          | Level: avanzado   | Type: pdf
+        Tags: app-specific, financial-management, all-gig-workers, avanzado
+
+[ID 59] Uber Driver - Essential Scenarios and Vocabulary
+        Category: conductor    | Level: avanzado   | Type: pdf
+        Tags: app-specific, rideshare-uber, uber-drivers, avanzado
+
+RESOURCES WITH AUDIO URL
+----------------------------------------------------------------------------------------------------
+Total: 23 resources have audioUrl field
+
+[ID  1] Frases Esenciales para Entregas - Var 1
+        Audio: /audio/resource-1.mp3 - ✓ EXISTS
+
+[ID  2] Pronunciación: Entregas - Var 1
+        Audio: /audio/resource-2.mp3 - ✓ EXISTS
+
+[ID  3] Guía Visual: Entregas - Var 1
+        Audio: /audio/resource-3.mp3 - ✓ EXISTS
+
+[ID  5] Situaciones Complejas en Entregas - Var 1
+        Audio: /audio/resource-5.mp3 - ✓ EXISTS
+
+[ID  7] Pronunciación: Entregas - Var 2
+        Audio: /audio/resource-7.mp3 - ✓ EXISTS
+
+[ID  8] Guía Visual: Entregas - Var 2
+        Audio: /audio/resource-8.mp3 - ✓ EXISTS
+
+[ID 10] Conversaciones con Clientes - Var 1
+        Audio: /audio/resource-10.mp3 - ✓ EXISTS
+
+[ID 11] Saludos y Confirmación de Pasajeros - Var 1
+        Audio: /audio/resource-11.mp3 - ✓ EXISTS
+
+[ID 13] Audio: Direcciones en Inglés - Var 1
+        Audio: /audio/resource-13.mp3 - ✓ EXISTS
+
+[ID 14] Saludos y Confirmación de Pasajeros - Var 2
+        Audio: /audio/resource-14.mp3 - ✓ EXISTS
+
+... and 13 more resources with audio
+
+CRITICAL ISSUES
+----------------------------------------------------------------------------------------------------
+✓ No critical issues found!
+
+WARNINGS
+----------------------------------------------------------------------------------------------------
+✓ No warnings!
+
+CONTENT GAPS & RECOMMENDATIONS
+----------------------------------------------------------------------------------------------------
+ 1. 34 resources lack audioUrl field (59.6%)
+ 2. Only 8 dedicated audio resources (expected 9+)
+
+PRIORITY RECOMMENDATIONS
+----------------------------------------------------------------------------------------------------
+
+HIGH PRIORITY:
+  1. Add audioUrl field to 34 resources without audio
+  2. Generate MP3 files for resources with audioUrl but missing files
+
+MEDIUM PRIORITY:
+  1. Balance content across categories (especially repartidor vs conductor)
+  2. Ensure all levels (basico/intermedio/avanzado) have sufficient coverage
+  3. Add more dedicated audio resources (currently only 9)
+
+LOW PRIORITY:
+  1. Enhance tag consistency across resources
+  2. Add more visual (image) resources
+  3. Consider adding video resources for complex topics
+
+AUDIO FILE MAPPING TABLE
+----------------------------------------------------------------------------------------------------
+ID    Audio Filename                 Status     Resource Title
+----------------------------------------------------------------------------------------------------
+1     resource-1.mp3                 EXISTS     Frases Esenciales para Entregas - Var 1
+2     resource-2.mp3                 EXISTS     Pronunciación: Entregas - Var 1
+3     resource-3.mp3                 EXISTS     Guía Visual: Entregas - Var 1
+5     resource-5.mp3                 EXISTS     Situaciones Complejas en Entregas - Var 1
+7     resource-7.mp3                 EXISTS     Pronunciación: Entregas - Var 2
+8     resource-8.mp3                 EXISTS     Guía Visual: Entregas - Var 2
+10    resource-10.mp3                EXISTS     Conversaciones con Clientes - Var 1
+11    resource-11.mp3                EXISTS     Saludos y Confirmación de Pasajeros - Var 1
+13    resource-13.mp3                EXISTS     Audio: Direcciones en Inglés - Var 1
+14    resource-14.mp3                EXISTS     Saludos y Confirmación de Pasajeros - Var 2
+16    resource-16.mp3                EXISTS     Small Talk con Pasajeros - Var 1
+18    resource-18.mp3                EXISTS     Audio: Direcciones en Inglés - Var 2
+19    resource-19.mp3                EXISTS     Direcciones y Navegación GPS - Var 3
+21    resource-21.mp3                EXISTS     Saludos Básicos en Inglés - Var 1
+22    resource-22.mp3                EXISTS     Números y Direcciones - Var 1
+24    resource-24.mp3                EXISTS     Vocabulario de Apps (Uber, Rappi, DiDi) - Var 1
+26    resource-26.mp3                EXISTS     Manejo de Quejas y Problemas - Var 1
+28    resource-28.mp3                EXISTS     Saludos Básicos en Inglés - Var 2
+29    resource-29.mp3                EXISTS     Números y Direcciones - Var 2
+31    resource-31.mp3                EXISTS     Situaciones Complejas en Entregas - Var 2
+32    resource-32.mp3                EXISTS     Conversaciones con Clientes - Var 2
+37    resource-37.mp3                EXISTS     Professional Conflict Resolution
+50    emergency-var2-en.mp3          EXISTS     Personal Safety - Threat and Danger Response
+
+====================================================================================================
+END OF COMPREHENSIVE AUDIT REPORT
+====================================================================================================

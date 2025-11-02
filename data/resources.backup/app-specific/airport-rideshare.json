@@ -1,0 +1,327 @@
+{
+  "id": "app-004",
+  "title": "Airport Rideshare - Essential Procedures and Communication",
+  "description": "Specialized vocabulary and procedures for airport pickups and drop-offs",
+  "level": "Intermediate-Avanzado",
+  "category": "app-specific",
+  "subcategory": "airport-rideshare",
+  "targetAudience": "rideshare-drivers",
+  "culturalContext": "US airport rideshare procedures",
+  "criticalVocabulary": [
+    {
+      "english": "TNC lot / Staging area",
+      "spanish": "Área de espera TNC / Zona de preparación",
+      "pronunciation": "AH-reh-ah deh es-PEH-rah / SOH-nah deh preh-pah-rah-see-ON",
+      "context": "Where drivers wait for airport ride requests (TNC = Transportation Network Company)"
+    },
+    {
+      "english": "Geofence / Designated pickup area",
+      "spanish": "Geo-cerca / Área designada de recogida",
+      "pronunciation": "heh-oh-SER-kah / AH-reh-ah deh-seeg-NAH-dah",
+      "context": "GPS boundary and specific location for pickups"
+    },
+    {
+      "english": "Terminal / Concourse",
+      "spanish": "Terminal / Concurso",
+      "pronunciation": "ter-mee-NAL / kon-KOOR-soh",
+      "context": "Airport building sections"
+    },
+    {
+      "english": "Arrivals / Departures",
+      "spanish": "Llegadas / Salidas",
+      "pronunciation": "yeh-GAH-dahs / sah-LEE-dahs",
+      "context": "Airport levels - pickups at Arrivals, drop-offs at Departures"
+    },
+    {
+      "english": "Baggage claim",
+      "spanish": "Reclamo de equipaje",
+      "pronunciation": "reh-KLAH-moh deh eh-kee-PAH-heh",
+      "context": "Where passengers get luggage"
+    },
+    {
+      "english": "Curbside",
+      "spanish": "A la orilla de la acera / En la banqueta",
+      "pronunciation": "ah lah oh-REE-yah deh lah ah-SEH-rah",
+      "context": "Pickup/drop-off area at airport curb"
+    }
+  ],
+  "airportPickupProcedure": {
+    "stagingProcess": {
+      "steps": [
+        {
+          "step": 1,
+          "action": "Enter TNC staging lot",
+          "spanish": "Entrar al área de espera TNC",
+          "details": "Free parking lot where drivers wait for requests. Usually within 5-10 minutes of terminals"
+        },
+        {
+          "step": 2,
+          "action": "Turn on rideshare mode",
+          "spanish": "Activar modo rideshare",
+          "details": "Uber/Lyft must be in airport mode to receive airport requests"
+        },
+        {
+          "step": 3,
+          "action": "Wait in queue",
+          "spanish": "Esperar en la cola",
+          "details": "Requests distributed in order of arrival. App shows your position in queue"
+        },
+        {
+          "step": 4,
+          "action": "Accept airport request",
+          "spanish": "Aceptar solicitud del aeropuerto",
+          "details": "Higher likelihood of long-distance, higher-paying trips"
+        },
+        {
+          "step": 5,
+          "action": "Proceed to designated pickup area",
+          "spanish": "Proceder al área designada de recogida",
+          "details": "Each airport has specific rideshare pickup zones. Follow app directions exactly"
+        }
+      ]
+    },
+    "findingPassenger": {
+      "challenges": "Airports are chaotic - many people, similar cars, confusing layouts",
+      "phrases": [
+        {
+          "english": "[Text] I'm in the rideshare pickup area at [terminal/location]. What color clothing are you wearing?",
+          "spanish": "Estoy en el área de recogida de rideshare en [terminal/ubicación]. ¿De qué color es su ropa?",
+          "pronunciation": "es-TOY en el AH-reh-ah deh reh-koh-HEE-dah",
+          "context": "Helping locate passenger in crowd"
+        },
+        {
+          "english": "I'm in the [color] [vehicle]. I see you!",
+          "spanish": "Estoy en el [color] [vehículo]. ¡Lo/La veo!",
+          "pronunciation": "es-TOY en el [koh-LOR] [veh-EE-koo-loh]",
+          "context": "Confirming visual contact"
+        },
+        {
+          "english": "I'm coming around again - traffic is heavy",
+          "spanish": "Voy a dar otra vuelta - el tráfico está pesado",
+          "pronunciation": "voy ah dar OH-trah VWEL-tah",
+          "context": "If you must circle due to airport traffic enforcement"
+        }
+      ],
+      "tips": [
+        "Turn on interior light at night so they can see inside",
+        "Wave or flash lights briefly when you see them",
+        "Be patient - travelers are often confused and stressed",
+        "Use app messaging instead of calling in loud airport environment"
+      ]
+    },
+    "luggageAssistance": {
+      "expectation": "Airport passengers often have luggage - helping = better tips",
+      "phrases": [
+        {
+          "english": "Let me help you with your bags",
+          "spanish": "Permítame ayudarle con su equipaje",
+          "pronunciation": "per-MEE-tah-meh ah-yoo-DAR-leh kon soo eh-kee-PAH-heh",
+          "context": "Offering help proactively"
+        },
+        {
+          "english": "Where would you like these? Trunk or back seat?",
+          "spanish": "¿Dónde quisiera estos? ¿Maletero o asiento trasero?",
+          "pronunciation": "DOHN-deh kee-see-EH-rah ES-tohs",
+          "context": "Asking about luggage placement preference"
+        },
+        {
+          "english": "Is this all your luggage?",
+          "spanish": "¿Este es todo su equipaje?",
+          "pronunciation": "ES-teh es TOH-doh soo eh-kee-PAH-heh",
+          "context": "Confirming nothing left behind before departing"
+        }
+      ],
+      "oversizeLuggage": {
+        "scenario": "Passenger has more luggage than fits comfortably",
+        "phrases": {
+          "english": "I'll do my best to fit everything. If it doesn't all fit, you may need a larger vehicle like an XL.",
+          "spanish": "Haré mi mejor esfuerzo para que todo quepa. Si no cabe todo, podría necesitar un vehículo más grande como XL.",
+          "pronunciation": "ah-REH mee meh-HOR es-FWER-soh"
+        },
+        "note": "Can't be penalized for canceling if luggage truly doesn't fit. Take photo if needed"
+      }
+    }
+  },
+  "airportDropOffProcedure": {
+    "terminalConfirmation": {
+      "importance": "CRITICAL - wrong terminal causes major problems for travelers",
+      "phrases": [
+        {
+          "english": "Which airline are you flying? Which terminal?",
+          "spanish": "¿Con qué aerolínea viaja? ¿Qué terminal?",
+          "pronunciation": "kon keh ah-eh-roh-LEE-neh-ah vee-AH-hah",
+          "context": "Confirming destination early in trip"
+        },
+        {
+          "english": "Domestic or international flight?",
+          "spanish": "¿Vuelo doméstico o internacional?",
+          "pronunciation": "VWEH-loh doh-MES-tee-koh oh een-ter-nah-see-oh-NAL",
+          "context": "Different terminals often for domestic vs international"
+        }
+      ],
+      "verification": "Check app destination matches what passenger says. Update in app if wrong"
+    },
+    "curbsideDropOff": {
+      "rules": [
+        "Drop off at Departures level (upper level at most airports)",
+        "Cannot stop in most areas - must keep moving",
+        "Airport police strictly enforce - tickets expensive",
+        "Brief stop only - passenger must exit quickly"
+      ],
+      "phrases": [
+        {
+          "english": "I'll pull up right here. Airport security doesn't allow us to wait, so please have your things ready.",
+          "spanish": "Me detendré aquí mismo. La seguridad del aeropuerto no nos permite esperar, así que por favor tenga sus cosas listas.",
+          "pronunciation": "meh deh-ten-dreh ah-KEE MEES-moh",
+          "context": "Preparing passenger for quick exit"
+        },
+        {
+          "english": "Pop the trunk - I'll get your bags",
+          "spanish": "Abra la cajuela - sacaré su equipaje",
+          "pronunciation": "AH-brah lah kah-HWEH-lah",
+          "context": "Helping unload quickly"
+        }
+      ],
+      "luggageProtocol": "Help unload onto curb. Don't linger. Airport police have no patience"
+    },
+    "passengerRunningLate": {
+      "scenario": "Passenger is stressed about making their flight",
+      "phrases": [
+        {
+          "english": "What time is your flight? We'll get you there as quickly and safely as possible.",
+          "spanish": "¿A qué hora es su vuelo? Lo/La llevaré lo más rápido y seguro posible.",
+          "pronunciation": "ah keh OH-rah es soo VWEH-loh",
+          "context": "Acknowledging urgency while setting safety expectation"
+        },
+        {
+          "english": "Traffic is heavy, but I'll take the fastest route available.",
+          "spanish": "El tráfico está pesado, pero tomaré la ruta más rápida disponible.",
+          "pronunciation": "el TRAH-fee-koh es-TAH peh-SAH-doh",
+          "context": "Managing expectations during delays"
+        }
+      ],
+      "boundaries": {
+        "english": "I understand you're in a hurry, but I must follow traffic laws for both our safety.",
+        "spanish": "Entiendo que tiene prisa, pero debo seguir las leyes de tráfico por la seguridad de ambos.",
+        "pronunciation": "en-tee-EN-doh keh tee-EH-neh PREE-sah",
+        "context": "Setting boundary if passenger pressures speeding"
+      }
+    }
+  },
+  "airportSpecificChallenges": {
+    "constructionChanges": {
+      "reality": "Airports constantly have construction changing pickup/dropoff locations",
+      "strategy": [
+        "Check airport website before first airport trip of day",
+        "Follow digital signs - they're updated",
+        "Don't rely solely on GPS or app - they lag construction changes",
+        "Ask airport staff if confused"
+      ]
+    },
+    "multipleTerminals": {
+      "confusion": "Large airports have 4-7 terminals. Wrong terminal = major problem",
+      "verification": "Always ask airline AND terminal. Don't assume app is correct",
+      "correction": {
+        "english": "The app shows [Terminal X] but you said [Terminal Y]. Let me update that for you.",
+        "spanish": "La aplicación muestra [Terminal X] pero usted dijo [Terminal Y]. Permítame actualizar eso.",
+        "pronunciation": "lah ah-plee-kah-see-ON MWES-trah"
+      }
+    },
+    "parkingFees": {
+      "stagingLot": "Usually free, but some airports charge after certain time period",
+      "cellPhoneLot": "Alternative free waiting area at some airports",
+      "shortTermParking": "NEVER pay for short-term parking - not reimbursed"
+    },
+    "queuing": {
+      "uberPro": "Higher tier drivers get priority in airport queue",
+      "lyftPreferred": "Preferred drivers advance faster in queue",
+      "waitTimes": "Can range from 5 minutes to 2 hours depending on airport and time",
+      "strategy": "Check average wait time in app before entering queue. May not be worth it"
+    }
+  },
+  "passengerTypes": {
+    "businessTravelers": {
+      "characteristics": "Experienced, efficient, often in hurry, tip well",
+      "expectation": "Professional service, fast efficient trip, minimal chit-chat",
+      "phrases": {
+        "english": "I'll get you there efficiently. Feel free to work or relax.",
+        "spanish": "Lo/La llevaré eficientemente. Siéntase libre de trabajar o relajarse.",
+        "pronunciation": "loh/lah yeh-vah-REH eh-fee-see-EN-teh-men-teh"
+      }
+    },
+    "tourists": {
+      "characteristics": "Unfamiliar with area, lots of luggage, may not speak English well",
+      "expectation": "Helpful guidance, patience, maybe conversation about area",
+      "phrases": {
+        "english": "First time visiting? Let me know if you want any recommendations.",
+        "spanish": "¿Primera vez visitando? Avíseme si quiere alguna recomendación.",
+        "pronunciation": "pree-MEH-rah ves vee-see-TAN-doh"
+      }
+    },
+    "families": {
+      "characteristics": "Children, car seats needed, lots of stuff, stressed parents",
+      "expectation": "Patience, help with luggage, accommodate children",
+      "carSeats": {
+        "note": "Not required to provide car seats (except in NYC), but passengers must have them",
+        "phrases": {
+          "english": "Do you have a car seat for your child? It's required by law.",
+          "spanish": "¿Tiene asiento de seguridad para su niño? Es requerido por ley.",
+          "pronunciation": "tee-EH-neh ah-see-EN-toh deh seh-goo-ree-DAD"
+        }
+      }
+    }
+  },
+  "earningsOptimization": {
+    "longDistanceTrips": {
+      "benefit": "Airport trips often go 30-60+ miles = high earnings",
+      "concern": "Return trip with no passenger = unpaid miles",
+      "strategy": [
+        "Turn on rideshare app immediately after dropoff",
+        "Check for return airport requests",
+        "Consider if area you're going to has good rideshare demand"
+      ]
+    },
+    "timing": {
+      "busyTimes": "Early morning (5am-8am), evening (5pm-8pm), Sunday evenings",
+      "slowTimes": "Late night/early morning (2am-5am), midday (11am-2pm)",
+      "holidays": "Day before major holidays extremely busy - surge/prime time common"
+    },
+    "airportFees": {
+      "reality": "Platform takes additional fee on airport trips ($3-5 typical)",
+      "compensation": "Usually offset by higher fares from airport",
+      "awareness": "Factor into acceptance decision"
+    }
+  },
+  "culturalNotes": [
+    {
+      "topic": "Airport Stress",
+      "note": "Travelers are often stressed, tired, or anxious. Extra patience and friendliness appreciated",
+      "colombianComparison": "Similar stress levels but US travelers may be less openly emotional"
+    },
+    {
+      "topic": "International Passengers",
+      "note": "Language barriers common. Slow, clear speech and patience essential. Translation apps helpful",
+      "colombianComparison": "Your Spanish is asset for Latin American travelers"
+    },
+    {
+      "topic": "Luggage Assistance",
+      "note": "US culture appreciates but doesn't assume luggage help. Offering proactively earns significantly better tips",
+      "colombianComparison": "More formal service expectation than Colombian casual style"
+    },
+    {
+      "topic": "Tipping",
+      "note": "Airport passengers tip better on average, especially with luggage help",
+      "colombianComparison": "More generous than typical Colombian propina"
+    }
+  ],
+  "majorAirportNotes": {
+    "commonChallenges": [
+      "LAX: Notoriously confusing, heavy traffic, strict enforcement",
+      "JFK: Multiple terminals far apart, construction common",
+      "ATL: Massive - can take 15 min just to get from pickup to highway",
+      "ORD: Weather delays common, two terminal areas",
+      "DFW: Huge airport, long drives between terminals"
+    ],
+    "tip": "Research your local airport's specific rideshare procedures. Each airport is different"
+  }
+}

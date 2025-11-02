@@ -1,0 +1,304 @@
+{
+  "id": "app-001",
+  "title": "Uber Driver - Essential Scenarios and Vocabulary",
+  "description": "Platform-specific communication for Uber rideshare drivers",
+  "level": "Intermediate-Avanzado",
+  "category": "app-specific",
+  "subcategory": "rideshare-uber",
+  "targetAudience": "uber-drivers",
+  "culturalContext": "US Uber platform",
+  "platformVocabulary": [
+    {
+      "english": "Surge pricing",
+      "spanish": "Tarifa de demanda alta / Surge",
+      "pronunciation": "tah-REE-fah deh deh-MAN-dah AL-tah / surge",
+      "context": "Higher rates during busy times - shown as multiplier (1.5x, 2x, etc.)"
+    },
+    {
+      "english": "Upfront pricing",
+      "spanish": "Precio anticipado",
+      "pronunciation": "PREH-see-oh an-tee-see-PAH-doh",
+      "context": "Customer knows exact price before booking"
+    },
+    {
+      "english": "Pool / UberX / Comfort / XL",
+      "spanish": "Pool / UberX / Comfort / XL",
+      "pronunciation": "pool / uber-ex / comfort / ex-el",
+      "context": "Different service levels on platform"
+    },
+    {
+      "english": "Acceptance rate",
+      "spanish": "Tasa de aceptación",
+      "pronunciation": "TAH-sah deh ah-sep-tah-see-ON",
+      "context": "Percentage of trip requests you accept"
+    },
+    {
+      "english": "Cancellation rate",
+      "spanish": "Tasa de cancelación",
+      "pronunciation": "TAH-sah deh kan-seh-lah-see-ON",
+      "context": "Percentage of accepted trips you cancel"
+    },
+    {
+      "english": "Rating",
+      "spanish": "Calificación",
+      "pronunciation": "kah-lee-fee-kah-see-ON",
+      "context": "5-star rating system - need 4.6+ to remain active"
+    },
+    {
+      "english": "Pin / Pickup location",
+      "spanish": "Pin / Ubicación de recogida",
+      "pronunciation": "peen / oo-bee-kah-see-ON deh reh-koh-HEE-dah",
+      "context": "Where customer set their location in app"
+    }
+  ],
+  "commonScenarios": {
+    "pickup": {
+      "findingCustomer": {
+        "phrases": [
+          {
+            "english": "Hi, I'm here for [name]. Are you at [landmark]?",
+            "spanish": "Hola, estoy aquí para [nombre]. ¿Está en [punto de referencia]?",
+            "pronunciation": "OH-lah, es-TOY ah-KEE PAH-rah [NOHM-breh]",
+            "context": "When you arrive at pin but don't see customer"
+          },
+          {
+            "english": "I'm in the [color] [vehicle type] at [location]",
+            "spanish": "Estoy en el [color] [tipo de vehículo] en [ubicación]",
+            "pronunciation": "es-TOY en el [koh-LOR] [TEE-poh deh veh-EE-koo-loh]",
+            "context": "Helping customer identify your vehicle"
+          },
+          {
+            "english": "I'll circle around once more",
+            "spanish": "Daré una vuelta más",
+            "pronunciation": "dah-REH OO-nah VWEL-tah mahs",
+            "context": "If pick-up area is no-stopping zone"
+          }
+        ],
+        "tips": [
+          "Text through app if customer hard to find",
+          "Use app's call feature (masks both phone numbers)",
+          "Wait at pin for full wait time (5 minutes)",
+          "Can't charge cancellation fee if you don't wait"
+        ]
+      },
+      "verifyPassenger": {
+        "phrases": [
+          {
+            "english": "Are you [name]?",
+            "spanish": "¿Es usted [nombre]?",
+            "pronunciation": "es oos-TED [NOHM-breh]",
+            "context": "Always verify name before letting them in"
+          },
+          {
+            "english": "Where are we headed today?",
+            "spanish": "¿Hacia dónde vamos hoy?",
+            "pronunciation": "AH-see-ah DOHN-deh VAH-mohs oy",
+            "context": "Secondary verification - they should know destination"
+          }
+        ],
+        "safeTyRule": "ALWAYS verify passenger name before starting trip. Wrong person = safety risk + payment issues"
+      },
+      "lateCustomer": {
+        "waitTime": "Must wait 5 minutes for UberX, 7 minutes for XL/Select before can cancel with fee",
+        "communication": [
+          {
+            "english": "I've been waiting 4 minutes. I'll need to cancel in 1 minute if you're not here.",
+            "spanish": "He estado esperando 4 minutos. Tendré que cancelar en 1 minuto si no está aquí.",
+            "pronunciation": "eh es-TAH-doh es-peh-RAN-doh KWAH-troh mee-NOO-tohs",
+            "context": "Warning message via app at 4-minute mark"
+          }
+        ],
+        "cancellationFee": "Customer charged cancellation fee if you wait full time. You receive portion of fee"
+      }
+    },
+    "duringTrip": {
+      "routeQuestions": {
+        "phrases": [
+          {
+            "english": "I'm following the app's navigation. Would you prefer a different route?",
+            "spanish": "Estoy siguiendo la navegación de la aplicación. ¿Preferiría una ruta diferente?",
+            "pronunciation": "es-TOY see-gee-EN-doh lah nah-veh-gah-see-ON",
+            "context": "When passenger questions your route"
+          },
+          {
+            "english": "The app is routing us this way to avoid traffic",
+            "spanish": "La aplicación nos está dirigiendo por aquí para evitar tráfico",
+            "pronunciation": "lah ah-plee-kah-see-ON nohs es-TAH dee-ree-hee-EN-doh",
+            "context": "Explaining seemingly longer route"
+          }
+        ],
+        "protection": "App navigation protects you in fare disputes. Always mention you're following app"
+      },
+      "stops": {
+        "phrases": [
+          {
+            "english": "You can add stops in the app. Each stop has a 3-minute wait time included.",
+            "spanish": "Puede agregar paradas en la aplicación. Cada parada incluye 3 minutos de espera.",
+            "pronunciation": "PWEH-deh ah-greh-GAR pah-RAH-dahs en lah ah-plee-kah-see-ON",
+            "context": "When passenger asks about stops"
+          },
+          {
+            "english": "We've been stopped for 3 minutes. The app charges a per-minute wait fee after that.",
+            "spanish": "Hemos estado detenidos por 3 minutos. La aplicación cobra una tarifa por minuto de espera después de eso.",
+            "pronunciation": "EH-mohs es-TAH-doh deh-teh-NEE-dohs",
+            "context": "Explaining wait time charges"
+          }
+        ],
+        "rules": [
+          "3 minutes free wait time per stop",
+          "After 3 minutes, per-minute waiting fee applies",
+          "Can end trip if excessive waiting (after communicating)",
+          "Stops must be added in app - not verbal agreements"
+        ]
+      },
+      "weatherOrTraffic": {
+        "phrases": [
+          {
+            "english": "There's heavy traffic ahead. The app is recalculating the best route.",
+            "spanish": "Hay tráfico pesado adelante. La aplicación está recalculando la mejor ruta.",
+            "pronunciation": "eye TRAH-fee-koh peh-SAH-doh ah-deh-LAN-teh",
+            "context": "Explaining delay"
+          },
+          {
+            "english": "I need to slow down due to weather conditions for everyone's safety.",
+            "spanish": "Necesito reducir la velocidad debido a las condiciones climáticas por la seguridad de todos.",
+            "pronunciation": "neh-seh-SEE-toh reh-doo-SEER lah veh-loh-see-DAD",
+            "context": "Explaining slower driving"
+          }
+        ]
+      }
+    },
+    "endOfTrip": {
+      "thankYou": {
+        "phrases": [
+          {
+            "english": "Thank you for riding with Uber. Have a great day!",
+            "spanish": "Gracias por viajar con Uber. ¡Que tenga un excelente día!",
+            "pronunciation": "GRAH-see-ahs por vee-ah-HAR kon oo-ber",
+            "context": "Professional trip conclusion"
+          },
+          {
+            "english": "Please be careful exiting on that side",
+            "spanish": "Por favor tenga cuidado al salir por ese lado",
+            "pronunciation": "por fah-VOR TEN-gah kwee-DAH-doh",
+            "context": "Safety reminder for traffic side exit"
+          }
+        ]
+      },
+      "ratingRequest": {
+        "phrases": [
+          {
+            "english": "If you enjoyed the ride, I'd appreciate a 5-star rating",
+            "spanish": "Si disfrutó el viaje, agradecería una calificación de 5 estrellas",
+            "pronunciation": "see dees-froo-TOH el vee-AH-heh",
+            "context": "Polite request after excellent service"
+          }
+        ],
+        "timing": "Only mention if service was genuinely good. Let quality speak for itself otherwise"
+      }
+    }
+  },
+  "uberSpecificFeatures": {
+    "uberPro": {
+      "explanation": "Rewards program based on points earned from trips",
+      "benefits": "Priority airport queue, free roadside assistance, tuition coverage",
+      "requirements": "High rating (4.85+), low cancellation rate, high acceptance rate"
+    },
+    "uberReserve": {
+      "explanation": "Passengers can schedule rides in advance with higher reliability",
+      "driverBenefit": "Higher pay, scheduled work, premium passengers",
+      "phrases": {
+        "english": "Thank you for choosing Uber Reserve. I'm committed to being on time for your scheduled pickup.",
+        "spanish": "Gracias por elegir Uber Reserve. Me comprometo a llegar a tiempo para su recogida programada.",
+        "pronunciation": "GRAH-see-ahs por eh-leh-HEER oo-ber reh-SERV"
+      }
+    },
+    "uberEats": {
+      "crossover": "Many drivers do both rides and food delivery",
+      "note": "Different communication style - minimal customer interaction for deliveries"
+    }
+  },
+  "platformPolicies": {
+    "dashcam": {
+      "allowed": "Yes, dashcam recording permitted in most states",
+      "notification": "Must inform passengers in some states - check local laws",
+      "benefit": "Protects you in disputes, false accusations, accidents"
+    },
+    "denialOfService": {
+      "canRefuse": "Yes, can refuse or end trip for valid safety reasons",
+      "communicate": "Must be non-discriminatory reason (intoxication, threats, health concern, etc.)",
+      "report": "Report reason through app immediately"
+    },
+    "tipExpectations": {
+      "notRequired": "Tips not required but greatly appreciated",
+      "typical": "10-20% of fare for good service",
+      "inApp": "Passengers can tip immediately or hours later through app"
+    },
+    "cleanlinessStandards": {
+      "required": "Vehicle must be clean inside and out",
+      "inspection": "Uber conducts periodic vehicle inspections",
+      "consequence": "Can be temporarily deactivated for dirty vehicle"
+    }
+  },
+  "earningsOptimization": {
+    "surgeTiming": {
+      "peakHours": "Monday-Friday 6-9am, 4-7pm; Weekends 10pm-3am",
+      "locations": "Airports, downtown areas, entertainment districts, stadiums during events",
+      "strategy": "Position yourself in high-demand areas before peak times"
+    },
+    "boostZones": {
+      "explanation": "Uber offers multiplier bonuses in specific zones during specific times",
+      "strategy": "Check app for active boost zones, worth repositioning for 1.5x+ boost"
+    },
+    "questPromos": {
+      "explanation": "Complete X trips, earn $Y bonus",
+      "strategy": "Plan work schedule to complete quests when available"
+    },
+    "tips Maximization": [
+      "Clean vehicle interior and exterior",
+      "Offer phone chargers and bottled water",
+      "Maintain comfortable temperature",
+      "Professional greeting and farewell",
+      "Safe, smooth driving",
+      "Know area well - can suggest routes",
+      "Help with luggage without being asked"
+    ]
+  },
+  "troubleshooting": {
+    "appIssues": {
+      "offline": "If app goes offline, safely pull over, check internet connection, restart app",
+      "gpsProblems": "Can cause navigation issues and trip documentation problems. Restart phone if persistent"
+    },
+    "customerComplaints": {
+      "disputeProcess": [
+        "Customer can report issues through app",
+        "Uber investigates using trip data, GPS, ratings history",
+        "You'll be notified and asked for your side",
+        "Fair disputes won't affect your standing",
+        "Document everything immediately"
+      ]
+    },
+    "deactivation": {
+      "reasons": "Low rating (below 4.6), high cancellation rate, safety issues, violations",
+      "prevention": "Monitor your metrics weekly in app, improve areas of weakness",
+      "appeal": "Can appeal deactivation through Uber support with documentation"
+    }
+  },
+  "culturalNotes": [
+    {
+      "topic": "Uber Culture",
+      "note": "Uber riders expect professional but friendly service. Not too chatty unless customer initiates",
+      "colombianComparison": "Less social chatting than typical Colombian taxi culture"
+    },
+    {
+      "topic": "Rating System",
+      "note": "5-star system where anything below 4.6 average risks deactivation. Very high bar",
+      "colombianComparison": "Much stricter than Colombian informal service evaluation"
+    },
+    {
+      "topic": "Platform Enforcement",
+      "note": "Uber heavily monitors performance metrics. Must maintain high standards consistently",
+      "colombianComparison": "More systematic performance tracking than Colombian taxi system"
+    }
+  ]
+}

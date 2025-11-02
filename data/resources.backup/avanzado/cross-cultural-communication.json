@@ -1,0 +1,123 @@
+{
+  "id": "adv-008",
+  "title": "Cross-Cultural Professional Communication",
+  "description": "Navigate cultural differences between Colombian and US professional communication styles",
+  "level": "Avanzado",
+  "category": "cross-cultural",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US-Colombia cultural bridge",
+  "vocabulary": [
+    {
+      "english": "Cultural difference",
+      "spanish": "Diferencia cultural",
+      "pronunciation": "dee-feh-REN-see-ah kool-too-RAL",
+      "context": "Variations in social norms"
+    },
+    {
+      "english": "Body language",
+      "spanish": "Lenguaje corporal",
+      "pronunciation": "len-GWAH-heh kor-poh-RAL",
+      "context": "Non-verbal communication"
+    },
+    {
+      "english": "Personal space",
+      "spanish": "Espacio personal",
+      "pronunciation": "es-PAH-see-oh per-soh-NAL",
+      "context": "Physical distance comfort zone"
+    },
+    {
+      "english": "Small talk",
+      "spanish": "Charla informal / Conversación ligera",
+      "pronunciation": "CHAR-lah een-for-MAL / kon-ver-sah-see-ON lee-HEH-rah",
+      "context": "Brief casual conversation"
+    },
+    {
+      "english": "Direct communication",
+      "spanish": "Comunicación directa",
+      "pronunciation": "koh-moo-nee-kah-see-ON dee-REK-tah",
+      "context": "Clear, straightforward speech"
+    }
+  ],
+  "phrases": [
+    {
+      "english": "In my culture we..., but I understand here in the US...",
+      "spanish": "En mi cultura..., pero entiendo que aquí en Estados Unidos...",
+      "pronunciation": "en mee kool-TOO-rah..., PEH-roh en-tee-EN-doh keh ah-KEE en es-TAH-dohs oo-NEE-dohs...",
+      "context": "Explaining cultural awareness"
+    },
+    {
+      "english": "I'm still learning American customs",
+      "spanish": "Todavía estoy aprendiendo las costumbres americanas",
+      "pronunciation": "toh-dah-VEE-ah es-TOY ah-pren-dee-EN-doh lahs kos-TUM-brehs ah-meh-ree-KAH-nahs",
+      "context": "Humble acknowledgment of learning"
+    },
+    {
+      "english": "Please let me know if I do anything that seems unusual",
+      "spanish": "Por favor avíseme si hago algo que parezca inusual",
+      "pronunciation": "por fah-VOR ah-VEE-seh-meh see AH-go AL-go keh pah-RES-kah een-oo-soo-AL",
+      "context": "Openness to feedback"
+    }
+  ],
+  "culturalNotes": [
+    {
+      "topic": "Personal Space",
+      "note": "Americans typically maintain 2-3 feet of personal space; less physical contact than Colombian culture",
+      "colombianComparison": "Colombians stand closer and use more touch (handshakes, pats on shoulder). In US, avoid unless customer initiates"
+    },
+    {
+      "topic": "Direct Communication",
+      "note": "Americans value direct, explicit communication. Say 'no' politely when needed",
+      "colombianComparison": "Less indirect than Colombian communication. 'Maybe' or silence is confusing to Americans"
+    },
+    {
+      "topic": "Time as Money",
+      "note": "Americans view time as valuable commodity. Being late or slow is seen as disrespectful",
+      "colombianComparison": "Much stricter time culture than 'hora colombiana'. Punctuality is non-negotiable"
+    },
+    {
+      "topic": "Formality Level",
+      "note": "US service is friendly but not overly familiar. Use titles (Mr./Mrs.) unless invited to use first names",
+      "colombianComparison": "Less formal titles than Colombian 'don/doña' but maintain professional distance"
+    },
+    {
+      "topic": "Small Talk Topics",
+      "note": "Safe: weather, sports, traffic. Avoid: politics, religion, money, personal life until customer initiates",
+      "colombianComparison": "Americans are more private about personal topics than Colombians initially"
+    },
+    {
+      "topic": "Tipping Expectations",
+      "note": "15-20% tip expected for good service. Bad service = lower tip, not confrontation",
+      "colombianComparison": "More formalized and expected than Colombian propina culture"
+    },
+    {
+      "topic": "Customer is Not Always Right",
+      "note": "But they should always be treated with respect. You can politely disagree or set boundaries",
+      "colombianComparison": "Similar service mentality but more worker protections through platform policies"
+    },
+    {
+      "topic": "Conflict Style",
+      "note": "Americans prefer direct problem-solving over relationship preservation in service contexts",
+      "colombianComparison": "Less emphasis on saving face; focus on solution not smooth social interaction"
+    }
+  ],
+  "practicalScenarios": [
+    {
+      "situation": "Customer is very direct/blunt",
+      "spanishResponse": "Gracias por su honestidad directa. Aprecio que me diga exactamente lo que necesita.",
+      "englishTranslation": "Thank you for your direct honesty. I appreciate you telling me exactly what you need.",
+      "tips": "Don't interpret directness as rudeness - it's cultural norm"
+    },
+    {
+      "situation": "Adjusting physical distance",
+      "spanishResponse": "[Simply maintain 2-3 feet distance without commenting]",
+      "englishTranslation": "[Non-verbal adjustment]",
+      "tips": "Respect personal space bubble - don't stand too close or touch unnecessarily"
+    },
+    {
+      "situation": "Customer asks about your background",
+      "spanishResponse": "Soy de Colombia. Llevo [X tiempo] trabajando aquí y realmente disfruto conocer a personas de diferentes culturas.",
+      "englishTranslation": "I'm from Colombia. I've been working here for [X time] and I really enjoy meeting people from different cultures.",
+      "tips": "Brief, positive answer. Americans often genuinely interested in immigrant stories"
+    }
+  ]
+}

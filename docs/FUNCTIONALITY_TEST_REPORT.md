@@ -1,10 +1,10 @@
 
 # Hablas Platform - Functionality Test Report
 
-**Date**: 2025-11-02T06:25:50.341Z
+**Date**: 2025-11-02T08:37:44.971Z
 **Total Tests**: 13
-**Passed**: 11 (84.6%)
-**Failed**: 2
+**Passed**: 12 (92.3%)
+**Failed**: 1
 **Partial**: 0
 **Skipped**: 0
 
@@ -12,23 +12,18 @@
 
 | Status | Count | Percentage |
 |--------|-------|-----------|
-| PASS | 11 | 84.6% |
-| FAIL | 2 | 15.4% |
+| PASS | 12 | 92.3% |
+| FAIL | 1 | 7.7% |
 | PARTIAL | 0 | 0.0% |
 | SKIPPED | 0 | 0.0% |
 
 ## Detailed Test Results
 
 
-### FAIL - npm run build
-- **Status**: FAIL
-- **Notes**: Build failed
-- **Details**: ```
-Command failed: npm run build
-'next' is not recognized as an internal or external command,
-operable program or batch file.
+### PASS - npm run build
+- **Status**: PASS
+- **Notes**: Build completed successfully
 
-```
 
 
 ### FAIL - npm run typecheck
@@ -39,9 +34,9 @@ operable program or batch file.
 > hablas@1.2.0 typecheck
 > tsc --noEmit
 
-.next/types/app/layout.ts(3,59): error TS2307: Cannot find module 'next/dist/lib/metadata/types/metadata-interface.js' or its corresponding type declarations.
-.next/types/app/page.ts(3,59): error TS2307: Cannot find module 'next/dist/lib/metadata/types/metadata-interface.js' or its corresponding type declarations.
-.next/types/app/recursos/[id]/page.ts(3,59): error TS2307: Cannot find module 'next/dist/lib/metadata/types/metadata-interface.js' or its co
+__tests__/integration/resource-detail-enhanced.test.tsx(19,41): error TS7016: Could not find a declaration file for module 'jest-axe'. 'C:/Users/brand/Development/Project_Workspace/active-development/hablas/node_modules/jest-axe/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/jest-axe` if it exists or add a new declaration (.d.ts) file containing `declare module 'jest-axe';`
+__tests__/integration/resource-detail-enhanced.test.tsx
 ```
 
 

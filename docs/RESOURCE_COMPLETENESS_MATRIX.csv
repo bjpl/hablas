@@ -1,0 +1,58 @@
+ID,Title,Category,Level,Type,Has_AudioUrl,Audio_Exists,Tags_Count,Size,Offline
+1,Frases Esenciales para Entregas - Var 1,repartidor,basico,pdf,Yes,Yes,5,31.0 KB,Yes
+2,Pronunciación: Entregas - Var 1,repartidor,basico,audio,Yes,Yes,5,7.8 KB,Yes
+3,Guía Visual: Entregas - Var 1,repartidor,basico,image,Yes,Yes,5,22.4 KB,Yes
+4,Frases Esenciales para Entregas - Var 2,repartidor,basico,pdf,No,No,5,31.5 KB,Yes
+5,Situaciones Complejas en Entregas - Var 1,repartidor,intermedio,pdf,Yes,Yes,5,31.0 KB,Yes
+6,Frases Esenciales para Entregas - Var 3,repartidor,basico,pdf,No,No,5,31.3 KB,Yes
+7,Pronunciación: Entregas - Var 2,repartidor,basico,audio,Yes,Yes,5,7.8 KB,Yes
+8,Guía Visual: Entregas - Var 2,repartidor,basico,image,Yes,Yes,5,23.4 KB,Yes
+9,Frases Esenciales para Entregas - Var 4,repartidor,basico,pdf,No,No,5,32.1 KB,Yes
+10,Conversaciones con Clientes - Var 1,repartidor,basico,audio,Yes,Yes,6,9.3 KB,Yes
+11,Saludos y Confirmación de Pasajeros - Var 1,conductor,basico,pdf,Yes,Yes,8,31.2 KB,Yes
+12,Direcciones y Navegación GPS - Var 1,conductor,basico,pdf,No,No,8,34.5 KB,Yes
+13,Audio: Direcciones en Inglés - Var 1,conductor,basico,audio,Yes,Yes,8,7.1 KB,Yes
+14,Saludos y Confirmación de Pasajeros - Var 2,conductor,basico,pdf,Yes,Yes,8,31.8 KB,Yes
+15,Direcciones y Navegación GPS - Var 2,conductor,basico,pdf,No,No,8,33.4 KB,Yes
+16,Small Talk con Pasajeros - Var 1,conductor,intermedio,pdf,Yes,Yes,7,32.6 KB,Yes
+17,Saludos y Confirmación de Pasajeros - Var 3,conductor,basico,pdf,No,No,8,31.4 KB,Yes
+18,Audio: Direcciones en Inglés - Var 2,conductor,basico,audio,Yes,Yes,8,7.1 KB,Yes
+19,Direcciones y Navegación GPS - Var 3,conductor,basico,pdf,Yes,Yes,8,34.0 KB,Yes
+20,Manejo de Situaciones Difíciles - Var 1,conductor,intermedio,pdf,No,No,6,33.2 KB,Yes
+21,Saludos Básicos en Inglés - Var 1,all,basico,audio,Yes,Yes,3,6.9 KB,Yes
+22,Números y Direcciones - Var 1,all,basico,pdf,Yes,Yes,5,31.5 KB,Yes
+23,Tiempo y Horarios - Var 1,all,basico,pdf,No,No,2,31.6 KB,Yes
+24,"Vocabulario de Apps (Uber, Rappi, DiDi) - Var 1",all,basico,image,Yes,Yes,4,23.0 KB,Yes
+25,Servicio al Cliente en Inglés - Var 1,all,intermedio,pdf,No,No,3,33.1 KB,Yes
+26,Manejo de Quejas y Problemas - Var 1,all,intermedio,pdf,Yes,Yes,3,32.7 KB,Yes
+27,Frases de Emergencia - Var 1,all,basico,pdf,No,No,4,32.3 KB,Yes
+28,Saludos Básicos en Inglés - Var 2,all,basico,audio,Yes,Yes,3,7.7 KB,Yes
+29,Números y Direcciones - Var 2,all,basico,pdf,Yes,Yes,5,34.3 KB,Yes
+30,Protocolos de Seguridad - Var 1,all,intermedio,pdf,No,No,2,32.1 KB,Yes
+31,Situaciones Complejas en Entregas - Var 2,repartidor,intermedio,pdf,Yes,Yes,5,33.7 KB,Yes
+32,Conversaciones con Clientes - Var 2,repartidor,basico,audio,Yes,Yes,6,7.7 KB,Yes
+33,Small Talk con Pasajeros - Var 2,conductor,intermedio,pdf,No,No,7,31.5 KB,Yes
+36,Professional Complaint Handling,all,avanzado,pdf,No,No,6,4.3 KB,Yes
+37,Professional Conflict Resolution,all,avanzado,pdf,Yes,Yes,6,4.9 KB,Yes
+38,Cross-Cultural Professional Communication,all,avanzado,pdf,No,No,6,4.7 KB,Yes
+39,Customer Service Excellence,all,avanzado,pdf,No,No,4,3.5 KB,Yes
+40,Earnings Optimization Communication,all,avanzado,pdf,No,No,4,4.9 KB,Yes
+41,Professional Negotiation Skills,all,avanzado,pdf,No,No,6,4.6 KB,Yes
+42,Professional Boundaries and Self-Protection,all,avanzado,pdf,No,No,6,4.9 KB,Yes
+43,Professional Communication Essentials,all,avanzado,pdf,No,No,6,3.1 KB,Yes
+44,Professional Time Management,all,avanzado,pdf,No,No,6,4.2 KB,Yes
+45,Vehicle Accident Procedures,all,intermedio,pdf,No,No,5,11.8 KB,Yes
+46,Customer Conflicts and Disputes,all,intermedio,pdf,No,No,7,10.0 KB,Yes
+47,Lost Items and Property Disputes,all,intermedio,pdf,No,No,5,11.3 KB,Yes
+48,Medical Emergencies - Critical Communication,all,intermedio,pdf,No,No,7,6.2 KB,Yes
+49,Payment Disputes and Financial Conflicts,all,intermedio,pdf,No,No,6,11.3 KB,Yes
+50,Personal Safety - Threat and Danger Response,all,intermedio,pdf,Yes,Yes,5,5.8 KB,Yes
+51,Vehicle Breakdown and Mechanical Emergencies,all,intermedio,pdf,No,No,6,6.0 KB,Yes
+52,Severe Weather and Hazardous Conditions,all,intermedio,pdf,No,No,5,9.6 KB,Yes
+53,Airport Rideshare - Essential Procedures and Communication,conductor,avanzado,pdf,No,No,5,13.4 KB,Yes
+54,DoorDash Delivery - Essential Vocabulary and Scenarios,conductor,avanzado,pdf,No,No,9,7.3 KB,Yes
+55,Lyft Driver - Essential Scenarios and Vocabulary,conductor,avanzado,pdf,No,No,9,7.1 KB,Yes
+56,Multi-App Strategy - Maximizing Gig Work Earnings,all,avanzado,pdf,No,No,5,14.1 KB,Yes
+57,Platform Ratings System - Mastery Guide,all,avanzado,pdf,No,No,5,13.7 KB,Yes
+58,Tax Management and Business Expenses for Gig Workers,all,avanzado,pdf,No,No,5,12.5 KB,Yes
+59,Uber Driver - Essential Scenarios and Vocabulary,conductor,avanzado,pdf,No,No,9,5.9 KB,Yes

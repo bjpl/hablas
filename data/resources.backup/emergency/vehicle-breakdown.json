@@ -1,0 +1,229 @@
+{
+  "id": "emerg-003",
+  "title": "Vehicle Breakdown and Mechanical Emergencies",
+  "description": "Essential communication for handling vehicle problems during service",
+  "level": "All Levels",
+  "category": "emergency",
+  "subcategory": "vehicle",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US roadside assistance",
+  "criticalVocabulary": [
+    {
+      "english": "Breakdown",
+      "spanish": "Avería / Falla mecánica",
+      "pronunciation": "ah-veh-REE-ah / FAH-yah meh-KAH-nee-kah",
+      "context": "Vehicle mechanical failure"
+    },
+    {
+      "english": "Flat tire",
+      "spanish": "Llanta ponchada / pinchada",
+      "pronunciation": "YAHN-tah pon-CHAH-dah / peen-CHAH-dah",
+      "context": "Tire with no air"
+    },
+    {
+      "english": "Dead battery",
+      "spanish": "Batería muerta / descargada",
+      "pronunciation": "bah-teh-REE-ah MWER-tah / des-kar-GAH-dah",
+      "context": "Battery with no charge"
+    },
+    {
+      "english": "Overheating",
+      "spanish": "Sobrecalentamiento",
+      "pronunciation": "soh-breh-kah-len-tah-mee-EN-toh",
+      "context": "Engine too hot"
+    },
+    {
+      "english": "Out of gas",
+      "spanish": "Sin gasolina",
+      "pronunciation": "seen gah-soh-LEE-nah",
+      "context": "Empty fuel tank"
+    },
+    {
+      "english": "Tow truck",
+      "spanish": "Grúa",
+      "pronunciation": "GROO-ah",
+      "context": "Vehicle recovery truck"
+    },
+    {
+      "english": "Roadside assistance",
+      "spanish": "Asistencia en carretera",
+      "pronunciation": "ah-sees-TEN-see-ah en kah-reh-TEH-rah",
+      "context": "Emergency vehicle help"
+    }
+  ],
+  "emergencyPhrases": [
+    {
+      "english": "My vehicle has broken down",
+      "spanish": "Mi vehículo se ha averiado",
+      "pronunciation": "mee veh-EE-koo-loh seh ah ah-veh-ree-AH-doh",
+      "context": "Reporting breakdown",
+      "priority": "CRITICAL"
+    },
+    {
+      "english": "I need to pull over immediately",
+      "spanish": "Necesito detenerme inmediatamente",
+      "pronunciation": "neh-seh-SEE-toh deh-teh-NER-meh een-meh-dee-ah-tah-MEN-teh",
+      "context": "Warning passenger",
+      "priority": "CRITICAL"
+    },
+    {
+      "english": "I'm calling roadside assistance",
+      "spanish": "Estoy llamando a asistencia en carretera",
+      "pronunciation": "es-TOY yah-MAN-doh ah ah-sees-TEN-see-ah en kah-reh-TEH-rah",
+      "context": "Next action communication",
+      "priority": "HIGH"
+    },
+    {
+      "english": "I apologize, but I cannot continue this trip",
+      "spanish": "Disculpe, pero no puedo continuar este viaje",
+      "pronunciation": "dees-KOOL-peh, PEH-roh noh PWEH-doh kon-tee-noo-AR ES-teh vee-AH-heh",
+      "context": "Service cannot continue",
+      "priority": "HIGH"
+    },
+    {
+      "english": "You won't be charged for this trip",
+      "spanish": "No se le cobrará por este viaje",
+      "pronunciation": "noh seh leh koh-brah-RAH por ES-teh vee-AH-heh",
+      "context": "Reassuring customer",
+      "priority": "MEDIUM"
+    }
+  ],
+  "breakdownProtocol": {
+    "immediateSteps": [
+      {
+        "step": 1,
+        "action": "Safely pull over",
+        "spanish": "Deténgase de forma segura",
+        "details": "Get off highway if possible. Hard shoulder if no other option. Turn on hazard lights immediately"
+      },
+      {
+        "step": 2,
+        "action": "Communicate with passenger",
+        "spanish": "Comuníquese con el pasajero",
+        "details": "Explain situation calmly. Apologize for inconvenience. Estimate resolution time if known"
+      },
+      {
+        "step": 3,
+        "action": "Contact platform",
+        "spanish": "Contacte a la plataforma",
+        "details": "Use app to report breakdown. Platform will handle customer rebooking and refund"
+      },
+      {
+        "step": 4,
+        "action": "Call roadside assistance",
+        "spanish": "Llame a asistencia en carretera",
+        "details": "Insurance, AAA, or platform-provided assistance. Give exact location"
+      },
+      {
+        "step": 5,
+        "action": "Arrange alternative ride",
+        "spanish": "Organice transporte alternativo",
+        "details": "Platform should provide replacement ride. Offer to help passenger request one"
+      }
+    ]
+  },
+  "commonScenarios": {
+    "flatTire": {
+      "english": "Flat tire - immediate action needed",
+      "spanish": "Llanta ponchada - acción inmediata necesaria",
+      "communicationScript": {
+        "customer": "Disculpe, tengo una llanta ponchada. Necesito detenerme de forma segura. (Sorry, I have a flat tire. I need to pull over safely.)",
+        "platform": "Reportando llanta ponchada en [ubicación]. Necesito asistencia. (Reporting flat tire at [location]. Need assistance.)",
+        "roadsideAssistance": "Tengo una llanta ponchada en [ubicación exacta]. Necesito cambio de llanta o grúa. (I have a flat tire at [exact location]. Need tire change or tow.)"
+      },
+      "safetyNotes": "Do not attempt to change tire on highway. Move to safe location first. Use hazard lights and reflective triangles if you have them"
+    },
+    "deadBattery": {
+      "english": "Battery won't start vehicle",
+      "spanish": "La batería no arranca el vehículo",
+      "communicationScript": {
+        "customer": "Lo siento mucho, mi batería está muerta y el vehículo no arranca. Voy a llamar ayuda. (I'm very sorry, my battery is dead and the vehicle won't start. I'm calling for help.)",
+        "platform": "Mi vehículo no arranca por batería muerta. Necesito cancelar viaje activo. (My vehicle won't start due to dead battery. Need to cancel active trip.)",
+        "roadsideAssistance": "Necesito un jump start. Mi batería está muerta en [ubicación]. (I need a jump start. My battery is dead at [location].)"
+      },
+      "prevention": "Have jumper cables in car. Know location of nearby auto parts stores. Consider portable jump starter"
+    },
+    "overheating": {
+      "english": "Engine overheating - must stop immediately",
+      "spanish": "Motor sobrecalentándose - debe detenerse inmediatamente",
+      "communicationScript": {
+        "customer": "Disculpe, mi motor se está sobrecalentando. Por seguridad, debo detenerme ahora. (Sorry, my engine is overheating. For safety, I must stop now.)",
+        "warning": "NEVER open radiator cap when hot - can cause serious burns"
+      },
+      "safetyNotes": "Pull over immediately. Turn off AC, turn on heat to pull heat from engine. Let engine cool before checking coolant"
+    },
+    "outOfGas": {
+      "english": "Running out of gas",
+      "spanish": "Quedándose sin gasolina",
+      "communicationScript": {
+        "customer": "Disculpe mi error, me estoy quedando sin gasolina. Necesito parar en una gasolinera inmediatamente. (Sorry for my mistake, I'm running out of gas. I need to stop at a gas station immediately.)",
+        "prevention": "This is preventable - check gas before starting shifts. Keep tank above 1/4 full"
+      },
+      "professionalNote": "This reflects poorly on professionalism. Always maintain adequate fuel"
+    },
+    "checkEngineLight": {
+      "english": "Check engine light comes on",
+      "spanish": "Se enciende la luz del motor",
+      "communicationScript": {
+        "assessment": "If light is steady (not flashing), usually can continue trip carefully and check after. If flashing, pull over immediately - serious problem"
+      }
+    }
+  },
+  "customerCommunication": {
+    "apologize": {
+      "english": "I sincerely apologize for this mechanical issue",
+      "spanish": "Lamento sinceramente este problema mecánico",
+      "pronunciation": "lah-MEN-toh seen-seh-rah-MEN-teh ES-teh proh-BLEH-mah meh-KAH-nee-koh"
+    },
+    "reassure": {
+      "english": "The platform will arrange another ride for you at no charge",
+      "spanish": "La plataforma le organizará otro viaje sin cargo",
+      "pronunciation": "lah plah-tah-FOR-mah leh or-gah-nee-sah-RAH OH-troh vee-AH-heh seen KAR-goh"
+    },
+    "safety": {
+      "english": "Please stay in the vehicle until we're in a safe location",
+      "spanish": "Por favor permanezca en el vehículo hasta que estemos en un lugar seguro",
+      "pronunciation": "por fah-VOR per-mah-NES-kah en el veh-EE-koo-loh AS-tah keh es-TEH-mohs en oon loo-GAR seh-GOO-roh"
+    },
+    "alternative": {
+      "english": "I'll help you request another driver right now",
+      "spanish": "Le ayudaré a solicitar otro conductor ahora mismo",
+      "pronunciation": "leh ah-yoo-dah-REH ah soh-lee-see-TAR OH-troh kon-dook-TOR ah-OH-rah MEES-moh"
+    }
+  },
+  "roadsideAssistanceProviders": {
+    "AAA": {
+      "phone": "1-800-AAA-HELP (1-800-222-4357)",
+      "services": "Towing, jump start, flat tire, fuel delivery, lockout",
+      "note": "Membership required - worth investment for gig workers"
+    },
+    "uber": {
+      "included": "Some vehicle protection through platform",
+      "contact": "Through app support"
+    },
+    "lyft": {
+      "included": "Express Drive program includes roadside",
+      "contact": "1-855-865-9553"
+    },
+    "insurance": {
+      "note": "Many car insurance policies include roadside assistance - check your policy"
+    }
+  },
+  "culturalNotes": [
+    {
+      "topic": "Professionalism Despite Issues",
+      "note": "Mechanical issues happen. How you handle them affects your ratings",
+      "colombianComparison": "US customers judge you on problem-solving and communication, not just the problem itself"
+    },
+    {
+      "topic": "Platform Protection",
+      "note": "Platforms won't penalize you for legitimate mechanical issues if properly reported",
+      "colombianComparison": "More systematic support than Colombian informal work arrangements"
+    },
+    {
+      "topic": "Vehicle Maintenance",
+      "note": "Regular maintenance is business investment - prevents costly breakdowns",
+      "colombianComparison": "US expects higher vehicle reliability than typical Colombian gig economy"
+    }
+  ]
+}

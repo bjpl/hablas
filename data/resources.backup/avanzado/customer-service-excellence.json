@@ -1,0 +1,110 @@
+{
+  "id": "adv-002",
+  "title": "Customer Service Excellence",
+  "description": "Advanced techniques for delivering outstanding customer experiences in gig work",
+  "level": "Avanzado",
+  "category": "customer-service",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US service expectations",
+  "vocabulary": [
+    {
+      "english": "Satisfaction",
+      "spanish": "Satisfacción",
+      "pronunciation": "sah-tees-fahk-see-ON",
+      "context": "Goal of every customer interaction"
+    },
+    {
+      "english": "Expectation",
+      "spanish": "Expectativa",
+      "pronunciation": "eks-pek-tah-TEE-vah",
+      "context": "What customers anticipate from service"
+    },
+    {
+      "english": "Experience",
+      "spanish": "Experiencia",
+      "pronunciation": "eks-peh-ree-EN-see-ah",
+      "context": "Overall customer journey"
+    },
+    {
+      "english": "Feedback",
+      "spanish": "Retroalimentación / Comentarios",
+      "pronunciation": "reh-troh-ah-lee-men-tah-see-ON / koh-men-TAH-ree-ohs",
+      "context": "Customer opinions and reviews"
+    },
+    {
+      "english": "Rating",
+      "spanish": "Calificación",
+      "pronunciation": "kah-lee-fee-kah-see-ON",
+      "context": "Star ratings critical for gig workers"
+    }
+  ],
+  "phrases": [
+    {
+      "english": "How can I make your experience better?",
+      "spanish": "¿Cómo puedo mejorar su experiencia?",
+      "pronunciation": "KOH-moh PWEH-doh meh-hoh-RAR soo eks-peh-ree-EN-see-ah",
+      "context": "Shows proactive service attitude"
+    },
+    {
+      "english": "Your comfort is my priority",
+      "spanish": "Su comodidad es mi prioridad",
+      "pronunciation": "soo koh-moh-dee-DAD es mee pree-oh-ree-DAD",
+      "context": "For rideshare and delivery services"
+    },
+    {
+      "english": "I want to ensure you're completely satisfied",
+      "spanish": "Quiero asegurarme de que esté completamente satisfecho",
+      "pronunciation": "kee-EH-roh ah-seh-goo-RAR-meh deh keh es-TEH kom-pleh-tah-MEN-teh sah-tees-FEH-choh",
+      "context": "At end of service delivery"
+    },
+    {
+      "english": "Would you like me to adjust anything?",
+      "spanish": "¿Quisiera que ajuste algo?",
+      "pronunciation": "kee-see-EH-rah keh ah-HOOS-teh AL-go",
+      "context": "Temperature, music, speed, etc."
+    },
+    {
+      "english": "Thank you for your patience",
+      "spanish": "Gracias por su paciencia",
+      "pronunciation": "GRAH-see-ahs por soo pah-see-EN-see-ah",
+      "context": "When there are unavoidable delays"
+    }
+  ],
+  "culturalNotes": [
+    {
+      "topic": "Service Culture Differences",
+      "note": "US customers expect friendly, attentive service but respect personal space",
+      "colombianComparison": "Less physically affectionate than Colombian service culture (no hugs/kisses)"
+    },
+    {
+      "topic": "Tipping Culture",
+      "note": "Tips are expected in US gig economy - good service typically earns 15-20% tips",
+      "colombianComparison": "More structured tipping than in Colombia; directly impacts earnings"
+    },
+    {
+      "topic": "Communication Style",
+      "note": "Brief, friendly conversation is welcome, but read customer cues - some prefer quiet",
+      "colombianComparison": "Less chatty than typical Colombian social interactions"
+    }
+  ],
+  "practicalScenarios": [
+    {
+      "situation": "Customer seems unhappy but hasn't said anything",
+      "spanishResponse": "¿Todo está bien? ¿Hay algo que pueda mejorar para usted?",
+      "englishTranslation": "Is everything okay? Is there anything I can improve for you?",
+      "tips": "Proactively address issues before they become complaints"
+    },
+    {
+      "situation": "Receiving a compliment from a customer",
+      "spanishResponse": "Muchísimas gracias. Su satisfacción es muy importante para mí.",
+      "englishTranslation": "Thank you very much. Your satisfaction is very important to me.",
+      "tips": "Accept graciously and reinforce your commitment to service"
+    },
+    {
+      "situation": "Customer asks for a rating/review",
+      "spanishResponse": "Si quedó satisfecho con el servicio, una buena calificación me ayuda mucho.",
+      "englishTranslation": "If you were satisfied with the service, a good rating helps me a lot.",
+      "tips": "It's appropriate to politely ask for ratings if service went well"
+    }
+  ]
+}

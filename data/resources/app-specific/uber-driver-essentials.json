@@ -2,7 +2,7 @@
   "id": "app-001",
   "title": "Uber Driver - Essential Scenarios and Vocabulary",
   "description": "Platform-specific communication for Uber rideshare drivers",
-  "level": "Intermediate-Avanzado",
+  "level": "intermedio",
   "category": "app-specific",
   "subcategory": "rideshare-uber",
   "targetAudience": "uber-drivers",

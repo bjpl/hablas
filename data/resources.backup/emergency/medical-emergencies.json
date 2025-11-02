@@ -1,0 +1,208 @@
+{
+  "id": "emerg-001",
+  "title": "Medical Emergencies - Critical Communication",
+  "description": "Essential phrases and procedures for handling medical emergencies during gig work",
+  "level": "All Levels",
+  "category": "emergency",
+  "subcategory": "medical",
+  "targetAudience": "gig-workers",
+  "culturalContext": "US emergency response system",
+  "criticalVocabulary": [
+    {
+      "english": "Emergency",
+      "spanish": "Emergencia",
+      "pronunciation": "eh-mer-HEN-see-ah",
+      "context": "Urgent medical situation"
+    },
+    {
+      "english": "Ambulance",
+      "spanish": "Ambulancia",
+      "pronunciation": "am-boo-LAN-see-ah",
+      "context": "Emergency medical vehicle"
+    },
+    {
+      "english": "Unconscious",
+      "spanish": "Inconsciente",
+      "pronunciation": "een-kon-see-EN-teh",
+      "context": "Not awake or responsive"
+    },
+    {
+      "english": "Chest pain",
+      "spanish": "Dolor de pecho",
+      "pronunciation": "doh-LOR deh PEH-choh",
+      "context": "Possible heart attack symptom"
+    },
+    {
+      "english": "Breathing difficulty",
+      "spanish": "Dificultad para respirar",
+      "pronunciation": "dee-fee-kool-TAD PAH-rah res-pee-RAR",
+      "context": "Respiratory distress"
+    },
+    {
+      "english": "Allergic reaction",
+      "spanish": "Reacción alérgica",
+      "pronunciation": "reh-ak-see-ON ah-LER-hee-kah",
+      "context": "Severe allergy symptoms"
+    },
+    {
+      "english": "Bleeding",
+      "spanish": "Sangrado / Hemorragia",
+      "pronunciation": "san-GRAH-doh / eh-moh-RAH-hee-ah",
+      "context": "Blood loss"
+    },
+    {
+      "english": "Seizure",
+      "spanish": "Convulsión",
+      "pronunciation": "kon-vool-see-ON",
+      "context": "Uncontrolled body movements"
+    }
+  ],
+  "emergencyPhrases": [
+    {
+      "english": "Call 911 immediately!",
+      "spanish": "¡Llame al 911 inmediatamente!",
+      "pronunciation": "YAH-meh al nweh-veh-OO-noh OO-noh een-meh-dee-ah-tah-MEN-teh",
+      "context": "First action in emergency",
+      "priority": "CRITICAL"
+    },
+    {
+      "english": "I need medical help now",
+      "spanish": "Necesito ayuda médica ahora",
+      "pronunciation": "neh-seh-SEE-toh ah-YOO-dah MEH-dee-kah ah-OH-rah",
+      "context": "Requesting emergency assistance",
+      "priority": "CRITICAL"
+    },
+    {
+      "english": "Are you okay? Can you hear me?",
+      "spanish": "¿Está bien? ¿Puede oírme?",
+      "pronunciation": "es-TAH bee-EN? PWEH-deh oh-EER-meh",
+      "context": "Checking responsiveness",
+      "priority": "HIGH"
+    },
+    {
+      "english": "Stay calm, help is on the way",
+      "spanish": "Mantenga la calma, la ayuda viene en camino",
+      "pronunciation": "man-TEN-gah lah KAL-mah, lah ah-YOO-dah vee-EH-neh en kah-MEE-noh",
+      "context": "Reassuring patient",
+      "priority": "HIGH"
+    },
+    {
+      "english": "Don't move, wait for the paramedics",
+      "spanish": "No se mueva, espere a los paramédicos",
+      "pronunciation": "noh seh MWEH-vah, es-PEH-reh ah lohs pah-rah-MEH-dee-kohs",
+      "context": "Preventing injury worsening",
+      "priority": "HIGH"
+    }
+  ],
+  "callScript911": {
+    "english": [
+      "911, what is your emergency?",
+      "My passenger/customer is having a medical emergency",
+      "What is your location?",
+      "[Give exact address or intersection]",
+      "What is the nature of the emergency?",
+      "[Describe: chest pain/unconscious/not breathing/etc.]",
+      "Is the person breathing?",
+      "[Yes/No/I don't know]",
+      "Stay on the line. Help is on the way"
+    ],
+    "spanish": [
+      "911, ¿cuál es su emergencia?",
+      "Mi pasajero/cliente está teniendo una emergencia médica",
+      "¿Cuál es su ubicación?",
+      "[Dar dirección exacta o intersección]",
+      "¿Cuál es la naturaleza de la emergencia?",
+      "[Describir: dolor de pecho/inconsciente/no respira/etc.]",
+      "¿La persona está respirando?",
+      "[Sí/No/No sé]",
+      "Permanezca en línea. La ayuda viene en camino"
+    ]
+  },
+  "stepByStepProtocol": [
+    {
+      "step": 1,
+      "action": "Ensure scene safety",
+      "spanish": "Asegure la seguridad de la escena",
+      "details": "Pull over safely. Turn on hazards. Move to safe location if possible"
+    },
+    {
+      "step": 2,
+      "action": "Call 911 immediately",
+      "spanish": "Llame al 911 inmediatamente",
+      "details": "Don't wait. Don't try to drive to hospital. Let professionals come to you"
+    },
+    {
+      "step": 3,
+      "action": "Notify platform",
+      "spanish": "Notifique a la plataforma",
+      "details": "Use app emergency button or call platform support line"
+    },
+    {
+      "step": 4,
+      "action": "Stay with person",
+      "spanish": "Permanezca con la persona",
+      "details": "Monitor breathing and consciousness. Provide comfort and reassurance"
+    },
+    {
+      "step": 5,
+      "action": "Follow 911 dispatcher instructions",
+      "spanish": "Siga las instrucciones del despachador del 911",
+      "details": "They may guide you through CPR or other first aid"
+    },
+    {
+      "step": 6,
+      "action": "Wait for paramedics",
+      "spanish": "Espere a los paramédicos",
+      "details": "Provide information about what happened. Don't leave until cleared"
+    }
+  ],
+  "culturalNotes": [
+    {
+      "topic": "911 is Free",
+      "note": "Calling 911 is always free, even from cell phones without service plans",
+      "colombianComparison": "Unlike Colombian system, 911 service is universal and free throughout US"
+    },
+    {
+      "topic": "Good Samaritan Laws",
+      "note": "You are legally protected when providing emergency assistance in good faith",
+      "colombianComparison": "Legal protection for helpers stronger than in Colombian system"
+    },
+    {
+      "topic": "Never Drive to Hospital",
+      "note": "Always wait for ambulance - driving can worsen condition and create liability",
+      "colombianComparison": "Different from Colombian practice of driving to clinic/hospital"
+    },
+    {
+      "topic": "Platform Has Emergency Protocol",
+      "note": "All platforms have 24/7 emergency support - use it immediately",
+      "colombianComparison": "Formal support system protects you legally and financially"
+    }
+  ],
+  "medicalConditionsPhrases": {
+    "heartAttack": {
+      "symptoms": "Chest pain, shortness of breath, nausea, cold sweat",
+      "spanish": "Dolor de pecho, falta de aire, náusea, sudor frío",
+      "action": "Call 911. Keep person still. Loosen tight clothing. If they have aspirin and can swallow, offer one"
+    },
+    "stroke": {
+      "symptoms": "Face drooping, arm weakness, speech difficulty, sudden confusion",
+      "spanish": "Cara caída, debilidad en brazo, dificultad al hablar, confusión repentina",
+      "action": "Call 911. Note time symptoms started. Keep person calm and still"
+    },
+    "diabetic": {
+      "symptoms": "Confusion, shakiness, sweating, loss of consciousness",
+      "spanish": "Confusión, temblores, sudoración, pérdida de conocimiento",
+      "action": "If conscious, give sugar (juice, candy). If unconscious, call 911 immediately"
+    },
+    "seizure": {
+      "symptoms": "Uncontrolled shaking, loss of consciousness, stiffening",
+      "spanish": "Temblores incontrolados, pérdida de conocimiento, rigidez",
+      "action": "Call 911. Clear area around person. Don't restrain. Time the seizure. Turn on side after it stops"
+    },
+    "allergicReaction": {
+      "symptoms": "Swelling of face/throat, difficulty breathing, hives, rapid pulse",
+      "spanish": "Hinchazón de cara/garganta, dificultad para respirar, urticaria, pulso rápido",
+      "action": "Call 911. Ask if they have EpiPen. Help them use it if needed. Keep them still"
+    }
+  }
+}

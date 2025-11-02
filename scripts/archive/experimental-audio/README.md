@@ -84,6 +84,36 @@ See `../../AUDIO_GENERATION_GUIDE.md` for production documentation.
 - No Colombian/Mexican accents
 - Edge TTS is superior
 
+#### `generate-all-audio.py`
+**Purpose**: Batch generate audio with gTTS
+**Approach**: Loop through resources with gTTS
+**Status**: Working but rate-limited
+**Why Archived**: Same issues as generate-audio-gtts.py
+
+#### `regenerate-all-audio-correct.py`
+**Purpose**: Regenerate audio correcting previous errors
+**Approach**: gTTS with error handling
+**Status**: Working but slow
+**Why Archived**: gTTS rate limits made this impractical
+
+#### `regenerate-audio-batch.py`
+**Purpose**: Batch regeneration with gTTS
+**Approach**: Chunked processing to avoid rate limits
+**Status**: Working but complex
+**Why Archived**: Edge TTS eliminates need for rate limit handling
+
+#### `regenerate-audio-conservative.py`
+**Purpose**: Conservative regeneration (skip existing files)
+**Approach**: gTTS with file existence checks
+**Status**: Working
+**Why Archived**: Not needed with unlimited Edge TTS
+
+#### `generate-phase1-audio.py`
+**Purpose**: Initial phase audio generation
+**Approach**: gTTS for first batch of resources
+**Status**: Working but incomplete
+**Why Archived**: Phased approach no longer needed
+
 #### `generate-audio-edge.py`
 **Purpose**: Generate audio with Edge TTS (single voice)
 **Approach**: One voice per resource
@@ -96,12 +126,49 @@ See `../../AUDIO_GENERATION_GUIDE.md` for production documentation.
 **Status**: Working
 **Why Archived**: Superseded by dual-voice version
 
+#### `generate-azure-audio.py`
+**Purpose**: Azure Cognitive Services TTS
+**Approach**: Azure Speech SDK
+**Status**: Working but requires API keys
+**Why Archived**: Edge TTS is free alternative to Azure
+
+#### `test-azure-audio.py`
+**Purpose**: Test Azure TTS setup
+**Approach**: Simple Azure TTS test
+**Status**: Working
+**Why Archived**: Not needed after switching to Edge TTS
+
 ## Evolution Timeline
 
-1. **Phase 1**: gTTS experiments (rate limits hit)
-2. **Phase 2**: Edge TTS single-voice (working but monolingual)
-3. **Phase 3**: SSML dual-voice approach (parsing issues)
-4. **Phase 4**: pydub concatenation (PRODUCTION - works perfectly)
+1. **Phase 1 - gTTS Experiments** (Oct 28-29)
+   - Multiple attempts with Google TTS
+   - Hit rate limits constantly
+   - Created conservative/batch approaches
+   - Abandoned due to limitations
+
+2. **Phase 2 - Azure TTS** (Oct 28)
+   - Explored Azure Cognitive Services
+   - Worked but required API keys/costs
+   - Decided on free alternative
+
+3. **Phase 3 - Edge TTS Single-Voice** (Oct 31)
+   - Switched to Microsoft Edge TTS
+   - Unlimited, high quality
+   - Single voice per resource
+   - Lacked native pronunciation for both languages
+
+4. **Phase 4 - SSML Dual-Voice** (Nov 1)
+   - Attempted SSML with voice tags
+   - Complex language detection
+   - Unreliable voice switching
+   - Abandoned for concatenation approach
+
+5. **Phase 5 - pydub Concatenation** (Nov 1-2) ✅ PRODUCTION
+   - Generate segments individually
+   - Concatenate with precise timing
+   - Perfect native pronunciation
+   - Reliable and scalable
+   - All 37 resources complete
 
 ## Key Learnings
 
@@ -173,5 +240,12 @@ Use production system for all audio generation.
 ---
 
 **Archived**: 2025-11-02
-**Total Scripts**: 13 experimental approaches
-**Production System**: `generate-dual-voice-pydub.py` (dual-voice concatenation)
+**Total Scripts**: 20 experimental approaches
+**Scripts Archived**:
+- 12 script extraction/cleaning variations
+- 7 gTTS-based generation attempts
+- 2 Azure TTS experiments
+- 2 Edge TTS single-voice versions
+- 2 SSML-based approaches
+
+**Production System**: `../../generate-dual-voice-pydub.py` (Edge TTS + pydub concatenation)
