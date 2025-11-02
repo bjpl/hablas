@@ -139,9 +139,13 @@ async def generate_dual_voice_audio(resource_id: int, test_mode=False):
         print(f"   [{i+1}/{len(lines)}] {lang[:2].upper()}: {line[:50]}...")
 
         if await generate_segment(line, voice, str(temp_file)):
-            # Load the audio segment
-            audio = AudioSegment.from_mp3(str(temp_file))
-            segments.append(audio)
+            try:
+                # Load the audio segment
+                audio = AudioSegment.from_mp3(str(temp_file))
+                segments.append(audio)
+            except Exception as e:
+                print(f"   ⚠️  Error loading segment: {e}")
+                continue  # Skip this segment and continue
 
             # Add pause after each line
             if lang == 'english':
