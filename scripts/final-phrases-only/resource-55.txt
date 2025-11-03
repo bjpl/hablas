@@ -4,13 +4,11 @@ Prime Time
 
 Tiempo Prime / Tarifa elevada
 
-
 Lyft / Lyft XL / Lux / Lux Black
 
 Lyft / Lyft XL / Lux / Lux Black
 
 Lyft / Lyft XL / Lux / Lux Black
-
 
 Power Driver Bonus
 
@@ -18,13 +16,11 @@ Power Driver Bonus
 
 Bono de conductor destacado
 
-
 Streak bonus
 
 Streak bonus
 
 Bono de racha
-
 
 Ride Challenge
 
@@ -32,3 +28,26 @@ Ride Challenge
 
 Reto de viajes
 
+I'm on a streak bonus, so I really appreciate your patience
+
+I'm on a streak bonus, so I really appreciate your patience
+
+Estoy en un bono de racha, así que realmente aprecio su paciencia
+
+Good [morning/afternoon/evening]. Welcome. May I help you with your bags?
+
+Good [morning/afternoon/evening]. Welcome. May I help you with your bags?
+
+Buenos [días/tardes/noches]. Bienvenido/a. ¿Puedo ayudarle con sus maletas?
+
+I've been waiting for 4 minutes. I'll need to cancel in 1 minute if you're not here.
+
+I've been waiting for 4 minutes. I'll need to cancel in 1 minute if you're not here.
+
+He estado esperando por 4 minutos. Tendré que cancelar en 1 minuto si no está aquí.
+
+Of course, I'm happy to accommodate your service animal.
+
+Of course, I'm happy to accommodate your service animal.
+
+Por supuesto, con mucho gusto acomodo a su animal de servicio.

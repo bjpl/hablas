@@ -4,20 +4,11 @@ Is this number fifteen?
 
 ¿Es este el número quince?
 
-
 My number is five, five, five...
 
 My number is five, five, five...
 
 Mi número es cinco, cinco, cinco...
-
-
-I'm looking for forty-five Oak Street.
-
-I'm looking for forty-five Oak Street.
-
-Estoy buscando el cuarenta y cinco de
-
 
 Is this twelve fifty-six Main Street?
 
@@ -25,41 +16,11 @@ Is this twelve fifty-six Main Street?
 
 ¿Es este el doce cincuenta y seis de
 
-
 Is this the right address?
 
 Is this the right address?
 
 ¿Es esta la dirección correcta?
-
-
-So, it's twenty-three Park Avenue?
-
-So, it's twenty-three Park Avenue?
-
-Entonces, ¿es el veintitrés de la
-
-
-What's the full address?
-
-What's the full address?
-
-¿Cuál es la dirección completa?
-
-
-I'm here at the address.
-
-I'm here at the address.
-
-Estoy aquí en la dirección.
-
-
-I'm going to Oak Street.
-
-I'm going to Oak Street.
-
-Voy a la calle Oak.
-
 
 Where is Park Avenue?
 
@@ -67,20 +28,11 @@ Where is Park Avenue?
 
 ¿Dónde está la avenida Park?
 
-
-It's on Main Street and First Avenue.
-
-It's on Main Street and First Avenue.
-
-Está en la calle Main y la avenida
-
-
 What street is this?
 
 What street is this?
 
 ¿Qué calle es esta?
-
 
 Apartment two-oh-five?
 
@@ -88,34 +40,11 @@ Apartment two-oh-five?
 
 ¿Apartamento dos cero cinco?
 
-
 What floor are you on?
 
 What floor are you on?
 
 ¿En qué piso estás?
-
-
-I'm in the lobby.
-
-I'm in the lobby.
-
-Estoy en el lobby/vestíbulo.
-
-
-What's the building code?
-
-What's the building code?
-
-¿Cuál es el código del edificio?
-
-
-I'm at your door.
-
-I'm at your door.
-
-Estoy en tu puerta.
-
 
 Is it close to here?
 
@@ -123,17 +52,14 @@ Is it close to here?
 
 ¿Está cerca de aquí?
 
-
 Where is it located?
 
 Where is it located?
 
 ¿Dónde está ubicado/localizado?
 
+Is there a landmark nearby?
 
-It's next to the gas station.
+Is there a landmark nearby?
 
-It's next to the gas station.
-
-Está al lado de la gasolinera.
-
+¿Hay algún punto de referencia cerca?

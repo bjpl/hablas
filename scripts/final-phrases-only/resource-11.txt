@@ -4,20 +4,11 @@ Good morning!
 
 ¡Buenos días!
 
-
-Hey! How's it going?
-
-Hey! How's it going?
-
-¡Hola! ¿Cómo te va?
-
-
 Hi! Welcome!
 
 Hi! Welcome!
 
 ¡Hola! ¡Bienvenido!
-
 
 Are you Sarah?
 
@@ -25,34 +16,11 @@ Are you Sarah?
 
 ¿Eres Sarah?
 
-
 Hi! Are you waiting for an Uber?
 
 Hi! Are you waiting for an Uber?
 
 ¡Hola! ¿Estás esperando un Uber?
-
-
-I'm looking for Michael Johnson.
-
-I'm looking for Michael Johnson.
-
-Estoy buscando a Michael Johnson.
-
-
-Yes, that's me! Hop in!
-
-Yes, that's me! Hop in!
-
-¡Sí, soy yo! ¡Súbete!
-
-
-You're going to Main Street, right?
-
-You're going to Main Street, right?
-
-Vas a Main Street, ¿verdad?
-
 
 Where are we headed today?
 
@@ -60,20 +28,11 @@ Where are we headed today?
 
 ¿A dónde vamos hoy?
 
-
-I'll take the highway. Is that okay?
-
-I'll take the highway. Is that okay?
-
-Tomaré la autopista. ¿Está bien?
-
-
 Can I help you with your bags?
 
 Can I help you with your bags?
 
 ¿Puedo ayudarte con tus maletas?
-
 
 You can put it in the trunk.
 
@@ -81,20 +40,11 @@ You can put it in the trunk.
 
 Puedes ponerlo en la cajuela.
 
-
-I'll be careful with it.
-
-I'll be careful with it.
-
-Tendré cuidado con eso.
-
-
 Is the temperature okay?
 
 Is the temperature okay?
 
 ¿Está bien la temperatura?
-
 
 Feel free to open the window.
 
@@ -102,13 +52,11 @@ Feel free to open the window.
 
 Siéntete libre de abrir la ventana.
 
+Is the music okay, or would you like me
 
-Is the music okay, or would you like me to change it?
-
-Is the music okay, or would you like me to change it?
+Is the music okay, or would you like me
 
 ¿Está bien la música, o quieres que
-
 
 I have a charger if you need one.
 
@@ -116,20 +64,11 @@ I have a charger if you need one.
 
 Tengo un cargador si necesitas uno.
 
-
 How many people are riding with you?
 
 How many people are riding with you?
 
 ¿Cuántas personas vienen contigo?
-
-
-There's room for everyone!
-
-There's room for everyone!
-
-¡Hay espacio para todos!
-
 
 I can only take four passengers.
 
@@ -137,3 +76,14 @@ I can only take four passengers.
 
 Solo puedo llevar cuatro pasajeros.
 
+Take your time.
+
+Take your time.
+
+Tómate tu tiempo.
+
+I see you have a stop on the way.
+
+I see you have a stop on the way.
+
+Veo que tienes una parada en el camino.

@@ -4,34 +4,11 @@ Hello! Good morning!
 
 ¡Hola! ¡Buenos días!
 
-
 Are you waiting for Uber?
 
 Are you waiting for Uber?
 
 ¿Estás esperando un Uber?
-
-
-I'm your driver.
-
-I'm your driver.
-
-Soy tu conductor.
-
-
-Hi! I'm your Uber driver.
-
-Hi! I'm your Uber driver.
-
-¡Hola! Soy tu conductor de Uber.
-
-
-What's your name?
-
-What's your name?
-
-¿Cuál es tu nombre?
-
 
 Can you tell me your name, please?
 
@@ -39,13 +16,11 @@ Can you tell me your name, please?
 
 ¿Puedes decirme tu nombre, por favor?
 
+Are you [Name]?
 
-Are you Name?
-
-Are you Name?
+Are you [Name]?
 
 ¿Eres [Nombre]?
-
 
 Perfect! Welcome!
 
@@ -53,34 +28,17 @@ Perfect! Welcome!
 
 ¡Perfecto! ¡Bienvenido!
 
-
 Where are we going?
 
 Where are we going?
 
 ¿A dónde vamos?
 
+I have you going to [address]. Is that
 
-I have you going to [address]. Is that correct?
-
-I have you going to [address]. Is that correct?
+I have you going to [address]. Is that
 
 Te llevo a [dirección]. ¿Es correcto?
-
-
-So we're going to the airport, right?
-
-So we're going to the airport, right?
-
-Entonces vamos al aeropuerto, ¿verdad?
-
-
-I'll take you there now.
-
-I'll take you there now.
-
-Te llevaré ahí ahora.
-
 
 Is anyone else coming?
 
@@ -88,13 +46,11 @@ Is anyone else coming?
 
 ¿Viene alguien más?
 
-
 Hello everyone! Welcome!
 
 Hello everyone! Welcome!
 
 ¡Hola a todos! ¡Bienvenidos!
-
 
 I have three passengers, correct?
 
@@ -102,38 +58,20 @@ I have three passengers, correct?
 
 Tengo tres pasajeros, ¿correcto?
 
-
 I can take four people maximum.
 
 I can take four people maximum.
 
 Puedo llevar cuatro personas máximo.
 
+Did you order an Uber?
 
-Hi, I'm here. Where are you?
+Did you order an Uber?
 
-Hi, I'm here. Where are you?
+¿Pediste un Uber?
 
-Hola, estoy aquí. ¿Dónde estás?
+Can you check your app?
 
+Can you check your app?
 
-I'm in front of the building.
-
-I'm in front of the building.
-
-Estoy frente al edificio.
-
-
-I'm in a [color] [car type].
-
-I'm in a [color] [car type].
-
-Estoy en un [color] [tipo de carro].
-
-
-I've been waiting. I need to cancel.
-
-I've been waiting. I need to cancel.
-
-He estado esperando. Necesito cancelar.
-
+¿Puedes revisar tu aplicación?

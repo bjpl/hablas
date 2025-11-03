@@ -4,13 +4,11 @@ Payment declined
 
 Pago rechazado / declinado
 
-
 Cash payment
 
 Cash payment
 
 Pago en efectivo
-
 
 Charge dispute
 
@@ -18,13 +16,11 @@ Charge dispute
 
 Disputa de cargo
 
-
 Processing issue
 
 Processing issue
 
 Problema de procesamiento
-
 
 Tip / Gratuity
 
@@ -32,3 +28,50 @@ Tip / Gratuity
 
 Propina
 
+The app is showing a payment processing issue, but this doesn't affect the trip. The platform will reach out to you about updating your payment method.
+
+The app is showing a payment processing issue, but this doesn't affect the trip. The platform will reach out to you about updating your payment method.
+
+La aplicación está mostrando un problema de procesamiento de pago, pero esto no afecta el viaje. La plataforma se comunicará con usted sobre actualizar su método de pago.
+
+I understand the price seems high. The fare is calculated by the app based on distance, time, and current demand. I don't set the price. If you believe there's an error, you can dispute it through app support and they'll review it.
+
+I understand the price seems high. The fare is calculated by the app based on distance, time, and current demand. I don't set the price. If you believe there's an error, you can dispute it through app support and they'll review it.
+
+Entiendo que el precio parece alto. La tarifa es calculada por la aplicación según distancia, tiempo y demanda actual. Yo no establezco el precio. Si cree que hay un error, puede disputarlo a través del soporte de la aplicación y ellos lo revisarán.
+
+If you were satisfied with the service, I appreciate any consideration. Thank you for riding with me!
+
+If you were satisfied with the service, I appreciate any consideration. Thank you for riding with me!
+
+Si quedó satisfecho con el servicio, agradezco cualquier consideración. ¡Gracias por viajar conmigo!
+
+I appreciate the offer, but all payments must go through the app. This protects both of us and ensures everything is documented. You can add a new payment method in the app settings.
+
+I appreciate the offer, but all payments must go through the app. This protects both of us and ensures everything is documented. You can add a new payment method in the app settings.
+
+Agradezco la oferta, pero todos los pagos deben hacerse a través de la aplicación. Esto nos protege a ambos y asegura que todo quede documentado. Puede agregar un nuevo método de pago en la configuración de la aplicación.
+
+I see your concern. Let me check my trip history... I show one completed trip at [time] for [amount]. If you're seeing different charges, please contact platform support with this trip ID [number]. They can review all charges and make any necessary adjustments.
+
+I see your concern. Let me check my trip history... I show one completed trip at [time] for [amount]. If you're seeing different charges, please contact platform support with this trip ID [number]. They can review all charges and make any necessary adjustments.
+
+Veo su preocupación. Déjeme verificar mi historial de viajes... Veo un viaje completado a las [hora] por [monto]. Si ve cargos diferentes, por favor contacte al soporte de la plataforma con este ID de viaje [número]. Ellos pueden revisar todos los cargos y hacer los ajustes necesarios.
+
+Just so you know, there's surge pricing right now due to high demand. The app should have shown you the increased fare when you booked.
+
+Just so you know, there's surge pricing right now due to high demand. The app should have shown you the increased fare when you booked.
+
+Para que sepa, hay tarifa de demanda alta ahora mismo debido a alta demanda. La aplicación debería haberle mostrado la tarifa aumentada cuando reservó.
+
+I see this is a longer trip. The fare will be based on time and distance, approximately [range] based on the route.
+
+I see this is a longer trip. The fare will be based on time and distance, approximately [range] based on the route.
+
+Veo que este es un viaje más largo. La tarifa se basará en tiempo y distancia, aproximadamente [rango] según la ruta.
+
+I'm following the app's navigation, which chooses the fastest route based on current traffic. If you prefer a specific route, please let me know.
+
+I'm following the app's navigation, which chooses the fastest route based on current traffic. If you prefer a specific route, please let me know.
+
+Estoy siguiendo la navegación de la aplicación, que elige la ruta más rápida según el tráfico actual. Si prefiere una ruta específica, por favor avíseme.

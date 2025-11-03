@@ -4,13 +4,11 @@ Is this the correct address?
 
 ¿Esta es la dirección correcta?
 
-
 Do you want to change the destination?
 
 Do you want to change the destination?
 
 ¿Quieres cambiar el destino?
-
 
 Do you need to make a stop?
 
@@ -18,13 +16,11 @@ Do you need to make a stop?
 
 ¿Necesitas hacer una parada?
 
-
 Going to 123 Main Street, right?
 
 Going to 123 Main Street, right?
 
 Vamos a Main Street 123, ¿correcto?
-
 
 Turn right
 
@@ -32,20 +28,11 @@ Turn right
 
 Gira a la derecha
 
-
 Turn left
 
 Turn left
 
 Gira a la izquierda
-
-
-Continue straight
-
-Continue straight
-
-Continúa derecho / Sigue derecho
-
 
 Make a U-turn
 
@@ -53,27 +40,11 @@ Make a U-turn
 
 Haz una vuelta en U
 
-
-In 500 feet
-
-In 500 feet
-
-En 500 pies / En un cuarto de milla
-
-
 Which way do you prefer?
 
 Which way do you prefer?
 
 ¿Qué ruta prefieres?
-
-
-There's a faster way. Is that okay?
-
-There's a faster way. Is that okay?
-
-Hay una ruta más rápida. ¿Está bien?
-
 
 Do you want to take the highway?
 
@@ -81,13 +52,11 @@ Do you want to take the highway?
 
 ¿Quieres tomar la autopista?
 
-
 Do you mind tolls?
 
 Do you mind tolls?
 
 ¿Te importan los peajes?
-
 
 My GPS lost signal. One moment, please.
 
@@ -95,13 +64,11 @@ My GPS lost signal. One moment, please.
 
 Mi GPS perdió señal. Un momento, por
 
-
 Can you help me with directions?
 
 Can you help me with directions?
 
 ¿Me puedes ayudar con las direcciones?
-
 
 The GPS shows a different address.
 
@@ -109,13 +76,11 @@ The GPS shows a different address.
 
 El GPS muestra una dirección diferente.
 
-
 Let me restart the GPS.
 
 Let me restart the GPS.
 
 Déjame reiniciar el GPS.
-
 
 Which entrance should I use?
 
@@ -123,17 +88,26 @@ Which entrance should I use?
 
 ¿Qué entrada debo usar?
 
-
-What's your building number?
-
-What's your building number?
-
-¿Cuál es el número de tu edificio?
-
-
 Do I need a gate code?
 
 Do I need a gate code?
 
 ¿Necesito un código de acceso?
 
+Where should I park?
+
+Where should I park?
+
+¿Dónde debo estacionarme?
+
+It might take 10 more minutes.
+
+It might take 10 more minutes.
+
+Puede tomar 10 minutos más.
+
+Should I take a different route?
+
+Should I take a different route?
+
+¿Debo tomar una ruta diferente?

@@ -4,20 +4,11 @@ Hi! How are you?
 
 ¡Hola! ¿Cómo estás?
 
-
 Hi there! Are you waiting for an Uber?
 
 Hi there! Are you waiting for an Uber?
 
 ¡Hola! ¿Estás esperando un Uber?
-
-
-Good morning! How's it going?
-
-Good morning! How's it going?
-
-¡Buenos días! ¿Cómo te va?
-
 
 Hey! Welcome!
 
@@ -25,13 +16,11 @@ Hey! Welcome!
 
 ¡Oye! ¡Bienvenido!
 
-
 Are you Michael?
 
 Are you Michael?
 
 ¿Eres Michael?
-
 
 Hi! Are you looking for Michael?
 
@@ -39,34 +28,17 @@ Hi! Are you looking for Michael?
 
 ¡Hola! ¿Buscas a Michael?
 
-
-What's your name?
-
-What's your name?
-
-¿Cuál es tu nombre?
-
-
 Can you confirm your name for me?
 
 Can you confirm your name for me?
 
 ¿Puedes confirmarme tu nombre?
 
+I have a pickup for... how do you
 
-I have a pickup for... how do you pronounce your name?
-
-I have a pickup for... how do you pronounce your name?
+I have a pickup for... how do you
 
 Tengo un viaje para... ¿cómo se
-
-
-You're going to Main Street, right?
-
-You're going to Main Street, right?
-
-Vas a Main Street, ¿verdad?
-
 
 Where are we going today?
 
@@ -74,20 +46,11 @@ Where are we going today?
 
 ¿A dónde vamos hoy?
 
+I have you going to 123 Oak Street. Is
 
-I have you going to 123 Oak Street. Is that correct?
-
-I have you going to 123 Oak Street. Is that correct?
+I have you going to 123 Oak Street. Is
 
 Te llevo al 123 de Oak Street. ¿Es
-
-
-Just to confirm, you're going to the mall, not the airport?
-
-Just to confirm, you're going to the mall, not the airport?
-
-Solo para confirmar, ¿vas al centro
-
 
 Are you comfortable back there?
 
@@ -95,13 +58,11 @@ Are you comfortable back there?
 
 ¿Estás cómodo ahí atrás?
 
-
 Is the temperature okay for you?
 
 Is the temperature okay for you?
 
 ¿La temperatura está bien para ti?
-
 
 Do you have any music preferences?
 
@@ -109,13 +70,11 @@ Do you have any music preferences?
 
 ¿Tienes alguna preferencia de música?
 
-
 Are you in a hurry?
 
 Are you in a hurry?
 
 ¿Tienes prisa?
-
 
 Is anyone else coming?
 
@@ -123,17 +82,26 @@ Is anyone else coming?
 
 ¿Viene alguien más?
 
-
 Hey everyone! How are you all doing?
 
 Hey everyone! How are you all doing?
 
 ¡Hola a todos! ¿Cómo están?
 
+Do you have any bags? I can pop the
 
-Do you have any bags? I can pop the trunk.
-
-Do you have any bags? I can pop the trunk.
+Do you have any bags? I can pop the
 
 ¿Tienen maletas? Puedo abrir la
 
+Is everybody ready to go?
+
+Is everybody ready to go?
+
+¿Todos están listos para irnos?
+
+Did you request a ride to the airport?
+
+Did you request a ride to the airport?
+
+¿Pediste un viaje al aeropuerto?

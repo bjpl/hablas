@@ -4,20 +4,11 @@ Hi! Delivery for you.
 
 ¡Hola! Entrega para ti.
 
-
 Good evening! I have your food.
 
 Good evening! I have your food.
 
 Buenas noches! Tengo tu comida.
-
-
-I'm from Uber Eats.
-
-I'm from Uber Eats.
-
-Soy de Uber Eats.
-
 
 Are you Sarah?
 
@@ -25,13 +16,11 @@ Are you Sarah?
 
 ¿Eres Sarah?
 
-
 Is this apartment 205?
 
 Is this apartment 205?
 
 ¿Este es el apartamento 205?
-
 
 Here you go!
 
@@ -39,13 +28,11 @@ Here you go!
 
 ¡Aquí tienes!
 
-
 Everything is in the bag.
 
 Everything is in the bag.
 
 Todo está en la bolsa.
-
 
 Can you confirm on my phone?
 
@@ -53,27 +40,11 @@ Can you confirm on my phone?
 
 ¿Puedes confirmar en mi teléfono?
 
-
-I can't find your address.
-
-I can't find your address.
-
-No puedo encontrar tu dirección.
-
-
 Can you help me find you?
 
 Can you help me find you?
 
 ¿Puedes ayudarme a encontrarte?
-
-
-I'm in front of the building.
-
-I'm in front of the building.
-
-Estoy enfrente del edificio.
-
 
 Do you see me?
 
@@ -81,13 +52,11 @@ Do you see me?
 
 ¿Me ves?
 
-
 Can you buzz me in?
 
 Can you buzz me in?
 
 ¿Puedes abrirme la puerta?
-
 
 Which floor?
 
@@ -95,41 +64,11 @@ Which floor?
 
 ¿Qué piso?
 
-
-I don't see your door.
-
-I don't see your door.
-
-No veo tu puerta.
-
-
-I'll leave it at the door.
-
-I'll leave it at the door.
-
-Lo dejaré en la puerta.
-
-
 Can you meet me outside?
 
 Can you meet me outside?
 
 ¿Puedes encontrarme afuera?
-
-
-I can't park here.
-
-I can't park here.
-
-No puedo estacionarme aquí.
-
-
-I'll wait five minutes.
-
-I'll wait five minutes.
-
-Esperaré cinco minutos.
-
 
 Be careful, there are drinks.
 
@@ -137,3 +76,14 @@ Be careful, there are drinks.
 
 Ten cuidado, hay bebidas.
 
+I just pick up and deliver.
+
+I just pick up and deliver.
+
+Solo recojo y entrego.
+
+I tried calling you.
+
+I tried calling you.
+
+Intenté llamarte.

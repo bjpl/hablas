@@ -4,13 +4,11 @@ Independent contractor / Self-employed
 
 Contratista independiente / Trabajador autónomo
 
-
 Tax deduction / Write-off
 
 Tax deduction / Write-off
 
 Deducción de impuestos / Gasto deducible
-
 
 Quarterly estimated taxes
 
@@ -18,13 +16,11 @@ Quarterly estimated taxes
 
 Impuestos estimados trimestrales
 
-
 Form 1099-NEC / 1099-K
 
 Form 1099-NEC / 1099-K
 
 Formulario 1099-NEC / 1099-K
-
 
 Schedule C
 
@@ -32,13 +28,11 @@ Schedule C
 
 Anexo C / Schedule C
 
-
 Self-employment tax
 
 Self-employment tax
 
 Impuesto de trabajo autónomo
-
 
 Mileage / Standard mileage rate
 
@@ -46,3 +40,20 @@ Mileage / Standard mileage rate
 
 Kilometraje / Tarifa estándar por milla
 
+I'm self-employed as an independent contractor. I have to handle my own taxes and business expenses.
+
+I'm self-employed as an independent contractor. I have to handle my own taxes and business expenses.
+
+Soy trabajador autónomo como contratista independiente. Tengo que manejar mis propios impuestos y gastos de negocio.
+
+Do you know a good accountant who works with self-employed people?
+
+Do you know a good accountant who works with self-employed people?
+
+¿Conoce un buen contador que trabaje con personas que trabajan por cuenta propia?
+
+I need to set aside money for quarterly tax payments.
+
+I need to set aside money for quarterly tax payments.
+
+Necesito apartar dinero para pagos de impuestos trimestrales.

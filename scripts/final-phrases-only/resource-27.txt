@@ -1,51 +1,8 @@
-I need help. There's been an accident.
-
-I need help. There's been an accident.
-
-Necesito ayuda. Ha habido un accidente.
-
-
-I'm at street and street.
-
-I'm at street and street.
-
-Estoy en [nombre de calle] y [nombre
-
-
 Someone is hurt. Please hurry.
 
 Someone is hurt. Please hurry.
 
 Alguien está herido. Por favor
-
-
-Are you okay? I'm calling 911.
-
-Are you okay? I'm calling 911.
-
-¿Estás bien? Voy a llamar al 911.
-
-
-I didn't see you. I'm sorry.
-
-I didn't see you. I'm sorry.
-
-No te vi. Lo siento.
-
-
-Please calm down. Let's call the police.
-
-Please calm down. Let's call the police.
-
-Por favor cálmate. Llamemos a la
-
-
-Let's move our cars to the side.
-
-Let's move our cars to the side.
-
-Movamos nuestros carros a un lado.
-
 
 I need your insurance information.
 
@@ -53,13 +10,11 @@ I need your insurance information.
 
 Necesito tu información del seguro.
 
-
 Here is my insurance card.
 
 Here is my insurance card.
 
 Aquí está mi tarjeta de seguro.
-
 
 Can I have your phone number?
 
@@ -67,34 +22,11 @@ Can I have your phone number?
 
 ¿Me puedes dar tu número de teléfono?
 
-
-I don't have insurance, but I'll pay for the damage.
-
-I don't have insurance, but I'll pay for the damage.
-
-No tengo seguro, pero pagaré por el
-
-
-I need an ambulance. I'm hurt.
-
-I need an ambulance. I'm hurt.
-
-Necesito una ambulancia. Estoy herido.
-
-
 My [body part] hurts.
 
 My [body part] hurts.
 
 Me duele [parte del cuerpo].
-
-
-I can't breathe. Help me.
-
-I can't breathe. Help me.
-
-No puedo respirar. Ayúdame.
-
 
 Are you okay? Do you need help?
 
@@ -102,13 +34,11 @@ Are you okay? Do you need help?
 
 ¿Estás bien? ¿Necesitas ayuda?
 
-
 Good afternoon, officer.
 
 Good afternoon, officer.
 
 Buenas tardes, oficial.
-
 
 Here is my license and registration.
 
@@ -116,24 +46,8 @@ Here is my license and registration.
 
 Aquí está mi licencia y registro.
 
+Help! Someone call 911!
 
-I'm working for Uber/Lyft/DoorDash right now.
+Help! Someone call 911!
 
-I'm working for Uber/Lyft/DoorDash right now.
-
-Estoy trabajando para Uber/Lyft/
-
-
-I'm sorry, I don't understand. Can you speak slowly?
-
-I'm sorry, I don't understand. Can you speak slowly?
-
-Lo siento, no entiendo. ¿Puede hablar
-
-
-Yes, officer
-
-Yes, officer
-
-Sí, oficial / No, oficial
-
+¡Ayuda! ¡Alguien llame al 911!

@@ -4,20 +4,11 @@ Good morning! I have your delivery.
 
 ¡Buenos días! Tengo su entrega.
 
+Are you [Name]?
 
-Are you Name?
-
-Are you Name?
+Are you [Name]?
 
 ¿Es usted [Nombre]?
-
-
-I'm your driver from [Uber/Rappi].
-
-I'm your driver from [Uber/Rappi].
-
-Soy su conductor/repartidor de [app].
-
 
 Here you go! Have a great day.
 
@@ -25,13 +16,11 @@ Here you go! Have a great day.
 
 ¡Aquí tiene! Que tenga un gran día.
 
-
 Can I help you with anything else?
 
 Can I help you with anything else?
 
 ¿Puedo ayudarle con algo más?
-
 
 How do I get to your apartment?
 
@@ -39,34 +28,11 @@ How do I get to your apartment?
 
 ¿Cómo llego a su apartamento?
 
-
-I'm here with your order.
-
-I'm here with your order.
-
-Estoy aquí con su pedido.
-
-
-What's the gate code, please?
-
-What's the gate code, please?
-
-¿Cuál es el código de la puerta?
-
-
 Could you come down to meet me?
 
 Could you come down to meet me?
 
 ¿Podría bajar a encontrarse conmigo?
-
-
-I'm parked in front of your building.
-
-I'm parked in front of your building.
-
-Estoy estacionado frente a su edificio.
-
 
 I apologize for the delay.
 
@@ -74,13 +40,11 @@ I apologize for the delay.
 
 Me disculpo por el retraso.
 
-
 The restaurant was running behind.
 
 The restaurant was running behind.
 
 El restaurante estaba atrasado.
-
 
 It looks like an item is missing.
 
@@ -88,13 +52,11 @@ It looks like an item is missing.
 
 Parece que falta un artículo.
 
-
 I can contact support to help with this.
 
 I can contact support to help with this.
 
 Puedo contactar a soporte para ayudar.
-
 
 Does everything look correct?
 
@@ -102,27 +64,11 @@ Does everything look correct?
 
 ¿Todo se ve correcto?
 
-
-I'm very sorry, something spilled.
-
-I'm very sorry, something spilled.
-
-Lo siento mucho, algo se derramó.
-
-
-I'll leave it at the door for you.
-
-I'll leave it at the door for you.
-
-Lo dejaré en la puerta para usted.
-
-
 Where would you like me to place it?
 
 Where would you like me to place it?
 
 ¿Dónde le gustaría que lo coloque?
-
 
 Would you like me to bring it inside?
 
@@ -130,10 +76,20 @@ Would you like me to bring it inside?
 
 ¿Quisiera que lo lleve adentro?
 
+I can wait a few minutes, no problem.
 
-I'll ask the restaurant for extra sauce.
+I can wait a few minutes, no problem.
 
-I'll ask the restaurant for extra sauce.
+Puedo esperar unos minutos, sin problema
 
-Pediré salsa extra al restaurante.
+Thank you so much! Take care.
 
+Thank you so much! Take care.
+
+¡Muchas gracias! Cuídese.
+
+Enjoy your food!
+
+Enjoy your food!
+
+¡Disfrute su comida!

@@ -4,13 +4,11 @@ Rating / Score
 
 Calificación / Puntuación
 
-
 Deactivation threshold
 
 Deactivation threshold
 
 Umbral de desactivación
-
 
 Rolling average
 
@@ -18,3 +16,38 @@ Rolling average
 
 Promedio móvil
 
+I have water and phone chargers available if you need them
+
+I have water and phone chargers available if you need them
+
+Tengo agua y cargadores de teléfono disponibles si los necesita
+
+I'm following the app's navigation for the fastest route. Let me know if you prefer a different route.
+
+I'm following the app's navigation for the fastest route. Let me know if you prefer a different route.
+
+Estoy siguiendo la navegación de la aplicación para la ruta más rápida. Avíseme si prefiere una ruta diferente.
+
+Hi [name]! How are you today? [Destination confirmation]
+
+Hi [name]! How are you today? [Destination confirmation]
+
+¡Hola [nombre]! ¿Cómo está hoy? [Confirmación de destino]
+
+Thank you so much! Have a great [day/evening]!
+
+Thank you so much! Have a great [day/evening]!
+
+¡Muchas gracias! ¡Que tenga un excelente [día/tarde]!
+
+If you were satisfied with the ride, I'd really appreciate a 5-star rating. Thank you!
+
+If you were satisfied with the ride, I'd really appreciate a 5-star rating. Thank you!
+
+Si quedó satisfecho con el viaje, realmente agradecería una calificación de 5 estrellas. ¡Gracias!
+
+If you enjoyed the ride, I'd be so grateful for 5 stars and any tip you feel is appropriate!
+
+If you enjoyed the ride, I'd be so grateful for 5 stars and any tip you feel is appropriate!
+
+Si disfrutó el viaje, ¡estaría muy agradecido por 5 estrellas y cualquier propina que considere apropiada!

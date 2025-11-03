@@ -1,9 +1,8 @@
----------
+Threat
 
----------
+Threat
 
----------------
-
+Amenaza
 
 Weapon
 
@@ -11,6 +10,17 @@ Weapon
 
 Arma
 
+Police
+
+Police
+
+Policía
+
+Help
+
+Help
+
+Ayuda
 
 Danger
 
@@ -18,6 +28,11 @@ Danger
 
 Peligro
 
+Safe
+
+Safe
+
+Seguro / A salvo
 
 I'm calling the police
 
@@ -25,13 +40,11 @@ I'm calling the police
 
 Voy a llamar a la policía
 
-
 Get out of the car now
 
 Get out of the car now
 
 Salga del carro ahora
-
 
 I need help, I'm in danger
 
@@ -39,17 +52,14 @@ I need help, I'm in danger
 
 Necesito ayuda, estoy en peligro
 
-
 Stay back / Don't come closer
 
 Stay back / Don't come closer
 
 Manténgase atrás / No se acerque
 
-
 Leave me alone
 
 Leave me alone
 
 Déjeme en paz
-

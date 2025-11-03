@@ -4,20 +4,11 @@ Hello! How are you?
 
 ¡Hola! ¿Cómo estás?
 
-
-I'm here for a pickup.
-
-I'm here for a pickup.
-
-Estoy aquí para recoger un pedido
-
-
 Good, thank you!
 
 Good, thank you!
 
 Bien, ¡gracias!
-
 
 Order for [customer name].
 
@@ -25,13 +16,11 @@ Order for [customer name].
 
 Orden para [nombre del cliente]
 
-
 Order number [####].
 
 Order number [####].
 
 Número de orden [####]
-
 
 Is it ready?
 
@@ -39,13 +28,11 @@ Is it ready?
 
 ¿Está lista?
 
-
 Can you check the order?
 
 Can you check the order?
 
 ¿Puede verificar la orden?
-
 
 Thank you! Have a good day!
 
@@ -53,13 +40,11 @@ Thank you! Have a good day!
 
 ¡Gracias! ¡Que tenga un buen día!
 
-
 How much longer?
 
 How much longer?
 
 ¿Cuánto tiempo más?
-
 
 I need the drinks too.
 
@@ -67,13 +52,11 @@ I need the drinks too.
 
 Necesito las bebidas también
 
-
 Can I have napkins and utensils?
 
 Can I have napkins and utensils?
 
 ¿Me puede dar servilletas y cubiertos?
-
 
 I need to contact support.
 
@@ -81,13 +64,11 @@ I need to contact support.
 
 Necesito contactar a soporte
 
-
 Hi! I have your delivery.
 
 Hi! I have your delivery.
 
 ¡Hola! Tengo tu entrega.
-
 
 Are you [customer name]?
 
@@ -95,20 +76,11 @@ Are you [customer name]?
 
 ¿Eres [nombre del cliente]?
 
-
-I'll leave it here.
-
-I'll leave it here.
-
-Lo dejaré aquí.
-
-
 Please check everything.
 
 Please check everything.
 
 Por favor revise todo.
-
 
 Enjoy your meal!
 
@@ -116,24 +88,14 @@ Enjoy your meal!
 
 ¡Disfruta tu comida!
 
-
-I can't find the address.
-
-I can't find the address.
-
-No puedo encontrar la dirección
-
-
 Can you come outside?
 
 Can you come outside?
 
 ¿Puedes salir?
 
+Can you let me in?
 
-I'm here with your order.
+Can you let me in?
 
-I'm here with your order.
-
-Estoy aquí con tu orden
-
+¿Me puedes dejar entrar?

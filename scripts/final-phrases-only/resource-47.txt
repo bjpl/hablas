@@ -4,13 +4,11 @@ Lost item / Lost property
 
 Artículo perdido / Propiedad perdida
 
-
 Found / Located
 
 Found / Located
 
 Encontrado / Ubicado
-
 
 Return / Give back
 
@@ -18,13 +16,11 @@ Return / Give back
 
 Devolver / Regresar
 
-
 Valuable
 
 Valuable
 
 Valioso
-
 
 Identification
 
@@ -32,10 +28,44 @@ Identification
 
 Identificación
 
-
 Theft / Stolen
 
 Theft / Stolen
 
 Robo / Robado
 
+Excuse me! You left something in the car!
+
+Excuse me! You left something in the car!
+
+¡Disculpe! ¡Dejó algo en el carro!
+
+I found your [item]. I've reported it through the app. The platform will help coordinate return. Your item is safe.
+
+I found your [item]. I've reported it through the app. The platform will help coordinate return. Your item is safe.
+
+Encontré su [artículo]. Lo he reportado a través de la aplicación. La plataforma ayudará a coordinar la devolución. Su artículo está seguro.
+
+Can you describe what you lost? Can I see your ID to confirm it matches the app?
+
+Can you describe what you lost? Can I see your ID to confirm it matches the app?
+
+¿Puede describir lo que perdió? ¿Puedo ver su identificación para confirmar que coincide con la aplicación?
+
+The platform arranged a return fee of $[X] for the trip to return your item.
+
+The platform arranged a return fee of $[X] for the trip to return your item.
+
+La plataforma organizó una tarifa de devolución de $[X] por el viaje para devolver su artículo.
+
+I understand you're missing your [item]. I've checked my vehicle thoroughly and don't have it. I'm reporting this to the platform so they can investigate. They have GPS and timing records of all pickups after yours.
+
+I understand you're missing your [item]. I've checked my vehicle thoroughly and don't have it. I'm reporting this to the platform so they can investigate. They have GPS and timing records of all pickups after yours.
+
+Entiendo que le falta su [artículo]. He revisado mi vehículo exhaustivamente y no lo tengo. Estoy reportando esto a la plataforma para que investiguen. Tienen registros de GPS y tiempo de todas las recogidas después de la suya.
+
+Please make sure you have all your belongings. Check for phone, wallet, and keys.
+
+Please make sure you have all your belongings. Check for phone, wallet, and keys.
+
+Por favor asegúrese de tener todas sus pertenencias. Revise su teléfono, billetera y llaves.

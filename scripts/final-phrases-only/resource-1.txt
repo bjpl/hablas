@@ -4,27 +4,11 @@ Good morning! I have a delivery for you.
 
 Buenos días! Tengo una entrega para ti.
 
-
-I'm your Uber Eats driver.
-
-I'm your Uber Eats driver.
-
-Soy tu conductor de Uber Eats.
-
-
 Are you Sarah?
 
 Are you Sarah?
 
 ¿Eres Sarah?
-
-
-Hi! I'm Carlos, your driver today.
-
-Hi! I'm Carlos, your driver today.
-
-Hola! Soy Carlos, tu conductor hoy.
-
 
 Is this 425 Main Street?
 
@@ -32,20 +16,11 @@ Is this 425 Main Street?
 
 ¿Esta es la 425 de la calle Main?
 
-
-I have your order from McDonald's.
-
-I have your order from McDonald's.
-
-Tengo tu pedido de McDonald's.
-
-
 Where would you like me to leave it?
 
 Where would you like me to leave it?
 
 ¿Dónde quieres que lo deje?
-
 
 I see your note. No problem!
 
@@ -53,20 +28,11 @@ I see your note. No problem!
 
 Vi tu nota. ¡Sin problema!
 
-
-I'm having trouble finding your address.
-
-I'm having trouble finding your address.
-
-Tengo problemas para encontrar tu
-
-
 Can you come outside?
 
 Can you come outside?
 
 ¿Puedes salir afuera?
-
 
 What color is your house?
 
@@ -74,41 +40,11 @@ What color is your house?
 
 ¿De qué color es tu casa?
 
-
-I'm at the gate. What's the code?
-
-I'm at the gate. What's the code?
-
-Estoy en la puerta. ¿Cuál es el código?
-
-
-I'm here. I'm in a blue car.
-
-I'm here. I'm in a blue car.
-
-Ya llegué. Estoy en un carro azul.
-
-
-Hi! I'm outside with your order.
-
-Hi! I'm outside with your order.
-
-Hola! Estoy afuera con tu pedido.
-
-
 Can you give me directions?
 
 Can you give me directions?
 
 ¿Me puedes dar instrucciones?
-
-
-Sorry, I'm running a little late.
-
-Sorry, I'm running a little late.
-
-Disculpa, voy un poco retrasado.
-
 
 Can you meet me in the lobby?
 
@@ -116,13 +52,11 @@ Can you meet me in the lobby?
 
 ¿Puedes encontrarme en el lobby?
 
-
 Here you go! Have a great day!
 
 Here you go! Have a great day!
 
 ¡Aquí tienes! ¡Que tengas un gran día!
-
 
 Thank you! Take care!
 
@@ -130,10 +64,14 @@ Thank you! Take care!
 
 ¡Gracias! ¡Cuídate!
 
-
 Enjoy your meal!
 
 Enjoy your meal!
 
 ¡Buen provecho!
 
+I left it at the door for you.
+
+I left it at the door for you.
+
+Lo dejé en la puerta para ti.

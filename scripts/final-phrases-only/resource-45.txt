@@ -4,13 +4,11 @@ Accident / Collision
 
 Accidente / Colisión
 
-
 Injured
 
 Injured
 
 Herido / Lesionado
-
 
 Police report
 
@@ -18,13 +16,11 @@ Police report
 
 Reporte policial / Informe policial
 
-
 Insurance
 
 Insurance
 
 Seguro
-
 
 Witness
 
@@ -32,13 +28,11 @@ Witness
 
 Testigo
 
-
 Damage
 
 Damage
 
 Daño
-
 
 License and registration
 
@@ -46,3 +40,50 @@ License and registration
 
 Licencia y registro
 
+Are you okay? Are you hurt anywhere?
+
+Are you okay? Are you hurt anywhere?
+
+¿Está bien? ¿Está herido/a en alguna parte?
+
+I need to report a traffic accident at [location]. [Anyone injured? Yes/No]. [Number of vehicles involved]. [Blocking traffic? Yes/No].
+
+I need to report a traffic accident at [location]. [Anyone injured? Yes/No]. [Number of vehicles involved]. [Blocking traffic? Yes/No].
+
+Necesito reportar un accidente de tráfico en [ubicación]. [¿Alguien herido? Sí/No]. [Número de vehículos involucrados]. [¿Bloqueando tráfico? Sí/No].
+
+We need to exchange insurance information. Here is my information. May I see your license and insurance card?
+
+We need to exchange insurance information. Here is my information. May I see your license and insurance card?
+
+Necesitamos intercambiar información de seguro. Aquí está mi información. ¿Puedo ver su licencia y tarjeta de seguro?
+
+Excuse me, did you see what happened? Would you be willing to provide your contact information as a witness?
+
+Excuse me, did you see what happened? Would you be willing to provide your contact information as a witness?
+
+Disculpe, ¿vio lo que pasó? ¿Estaría dispuesto/a a proveer su información de contacto como testigo?
+
+Are you okay? Are you hurt at all?
+
+Are you okay? Are you hurt at all?
+
+¿Está bien? ¿Está herido/a?
+
+I'm sorry this happened. I'm calling 911 and my platform immediately. Please stay calm and don't move if you feel any pain.
+
+I'm sorry this happened. I'm calling 911 and my platform immediately. Please stay calm and don't move if you feel any pain.
+
+Lamento que esto haya pasado. Estoy llamando al 911 y a mi plataforma inmediatamente. Por favor mantenga la calma y no se mueva si siente algún dolor.
+
+You're covered by the platform's insurance. They will handle all medical costs and any other expenses.
+
+You're covered by the platform's insurance. They will handle all medical costs and any other expenses.
+
+Está cubierto/a por el seguro de la plataforma. Ellos manejarán todos los costos médicos y cualquier otro gasto.
+
+I need your contact information for the insurance report. The platform will follow up with you about this incident.
+
+I need your contact information for the insurance report. The platform will follow up with you about this incident.
+
+Necesito su información de contacto para el reporte de seguro. La plataforma hará seguimiento con usted sobre este incidente.

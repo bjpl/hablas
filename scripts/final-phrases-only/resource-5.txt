@@ -1,139 +1,53 @@
-Can you double-check this order? The customer requested extra items.
+Can you double-check this order? The
 
-Can you double-check this order? The customer requested extra items.
+Can you double-check this order? The
 
 ¿Puede verificar este pedido dos veces?
 
+The customer has allergies. Did you
 
-I apologize, but the restaurant didn't include the item. Would you like me to go back?
-
-I apologize, but the restaurant didn't include the item. Would you like me to go back?
-
-Disculpe, pero el restaurante no
-
-
-The customer has allergies. Did you prepare this without ingredient?
-
-The customer has allergies. Did you prepare this without ingredient?
+The customer has allergies. Did you
 
 El cliente tiene alergias. ¿Prepararon
 
+The restaurant says this is what was
 
-I'm very sorry, but I think there's been a mix-up. Let me contact support right away.
-
-I'm very sorry, but I think there's been a mix-up. Let me contact support right away.
-
-Lo siento mucho, pero creo que hubo una
-
-
-The restaurant says this is what was ordered. Can you check your app to confirm?
-
-The restaurant says this is what was ordered. Can you check your app to confirm?
+The restaurant says this is what was
 
 El restaurante dice que esto es lo que
 
+Your delivery notes say [instruction],
 
-Hi, I'm having trouble finding your address. My GPS shows it doesn't exist. Can you help?
-
-Hi, I'm having trouble finding your address. My GPS shows it doesn't exist. Can you help?
-
-Hola, estoy teniendo problemas para
-
-
-I'm close by. What color is your house? Are there any cars in the driveway?
-
-I'm close by. What color is your house? Are there any cars in the driveway?
-
-Estoy cerca. ¿De qué color es su casa?
-
-
-I'm at your building, but I don't see apartment numbers. Which entrance should I use?
-
-I'm at your building, but I don't see apartment numbers. Which entrance should I use?
-
-Estoy en su edificio, pero no veo
-
-
-Your delivery notes say [instruction], but I'm not sure what you mean. Can you clarify?
-
-Your delivery notes say [instruction], but I'm not sure what you mean. Can you clarify?
+Your delivery notes say [instruction],
 
 Sus notas de entrega dicen
 
+Good evening, I have a food delivery for
 
-Just to confirm, you're at [address], correct? I want to make sure I'm at the right place.
-
-Just to confirm, you're at [address], correct? I want to make sure I'm at the right place.
-
-Solo para confirmar, ¿está en
-
-
-Hi, I'm at your building's gate. What's the access code to get in?
-
-Hi, I'm at your building's gate. What's the access code to get in?
-
-Hola, estoy en la puerta de su edificio.
-
-
-Good evening, I have a food delivery for [customer name] in apartment [number].
-
-Good evening, I have a food delivery for [customer name] in apartment [number].
+Good evening, I have a food delivery for
 
 Buenas noches, tengo una entrega de
 
+The building appears to be closed. Are
 
-I'm unable to access your building. Could you please come down to the lobby to meet me?
-
-I'm unable to access your building. Could you please come down to the lobby to meet me?
-
-No puedo acceder a su edificio. ¿Podría
-
-
-The building appears to be closed. Are you still inside? How can I reach you?
-
-The building appears to be closed. Are you still inside? How can I reach you?
+The building appears to be closed. Are
 
 El edificio parece estar cerrado. ¿Aún
 
+Hi, the elevator is out of order. I have
 
-Hi, the elevator is out of order. I have your food but can't get to your floor. Any suggestions?
-
-Hi, the elevator is out of order. I have your food but can't get to your floor. Any suggestions?
+Hi, the elevator is out of order. I have
 
 Hola, el ascensor no funciona. Tengo su
 
+I completely understand your frustration.
 
-I completely understand your frustration. The restaurant took longer than expected. I got here as quickly as I could.
-
-I completely understand your frustration. The restaurant took longer than expected. I got here as quickly as I could.
+I completely understand your frustration.
 
 Entiendo completamente su frustración.
 
+I understand, but I need to complete this
 
-I'm sorry you want to cancel. I've already picked up and driven here. You'll need to contact support for a refund.
-
-I'm sorry you want to cancel. I've already picked up and driven here. You'll need to contact support for a refund.
-
-Lamento que quiera cancelar. Ya recogí
-
-
-I understand, but I need to complete this delivery. Please contact customer service with any concerns.
-
-I understand, but I need to complete this delivery. Please contact customer service with any concerns.
+I understand, but I need to complete this
 
 Entiendo, pero necesito completar esta
-
-
-I'm not able to do that. I need to go now. Have a good evening.
-
-I'm not able to do that. I need to go now. Have a good evening.
-
-No puedo hacer eso. Necesito irme
-
-
-Is this everything?
-
-Is this everything?
-
-¿Esto es todo?
-

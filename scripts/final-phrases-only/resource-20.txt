@@ -1,30 +1,8 @@
-I'm here at the pickup location. Are you on your way?
+No problem. You can cancel through the
 
-I'm here at the pickup location. Are you on your way?
-
-Estoy aquí en el punto de recogida.
-
-
-I can wait for two more minutes, then I'll have to cancel.
-
-I can wait for two more minutes, then I'll have to cancel.
-
-Puedo esperar dos minutos más, luego
-
-
-I'm sorry, but I've been waiting for five minutes. I have to cancel and take another ride.
-
-I'm sorry, but I've been waiting for five minutes. I have to cancel and take another ride.
-
-Lo siento, pero he estado esperando
-
-
-No problem. You can cancel through the app.
-
-No problem. You can cancel through the app.
+No problem. You can cancel through the
 
 No hay problema. Puedes cancelar a
-
 
 I understand. Thanks for letting me know.
 
@@ -32,108 +10,44 @@ I understand. Thanks for letting me know.
 
 Entiendo. Gracias por avisarme.
 
+I see the app says [address], but you
 
-I'm at the pin location. Where exactly are you?
-
-I'm at the pin location. Where exactly are you?
-
-Estoy en la ubicación del pin. ¿Dónde
-
-
-I'm in a [color] [car model] parked near the main entrance.
-
-I'm in a [color] [car model] parked near the main entrance.
-
-Estoy en un [color] [modelo] estacionado
-
-
-The GPS brought me here, but I don't see the address. Can you give me more details?
-
-The GPS brought me here, but I don't see the address. Can you give me more details?
-
-El GPS me trajo aquí, pero no veo la
-
-
-I can't stop here. Can you meet me at the corner of street?
-
-I can't stop here. Can you meet me at the corner of street?
-
-No puedo parar aquí. ¿Puedes encontrarme
-
-
-I see the app says [address], but you want to go to [different address]. Is that correct?
-
-I see the app says [address], but you want to go to [different address]. Is that correct?
+I see the app says [address], but you
 
 Veo que la app dice [dirección], pero
 
+The price is higher because of surge
 
-The price is higher because of surge pricing. The app calculates it automatically.
-
-The price is higher because of surge pricing. The app calculates it automatically.
+The price is higher because of surge
 
 El precio es más alto por tarifa
 
+Prices vary depending on demand, time of
 
-I don't set the prices. You can contact support through the app if you have concerns.
-
-I don't set the prices. You can contact support through the app if you have concerns.
-
-Yo no establezco los precios. Puedes
-
-
-There's an extra charge for [tolls/extra stops/waiting time]. It's added automatically.
-
-There's an extra charge for [tolls/extra stops/waiting time]. It's added automatically.
-
-Hay un cargo extra por [peajes/paradas
-
-
-Prices vary depending on demand, time of day, and traffic conditions.
-
-Prices vary depending on demand, time of day, and traffic conditions.
+Prices vary depending on demand, time of
 
 Los precios varían dependiendo de la
 
+I need you to speak to me respectfully,
 
-I'm not able to change the fare, but you can apply a promo code in the app.
-
-I'm not able to change the fare, but you can apply a promo code in the app.
-
-No puedo cambiar la tarifa, pero puedes
-
-
-I need you to speak to me respectfully, or I'll have to end the ride.
-
-I need you to speak to me respectfully, or I'll have to end the ride.
+I need you to speak to me respectfully,
 
 Necesito que me hables respetuosamente,
 
+If you continue this behavior, I will
 
-If you continue this behavior, I will have to pull over and end the ride safely.
-
-If you continue this behavior, I will have to pull over and end the ride safely.
+If you continue this behavior, I will
 
 Si continúas este comportamiento, tendré
 
+I can help you with your luggage, but
 
-I'm ending the ride here for safety reasons. Please exit the vehicle.
+I can help you with your luggage, but
 
-I'm ending the ride here for safety reasons. Please exit the vehicle.
+Puedo ayudarte con tu equipaje, pero
 
-Estoy terminando el viaje aquí por
+Pets need to be in a carrier for safety
 
+Pets need to be in a carrier for safety
 
-I'm following the GPS and driving safely. This is the best route right now.
-
-I'm following the GPS and driving safely. This is the best route right now.
-
-Estoy siguiendo el GPS y manejando de
-
-
-I'm sorry, but I can't do that. It's against company policy.
-
-I'm sorry, but I can't do that. It's against company policy.
-
-Lo siento, pero no puedo hacer eso. Es
-
+Las mascotas deben estar en una

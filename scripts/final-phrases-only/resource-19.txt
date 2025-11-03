@@ -1,16 +1,8 @@
-What's the address?
-
-What's the address?
-
-¿Cuál es la dirección?
-
-
 Is it number 245?
 
 Is it number 245?
 
 ¿Es el número 245?
-
 
 Is this Main Street?
 
@@ -18,41 +10,11 @@ Is this Main Street?
 
 ¿Es esta la calle Main?
 
-
-Turn right
-
-Turn right
-
-Gira a la derecha / Gira a la izquierda
-
-
-Continue straight
-
-Continue straight
-
-Continúa recto / Ve recto
-
-
-In 500 feet
-
-In 500 feet
-
-En 500 pies / En media milla
-
-
-You have arrived
-
-You have arrived
-
-Has llegado / Tu destino
-
-
 How do I get there?
 
 How do I get there?
 
 ¿Cómo llego ahí?
-
 
 Where do I turn?
 
@@ -60,13 +22,11 @@ Where do I turn?
 
 ¿Dónde giro?
 
-
 Am I going the right way?
 
 Am I going the right way?
 
 ¿Voy por el camino correcto?
-
 
 Which side of the street?
 
@@ -74,34 +34,11 @@ Which side of the street?
 
 ¿Qué lado de la calle?
 
-
-I can't find the address
-
-I can't find the address
-
-No puedo encontrar la dirección
-
-
-My GPS isn't working
-
-My GPS isn't working
-
-Mi GPS no está funcionando
-
-
 The address is wrong in the app
 
 The address is wrong in the app
 
 La dirección está mal en la app
-
-
-Can you come outside? I can't find you
-
-Can you come outside? I can't find you
-
-¿Puedes salir? No te puedo encontrar
-
 
 Do you prefer a different route?
 
@@ -109,31 +46,32 @@ Do you prefer a different route?
 
 ¿Prefieres una ruta diferente?
 
-
-There's traffic ahead
-
-There's traffic ahead
-
-Hay tráfico adelante
-
-
-I'll take a different way
-
-I'll take a different way
-
-Tomaré un camino diferente
-
-
 Should I take the highway?
 
 Should I take the highway?
 
 ¿Debería tomar la autopista?
 
+Which corner?
 
-Is it near the McDonald's?
+Which corner?
 
-Is it near the McDonald's?
+¿Qué esquina?
 
-¿Está cerca del McDonald's?
+Where should I stop?
 
+Where should I stop?
+
+¿Dónde debería parar?
+
+Can I park here?
+
+Can I park here?
+
+¿Puedo estacionarme aquí?
+
+I can pull up closer
+
+I can pull up closer
+
+Puedo acercarme más

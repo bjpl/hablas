@@ -1,20 +1,29 @@
-Hi, I have your delivery
+Hi, I'm here with your DoorDash order
 
-Hi, I have your delivery
+Hi, I'm here with your DoorDash order
 
-Hola, tengo su entrega
+Hola, estoy aquí con su pedido de DoorDash
 
+Are you Maria?
 
-Thank you
+Are you Maria?
 
-Thank you
+¿Es usted María?
 
-Gracias
+Here's your order from Chipotle. Everything is in the bag.
 
+Here's your order from Chipotle. Everything is in the bag.
 
-Have a great day
+Aquí está su pedido de Chipotle. Todo está en la bolsa.
 
-Have a great day
+Careful, there are drinks in here
 
-Que tenga un gran día
+Careful, there are drinks in here
 
+Cuidado, hay bebidas aquí adentro
+
+You're all set. Have a great day!
+
+You're all set. Have a great day!
+
+Está todo listo. ¡Que tenga un excelente día!

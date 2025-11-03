@@ -1,9 +1,8 @@
----------
+Breakdown
 
----------
+Breakdown
 
----------------
-
+Avería / Falla mecánica
 
 Flat tire
 
@@ -11,6 +10,17 @@ Flat tire
 
 Llanta ponchada / pinchada
 
+Dead battery
+
+Dead battery
+
+Batería muerta / descargada
+
+Overheating
+
+Overheating
+
+Sobrecalentamiento
 
 Out of gas
 
@@ -18,6 +28,17 @@ Out of gas
 
 Sin gasolina
 
+Tow truck
+
+Tow truck
+
+Grúa
+
+Roadside assistance
+
+Roadside assistance
+
+Asistencia en carretera
 
 My vehicle has broken down
 
@@ -25,13 +46,11 @@ My vehicle has broken down
 
 Mi vehículo se ha averiado
 
-
 I need to pull over immediately
 
 I need to pull over immediately
 
 Necesito detenerme inmediatamente
-
 
 I'm calling roadside assistance
 
@@ -39,13 +58,11 @@ I'm calling roadside assistance
 
 Estoy llamando a asistencia en carretera
 
-
 I apologize, but I cannot continue this trip
 
 I apologize, but I cannot continue this trip
 
 Disculpe, pero no puedo continuar este viaje
-
 
 You won't be charged for this trip
 
@@ -53,3 +70,26 @@ You won't be charged for this trip
 
 No se le cobrará por este viaje
 
+I sincerely apologize for this mechanical issue
+
+I sincerely apologize for this mechanical issue
+
+Lamento sinceramente este problema mecánico
+
+The platform will arrange another ride for you at no charge
+
+The platform will arrange another ride for you at no charge
+
+La plataforma le organizará otro viaje sin cargo
+
+Please stay in the vehicle until we're in a safe location
+
+Please stay in the vehicle until we're in a safe location
+
+Por favor permanezca en el vehículo hasta que estemos en un lugar seguro
+
+I'll help you request another driver right now
+
+I'll help you request another driver right now
+
+Le ayudaré a solicitar otro conductor ahora mismo

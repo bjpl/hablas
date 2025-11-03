@@ -1,30 +1,8 @@
-How's your day going so far?
-
-How's your day going so far?
-
-¿Cómo va tu día hasta ahora?
-
-
-Nice weather we're having today.
-
-Nice weather we're having today.
-
-Qué buen clima tenemos hoy.
-
-
 Is the temperature okay for you?
 
 Is the temperature okay for you?
 
 ¿Está bien la temperatura para ti?
-
-
-Feel free to change the music if you'd like.
-
-Feel free to change the music if you'd like.
-
-Siéntete libre de cambiar la música si
-
 
 Are you from around here?
 
@@ -32,41 +10,11 @@ Are you from around here?
 
 ¿Eres de por aquí?
 
+The weather has been so unpredictable
 
-That's a nice part of town.
-
-That's a nice part of town.
-
-Esa es una buena zona de la ciudad.
-
-
-It's really hot out there today.
-
-It's really hot out there today.
-
-Hace mucho calor allá afuera hoy.
-
-
-It's freezing out there!
-
-It's freezing out there!
-
-¡Está helado allá afuera!
-
-
-Looks like we're going to get some rain.
-
-Looks like we're going to get some rain.
-
-Parece que va a llover.
-
-
-The weather has been so unpredictable lately.
-
-The weather has been so unpredictable lately.
+The weather has been so unpredictable
 
 El clima ha estado tan impredecible
-
 
 Finally some nice weather!
 
@@ -74,13 +22,11 @@ Finally some nice weather!
 
 ¡Por fin buen clima!
 
-
 Do you like this kind of weather?
 
 Do you like this kind of weather?
 
 ¿Te gusta este tipo de clima?
-
 
 This is perfect weather for [activity].
 
@@ -88,41 +34,29 @@ This is perfect weather for [activity].
 
 Este es el clima perfecto para
 
-
 Traffic is pretty heavy right now.
 
 Traffic is pretty heavy right now.
 
 El tráfico está bastante pesado ahora.
 
+We might be a few minutes late because of
 
-We might be a few minutes late because of the traffic.
-
-We might be a few minutes late because of the traffic.
+We might be a few minutes late because of
 
 Podríamos llegar unos minutos tarde por
 
+Are you in a hurry? I can try a different
 
-Are you in a hurry? I can try a different route.
-
-Are you in a hurry? I can try a different route.
+Are you in a hurry? I can try a different
 
 ¿Tienes prisa? Puedo intentar una ruta
 
+Rush hour traffic can be crazy around
 
-Rush hour traffic can be crazy around here.
-
-Rush hour traffic can be crazy around here.
+Rush hour traffic can be crazy around
 
 El tráfico de hora pico puede ser loco
-
-
-There's construction up ahead, that's why it's slow.
-
-There's construction up ahead, that's why it's slow.
-
-Hay construcción más adelante, por eso
-
 
 Traffic should clear up soon.
 
@@ -130,10 +64,14 @@ Traffic should clear up soon.
 
 El tráfico debería despejarse pronto.
 
+Drivers can be pretty aggressive during
 
-Drivers can be pretty aggressive during rush hour.
-
-Drivers can be pretty aggressive during rush hour.
+Drivers can be pretty aggressive during
 
 Los conductores pueden ser bastante
 
+Have you been to this city before?
+
+Have you been to this city before?
+
+¿Has estado en esta ciudad antes?

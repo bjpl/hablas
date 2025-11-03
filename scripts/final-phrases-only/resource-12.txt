@@ -4,13 +4,11 @@ Turn right
 
 Gira a la derecha
 
-
 Go straight
 
 Go straight
 
 Sigue derecho/recto
-
 
 Make a U-turn
 
@@ -18,13 +16,11 @@ Make a U-turn
 
 Haz un cambio de sentido/vuelta en U
 
-
 In 500 feet, turn right
 
 In 500 feet, turn right
 
 En 500 pies, gira a la derecha
-
 
 Are you going to Main Street?
 
@@ -32,20 +28,11 @@ Are you going to Main Street?
 
 ¿Vas a Main Street?
 
-
-What's the house number?
-
-What's the house number?
-
-¿Cuál es el número de la casa?
-
-
 Is it near the corner of First and Oak?
 
 Is it near the corner of First and Oak?
 
 ¿Está cerca de la esquina de First y
-
 
 Which side of the street?
 
@@ -53,20 +40,11 @@ Which side of the street?
 
 ¿De qué lado de la calle?
 
-
-I'm here, but I don't see you
-
-I'm here, but I don't see you
-
-Estoy aquí, pero no te veo
-
-
 What does the building look like?
 
 What does the building look like?
 
 ¿Cómo se ve el edificio?
-
 
 Do you see my car?
 
@@ -74,13 +52,11 @@ Do you see my car?
 
 ¿Ves mi carro?
 
-
 Can you meet me at the entrance?
 
 Can you meet me at the entrance?
 
 ¿Puedes encontrarme en la entrada?
-
 
 Excuse me, how do I get to Oak Street?
 
@@ -88,13 +64,11 @@ Excuse me, how do I get to Oak Street?
 
 Disculpe, ¿cómo llego a Oak Street?
 
-
 How far is it?
 
 How far is it?
 
 ¿Qué tan lejos está?
-
 
 So, I turn left at the light?
 
@@ -102,38 +76,38 @@ So, I turn left at the light?
 
 Entonces, ¿giro a la izquierda en el
 
+Can you guide me?
 
-Is it near the McDonald's?
+Can you guide me?
 
-Is it near the McDonald's?
+¿Puedes guiarme?
 
-¿Está cerca del McDonald's?
+The address in the app might be wrong
 
+The address in the app might be wrong
 
-It's past the gas station
+La dirección en la app podría estar
 
-It's past the gas station
+I lost the signal
 
-Está después de la gasolinera
+I lost the signal
 
+Perdí la señal
 
-It's next to the bank
+Is there a gate code?
 
-It's next to the bank
+Is there a gate code?
 
-Está al lado del banco
+¿Hay un código para la puerta?
 
+Which building are you in?
 
-It's between 5th and 6th Street
+Which building are you in?
 
-It's between 5th and 6th Street
+¿En qué edificio estás?
 
-Está entre la calle 5 y la calle 6
+What floor?
 
+What floor?
 
-It's on the corner
-
-It's on the corner
-
-Está en la esquina
-
+¿Qué piso?

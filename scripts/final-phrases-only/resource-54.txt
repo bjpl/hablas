@@ -4,13 +4,11 @@ Dasher
 
 Dasher / Repartidor
 
-
 Dash / Dashing
 
 Dash / Dashing
 
 Dash / Repartiendo
-
 
 Peak Pay
 
@@ -18,13 +16,11 @@ Peak Pay
 
 Pago pico / Bonificación de hora pico
 
-
 Base pay
 
 Base pay
 
 Pago base
-
 
 Completion rate
 
@@ -32,13 +28,11 @@ Completion rate
 
 Tasa de finalización
 
-
 Acceptance rate
 
 Acceptance rate
 
 Tasa de aceptación
-
 
 Hot Bag / Red Card
 
@@ -46,10 +40,20 @@ Hot Bag / Red Card
 
 Bolsa térmica / Tarjeta Roja
 
-
 Stacked order
 
 Stacked order
 
 Pedido apilado
 
+I'm ordering for DoorDash and paying with this card
+
+I'm ordering for DoorDash and paying with this card
+
+Estoy ordenando para DoorDash y pagando con esta tarjeta
+
+I've already picked up your order. Please contact DoorDash support for order changes.
+
+I've already picked up your order. Please contact DoorDash support for order changes.
+
+Ya recogí su pedido. Por favor contacte al soporte de DoorDash para cambios de pedido.

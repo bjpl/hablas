@@ -4,27 +4,11 @@ Hello! I have your delivery.
 
 ¡Hola! Tengo tu entrega.
 
-
 Hello! Are you Maria?
 
 Hello! Are you Maria?
 
 ¡Hola! ¿Eres María?
-
-
-Good morning! Here's your order.
-
-Good morning! Here's your order.
-
-¡Buenos días! Aquí está tu orden.
-
-
-Hi, I'm Carlos from Uber Eats.
-
-Hi, I'm Carlos from Uber Eats.
-
-Hola, soy Carlos de Uber Eats.
-
 
 Order for Michael?
 
@@ -32,13 +16,11 @@ Order for Michael?
 
 ¿Orden para Michael?
 
-
 Is this apartment 205?
 
 Is this apartment 205?
 
 ¿Este es el apartamento 205?
-
 
 Here is your order number.
 
@@ -46,20 +28,11 @@ Here is your order number.
 
 Aquí está tu número de orden.
 
-
 Did you order food?
 
 Did you order food?
 
 ¿Ordenaste comida?
-
-
-I can't find your address.
-
-I can't find your address.
-
-No puedo encontrar tu dirección.
-
 
 Can you come outside?
 
@@ -67,34 +40,11 @@ Can you come outside?
 
 ¿Puedes salir afuera?
 
-
 What is the gate code?
 
 What is the gate code?
 
 ¿Cuál es el código de la puerta?
-
-
-I'm at your door but nobody answers.
-
-I'm at your door but nobody answers.
-
-Estoy en tu puerta pero nadie responde.
-
-
-I'll leave it at the door.
-
-I'll leave it at the door.
-
-Lo dejaré en la puerta.
-
-
-Hi, I'm here for a pickup.
-
-Hi, I'm here for a pickup.
-
-Hola, estoy aquí para recoger.
-
 
 Pickup for Jennifer.
 
@@ -102,13 +52,11 @@ Pickup for Jennifer.
 
 Recoger para Jennifer.
 
-
 Order number 4523.
 
 Order number 4523.
 
 Número de orden 4523.
-
 
 Is it ready?
 
@@ -116,13 +64,11 @@ Is it ready?
 
 ¿Está lista?
 
-
 Can I have extra napkins, please?
 
 Can I have extra napkins, please?
 
 ¿Puedo tener servilletas extra, por
-
 
 Can you help me find you?
 
@@ -130,10 +76,8 @@ Can you help me find you?
 
 ¿Puedes ayudarme a encontrarte?
 
+Which building is it?
 
-I'm in front of the building.
+Which building is it?
 
-I'm in front of the building.
-
-Estoy enfrente del edificio.
-
+¿Cuál edificio es?

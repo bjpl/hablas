@@ -1,20 +1,71 @@
-Hi, I have your delivery
+Misunderstanding
 
-Hi, I have your delivery
+Misunderstanding
 
-Hola, tengo su entrega
+Malentendido
 
+Resolution
 
-Thank you
+Resolution
 
-Thank you
+Resolución
 
-Gracias
+Upset / Frustrated
 
+Upset / Frustrated
 
-Have a great day
+Molesto / Frustrado
 
-Have a great day
+Calm
 
-Que tenga un gran día
+Calm
 
+Calmado / Tranquilo
+
+Complaint
+
+Complaint
+
+Queja
+
+Documentation
+
+Documentation
+
+Documentación
+
+I understand you're upset. Let's work together to fix this
+
+I understand you're upset. Let's work together to fix this
+
+Entiendo que está molesto. Trabajemos juntos para resolver esto
+
+I take full responsibility for this error
+
+I take full responsibility for this error
+
+Asumo toda la responsabilidad por este error
+
+Let me make this right for you
+
+Let me make this right for you
+
+Permítame corregir esto para usted
+
+I need you to speak calmly so I can help you
+
+I need you to speak calmly so I can help you
+
+Necesito que hable con calma para poder ayudarle
+
+I will contact support on your behalf
+
+I will contact support on your behalf
+
+Contactaré al soporte en su nombre
+
+Can we agree on this solution?
+
+Can we agree on this solution?
+
+¿Podemos acordar esta solución?

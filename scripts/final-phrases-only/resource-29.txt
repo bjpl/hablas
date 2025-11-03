@@ -1,30 +1,26 @@
-Zero, one, two, three, four, five, six, seven, eight, nine, ten
+Zero, one, two, three, four, five, six,
 
-Zero, one, two, three, four, five, six, seven, eight, nine, ten
+Zero, one, two, three, four, five, six,
 
 Cero, uno, dos, tres, cuatro, cinco,
 
+Eleven, twelve, thirteen, fourteen,
 
-Eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty
-
-Eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty
+Eleven, twelve, thirteen, fourteen,
 
 Once, doce, trece, catorce, quince,
 
+Twenty, thirty, forty, fifty, sixty,
 
-Twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred
-
-Twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred
+Twenty, thirty, forty, fifty, sixty,
 
 Veinte, treinta, cuarenta, cincuenta,
 
+Twenty-five, thirty-seven, forty-two,
 
-Twenty-five, thirty-seven, forty-two, fifty-eight
-
-Twenty-five, thirty-seven, forty-two, fifty-eight
+Twenty-five, thirty-seven, forty-two,
 
 Veinticinco, treinta y siete, cuarenta
-
 
 Is this 245 Oak Street?
 
@@ -32,13 +28,11 @@ Is this 245 Oak Street?
 
 ¿Es este el 245 de la calle Oak?
 
-
 Number 328?
 
 Number 328?
 
 ¿Número 328?
-
 
 What street is this?
 
@@ -46,20 +40,11 @@ What street is this?
 
 ¿Qué calle es esta?
 
-
 Is this Main Street?
 
 Is this Main Street?
 
 ¿Esta es la calle Main?
-
-
-What's the apartment number?
-
-What's the apartment number?
-
-¿Cuál es el número de apartamento?
-
 
 Apartment 3B?
 
@@ -67,20 +52,11 @@ Apartment 3B?
 
 ¿Apartamento 3B?
 
-
-I'm looking for Suite 201
-
-I'm looking for Suite 201
-
-Estoy buscando la Suite 201
-
-
 Where is apartment 15?
 
 Where is apartment 15?
 
 ¿Dónde está el apartamento 15?
-
 
 What floor?
 
@@ -88,20 +64,11 @@ What floor?
 
 ¿Qué piso?
 
-
 Third floor?
 
 Third floor?
 
 ¿Tercer piso?
-
-
-I'm going to the fifth floor
-
-I'm going to the fifth floor
-
-Voy al quinto piso
-
 
 Is this Building A or Building B?
 
@@ -109,13 +76,11 @@ Is this Building A or Building B?
 
 ¿Este es el Edificio A o el Edificio B?
 
-
 Is it on the corner?
 
 Is it on the corner?
 
 ¿Está en la esquina?
-
 
 Which side of the street?
 
@@ -123,13 +88,11 @@ Which side of the street?
 
 ¿Qué lado de la calle?
 
-
 Is it near the Starbucks?
 
 Is it near the Starbucks?
 
 ¿Está cerca del Starbucks?
-
 
 Is it in front or in back?
 
@@ -137,3 +100,20 @@ Is it in front or in back?
 
 ¿Está enfrente o atrás?
 
+Excuse me, can you help me find this
+
+Excuse me, can you help me find this
+
+Disculpe, ¿puede ayudarme a encontrar
+
+I have a delivery for apartment 5C
+
+I have a delivery for apartment 5C
+
+Tengo una entrega para el apartamento 5C
+
+How do I get there?
+
+How do I get there?
+
+¿Cómo llego allá?

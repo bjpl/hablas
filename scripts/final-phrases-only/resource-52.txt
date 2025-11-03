@@ -4,13 +4,11 @@ Severe weather
 
 Clima severo
 
-
 Tornado
 
 Tornado
 
 Tornado
-
 
 Flash flood
 
@@ -18,13 +16,11 @@ Flash flood
 
 Inundación repentina
 
-
 Ice / Black ice
 
 Ice / Black ice
 
 Hielo / Hielo negro
-
 
 Zero visibility
 
@@ -32,10 +28,44 @@ Zero visibility
 
 Visibilidad cero
 
-
 Shelter
 
 Shelter
 
 Refugio
 
+There's a tornado warning. We need to take shelter immediately. Follow me to [building/safe area].
+
+There's a tornado warning. We need to take shelter immediately. Follow me to [building/safe area].
+
+Hay una alerta de tornado. Necesitamos refugiarnos inmediatamente. Sígame hacia [edificio/área segura].
+
+Taking emergency shelter due to tornado warning at [location]. Will update when safe.
+
+Taking emergency shelter due to tornado warning at [location]. Will update when safe.
+
+Tomando refugio de emergencia debido a alerta de tornado en [ubicación]. Actualizaré cuando esté a salvo.
+
+The road ahead is flooded. For safety, I must take an alternate route or end the trip here.
+
+The road ahead is flooded. For safety, I must take an alternate route or end the trip here.
+
+El camino adelante está inundado. Por seguridad, debo tomar una ruta alternativa o terminar el viaje aquí.
+
+Road conditions are icy. I need to drive much slower than normal for everyone's safety.
+
+Road conditions are icy. I need to drive much slower than normal for everyone's safety.
+
+Las condiciones del camino están heladas. Necesito conducir mucho más lento de lo normal por la seguridad de todos.
+
+I need to drive slower/stop temporarily due to dangerous weather conditions. Your safety is my priority.
+
+I need to drive slower/stop temporarily due to dangerous weather conditions. Your safety is my priority.
+
+Necesito conducir más lento/detenerme temporalmente debido a condiciones climáticas peligrosas. Su seguridad es mi prioridad.
+
+Due to severe weather conditions, I cannot safely complete this trip. The platform can arrange alternative transportation.
+
+Due to severe weather conditions, I cannot safely complete this trip. The platform can arrange alternative transportation.
+
+Debido a condiciones climáticas severas, no puedo completar este viaje de forma segura. La plataforma puede organizar transporte alternativo.

@@ -1,65 +1,8 @@
-It's three o'clock.
-
-It's three o'clock.
-
-Son las tres en punto.
-
-
-It's three thirty.
-
-It's three thirty.
-
-Son las tres y media.
-
-
-It's seven AM.
-
-It's seven AM.
-
-Son las siete de la mañana.
-
-
-Around five o'clock.
-
-Around five o'clock.
-
-Alrededor de las cinco.
-
-
-I'll be there in five minutes.
-
-I'll be there in five minutes.
-
-Llegaré en cinco minutos.
-
-
-It's about twenty minutes away.
-
-It's about twenty minutes away.
-
-Está a unos veinte minutos.
-
-
-I'm here.
-
-I'm here.
-
-Ya llegué / Estoy aquí.
-
-
-I'm waiting for the order.
-
-I'm waiting for the order.
-
-Estoy esperando la orden.
-
-
 How long will it take?
 
 How long will it take?
 
 ¿Cuánto tiempo tomará?
-
 
 The trip takes thirty minutes.
 
@@ -67,20 +10,11 @@ The trip takes thirty minutes.
 
 El viaje toma treinta minutos.
 
-
-There's traffic right now.
-
-There's traffic right now.
-
-Hay tráfico ahora mismo.
-
-
 It depends on traffic.
 
 It depends on traffic.
 
 Depende del tráfico.
-
 
 Just a few minutes.
 
@@ -88,41 +22,11 @@ Just a few minutes.
 
 Solo unos minutos.
 
-
-It's taking longer than expected.
-
-It's taking longer than expected.
-
-Está tomando más tiempo de lo esperado.
-
-
-Sorry I'm late.
-
-Sorry I'm late.
-
-Perdón por llegar tarde.
-
-
 There was an accident on the road.
 
 There was an accident on the road.
 
 Hubo un accidente en el camino.
-
-
-I'm running a little late.
-
-I'm running a little late.
-
-Voy un poco tarde.
-
-
-I'll be there in ten more minutes.
-
-I'll be there in ten more minutes.
-
-Llegaré en diez minutos más.
-
 
 Thank you for your patience.
 
@@ -130,10 +34,26 @@ Thank you for your patience.
 
 Gracias por tu paciencia.
 
-
 What time is it?
 
 What time is it?
 
 ¿Qué hora es?
 
+What time do you close?
+
+What time do you close?
+
+¿A qué hora cierran?
+
+What time will it be ready?
+
+What time will it be ready?
+
+¿A qué hora estará listo?
+
+What time should I pick you up?
+
+What time should I pick you up?
+
+¿A qué hora debo recogerte?

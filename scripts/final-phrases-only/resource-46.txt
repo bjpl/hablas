@@ -4,13 +4,11 @@ Dispute
 
 Disputa / Desacuerdo
 
-
 Refund
 
 Refund
 
 Reembolso
-
 
 Escalate
 
@@ -18,13 +16,11 @@ Escalate
 
 Escalar
 
-
 Resolution
 
 Resolution
 
 Resolución
-
 
 Documentation
 
@@ -32,10 +28,44 @@ Documentation
 
 Documentación
 
-
 Witness
 
 Witness
 
 Testigo
 
+I understand your concern about the fare. The price is set by the app based on distance, time, and demand. I cannot change it, but you can dispute it through the app support.
+
+I understand your concern about the fare. The price is set by the app based on distance, time, and demand. I cannot change it, but you can dispute it through the app support.
+
+Entiendo su preocupación por la tarifa. El precio lo establece la aplicación según distancia, tiempo y demanda. No puedo cambiarlo, pero puede disputarlo a través del soporte de la aplicación.
+
+I'm sorry you feel that way. Can you tell me specifically what I can do to improve your experience right now?
+
+I'm sorry you feel that way. Can you tell me specifically what I can do to improve your experience right now?
+
+Lamento que se sienta así. ¿Puede decirme específicamente qué puedo hacer para mejorar su experiencia ahora mismo?
+
+I followed the app's navigation to avoid traffic. Here's the route we took. If you prefer a different route, I'm happy to use it.
+
+I followed the app's navigation to avoid traffic. Here's the route we took. If you prefer a different route, I'm happy to use it.
+
+Seguí la navegación de la aplicación para evitar tráfico. Aquí está la ruta que tomamos. Si prefiere una ruta diferente, con gusto la uso.
+
+I need us to communicate respectfully. If you cannot, I will have to end this trip.
+
+I need us to communicate respectfully. If you cannot, I will have to end this trip.
+
+Necesito que nos comuniquemos respetuosamente. Si no puede, tendré que terminar este viaje.
+
+I'm getting you home safely. Please remain calm and seated.
+
+I'm getting you home safely. Please remain calm and seated.
+
+Lo/La estoy llevando a casa de forma segura. Por favor manténgase calmado/a y sentado/a.
+
+I understand you're upset. All trip details are recorded by the platform including GPS, time, and communication. I'll submit a report about this conversation.
+
+I understand you're upset. All trip details are recorded by the platform including GPS, time, and communication. I'll submit a report about this conversation.
+
+Entiendo que está molesto/a. Todos los detalles del viaje son registrados por la plataforma incluyendo GPS, tiempo y comunicación. Enviaré un reporte sobre esta conversación.

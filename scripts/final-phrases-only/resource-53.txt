@@ -4,13 +4,11 @@ TNC lot / Staging area
 
 Área de espera TNC / Zona de preparación
 
-
 Geofence / Designated pickup area
 
 Geofence / Designated pickup area
 
 Geo-cerca / Área designada de recogida
-
 
 Terminal / Concourse
 
@@ -18,13 +16,11 @@ Terminal / Concourse
 
 Terminal / Concurso
 
-
 Arrivals / Departures
 
 Arrivals / Departures
 
 Llegadas / Salidas
-
 
 Baggage claim
 
@@ -32,10 +28,92 @@ Baggage claim
 
 Reclamo de equipaje
 
-
 Curbside
 
 Curbside
 
 A la orilla de la acera / En la banqueta
 
+[Text] I'm in the rideshare pickup area at [terminal/location]. What color clothing are you wearing?
+
+[Text] I'm in the rideshare pickup area at [terminal/location]. What color clothing are you wearing?
+
+Estoy en el área de recogida de rideshare en [terminal/ubicación]. ¿De qué color es su ropa?
+
+I'm in the [color] [vehicle]. I see you!
+
+I'm in the [color] [vehicle]. I see you!
+
+Estoy en el [color] [vehículo]. ¡Lo/La veo!
+
+I'm coming around again - traffic is heavy
+
+I'm coming around again - traffic is heavy
+
+Voy a dar otra vuelta - el tráfico está pesado
+
+Let me help you with your bags
+
+Let me help you with your bags
+
+Permítame ayudarle con su equipaje
+
+Where would you like these? Trunk or back seat?
+
+Where would you like these? Trunk or back seat?
+
+¿Dónde quisiera estos? ¿Maletero o asiento trasero?
+
+Is this all your luggage?
+
+Is this all your luggage?
+
+¿Este es todo su equipaje?
+
+I'll do my best to fit everything. If it doesn't all fit, you may need a larger vehicle like an XL.
+
+I'll do my best to fit everything. If it doesn't all fit, you may need a larger vehicle like an XL.
+
+Haré mi mejor esfuerzo para que todo quepa. Si no cabe todo, podría necesitar un vehículo más grande como XL.
+
+Which airline are you flying? Which terminal?
+
+Which airline are you flying? Which terminal?
+
+¿Con qué aerolínea viaja? ¿Qué terminal?
+
+Domestic or international flight?
+
+Domestic or international flight?
+
+¿Vuelo doméstico o internacional?
+
+I'll pull up right here. Airport security doesn't allow us to wait, so please have your things ready.
+
+I'll pull up right here. Airport security doesn't allow us to wait, so please have your things ready.
+
+Me detendré aquí mismo. La seguridad del aeropuerto no nos permite esperar, así que por favor tenga sus cosas listas.
+
+Pop the trunk - I'll get your bags
+
+Pop the trunk - I'll get your bags
+
+Abra la cajuela - sacaré su equipaje
+
+What time is your flight? We'll get you there as quickly and safely as possible.
+
+What time is your flight? We'll get you there as quickly and safely as possible.
+
+¿A qué hora es su vuelo? Lo/La llevaré lo más rápido y seguro posible.
+
+Traffic is heavy, but I'll take the fastest route available.
+
+Traffic is heavy, but I'll take the fastest route available.
+
+El tráfico está pesado, pero tomaré la ruta más rápida disponible.
+
+I understand you're in a hurry, but I must follow traffic laws for both our safety.
+
+I understand you're in a hurry, but I must follow traffic laws for both our safety.
+
+Entiendo que tiene prisa, pero debo seguir las leyes de tráfico por la seguridad de ambos.

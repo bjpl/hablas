@@ -4,20 +4,17 @@ Surge pricing
 
 Tarifa de demanda alta / Surge
 
-
 Upfront pricing
 
 Upfront pricing
 
 Precio anticipado
 
-
 Pool / UberX / Comfort / XL
 
 Pool / UberX / Comfort / XL
 
 Pool / UberX / Comfort / XL
-
 
 Acceptance rate
 
@@ -25,13 +22,11 @@ Acceptance rate
 
 Tasa de aceptación
 
-
 Cancellation rate
 
 Cancellation rate
 
 Tasa de cancelación
-
 
 Rating
 
@@ -39,10 +34,14 @@ Rating
 
 Calificación
 
-
 Pin / Pickup location
 
 Pin / Pickup location
 
 Pin / Ubicación de recogida
 
+Thank you for choosing Uber Reserve. I'm committed to being on time for your scheduled pickup.
+
+Thank you for choosing Uber Reserve. I'm committed to being on time for your scheduled pickup.
+
+Gracias por elegir Uber Reserve. Me comprometo a llegar a tiempo para su recogida programada.

@@ -1,37 +1,8 @@
-Hey! How's it going today?
-
-Hey! How's it going today?
-
-¡Hola! ¿Cómo te va hoy?
-
-
-So we're heading to downtown, right?
-
-So we're heading to downtown, right?
-
-Entonces vamos al centro, ¿verdad?
-
-
 Are you in a rush, or do you have time?
 
 Are you in a rush, or do you have time?
 
 ¿Tienes prisa o tienes tiempo?
-
-
-It's been pretty busy today!
-
-It's been pretty busy today!
-
-¡Ha estado bastante ocupado hoy!
-
-
-Beautiful weather we're having, isn't it?
-
-Beautiful weather we're having, isn't it?
-
-Qué clima hermoso tenemos, ¿no?
-
 
 Looks like the rain is finally stopping.
 
@@ -39,27 +10,11 @@ Looks like the rain is finally stopping.
 
 Parece que la lluvia finalmente está
 
-
-It's getting hot out there!
-
-It's getting hot out there!
-
-¡Se está poniendo caliente allá afuera!
-
-
-It's pretty cold this morning!
-
-It's pretty cold this morning!
-
-¡Está bastante frío esta mañana!
-
-
 Do you prefer the heat or the cold?
 
 Do you prefer the heat or the cold?
 
 ¿Prefieres el calor o el frío?
-
 
 Traffic is pretty heavy right now.
 
@@ -67,20 +22,11 @@ Traffic is pretty heavy right now.
 
 El tráfico está bastante pesado ahora.
 
-
-I'm going to take a different route to avoid the traffic.
-
-I'm going to take a different route to avoid the traffic.
-
-Voy a tomar una ruta diferente para
-
-
 Rush hour is always crazy around here.
 
 Rush hour is always crazy around here.
 
 La hora pico siempre está loca por aquí.
-
 
 What time do you need to be there?
 
@@ -88,20 +34,11 @@ What time do you need to be there?
 
 ¿A qué hora necesitas estar ahí?
 
-
 We should be there in about 15 minutes.
 
 We should be there in about 15 minutes.
 
 Deberíamos estar ahí en unos 15 minutos.
-
-
-There's construction up ahead, so it might slow us down.
-
-There's construction up ahead, so it might slow us down.
-
-Hay construcción más adelante, así que
-
 
 Are you from around here?
 
@@ -109,13 +46,11 @@ Are you from around here?
 
 ¿Eres de por aquí?
 
-
 Are you visiting, or do you live here?
 
 Are you visiting, or do you live here?
 
 ¿Estás de visita o vives aquí?
-
 
 This area has changed so much lately.
 
@@ -123,13 +58,11 @@ This area has changed so much lately.
 
 Esta área ha cambiado mucho últimamente.
 
-
 This is a really nice part of town.
 
 This is a really nice part of town.
 
 Esta es una parte muy linda de la ciudad
-
 
 How long have you been in the city?
 
@@ -137,3 +70,26 @@ How long have you been in the city?
 
 ¿Cuánto tiempo llevas en la ciudad?
 
+Fun fact: this building is over 100 years
+
+Fun fact: this building is over 100 years
+
+Dato curioso: este edificio tiene más
+
+Do you have a busy day ahead?
+
+Do you have a busy day ahead?
+
+¿Tienes un día ocupado por delante?
+
+Heading to something fun?
+
+Heading to something fun?
+
+¿Vas a algo divertido?
+
+Heading to work?
+
+Heading to work?
+
+¿Vas al trabajo?
