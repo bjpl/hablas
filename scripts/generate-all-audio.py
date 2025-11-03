@@ -58,16 +58,40 @@ def get_voices_for_resource(resource_id: int) -> tuple:
 
 def detect_language(text: str) -> str:
     """Detect if text is Spanish or English"""
-    # Spanish indicators
+    # Spanish indicators - check FIRST for definitive Spanish markers
     if re.search(r'[¿¡áéíóúüñ]', text):
         return 'spanish'
-    if re.search(r'\b(hola|tengo|su|entrega|español|gracias|día|gran)\b', text.lower()):
+
+    # Common Spanish words (expanded list)
+    spanish_words = r'\b(hola|tengo|su|entrega|español|gracias|día|gran|está|estoy|puede|quiere|necesito|disculpe|por favor|buenos|buenas|cómo|dónde|cuál|qué|soy|eres|usted|señor|señora)\b'
+    if re.search(spanish_words, text.lower()):
         return 'spanish'
-    # English indicators
-    if re.search(r'\b(delivery|order|customer|thank|please|have|your|great|day|hi)\b', text.lower()):
+
+    # English indicators - expanded to catch more phrases
+    english_words = r'\b(hello|how|are|you|delivery|order|customer|thank|thanks|please|have|your|great|good|day|hi|morning|evening|night|yes|no|can|could|would|will|my|the|this|that|what|where|when|who|why|sorry|excuse|me)\b'
+    if re.search(english_words, text.lower()):
         return 'english'
-    # Default to Spanish
-    return 'spanish'
+
+    # Check for common English patterns
+    if re.search(r"(I'm|I am|you're|you are|it's|that's|what's)", text, re.IGNORECASE):
+        return 'english'
+
+    # If still unclear, check character distribution
+    # English uses more common letters like 'a', 'e', 'i', 'o', 'u' without accents
+    # Spanish has different frequency and uses accents
+    text_lower = text.lower()
+
+    # Count definitive indicators
+    has_articles_the = 'the ' in text_lower or ' the' in text_lower
+    has_articles_el = 'el ' in text_lower or ' la ' in text_lower
+
+    if has_articles_the:
+        return 'english'
+    if has_articles_el:
+        return 'spanish'
+
+    # Default to English (safer for mixed/unclear content)
+    return 'english'
 
 async def generate_segment(text: str, voice: str, temp_file: str) -> bool:
     """Generate audio for one text segment"""
