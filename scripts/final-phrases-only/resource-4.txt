@@ -1,8 +1,26 @@
+# Resource 4: Essential Delivery Phrases - Variation 4
+**Level**: Básico
+**Category**: Repartidor
+**Duration**: 4 minutes
+**Phrases**: 15 essential phrases
+**Focus**: Common delivery scenarios and problem-solving
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1: ARRIVAL & GREETING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 1: Quick greeting ===
+
 Hi! Delivery for you.
 
 Hi! Delivery for you.
 
 ¡Hola! Entrega para ti.
+
+[Tip: Short and efficient for busy deliveries]
+
+
+=== PHRASE 2: Evening delivery greeting ===
 
 Good evening! I have your food.
 
@@ -10,11 +28,25 @@ Good evening! I have your food.
 
 Buenas noches! Tengo tu comida.
 
+[Tip: Use after 5pm. "Good evening" sounds more professional than just "Hi"]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2: CONFIRMING DETAILS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 3: Verify customer name ===
+
 Are you Sarah?
 
 Are you Sarah?
 
 ¿Eres Sarah?
+
+[Tip: Always confirm name before handing over food]
+
+
+=== PHRASE 4: Verify apartment number ===
 
 Is this apartment 205?
 
@@ -22,11 +54,25 @@ Is this apartment 205?
 
 ¿Este es el apartamento 205?
 
+[Tip: Use when apartment numbers are confusing or hard to see]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3: DELIVERING THE ORDER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 5: Hand over the order ===
+
 Here you go!
 
 Here you go!
 
 ¡Aquí tienes!
+
+[Tip: Simple and friendly. Works for any delivery]
+
+
+=== PHRASE 6: Confirm contents ===
 
 Everything is in the bag.
 
@@ -34,11 +80,25 @@ Everything is in the bag.
 
 Todo está en la bolsa.
 
+[Tip: Reassures customer that nothing is missing]
+
+
+=== PHRASE 7: Request app confirmation ===
+
 Can you confirm on my phone?
 
 Can you confirm on my phone?
 
 ¿Puedes confirmar en mi teléfono?
+
+[Tip: Needed for some orders. Hand them your phone with the confirmation screen ready]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: NAVIGATION & ACCESS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 8: Request help finding location ===
 
 Can you help me find you?
 
@@ -46,11 +106,21 @@ Can you help me find you?
 
 ¿Puedes ayudarme a encontrarte?
 
+[Tip: Use when GPS isn't accurate or building layout is confusing]
+
+
+=== PHRASE 9: Confirm visual contact ===
+
 Do you see me?
 
 Do you see me?
 
 ¿Me ves?
+
+[Tip: Helpful when you're outside but customer can't locate you]
+
+
+=== PHRASE 10: Request building access ===
 
 Can you buzz me in?
 
@@ -58,11 +128,21 @@ Can you buzz me in?
 
 ¿Puedes abrirme la puerta?
 
+[Tip: "Buzz in" means open the locked building door remotely]
+
+
+=== PHRASE 11: Ask for floor number ===
+
 Which floor?
 
 Which floor?
 
 ¿Qué piso?
+
+[Tip: Quick question when customer says to come up but doesn't specify floor]
+
+
+=== PHRASE 12: Request outdoor meetup ===
 
 Can you meet me outside?
 
@@ -70,11 +150,25 @@ Can you meet me outside?
 
 ¿Puedes encontrarme afuera?
 
+[Tip: Use when you can't access building or to save time]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5: SPECIAL SITUATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 13: Warning about drinks ===
+
 Be careful, there are drinks.
 
 Be careful, there are drinks.
 
 Ten cuidado, hay bebidas.
+
+[Tip: Prevents spills. Customer appreciates the heads-up]
+
+
+=== PHRASE 14: Explain your role ===
 
 I just pick up and deliver.
 
@@ -82,8 +176,15 @@ I just pick up and deliver.
 
 Solo recojo y entrego.
 
+[Tip: Use when customer complains about missing items or wrong order. You're not responsible for restaurant mistakes]
+
+
+=== PHRASE 15: Explain communication attempt ===
+
 I tried calling you.
 
 I tried calling you.
 
 Intenté llamarte.
+
+[Tip: Shows you made effort to reach them. Good for difficult deliveries]
