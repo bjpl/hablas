@@ -1,11 +1,3 @@
-**Level**: Básico (Principiante)
-
-**Category**: Todos los trabajadores de gig economy
-
-[Tone: Warm, encouraging, enthusiastic]
-
-[Speaker: Spanish narrator - friendly voice]
-
 "¡Hola! Bienvenido a Hablas. Soy tu instructor, y hoy vamos a aprender los saludos más importantes en inglés para tu trabajo.
 
 En los próximos 7 minutos, aprenderás 6 frases esenciales que usarás todos los días con tus clientes. Son frases simples pero muy poderosas.
@@ -14,263 +6,87 @@ Escucha con atención. Después de cada frase en inglés, habrá una pausa para 
 
 ¿Listo? Vamos a empezar con lo más básico: cómo saludar a tus clientes."
 
-[PAUSE: 2 seconds]
-
-[Tone: Friendly, clear]
-
-[Speaker: Spanish narrator]
-
 "Frase número 1: Cuando llegas a recoger un pedido o a recoger un pasajero en la mañana, antes del mediodía."
 
-[PAUSE: 1 second]
+Good morning!
 
-[Speaker: English narrator - Native, 80% speed, clear pronunciation]
-
-"Good morning!"
-
-[Phonetic: gud MOR-ning]
-
-[PAUSE: 3 seconds - for student repetition]
-
-[Speaker: English narrator - Repeat]
-
-"Good morning!"
-
-[PAUSE: 1 second]
-
-[Speaker: Spanish narrator]
+Good morning!
 
 "Traducción: Buenos días. Úsalo desde que amanece hasta las 12 del mediodía."
 
-[PAUSE: 2 seconds]
-
-[Tone: Friendly, professional]
-
-[Speaker: Spanish narrator]
-
 "Frase número 2: Desde el mediodía hasta que oscurece, aproximadamente hasta las 6 o 7 de la tarde."
 
-[PAUSE: 1 second]
+Good afternoon!
 
-[Speaker: English narrator - 80% speed]
-
-"Good afternoon!"
-
-[Phonetic: gud af-ter-NUUN]
-
-[PAUSE: 3 seconds]
-
-[Speaker: English narrator - Repeat]
-
-"Good afternoon!"
-
-[PAUSE: 1 second]
-
-[Speaker: Spanish narrator]
+Good afternoon!
 
 "Traducción: Buenas tardes. Perfecto para entregas del almuerzo y la tarde."
 
-[PAUSE: 2 seconds]
-
-[Tone: Calm, friendly]
-
-[Speaker: Spanish narrator]
-
 "Frase número 3: Cuando ya está oscuro, después de las 6 o 7 de la tarde."
 
-[PAUSE: 1 second]
+Good evening!
 
-[Speaker: English narrator - 80% speed]
-
-"Good evening!"
-
-[Phonetic: gud IIV-ning]
-
-[PAUSE: 3 seconds]
-
-[Speaker: English narrator - Repeat]
-
-"Good evening!"
-
-[PAUSE: 1 second]
-
-[Speaker: Spanish narrator]
+Good evening!
 
 "Traducción: Buenas noches para saludar. Usa esto para entregas nocturnas."
 
-[PAUSE: 1 second]
-
-[Speaker: Spanish narrator - Tip]
-
 "Nota importante: 'Good evening' es para SALUDAR cuando llegas. Más adelante aprenderás cómo despedirte."
-
-[PAUSE: 2 seconds]
-
-[Tone: Casual, friendly]
-
-[Speaker: Spanish narrator]
 
 "Frase número 4: Un saludo que puedes usar a cualquier hora del día, más informal y relajado."
 
-[PAUSE: 1 second]
+Hello!
 
-[Speaker: English narrator - 80% speed]
-
-"Hello!"
-
-[Phonetic: je-LOU]
-
-[PAUSE: 3 seconds]
-
-[Speaker: English narrator - Repeat]
-
-"Hello!"
-
-[PAUSE: 1 second]
-
-[Speaker: Spanish narrator]
+Hello!
 
 "Traducción: Hola. Simple y efectivo. Funciona en la mañana, tarde o noche."
 
-[PAUSE: 2 seconds]
-
-[Tone: Relaxed, friendly]
-
-[Speaker: Spanish narrator]
-
 "Frase número 5: Aún más casual. Perfecto para clientes jóvenes o ambientes relajados."
 
-[PAUSE: 1 second]
+Hi!
 
-[Speaker: English narrator - 80% speed]
-
-"Hi!"
-
-[Phonetic: jai]
-
-[PAUSE: 3 seconds]
-
-[Speaker: English narrator - Repeat]
-
-"Hi!"
-
-[PAUSE: 1 second]
-
-[Speaker: Spanish narrator]
+Hi!
 
 "Traducción: Hola, versión corta. Muy común en Estados Unidos."
 
-[PAUSE: 1 second]
-
-[Speaker: Spanish narrator - Tip]
-
 "Consejo: 'Hi' es perfecto cuando el cliente es joven o cuando ya lo has visto antes."
-
-[PAUSE: 2 seconds]
-
-[Tone: Warm, caring]
-
-[Speaker: Spanish narrator]
 
 "Frase número 6: Después de saludar, puedes preguntar esto para ser más amable y profesional."
 
-[PAUSE: 1 second]
+How are you?
 
-[Speaker: English narrator - 80% speed]
-
-"How are you?"
-
-[Phonetic: jau ar YU]
-
-[PAUSE: 3 seconds]
-
-[Speaker: English narrator - Repeat]
-
-"How are you?"
-
-[PAUSE: 1 second]
-
-[Speaker: Spanish narrator]
+How are you?
 
 "Traducción: ¿Cómo estás? o ¿Cómo está usted?"
 
-[PAUSE: 1 second]
-
-[Speaker: Spanish narrator - Context]
-
 "Úsalo así: Primero saluda - 'Good morning' - y luego pregunta - 'How are you?' Los clientes aprecian mucho esta cortesía."
-
-[PAUSE: 2 seconds]
-
-[Tone: Energetic, encouraging]
-
-[Speaker: Spanish narrator]
 
 "¡Excelente! Ahora vamos a practicar todas las frases más rápido. Escucha y repite cada una. ¡Vamos!"
 
-[PAUSE: 1 second]
+Good morning!
 
-[Speaker: English narrator - Normal speed, clear]
+Good afternoon!
 
-"Good morning!"
+Good evening!
 
-[PAUSE: 1.5 seconds]
+Hello!
 
-"Good afternoon!"
+Hi!
 
-[PAUSE: 1.5 seconds]
-
-"Good evening!"
-
-[PAUSE: 1.5 seconds]
-
-"Hello!"
-
-[PAUSE: 1.5 seconds]
-
-"Hi!"
-
-[PAUSE: 1.5 seconds]
-
-"How are you?"
-
-[PAUSE: 2 seconds]
-
-[Speaker: Spanish narrator]
+How are you?
 
 "¡Perfecto! Ahora una vez más, con confianza:"
 
-[PAUSE: 1 second]
+Good morning!
 
-[Speaker: English narrator - Normal speed]
+Good afternoon!
 
-"Good morning!"
+Good evening!
 
-[PAUSE: 1.5 seconds]
+Hello!
 
-"Good afternoon!"
+Hi!
 
-[PAUSE: 1.5 seconds]
-
-"Good evening!"
-
-[PAUSE: 1.5 seconds]
-
-"Hello!"
-
-[PAUSE: 1.5 seconds]
-
-"Hi!"
-
-[PAUSE: 1.5 seconds]
-
-"How are you?"
-
-[PAUSE: 2 seconds]
-
-[Tone: Proud, motivational, warm]
-
-[Speaker: Spanish narrator]
+How are you?
 
 "¡Felicidades! Acabas de aprender 6 saludos esenciales en inglés.
 
@@ -297,8 +113,3 @@ Nos vemos en la próxima lección donde aprenderás cómo RESPONDER cuando el cl
 ¡Sigue adelante! Cada palabra que aprendes es dinero en tu bolsillo.
 
 ¡Hasta pronto!"
-
-[PAUSE: 1 second]
-
-[Soft ending music: 2 seconds fade out]
-

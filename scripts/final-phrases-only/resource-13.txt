@@ -1,15 +1,3 @@
-**Focus**: Navegación y direcciones básicas
-
-## COMPLETE AUDIO SCRIPT
-
-```
-
-[00:00] - INTRODUCTION
-
-[Tone: Warm, encouraging, conversational]
-
-[Speaker: Spanish narrator - friendly voice]
-
 "¡Hola! Bienvenido a Hablas. Soy tu instructor de inglés para conductores.
 
 Hoy vamos a aprender las frases más importantes sobre direcciones en inglés.
@@ -28,351 +16,119 @@ No tengas pena. Aquí nadie te escucha. Es tu momento de practicar.
 
 ¿Listo? ¡Empecemos!"
 
-[PAUSE: 2 seconds]
-
-[00:45] - MAIN CONTENT BEGINS
-
-[Tone: Clear, instructional]
-
-[Speaker: Spanish narrator]
-
 "Primero, las direcciones básicas que escucharás en tu GPS."
-
-[00:55] PHRASE 1: TURN LEFT
-
-[Tone: Clear, neutral]
-
-[Spanish]
 
 "Frase 1: La dirección más común. Girar a la izquierda."
 
-[English - Native speaker, 80% speed, clear enunciation]
+Turn left
 
-"Turn left"
-
-[Phonetic: tern left]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"Turn left"
-
-[Spanish]
+Turn left
 
 "Gira a la izquierda. O también: Voltea a la izquierda."
 
-[PAUSE: 2 seconds]
-
-[01:25] PHRASE 2: TURN RIGHT
-
-[Tone: Clear, neutral]
-
-[Spanish]
-
 "Frase 2: Girar a la derecha."
 
-[English - 80% speed]
+Turn right
 
-"Turn right"
-
-[Phonetic: tern rait]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"Turn right"
-
-[Spanish]
+Turn right
 
 "Gira a la derecha. O: Voltea a la derecha."
 
-[PAUSE: 2 seconds]
-
-[01:55] PHRASE 3: GO STRAIGHT
-
-[Tone: Clear, encouraging]
-
-[Spanish]
-
 "Frase 3: Seguir derecho. Muy fácil esta."
 
-[English - 80% speed]
+Go straight
 
-"Go straight"
-
-[Phonetic: gou streit]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"Go straight"
-
-[Spanish]
+Go straight
 
 "Sigue derecho. O: Continúa recto."
-
-[PAUSE: 2 seconds]
-
-[Spanish - Tip]
 
 "Consejo: 'Straight' se pronuncia 'STREIT', no 'estraight'.
 
 Practica: streit, streit, streit."
 
-[PAUSE: 1 second]
-
-[02:35] PHRASE 4: MAKE A U-TURN
-
-[Tone: Instructional]
-
-[Spanish]
-
 "Frase 4: Cuando necesitas dar la vuelta en U."
 
-[English - 80% speed]
+Make a U-turn
 
-"Make a U-turn"
-
-[Phonetic: meik a yu-tern]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"Make a U-turn"
-
-[Spanish]
+Make a U-turn
 
 "Haz un retorno. O: Da vuelta en U."
 
-[PAUSE: 2 seconds]
-
-[03:10] PHRASE 5: IN 500 FEET
-
-[Tone: Clear, precise]
-
-[Spanish]
-
 "Frase 5: La distancia en pies. Tu GPS dirá esto constantemente."
 
-[English - 80% speed]
+In 500 feet
 
-"In 500 feet"
-
-[Phonetic: in faiv jándred fiit]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"In 500 feet"
-
-[Spanish]
+In 500 feet
 
 "En 500 pies. Eso es aproximadamente 150 metros."
-
-[PAUSE: 2 seconds]
-
-[Spanish - Tip]
 
 "Recuerda: 500 feet son como una cuadra y media.
 
 Cuando escuches esto, prepárate para voltear pronto."
 
-[PAUSE: 1 second]
-
-[03:55] PHRASE 6: AT THE NEXT LIGHT
-
-[Tone: Instructional]
-
-[Spanish]
-
 "Frase 6: En el próximo semáforo."
 
-[English - 80% speed]
+At the next light
 
-"At the next light"
-
-[Phonetic: at de nekst lait]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"At the next light"
-
-[Spanish]
+At the next light
 
 "En el siguiente semáforo. O: En la próxima luz."
 
-[PAUSE: 2 seconds]
-
-[04:30] PHRASE 7: AT THE STOP SIGN
-
-[Tone: Clear]
-
-[Spanish]
-
 "Frase 7: En la señal de alto."
 
-[English - 80% speed]
+At the stop sign
 
-"At the stop sign"
-
-[Phonetic: at de stop sain]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"At the stop sign"
-
-[Spanish]
+At the stop sign
 
 "En la señal de STOP. En el alto."
 
-[PAUSE: 2 seconds]
-
-[05:05] PHRASE 8: YOUR DESTINATION IS ON THE LEFT
-
-[Tone: Informative]
-
-[Spanish]
-
 "Frase 8: Cuando llegas al destino. Esta es muy importante."
 
-[English - 80% speed]
+Your destination is on the left
 
-"Your destination is on the left"
-
-[Phonetic: yur des-ti-néi-shon is on de left]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"Your destination is on the left"
-
-[Spanish]
+Your destination is on the left
 
 "Tu destino está a la izquierda."
 
-[PAUSE: 2 seconds]
-
-[05:45] PHRASE 9: YOUR DESTINATION IS ON THE RIGHT
-
-[Tone: Informative]
-
-[Spanish]
-
 "Frase 9: Lo mismo, pero del otro lado."
 
-[English - 80% speed]
+Your destination is on the right
 
-"Your destination is on the right"
-
-[Phonetic: yur des-ti-néi-shon is on de rait]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"Your destination is on the right"
-
-[Spanish]
+Your destination is on the right
 
 "Tu destino está a la derecha."
 
-[PAUSE: 2 seconds]
-
-[06:20] PHRASE 10: YOU HAVE ARRIVED
-
-[Tone: Celebratory]
-
-[Spanish]
-
 "Frase 10: ¡Llegaste! La frase favorita de todos."
 
-[English - 80% speed]
+You have arrived
 
-"You have arrived"
-
-[Phonetic: yu jav a-ráivd]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"You have arrived"
-
-[Spanish]
+You have arrived
 
 "Has llegado. Ya llegaste."
-
-[PAUSE: 2 seconds]
-
-[06:55] - PRACTICE DRILL
-
-[Tone: Energetic, encouraging]
-
-[Speaker: Spanish narrator]
 
 "¡Excelente trabajo! Ahora vamos a practicar todas juntas,
 
 a velocidad normal. Escucha y repite en voz alta."
 
-[PAUSE: 1 second]
+Turn left
 
-[English - Normal speed, clear]
+Turn right
 
-"Turn left"
+Go straight
 
-[PAUSE: 1 second]
+Make a U-turn
 
-"Turn right"
+In 500 feet
 
-[PAUSE: 1 second]
+At the next light
 
-"Go straight"
+At the stop sign
 
-[PAUSE: 1 second]
+Your destination is on the left
 
-"Make a U-turn"
+Your destination is on the right
 
-[PAUSE: 1 second]
-
-"In 500 feet"
-
-[PAUSE: 1 second]
-
-"At the next light"
-
-[PAUSE: 1 second]
-
-"At the stop sign"
-
-[PAUSE: 1 second]
-
-"Your destination is on the left"
-
-[PAUSE: 1 second]
-
-"Your destination is on the right"
-
-[PAUSE: 1 second]
-
-"You have arrived"
-
-[PAUSE: 2 seconds]
-
-[08:00] - CONCLUSION
-
-[Tone: Warm, motivational]
-
-[Speaker: Spanish narrator]
+You have arrived
 
 "¡Felicidades! Ya conoces las 10 frases de direcciones más importantes
 
@@ -397,8 +153,3 @@ Menos tiempo perdido, más viajes completados, mejores propinas.
 ¡Sigue practicando! Nos vemos en la próxima lección.
 
 ¡Mucho éxito en la calle!"
-
-[END: 08:45]
-
-```
-

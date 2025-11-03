@@ -16,11 +16,11 @@ Order for [customer name].
 
 Orden para [nombre del cliente]
 
-Order number [####].
+Order number [order number].
 
-Order number [####].
+Order number [order number].
 
-Número de orden [####]
+Número de orden [número de orden]
 
 Is it ready?
 

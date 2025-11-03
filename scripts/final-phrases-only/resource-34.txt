@@ -1,17 +1,3 @@
-**Level**: Intermedio
-
-**Category**: Conductores (Uber, DiDi, Lyft)
-
-## SCRIPT
-
-```
-
-[00:00] INTRODUCTION
-
-[Tone: Warm, encouraging, energetic]
-
-[Speaker: Spanish narrator - friendly voice]
-
 "¡Hola conductor! Bienvenido a Hablas. Soy tu instructor y hoy vamos a practicar conversaciones reales con pasajeros en inglés.
 
 En los próximos 7 minutos aprenderás 8 frases esenciales que usarás todos los días manejando para Uber, Lyft o DiDi.
@@ -24,301 +10,105 @@ Al final, haremos una práctica rápida de todas las frases.
 
 ¡Empecemos!"
 
-[PAUSE: 2 seconds]
-
-[00:45] PHRASE 1: GREETING THE PASSENGER
-
-[Tone: Friendly, welcoming]
-
-[Spanish]
-
 "Frase 1: El saludo inicial cuando el pasajero entra al auto."
 
-[English - Native speaker, 80% speed, clear enunciation]
+Good morning! Are you Michael?
 
-"Good morning! Are you Michael?"
-
-[Phonetic: gud MOR-ning / ar yu MAI-kul]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat, same speed]
-
-"Good morning! Are you Michael?"
-
-[PAUSE: 2 seconds]
-
-[Spanish]
+Good morning! Are you Michael?
 
 "Buenos días, ¿eres Michael?
 
 Consejo práctico: Siempre confirma el nombre del pasajero antes de arrancar. Esto evita que recojas a la persona equivocada. Puedes cambiar 'Good morning' por 'Good afternoon' después del mediodía, o 'Good evening' después de las 6 PM."
 
-[PAUSE: 3 seconds]
-
-[01:45] PHRASE 2: CONFIRMING DESTINATION
-
-[Tone: Professional, clear]
-
-[Spanish]
-
 "Frase 2: Para confirmar el destino del viaje."
 
-[English - Native speaker, 80% speed]
+I have you going to Fifth Avenue. Is that correct?
 
-"I have you going to Fifth Avenue. Is that correct?"
-
-[Phonetic: ai hav yu GO-ing tu fifth A-ve-nu / iz dat ko-REKT]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"I have you going to Fifth Avenue. Is that correct?"
-
-[PAUSE: 2 seconds]
-
-[Spanish]
+I have you going to Fifth Avenue. Is that correct?
 
 "Te llevo a la Quinta Avenida, ¿es correcto?
 
 Consejo práctico: Confirma el destino especialmente en viajes largos o caros. Di el nombre de la calle o lugar claramente. Esto te protege de problemas y el pasajero aprecia tu profesionalismo."
 
-[PAUSE: 3 seconds]
-
-[02:45] PHRASE 3: OFFERING COMFORT
-
-[Tone: Polite, hospitable]
-
-[Spanish]
-
 "Frase 3: Para ofrecer comodidad al pasajero."
 
-[English - Native speaker, 80% speed]
+Feel free to adjust the temperature or the music.
 
-"Feel free to adjust the temperature or the music."
-
-[Phonetic: fil fri tu a-JUST da TEM-pe-ra-chur or da MIU-sik]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"Feel free to adjust the temperature or the music."
-
-[PAUSE: 2 seconds]
-
-[Spanish]
+Feel free to adjust the temperature or the music.
 
 "Siéntete libre de ajustar la temperatura o la música.
 
 Consejo práctico: Esta frase aumenta tus propinas. Los pasajeros valoran cuando les das control de su comodidad. No tienes que decirla siempre, pero úsala en viajes largos o cuando notes que el pasajero parece incómodo."
 
-[PAUSE: 3 seconds]
-
-[03:45] PHRASE 4: ASKING ABOUT ROUTE PREFERENCE
-
-[Tone: Respectful, consulting]
-
-[Spanish]
-
 "Frase 4: Para preguntar si tienen preferencia de ruta."
 
-[English - Native speaker, 80% speed]
+Do you have a preferred route, or should I follow the GPS?
 
-"Do you have a preferred route, or should I follow the GPS?"
-
-[Phonetic: du yu hav a pri-FERD rut / or shud ai FA-lou da yi-pi-es]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"Do you have a preferred route, or should I follow the GPS?"
-
-[PAUSE: 2 seconds]
-
-[Spanish]
+Do you have a preferred route, or should I follow the GPS?
 
 "¿Tienes una ruta preferida, o sigo el GPS?
 
 Consejo práctico: Pregunta esto cuando hay varias opciones de ruta o mucho tráfico. Algunos pasajeros conocen atajos. Esto también te protege de quejas sobre la ruta que tomaste."
 
-[PAUSE: 3 seconds]
-
-[04:45] PHRASE 5: MAKING SMALL TALK
-
-[Tone: Casual, friendly but not pushy]
-
-[Spanish]
-
 "Frase 5: Conversación ligera si el pasajero parece abierto a platicar."
 
-[English - Native speaker, 80% speed]
+How's your day going so far?
 
-"How's your day going so far?"
-
-[Phonetic: jaus yor dei GO-ing so far]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"How's your day going so far?"
-
-[PAUSE: 2 seconds]
-
-[Spanish]
+How's your day going so far?
 
 "¿Cómo va tu día hasta ahora?
 
 Consejo práctico: Lee las señales del pasajero primero. Si está en el teléfono o con audífonos, no lo interrumpas. Si hace contacto visual o parece amigable, esta pregunta simple puede iniciar una buena conversación y mejorar tu propina."
 
-[PAUSE: 3 seconds]
-
-[05:45] PHRASE 6: APOLOGIZING FOR DELAYS
-
-[Tone: Apologetic but professional]
-
-[Spanish]
-
 "Frase 6: Cuando hay tráfico o retrasos."
 
-[English - Native speaker, 80% speed]
+Sorry about the traffic. I'm taking the fastest route available.
 
-"Sorry about the traffic. I'm taking the fastest route available."
-
-[Phonetic: SA-ri a-baut da TRA-fik / aim TEI-king da FAS-test rut a-VEI-la-bul]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"Sorry about the traffic. I'm taking the fastest route available."
-
-[PAUSE: 2 seconds]
-
-[Spanish]
+Sorry about the traffic. I'm taking the fastest route available.
 
 "Disculpa el tráfico. Estoy tomando la ruta más rápida disponible.
 
 Consejo práctico: Usa esto cuando veas que el pasajero está impaciente o revisa su reloj. Reconocer el problema y asegurarle que estás haciendo tu mejor esfuerzo reduce las quejas y malas calificaciones."
 
-[PAUSE: 3 seconds]
-
-[06:45] PHRASE 7: ARRIVING AT DESTINATION
-
-[Tone: Clear, helpful]
-
-[Spanish]
-
 "Frase 7: Al llegar al destino."
 
-[English - Native speaker, 80% speed]
+We're here! I'll pull over right in front.
 
-"We're here! I'll pull over right in front."
-
-[Phonetic: wir JIR / ail pul O-ver rait in front]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"We're here! I'll pull over right in front."
-
-[PAUSE: 2 seconds]
-
-[Spanish]
+We're here! I'll pull over right in front.
 
 "¡Llegamos! Me estacionaré justo enfrente.
 
 Consejo práctico: Anuncia claramente cuando lleguen. Algunos pasajeros están distraídos en su teléfono. Diles exactamente dónde te vas a parar, especialmente en áreas concurridas."
 
-[PAUSE: 3 seconds]
-
-[07:45] PHRASE 8: FRIENDLY GOODBYE
-
-[Tone: Warm, appreciative]
-
-[Spanish]
-
 "Frase 8: Despedida profesional."
 
-[English - Native speaker, 80% speed]
+Thank you! Have a great day!
 
-"Thank you! Have a great day!"
-
-[Phonetic: thank YU / hav a greit dei]
-
-[PAUSE: 3 seconds]
-
-[English - Repeat]
-
-"Thank you! Have a great day!"
-
-[PAUSE: 2 seconds]
-
-[Spanish]
+Thank you! Have a great day!
 
 "¡Gracias! ¡Que tengas un excelente día!
 
 Consejo práctico: Siempre termina con una despedida positiva. Es tu última impresión y afecta directamente tu calificación y propina. Sonríe cuando lo digas, se nota en tu voz."
 
-[PAUSE: 3 seconds]
-
-[08:45] PRACTICE DRILL
-
-[Tone: Energetic, encouraging]
-
-[Speaker: Spanish narrator]
-
 "¡Excelente! Ahora vamos a practicar todas las frases rápidamente. Escucha y repite en voz alta si puedes. ¡Vamos!"
 
-[PAUSE: 1 second]
+Good morning! Are you Michael?
 
-[English - Native speaker, normal speed (100%)]
+I have you going to Fifth Avenue. Is that correct?
 
-"Good morning! Are you Michael?"
+Feel free to adjust the temperature or the music.
 
-[PAUSE: 1 second]
+Do you have a preferred route, or should I follow the GPS?
 
-"I have you going to Fifth Avenue. Is that correct?"
+How's your day going so far?
 
-[PAUSE: 1 second]
+Sorry about the traffic. I'm taking the fastest route available.
 
-"Feel free to adjust the temperature or the music."
+We're here! I'll pull over right in front.
 
-[PAUSE: 1 second]
-
-"Do you have a preferred route, or should I follow the GPS?"
-
-[PAUSE: 1 second]
-
-"How's your day going so far?"
-
-[PAUSE: 1 second]
-
-"Sorry about the traffic. I'm taking the fastest route available."
-
-[PAUSE: 1 second]
-
-"We're here! I'll pull over right in front."
-
-[PAUSE: 1 second]
-
-"Thank you! Have a great day!"
-
-[PAUSE: 2 seconds]
-
-[Spanish]
+Thank you! Have a great day!
 
 "¡Perfecto! Esas son las 8 frases que transformarán tus viajes."
-
-[10:15] CONCLUSION
-
-[Tone: Motivational, supportive]
-
-[Speaker: Spanish narrator]
 
 "¡Felicidades, conductor! Acabas de aprender 8 conversaciones esenciales que usarás todos los días.
 
@@ -335,12 +125,3 @@ Recuerda: Cada frase que aprendes es más dinero en tu bolsillo y menos estrés 
 ¡Nos vemos en la próxima lección! Sigue manejando y sigue aprendiendo.
 
 ¡Éxito, conductor!"
-
-[PAUSE: 2 seconds]
-
-[Soft background music fades out]
-
-[END: 11:15]
-
-```
-
