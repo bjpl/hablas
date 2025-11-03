@@ -1,0 +1,23 @@
+  },
+  {
+    "id": 3,
+    "title": "Guía Visual: Entregas - Var 1",
+    "description": "Guía visual con capturas de pantalla anotadas para repartidores",
+    "type": "image",
+    "category": "repartidor",
+    "level": "basico",
+    "size": "22.4 KB",
+    "downloadUrl": "/generated-resources/50-batch/repartidor/basic_visual_1-image-spec.md",
+    "tags": [
+      "entregas",
+      "delivery",
+      "rappi",
+      "basico",
+      "image"
+    ],
+    "offline": true,
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_visual_1-image-spec.md"
+  },
+  {
+    "id": 4,
+    "title": "Frases Esenciales para Entregas - Var 2",

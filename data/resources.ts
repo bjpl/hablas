@@ -63,25 +63,6 @@ export const resources: Resource[] = [
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_1-audio-script.txt"
   },
   {
-    "id": 3,
-    "title": "Guía Visual: Entregas - Var 1",
-    "description": "Guía visual con capturas de pantalla anotadas para repartidores",
-    "type": "image",
-    "category": "repartidor",
-    "level": "basico",
-    "size": "22.4 KB",
-    "downloadUrl": "/generated-resources/50-batch/repartidor/basic_visual_1-image-spec.md",
-    "tags": [
-      "entregas",
-      "delivery",
-      "rappi",
-      "basico",
-      "image"
-    ],
-    "offline": true,
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_visual_1-image-spec.md"
-  },
-  {
     "id": 4,
     "title": "Frases Esenciales para Entregas - Var 2",
     "description": "Guía completa con frases prácticas y ejemplos para repartidores",
@@ -160,25 +141,6 @@ export const resources: Resource[] = [
     "offline": true,
     "audioUrl": "/audio/resource-7.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_2-audio-script.txt",
-  },
-  {
-    "id": 8,
-    "title": "Guía Visual: Entregas - Var 2",
-    "description": "Guía visual con capturas de pantalla anotadas para repartidores",
-    "type": "image",
-    "category": "repartidor",
-    "level": "basico",
-    "size": "23.4 KB",
-    "downloadUrl": "/generated-resources/50-batch/repartidor/basic_visual_2-image-spec.md",
-    "tags": [
-      "entregas",
-      "delivery",
-      "rappi",
-      "basico",
-      "image"
-    ],
-    "offline": true,
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_visual_2-image-spec.md"
   },
   {
     "id": 9,
@@ -502,24 +464,6 @@ export const resources: Resource[] = [
     "offline": true,
     "audioUrl": "/audio/resource-23.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_time_1.md"
-  },
-  {
-    "id": 24,
-    "title": "Vocabulario de Apps (Uber, Rappi, DiDi) - Var 1",
-    "description": "Guía visual con capturas de pantalla anotadas para todos los trabajadores",
-    "type": "image",
-    "category": "all",
-    "level": "basico",
-    "size": "23.0 KB",
-    "downloadUrl": "/generated-resources/50-batch/all/basic_app_vocabulary_1-image-spec.md",
-    "tags": [
-      "app",
-      "tecnología",
-      "basico",
-      "image"
-    ],
-    "offline": true,
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_app_vocabulary_1-image-spec.md"
   },
   {
     "id": 25,

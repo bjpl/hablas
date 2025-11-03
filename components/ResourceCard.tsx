@@ -85,8 +85,8 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
         {resource.size}
       </div>
 
-      <div className="flex gap-2 mt-auto">
-        <Link href={`/recursos/${resource.id}`} className="flex-1">
+      <div className="mt-auto">
+        <Link href={`/recursos/${resource.id}`} className="block">
           <button
             className="w-full py-3 px-4 rounded font-semibold bg-accent-blue text-white hover:bg-blue-700 transition-colors"
             aria-label={`Ver detalles del recurso ${resource.title}`}
@@ -94,28 +94,6 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
             Ver recurso
           </button>
         </Link>
-        <button
-          onClick={handleDownloadClick}
-          className={`p-3 rounded font-medium transition-colors min-w-touch min-h-touch ${
-            isDownloaded
-              ? 'bg-green-100 text-green-700 hover:bg-green-200'
-              : 'bg-gray-100 hover:bg-gray-200'
-          }`}
-          aria-label={isDownloaded ? `${resource.title} ya descargado` : `Descargar ${resource.title}`}
-          title={isDownloaded ? 'Ya descargado' : 'Descargar'}
-        >
-          <span aria-hidden="true" className="text-xl">{isDownloaded ? '✓' : '📥'}</span>
-        </button>
-        <button
-          onClick={handleShare}
-          className="p-3 rounded bg-gray-100 hover:bg-gray-200 transition-colors min-w-touch min-h-touch"
-          aria-label={`Compartir ${resource.title}`}
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" role="img">
-            <title>Compartir</title>
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m9.032 4.026a3 3 0 10-4.732 2.684m4.732-2.684a3 3 0 00-4.732-2.684M6.316 10.658a3 3 0 10-4.732-2.684"/>
-          </svg>
-        </button>
       </div>
     </article>
   )
