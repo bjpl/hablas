@@ -302,38 +302,3 @@ Nos vemos en la próxima lección donde aprenderás cómo RESPONDER cuando el cl
 
 [Soft ending music: 2 seconds fade out]
 
-## PRODUCTION NOTES
-
-**Voice Actors Needed:**
-
-- 1 Spanish narrator (warm, encouraging, Latin American accent)
-
-- 1 English narrator (neutral American accent, clear enunciation)
-
-**Audio Quality:**
-
-- Clear, professional recording
-
-- Minimal background noise
-
-- Consistent volume levels
-
-- Mobile-optimized compression
-
-**Background Music:**
-
-- Subtle, motivational background track (very low volume)
-
-- No music during English phrases (clarity priority)
-
-- Gentle music during Spanish explanations
-
-**File Format:**
-
-- MP3, 128kbps (balance of quality and file size)
-
-- Mono or stereo
-
-- Optimized for mobile streaming and offline download
-
-**END OF SCRIPT**
