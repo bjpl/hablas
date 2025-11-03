@@ -79,7 +79,6 @@ export const resources: Resource[] = [
       "image"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-3.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_visual_1-image-spec.md"
   },
   {
@@ -179,7 +178,6 @@ export const resources: Resource[] = [
       "image"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-8.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_visual_2-image-spec.md"
   },
   {
@@ -521,7 +519,6 @@ export const resources: Resource[] = [
       "image"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-24.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_app_vocabulary_1-image-spec.md"
   },
   {
