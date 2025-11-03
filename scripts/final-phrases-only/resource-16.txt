@@ -1,32 +1,26 @@
+# Resource 16: Small Talk & Conversation Starters - Rideshare
+**Level**: Intermedio
+**Category**: Conductor
+**Duration**: 4 minutes
+**Phrases**: 16 conversation phrases
+**Focus**: Building rapport and professional conversation with passengers
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1: TIME & SCHEDULE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 1: Ask about passenger's schedule ===
+
 Are you in a rush, or do you have time?
 
 Are you in a rush, or do you have time?
 
 ¿Tienes prisa o tienes tiempo?
 
-Looks like the rain is finally stopping.
+[Tip: Helps you choose route and driving style. Shows you care]
 
-Looks like the rain is finally stopping.
 
-Parece que la lluvia finalmente está
-
-Do you prefer the heat or the cold?
-
-Do you prefer the heat or the cold?
-
-¿Prefieres el calor o el frío?
-
-Traffic is pretty heavy right now.
-
-Traffic is pretty heavy right now.
-
-El tráfico está bastante pesado ahora.
-
-Rush hour is always crazy around here.
-
-Rush hour is always crazy around here.
-
-La hora pico siempre está loca por aquí.
+=== PHRASE 6: Check arrival time requirements ===
 
 What time do you need to be there?
 
@@ -34,11 +28,77 @@ What time do you need to be there?
 
 ¿A qué hora necesitas estar ahí?
 
+[Tip: Helps you prioritize speed vs. smooth ride]
+
+
+=== PHRASE 7: Give estimated arrival ===
+
 We should be there in about 15 minutes.
 
 We should be there in about 15 minutes.
 
 Deberíamos estar ahí en unos 15 minutos.
+
+[Tip: Replace "15" with actual estimate. Sets expectations]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2: WEATHER TALK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 2: Comment on weather improvement ===
+
+Looks like the rain is finally stopping.
+
+Looks like the rain is finally stopping.
+
+Parece que la lluvia finalmente está
+
+[Tip: Safe topic. Everyone relates to weather]
+
+
+=== PHRASE 3: Ask weather preference ===
+
+Do you prefer the heat or the cold?
+
+Do you prefer the heat or the cold?
+
+¿Prefieres el calor o el frío?
+
+[Tip: Opens conversation naturally]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3: TRAFFIC & COMMUTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 4: Comment on traffic ===
+
+Traffic is pretty heavy right now.
+
+Traffic is pretty heavy right now.
+
+El tráfico está bastante pesado ahora.
+
+[Tip: Explains why ride might take longer. Manages expectations]
+
+
+=== PHRASE 5: Comment on rush hour ===
+
+Rush hour is always crazy around here.
+
+Rush hour is always crazy around here.
+
+La hora pico siempre está loca por aquí.
+
+[Tip: Shares local knowledge. Builds rapport]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: LOCAL CONVERSATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 8: Ask if they're local ===
 
 Are you from around here?
 
@@ -46,11 +106,21 @@ Are you from around here?
 
 ¿Eres de por aquí?
 
+[Tip: Opens door to local recommendations or tourist help]
+
+
+=== PHRASE 9: Ask resident vs. visitor ===
+
 Are you visiting, or do you live here?
 
 Are you visiting, or do you live here?
 
 ¿Estás de visita o vives aquí?
+
+[Tip: Helps you understand if they need local tips]
+
+
+=== PHRASE 10: Comment on area changes ===
 
 This area has changed so much lately.
 
@@ -58,11 +128,21 @@ This area has changed so much lately.
 
 Esta área ha cambiado mucho últimamente.
 
+[Tip: Good for locals who know the area]
+
+
+=== PHRASE 11: Compliment the neighborhood ===
+
 This is a really nice part of town.
 
 This is a really nice part of town.
 
 Esta es una parte muy linda de la ciudad
+
+[Tip: Positive comment. Most people like hearing nice things about their area]
+
+
+=== PHRASE 12: Ask how long in city ===
 
 How long have you been in the city?
 
@@ -70,11 +150,25 @@ How long have you been in the city?
 
 ¿Cuánto tiempo llevas en la ciudad?
 
+[Tip: Follow-up to visitor question]
+
+
+=== PHRASE 13: Share local trivia ===
+
 Fun fact: this building is over 100 years
 
 Fun fact: this building is over 100 years
 
 Dato curioso: este edificio tiene más
+
+[Tip: Shows local knowledge. Passengers enjoy interesting facts]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5: CASUAL INTEREST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 14: Ask about their day ===
 
 Do you have a busy day ahead?
 
@@ -82,14 +176,38 @@ Do you have a busy day ahead?
 
 ¿Tienes un día ocupado por delante?
 
+[Tip: Shows interest. Keep it light]
+
+
+=== PHRASE 15: Ask about destination purpose (fun) ===
+
 Heading to something fun?
 
 Heading to something fun?
 
 ¿Vas a algo divertido?
 
+[Tip: Positive framing. Better than just "Where are you going?"]
+
+
+=== PHRASE 16: Ask about work commute ===
+
 Heading to work?
 
 Heading to work?
 
 ¿Vas al trabajo?
+
+[Tip: Simple, relatable question for morning rides]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CONVERSATION TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Small talk builds ratings and tips. Remember:
+- Read passenger cues: Some want quiet, others want conversation
+- Keep it light: Avoid politics, religion, or controversial topics
+- Listen more than talk: Show genuine interest
+- Don't force it: Silence is okay too
+- End positively: "Have a great day/night!"

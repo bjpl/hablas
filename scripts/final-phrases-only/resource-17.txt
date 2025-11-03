@@ -1,8 +1,26 @@
+# Resource 17: Rideshare Passenger Pickup & Verification
+**Level**: Básico
+**Category**: Conductor
+**Duration**: 3 minutes
+**Phrases**: 13 essential phrases
+**Focus**: Safe passenger verification and initial ride setup
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1: INITIAL GREETING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 1: Morning greeting ===
+
 Hello! Good morning!
 
 Hello! Good morning!
 
 ¡Hola! ¡Buenos días!
+
+[Tip: Use "Good afternoon" (12pm-5pm) or "Good evening" (after 5pm)]
+
+
+=== PHRASE 2: Confirm rideshare pickup ===
 
 Are you waiting for Uber?
 
@@ -10,11 +28,25 @@ Are you waiting for Uber?
 
 ¿Estás esperando un Uber?
 
+[Tip: Replace with your platform: Lyft, DiDi, etc.]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2: PASSENGER VERIFICATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 3: Request name politely ===
+
 Can you tell me your name, please?
 
 Can you tell me your name, please?
 
 ¿Puedes decirme tu nombre, por favor?
+
+[Tip: More polite than just "What's your name?"]
+
+
+=== PHRASE 4: Confirm passenger name ===
 
 Are you [Name]?
 
@@ -22,11 +54,25 @@ Are you [Name]?
 
 ¿Eres [Nombre]?
 
+[Tip: ALWAYS verify name. Safety first. Wrong passenger = big problem]
+
+
+=== PHRASE 5: Acknowledge correct passenger ===
+
 Perfect! Welcome!
 
 Perfect! Welcome!
 
 ¡Perfecto! ¡Bienvenido!
+
+[Tip: Positive confirmation. Sets friendly tone]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3: DESTINATION CONFIRMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 6: Ask destination ===
 
 Where are we going?
 
@@ -34,11 +80,25 @@ Where are we going?
 
 ¿A dónde vamos?
 
+[Tip: Simple, direct. Use when app doesn't show or to confirm]
+
+
+=== PHRASE 7: Confirm specific address ===
+
 I have you going to [address]. Is that
 
 I have you going to [address]. Is that
 
 Te llevo a [dirección]. ¿Es correcto?
+
+[Tip: Always confirm before starting trip. Catches app errors]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: GROUP PASSENGERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 8: Check if others coming ===
 
 Is anyone else coming?
 
@@ -46,11 +106,21 @@ Is anyone else coming?
 
 ¿Viene alguien más?
 
+[Tip: Ask before starting trip. Prevents awkward returns]
+
+
+=== PHRASE 9: Greet multiple passengers ===
+
 Hello everyone! Welcome!
 
 Hello everyone! Welcome!
 
 ¡Hola a todos! ¡Bienvenidos!
+
+[Tip: Acknowledge whole group. Makes everyone feel welcome]
+
+
+=== PHRASE 10: Confirm passenger count ===
 
 I have three passengers, correct?
 
@@ -58,11 +128,25 @@ I have three passengers, correct?
 
 Tengo tres pasajeros, ¿correcto?
 
+[Tip: Confirms what app shows. Important for safety and payment]
+
+
+=== PHRASE 11: State passenger limit ===
+
 I can take four people maximum.
 
 I can take four people maximum.
 
 Puedo llevar cuatro personas máximo.
+
+[Tip: Be polite but firm. It's the law and insurance rules]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5: VERIFICATION PROBLEMS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 12: Check if they ordered ===
 
 Did you order an Uber?
 
@@ -70,8 +154,25 @@ Did you order an Uber?
 
 ¿Pediste un Uber?
 
+[Tip: Use when someone tries to enter but you're unsure]
+
+
+=== PHRASE 13: Request app confirmation ===
+
 Can you check your app?
 
 Can you check your app?
 
 ¿Puedes revisar tu aplicación?
+
+[Tip: Resolves confusion. Both check apps to match]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SAFETY REMINDERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ALWAYS verify passenger name before allowing entry.
+NEVER skip verification, even if you're running late.
+If passenger name doesn't match, politely decline:
+"I think there might be a mix-up. Can you check your app?"

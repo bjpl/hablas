@@ -1,8 +1,26 @@
+# Resource 19: Navigation & Address Verification
+**Level**: Básico
+**Category**: All (Conductor & Repartidor)
+**Duration**: 3 minutes
+**Phrases**: 13 essential phrases
+**Focus**: Finding locations and confirming addresses
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1: ADDRESS VERIFICATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 1: Confirm building number ===
+
 Is it number 245?
 
 Is it number 245?
 
 ¿Es el número 245?
+
+[Tip: Replace with actual number. Confirms you have correct building]
+
+
+=== PHRASE 2: Confirm street name ===
 
 Is this Main Street?
 
@@ -10,11 +28,25 @@ Is this Main Street?
 
 ¿Es esta la calle Main?
 
+[Tip: Use when street signs are unclear or missing]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2: REQUESTING DIRECTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 3: Ask how to get there ===
+
 How do I get there?
 
 How do I get there?
 
 ¿Cómo llego ahí?
+
+[Tip: Direct question when GPS fails]
+
+
+=== PHRASE 4: Ask where to turn ===
 
 Where do I turn?
 
@@ -22,11 +54,21 @@ Where do I turn?
 
 ¿Dónde giro?
 
+[Tip: Quick clarification needed at intersections]
+
+
+=== PHRASE 5: Confirm you're going right way ===
+
 Am I going the right way?
 
 Am I going the right way?
 
 ¿Voy por el camino correcto?
+
+[Tip: Shows humility. Customers/passengers appreciate honesty]
+
+
+=== PHRASE 6: Ask which side ===
 
 Which side of the street?
 
@@ -34,11 +76,29 @@ Which side of the street?
 
 ¿Qué lado de la calle?
 
+[Tip: Prevents parking on wrong side]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3: ADDRESS PROBLEMS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 7: Report app error ===
+
 The address is wrong in the app
 
 The address is wrong in the app
 
 La dirección está mal en la app
+
+[Tip: Stay calm. Explain issue without blaming customer]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: ROUTE PREFERENCES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 8: Offer route alternative ===
 
 Do you prefer a different route?
 
@@ -46,11 +106,25 @@ Do you prefer a different route?
 
 ¿Prefieres una ruta diferente?
 
+[Tip: Gives customer/passenger choice. Shows flexibility]
+
+
+=== PHRASE 9: Ask about highway ===
+
 Should I take the highway?
 
 Should I take the highway?
 
 ¿Debería tomar la autopista?
+
+[Tip: Some prefer scenic routes or avoiding tolls]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5: ARRIVAL & PARKING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 10: Ask which corner ===
 
 Which corner?
 
@@ -58,11 +132,21 @@ Which corner?
 
 ¿Qué esquina?
 
+[Tip: Intersections have 4 corners. Clarify exact spot]
+
+
+=== PHRASE 11: Ask where to stop ===
+
 Where should I stop?
 
 Where should I stop?
 
 ¿Dónde debería parar?
+
+[Tip: Let customer/passenger choose best spot]
+
+
+=== PHRASE 12: Ask about parking ===
 
 Can I park here?
 
@@ -70,8 +154,28 @@ Can I park here?
 
 ¿Puedo estacionarme aquí?
 
+[Tip: Checks legality and convenience]
+
+
+=== PHRASE 13: Offer to get closer ===
+
 I can pull up closer
 
 I can pull up closer
 
 Puedo acercarme más
+
+[Tip: Shows helpfulness, especially in rain or with luggage]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NAVIGATION TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+When lost or confused:
+1. Stay calm
+2. Pull over safely
+3. Ask for help
+4. Use these phrases
+
+Better to ask than waste time searching. Customers and passengers understand.
