@@ -1,53 +1,77 @@
+===== LYFT DRIVER ESSENTIALS =====
+(2025 platform note: Lyft emphasizes driver ratings and premium service tiers. Power Driver Bonus replaced Top Driver Bonus in 2024. Priority mode helps drivers maximize earnings during busy periods.)
+
+===== SURGE PRICING =====
+
 Prime Time
 
 Prime Time
 
 Tiempo Prime / Tarifa elevada
+(2025 optimization: Prime Time shows as percentage multiplier or dollar amount. Appears during high demand - early mornings, rush hour, late nights, events. Check heat map to position in high-demand zones.)
+
+===== SERVICE TIERS =====
 
 Lyft / Lyft XL / Lux / Lux Black
 
 Lyft / Lyft XL / Lux / Lux Black
 
 Lyft / Lyft XL / Lux / Lux Black
+(Requirements: Standard Lyft = 4-door vehicle. XL = 6+ passengers. Lux = premium vehicles 2015+, leather seats. Lux Black = luxury vehicles, commercial insurance, professional chauffeur standards.)
+
+===== EARNINGS INCENTIVES =====
 
 Power Driver Bonus
 
 Power Driver Bonus
 
 Bono de conductor destacado
+(2025 update: Weekly bonus for completing ride thresholds. Tiers typically: 20, 40, 70+ rides. Higher tiers unlock better bonuses. Check dashboard Monday for current week's requirements.)
 
 Streak bonus
 
 Streak bonus
 
 Bono de racha
+(Optimization critical: Complete 3+ rides consecutively during specified times for bonus ($6-$18 typical). Declining a ride breaks the streak. Accept all requests during active streaks.)
 
 Ride Challenge
 
 Ride Challenge
 
 Reto de viajes
+(Context: Limited-time promotions - complete X rides within timeframe for guaranteed amount. Stack with streaks and Prime Time for maximum earnings.)
+
+===== PROFESSIONAL COMMUNICATION =====
 
 I'm on a streak bonus, so I really appreciate your patience
 
 I'm on a streak bonus, so I really appreciate your patience
 
 Estoy en un bono de racha, así que realmente aprecio su paciencia
+(Tip: Explaining streak bonus builds passenger understanding. Most riders support drivers earning bonuses.)
 
 Good [morning/afternoon/evening]. Welcome. May I help you with your bags?
 
 Good [morning/afternoon/evening]. Welcome. May I help you with your bags?
 
 Buenos [días/tardes/noches]. Bienvenido/a. ¿Puedo ayudarle con sus maletas?
+(Premium service tip: Greeting and bag assistance expected for Lux/Lux Black, appreciated for all tiers.)
+
+===== WAIT TIME MANAGEMENT =====
 
 I've been waiting for 4 minutes. I'll need to cancel in 1 minute if you're not here.
 
 I've been waiting for 4 minutes. I'll need to cancel in 1 minute if you're not here.
 
 He estado esperando por 4 minutos. Tendré que cancelar en 1 minuto si no está aquí.
+(2025 policy: 5-minute wait time before paid cancellation fee. Text at 2-3 minutes, call at 4 minutes. Document all contact attempts.)
+
+===== ADA COMPLIANCE =====
 
 Of course, I'm happy to accommodate your service animal.
 
 Of course, I'm happy to accommodate your service animal.
 
 Por supuesto, con mucho gusto acomodo a su animal de servicio.
+(Federal law: Service animals must be accommodated. Cannot ask about disability or request documentation. Refusing service animals risks immediate deactivation.)

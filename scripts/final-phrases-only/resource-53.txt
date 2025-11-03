@@ -1,14 +1,21 @@
+===== AIRPORT RIDESHARE =====
+(2025 policy note: Most major airports require rideshare vehicles to use designated TNC staging areas. Geofencing technology automatically triggers driver arrival notifications. Terminal pickup procedures vary by airport - check local regulations.)
+
+===== AIRPORT ZONES & TERMINOLOGY =====
+
 TNC lot / Staging area
 
 TNC lot / Staging area
 
 Área de espera TNC / Zona de preparación
+(Context: TNC = Transportation Network Company. This is the waiting area where drivers stay until receiving a ping. Most airports enforce mandatory staging to reduce congestion.)
 
 Geofence / Designated pickup area
 
 Geofence / Designated pickup area
 
 Geo-cerca / Área designada de recogida
+(Context: GPS-based virtual boundaries that trigger app notifications. Entering the geofence notifies passengers of your arrival.)
 
 Terminal / Concourse
 
@@ -21,6 +28,7 @@ Arrivals / Departures
 Arrivals / Departures
 
 Llegadas / Salidas
+(Tip: Most rideshare pickups occur at Arrivals level. Some airports separate ride-hail from taxis.)
 
 Baggage claim
 
@@ -34,11 +42,14 @@ Curbside
 
 A la orilla de la acera / En la banqueta
 
+===== PASSENGER COMMUNICATION =====
+
 [Text] I'm in the rideshare pickup area at [terminal/location]. What color clothing are you wearing?
 
 [Text] I'm in the rideshare pickup area at [terminal/location]. What color clothing are you wearing?
 
 Estoy en el área de recogida de rideshare en [terminal/ubicación]. ¿De qué color es su ropa?
+(Tip: Texting clothing color helps with quick identification in crowded pickup zones.)
 
 I'm in the [color] [vehicle]. I see you!
 
@@ -51,12 +62,16 @@ I'm coming around again - traffic is heavy
 I'm coming around again - traffic is heavy
 
 Voy a dar otra vuelta - el tráfico está pesado
+(Context: Some airports prohibit stopping until passenger is present. May need to circle.)
+
+===== LUGGAGE ASSISTANCE =====
 
 Let me help you with your bags
 
 Let me help you with your bags
 
 Permítame ayudarle con su equipaje
+(Tip: Helping with luggage often improves ratings and tips, especially for airport rides.)
 
 Where would you like these? Trunk or back seat?
 
@@ -75,6 +90,9 @@ I'll do my best to fit everything. If it doesn't all fit, you may need a larger 
 I'll do my best to fit everything. If it doesn't all fit, you may need a larger vehicle like an XL.
 
 Haré mi mejor esfuerzo para que todo quepa. Si no cabe todo, podría necesitar un vehículo más grande como XL.
+(2025 note: Most platforms allow passengers to cancel and rebook XL without fee if luggage doesn't fit.)
+
+===== DEPARTURE COORDINATION =====
 
 Which airline are you flying? Which terminal?
 
@@ -87,12 +105,14 @@ Domestic or international flight?
 Domestic or international flight?
 
 ¿Vuelo doméstico o internacional?
+(Tip: International flights typically require arriving 3 hours early vs 2 hours for domestic.)
 
 I'll pull up right here. Airport security doesn't allow us to wait, so please have your things ready.
 
 I'll pull up right here. Airport security doesn't allow us to wait, so please have your things ready.
 
 Me detendré aquí mismo. La seguridad del aeropuerto no nos permite esperar, así que por favor tenga sus cosas listas.
+(Context: Most airports enforce strict no-waiting policies at departure curbs to maintain traffic flow.)
 
 Pop the trunk - I'll get your bags
 
@@ -100,11 +120,14 @@ Pop the trunk - I'll get your bags
 
 Abra la cajuela - sacaré su equipaje
 
+===== TIME-SENSITIVE TRANSPORT =====
+
 What time is your flight? We'll get you there as quickly and safely as possible.
 
 What time is your flight? We'll get you there as quickly and safely as possible.
 
 ¿A qué hora es su vuelo? Lo/La llevaré lo más rápido y seguro posible.
+(Optimization: Knowing flight time helps you gauge urgency and choose optimal routes.)
 
 Traffic is heavy, but I'll take the fastest route available.
 
@@ -117,3 +140,4 @@ I understand you're in a hurry, but I must follow traffic laws for both our safe
 I understand you're in a hurry, but I must follow traffic laws for both our safety.
 
 Entiendo que tiene prisa, pero debo seguir las leyes de tráfico por la seguridad de ambos.
+(Safety note: Never compromise safety for speed. Document unreasonable passenger demands.)

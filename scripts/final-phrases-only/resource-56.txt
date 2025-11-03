@@ -1,35 +1,60 @@
+===== MULTI-APP STRATEGY =====
+(2025 optimization note: Most successful gig workers use 2-3 platforms simultaneously. Advanced strategy requires understanding each platform's algorithms, surge patterns, and terms of service. Some platforms prohibit simultaneous active orders - know the rules.)
+
+===== CORE CONCEPTS =====
+
 Multi-apping
 
 Multi-apping
 
 Multi-aplicaciones / Trabajar múltiples apps
+(Strategy: Running multiple gig apps (Uber, Lyft, DoorDash, Instacart) simultaneously to maximize order selection and minimize downtime. Most effective during slow periods.)
 
 Cherry-picking
 
 Cherry-picking
 
 Selección selectiva / Escoger los mejores
+(Optimization: Strategically accepting only high-value orders (high pay, short distance, good restaurant). Key metric: dollars per mile. Target $2+ per mile minimum in 2025 markets.)
+
+===== EFFICIENCY METRICS =====
 
 Dead miles / Unpaid miles
 
 Dead miles / Unpaid miles
 
 Millas muertas / Millas no pagadas
+(Critical concept: Miles driven without pay - returning from delivery, driving to pickup. Reduce dead miles by ending dashes in high-demand areas, accepting orders with return direction.)
 
 Stacking / Double-dipping
 
 Stacking / Double-dipping
 
 Apilar / Doble ganancia
+(Advanced technique: Combining orders from multiple platforms on same route. CAUTION: Violates TOS on most platforms if done simultaneously. Single-platform stacking is encouraged and built-in.)
+
+===== STRATEGY DISCUSSIONS =====
 
 I work for multiple platforms simultaneously to maximize my income opportunities.
 
 I work for multiple platforms simultaneously to maximize my income opportunities.
 
 Trabajo para múltiples plataformas simultáneamente para maximizar mis oportunidades de ingreso.
+(Context: Common among experienced gig workers. Typical combinations: Uber+Lyft for rideshare, DoorDash+Uber Eats for delivery, Instacart+Shipt for grocery.)
 
 I multi-app between DoorDash and Uber Eats. What's your strategy?
 
 I multi-app between DoorDash and Uber Eats. What's your strategy?
 
 Trabajo con múltiples apps entre DoorDash y Uber Eats. ¿Cuál es tu estrategia?
+(Networking tip: Drivers share zone strategies, best times for each platform, restaurant partnerships. Local knowledge compounds earnings potential.)
+
+===== 2025 BEST PRACTICES =====
+- Keep max 2 platforms active simultaneously
+- Pause non-active app before accepting order
+- Track metrics: $/hour, $/mile, acceptance rates
+- Zone expertise > platform loyalty
+- Peak hours: 11am-2pm, 5pm-9pm weekdays
+- Weekend nights highest earnings potential
+- Weather events = surge opportunities
+- Build restaurant relationships for priority pickup

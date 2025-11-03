@@ -1,59 +1,86 @@
+===== DOORDASH DELIVERY =====
+(2025 platform note: DoorDash uses dynamic pricing with base pay, peak pay, and tips. Acceptance rate no longer affects Top Dasher status - completion rate and customer rating are key metrics.)
+
+===== PLATFORM TERMINOLOGY =====
+
 Dasher
 
 Dasher
 
 Dasher / Repartidor
+(Context: Official term for DoorDash delivery drivers.)
 
 Dash / Dashing
 
 Dash / Dashing
 
 Dash / Repartiendo
+(Usage: "I'm dashing tonight" = working a DoorDash shift)
+
+===== EARNINGS STRUCTURE =====
 
 Peak Pay
 
 Peak Pay
 
 Pago pico / Bonificación de hora pico
+(2025 optimization: Peak pay appears during high demand. Ranges from $1-$10+ per order. Watch for peak pay notifications in app - they indicate hot zones.)
 
 Base pay
 
 Base pay
 
 Pago base
+(Context: Starting at $2-$3 per order in 2025, base pay increases with distance, time, and desirability. Orders declined by multiple dashers show higher base pay.)
+
+===== PERFORMANCE METRICS =====
 
 Completion rate
 
 Completion rate
 
 Tasa de finalización
+(Critical metric: Must maintain 80%+ completion rate to avoid deactivation. Only unassign orders before pickup if absolutely necessary.)
 
 Acceptance rate
 
 Acceptance rate
 
 Tasa de aceptación
+(2025 update: No longer affects Top Dasher qualification in most markets. Strategic declining of low-value orders can increase hourly earnings.)
+
+===== ESSENTIAL EQUIPMENT =====
 
 Hot Bag / Red Card
 
 Hot Bag / Red Card
 
 Bolsa térmica / Tarjeta Roja
+(Required: Hot bag maintains food temperature and signals professionalism. Red Card enables order-and-pay restaurants. Keep Red Card accessible at all times.)
+
+===== ORDER TYPES =====
 
 Stacked order
 
 Stacked order
 
 Pedido apilado
+(Earnings optimization: Stacked orders deliver multiple orders in one trip. Can increase efficiency but watch for route logic - sometimes better to decline if adding significant time.)
+
+===== RESTAURANT COMMUNICATION =====
 
 I'm ordering for DoorDash and paying with this card
 
 I'm ordering for DoorDash and paying with this card
 
 Estoy ordenando para DoorDash y pagando con esta tarjeta
+(Context: Used at order-and-pay restaurants. Show Red Card to confirm payment method.)
+
+===== CUSTOMER BOUNDARIES =====
 
 I've already picked up your order. Please contact DoorDash support for order changes.
 
 I've already picked up your order. Please contact DoorDash support for order changes.
 
 Ya recogí su pedido. Por favor contacte al soporte de DoorDash para cambios de pedido.
+(Policy: Once order is confirmed picked up, only DoorDash support can modify orders. This protects dashers from unauthorized item additions.)
