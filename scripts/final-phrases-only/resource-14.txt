@@ -1,8 +1,26 @@
+# Resource 14: Rideshare Passenger Confirmation & Setup
+**Level**: Básico
+**Category**: Conductor
+**Duration**: 4 minutes
+**Phrases**: 18 essential phrases
+**Focus**: Professional passenger verification and ride setup
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1: INITIAL GREETING & CONFIRMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 1: Casual greeting ===
+
 Hi! How are you?
 
 Hi! How are you?
 
 ¡Hola! ¿Cómo estás?
+
+[Tip: Friendly start. Shows you're approachable]
+
+
+=== PHRASE 2: Confirm rideshare waiting ===
 
 Hi there! Are you waiting for an Uber?
 
@@ -10,11 +28,25 @@ Hi there! Are you waiting for an Uber?
 
 ¡Hola! ¿Estás esperando un Uber?
 
+[Tip: Use at busy pickup spots. Replace "Uber" with your platform]
+
+
+=== PHRASE 3: Welcome passenger ===
+
 Hey! Welcome!
 
 Hey! Welcome!
 
 ¡Oye! ¡Bienvenido!
+
+[Tip: "Hey" is casual but friendly. Good for younger passengers]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2: VERIFYING IDENTITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 4: Confirm passenger name ===
 
 Are you Michael?
 
@@ -22,11 +54,21 @@ Are you Michael?
 
 ¿Eres Michael?
 
+[Tip: ALWAYS verify name. Safety and wrong-passenger prevention]
+
+
+=== PHRASE 5: Ask if they're looking for driver ===
+
 Hi! Are you looking for Michael?
 
 Hi! Are you looking for Michael?
 
 ¡Hola! ¿Buscas a Michael?
+
+[Tip: Use YOUR name. Helps passenger confirm they found right driver]
+
+
+=== PHRASE 6: Request name confirmation ===
 
 Can you confirm your name for me?
 
@@ -34,11 +76,25 @@ Can you confirm your name for me?
 
 ¿Puedes confirmarme tu nombre?
 
+[Tip: Polite way to verify. Use when multiple people are waiting]
+
+
+=== PHRASE 7: Confirm difficult name pronunciation ===
+
 I have a pickup for... how do you
 
 I have a pickup for... how do you
 
 Tengo un viaje para... ¿cómo se
+
+[Tip: Complete: "...pronounce your name?" Shows respect for difficult names]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3: DESTINATION CONFIRMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 8: Ask about destination ===
 
 Where are we going today?
 
@@ -46,11 +102,25 @@ Where are we going today?
 
 ¿A dónde vamos hoy?
 
+[Tip: Friendly confirmation. Catches app errors early]
+
+
+=== PHRASE 9: Confirm specific address ===
+
 I have you going to 123 Oak Street. Is
 
 I have you going to 123 Oak Street. Is
 
 Te llevo al 123 de Oak Street. ¿Es
+
+[Tip: Complete: "...that correct?" Shows professionalism]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: COMFORT CHECK-IN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 10: Check seating comfort ===
 
 Are you comfortable back there?
 
@@ -58,11 +128,21 @@ Are you comfortable back there?
 
 ¿Estás cómodo ahí atrás?
 
+[Tip: Ask after they settle in. Shows you care]
+
+
+=== PHRASE 11: Check temperature preference ===
+
 Is the temperature okay for you?
 
 Is the temperature okay for you?
 
 ¿La temperatura está bien para ti?
+
+[Tip: Ask early. Temperature complaints hurt ratings]
+
+
+=== PHRASE 12: Ask about music preference ===
 
 Do you have any music preferences?
 
@@ -70,11 +150,29 @@ Do you have any music preferences?
 
 ¿Tienes alguna preferencia de música?
 
+[Tip: Offering choice = better rating. Keep volume moderate]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5: TIME MANAGEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 13: Check if passenger is rushing ===
+
 Are you in a hurry?
 
 Are you in a hurry?
 
 ¿Tienes prisa?
+
+[Tip: Helps you choose route and driving style]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 6: GROUP RIDES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 14: Check if others coming ===
 
 Is anyone else coming?
 
@@ -82,11 +180,21 @@ Is anyone else coming?
 
 ¿Viene alguien más?
 
+[Tip: Ask before driving away. Prevents awkward returns]
+
+
+=== PHRASE 15: Greet group ===
+
 Hey everyone! How are you all doing?
 
 Hey everyone! How are you all doing?
 
 ¡Hola a todos! ¿Cómo están?
+
+[Tip: Acknowledge whole group. Makes everyone feel welcome]
+
+
+=== PHRASE 16: Offer trunk for luggage ===
 
 Do you have any bags? I can pop the
 
@@ -94,14 +202,30 @@ Do you have any bags? I can pop the
 
 ¿Tienen maletas? Puedo abrir la
 
+[Tip: Complete: "...trunk." Shows helpfulness]
+
+
+=== PHRASE 17: Check group readiness ===
+
 Is everybody ready to go?
 
 Is everybody ready to go?
 
 ¿Todos están listos para irnos?
 
+[Tip: Prevents leaving someone behind]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 7: SPECIAL REQUESTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 18: Confirm airport ride ===
+
 Did you request a ride to the airport?
 
 Did you request a ride to the airport?
 
 ¿Pediste un viaje al aeropuerto?
+
+[Tip: Confirms trip type. Airport rides need trunk space and time buffer]

@@ -1,8 +1,26 @@
+# Resource 15: Rideshare Route Management & Navigation
+**Level**: Intermedio
+**Category**: Conductor
+**Duration**: 5 minutes
+**Phrases**: 19 essential phrases
+**Focus**: Destination changes, route preferences, and navigation problems
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1: DESTINATION VERIFICATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 1: Confirm address accuracy ===
+
 Is this the correct address?
 
 Is this the correct address?
 
 ¿Esta es la dirección correcta?
+
+[Tip: Ask early if address looks unusual or far from passenger location]
+
+
+=== PHRASE 2: Offer destination change ===
 
 Do you want to change the destination?
 
@@ -10,11 +28,21 @@ Do you want to change the destination?
 
 ¿Quieres cambiar el destino?
 
+[Tip: Use when passenger seems uncertain. Must change in app for payment]
+
+
+=== PHRASE 3: Ask about additional stops ===
+
 Do you need to make a stop?
 
 Do you need to make a stop?
 
 ¿Necesitas hacer una parada?
+
+[Tip: Clarify early. Some apps allow stops, some charge extra]
+
+
+=== PHRASE 4: Confirm destination ===
 
 Going to 123 Main Street, right?
 
@@ -22,11 +50,25 @@ Going to 123 Main Street, right?
 
 Vamos a Main Street 123, ¿correcto?
 
+[Tip: Quick confirmation. Catches app mistakes]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2: BASIC DIRECTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 5: Announce right turn ===
+
 Turn right
 
 Turn right
 
 Gira a la derecha
+
+[Tip: Sometimes passenger gives manual directions. Acknowledge turns]
+
+
+=== PHRASE 6: Announce left turn ===
 
 Turn left
 
@@ -34,11 +76,25 @@ Turn left
 
 Gira a la izquierda
 
+[Tip: Repeat passenger's direction to confirm you understood]
+
+
+=== PHRASE 7: Announce U-turn ===
+
 Make a U-turn
 
 Make a U-turn
 
 Haz una vuelta en U
+
+[Tip: Always check safety before U-turning]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3: ROUTE PREFERENCES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 8: Ask route preference ===
 
 Which way do you prefer?
 
@@ -46,11 +102,21 @@ Which way do you prefer?
 
 ¿Qué ruta prefieres?
 
+[Tip: Give passenger choice when multiple routes available]
+
+
+=== PHRASE 9: Suggest highway route ===
+
 Do you want to take the highway?
 
 Do you want to take the highway?
 
 ¿Quieres tomar la autopista?
+
+[Tip: Highway usually faster but passenger may prefer scenic route]
+
+
+=== PHRASE 10: Ask about tolls ===
 
 Do you mind tolls?
 
@@ -58,11 +124,25 @@ Do you mind tolls?
 
 ¿Te importan los peajes?
 
+[Tip: Some passengers avoid tolls to save money. Ask before toll roads]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: GPS & NAVIGATION PROBLEMS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 11: Explain GPS signal loss ===
+
 My GPS lost signal. One moment, please.
 
 My GPS lost signal. One moment, please.
 
 Mi GPS perdió señal. Un momento, por
+
+[Tip: Stay calm. Passengers understand tech problems if you communicate]
+
+
+=== PHRASE 12: Request passenger help ===
 
 Can you help me with directions?
 
@@ -70,11 +150,21 @@ Can you help me with directions?
 
 ¿Me puedes ayudar con las direcciones?
 
+[Tip: Not embarrassing to ask. Shows you value accurate arrival]
+
+
+=== PHRASE 13: Report address discrepancy ===
+
 The GPS shows a different address.
 
 The GPS shows a different address.
 
 El GPS muestra una dirección diferente.
+
+[Tip: Alert passenger early to address mismatches]
+
+
+=== PHRASE 14: Explain GPS restart ===
 
 Let me restart the GPS.
 
@@ -82,11 +172,25 @@ Let me restart the GPS.
 
 Déjame reiniciar el GPS.
 
+[Tip: Simple fix that often works. Keeps passenger informed]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5: ARRIVAL & ACCESS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 15: Ask about entry point ===
+
 Which entrance should I use?
 
 Which entrance should I use?
 
 ¿Qué entrada debo usar?
+
+[Tip: Hospitals, malls, and offices have multiple entrances]
+
+
+=== PHRASE 16: Ask for gate code ===
 
 Do I need a gate code?
 
@@ -94,11 +198,25 @@ Do I need a gate code?
 
 ¿Necesito un código de acceso?
 
+[Tip: Ask before arriving at gated community]
+
+
+=== PHRASE 17: Ask where to stop ===
+
 Where should I park?
 
 Where should I park?
 
 ¿Dónde debo estacionarme?
+
+[Tip: Passenger knows best spot. Prevents having to move car]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 6: TRAFFIC & DELAYS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 18: Warn about delay ===
 
 It might take 10 more minutes.
 
@@ -106,8 +224,29 @@ It might take 10 more minutes.
 
 Puede tomar 10 minutos más.
 
+[Tip: Manage expectations. Better to over-estimate than surprise passenger]
+
+
+=== PHRASE 19: Offer route change ===
+
 Should I take a different route?
 
 Should I take a different route?
 
 ¿Debo tomar una ruta diferente?
+
+[Tip: When stuck in traffic, give passenger option]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+USAGE NOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+These intermediate phrases help you:
+- Handle destination changes professionally
+- Offer route choices
+- Manage GPS problems
+- Deal with traffic delays
+- Communicate access requirements
+
+Master these to handle complex ride scenarios with confidence.

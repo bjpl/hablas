@@ -1,8 +1,26 @@
+# Resource 12: Navigation & Directions - Essential GPS Phrases
+**Level**: Básico
+**Category**: All (Conductor & Repartidor)
+**Duration**: 4 minutes
+**Phrases**: 19 essential phrases
+**Focus**: GPS commands and finding locations
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1: BASIC DIRECTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 1: Turn right ===
+
 Turn right
 
 Turn right
 
 Gira a la derecha
+
+[Tip: Most common GPS command. Practice pronunciation: "tern RITE"]
+
+
+=== PHRASE 2: Continue straight ===
 
 Go straight
 
@@ -10,11 +28,21 @@ Go straight
 
 Sigue derecho/recto
 
+[Tip: "Straight" pronounced "STREIT" not "estraight"]
+
+
+=== PHRASE 3: Make U-turn ===
+
 Make a U-turn
 
 Make a U-turn
 
 Haz un cambio de sentido/vuelta en U
+
+[Tip: Also called "retorno" in some countries]
+
+
+=== PHRASE 4: Distance warning ===
 
 In 500 feet, turn right
 
@@ -22,11 +50,25 @@ In 500 feet, turn right
 
 En 500 pies, gira a la derecha
 
+[Tip: 500 feet = about 150 meters or 1.5 blocks. Prepare to turn soon]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2: ASKING FOR DIRECTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 5: Ask if going to specific street ===
+
 Are you going to Main Street?
 
 Are you going to Main Street?
 
 ¿Vas a Main Street?
+
+[Tip: Use passenger's destination from app]
+
+
+=== PHRASE 6: Ask about cross streets ===
 
 Is it near the corner of First and Oak?
 
@@ -34,11 +76,21 @@ Is it near the corner of First and Oak?
 
 ¿Está cerca de la esquina de First y
 
+[Tip: Cross streets help identify exact location]
+
+
+=== PHRASE 7: Ask which side ===
+
 Which side of the street?
 
 Which side of the street?
 
 ¿De qué lado de la calle?
+
+[Tip: Prevents wrong-side stops. Important for safety]
+
+
+=== PHRASE 8: Ask about building appearance ===
 
 What does the building look like?
 
@@ -46,11 +98,25 @@ What does the building look like?
 
 ¿Cómo se ve el edificio?
 
+[Tip: Visual details help when numbers aren't visible]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3: LOCATING CUSTOMER/PASSENGER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 9: Confirm visual contact ===
+
 Do you see my car?
 
 Do you see my car?
 
 ¿Ves mi carro?
+
+[Tip: Helps passenger find you in crowded areas]
+
+
+=== PHRASE 10: Request meeting point ===
 
 Can you meet me at the entrance?
 
@@ -58,11 +124,25 @@ Can you meet me at the entrance?
 
 ¿Puedes encontrarme en la entrada?
 
+[Tip: Saves time in large complexes]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: ASKING PEDESTRIANS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 11: Politely ask for directions ===
+
 Excuse me, how do I get to Oak Street?
 
 Excuse me, how do I get to Oak Street?
 
 Disculpe, ¿cómo llego a Oak Street?
+
+[Tip: Always start with "Excuse me" - shows respect]
+
+
+=== PHRASE 12: Ask about distance ===
 
 How far is it?
 
@@ -70,11 +150,21 @@ How far is it?
 
 ¿Qué tan lejos está?
 
+[Tip: Helps decide if you need to drive or can walk]
+
+
+=== PHRASE 13: Confirm instructions ===
+
 So, I turn left at the light?
 
 So, I turn left at the light?
 
 Entonces, ¿giro a la izquierda en el
+
+[Tip: Repeat back to confirm you understood]
+
+
+=== PHRASE 14: Request guidance ===
 
 Can you guide me?
 
@@ -82,11 +172,25 @@ Can you guide me?
 
 ¿Puedes guiarme?
 
+[Tip: Use with customers when totally lost]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5: TECHNICAL PROBLEMS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 15: Report wrong address ===
+
 The address in the app might be wrong
 
 The address in the app might be wrong
 
 La dirección en la app podría estar
+
+[Tip: Stay polite. It's not your fault but don't blame customer]
+
+
+=== PHRASE 16: Explain GPS issue ===
 
 I lost the signal
 
@@ -94,11 +198,25 @@ I lost the signal
 
 Perdí la señal
 
+[Tip: Honest explanation. Customers understand technical issues]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 6: ACCESS QUESTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 17: Ask for gate code ===
+
 Is there a gate code?
 
 Is there a gate code?
 
 ¿Hay un código para la puerta?
+
+[Tip: Ask BEFORE arriving at gate to avoid waiting]
+
+
+=== PHRASE 18: Ask which building ===
 
 Which building are you in?
 
@@ -106,8 +224,15 @@ Which building are you in?
 
 ¿En qué edificio estás?
 
+[Tip: Essential for apartment complexes with multiple buildings]
+
+
+=== PHRASE 19: Ask for floor number ===
+
 What floor?
 
 What floor?
 
 ¿Qué piso?
+
+[Tip: Quick question for deliveries or passenger pickup in buildings]

@@ -1,8 +1,26 @@
+# Resource 11: Rideshare Driver Essentials - Passenger Greeting & Comfort
+**Level**: Básico
+**Category**: Conductor
+**Duration**: 4 minutes
+**Phrases**: 15 essential phrases
+**Focus**: Professional passenger service and comfort management
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1: GREETING & CONFIRMING PASSENGER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 1: Morning greeting ===
+
 Good morning!
 
 Good morning!
 
 ¡Buenos días!
+
+[Tip: Use "Good afternoon" after 12pm, "Good evening" after 5pm]
+
+
+=== PHRASE 2: Welcome passenger ===
 
 Hi! Welcome!
 
@@ -10,11 +28,21 @@ Hi! Welcome!
 
 ¡Hola! ¡Bienvenido!
 
+[Tip: Smile and make eye contact. First impression matters for tips]
+
+
+=== PHRASE 3: Confirm passenger name ===
+
 Are you Sarah?
 
 Are you Sarah?
 
 ¿Eres Sarah?
+
+[Tip: ALWAYS confirm name before letting passenger in. Safety first]
+
+
+=== PHRASE 4: Confirm rideshare pickup ===
 
 Hi! Are you waiting for an Uber?
 
@@ -22,11 +50,29 @@ Hi! Are you waiting for an Uber?
 
 ¡Hola! ¿Estás esperando un Uber?
 
+[Tip: Replace "Uber" with "Lyft" or "DiDi" as needed]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2: DESTINATION & ROUTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 5: Ask about destination ===
+
 Where are we headed today?
 
 Where are we headed today?
 
 ¿A dónde vamos hoy?
+
+[Tip: Friendly way to confirm destination. Shows professionalism]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3: LUGGAGE ASSISTANCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 6: Offer luggage help ===
 
 Can I help you with your bags?
 
@@ -34,11 +80,25 @@ Can I help you with your bags?
 
 ¿Puedo ayudarte con tus maletas?
 
+[Tip: Offer help for luggage. Great for tips, especially airport rides]
+
+
+=== PHRASE 7: Direct to trunk ===
+
 You can put it in the trunk.
 
 You can put it in the trunk.
 
 Puedes ponerlo en la cajuela.
+
+[Tip: If you don't want to handle bags, direct them politely]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: COMFORT PREFERENCES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 8: Check temperature ===
 
 Is the temperature okay?
 
@@ -46,11 +106,21 @@ Is the temperature okay?
 
 ¿Está bien la temperatura?
 
+[Tip: Ask early in ride. Shows you care about passenger comfort]
+
+
+=== PHRASE 9: Offer window option ===
+
 Feel free to open the window.
 
 Feel free to open the window.
 
 Siéntete libre de abrir la ventana.
+
+[Tip: Gives passenger control. Some prefer fresh air]
+
+
+=== PHRASE 10: Ask about music ===
 
 Is the music okay, or would you like me
 
@@ -58,11 +128,25 @@ Is the music okay, or would you like me
 
 ¿Está bien la música, o quieres que
 
+[Tip: Complete phrase: "...to change it?" Shows attention to preferences]
+
+
+=== PHRASE 11: Offer phone charger ===
+
 I have a charger if you need one.
 
 I have a charger if you need one.
 
 Tengo un cargador si necesitas uno.
+
+[Tip: Having chargers = better ratings. Mention at start of ride]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5: PASSENGER COUNT & LIMITS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 12: Ask group size ===
 
 How many people are riding with you?
 
@@ -70,11 +154,25 @@ How many people are riding with you?
 
 ¿Cuántas personas vienen contigo?
 
+[Tip: Ask before they all try to get in. Prevents awkward situations]
+
+
+=== PHRASE 13: State passenger limit ===
+
 I can only take four passengers.
 
 I can only take four passengers.
 
 Solo puedo llevar cuatro pasajeros.
+
+[Tip: Be polite but firm. It's the law and app rules]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 6: ADDITIONAL CONSIDERATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 14: Be patient ===
 
 Take your time.
 
@@ -82,8 +180,15 @@ Take your time.
 
 Tómate tu tiempo.
 
+[Tip: Use when passenger is loading bags or getting settled. Shows professionalism]
+
+
+=== PHRASE 15: Acknowledge multiple stops ===
+
 I see you have a stop on the way.
 
 I see you have a stop on the way.
 
 Veo que tienes una parada en el camino.
+
+[Tip: Acknowledge stops early. Sets expectations for route]
