@@ -1,77 +1,192 @@
-Emergency
+================================================================================
+RESOURCE 48: MEDICAL EMERGENCIES (CRITICAL)
+================================================================================
+Category: Emergency & Safety - Life-Threatening Situations
+Difficulty: CRITICAL - PRACTICE NOW
+Context: Responding to medical emergencies during rideshare
+Medical Accuracy: Phrases reflect basic first responder protocols
+Legal Note: You are NOT required to provide medical care beyond calling 911
+and providing basic comfort. Good Samaritan laws provide protection.
+================================================================================
 
-Emergency
+🚨 WHEN TO CALL 911 IMMEDIATELY 🚨
 
-Emergencia
+ALWAYS call 911 for:
+- Unconsciousness or unresponsiveness
+- Chest pain or suspected heart attack
+- Severe difficulty breathing
+- Severe bleeding that won't stop
+- Seizures
+- Signs of stroke (face drooping, arm weakness, speech difficulty)
+- Severe allergic reaction (swelling, breathing trouble)
+- Any life-threatening emergency
 
-Ambulance
+DO NOT DRIVE TO HOSPITAL - Wait for ambulance unless specifically instructed
+by 911 dispatcher. Paramedics have life-saving equipment you don't have.
 
-Ambulance
+================================================================================
+SECTION 1: KEY TERMINOLOGY - MEDICAL EMERGENCY VOCABULARY
+================================================================================
 
-Ambulancia
+1. Emergency
+   Context: Life-threatening situation requiring immediate help
+   Emergencia
 
-Unconscious
+2. Ambulance
+   Context: Emergency medical vehicle with paramedics
+   Ambulancia
 
-Unconscious
+3. Unconscious
+   Context: Person is not responsive, cannot be awakened
+   Inconsciente
 
-Inconsciente
+4. Chest pain
+   Context: Possible heart attack symptom (ALWAYS call 911)
+   Dolor de pecho
 
-Chest pain
+5. Breathing difficulty
+   Context: Cannot breathe normally, gasping, choking
+   Dificultad para respirar
 
-Chest pain
+6. Allergic reaction
+   Context: Body reaction to allergen (food, bee sting, medication)
+   Reacción alérgica
 
-Dolor de pecho
+7. Bleeding
+   Context: Blood loss from injury
+   Sangrado / Hemorragia
 
-Breathing difficulty
+8. Seizure
+   Context: Uncontrolled body convulsions/shaking
+   Convulsión
 
-Breathing difficulty
+================================================================================
+SECTION 2: IMMEDIATE EMERGENCY RESPONSES - CRITICAL PHRASES
+================================================================================
 
-Dificultad para respirar
+🚨 PRACTICE THESE NOW: In a real emergency, your brain will be under extreme
+stress. Practice these phrases RIGHT NOW so you can say them automatically
+under pressure. Say each one out loud 3 times.
 
-Allergic reaction
+9. Call 911 immediately!
 
-Allergic reaction
+   Context: Directing others to call emergency services
+   When to use: You are occupied with victim, need others to call
+   Critical action: Make eye contact with specific person, point at them
 
-Reacción alérgica
+   ¡Llame al 911 inmediatamente!
 
-Bleeding
+10. I need medical help now
 
-Bleeding
+    Context: Getting attention of bystanders/getting help
+    When to use: You need assistance, making public aware of emergency
+    Shouting technique: Loud, clear, direct - this activates help response
 
-Sangrado / Hemorragia
+    Necesito ayuda médica ahora
 
-Seizure
+11. Are you okay? Can you hear me?
 
-Seizure
+    Context: Checking consciousness level of victim
+    When to use: First assessment of unresponsive person
+    Medical note: If no response, check breathing and call 911 immediately
 
-Convulsión
+    ¿Está bien? ¿Puede oírme?
 
-Call 911 immediately!
+12. Stay calm, help is on the way
 
-Call 911 immediately!
+    Context: Comforting conscious victim while awaiting paramedics
+    When to use: After 911 called, while waiting for ambulance
+    Medical benefit: Keeping victim calm reduces panic, helps breathing
 
-¡Llame al 911 inmediatamente!
+    Mantenga la calma, la ayuda viene en camino
 
-I need medical help now
+13. Don't move, wait for the paramedics
 
-I need medical help now
+    Context: Preventing movement of potential spine/neck injury victim
+    When to use: After fall, car accident, or trauma
+    Critical safety: Moving spine injury victim can cause paralysis
 
-Necesito ayuda médica ahora
+    No se mueva, espere a los paramédicos
 
-Are you okay? Can you hear me?
+================================================================================
+SECTION 3: SPECIFIC EMERGENCY PROTOCOLS
+================================================================================
 
-Are you okay? Can you hear me?
+UNCONSCIOUS PASSENGER:
+1. Pull over safely immediately
+2. Check if breathing - look for chest movement
+3. Call 911 immediately
+4. If not breathing: Begin CPR if trained (not required)
+5. Do NOT leave patient alone
+6. Wait for paramedics
 
-¿Está bien? ¿Puede oírme?
+CHEST PAIN (POSSIBLE HEART ATTACK):
+1. Pull over safely immediately
+2. Call 911 - state "possible heart attack"
+3. Keep patient calm and still
+4. Ask if they have medication (nitroglycerin) - help them take it
+5. Do NOT drive to hospital - wait for ambulance
+6. Monitor breathing until help arrives
 
-Stay calm, help is on the way
+DIFFICULTY BREATHING:
+1. Pull over safely immediately
+2. Lower windows for fresh air
+3. Ask about inhaler/EpiPen - help them use it
+4. Call 911 if severe or not improving
+5. Keep patient sitting upright
+6. Stay calm to help them stay calm
 
-Stay calm, help is on the way
+SEIZURE:
+1. Pull over safely immediately
+2. Clear area around person (move sharp objects)
+3. Do NOT restrain them or put anything in their mouth
+4. Time the seizure (call 911 if longer than 5 minutes)
+5. Turn person on side after seizure stops
+6. Stay with them until fully conscious
 
-Mantenga la calma, la ayuda viene en camino
+SEVERE BLEEDING:
+1. Pull over safely immediately
+2. Call 911
+3. Apply direct pressure with clean cloth
+4. Do NOT remove cloth if blood soaks through - add more on top
+5. Elevate injured area above heart if possible
+6. Keep patient lying down
 
-Don't move, wait for the paramedics
+================================================================================
+SECTION 4: AFTER THE EMERGENCY
+================================================================================
 
-Don't move, wait for the paramedics
+DOCUMENTATION:
+1. File detailed platform report with timeline
+2. Note: time emergency started, 911 call time, ambulance arrival
+3. Hospital name where patient was taken
+4. Any witnesses who can provide statement
+5. Your emotional state is valid - consider counseling support
 
-No se mueva, espere a los paramédicos
+LEGAL PROTECTION:
+- Good Samaritan laws protect you when helping in emergency
+- You are NOT required to provide medical care beyond calling 911
+- Platform insurance should cover any liability during emergency
+- Document everything for insurance purposes
+
+EMOTIONAL RECOVERY:
+- Medical emergencies are traumatic for drivers too
+- Platform may offer counseling resources
+- Take time off if needed - this is legitimate trauma
+- Talk to someone about what you experienced
+
+================================================================================
+MEDICAL DISCLAIMER
+================================================================================
+
+This resource provides basic emergency response phrases and protocols for
+rideshare drivers. It is NOT a substitute for formal first aid/CPR training.
+
+RECOMMENDED: Take a basic first aid and CPR course through Red Cross or similar
+organization. Cost: $40-90. Time: 4-6 hours. Could save a life.
+
+In any medical emergency, your PRIMARY responsibility is to call 911 and
+provide basic comfort until professional help arrives. You are NOT expected
+or required to provide medical treatment beyond this.
+
+================================================================================

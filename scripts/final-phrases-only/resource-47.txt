@@ -1,71 +1,135 @@
-Lost item / Lost property
+================================================================================
+RESOURCE 47: LOST ITEMS & PROPERTY DISPUTES
+================================================================================
+Category: Emergency & Safety - Lost Property Management
+Difficulty: Intermediate
+Context: Professional handling of lost items and property claims
+Legal Note: Always use platform's lost item process. Direct returns without
+platform coordination can expose you to false theft claims. Protect yourself
+with documentation.
+================================================================================
 
-Lost item / Lost property
+SECTION 1: KEY TERMINOLOGY - LOST PROPERTY VOCABULARY
+================================================================================
 
-Artículo perdido / Propiedad perdida
+1. Lost item / Lost property
+   Context: Passenger belongings left in vehicle
+   Artículo perdido / Propiedad perdida
 
-Found / Located
+2. Found / Located
+   Context: Item has been discovered/recovered
+   Encontrado / Ubicado
 
-Found / Located
+3. Return / Give back
+   Context: Process of returning item to owner
+   Devolver / Regresar
 
-Encontrado / Ubicado
+4. Valuable
+   Context: High-value or important item
+   Valioso
 
-Return / Give back
+5. Identification
+   Context: Proof of ownership/identity
+   Identificación
 
-Return / Give back
+6. Theft / Stolen
+   Context: Alleged intentional taking (serious accusation)
+   Robo / Robado
 
-Devolver / Regresar
+================================================================================
+SECTION 2: IMMEDIATE DISCOVERY - AT DROP-OFF
+================================================================================
 
-Valuable
+7. Excuse me! You left something in the car!
 
-Valuable
+   Context: Catching passenger before they leave area
+   When to use: Immediately after passenger exits, item visible
+   Best practice: Call out immediately to avoid lost item process
 
-Valioso
+   ¡Disculpe! ¡Dejó algo en el carro!
 
-Identification
+8. Please make sure you have all your belongings. Check for phone, wallet, and keys.
 
-Identification
+   Context: Pre-exit reminder to prevent lost items
+   When to use: Before EVERY passenger exit
+   Prevention strategy: This simple habit prevents 80% of lost items
 
-Identificación
+   Por favor asegúrese de tener todas sus pertenencias. Revise su teléfono, billetera y llaves.
 
-Theft / Stolen
+================================================================================
+SECTION 3: POST-TRIP DISCOVERY - FOUND ITEM PROTOCOL
+================================================================================
 
-Theft / Stolen
+9. I found your [item]. I've reported it through the app. The platform will help coordinate return. Your item is safe.
 
-Robo / Robado
+   Context: Professional response when passenger contacts about lost item
+   When to use: You have found their item
+   Platform protection: Using official channel protects both parties
 
-Excuse me! You left something in the car!
+   Encontré su [artículo]. Lo he reportado a través de la aplicación. La plataforma ayudará a coordinar la devolución. Su artículo está seguro.
 
-Excuse me! You left something in the car!
+10. Can you describe what you lost? Can I see your ID to confirm it matches the app?
 
-¡Disculpe! ¡Dejó algo en el carro!
+    Context: Verifying identity before returning valuable item
+    When to use: In-person return of phone, wallet, etc.
+    Fraud prevention: Confirm person claiming item is actual owner
 
-I found your [item]. I've reported it through the app. The platform will help coordinate return. Your item is safe.
+    ¿Puede describir lo que perdió? ¿Puedo ver su identificación para confirmar que coincide con la aplicación?
 
-I found your [item]. I've reported it through the app. The platform will help coordinate return. Your item is safe.
+11. The platform arranged a return fee of $[X] for the trip to return your item.
 
-Encontré su [artículo]. Lo he reportado a través de la aplicación. La plataforma ayudará a coordinar la devolución. Su artículo está seguro.
+    Context: Explaining compensation for return trip
+    When to use: Platform has authorized return fee
+    Fair practice: You deserve compensation for time/gas to return items
 
-Can you describe what you lost? Can I see your ID to confirm it matches the app?
+    La plataforma organizó una tarifa de devolución de $[X] por el viaje para devolver su artículo.
 
-Can you describe what you lost? Can I see your ID to confirm it matches the app?
+================================================================================
+SECTION 4: DISPUTED/NOT FOUND ITEMS - PROTECTING YOURSELF
+================================================================================
 
-¿Puede describir lo que perdió? ¿Puedo ver su identificación para confirmar que coincide con la aplicación?
+🚨 LEGAL PROTECTION: If a passenger accuses you of theft or keeping their item,
+DOCUMENT EVERYTHING. Take photos of your empty vehicle. Get written statement
+from next passenger who can verify car was empty. File platform report FIRST
+before passenger can file false claim.
 
-The platform arranged a return fee of $[X] for the trip to return your item.
+12. I understand you're missing your [item]. I've checked my vehicle thoroughly and don't have it. I'm reporting this to the platform so they can investigate. They have GPS and timing records of all pickups after yours.
 
-The platform arranged a return fee of $[X] for the trip to return your item.
+    Context: Professional response when you don't have claimed item
+    When to use: Passenger insists you have item you cannot find
+    Evidence reference: GPS proves who was in car after them
+    Legal protection: Establish investigation process, not personal dispute
 
-La plataforma organizó una tarifa de devolución de $[X] por el viaje para devolver su artículo.
+    Entiendo que le falta su [artículo]. He revisado mi vehículo exhaustivamente y no lo tengo. Estoy reportando esto a la plataforma para que investiguen. Tienen registros de GPS y tiempo de todas las recogidas después de la suya.
 
-I understand you're missing your [item]. I've checked my vehicle thoroughly and don't have it. I'm reporting this to the platform so they can investigate. They have GPS and timing records of all pickups after yours.
+================================================================================
+LOST ITEM BEST PRACTICES
+================================================================================
 
-I understand you're missing your [item]. I've checked my vehicle thoroughly and don't have it. I'm reporting this to the platform so they can investigate. They have GPS and timing records of all pickups after yours.
+PREVENTION (Before lost items happen):
+1. Remind passengers to check for belongings before exiting
+2. Do quick visual sweep after EVERY trip
+3. Especially check: seat pockets, floor, between seats
 
-Entiendo que le falta su [artículo]. He revisado mi vehículo exhaustivamente y no lo tengo. Estoy reportando esto a la plataforma para que investiguen. Tienen registros de GPS y tiempo de todas las recogidas después de la suya.
+FOUND ITEM PROTOCOL:
+1. Take photo of item with timestamp
+2. Report through platform app immediately
+3. Secure item in separate compartment (not in passenger area)
+4. NEVER arrange direct return without platform coordination
+5. Keep item secure until platform arranges return
 
-Please make sure you have all your belongings. Check for phone, wallet, and keys.
+IF ACCUSED OF THEFT:
+1. Stay calm and professional
+2. Document your empty vehicle with photos/video
+3. File platform report immediately with your evidence
+4. Request GPS records showing subsequent passengers
+5. Do NOT engage in argument - let platform investigate
+6. Consider filing police report if accusation escalates
 
-Please make sure you have all your belongings. Check for phone, wallet, and keys.
+RETURN FEES:
+- You ARE entitled to compensation for return trips
+- Platform typically offers $15-25 return fee
+- You can decline to return if compensation insufficient
+- Item can be returned to platform hub instead
 
-Por favor asegúrese de tener todas sus pertenencias. Revise su teléfono, billetera y llaves.
+================================================================================

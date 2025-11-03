@@ -1,71 +1,115 @@
-Dispute
+================================================================================
+RESOURCE 46: CUSTOMER CONFLICTS & DISPUTES
+================================================================================
+Category: Emergency & Safety - Conflict De-escalation
+Difficulty: Advanced
+Context: Professional dispute resolution and customer service recovery
+Legal Note: All platform interactions are recorded. Maintain professional
+communication to protect your account standing and legal position.
+================================================================================
 
-Dispute
+SECTION 1: KEY TERMINOLOGY - DISPUTE VOCABULARY
+================================================================================
 
-Disputa / Desacuerdo
+1. Dispute
+   Context: Formal disagreement requiring resolution
+   Disputa / Desacuerdo
 
-Refund
+2. Refund
+   Context: Money returned due to service issue
+   Reembolso
 
-Refund
+3. Escalate
+   Context: Move issue to higher authority/support
+   Escalar
 
-Reembolso
+4. Resolution
+   Context: Final solution to problem
+   Resolución
 
-Escalate
+5. Documentation
+   Context: Written/recorded evidence of interaction
+   Documentación
 
-Escalate
+6. Witness
+   Context: Third party who observed incident
+   Testigo
 
-Escalar
+================================================================================
+SECTION 2: DE-ESCALATION PHRASES - MAINTAINING PROFESSIONALISM
+================================================================================
 
-Resolution
+7. I understand your concern about the fare. The price is set by the app based on distance, time, and demand. I cannot change it, but you can dispute it through the app support.
 
-Resolution
+   Context: Explaining fare calculation and dispute process
+   When to use: Customer questions pricing
+   Professional tip: Show understanding, explain system, offer solution path
 
-Resolución
+   Entiendo su preocupación por la tarifa. El precio lo establece la aplicación según distancia, tiempo y demanda. No puedo cambiarlo, pero puede disputarlo a través del soporte de la aplicación.
 
-Documentation
+8. I'm sorry you feel that way. Can you tell me specifically what I can do to improve your experience right now?
 
-Documentation
+   Context: Redirecting emotional complaint to actionable solution
+   When to use: General customer dissatisfaction
+   De-escalation technique: Validate feelings, seek specific actionable item
 
-Documentación
+   Lamento que se sienta así. ¿Puede decirme específicamente qué puedo hacer para mejorar su experiencia ahora mismo?
 
-Witness
+9. I followed the app's navigation to avoid traffic. Here's the route we took. If you prefer a different route, I'm happy to use it.
 
-Witness
+   Context: Defending route choice while offering flexibility
+   When to use: Customer questions your routing decision
+   Professional defense: Reference GPS data, offer customer preference
 
-Testigo
+   Seguí la navegación de la aplicación para evitar tráfico. Aquí está la ruta que tomamos. Si prefiere una ruta diferente, con gusto la uso.
 
-I understand your concern about the fare. The price is set by the app based on distance, time, and demand. I cannot change it, but you can dispute it through the app support.
+10. I need us to communicate respectfully. If you cannot, I will have to end this trip.
 
-I understand your concern about the fare. The price is set by the app based on distance, time, and demand. I cannot change it, but you can dispute it through the app support.
+    Context: Setting firm boundary on verbal abuse
+    When to use: Customer becomes verbally aggressive
+    Safety boundary: Platform supports ending trips for driver safety
 
-Entiendo su preocupación por la tarifa. El precio lo establece la aplicación según distancia, tiempo y demanda. No puedo cambiarlo, pero puede disputarlo a través del soporte de la aplicación.
+    Necesito que nos comuniquemos respetuosamente. Si no puede, tendré que terminar este viaje.
 
-I'm sorry you feel that way. Can you tell me specifically what I can do to improve your experience right now?
+================================================================================
+SECTION 3: CRITICAL BOUNDARIES - WHEN TO STAND FIRM
+================================================================================
 
-I'm sorry you feel that way. Can you tell me specifically what I can do to improve your experience right now?
+🚨 SAFETY NOTE: You have the RIGHT to end any trip where you feel unsafe or
+disrespected. Platform policies support this. Do NOT continue trips with
+abusive passengers. Your safety > customer ratings.
 
-Lamento que se sienta así. ¿Puede decirme específicamente qué puedo hacer para mejorar su experiencia ahora mismo?
+11. I'm getting you home safely. Please remain calm and seated.
 
-I followed the app's navigation to avoid traffic. Here's the route we took. If you prefer a different route, I'm happy to use it.
+    Context: Managing agitated but not threatening passenger
+    When to use: Customer is upset but trip should continue
+    Calming technique: Reassure of commitment while requesting cooperation
 
-I followed the app's navigation to avoid traffic. Here's the route we took. If you prefer a different route, I'm happy to use it.
+    Lo/La estoy llevando a casa de forma segura. Por favor manténgase calmado/a y sentado/a.
 
-Seguí la navegación de la aplicación para evitar tráfico. Aquí está la ruta que tomamos. Si prefiere una ruta diferente, con gusto la uso.
+12. I understand you're upset. All trip details are recorded by the platform including GPS, time, and communication. I'll submit a report about this conversation.
 
-I need us to communicate respectfully. If you cannot, I will have to end this trip.
+    Context: Final documentation statement during serious dispute
+    When to use: Conflict may lead to false claim against you
+    Legal protection: Establish that evidence exists and will be reviewed
 
-I need us to communicate respectfully. If you cannot, I will have to end this trip.
+    Entiendo que está molesto/a. Todos los detalles del viaje son registrados por la plataforma incluyendo GPS, tiempo y comunicación. Enviaré un reporte sobre esta conversación.
 
-Necesito que nos comuniquemos respetuosamente. Si no puede, tendré que terminar este viaje.
+================================================================================
+POST-CONFLICT PROTOCOL
+================================================================================
 
-I'm getting you home safely. Please remain calm and seated.
+AFTER ANY CONFLICT:
+1. Document immediately while details are fresh
+2. Submit platform report with objective facts (no emotions)
+3. Include: time, location, exact phrases used, witnesses if any
+4. If physical threat occurred, file police report
+5. Request platform review BEFORE customer can submit false claim
 
-I'm getting you home safely. Please remain calm and seated.
+PREVENTION FOR NEXT TIME:
+- Set professional tone from pickup
+- Address small issues before they escalate
+- Never argue - redirect to platform support
+- Know your rights to refuse/end service
 
-Lo/La estoy llevando a casa de forma segura. Por favor manténgase calmado/a y sentado/a.
-
-I understand you're upset. All trip details are recorded by the platform including GPS, time, and communication. I'll submit a report about this conversation.
-
-I understand you're upset. All trip details are recorded by the platform including GPS, time, and communication. I'll submit a report about this conversation.
-
-Entiendo que está molesto/a. Todos los detalles del viaje son registrados por la plataforma incluyendo GPS, tiempo y comunicación. Enviaré un reporte sobre esta conversación.
+================================================================================

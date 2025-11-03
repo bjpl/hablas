@@ -1,65 +1,282 @@
-Threat
+================================================================================
+RESOURCE 50: PERSONAL SAFETY THREATS (CRITICAL)
+================================================================================
+Category: Emergency & Safety - Life-Threatening Situations
+Difficulty: CRITICAL - PRACTICE NOW
+Context: Responding to threats, weapons, violence, or assault
+Legal Note: You have ABSOLUTE RIGHT to refuse/end service if you feel unsafe.
+Platform policies support drivers ending trips for safety reasons. Your life
+and safety are MORE IMPORTANT than any trip fare or customer rating.
+================================================================================
 
-Threat
+🚨 WHEN TO CALL 911 IMMEDIATELY 🚨
 
-Amenaza
+CALL 911 RIGHT NOW if:
+- Weapon (gun, knife, any weapon) is visible or mentioned
+- Physical threat is made against you
+- You are being physically assaulted or touched without consent
+- Passenger refuses to leave your vehicle after trip end
+- You feel your life is in danger
+- Passenger is destroying your property
+- Any criminal activity is occurring
 
-Weapon
+DO NOT HESITATE. DO NOT WAIT. CALL 911 IMMEDIATELY.
 
-Weapon
+Your safety > being polite > completing trip > customer satisfaction > ratings
 
-Arma
+================================================================================
+SECTION 1: KEY TERMINOLOGY - SAFETY THREAT VOCABULARY
+================================================================================
 
-Police
+1. Threat
+   Context: Statement or action indicating potential harm
+   Amenaza
 
-Police
+2. Weapon
+   Context: Any object that can cause harm (gun, knife, bat, etc.)
+   Arma
 
-Policía
+3. Police
+   Context: Law enforcement emergency responders
+   Policía
 
-Help
+4. Help
+   Context: Requesting assistance urgently
+   Ayuda
 
-Help
+5. Danger
+   Context: State of risk or threat
+   Peligro
 
-Ayuda
+6. Safe
+   Context: Free from danger or threat
+   Seguro / A salvo
 
-Danger
+================================================================================
+SECTION 2: IMMEDIATE THREAT RESPONSES - CRITICAL PHRASES
+================================================================================
 
-Danger
+🚨 PRACTICE THESE NOW: In a life-threatening situation, you need to be able to
+say these phrases INSTANTLY without thinking. Practice each one out loud 5
+times RIGHT NOW. Your life may depend on automatic response under extreme stress.
 
-Peligro
+7. I'm calling the police
 
-Safe
+   Context: Announcing call to 911 during active threat
+   When to use: Threatened or assaulted, need to establish police involvement
+   Psychological effect: Often de-escalates by showing consequences
+   Action: Have phone visible, actually dial 911
 
-Safe
+   Voy a llamar a la policía
 
-Seguro / A salvo
+8. Get out of the car now
 
-I'm calling the police
+   Context: Ordering threatening passenger to exit immediately
+   When to use: Active threat, need passenger removed NOW
+   Voice: LOUD, FIRM, COMMANDING - not asking, TELLING
+   Action: Pull over safely first, then give command
 
-I'm calling the police
+   Salga del carro ahora
 
-Voy a llamar a la policía
+9. I need help, I'm in danger
 
-Get out of the car now
+   Context: Getting attention of bystanders/public for assistance
+   When to use: You need others to intervene or call police
+   Action: Make eye contact, point to specific people
+   Volume: SHOUT this - don't be afraid to make a scene
 
-Get out of the car now
+   Necesito ayuda, estoy en peligro
 
-Salga del carro ahora
+10. Stay back / Don't come closer
 
-I need help, I'm in danger
+    Context: Creating physical distance from threat
+    When to use: Person approaching in threatening manner
+    Body language: Hold hand out in STOP gesture while saying this
+    Escalation: If they continue approaching, move to phrase #8 or #9
 
-I need help, I'm in danger
+    Manténgase atrás / No se acerque
 
-Necesito ayuda, estoy en peligro
+11. Leave me alone
 
-Stay back / Don't come closer
+    Context: Establishing verbal boundary against harassment
+    When to use: Unwanted attention, harassment, inappropriate behavior
+    Legal importance: Creates witness evidence that contact was unwanted
 
-Stay back / Don't come closer
+    Déjeme en paz
 
-Manténgase atrás / No se acerque
+================================================================================
+SECTION 3: THREAT RESPONSE PROTOCOLS BY SEVERITY
+================================================================================
 
-Leave me alone
+LEVEL 1: UNCOMFORTABLE BUT NOT THREATENING
+(Inappropriate comments, persistent personal questions, minor rudeness)
+- Set verbal boundary: "Please keep conversation professional"
+- Document behavior in trip notes
+- Rate low and report after trip completion
+- Block passenger from future trips
 
-Leave me alone
+LEVEL 2: CONCERNING BEHAVIOR
+(Aggressive tone, invasion of personal space, refusing reasonable requests)
+- State boundary clearly: "I need you to [specific action]"
+- Consider ending trip early
+- Document immediately
+- Report to platform with detailed description
+- If behavior escalates → move to Level 3
 
-Déjeme en paz
+LEVEL 3: ACTIVE THREAT
+(Threats of violence, displaying weapon, physical aggression)
+🚨 IMMEDIATE ACTIONS:
+1. Pull over in public area with witnesses (gas station, store parking lot)
+2. Use phrase #8: "Get out of the car now"
+3. Use phrase #7: "I'm calling the police" (actually call 911)
+4. If safe: exit vehicle and move away
+5. If passenger won't exit: use phrase #9 to get public attention
+6. Do NOT drive to isolated area - stay where there are people
+7. Call 911 and stay on line with dispatcher
+
+LEVEL 4: ACTIVE ASSAULT
+(Physical contact, assault, being held against will)
+🚨 LIFE-SAVING ACTIONS:
+1. DRIVE TO POLICE STATION if you know location
+2. OR drive to busy public area and activate panic response
+3. Use horn repeatedly to get attention (SOS: 3 short, 3 long, 3 short)
+4. If vehicle stopped: exit immediately and run toward people/buildings
+5. SHOUT phrase #9 repeatedly: "I need help, I'm in danger"
+6. Make as much noise as possible - activate car alarm, keep shouting
+7. Your goal: PUBLIC ATTENTION and DISTANCE from attacker
+
+================================================================================
+SECTION 4: WEAPON SITUATIONS - ARMED PASSENGER PROTOCOL
+================================================================================
+
+🚨 IF YOU SEE A WEAPON OR WEAPON IS MENTIONED 🚨
+
+IMMEDIATE ACTIONS:
+1. Stay calm - do not make sudden movements
+2. Comply with demands if weapon is pointed at you
+3. Your life > your property > the vehicle > any money
+4. Try to safely end trip in public location
+5. Memorize details: weapon type, physical description, clothing
+6. Call 911 the INSTANT it is safe to do so
+7. Drive to police station if possible and safe
+
+DURING ARMED INCIDENT:
+- Do NOT argue or resist
+- Do NOT try to disarm unless immediate life threat
+- Give them what they want (money, phone, etc.)
+- Pay attention to details for police report
+- Try to stay calm - fear can escalate situation
+
+AFTER ARMED INCIDENT:
+1. Call 911 immediately
+2. Drive to police station or wait for police at safe location
+3. Do NOT touch anything in vehicle (preserve evidence)
+4. Write down everything you remember while fresh
+5. Cooperate fully with police investigation
+6. Contact platform immediately
+7. Seek counseling - this is traumatic
+
+================================================================================
+SECTION 5: SEXUAL HARASSMENT & ASSAULT PROTOCOLS
+================================================================================
+
+🚨 ZERO TOLERANCE: Sexual harassment and assault are NEVER acceptable. You have
+ABSOLUTE RIGHT to end trip immediately and report to police.
+
+DEFINING THE BEHAVIOR:
+- Unwanted sexual comments or advances
+- Requests for personal contact info
+- Inappropriate touching (any unwanted physical contact)
+- Exposure of private body parts
+- Sexual assault (forced sexual contact)
+
+IMMEDIATE RESPONSE:
+1. State boundary: "That behavior is inappropriate and unacceptable"
+2. Pull over in public location immediately
+3. Use phrase #8: "Get out of the car now"
+4. If they refuse or escalate: Call 911
+5. Do NOT continue trip under any circumstances
+
+REPORTING PROCESS:
+1. Call 911 for police report (creates legal record)
+2. Report to platform immediately (creates company record)
+3. Request permanent ban of passenger
+4. Consider contacting lawyer (some attorneys offer free consultation)
+5. Seek counseling support (platform may provide resources)
+
+EVIDENCE PRESERVATION:
+- Do NOT clean or detail vehicle until police inspect
+- Save all platform messages
+- Write detailed timeline while memory is fresh
+- Request dashcam footage if available
+- List any witnesses (other drivers, pedestrians, etc.)
+
+YOUR RIGHTS:
+- You have right to prosecute criminally
+- You have right to civil lawsuit for damages
+- Platform cannot retaliate against you for reporting
+- You may qualify for victim compensation funds
+- Support organizations can help navigate legal process
+
+================================================================================
+SECTION 6: AFTER ANY SAFETY INCIDENT
+================================================================================
+
+IMMEDIATE AFTERMATH:
+1. Get to safe location first (police station, fire station, hospital)
+2. Call 911 if not already called
+3. Contact trusted friend/family member
+4. Document everything in writing while memory is fresh
+5. Do NOT drive more passengers until you're ready
+6. Report to platform with "Safety Incident" priority
+
+DOCUMENTATION CHECKLIST:
+□ Police report filed (get report number)
+□ Platform safety report filed
+□ Written timeline of events with timestamps
+□ Photos of any damage or injuries
+□ Medical attention if injured (creates medical record)
+□ Witness names and contact info if available
+□ Screenshots of trip details and messages
+□ Your exact location during incident (address/GPS)
+
+LEGAL & FINANCIAL:
+- Platform insurance should cover medical costs
+- You may be entitled to lost wages compensation
+- Consider consulting attorney (many offer free initial consultation)
+- Workers' comp may apply in some jurisdictions
+- Victim compensation funds available in many states
+
+EMOTIONAL RECOVERY:
+- Safety incidents cause legitimate trauma
+- Seek counseling (many platforms offer free sessions)
+- Join driver support groups
+- Take time off driving if needed
+- PTSD symptoms are normal and treatable
+
+RETURNING TO WORK:
+- Only drive when YOU feel ready
+- Consider new safety measures: dashcam, partition, etc.
+- Set stricter passenger acceptance criteria
+- Drive during daylight hours initially
+- Trust your instincts - if pickup feels wrong, cancel
+
+PREVENTION MEASURES:
+□ Install dashcam (front AND interior facing)
+□ Use platform's emergency features
+□ Share trip details with friend/family
+□ Set passenger rating minimum (4.7+)
+□ Avoid late night / high-risk areas if uncomfortable
+□ Trust your instincts - cancel if something feels off
+□ Keep phone charged and accessible
+□ Know location of police stations in your area
+□ Consider taking self-defense class
+
+================================================================================
+
+🚨 REMEMBER: Your safety is the HIGHEST priority. No trip, no rating, no money
+is worth your life or well-being. ALWAYS trust your instincts. If something
+feels wrong, it probably is. You have the RIGHT to refuse service to anyone
+for any safety reason. The platform WILL support you when you prioritize safety.
+
+================================================================================

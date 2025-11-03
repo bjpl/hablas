@@ -1,71 +1,381 @@
-Severe weather
+================================================================================
+RESOURCE 52: SEVERE WEATHER HAZARDS
+================================================================================
+Category: Emergency & Safety - Natural Disaster Response
+Difficulty: CRITICAL - Environment-Dependent
+Context: Responding to dangerous weather during rideshare operations
+Weather Authority: Information aligned with NOAA/National Weather Service
+safety protocols and emergency management guidelines
+Legal Note: You have RIGHT and RESPONSIBILITY to refuse trips in dangerous
+weather. Your safety and passenger safety override platform obligations.
+================================================================================
 
-Severe weather
+🚨 WHEN TO STOP DRIVING IMMEDIATELY 🚨
 
-Clima severo
+CEASE OPERATIONS if any of these conditions exist:
+- Tornado warning (not watch, but WARNING = confirmed tornado)
+- Flash flood warning with water over roadways
+- Blizzard with zero visibility
+- Ice storm making roads impassable
+- Hurricane/tropical storm with sustained winds 40+ mph
+- Any weather where you cannot safely control vehicle
 
-Tornado
+NOAA Weather Radio Codes:
+- WATCH = Conditions are favorable, be prepared
+- WARNING = Happening now or imminent, take action immediately
 
-Tornado
+Your life and passenger life are MORE IMPORTANT than any trip completion,
+platform rating, or income lost from canceling rides.
 
-Tornado
+================================================================================
+SECTION 1: KEY TERMINOLOGY - SEVERE WEATHER VOCABULARY
+================================================================================
 
-Flash flood
+1. Severe weather
+   Context: Dangerous weather conditions threatening safety
+   Clima severo
 
-Flash flood
+2. Tornado
+   Context: Rotating column of air touching ground, extremely dangerous
+   Tornado
 
-Inundación repentina
+3. Flash flood
+   Context: Rapid flooding, extremely dangerous in vehicles
+   Inundación repentina
 
-Ice / Black ice
+4. Ice / Black ice
+   Context: Frozen water on roadway (black ice = invisible ice)
+   Hielo / Hielo negro
 
-Ice / Black ice
+5. Zero visibility
+   Context: Cannot see road ahead due to fog, snow, rain, dust
+   Visibilidad cero
 
-Hielo / Hielo negro
+6. Shelter
+   Context: Safe building/structure for protection from severe weather
+   Refugio
 
-Zero visibility
+================================================================================
+SECTION 2: TORNADO - IMMEDIATE LIFE-SAVING ACTIONS
+================================================================================
 
-Zero visibility
+🚨 TORNADO FACTS: Tornadoes kill 70+ people per year in vehicles. Your car is
+a DEATH TRAP in a tornado. NEVER try to outrun a tornado. Get inside a
+building immediately.
 
-Visibilidad cero
+7. There's a tornado warning. We need to take shelter immediately. Follow me to [building/safe area].
 
-Shelter
+   Context: Directing passenger to tornado shelter
+   When to use: Tornado warning issued for your location
+   Action: Pull over at FIRST substantial building (store, restaurant, bank)
+   DO NOT attempt to complete trip - get inside NOW
 
-Shelter
+   Hay una alerta de tornado. Necesitamos refugiarnos inmediatamente. Sígame hacia [edificio/área segura].
 
-Refugio
+8. Taking emergency shelter due to tornado warning at [location]. Will update when safe.
 
-There's a tornado warning. We need to take shelter immediately. Follow me to [building/safe area].
+   Context: Notifying platform/family of tornado shelter situation
+   When to use: After securing shelter, text family/platform
+   Documentation: Creates record of emergency situation
 
-There's a tornado warning. We need to take shelter immediately. Follow me to [building/safe area].
+   Tomando refugio de emergencia debido a alerta de tornado en [ubicación]. Actualizaré cuando esté a salvo.
 
-Hay una alerta de tornado. Necesitamos refugiarnos inmediatamente. Sígame hacia [edificio/área segura].
+TORNADO SHELTER PROTOCOL:
+1. Get inside substantial building immediately
+2. Go to lowest floor (basement if available)
+3. Interior room with no windows (bathroom, closet, hallway)
+4. Get under sturdy furniture if possible
+5. Cover head and neck with arms
+6. Stay away from windows
+7. DO NOT stay in vehicle
+8. DO NOT shelter under highway overpass (creates wind tunnel effect)
+9. Wait for all-clear from authorities before emerging
 
-Taking emergency shelter due to tornado warning at [location]. Will update when safe.
+WHAT TO DO IF CAUGHT IN OPEN:
+- Lie flat in ditch or low-lying area (lower than road level)
+- Cover head and neck with arms
+- DO NOT stay in or near vehicle
+- Vehicle can become projectile
 
-Taking emergency shelter due to tornado warning at [location]. Will update when safe.
+================================================================================
+SECTION 3: FLASH FLOODING - WATER HAZARDS
+================================================================================
 
-Tomando refugio de emergencia debido a alerta de tornado en [ubicación]. Actualizaré cuando esté a salvo.
+🚨 FLOOD FACTS: Flooding is #1 weather-related killer in US. 6 inches of
+moving water can knock you down. 12 inches can carry away a car. You CANNOT
+judge water depth or current by looking. NEVER drive through flooded roads.
 
-The road ahead is flooded. For safety, I must take an alternate route or end the trip here.
+9. The road ahead is flooded. For safety, I must take an alternate route or end the trip here.
 
-The road ahead is flooded. For safety, I must take an alternate route or end the trip here.
+   Context: Explaining inability to continue due to flooding
+   When to use: Water visible over roadway ahead
+   Critical rule: Turn Around Don't Drown - NEVER drive through water
+   Safety decision: Ending trip protects both driver and passenger
 
-El camino adelante está inundado. Por seguridad, debo tomar una ruta alternativa o terminar el viaje aquí.
+   El camino adelante está inundado. Por seguridad, debo tomar una ruta alternativa o terminar el viaje aquí.
 
-Road conditions are icy. I need to drive much slower than normal for everyone's safety.
+FLOOD SAFETY RULES:
+❌ NEVER drive through flooded roads
+❌ NEVER drive around barricades (they're there for reason)
+❌ NEVER assume water is shallow enough
+❌ NEVER assume your vehicle can make it
 
-Road conditions are icy. I need to drive much slower than normal for everyone's safety.
+WHY THESE RULES SAVE LIVES:
+- Depth impossible to judge (water may cover deep hole)
+- Current can sweep vehicle away in seconds
+- Electrical systems fail, cannot exit electric windows
+- Vehicle can flip in current
+- Drowning risk if trapped
+- 50% of flood deaths occur in vehicles
 
-Las condiciones del camino están heladas. Necesito conducir mucho más lento de lo normal por la seguridad de todos.
+IF CAUGHT IN FLOODING:
+1. Abandon vehicle immediately if water rising
+2. Move to higher ground
+3. Call 911 if trapped
+4. If vehicle swept away: exit immediately, swim perpendicular to current
+5. Climb on roof if cannot evacuate
+6. DO NOT return to vehicle until authorities declare safe
 
-I need to drive slower/stop temporarily due to dangerous weather conditions. Your safety is my priority.
+================================================================================
+SECTION 4: ICE & WINTER WEATHER
+================================================================================
 
-I need to drive slower/stop temporarily due to dangerous weather conditions. Your safety is my priority.
+🚨 ICE FACTS: Black ice is invisible - looks like wet pavement but is frozen.
+Ice forms first on bridges, overpasses, and shaded areas. 4-wheel drive does
+NOT help you stop on ice. Ice reduces traction by 90%.
 
-Necesito conducir más lento/detenerme temporalmente debido a condiciones climáticas peligrosas. Su seguridad es mi prioridad.
+10. Road conditions are icy. I need to drive much slower than normal for everyone's safety.
 
-Due to severe weather conditions, I cannot safely complete this trip. The platform can arrange alternative transportation.
+    Context: Managing passenger expectations during ice conditions
+    When to use: Icy roads require reduced speed
+    Safety over speed: You may arrive late, but you'll arrive alive
 
-Due to severe weather conditions, I cannot safely complete this trip. The platform can arrange alternative transportation.
+    Las condiciones del camino están heladas. Necesito conducir mucho más lento de lo normal por la seguridad de todos.
 
-Debido a condiciones climáticas severas, no puedo completar este viaje de forma segura. La plataforma puede organizar transporte alternativo.
+ICE DRIVING PROTOCOL:
+- Reduce speed by 50-75% of posted limit
+- Increase following distance to 8-10 seconds
+- Brake gently and early
+- No sudden steering movements
+- Avoid bridges and overpasses when possible
+- If vehicle starts sliding: steer into slide, don't brake
+- If conditions deteriorate: park and wait for improvement
+
+BLACK ICE WARNING SIGNS:
+- Temperature near or below freezing (32°F / 0°C)
+- Mist or light rain with cold temps
+- Shiny appearance on road
+- Other vehicles sliding or moving erratically
+- Bridges and shaded areas most dangerous
+
+IF YOU START SLIDING ON ICE:
+1. Take foot off accelerator
+2. DO NOT brake hard (will worsen slide)
+3. Steer in direction of slide
+4. Let vehicle slow naturally
+5. Once traction regained, brake gently
+
+WHEN TO STOP DRIVING:
+- Roads become ice rinks (cannot maintain control)
+- Multiple accidents observed
+- Vehicle cannot maintain traction
+- Other traffic has stopped
+- Weather service advises no travel
+
+================================================================================
+SECTION 5: REDUCED VISIBILITY - FOG, SNOW, DUST
+================================================================================
+
+11. I need to drive slower/stop temporarily due to dangerous weather conditions. Your safety is my priority.
+
+    Context: General severe weather safety communication
+    When to use: Any weather requiring reduced speed or temporary stop
+    Passenger reassurance: Explaining safety-first approach
+
+    Necesito conducir más lento/detenerme temporalmente debido a condiciones climáticas peligrosas. Su seguridad es mi prioridad.
+
+ZERO VISIBILITY PROTOCOL:
+If you cannot see road:
+1. Turn on hazard lights
+2. Pull off road completely if possible
+3. Turn off all lights (prevents others following you off road)
+4. Take foot off brake (brake lights can confuse other drivers)
+5. Wait for visibility improvement
+6. DO NOT continue driving blind
+
+FOG SAFETY:
+- Use low beam headlights (high beams reflect off fog)
+- Reduce speed significantly
+- Use fog lights if equipped
+- Follow road edge line, not center line
+- Increase following distance
+- If cannot see: pull completely off road and wait
+
+HEAVY SNOW:
+- Watch for whiteout conditions
+- Use low gears for better control
+- Clear ALL windows before driving (not just small hole)
+- Brush snow off hood and roof (can blow onto windshield)
+- Keep extra distance from snowplows
+- If stuck: stay with vehicle, run engine 10min/hour for heat
+
+================================================================================
+SECTION 6: TRIP CANCELLATION - WEATHER TOO DANGEROUS
+================================================================================
+
+12. Due to severe weather conditions, I cannot safely complete this trip. The platform can arrange alternative transportation.
+
+    Context: Canceling trip due to unsafe weather
+    When to use: Weather conditions exceed safe driving capability
+    Platform support: They will arrange alternate ride at no charge to passenger
+    Your right: Safety-based cancellations are protected
+
+    Debido a condiciones climáticas severas, no puedo completar este viaje de forma segura. La plataforma puede organizar transporte alternativo.
+
+CANCELING FOR WEATHER:
+You have RIGHT to cancel if:
+- Weather exceeds your safe driving ability
+- Local authorities advise no travel
+- Weather service issues severe warning
+- You cannot safely control vehicle
+- Visibility is insufficient
+- Roads are impassable
+
+HOW TO CANCEL:
+1. Explain situation to passenger (use phrase #12)
+2. Cancel trip in app with "unsafe conditions" reason
+3. Do NOT charge passenger
+4. Help passenger request alternate ride
+5. Document conditions (photos, screenshot weather alert)
+6. Move to safe location and wait out weather
+
+PLATFORM RESPONSE:
+- Most platforms support weather cancellations
+- Document with weather service screenshot
+- Multiple cancellations in severe weather won't hurt standing
+- Passenger typically not charged for weather cancellation
+
+================================================================================
+SECTION 7: SEVERE WEATHER MONITORING & PREPARATION
+================================================================================
+
+BEFORE YOUR SHIFT:
+□ Check weather forecast for entire shift duration
+□ Note any watches/warnings for your area
+□ Plan route avoiding flood-prone areas in rain
+□ Check road conditions report
+□ Ensure phone is charged (weather alerts)
+□ Have emergency supplies in vehicle
+
+EMERGENCY WEATHER SUPPLIES:
+□ Phone charger / power bank
+□ Weather radio or reliable weather app
+□ Flashlight
+□ Blanket
+□ Drinking water
+□ Non-perishable snacks
+□ First aid kit
+□ Ice scraper / snow brush (winter)
+□ Kitty litter or sand (for traction on ice)
+
+WEATHER MONITORING TOOLS:
+- NOAA Weather Radio (broadcast on FM)
+- Weather service app with alerts enabled
+- Local news station apps
+- Platform driver app (often includes weather alerts)
+- Road conditions hotline for your state
+
+SEASONAL CONSIDERATIONS:
+
+SPRING (Tornado Season):
+- Peak season: March-June
+- Monitor weather closely in afternoon/evening
+- Know locations of sturdy buildings on your routes
+- Have tornado shelter plan for common areas
+
+SUMMER (Flash Floods, Heat):
+- Monitor flash flood watches
+- Avoid low-lying areas during heavy rain
+- Never drive through water
+- Stay hydrated, watch for heat exhaustion
+
+FALL (Hurricane Season):
+- Monitor hurricane track if coastal area
+- Evacuate if ordered (don't drive during hurricane)
+- Prepare for power outages
+
+WINTER (Ice, Snow, Blizzard):
+- Check road conditions before shift
+- Watch for black ice in morning/evening
+- Keep gas tank above half (prevents line freeze)
+- Dress warmly in case of breakdown
+
+================================================================================
+SEVERE WEATHER DECISION MATRIX
+================================================================================
+
+SHOULD I DRIVE IN THIS WEATHER?
+
+ASK YOURSELF:
+1. Can I see the road clearly ahead?
+   NO = Don't drive
+
+2. Can I safely control my vehicle?
+   NO = Don't drive
+
+3. Are roads passable?
+   NO = Don't drive
+
+4. Has weather service advised no travel?
+   YES = Don't drive
+
+5. Are emergency vehicles having difficulty?
+   YES = Don't drive
+
+6. Would I be comfortable with my family member driving in this?
+   NO = Don't drive
+
+When in doubt, don't go out. No trip is worth your life or your passenger's
+life. The platform WILL support safety-based decisions. Lost income from
+canceled trips is cheaper than a hospital bill or funeral.
+
+================================================================================
+STATE-SPECIFIC WEATHER RESOURCES
+================================================================================
+
+NOAA Weather Radio Frequencies:
+- Find your local frequency: weather.gov/nwr
+
+Road Conditions Hotlines:
+- Call 511 in most states for road conditions
+- Or search "[your state] road conditions" for hotline
+
+Emergency Management:
+- Every state has emergency management agency
+- Sign up for local emergency alerts
+- Many counties have text alert systems
+
+Weather Service Offices:
+- weather.gov - enter your ZIP code
+- Provides local forecasts, warnings, radar
+- Most reliable source for severe weather info
+
+COMMON SEVERE WEATHER BY REGION:
+
+Southeast: Hurricanes, tornadoes, flash floods
+Midwest: Tornadoes, blizzards, ice storms
+Northeast: Blizzards, nor'easters, ice
+Southwest: Flash floods, dust storms, extreme heat
+West Coast: Wildfires, mudslides, fog
+Mountain States: Blizzards, avalanches, ice
+
+Know your local severe weather threats and prepare accordingly.
+
+================================================================================
+
+🚨 FINAL REMINDER: Mother Nature is more powerful than any vehicle, any driver,
+and any rideshare platform. When weather becomes dangerous, STOP DRIVING. Your
+life is irreplaceable. Your vehicle is replaceable. Your income can be earned
+another day. Make the safe choice, every time.
+
+================================================================================

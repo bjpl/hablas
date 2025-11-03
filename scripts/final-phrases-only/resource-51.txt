@@ -1,95 +1,323 @@
-Breakdown
+================================================================================
+RESOURCE 51: VEHICLE BREAKDOWN
+================================================================================
+Category: Emergency & Safety - Mechanical Failures
+Difficulty: Intermediate
+Context: Professional handling of vehicle breakdown during trips
+Legal Note: Passengers should not be charged for incomplete trips due to
+mechanical failure. Platform typically provides replacement rides at no charge
+to passenger. You remain responsible for vehicle safety and maintenance.
+================================================================================
 
-Breakdown
+SECTION 1: KEY TERMINOLOGY - BREAKDOWN VOCABULARY
+================================================================================
 
-Avería / Falla mecánica
+1. Breakdown
+   Context: Vehicle malfunction preventing continued operation
+   Avería / Falla mecánica
 
-Flat tire
+2. Flat tire
+   Context: Tire has lost air pressure and cannot support vehicle
+   Llanta ponchada / pinchada
 
-Flat tire
+3. Dead battery
+   Context: Battery has no charge, vehicle cannot start
+   Batería muerta / descargada
 
-Llanta ponchada / pinchada
+4. Overheating
+   Context: Engine temperature too high, risk of damage
+   Sobrecalentamiento
 
-Dead battery
+5. Out of gas
+   Context: No fuel remaining in tank (preventable - check before shift!)
+   Sin gasolina
 
-Dead battery
+6. Tow truck
+   Context: Vehicle that transports disabled vehicle
+   Grúa
 
-Batería muerta / descargada
+7. Roadside assistance
+   Context: Service that helps with minor vehicle issues
+   Asistencia en carretera
 
-Overheating
+================================================================================
+SECTION 2: IMMEDIATE BREAKDOWN RESPONSE - DURING TRIP
+================================================================================
 
-Overheating
+8. I need to pull over immediately
 
-Sobrecalentamiento
+   Context: Warning passenger of emergency stop
+   When to use: Mechanical issue requires immediate stop
+   Safety priority: Get off roadway to safe location
+   Tone: Calm but urgent - don't alarm passenger unnecessarily
 
-Out of gas
+   Necesito detenerme inmediatamente
 
-Out of gas
+9. My vehicle has broken down
 
-Sin gasolina
+   Context: Explaining situation to passenger after stopping
+   When to use: After safely stopped, before calling for help
+   Professional tone: Matter-of-fact, apologetic, solution-focused
 
-Tow truck
+   Mi vehículo se ha averiado
 
-Tow truck
+10. Please stay in the vehicle until we're in a safe location
 
-Grúa
+    Context: Keeping passenger in vehicle while moving to safer spot
+    When to use: Stopped on shoulder, need to get to parking lot/safer area
+    Safety reason: Passengers on roadside are at risk from passing traffic
 
-Roadside assistance
+    Por favor permanezca en el vehículo hasta que estemos en un lugar seguro
 
-Roadside assistance
+================================================================================
+SECTION 3: PASSENGER COMMUNICATION - SETTING EXPECTATIONS
+================================================================================
 
-Asistencia en carretera
+11. I apologize, but I cannot continue this trip
 
-My vehicle has broken down
+    Context: Informing passenger trip must end due to breakdown
+    When to use: After assessing that vehicle cannot continue
+    Tone: Professional apology, not defensive
 
-My vehicle has broken down
+    Disculpe, pero no puedo continuar este viaje
 
-Mi vehículo se ha averiado
+12. I sincerely apologize for this mechanical issue
 
-I need to pull over immediately
+    Context: Professional apology for inconvenience
+    When to use: After passenger exits or during wait for assistance
+    Customer service: Acknowledge inconvenience caused
 
-I need to pull over immediately
+    Lamento sinceramente este problema mecánico
 
-Necesito detenerme inmediatamente
+13. You won't be charged for this trip
 
-I'm calling roadside assistance
+    Context: Assuring passenger of no charge for incomplete service
+    When to use: Immediately after explaining breakdown
+    Platform policy: Incomplete trips due to breakdown are typically refunded
 
-I'm calling roadside assistance
+    No se le cobrará por este viaje
 
-Estoy llamando a asistencia en carretera
+14. The platform will arrange another ride for you at no charge
 
-I apologize, but I cannot continue this trip
+    Context: Explaining replacement ride process
+    When to use: After contacting platform support about breakdown
+    Passenger relief: They won't be stranded or charged again
 
-I apologize, but I cannot continue this trip
+    La plataforma le organizará otro viaje sin cargo
 
-Disculpe, pero no puedo continuar este viaje
+15. I'll help you request another driver right now
 
-You won't be charged for this trip
+    Context: Actively assisting passenger with replacement ride
+    When to use: After breakdown confirmed, helping passenger continue journey
+    Customer service: Don't just apologize - actively solve their problem
 
-You won't be charged for this trip
+    Le ayudaré a solicitar otro conductor ahora mismo
 
-No se le cobrará por este viaje
+================================================================================
+SECTION 4: CALLING FOR ASSISTANCE
+================================================================================
 
-I sincerely apologize for this mechanical issue
+16. I'm calling roadside assistance
 
-I sincerely apologize for this mechanical issue
+    Context: Informing passenger of next steps
+    When to use: After passenger exits or replacement ride arranged
+    Transparency: Keep passenger informed of your process
 
-Lamento sinceramente este problema mecánico
+    Estoy llamando a asistencia en carretera
 
-The platform will arrange another ride for you at no charge
+================================================================================
+VEHICLE BREAKDOWN PROTOCOLS
+================================================================================
 
-The platform will arrange another ride for you at no charge
+PREVENTION (Before breakdowns happen):
+□ Pre-shift vehicle inspection (5 minutes can prevent breakdowns)
+□ Check: tire pressure, fluid levels, warning lights, fuel level
+□ Address warning lights immediately - don't ignore them
+□ Keep emergency supplies: jumper cables, tire inflator, flashlight
+□ Maintain regular service schedule
+□ Never start shift with less than 1/4 tank fuel
+□ Monitor temperature gauge during driving
 
-La plataforma le organizará otro viaje sin cargo
+WHEN BREAKDOWN OCCURS:
 
-Please stay in the vehicle until we're in a safe location
+STEP 1: SAFETY FIRST (0-30 seconds)
+- Turn on hazard lights immediately
+- Pull to rightmost safe location (shoulder, parking lot)
+- If cannot reach safe location: Call 911 for assistance
+- If on highway: Get as far right as possible
+- Do NOT stop in traffic lane or on curve
 
-Please stay in the vehicle until we're in a safe location
+STEP 2: ASSESS SITUATION (30 seconds - 2 minutes)
+- Can vehicle be restarted? (dead battery, overheating cooldown)
+- Is it safe to attempt quick fix? (tire change on safe road)
+- Is tow truck required? (major mechanical failure)
+- Are you in a safe location? (well-lit, public, not isolated)
 
-Por favor permanezca en el vehículo hasta que estemos en un lugar seguro
+STEP 3: COMMUNICATE WITH PASSENGER (2-5 minutes)
+- Use phrase #9: Explain breakdown occurred
+- Use phrase #11: Cannot continue trip
+- Use phrase #13: They won't be charged
+- Keep calm and professional tone
+- Answer their questions honestly
 
-I'll help you request another driver right now
+STEP 4: ARRANGE REPLACEMENT RIDE (5-10 minutes)
+- Contact platform support through driver app
+- Report breakdown and need for passenger replacement
+- Use phrase #14: Platform will arrange replacement at no charge
+- Use phrase #15: Help them request new driver
+- Wait with passenger until replacement arrives if safe to do so
 
-I'll help you request another driver right now
+STEP 5: GET ASSISTANCE FOR VEHICLE (after passenger handled)
+- Call roadside assistance (platform may provide)
+- OR call your insurance roadside service
+- OR call private tow truck
+- Provide location, vehicle description, problem description
+- Note: you are responsible for tow/repair costs in most cases
 
-Le ayudaré a solicitar otro conductor ahora mismo
+STEP 6: PLATFORM NOTIFICATION
+- Mark trip as "mechanical failure" in app
+- Document: time of breakdown, location, issue description
+- Upload photos of issue if relevant
+- Note any safety concerns
+- Request trip cancellation/refund for passenger
+
+================================================================================
+SPECIFIC BREAKDOWN SCENARIOS
+================================================================================
+
+FLAT TIRE:
+If safe to change:
+1. Pull far off road to flat surface
+2. Engage parking brake
+3. Use jack and spare tire
+4. Takes 15-20 minutes if experienced
+5. Consider calling assistance if uncomfortable
+
+If NOT safe to change:
+- Highway shoulder, night time, unstable ground
+- Call roadside assistance instead
+- Passenger should request new ride immediately
+
+OVERHEATING:
+1. Turn off A/C, turn heat to MAX (pulls heat from engine)
+2. Pull over safely as soon as possible
+3. Do NOT open radiator cap (can cause severe burns)
+4. Let engine cool 30-45 minutes
+5. Check coolant level when cool
+6. May need tow if severe
+
+DEAD BATTERY:
+1. Turn off all accessories
+2. Attempt jump start if cables and another vehicle available
+3. Let vehicle run 20+ minutes after jump to recharge
+4. Replace battery ASAP - may die again
+5. Have alternator tested - may be charging issue
+
+OUT OF GAS:
+1. This is preventable - monitor fuel gauge!
+2. Call roadside assistance for fuel delivery
+3. OR walk to gas station with gas can (only if safe)
+4. This is YOUR fault - be especially apologetic to passenger
+5. Platform may penalize repeated fuel incidents
+
+STRANGE NOISES/SMELLS:
+- Burning smell: Pull over immediately, possible fire risk
+- Grinding metal: Possible brake failure - safety critical
+- Hissing/steam: Overheating or coolant leak
+- Thumping: Possibly tire issue
+- When in doubt: pull over and investigate
+
+================================================================================
+PASSENGER SAFETY DURING BREAKDOWN
+================================================================================
+
+IF ON HIGHWAY/BUSY ROAD:
+- Keep passengers IN vehicle with seatbelts on
+- Standing on roadside is extremely dangerous
+- 275+ pedestrians killed yearly on highway shoulders
+- If must exit: exit away from traffic side, move far from road
+
+IF IN SAFE PARKING LOT/SIDE STREET:
+- Passengers may exit vehicle
+- Direct them to safe waiting area (store, shade, bench)
+- Stay with them until replacement ride arrives if possible
+
+IF IN DANGEROUS/ISOLATED AREA:
+- Call 911 for police assistance
+- Stay in locked vehicle until help arrives
+- Drive slowly to safer area if possible (even on flat tire at slow speed)
+
+================================================================================
+FINANCIAL & INSURANCE CONSIDERATIONS
+================================================================================
+
+WHO PAYS FOR WHAT:
+
+Towing/Repair Costs:
+- Generally YOUR responsibility as vehicle owner
+- Your auto insurance may cover (check policy)
+- Roadside assistance coverage helps (AAA, insurance add-on)
+- Platform does NOT typically cover your vehicle repairs
+
+Lost Income:
+- You lose income while vehicle out of service
+- Most platforms do NOT compensate for breakdown time
+- This is why regular maintenance is critical
+- Consider backup plan (rental car option, backup vehicle)
+
+Passenger Refund:
+- Platform typically refunds incomplete trip
+- Does NOT come from your earnings
+- Passenger not charged for failed service
+
+Platform Fees:
+- Some platforms charge cancellation fee for breakdown
+- Multiple breakdowns may affect account standing
+- Maintain vehicle properly to avoid penalties
+
+Insurance Considerations:
+- Report any accidents/damage to insurance immediately
+- Check if your rideshare endorsement covers breakdown situations
+- Roadside assistance coverage highly recommended
+- Keep proof of regular maintenance for insurance claims
+
+================================================================================
+AFTER BREAKDOWN RESOLUTION
+================================================================================
+
+BEFORE RETURNING TO SERVICE:
+□ Vehicle fully repaired and tested
+□ Pre-shift inspection completed
+□ All warning lights cleared
+□ Test drive with no passengers to confirm repair
+□ Update platform if required to return to active status
+
+PREVENTING FUTURE BREAKDOWNS:
+□ Schedule regular maintenance per manufacturer recommendations
+□ Address warning lights immediately
+□ Keep emergency supplies in vehicle
+□ Monitor fuel gauge (never below 1/4 tank on shift)
+□ Pre-shift inspection routine every day
+□ Build relationship with reliable mechanic
+□ Consider extended warranty for older vehicles
+□ Budget for vehicle maintenance (set aside 10-15% of earnings)
+
+EMERGENCY SUPPLY CHECKLIST:
+□ Jumper cables or portable jump starter
+□ Tire inflator / Fix-a-Flat
+□ Flashlight with extra batteries
+□ Reflective triangles or road flares
+□ Basic tool kit
+□ Rag and paper towels
+□ Phone charger / power bank
+□ First aid kit
+□ Drinking water
+□ Emergency contact numbers written down
+
+================================================================================
+
+Remember: Regular vehicle maintenance is cheaper than breakdowns. A 5-minute
+pre-shift inspection can prevent 90% of breakdown situations. Your vehicle is
+your business - maintain it like the investment it is.
+
+================================================================================
