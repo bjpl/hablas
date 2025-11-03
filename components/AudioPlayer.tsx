@@ -115,6 +115,13 @@ export default function AudioPlayer({
     audio.addEventListener('loadedmetadata', handleLoadedMetadata);
     audio.addEventListener('timeupdate', handleTimeUpdate);
     audio.addEventListener('canplay', handleCanPlay);
+    audio.addEventListener('error', handleError);
+
+    // Check if audio already loaded (in case events already fired)
+    if (audio.readyState >= 1) {
+      console.log('Audio already has metadata, readyState:', audio.readyState);
+      handleLoadedMetadata();
+    }
 
     // Auto-stop when component unmounts
     return () => {
@@ -126,6 +133,7 @@ export default function AudioPlayer({
       audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
       audio.removeEventListener('timeupdate', handleTimeUpdate);
       audio.removeEventListener('canplay', handleCanPlay);
+      audio.removeEventListener('error', handleError);
     };
   }, [audioUrl, resourceId]);
 
