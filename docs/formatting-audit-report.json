@@ -1,0 +1,5415 @@
+{
+  "timestamp": "2025-11-03T14:25:23.011369",
+  "summary": {
+    "total_files": 34,
+    "passed": 34,
+    "failed": 0,
+    "total_issues": 732,
+    "issues_by_standard": {
+      "E2": 732
+    },
+    "issues_by_severity": {
+      "error": 0,
+      "warning": 92,
+      "info": 640
+    }
+  },
+  "files": [
+    {
+      "file": "basic_app_vocabulary_1-image-spec.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_app_vocabulary_1-image-spec.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 85,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 91,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 96,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 98,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 102,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 153,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 240,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 257,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 258,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 302,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 359,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 390,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 426,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 430,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 470,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 471,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 476,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 477,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 633,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 640,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 641,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 643,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 653,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 659,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 660,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 671,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 672,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 705,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 708,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 711,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 736,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_app_vocabulary_1-image-spec.md",
+          "standard": "E2",
+          "line": 750,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_audio_1-audio-script.txt",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_1-audio-script.txt",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_audio_1-audio-script.txt",
+          "standard": "E2",
+          "line": 90,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_1-audio-script.txt",
+          "standard": "E2",
+          "line": 96,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_1-audio-script.txt",
+          "standard": "E2",
+          "line": 168,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_1-audio-script.txt",
+          "standard": "E2",
+          "line": 174,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_1-audio-script.txt",
+          "standard": "E2",
+          "line": 232,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_1-audio-script.txt",
+          "standard": "E2",
+          "line": 256,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_1-audio-script.txt",
+          "standard": "E2",
+          "line": 265,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_audio_2-audio-script.txt",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_audio_2-audio-script.txt",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_audio_2-audio-script.txt",
+          "standard": "E2",
+          "line": 17,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_2-audio-script.txt",
+          "standard": "E2",
+          "line": 37,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_2-audio-script.txt",
+          "standard": "E2",
+          "line": 42,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_2-audio-script.txt",
+          "standard": "E2",
+          "line": 101,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_2-audio-script.txt",
+          "standard": "E2",
+          "line": 106,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_2-audio-script.txt",
+          "standard": "E2",
+          "line": 230,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_2-audio-script.txt",
+          "standard": "E2",
+          "line": 238,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_2-audio-script.txt",
+          "standard": "E2",
+          "line": 266,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_audio_navigation_1-audio-script.txt",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_audio_navigation_1-audio-script.txt",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_audio_navigation_1-audio-script.txt",
+          "standard": "E2",
+          "line": 18,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_1-audio-script.txt",
+          "standard": "E2",
+          "line": 19,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_1-audio-script.txt",
+          "standard": "E2",
+          "line": 22,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_1-audio-script.txt",
+          "standard": "E2",
+          "line": 107,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_1-audio-script.txt",
+          "standard": "E2",
+          "line": 107,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_1-audio-script.txt",
+          "standard": "E2",
+          "line": 157,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_1-audio-script.txt",
+          "standard": "E2",
+          "line": 278,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_1-audio-script.txt",
+          "standard": "E2",
+          "line": 320,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_1-audio-script.txt",
+          "standard": "E2",
+          "line": 325,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_1-audio-script.txt",
+          "standard": "E2",
+          "line": 326,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_1-audio-script.txt",
+          "standard": "E2",
+          "line": 329,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_1-audio-script.txt",
+          "standard": "E2",
+          "line": 332,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_audio_navigation_2-audio-script.txt",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_audio_navigation_2-audio-script.txt",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 37,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 43,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 50,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 77,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 91,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 92,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 97,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 104,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 118,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 124,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 131,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 132,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 145,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 151,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 158,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 185,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 199,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 200,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 205,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 212,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 239,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 250,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 256,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 264,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 268,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 272,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 280,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 297,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 300,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 303,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 306,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_audio_navigation_2-audio-script.txt",
+          "standard": "E2",
+          "line": 309,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_directions_1.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_directions_1.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_directions_1.md",
+          "standard": "E2",
+          "line": 145,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_1.md",
+          "standard": "E2",
+          "line": 205,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_1.md",
+          "standard": "E2",
+          "line": 256,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_1.md",
+          "standard": "E2",
+          "line": 257,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_1.md",
+          "standard": "E2",
+          "line": 342,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_1.md",
+          "standard": "E2",
+          "line": 363,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_1.md",
+          "standard": "E2",
+          "line": 381,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_1.md",
+          "standard": "E2",
+          "line": 399,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_1.md",
+          "standard": "E2",
+          "line": 418,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_1.md",
+          "standard": "E2",
+          "line": 439,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_1.md",
+          "standard": "E2",
+          "line": 515,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_1.md",
+          "standard": "E2",
+          "line": 550,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_1.md",
+          "standard": "E2",
+          "line": 596,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_directions_2.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_directions_2.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_directions_2.md",
+          "standard": "E2",
+          "line": 249,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_2.md",
+          "standard": "E2",
+          "line": 252,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "basic_directions_2.md",
+          "standard": "E2",
+          "line": 406,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_2.md",
+          "standard": "E2",
+          "line": 461,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_2.md",
+          "standard": "E2",
+          "line": 464,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "basic_directions_2.md",
+          "standard": "E2",
+          "line": 471,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_2.md",
+          "standard": "E2",
+          "line": 481,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_2.md",
+          "standard": "E2",
+          "line": 518,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_2.md",
+          "standard": "E2",
+          "line": 554,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_2.md",
+          "standard": "E2",
+          "line": 574,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_directions_3.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_directions_3.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_directions_3.md",
+          "standard": "E2",
+          "line": 35,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_3.md",
+          "standard": "E2",
+          "line": 266,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_3.md",
+          "standard": "E2",
+          "line": 285,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_3.md",
+          "standard": "E2",
+          "line": 327,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_3.md",
+          "standard": "E2",
+          "line": 338,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_3.md",
+          "standard": "E2",
+          "line": 369,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_3.md",
+          "standard": "E2",
+          "line": 384,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_3.md",
+          "standard": "E2",
+          "line": 392,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_3.md",
+          "standard": "E2",
+          "line": 432,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_3.md",
+          "standard": "E2",
+          "line": 455,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_3.md",
+          "standard": "E2",
+          "line": 558,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_directions_3.md",
+          "standard": "E2",
+          "line": 587,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_greetings_1.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_1.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 62,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 78,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 153,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 174,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 190,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 199,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 215,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 238,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 246,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 249,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 311,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 318,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 333,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 334,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 431,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_1.md",
+          "standard": "E2",
+          "line": 466,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_greetings_2.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_2.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_greetings_2.md",
+          "standard": "E2",
+          "line": 84,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_2.md",
+          "standard": "E2",
+          "line": 98,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_2.md",
+          "standard": "E2",
+          "line": 169,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_2.md",
+          "standard": "E2",
+          "line": 212,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "basic_greetings_2.md",
+          "standard": "E2",
+          "line": 217,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "basic_greetings_2.md",
+          "standard": "E2",
+          "line": 235,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_2.md",
+          "standard": "E2",
+          "line": 273,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_2.md",
+          "standard": "E2",
+          "line": 286,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "basic_greetings_2.md",
+          "standard": "E2",
+          "line": 301,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_2.md",
+          "standard": "E2",
+          "line": 481,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_2.md",
+          "standard": "E2",
+          "line": 532,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_2.md",
+          "standard": "E2",
+          "line": 536,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "basic_greetings_2.md",
+          "standard": "E2",
+          "line": 552,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_greetings_3.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\basic_greetings_3.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 94,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 109,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 110,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 117,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 138,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 212,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 249,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 277,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 303,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 318,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 319,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 418,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 427,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 430,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 442,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 443,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 450,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 461,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 475,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 482,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 490,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 491,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 492,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 499,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_3.md",
+          "standard": "E2",
+          "line": 502,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_greetings_all_1-audio-script.txt",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_greetings_all_1-audio-script.txt",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_greetings_all_1-audio-script.txt",
+          "standard": "E2",
+          "line": 178,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_greetings_all_2-audio-script.txt",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_greetings_all_2-audio-script.txt",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_greetings_all_2-audio-script.txt",
+          "standard": "E2",
+          "line": 46,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_all_2-audio-script.txt",
+          "standard": "E2",
+          "line": 52,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_all_2-audio-script.txt",
+          "standard": "E2",
+          "line": 76,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_all_2-audio-script.txt",
+          "standard": "E2",
+          "line": 136,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_all_2-audio-script.txt",
+          "standard": "E2",
+          "line": 166,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_all_2-audio-script.txt",
+          "standard": "E2",
+          "line": 196,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_all_2-audio-script.txt",
+          "standard": "E2",
+          "line": 202,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_all_2-audio-script.txt",
+          "standard": "E2",
+          "line": 212,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_all_2-audio-script.txt",
+          "standard": "E2",
+          "line": 216,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_all_2-audio-script.txt",
+          "standard": "E2",
+          "line": 222,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_all_2-audio-script.txt",
+          "standard": "E2",
+          "line": 226,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_all_2-audio-script.txt",
+          "standard": "E2",
+          "line": 256,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_greetings_all_2-audio-script.txt",
+          "standard": "E2",
+          "line": 302,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_numbers_1.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_numbers_1.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 105,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 142,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 223,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 244,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 263,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 274,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 301,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 337,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 436,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 446,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 454,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 473,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 483,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 504,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 520,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 532,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_1.md",
+          "standard": "E2",
+          "line": 580,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_numbers_2.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_numbers_2.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 53,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 93,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 112,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 194,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 201,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 226,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 294,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 337,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 441,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 471,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 506,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 528,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 542,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_numbers_2.md",
+          "standard": "E2",
+          "line": 548,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_phrases_1.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_1.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 90,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 98,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 106,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 107,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 108,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 132,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 139,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 186,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 195,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 204,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 239,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 258,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 268,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 290,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 312,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 328,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 331,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 336,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 337,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 353,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 356,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 361,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 382,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 412,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 425,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 434,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 435,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 442,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 458,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 459,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 467,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_1.md",
+          "standard": "E2",
+          "line": 468,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_phrases_2.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_2.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 88,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 103,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 173,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 196,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 229,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 244,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 267,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 274,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 288,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 289,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 311,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 312,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 367,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 382,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 390,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 405,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 430,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 431,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 438,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 448,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 453,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 454,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 461,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 477,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 507,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_2.md",
+          "standard": "E2",
+          "line": 570,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_phrases_3.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_3.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 67,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 103,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 120,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 273,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 322,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 377,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 391,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 445,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 461,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 483,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 490,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 504,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 512,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 528,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 536,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 552,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 553,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 584,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_3.md",
+          "standard": "E2",
+          "line": 586,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_phrases_4.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_phrases_4.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 98,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 122,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 235,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 251,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 276,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 298,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 306,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 322,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 329,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 344,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 354,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 495,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 510,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 511,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 512,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 543,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_phrases_4.md",
+          "standard": "E2",
+          "line": 566,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_time_1.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_time_1.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 43,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 52,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 57,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 58,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 65,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 79,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 80,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 87,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 93,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 102,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 103,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 104,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 111,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 135,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 142,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 150,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 151,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 158,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 174,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 182,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 190,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 197,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 199,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 206,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 213,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 222,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 278,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 285,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 330,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 347,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 355,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 362,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 363,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 372,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 379,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 401,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 410,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 418,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 426,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 433,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 434,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 441,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 448,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 471,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 503,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_time_1.md",
+          "standard": "E2",
+          "line": 518,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_visual_1-image-spec.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_visual_1-image-spec.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_visual_1-image-spec.md",
+          "standard": "E2",
+          "line": 293,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_1-image-spec.md",
+          "standard": "E2",
+          "line": 298,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_1-image-spec.md",
+          "standard": "E2",
+          "line": 340,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_1-image-spec.md",
+          "standard": "E2",
+          "line": 345,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_1-image-spec.md",
+          "standard": "E2",
+          "line": 521,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_1-image-spec.md",
+          "standard": "E2",
+          "line": 525,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_1-image-spec.md",
+          "standard": "E2",
+          "line": 529,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_1-image-spec.md",
+          "standard": "E2",
+          "line": 571,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_1-image-spec.md",
+          "standard": "E2",
+          "line": 576,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_1-image-spec.md",
+          "standard": "E2",
+          "line": 579,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_1-image-spec.md",
+          "standard": "E2",
+          "line": 652,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_1-image-spec.md",
+          "standard": "E2",
+          "line": 701,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_1-image-spec.md",
+          "standard": "E2",
+          "line": 705,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "basic_visual_2-image-spec.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\basic_visual_2-image-spec.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 22,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 30,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 44,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 50,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 53,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 88,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 119,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 209,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 231,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 365,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 404,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 493,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 498,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 502,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 529,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 648,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 702,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 728,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 736,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 836,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 867,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "basic_visual_2-image-spec.md",
+          "standard": "E2",
+          "line": 897,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "emergency_phrases_1.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\emergency_phrases_1.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 40,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 43,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 65,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 69,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 72,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 73,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 77,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 78,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 82,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 83,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 94,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 101,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 106,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 107,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 108,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 117,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 137,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 140,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 147,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 148,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 153,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 160,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 164,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 178,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 179,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 186,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 273,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 281,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 306,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 309,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 331,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 357,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 360,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 372,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 373,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 374,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 437,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 448,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 453,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 470,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 476,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 520,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 562,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "emergency_phrases_1.md",
+          "standard": "E2",
+          "line": 566,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "intermediate_audio_conversations_1-audio-script.txt",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_audio_conversations_1-audio-script.txt",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 24,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 143,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 149,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 169,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 175,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 195,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 201,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 265,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 269,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 273,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 347,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 348,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 349,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 351,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 352,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 353,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 355,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 356,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 357,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 359,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 360,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 361,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 363,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 364,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 365,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 367,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 368,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 369,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 371,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 372,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 373,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 375,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 376,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_audio_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 377,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "intermediate_complaints_1.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\intermediate_complaints_1.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 43,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 63,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 103,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 113,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 120,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 138,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 171,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 172,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 177,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 184,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 209,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 221,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 236,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 270,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 293,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 294,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 315,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 320,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 357,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 388,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 410,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 411,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 416,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 424,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 439,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 463,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 483,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 488,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 527,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_complaints_1.md",
+          "standard": "E2",
+          "line": 534,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "intermediate_conversations_1-audio-script.txt",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_conversations_1-audio-script.txt",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 18,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 115,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 122,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 148,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 155,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 181,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 188,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 214,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 221,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 297,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 297,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 323,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 327,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 331,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_1-audio-script.txt",
+          "standard": "E2",
+          "line": 335,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "intermediate_conversations_2-audio-script.txt",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_conversations_2-audio-script.txt",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "intermediate_conversations_2-audio-script.txt",
+          "standard": "E2",
+          "line": 39,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_2-audio-script.txt",
+          "standard": "E2",
+          "line": 45,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_2-audio-script.txt",
+          "standard": "E2",
+          "line": 103,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_2-audio-script.txt",
+          "standard": "E2",
+          "line": 109,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_2-audio-script.txt",
+          "standard": "E2",
+          "line": 167,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_2-audio-script.txt",
+          "standard": "E2",
+          "line": 173,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_2-audio-script.txt",
+          "standard": "E2",
+          "line": 199,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_2-audio-script.txt",
+          "standard": "E2",
+          "line": 207,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_2-audio-script.txt",
+          "standard": "E2",
+          "line": 215,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_2-audio-script.txt",
+          "standard": "E2",
+          "line": 237,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_2-audio-script.txt",
+          "standard": "E2",
+          "line": 249,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_2-audio-script.txt",
+          "standard": "E2",
+          "line": 261,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_conversations_2-audio-script.txt",
+          "standard": "E2",
+          "line": 292,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "intermediate_customer_service_1.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\intermediate_customer_service_1.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 3,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 10,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 11,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 12,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 13,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 20,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 21,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 22,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 23,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 24,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 25,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 26,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 75,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 80,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 88,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 112,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 149,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 157,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 162,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 170,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 177,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 178,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 183,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 191,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 213,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 223,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 231,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 257,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 340,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 349,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 363,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 371,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 418,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 427,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 437,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 441,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 446,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 464,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 478,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 489,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_customer_service_1.md",
+          "standard": "E2",
+          "line": 532,
+          "issue": "Trailing whitespace",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "intermediate_problems_1.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_problems_1.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 37,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 43,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 55,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 56,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 61,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 81,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 87,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 106,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 123,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 141,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 146,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 161,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 170,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 181,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 187,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 201,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 206,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 228,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 252,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 266,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 271,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 286,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 287,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 293,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 327,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 352,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 393,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 399,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 413,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 419,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 433,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 456,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 457,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 462,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 503,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_problems_1.md",
+          "standard": "E2",
+          "line": 517,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "intermediate_situations_1.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_situations_1.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 93,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 100,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 147,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 153,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 158,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 176,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 195,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 196,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 202,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 203,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 224,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 229,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 251,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 275,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 282,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 298,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 299,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 324,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 372,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 378,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 391,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 404,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 422,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 428,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 438,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 457,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 476,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 485,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 488,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 500,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 515,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 533,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 538,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_1.md",
+          "standard": "E2",
+          "line": 539,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "intermediate_situations_2.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_situations_2.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 64,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 79,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 80,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 86,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 101,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 145,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 151,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 152,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 160,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 167,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 187,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 192,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 207,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 212,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 257,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 278,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 293,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 299,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 328,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 335,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 380,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 400,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 405,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 446,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 464,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 465,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 469,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 512,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "intermediate_situations_2.md",
+          "standard": "E2",
+          "line": 527,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "intermediate_smalltalk_1.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_smalltalk_1.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 38,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 53,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 60,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 104,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 119,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 129,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 164,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 176,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 190,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 198,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 258,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 265,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 345,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 352,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_1.md",
+          "standard": "E2",
+          "line": 435,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "intermediate_smalltalk_2.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_smalltalk_2.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 43,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 58,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 66,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 82,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 114,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 162,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 187,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 202,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 210,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 224,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 232,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 248,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 370,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 423,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 456,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "intermediate_smalltalk_2.md",
+          "standard": "E2",
+          "line": 457,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "file": "safety_protocols_1.md",
+      "path": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\safety_protocols_1.md",
+      "encoding": "UTF-8",
+      "issues": [
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 59,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 66,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 100,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 124,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 150,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 178,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 195,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 202,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 219,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 225,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 226,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 252,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 269,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 278,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 296,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 304,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 322,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 381,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 399,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 407,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 435,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 453,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 461,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 478,
+          "issue": "Mixed quote types in single line",
+          "severity": "info"
+        },
+        {
+          "file": "safety_protocols_1.md",
+          "standard": "E2",
+          "line": 511,
+          "issue": "Lowercase after period detected",
+          "severity": "warning"
+        }
+      ],
+      "status": "PASS"
+    }
+  ]
+}
