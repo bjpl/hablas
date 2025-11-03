@@ -1,8 +1,26 @@
+# Resource 6: Restaurant Pickup & Delivery Essentials
+**Level**: Básico
+**Category**: Repartidor
+**Duration**: 4 minutes
+**Phrases**: 17 essential phrases
+**Focus**: Restaurant interactions and complete delivery cycle
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1: GREETING RESTAURANT STAFF
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 1: Polite greeting ===
+
 Hello! How are you?
 
 Hello! How are you?
 
 ¡Hola! ¿Cómo estás?
+
+[Tip: Start friendly. Good relationships with restaurant staff = faster service]
+
+
+=== PHRASE 2: Positive response ===
 
 Good, thank you!
 
@@ -10,11 +28,25 @@ Good, thank you!
 
 Bien, ¡gracias!
 
+[Tip: Even if you're having a bad day, be positive with restaurant staff]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2: IDENTIFYING YOUR ORDER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 3: State customer name ===
+
 Order for [customer name].
 
 Order for [customer name].
 
 Orden para [nombre del cliente]
+
+[Tip: Say the customer's name clearly. Replace [customer name] with actual name from app]
+
+
+=== PHRASE 4: Give order number ===
 
 Order number [order number].
 
@@ -22,11 +54,25 @@ Order number [order number].
 
 Número de orden [número de orden]
 
+[Tip: Use when restaurant has many orders waiting. Be ready to show your phone]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3: CHECKING ORDER STATUS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 5: Ask if ready ===
+
 Is it ready?
 
 Is it ready?
 
 ¿Está lista?
+
+[Tip: Use after you've given the order info. Don't ask this immediately when you walk in]
+
+
+=== PHRASE 6: Request verification ===
 
 Can you check the order?
 
@@ -34,11 +80,10 @@ Can you check the order?
 
 ¿Puede verificar la orden?
 
-Thank you! Have a good day!
+[Tip: Use when you've been waiting a while or if they can't find it]
 
-Thank you! Have a good day!
 
-¡Gracias! ¡Que tenga un buen día!
+=== PHRASE 7: Ask about wait time ===
 
 How much longer?
 
@@ -46,11 +91,25 @@ How much longer?
 
 ¿Cuánto tiempo más?
 
+[Tip: Be polite. Restaurant staff appreciate patience]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: REQUESTING ITEMS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 8: Request drinks ===
+
 I need the drinks too.
 
 I need the drinks too.
 
 Necesito las bebidas también
+
+[Tip: Check before leaving! Drinks are often separate from food]
+
+
+=== PHRASE 9: Request extras ===
 
 Can I have napkins and utensils?
 
@@ -58,11 +117,29 @@ Can I have napkins and utensils?
 
 ¿Me puede dar servilletas y cubiertos?
 
+[Tip: Many restaurants forget these. Customers complain if missing]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 5: HANDLING PROBLEMS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 10: Report issue to support ===
+
 I need to contact support.
 
 I need to contact support.
 
 Necesito contactar a soporte
+
+[Tip: Say this to restaurant if there's a problem you can't solve. Then actually call support]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 6: DELIVERING TO CUSTOMER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 11: Announce arrival ===
 
 Hi! I have your delivery.
 
@@ -70,11 +147,21 @@ Hi! I have your delivery.
 
 ¡Hola! Tengo tu entrega.
 
+[Tip: Classic greeting. Works every time]
+
+
+=== PHRASE 12: Confirm identity ===
+
 Are you [customer name]?
 
 Are you [customer name]?
 
 ¿Eres [nombre del cliente]?
+
+[Tip: Always verify before handing over food]
+
+
+=== PHRASE 13: Request verification ===
 
 Please check everything.
 
@@ -82,11 +169,25 @@ Please check everything.
 
 Por favor revise todo.
 
+[Tip: Protects you if customer later claims something is missing]
+
+
+=== PHRASE 14: Closing phrase ===
+
 Enjoy your meal!
 
 Enjoy your meal!
 
 ¡Disfruta tu comida!
+
+[Tip: Friendly way to end the delivery. Increases tips]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 7: ACCESS ISSUES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+=== PHRASE 15: Request customer comes out ===
 
 Can you come outside?
 
@@ -94,8 +195,15 @@ Can you come outside?
 
 ¿Puedes salir?
 
+[Tip: Use when you can't access building or find apartment]
+
+
+=== PHRASE 16: Request building access ===
+
 Can you let me in?
 
 Can you let me in?
 
 ¿Me puedes dejar entrar?
+
+[Tip: For locked building doors. Also works: "Can you buzz me in?"]
