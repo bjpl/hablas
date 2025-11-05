@@ -1,0 +1,2413 @@
+[
+  {
+    "id": 1,
+    "title": "Frases Esenciales para Entregas - Var 1",
+    "category": "repartidor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 100,
+      "E7_translation": 100,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {},
+    "overall_score": 100.0,
+    "status": "EXCELLENT",
+    "language_stats": {
+      "english": 26,
+      "spanish": 13,
+      "ambiguous": 0,
+      "ratio": 2.0
+    },
+    "audio_size_mb": 2.46
+  },
+  {
+    "id": 2,
+    "title": "Pronunciación: Entregas - Var 1",
+    "category": "repartidor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 100,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E7_truncation": [
+        "Line 11: Incomplete sentence: '\"Frase número uno: Cuando llegas a la dirección de...'",
+        "Line 19: Incomplete sentence: 'Esta es LA frase más importante. Simple, directa, ...'",
+        "Line 41: Incomplete sentence: '\"Frase cuatro: Cuando necesitas confirmación del c...'",
+        "Line 49: Incomplete sentence: 'Úsala cuando la app pide código de confirmación. M...'",
+        "Line 59: Incomplete sentence: 'Una despedida amable aumenta tus propinas. Es cort...'",
+        "Line 79: Incomplete sentence: 'Úsala al enviar mensaje o si el cliente abre cuand...'",
+        "Line 89: Incomplete sentence: 'Simple pero poderosa. 'So much' añade énfasis y si...'",
+        "Line 93: Incomplete sentence: '¿Listo? ¡Aquí vamos!\"...'",
+        "Line 111: Incomplete sentence: '\"¡Muy bien! ¡Lo estás haciendo increíble!\"...'",
+        "Line 123: Incomplete sentence: '¡Nos vemos en la siguiente lección!\"...'"
+      ]
+    },
+    "overall_score": 85.0,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 24,
+      "spanish": 37,
+      "ambiguous": 1,
+      "ratio": 0.6486486486486487
+    },
+    "audio_size_mb": 5.83
+  },
+  {
+    "id": 4,
+    "title": "Frases Esenciales para Entregas - Var 2",
+    "category": "repartidor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 100,
+      "E7_translation": 100,
+      "B3_balance": 70,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {},
+    "overall_score": 95.5,
+    "status": "EXCELLENT",
+    "language_stats": {
+      "english": 26,
+      "spanish": 12,
+      "ambiguous": 7,
+      "ratio": 2.1666666666666665
+    },
+    "audio_size_mb": 2.59
+  },
+  {
+    "id": 5,
+    "title": "Situaciones Complejas en Entregas - Var 1",
+    "category": "repartidor",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 70,
+      "B3_balance": 70,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Can you double-check this order? The'",
+        "Line 2: Missing end punctuation: 'Can you double-check this order? The'",
+        "Line 4: Missing end punctuation: 'The customer has allergies. Did you'",
+        "Line 5: Missing end punctuation: 'The customer has allergies. Did you'",
+        "Line 6: Missing end punctuation: 'El cliente tiene alergias. ¿Prepararon'",
+        "Line 7: Missing end punctuation: 'The restaurant says this is what was'",
+        "Line 8: Missing end punctuation: 'The restaurant says this is what was'",
+        "Line 9: Missing end punctuation: 'El restaurante dice que esto es lo que'",
+        "Line 12: Missing end punctuation: 'Sus notas de entrega dicen'",
+        "Line 13: Missing end punctuation: 'Good evening, I have a food delivery for'"
+      ],
+      "E7_truncation": [
+        "Line 35: Incomplete sentence: 'El edificio parece estar cerrado. ¿Aún...'"
+      ]
+    },
+    "overall_score": 76.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 18,
+      "spanish": 7,
+      "ambiguous": 2,
+      "ratio": 2.5714285714285716
+    },
+    "audio_size_mb": 2.14
+  },
+  {
+    "id": 6,
+    "title": "Frases Esenciales para Entregas - Var 3",
+    "category": "repartidor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 80,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 27: Missing end punctuation: 'Necesito las bebidas también'",
+        "Line 33: Missing end punctuation: 'Necesito contactar a soporte'"
+      ],
+      "E7_truncation": [
+        "Line 23: Incomplete sentence: 'Número de orden [####]...'",
+        "Line 53: Incomplete sentence: 'Necesito las bebidas también...'"
+      ]
+    },
+    "overall_score": 92.5,
+    "status": "EXCELLENT",
+    "language_stats": {
+      "english": 24,
+      "spanish": 15,
+      "ambiguous": 12,
+      "ratio": 1.6
+    },
+    "audio_size_mb": 3.13
+  },
+  {
+    "id": 7,
+    "title": "Pronunciación: Entregas - Var 2",
+    "category": "repartidor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 90,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: '**Focus**: Essential delivery phrases with clear p'"
+      ],
+      "E7_truncation": [
+        "Line 21: Incomplete sentence: 'Pronunciación: AIM AUT-SAID WIZ YOR DI-LI-VE-RI\"...'",
+        "Line 23: Incomplete sentence: '\"Usa esta frase cuando llegues y el cliente no sal...'",
+        "Line 25: Incomplete sentence: '\"Frase 2: Para confirmar que estás entregando a la...'",
+        "Line 33: Incomplete sentence: 'Pronunciación: AR YU MA-RI-A\"...'",
+        "Line 35: Incomplete sentence: '\"Reemplaza 'Maria' con el nombre que aparece en la...'",
+        "Line 45: Incomplete sentence: 'Pronunciación: HIRS YOR OR-DER FROM CHI-POT-LEI\"...'",
+        "Line 49: Incomplete sentence: '\"Frase 4: Cuando no encuentras la dirección o el a...'",
+        "Line 57: Incomplete sentence: 'Pronunciación: KEN YU HELP MI FAIND YOR A-PART-MEN...'",
+        "Line 59: Incomplete sentence: '\"Esta frase es muy útil en edificios grandes o com...'",
+        "Line 69: Incomplete sentence: 'Pronunciación: DA DRINKS AR ON TOP, PLIS BI KER-FU...'",
+        "Line 81: Incomplete sentence: 'Pronunciación: HAV A GREIT DEI\"...'",
+        "Line 83: Incomplete sentence: '\"Una despedida amable puede mejorar tu propina. Ta...'",
+        "Line 85: Incomplete sentence: '\"¡Excelente! Ahora vamos a practicar todas las fra...'",
+        "Line 113: Incomplete sentence: '¡Nos vemos en la próxima lección!\"...'"
+      ]
+    },
+    "overall_score": 83.5,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 18,
+      "spanish": 36,
+      "ambiguous": 3,
+      "ratio": 0.5
+    },
+    "audio_size_mb": 5.77
+  },
+  {
+    "id": 9,
+    "title": "Frases Esenciales para Entregas - Var 4",
+    "category": "repartidor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 90,
+      "E7_translation": 100,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 36: Missing end punctuation: '¿Puedo tener servilletas extra, por'"
+      ]
+    },
+    "overall_score": 98.5,
+    "status": "EXCELLENT",
+    "language_stats": {
+      "english": 22,
+      "spanish": 14,
+      "ambiguous": 6,
+      "ratio": 1.5714285714285714
+    },
+    "audio_size_mb": 2.48
+  },
+  {
+    "id": 10,
+    "title": "Conversaciones con Clientes - Var 1",
+    "category": "repartidor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 0,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 70
+    },
+    "issues": {
+      "C1_production_notes": [
+        "Line 11: [Tone:",
+        "Line 47: [Tone:",
+        "Line 83: [Tone:",
+        "Line 119: [Tone:",
+        "Line 155: [Tone:"
+      ],
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: '**Level**: Intermedio'",
+        "Line 2: Missing end punctuation: '**Category**: Domiciliarios y repartidores'",
+        "Line 3: Missing end punctuation: '## FULL AUDIO SCRIPT'",
+        "Line 5: Missing end punctuation: '[00:00] INTRODUCTION'",
+        "Line 12: Missing end punctuation: '- Cuando llegas a la dirección'",
+        "Line 13: Missing end punctuation: '- Si no encuentras al cliente'",
+        "Line 14: Missing end punctuation: '- Cuando hay problemas con el pedido'",
+        "Line 15: Missing end punctuation: '- Y mucho más'",
+        "Line 23: Missing end punctuation: '[00:45] PHRASE 1: ARRIVING AT LOCATION'",
+        "Line 41: Missing end punctuation: '[02:00] PHRASE 2: CONFIRMING CUSTOMER NAME'"
+      ],
+      "E7_truncation": [
+        "Line 21: Incomplete sentence: 'Vamos a practicar 8 diálogos diferentes para situa...'",
+        "Line 23: Incomplete sentence: '- Cuando llegas a la dirección...'",
+        "Line 29: Incomplete sentence: '- Y mucho más...'",
+        "Line 31: Incomplete sentence: '¿Cómo usar esta lección? Muy simple:...'",
+        "Line 53: Incomplete sentence: 'Esta es la primera impresión. Sé amable y profesio...'",
+        "Line 113: Incomplete sentence: 'Si no estás seguro de la pronunciación, puedes mos...'",
+        "Line 125: Incomplete sentence: 'Esta es la frase más común que vas a usar.\"...'",
+        "Line 141: Incomplete sentence: '\"Aquí está su pedido. ¡Que tenga un buen día!\"...'",
+        "Line 161: Incomplete sentence: 'Esto pasa mucho. Mantén la calma y sé profesional....'",
+        "Line 177: Incomplete sentence: '\"Estoy en su puerta. Intenté llamarlo.\"...'",
+        "Line 185: Incomplete sentence: 'También puedes decir esto si el cliente finalmente...'",
+        "Line 197: Incomplete sentence: 'Muy común después de la pandemia.\"...'",
+        "Line 213: Incomplete sentence: '\"Lo estoy dejando en su puerta como lo solicitó.\"...'",
+        "Line 221: Incomplete sentence: 'Protégete siempre tomando una foto del pedido.\"...'",
+        "Line 233: Incomplete sentence: 'No es tu culpa, pero sé amable.\"...'",
+        "Line 249: Incomplete sentence: '\"Lo siento. El restaurante empacó esto. Por favor ...'",
+        "Line 257: Incomplete sentence: 'Siempre dirige al cliente a la aplicación para res...'",
+        "Line 269: Incomplete sentence: 'Mantén la calma y sigue el protocolo.\"...'",
+        "Line 285: Incomplete sentence: '\"Esta es la dirección en la aplicación. ¿Puede rev...'",
+        "Line 293: Incomplete sentence: 'No vayas a direcciones que no están en la app.\"...'",
+        "Line 305: Incomplete sentence: 'Sé educado pero directo.\"...'",
+        "Line 321: Incomplete sentence: '\"¿Podría darme el código de la puerta, por favor?\"...'",
+        "Line 327: Incomplete sentence: '\"Consejo: También puedes preguntar: 'Can you buzz ...'",
+        "Line 403: Incomplete sentence: 'En Hablas tenemos muchas más lecciones para ti:...'",
+        "Line 409: Incomplete sentence: '- Inglés para navegación y direcciones...'"
+      ]
+    },
+    "overall_score": 47.0,
+    "status": "NOT_READY",
+    "language_stats": {
+      "english": 25,
+      "spanish": 70,
+      "ambiguous": 113,
+      "ratio": 0.35714285714285715
+    },
+    "audio_size_mb": 16.44
+  },
+  {
+    "id": 11,
+    "title": "Saludos y Confirmación de Pasajeros - Var 1",
+    "category": "conductor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 70,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 28: Missing end punctuation: 'Is the music okay, or would you like me'",
+        "Line 29: Missing end punctuation: 'Is the music okay, or would you like me'",
+        "Line 30: Missing end punctuation: '¿Está bien la música, o quieres que'"
+      ],
+      "E7_truncation": [
+        "Line 59: Incomplete sentence: '¿Está bien la música, o quieres que...'"
+      ]
+    },
+    "overall_score": 91.0,
+    "status": "EXCELLENT",
+    "language_stats": {
+      "english": 26,
+      "spanish": 14,
+      "ambiguous": 5,
+      "ratio": 1.8571428571428572
+    },
+    "audio_size_mb": 2.71
+  },
+  {
+    "id": 12,
+    "title": "Direcciones y Navegación GPS - Var 1",
+    "category": "conductor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Turn right'",
+        "Line 2: Missing end punctuation: 'Turn right'",
+        "Line 3: Missing end punctuation: 'Gira a la derecha'",
+        "Line 4: Missing end punctuation: 'Go straight'",
+        "Line 5: Missing end punctuation: 'Go straight'",
+        "Line 6: Missing end punctuation: 'Sigue derecho/recto'",
+        "Line 7: Missing end punctuation: 'Make a U-turn'",
+        "Line 8: Missing end punctuation: 'Make a U-turn'",
+        "Line 9: Missing end punctuation: 'Haz un cambio de sentido/vuelta en U'",
+        "Line 10: Missing end punctuation: 'In 500 feet, turn right'"
+      ],
+      "E7_truncation": [
+        "Line 35: Incomplete sentence: '¿Está cerca de la esquina de First y...'",
+        "Line 89: Incomplete sentence: 'La dirección en la app podría estar...'",
+        "Line 95: Incomplete sentence: 'Perdí la señal...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 28,
+      "spanish": 18,
+      "ambiguous": 11,
+      "ratio": 1.5555555555555556
+    },
+    "audio_size_mb": 3.29
+  },
+  {
+    "id": 13,
+    "title": "Audio: Direcciones en Inglés - Var 1",
+    "category": "conductor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 0,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 70
+    },
+    "issues": {
+      "C1_production_notes": [
+        "Line 9: [Tone:",
+        "Line 35: [Tone:",
+        "Line 43: [Tone:",
+        "Line 69: [Tone:",
+        "Line 95: [Tone:"
+      ],
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: '**Focus**: Navegación y direcciones básicas'",
+        "Line 2: Missing end punctuation: '## COMPLETE AUDIO SCRIPT'",
+        "Line 4: Missing end punctuation: '[00:00] - INTRODUCTION'",
+        "Line 9: Missing end punctuation: 'Estas son las palabras que escucharás todos los dí'",
+        "Line 10: Should start with capital: 'y que necesitas entender perfectamente para llegar'",
+        "Line 11: Missing end punctuation: 'Este audio dura solo 7 minutos. Puedes escucharlo '",
+        "Line 12: Should start with capital: 'o antes de comenzar tu turno.'",
+        "Line 17: Missing end punctuation: '[00:45] - MAIN CONTENT BEGINS'",
+        "Line 21: Missing end punctuation: '[00:55] PHRASE 1: TURN LEFT'",
+        "Line 34: Missing end punctuation: '[01:25] PHRASE 2: TURN RIGHT'"
+      ],
+      "E7_truncation": [
+        "Line 1: Incomplete sentence: '**Focus**: Navegación y direcciones básicas...'",
+        "Line 17: Incomplete sentence: 'Estas son las palabras que escucharás todos los dí...'",
+        "Line 39: Incomplete sentence: '\"Primero, las direcciones básicas que escucharás e...'",
+        "Line 47: Incomplete sentence: '\"Frase 1: La dirección más común. Girar a la izqui...'",
+        "Line 63: Incomplete sentence: '\"Gira a la izquierda. O también: Voltea a la izqui...'",
+        "Line 99: Incomplete sentence: '\"Frase 3: Seguir derecho. Muy fácil esta.\"...'",
+        "Line 115: Incomplete sentence: '\"Sigue derecho. O: Continúa recto.\"...'",
+        "Line 159: Incomplete sentence: '\"Frase 5: La distancia en pies. Tu GPS dirá esto c...'",
+        "Line 165: Incomplete sentence: '[Phonetic: in faiv jándred fiit]...'",
+        "Line 183: Incomplete sentence: 'Cuando escuches esto, prepárate para voltear pront...'",
+        "Line 193: Incomplete sentence: '\"Frase 6: En el próximo semáforo.\"...'",
+        "Line 209: Incomplete sentence: '\"En el siguiente semáforo. O: En la próxima luz.\"...'",
+        "Line 219: Incomplete sentence: '\"Frase 7: En la señal de alto.\"...'",
+        "Line 235: Incomplete sentence: '\"En la señal de STOP. En el alto.\"...'",
+        "Line 251: Incomplete sentence: '[Phonetic: yur des-ti-néi-shon is on de left]...'",
+        "Line 261: Incomplete sentence: '\"Tu destino está a la izquierda.\"...'",
+        "Line 277: Incomplete sentence: '[Phonetic: yur des-ti-néi-shon is on de rait]...'",
+        "Line 287: Incomplete sentence: '\"Tu destino está a la derecha.\"...'",
+        "Line 303: Incomplete sentence: '[Phonetic: yu jav a-ráivd]...'",
+        "Line 377: Incomplete sentence: '\"¡Felicidades! Ya conoces las 10 frases de direcci...'",
+        "Line 389: Incomplete sentence: 'También puedes descargar el PDF con todas estas fr...'",
+        "Line 399: Incomplete sentence: '¡Mucho éxito en la calle!\"...'"
+      ]
+    },
+    "overall_score": 47.0,
+    "status": "NOT_READY",
+    "language_stats": {
+      "english": 20,
+      "spanish": 46,
+      "ambiguous": 134,
+      "ratio": 0.43478260869565216
+    },
+    "audio_size_mb": 14.02
+  },
+  {
+    "id": 14,
+    "title": "Saludos y Confirmación de Pasajeros - Var 2",
+    "category": "conductor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 10,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 19: Missing end punctuation: 'I have a pickup for... how do you'",
+        "Line 20: Missing end punctuation: 'I have a pickup for... how do you'",
+        "Line 21: Missing end punctuation: 'Tengo un viaje para... ¿cómo se'",
+        "Line 25: Missing end punctuation: 'I have you going to 123 Oak Street. Is'",
+        "Line 26: Missing end punctuation: 'I have you going to 123 Oak Street. Is'",
+        "Line 27: Missing end punctuation: 'Te llevo al 123 de Oak Street. ¿Es'",
+        "Line 46: Missing end punctuation: 'Do you have any bags? I can pop the'",
+        "Line 47: Missing end punctuation: 'Do you have any bags? I can pop the'",
+        "Line 48: Missing end punctuation: '¿Tienen maletas? Puedo abrir la'"
+      ],
+      "E7_truncation": [
+        "Line 41: Incomplete sentence: 'Tengo un viaje para... ¿cómo se...'"
+      ]
+    },
+    "overall_score": 82.0,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 34,
+      "spanish": 18,
+      "ambiguous": 2,
+      "ratio": 1.8888888888888888
+    },
+    "audio_size_mb": 3.59
+  },
+  {
+    "id": 15,
+    "title": "Direcciones y Navegación GPS - Var 2",
+    "category": "conductor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 13: Missing end punctuation: 'Turn right'",
+        "Line 14: Missing end punctuation: 'Turn right'",
+        "Line 15: Missing end punctuation: 'Gira a la derecha'",
+        "Line 16: Missing end punctuation: 'Turn left'",
+        "Line 17: Missing end punctuation: 'Turn left'",
+        "Line 18: Missing end punctuation: 'Gira a la izquierda'",
+        "Line 19: Missing end punctuation: 'Make a U-turn'",
+        "Line 20: Missing end punctuation: 'Make a U-turn'",
+        "Line 21: Missing end punctuation: 'Haz una vuelta en U'",
+        "Line 33: Missing end punctuation: 'Mi GPS perdió señal. Un momento, por'"
+      ],
+      "E7_truncation": [
+        "Line 65: Incomplete sentence: 'Mi GPS perdió señal. Un momento, por...'"
+      ]
+    },
+    "overall_score": 80.5,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 20,
+      "spanish": 19,
+      "ambiguous": 18,
+      "ratio": 1.0526315789473684
+    },
+    "audio_size_mb": 3.49
+  },
+  {
+    "id": 16,
+    "title": "Small Talk con Pasajeros - Var 1",
+    "category": "conductor",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 60,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 33: Missing end punctuation: 'Esta es una parte muy linda de la ciudad'",
+        "Line 37: Missing end punctuation: 'Fun fact: this building is over 100 years'",
+        "Line 38: Missing end punctuation: 'Fun fact: this building is over 100 years'",
+        "Line 39: Missing end punctuation: 'Dato curioso: este edificio tiene más'"
+      ],
+      "E7_truncation": [
+        "Line 11: Incomplete sentence: 'Parece que la lluvia finalmente está...'",
+        "Line 77: Incomplete sentence: 'Dato curioso: este edificio tiene más...'"
+      ]
+    },
+    "overall_score": 89.5,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 26,
+      "spanish": 16,
+      "ambiguous": 6,
+      "ratio": 1.625
+    },
+    "audio_size_mb": 3.07
+  },
+  {
+    "id": 17,
+    "title": "Saludos y Confirmación de Pasajeros - Var 3",
+    "category": "conductor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 80,
+      "E7_translation": 100,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 19: Missing end punctuation: 'I have you going to [address]. Is that'",
+        "Line 20: Missing end punctuation: 'I have you going to [address]. Is that'"
+      ]
+    },
+    "overall_score": 97.0,
+    "status": "EXCELLENT",
+    "language_stats": {
+      "english": 20,
+      "spanish": 13,
+      "ambiguous": 6,
+      "ratio": 1.5384615384615385
+    },
+    "audio_size_mb": 2.48
+  },
+  {
+    "id": 18,
+    "title": "Audio: Direcciones en Inglés - Var 2",
+    "category": "conductor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 0,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 70
+    },
+    "issues": {
+      "C1_production_notes": [
+        "Line 13: [Tone:",
+        "Line 31: [Tone:",
+        "Line 63: [Tone:",
+        "Line 95: [Tone:",
+        "Line 127: [Tone:"
+      ],
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: '**Duration**: 7:15 minutes'",
+        "Line 2: Missing end punctuation: '**Level**: Básico'",
+        "Line 3: Missing end punctuation: '**Category**: Conductores'",
+        "Line 4: Missing end punctuation: '## COMPLETE AUDIO SCRIPT'",
+        "Line 6: Missing end punctuation: '[00:00] INTRODUCTION'",
+        "Line 15: Missing end punctuation: '[00:45] PHRASE 1: CONFIRMING DESTINATION'",
+        "Line 31: Missing end punctuation: '[01:45] PHRASE 2: ASKING ABOUT ROUTE PREFERENCE'",
+        "Line 44: Missing end punctuation: 'Esto muestra profesionalismo. Algunos pasajeros co'",
+        "Line 45: Should start with capital: 'o quieren evitar ciertas calles.\"'",
+        "Line 47: Missing end punctuation: '[02:45] PHRASE 3: EXPLAINING YOUR ROUTE CHOICE'"
+      ],
+      "E7_truncation": [
+        "Line 3: Incomplete sentence: '**Level**: Básico...'",
+        "Line 67: Incomplete sentence: '\"Frase 2: Para preguntar si el pasajero prefiere u...'",
+        "Line 99: Incomplete sentence: '\"Frase 3: Cuando explicas por qué elegiste cierta ...'",
+        "Line 131: Incomplete sentence: '\"Frase 4: Para avisar sobre el tráfico.\"...'",
+        "Line 153: Incomplete sentence: 'También puedes decir 'a lot of traffic' que es más...'",
+        "Line 163: Incomplete sentence: '\"Frase 5: Para informar cuánto falta para llegar.\"...'",
+        "Line 183: Incomplete sentence: 'Cambia 'five' por el número que necesites:...'",
+        "Line 195: Incomplete sentence: '\"Frase 6: Cuando necesitas instrucciones específic...'",
+        "Line 215: Incomplete sentence: 'Muy útil en aeropuertos, hoteles grandes, o edific...'",
+        "Line 217: Incomplete sentence: 'con múltiples entradas.\"...'",
+        "Line 259: Incomplete sentence: '\"Frase 8: Si el pasajero necesita que avances un p...'",
+        "Line 281: Incomplete sentence: 'Úsalo cuando sea seguro avanzar.\"...'",
+        "Line 293: Incomplete sentence: 'a velocidad normal. Repite después de cada una.\"...'",
+        "Line 333: Incomplete sentence: '\"¡Muy bien! Cada vez suena más natural.\"...'",
+        "Line 345: Incomplete sentence: 'Estas frases te ayudarán a comunicarte profesional...'",
+        "Line 353: Incomplete sentence: 'Descarga el PDF de esta lección en la app Hablas p...'",
+        "Line 357: Incomplete sentence: 'Recuerda: Cada palabra en inglés que aprendes es u...'",
+        "Line 363: Incomplete sentence: '¡Éxito en la calle!\"...'"
+      ]
+    },
+    "overall_score": 47.0,
+    "status": "NOT_READY",
+    "language_stats": {
+      "english": 18,
+      "spanish": 45,
+      "ambiguous": 119,
+      "ratio": 0.4
+    },
+    "audio_size_mb": 13.39
+  },
+  {
+    "id": 19,
+    "title": "Direcciones y Navegación GPS - Var 3",
+    "category": "conductor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 40,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 19: Missing end punctuation: 'The address is wrong in the app'",
+        "Line 20: Missing end punctuation: 'The address is wrong in the app'",
+        "Line 21: Missing end punctuation: 'La dirección está mal en la app'",
+        "Line 37: Missing end punctuation: 'I can pull up closer'",
+        "Line 38: Missing end punctuation: 'I can pull up closer'",
+        "Line 39: Missing end punctuation: 'Puedo acercarme más'"
+      ],
+      "E7_truncation": [
+        "Line 41: Incomplete sentence: 'La dirección está mal en la app...'",
+        "Line 77: Incomplete sentence: 'Puedo acercarme más...'"
+      ]
+    },
+    "overall_score": 86.5,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 22,
+      "spanish": 13,
+      "ambiguous": 4,
+      "ratio": 1.6923076923076923
+    },
+    "audio_size_mb": 2.08
+  },
+  {
+    "id": 20,
+    "title": "Manejo de Situaciones Difíciles - Var 1",
+    "category": "conductor",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'No problem. You can cancel through the'",
+        "Line 2: Missing end punctuation: 'No problem. You can cancel through the'",
+        "Line 3: Missing end punctuation: 'No hay problema. Puedes cancelar a'",
+        "Line 7: Missing end punctuation: 'I see the app says [address], but you'",
+        "Line 8: Missing end punctuation: 'I see the app says [address], but you'",
+        "Line 9: Missing end punctuation: 'Veo que la app dice [dirección], pero'",
+        "Line 10: Missing end punctuation: 'The price is higher because of surge'",
+        "Line 11: Missing end punctuation: 'The price is higher because of surge'",
+        "Line 12: Missing end punctuation: 'El precio es más alto por tarifa'",
+        "Line 13: Missing end punctuation: 'Prices vary depending on demand, time of'"
+      ],
+      "E7_truncation": [
+        "Line 17: Incomplete sentence: 'Veo que la app dice [dirección], pero...'",
+        "Line 23: Incomplete sentence: 'El precio es más alto por tarifa...'",
+        "Line 29: Incomplete sentence: 'Los precios varían dependiendo de la...'",
+        "Line 41: Incomplete sentence: 'Si continúas este comportamiento, tendré...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 12,
+      "spanish": 7,
+      "ambiguous": 8,
+      "ratio": 1.7142857142857142
+    },
+    "audio_size_mb": 2.1
+  },
+  {
+    "id": 21,
+    "title": "Saludos Básicos en Inglés - Var 1",
+    "category": "all",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 0,
+      "E2_punctuation": 40,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 70
+    },
+    "issues": {
+      "C1_production_notes": [
+        "Line 5: [Tone:",
+        "Line 19: [Tone:",
+        "Line 47: [Tone:",
+        "Line 75: [Tone:",
+        "Line 109: [Tone:"
+      ],
+      "E2_punctuation": [
+        "Line 2: Missing end punctuation: '**Category**: Todos los trabajadores de gig econom'",
+        "Line 140: Missing end punctuation: '- 'Good morning' - antes del mediodía'",
+        "Line 141: Missing end punctuation: '- 'Good afternoon' - desde el mediodía hasta las 6'",
+        "Line 142: Missing end punctuation: '- 'Good evening' - cuando ya está oscuro'",
+        "Line 143: Missing end punctuation: '- 'Hello' y 'Hi' - funcionan todo el día'",
+        "Line 144: Missing end punctuation: '- 'How are you?' - después de cualquier saludo'"
+      ],
+      "E7_truncation": [
+        "Line 1: Incomplete sentence: '**Level**: Básico (Principiante)...'",
+        "Line 15: Incomplete sentence: '¿Listo? Vamos a empezar con lo más básico: cómo sa...'",
+        "Line 23: Incomplete sentence: '\"Frase número 1: Cuando llegas a recoger un pedido...'",
+        "Line 43: Incomplete sentence: '\"Traducción: Buenos días. Úsalo desde que amanece ...'",
+        "Line 51: Incomplete sentence: '\"Frase número 2: Desde el mediodía hasta que oscur...'",
+        "Line 71: Incomplete sentence: '\"Traducción: Buenas tardes. Perfecto para entregas...'",
+        "Line 79: Incomplete sentence: '\"Frase número 3: Cuando ya está oscuro, después de...'",
+        "Line 99: Incomplete sentence: '\"Traducción: Buenas noches para saludar. Usa esto ...'",
+        "Line 105: Incomplete sentence: '\"Nota importante: 'Good evening' es para SALUDAR c...'",
+        "Line 113: Incomplete sentence: '\"Frase número 4: Un saludo que puedes usar a cualq...'",
+        "Line 133: Incomplete sentence: '\"Traducción: Hola. Simple y efectivo. Funciona en ...'",
+        "Line 141: Incomplete sentence: '\"Frase número 5: Aún más casual. Perfecto para cli...'",
+        "Line 161: Incomplete sentence: '\"Traducción: Hola, versión corta. Muy común en Est...'",
+        "Line 175: Incomplete sentence: '\"Frase número 6: Después de saludar, puedes pregun...'",
+        "Line 195: Incomplete sentence: '\"Traducción: ¿Cómo estás? o ¿Cómo está usted?\"...'",
+        "Line 201: Incomplete sentence: '\"Úsalo así: Primero saluda - 'Good morning' - y lu...'",
+        "Line 209: Incomplete sentence: '\"¡Excelente! Ahora vamos a practicar todas las fra...'",
+        "Line 241: Incomplete sentence: '\"¡Perfecto! Ahora una vez más, con confianza:\"...'",
+        "Line 279: Incomplete sentence: '- 'Good morning' - antes del mediodía...'",
+        "Line 281: Incomplete sentence: '- 'Good afternoon' - desde el mediodía hasta las 6...'",
+        "Line 283: Incomplete sentence: '- 'Good evening' - cuando ya está oscuro...'",
+        "Line 285: Incomplete sentence: '- 'Hello' y 'Hi' - funcionan todo el día...'",
+        "Line 287: Incomplete sentence: '- 'How are you?' - después de cualquier saludo...'",
+        "Line 295: Incomplete sentence: 'Nos vemos en la próxima lección donde aprenderás c...'"
+      ]
+    },
+    "overall_score": 53.0,
+    "status": "NOT_READY",
+    "language_stats": {
+      "english": 4,
+      "spanish": 35,
+      "ambiguous": 113,
+      "ratio": 0.11428571428571428
+    },
+    "audio_size_mb": 12.24
+  },
+  {
+    "id": 22,
+    "title": "Números y Direcciones - Var 1",
+    "category": "all",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 90,
+      "E7_translation": 100,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 9: Missing end punctuation: '¿Es este el doce cincuenta y seis de'"
+      ]
+    },
+    "overall_score": 98.5,
+    "status": "EXCELLENT",
+    "language_stats": {
+      "english": 20,
+      "spanish": 11,
+      "ambiguous": 2,
+      "ratio": 1.8181818181818181
+    },
+    "audio_size_mb": 1.93
+  },
+  {
+    "id": 23,
+    "title": "Tiempo y Horarios - Var 1",
+    "category": "all",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 100,
+      "E7_translation": 100,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {},
+    "overall_score": 100.0,
+    "status": "EXCELLENT",
+    "language_stats": {
+      "english": 16,
+      "spanish": 8,
+      "ambiguous": 6,
+      "ratio": 2.0
+    },
+    "audio_size_mb": 1.67
+  },
+  {
+    "id": 25,
+    "title": "Servicio al Cliente en Inglés - Var 1",
+    "category": "all",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 90,
+      "E7_translation": 100,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 42: Missing end punctuation: 'Puedo esperar unos minutos, sin problema'"
+      ]
+    },
+    "overall_score": 98.5,
+    "status": "EXCELLENT",
+    "language_stats": {
+      "english": 30,
+      "spanish": 15,
+      "ambiguous": 3,
+      "ratio": 2.0
+    },
+    "audio_size_mb": 3.13
+  },
+  {
+    "id": 26,
+    "title": "Manejo de Quejas y Problemas - Var 1",
+    "category": "all",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 10: Missing end punctuation: 'I sincerely apologize for the'",
+        "Line 11: Missing end punctuation: 'I sincerely apologize for the'",
+        "Line 12: Missing end punctuation: 'Me disculpo sinceramente por el'",
+        "Line 13: Missing end punctuation: 'I apologize for the delay. There was'",
+        "Line 14: Missing end punctuation: 'I apologize for the delay. There was'",
+        "Line 15: Missing end punctuation: 'Me disculpo por el retraso. Había'",
+        "Line 16: Missing end punctuation: 'It looks like something is missing from'",
+        "Line 17: Missing end punctuation: 'It looks like something is missing from'",
+        "Line 19: Missing end punctuation: 'Let me call the restaurant to check on'",
+        "Line 20: Missing end punctuation: 'Let me call the restaurant to check on'"
+      ],
+      "E7_truncation": [
+        "Line 29: Incomplete sentence: 'Me disculpo por el retraso. Había...'",
+        "Line 41: Incomplete sentence: 'Déjame llamar al restaurante para...'",
+        "Line 47: Incomplete sentence: 'El restaurante selló la bolsa, así que...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 22,
+      "spanish": 11,
+      "ambiguous": 0,
+      "ratio": 2.0
+    },
+    "audio_size_mb": 2.42
+  },
+  {
+    "id": 27,
+    "title": "Frases de Emergencia - Var 1",
+    "category": "all",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 90,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 3: Missing end punctuation: 'Alguien está herido. Por favor'"
+      ],
+      "E7_truncation": [
+        "Line 5: Incomplete sentence: 'Alguien está herido. Por favor...'"
+      ]
+    },
+    "overall_score": 94.0,
+    "status": "EXCELLENT",
+    "language_stats": {
+      "english": 12,
+      "spanish": 7,
+      "ambiguous": 8,
+      "ratio": 1.7142857142857142
+    },
+    "audio_size_mb": 1.89
+  },
+  {
+    "id": 28,
+    "title": "Saludos Básicos en Inglés - Var 2",
+    "category": "all",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 2: Missing end punctuation: '**Category**: Todos los trabajadores de gig econom'",
+        "Line 59: Missing end punctuation: '- 'Good morning' hasta mediodía'",
+        "Line 60: Missing end punctuation: '- 'Good afternoon' hasta las 6 PM'",
+        "Line 62: Missing end punctuation: '- 'Hello' y 'Hi' funcionan siempre'",
+        "Line 63: Missing end punctuation: '- 'How are you?' muestra profesionalismo'",
+        "Line 69: Missing end punctuation: '## NOTAS DE PRODUCCIÓN'",
+        "Line 77: Missing end punctuation: '- Música suave instrumental (volumen 10%) durante '",
+        "Line 78: Missing end punctuation: '- Sin música durante las frases para máxima clarid'",
+        "Line 80: Missing end punctuation: '- MP3, 128 kbps'",
+        "Line 81: Missing end punctuation: '- Optimizado para móvil'"
+      ],
+      "E7_truncation": [
+        "Line 1: Incomplete sentence: '**Level**: Básico (Principiante)...'",
+        "Line 13: Incomplete sentence: '\"Frase 1: El saludo más común de la mañana, hasta ...'",
+        "Line 19: Incomplete sentence: '\"Buenos días. Literalmente: 'Buena mañana'\"...'",
+        "Line 21: Incomplete sentence: '\"Tip profesional: Siempre sonríe cuando dices 'Goo...'",
+        "Line 23: Incomplete sentence: '\"Frase 2: Desde las 12 del mediodía hasta las 5 o ...'",
+        "Line 29: Incomplete sentence: '\"Buenas tardes. Pronunciación: 'gud after-nun'\"...'",
+        "Line 31: Incomplete sentence: '\"Muchos principiantes olvidan esta frase y usan 'G...'",
+        "Line 33: Incomplete sentence: '\"Frase 3: Después de las 6 de la tarde. Perfecto p...'",
+        "Line 39: Incomplete sentence: '\"Buenas noches. Pero atención: solo para SALUDAR, ...'",
+        "Line 41: Incomplete sentence: '\"Nota importante: 'Good evening' es para saludar. ...'",
+        "Line 43: Incomplete sentence: '\"Frase 4: El saludo más versátil. Funciona a cualq...'",
+        "Line 49: Incomplete sentence: '\"Hola. Simple y efectivo. Pronunciación: 'je-LOU'\"...'",
+        "Line 51: Incomplete sentence: '\"'Hello' es perfecto cuando no estás seguro si es ...'",
+        "Line 53: Incomplete sentence: '\"Frase 5: Muy casual, especialmente con clientes j...'",
+        "Line 59: Incomplete sentence: '\"Hola. Súper corto. Pronunciación: 'JAI'\"...'",
+        "Line 61: Incomplete sentence: '\"'Hi' es perfecto cuando el cliente abre la puerta...'",
+        "Line 63: Incomplete sentence: '\"Frase 6: Después de saludar, esta pregunta muestr...'",
+        "Line 69: Incomplete sentence: '\"¿Cómo está? o ¿Cómo estás? Pronunciación: 'JAU ar...'",
+        "Line 71: Incomplete sentence: '\"Combínalo con el saludo: 'Good morning! How are y...'",
+        "Line 73: Incomplete sentence: '\"Frase 7: Una versión más casual de '¿Cómo estás?'...'",
+        "Line 79: Incomplete sentence: '\"Oye, ¿cómo va todo? Pronunciación: 'JEI, jaus it ...'",
+        "Line 83: Incomplete sentence: '\"Frase 8: Específica para cuando entras a un resta...'",
+        "Line 91: Incomplete sentence: '\"Esto ahorra tiempo. El personal del restaurante s...'",
+        "Line 93: Incomplete sentence: '\"¡Excelente! Ahora vamos a practicar todas las fra...'",
+        "Line 117: Incomplete sentence: '- 'Good morning' hasta mediodía...'",
+        "Line 121: Incomplete sentence: '- 'Good evening' después de las 6...'",
+        "Line 135: Incomplete sentence: '¡Hasta la próxima!\"...'",
+        "Line 137: Incomplete sentence: '## NOTAS DE PRODUCCIÓN...'",
+        "Line 141: Incomplete sentence: '- 1 narrador en español (voz cálida, motivadora, e...'",
+        "Line 143: Incomplete sentence: '- 1 narrador en inglés (voz nativa americana, clar...'",
+        "Line 147: Incomplete sentence: '- Chime de introducción (00:45)...'",
+        "Line 149: Incomplete sentence: '- Chime de conclusión (07:15)...'",
+        "Line 151: Incomplete sentence: '**Música de fondo:**...'",
+        "Line 153: Incomplete sentence: '- Música suave instrumental (volumen 10%) durante ...'",
+        "Line 155: Incomplete sentence: '- Sin música durante las frases para máxima clarid...'",
+        "Line 157: Incomplete sentence: '**Formato de exportación:**...'",
+        "Line 161: Incomplete sentence: '- Optimizado para móvil...'",
+        "Line 163: Incomplete sentence: '- Tamaño aproximado: 6-7 MB...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 4,
+      "spanish": 52,
+      "ambiguous": 26,
+      "ratio": 0.07692307692307693
+    },
+    "audio_size_mb": 7.73
+  },
+  {
+    "id": 29,
+    "title": "Números y Direcciones - Var 2",
+    "category": "all",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 30,
+      "E7_translation": 100,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 12: Missing end punctuation: 'Veinticinco, treinta y siete, cuarenta'",
+        "Line 52: Missing end punctuation: 'Excuse me, can you help me find this'",
+        "Line 53: Missing end punctuation: 'Excuse me, can you help me find this'",
+        "Line 54: Missing end punctuation: 'Disculpe, ¿puede ayudarme a encontrar'",
+        "Line 55: Missing end punctuation: 'I have a delivery for apartment 5C'",
+        "Line 56: Missing end punctuation: 'I have a delivery for apartment 5C'",
+        "Line 57: Missing end punctuation: 'Tengo una entrega para el apartamento 5C'"
+      ]
+    },
+    "overall_score": 89.5,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 24,
+      "spanish": 16,
+      "ambiguous": 20,
+      "ratio": 1.5
+    },
+    "audio_size_mb": 3.88
+  },
+  {
+    "id": 30,
+    "title": "Protocolos de Seguridad - Var 1",
+    "category": "all",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'I need to report a car accident. No one'",
+        "Line 2: Missing end punctuation: 'I need to report a car accident. No one'",
+        "Line 4: Missing end punctuation: 'We need to exchange insurance'",
+        "Line 5: Missing end punctuation: 'We need to exchange insurance'",
+        "Line 6: Missing end punctuation: 'Necesitamos intercambiar información de'",
+        "Line 7: Missing end punctuation: 'I need to take photos for my insurance'",
+        "Line 8: Missing end punctuation: 'I need to take photos for my insurance'",
+        "Line 9: Missing end punctuation: 'Necesito tomar fotos para mi compañía'",
+        "Line 10: Missing end punctuation: 'I was involved in an accident while'",
+        "Line 11: Missing end punctuation: 'I was involved in an accident while'"
+      ],
+      "E7_truncation": [
+        "Line 11: Incomplete sentence: 'Necesitamos intercambiar información de...'",
+        "Line 17: Incomplete sentence: 'Necesito tomar fotos para mi compañía...'",
+        "Line 29: Incomplete sentence: 'Mi carro está haciendo un ruido extraño...'",
+        "Line 35: Incomplete sentence: 'Raspé mi carro contra un poste en el...'",
+        "Line 47: Incomplete sentence: 'El cliente me hizo sentir incómodo con...'",
+        "Line 53: Incomplete sentence: 'Las condiciones climáticas son...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 14,
+      "spanish": 11,
+      "ambiguous": 8,
+      "ratio": 1.2727272727272727
+    },
+    "audio_size_mb": 2.58
+  },
+  {
+    "id": 31,
+    "title": "Situaciones Complejas en Entregas - Var 2",
+    "category": "repartidor",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Can I double-check the order before I'",
+        "Line 2: Missing end punctuation: 'Can I double-check the order before I'",
+        "Line 3: Missing end punctuation: '¿Puedo verificar dos veces el pedido'",
+        "Line 4: Missing end punctuation: 'I see three items on the order. Are they'",
+        "Line 5: Missing end punctuation: 'I see three items on the order. Are they'",
+        "Line 6: Missing end punctuation: 'Veo tres artículos en el pedido. ¿Están'",
+        "Line 7: Missing end punctuation: 'The bag was sealed by the restaurant, so'",
+        "Line 8: Missing end punctuation: 'The bag was sealed by the restaurant, so'",
+        "Line 9: Missing end punctuation: 'La bolsa fue sellada por el'",
+        "Line 10: Missing end punctuation: 'You can report this through the app and'"
+      ],
+      "E7_truncation": [
+        "Line 11: Incomplete sentence: 'Veo tres artículos en el pedido. ¿Están...'",
+        "Line 23: Incomplete sentence: 'Puedes reportar esto a través de la app...'",
+        "Line 29: Incomplete sentence: 'La dirección en la app muestra...'",
+        "Line 41: Incomplete sentence: 'Entiendo tu frustración. El restaurante...'",
+        "Line 53: Incomplete sentence: 'Déjame contactar a soporte ahora mismo...'",
+        "Line 59: Incomplete sentence: '¿Cuánto más tardará el pedido? Necesito...'",
+        "Line 65: Incomplete sentence: 'Llegué a la hora de recogida, pero el...'",
+        "Line 71: Incomplete sentence: 'El cliente pidió sin cebollas. ¿Puedes...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 30,
+      "spanish": 16,
+      "ambiguous": 2,
+      "ratio": 1.875
+    },
+    "audio_size_mb": 3.72
+  },
+  {
+    "id": 32,
+    "title": "Conversaciones con Clientes - Var 2",
+    "category": "repartidor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 40,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Hi, I'm here with your DoorDash order'",
+        "Line 2: Missing end punctuation: 'Hi, I'm here with your DoorDash order'",
+        "Line 3: Missing end punctuation: 'Hola, estoy aquí con su pedido de DoorDash'",
+        "Line 10: Missing end punctuation: 'Careful, there are drinks in here'",
+        "Line 11: Missing end punctuation: 'Careful, there are drinks in here'",
+        "Line 12: Missing end punctuation: 'Cuidado, hay bebidas aquí adentro'"
+      ],
+      "E7_truncation": [
+        "Line 5: Incomplete sentence: 'Hola, estoy aquí con su pedido de DoorDash...'",
+        "Line 23: Incomplete sentence: 'Cuidado, hay bebidas aquí adentro...'"
+      ]
+    },
+    "overall_score": 86.5,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 10,
+      "spanish": 5,
+      "ambiguous": 0,
+      "ratio": 2.0
+    },
+    "audio_size_mb": 1.14
+  },
+  {
+    "id": 33,
+    "title": "Small Talk con Pasajeros - Var 2",
+    "category": "conductor",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 7: Missing end punctuation: 'The weather has been so unpredictable'",
+        "Line 8: Missing end punctuation: 'The weather has been so unpredictable'",
+        "Line 9: Missing end punctuation: 'El clima ha estado tan impredecible'",
+        "Line 18: Missing end punctuation: 'Este es el clima perfecto para'",
+        "Line 22: Missing end punctuation: 'We might be a few minutes late because of'",
+        "Line 23: Missing end punctuation: 'We might be a few minutes late because of'",
+        "Line 24: Missing end punctuation: 'Podríamos llegar unos minutos tarde por'",
+        "Line 25: Missing end punctuation: 'Are you in a hurry? I can try a different'",
+        "Line 26: Missing end punctuation: 'Are you in a hurry? I can try a different'",
+        "Line 27: Missing end punctuation: '¿Tienes prisa? Puedo intentar una ruta'"
+      ],
+      "E7_truncation": [
+        "Line 47: Incomplete sentence: 'Podríamos llegar unos minutos tarde por...'",
+        "Line 59: Incomplete sentence: 'El tráfico de hora pico puede ser loco...'"
+      ]
+    },
+    "overall_score": 80.5,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 20,
+      "spanish": 13,
+      "ambiguous": 6,
+      "ratio": 1.5384615384615385
+    },
+    "audio_size_mb": 2.58
+  },
+  {
+    "id": 34,
+    "title": "Diálogos Reales con Pasajeros - Var 1",
+    "category": "conductor",
+    "level": "basico",
+    "scores": {
+      "C1_no_metadata": 0,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 70
+    },
+    "issues": {
+      "C1_production_notes": [
+        "Line 11: [Tone:",
+        "Line 31: [Tone:",
+        "Line 61: [Tone:",
+        "Line 91: [Tone:",
+        "Line 121: [Tone:"
+      ],
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: '**Level**: Intermedio'",
+        "Line 3: Missing end punctuation: '## SCRIPT'",
+        "Line 5: Missing end punctuation: '[00:00] INTRODUCTION'",
+        "Line 15: Missing end punctuation: '[00:45] PHRASE 1: GREETING THE PASSENGER'",
+        "Line 30: Missing end punctuation: '[01:45] PHRASE 2: CONFIRMING DESTINATION'",
+        "Line 45: Missing end punctuation: '[02:45] PHRASE 3: OFFERING COMFORT'",
+        "Line 60: Missing end punctuation: '[03:45] PHRASE 4: ASKING ABOUT ROUTE PREFERENCE'",
+        "Line 75: Missing end punctuation: '[04:45] PHRASE 5: MAKING SMALL TALK'",
+        "Line 90: Missing end punctuation: '[05:45] PHRASE 6: APOLOGIZING FOR DELAYS'",
+        "Line 105: Missing end punctuation: '[06:45] PHRASE 7: ARRIVING AT DESTINATION'"
+      ],
+      "E7_truncation": [
+        "Line 55: Incomplete sentence: 'Consejo práctico: Siempre confirma el nombre del p...'",
+        "Line 85: Incomplete sentence: 'Consejo práctico: Confirma el destino especialment...'",
+        "Line 115: Incomplete sentence: 'Consejo práctico: Esta frase aumenta tus propinas....'",
+        "Line 145: Incomplete sentence: 'Consejo práctico: Pregunta esto cuando hay varias ...'",
+        "Line 155: Incomplete sentence: '\"Frase 5: Conversación ligera si el pasajero parec...'",
+        "Line 175: Incomplete sentence: 'Consejo práctico: Lee las señales del pasajero pri...'",
+        "Line 185: Incomplete sentence: '\"Frase 6: Cuando hay tráfico o retrasos.\"...'",
+        "Line 205: Incomplete sentence: 'Consejo práctico: Usa esto cuando veas que el pasa...'",
+        "Line 235: Incomplete sentence: 'Consejo práctico: Anuncia claramente cuando llegue...'",
+        "Line 265: Incomplete sentence: 'Consejo práctico: Siempre termina con una despedid...'",
+        "Line 275: Incomplete sentence: '\"¡Excelente! Ahora vamos a practicar todas las fra...'",
+        "Line 315: Incomplete sentence: '\"¡Perfecto! Esas son las 8 frases que transformará...'",
+        "Line 337: Incomplete sentence: '¡Éxito, conductor!\"...'"
+      ]
+    },
+    "overall_score": 47.0,
+    "status": "NOT_READY",
+    "language_stats": {
+      "english": 22,
+      "spanish": 40,
+      "ambiguous": 109,
+      "ratio": 0.55
+    },
+    "audio_size_mb": 14.92
+  },
+  {
+    "id": 35,
+    "title": "Gig Economy Business Terminology",
+    "category": "all",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Independent contractor'",
+        "Line 2: Missing end punctuation: 'Independent contractor'",
+        "Line 3: Missing end punctuation: 'Contratista independiente'",
+        "Line 4: Missing end punctuation: 'Commission'",
+        "Line 5: Missing end punctuation: 'Commission'",
+        "Line 6: Missing end punctuation: 'Comisión'",
+        "Line 7: Missing end punctuation: 'Surge pricing / Peak hours'",
+        "Line 8: Missing end punctuation: 'Surge pricing / Peak hours'",
+        "Line 9: Missing end punctuation: 'Tarifa de demanda alta / Horas pico'",
+        "Line 10: Missing end punctuation: 'Base rate'"
+      ],
+      "E7_truncation": [
+        "Line 29: Incomplete sentence: 'Tasa de aceptación...'",
+        "Line 35: Incomplete sentence: 'Tasa de finalización...'",
+        "Line 41: Incomplete sentence: 'Tarifa de cancelación...'",
+        "Line 47: Incomplete sentence: 'Deducción de impuestos...'",
+        "Line 59: Incomplete sentence: 'Verificación de antecedentes...'",
+        "Line 77: Incomplete sentence: 'La plataforma cobra una comisión del 25%...'",
+        "Line 83: Incomplete sentence: 'Puedo deducir los gastos de mi vehículo...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 4,
+      "spanish": 9,
+      "ambiguous": 29,
+      "ratio": 0.4444444444444444
+    },
+    "audio_size_mb": 2.6
+  },
+  {
+    "id": 36,
+    "title": "Professional Complaint Handling",
+    "category": "all",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Concern'",
+        "Line 2: Missing end punctuation: 'Concern'",
+        "Line 3: Missing end punctuation: 'Preocupación / Inquietud'",
+        "Line 4: Missing end punctuation: 'Issue'",
+        "Line 5: Missing end punctuation: 'Issue'",
+        "Line 6: Missing end punctuation: 'Problema / Asunto'",
+        "Line 7: Missing end punctuation: 'Service recovery'",
+        "Line 8: Missing end punctuation: 'Service recovery'",
+        "Line 9: Missing end punctuation: 'Recuperación del servicio'",
+        "Line 10: Missing end punctuation: 'Valid concern'"
+      ],
+      "E7_truncation": [
+        "Line 5: Incomplete sentence: 'Preocupación / Inquietud...'",
+        "Line 17: Incomplete sentence: 'Recuperación del servicio...'",
+        "Line 23: Incomplete sentence: 'Preocupación válida...'",
+        "Line 41: Incomplete sentence: 'Tiene toda la razón en preocuparse por esto...'",
+        "Line 53: Incomplete sentence: 'Personalmente me aseguraré de que esto no vuelva a...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 10,
+      "spanish": 6,
+      "ambiguous": 14,
+      "ratio": 1.6666666666666667
+    },
+    "audio_size_mb": 1.93
+  },
+  {
+    "id": 37,
+    "title": "Professional Conflict Resolution",
+    "category": "all",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Misunderstanding'",
+        "Line 2: Missing end punctuation: 'Misunderstanding'",
+        "Line 3: Missing end punctuation: 'Malentendido'",
+        "Line 4: Missing end punctuation: 'Resolution'",
+        "Line 5: Missing end punctuation: 'Resolution'",
+        "Line 6: Missing end punctuation: 'Resolución'",
+        "Line 7: Missing end punctuation: 'Upset / Frustrated'",
+        "Line 8: Missing end punctuation: 'Upset / Frustrated'",
+        "Line 9: Missing end punctuation: 'Molesto / Frustrado'",
+        "Line 10: Missing end punctuation: 'Calm'"
+      ],
+      "E7_truncation": [
+        "Line 35: Incomplete sentence: 'Documentación...'",
+        "Line 41: Incomplete sentence: 'Entiendo que está molesto. Trabajemos juntos para ...'",
+        "Line 53: Incomplete sentence: 'Permítame corregir esto para usted...'",
+        "Line 65: Incomplete sentence: 'Contactaré al soporte en su nombre...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 12,
+      "spanish": 8,
+      "ambiguous": 16,
+      "ratio": 1.5
+    },
+    "audio_size_mb": 2.27
+  },
+  {
+    "id": 38,
+    "title": "Cross-Cultural Professional Communication",
+    "category": "all",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Cultural difference'",
+        "Line 2: Missing end punctuation: 'Cultural difference'",
+        "Line 3: Missing end punctuation: 'Diferencia cultural'",
+        "Line 4: Missing end punctuation: 'Body language'",
+        "Line 5: Missing end punctuation: 'Body language'",
+        "Line 6: Missing end punctuation: 'Lenguaje corporal'",
+        "Line 7: Missing end punctuation: 'Personal space'",
+        "Line 8: Missing end punctuation: 'Personal space'",
+        "Line 9: Missing end punctuation: 'Espacio personal'",
+        "Line 10: Missing end punctuation: 'Small talk'"
+      ],
+      "E7_truncation": [
+        "Line 23: Incomplete sentence: 'Charla informal / Conversación ligera...'",
+        "Line 29: Incomplete sentence: 'Comunicación directa...'",
+        "Line 41: Incomplete sentence: 'Todavía estoy aprendiendo las costumbres americana...'",
+        "Line 47: Incomplete sentence: 'Por favor avíseme si hago algo que parezca inusual...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 4,
+      "spanish": 5,
+      "ambiguous": 15,
+      "ratio": 0.8
+    },
+    "audio_size_mb": 1.57
+  },
+  {
+    "id": 39,
+    "title": "Customer Service Excellence",
+    "category": "all",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Satisfaction'",
+        "Line 2: Missing end punctuation: 'Satisfaction'",
+        "Line 3: Missing end punctuation: 'Satisfacción'",
+        "Line 4: Missing end punctuation: 'Expectation'",
+        "Line 5: Missing end punctuation: 'Expectation'",
+        "Line 6: Missing end punctuation: 'Expectativa'",
+        "Line 7: Missing end punctuation: 'Experience'",
+        "Line 8: Missing end punctuation: 'Experience'",
+        "Line 9: Missing end punctuation: 'Experiencia'",
+        "Line 10: Missing end punctuation: 'Feedback'"
+      ],
+      "E7_truncation": [
+        "Line 5: Incomplete sentence: 'Satisfacción...'",
+        "Line 23: Incomplete sentence: 'Retroalimentación / Comentarios...'",
+        "Line 29: Incomplete sentence: 'Calificación...'",
+        "Line 47: Incomplete sentence: 'Quiero asegurarme de que esté completamente satisf...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 10,
+      "spanish": 8,
+      "ambiguous": 12,
+      "ratio": 1.25
+    },
+    "audio_size_mb": 1.72
+  },
+  {
+    "id": 40,
+    "title": "Earnings Optimization Communication",
+    "category": "all",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Tip / Gratuity'",
+        "Line 2: Missing end punctuation: 'Tip / Gratuity'",
+        "Line 3: Missing end punctuation: 'Propina'",
+        "Line 4: Missing end punctuation: 'Cash tip'",
+        "Line 5: Missing end punctuation: 'Cash tip'",
+        "Line 6: Missing end punctuation: 'Propina en efectivo'",
+        "Line 7: Missing end punctuation: 'In-app tip'",
+        "Line 8: Missing end punctuation: 'In-app tip'",
+        "Line 9: Missing end punctuation: 'Propina en la aplicación'",
+        "Line 10: Missing end punctuation: 'Value-added service'"
+      ],
+      "E7_truncation": [
+        "Line 17: Incomplete sentence: 'Propina en la aplicación...'",
+        "Line 29: Incomplete sentence: 'Referencia / Recomendación...'",
+        "Line 35: Incomplete sentence: 'Tengo agua y cargadores de teléfono disponibles si...'",
+        "Line 41: Incomplete sentence: 'Por favor, indíqueme su preferencia de temperatura...'",
+        "Line 53: Incomplete sentence: 'Si quedó satisfecho con el servicio, agradecería u...'",
+        "Line 59: Incomplete sentence: 'No dude en solicitarme nuevamente a través de la a...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 10,
+      "spanish": 7,
+      "ambiguous": 13,
+      "ratio": 1.4285714285714286
+    },
+    "audio_size_mb": 2.03
+  },
+  {
+    "id": 41,
+    "title": "Professional Negotiation Skills",
+    "category": "all",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Reasonable'",
+        "Line 2: Missing end punctuation: 'Reasonable'",
+        "Line 3: Missing end punctuation: 'Razonable'",
+        "Line 4: Missing end punctuation: 'Policy'",
+        "Line 5: Missing end punctuation: 'Policy'",
+        "Line 6: Missing end punctuation: 'Política / Norma'",
+        "Line 7: Missing end punctuation: 'Compromise'",
+        "Line 8: Missing end punctuation: 'Compromise'",
+        "Line 9: Missing end punctuation: 'Compromiso / Punto medio'",
+        "Line 10: Missing end punctuation: 'Firm but polite'"
+      ],
+      "E7_truncation": [
+        "Line 11: Incomplete sentence: 'Política / Norma...'",
+        "Line 23: Incomplete sentence: 'Firme pero cortés...'",
+        "Line 35: Incomplete sentence: 'Entiendo su solicitud, pero debo seguir las políti...'",
+        "Line 41: Incomplete sentence: 'Busquemos una solución que funcione para ambos...'",
+        "Line 53: Incomplete sentence: 'Eso está fuera de lo que puedo ofrecer...'",
+        "Line 59: Incomplete sentence: 'Necesito mantener mis estándares de servicio...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 10,
+      "spanish": 7,
+      "ambiguous": 16,
+      "ratio": 1.4285714285714286
+    },
+    "audio_size_mb": 2.14
+  },
+  {
+    "id": 42,
+    "title": "Professional Boundaries and Self-Protection",
+    "category": "all",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Boundary'",
+        "Line 2: Missing end punctuation: 'Boundary'",
+        "Line 3: Missing end punctuation: 'Límite / Frontera'",
+        "Line 4: Missing end punctuation: 'Inappropriate'",
+        "Line 5: Missing end punctuation: 'Inappropriate'",
+        "Line 6: Missing end punctuation: 'Inapropiado'",
+        "Line 7: Missing end punctuation: 'Harassment'",
+        "Line 8: Missing end punctuation: 'Harassment'",
+        "Line 9: Missing end punctuation: 'Acoso'",
+        "Line 10: Missing end punctuation: 'Uncomfortable'"
+      ],
+      "E7_truncation": [
+        "Line 5: Incomplete sentence: 'Límite / Frontera...'",
+        "Line 41: Incomplete sentence: 'No me siento cómodo/a con eso...'",
+        "Line 47: Incomplete sentence: 'Eso está fuera del alcance de mi servicio...'",
+        "Line 65: Incomplete sentence: 'Por favor respete mis límites profesionales...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 8,
+      "spanish": 6,
+      "ambiguous": 19,
+      "ratio": 1.3333333333333333
+    },
+    "audio_size_mb": 1.97
+  },
+  {
+    "id": 43,
+    "title": "Professional Communication Essentials",
+    "category": "all",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Professional'",
+        "Line 2: Missing end punctuation: 'Professional'",
+        "Line 3: Missing end punctuation: 'Profesional'",
+        "Line 4: Missing end punctuation: 'Respectful'",
+        "Line 5: Missing end punctuation: 'Respectful'",
+        "Line 6: Missing end punctuation: 'Respetuoso/a'",
+        "Line 7: Missing end punctuation: 'Courteous'",
+        "Line 8: Missing end punctuation: 'Courteous'",
+        "Line 9: Missing end punctuation: 'Cortés'",
+        "Line 10: Missing end punctuation: 'Prompt'"
+      ],
+      "E7_truncation": [
+        "Line 41: Incomplete sentence: 'Estoy aquí para ayudarle...'",
+        "Line 47: Incomplete sentence: 'Por favor, avíseme si necesita algo...'",
+        "Line 59: Incomplete sentence: 'Lo resolveré de inmediato...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 10,
+      "spanish": 6,
+      "ambiguous": 14,
+      "ratio": 1.6666666666666667
+    },
+    "audio_size_mb": 1.64
+  },
+  {
+    "id": 44,
+    "title": "Professional Time Management",
+    "category": "all",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 3: Missing end punctuation: 'Hora estimada de llegada'",
+        "Line 4: Missing end punctuation: 'Running late'",
+        "Line 5: Missing end punctuation: 'Running late'",
+        "Line 6: Missing end punctuation: 'Llegando tarde / Con retraso'",
+        "Line 7: Missing end punctuation: 'On time'",
+        "Line 8: Missing end punctuation: 'On time'",
+        "Line 9: Missing end punctuation: 'A tiempo / Puntual'",
+        "Line 10: Missing end punctuation: 'Traffic / Congestion'",
+        "Line 11: Missing end punctuation: 'Traffic / Congestion'",
+        "Line 12: Missing end punctuation: 'Tráfico / Congestión'"
+      ],
+      "E7_truncation": [
+        "Line 23: Incomplete sentence: 'Tráfico / Congestión...'",
+        "Line 41: Incomplete sentence: 'Llegaré en aproximadamente 5 minutos...'",
+        "Line 47: Incomplete sentence: 'Disculpe la demora. El tráfico está pesado en esta...'",
+        "Line 65: Incomplete sentence: 'Deberíamos llegar con tiempo de sobra...'",
+        "Line 71: Incomplete sentence: 'Le avisaré si algo cambia...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 6,
+      "spanish": 7,
+      "ambiguous": 23,
+      "ratio": 0.8571428571428571
+    },
+    "audio_size_mb": 2.38
+  },
+  {
+    "id": 45,
+    "title": "Vehicle Accident Procedures",
+    "category": "all",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Accident / Collision'",
+        "Line 2: Missing end punctuation: 'Accident / Collision'",
+        "Line 3: Missing end punctuation: 'Accidente / Colisión'",
+        "Line 4: Missing end punctuation: 'Injured'",
+        "Line 5: Missing end punctuation: 'Injured'",
+        "Line 6: Missing end punctuation: 'Herido / Lesionado'",
+        "Line 7: Missing end punctuation: 'Police report'",
+        "Line 8: Missing end punctuation: 'Police report'",
+        "Line 9: Missing end punctuation: 'Reporte policial / Informe policial'",
+        "Line 10: Missing end punctuation: 'Insurance'"
+      ],
+      "E7_truncation": [
+        "Line 5: Incomplete sentence: 'Accidente / Colisión...'"
+      ]
+    },
+    "overall_score": 80.5,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 14,
+      "spanish": 10,
+      "ambiguous": 21,
+      "ratio": 1.4
+    },
+    "audio_size_mb": 5.03
+  },
+  {
+    "id": 46,
+    "title": "Customer Conflicts and Disputes",
+    "category": "all",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Dispute'",
+        "Line 2: Missing end punctuation: 'Dispute'",
+        "Line 3: Missing end punctuation: 'Disputa / Desacuerdo'",
+        "Line 4: Missing end punctuation: 'Refund'",
+        "Line 5: Missing end punctuation: 'Refund'",
+        "Line 6: Missing end punctuation: 'Reembolso'",
+        "Line 7: Missing end punctuation: 'Escalate'",
+        "Line 8: Missing end punctuation: 'Escalate'",
+        "Line 9: Missing end punctuation: 'Escalar'",
+        "Line 10: Missing end punctuation: 'Resolution'"
+      ],
+      "E7_truncation": [
+        "Line 29: Incomplete sentence: 'Documentación...'"
+      ]
+    },
+    "overall_score": 80.5,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 12,
+      "spanish": 8,
+      "ambiguous": 16,
+      "ratio": 1.5
+    },
+    "audio_size_mb": 4.13
+  },
+  {
+    "id": 47,
+    "title": "Lost Items and Property Disputes",
+    "category": "all",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Lost item / Lost property'",
+        "Line 2: Missing end punctuation: 'Lost item / Lost property'",
+        "Line 3: Missing end punctuation: 'Artículo perdido / Propiedad perdida'",
+        "Line 4: Missing end punctuation: 'Found / Located'",
+        "Line 5: Missing end punctuation: 'Found / Located'",
+        "Line 6: Missing end punctuation: 'Encontrado / Ubicado'",
+        "Line 7: Missing end punctuation: 'Return / Give back'",
+        "Line 8: Missing end punctuation: 'Return / Give back'",
+        "Line 9: Missing end punctuation: 'Devolver / Regresar'",
+        "Line 10: Missing end punctuation: 'Valuable'"
+      ],
+      "E7_truncation": [
+        "Line 5: Incomplete sentence: 'Artículo perdido / Propiedad perdida...'",
+        "Line 29: Incomplete sentence: 'Identificación...'"
+      ]
+    },
+    "overall_score": 80.5,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 12,
+      "spanish": 8,
+      "ambiguous": 16,
+      "ratio": 1.5
+    },
+    "audio_size_mb": 4.01
+  },
+  {
+    "id": 48,
+    "title": "Medical Emergencies - Critical Communication",
+    "category": "all",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Emergency'",
+        "Line 2: Missing end punctuation: 'Emergency'",
+        "Line 3: Missing end punctuation: 'Emergencia'",
+        "Line 4: Missing end punctuation: 'Ambulance'",
+        "Line 5: Missing end punctuation: 'Ambulance'",
+        "Line 6: Missing end punctuation: 'Ambulancia'",
+        "Line 7: Missing end punctuation: 'Unconscious'",
+        "Line 8: Missing end punctuation: 'Unconscious'",
+        "Line 9: Missing end punctuation: 'Inconsciente'",
+        "Line 10: Missing end punctuation: 'Chest pain'"
+      ],
+      "E7_truncation": [
+        "Line 35: Incomplete sentence: 'Reacción alérgica...'",
+        "Line 59: Incomplete sentence: 'Necesito ayuda médica ahora...'",
+        "Line 77: Incomplete sentence: 'No se mueva, espere a los paramédicos...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 6,
+      "spanish": 8,
+      "ambiguous": 25,
+      "ratio": 0.75
+    },
+    "audio_size_mb": 2.29
+  },
+  {
+    "id": 49,
+    "title": "Payment Disputes and Financial Conflicts",
+    "category": "all",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 100,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Payment declined'",
+        "Line 2: Missing end punctuation: 'Payment declined'",
+        "Line 3: Missing end punctuation: 'Pago rechazado / declinado'",
+        "Line 4: Missing end punctuation: 'Cash payment'",
+        "Line 5: Missing end punctuation: 'Cash payment'",
+        "Line 6: Missing end punctuation: 'Pago en efectivo'",
+        "Line 7: Missing end punctuation: 'Charge dispute'",
+        "Line 8: Missing end punctuation: 'Charge dispute'",
+        "Line 9: Missing end punctuation: 'Disputa de cargo'",
+        "Line 10: Missing end punctuation: 'Processing issue'"
+      ]
+    },
+    "overall_score": 85.0,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 16,
+      "spanish": 8,
+      "ambiguous": 15,
+      "ratio": 2.0
+    },
+    "audio_size_mb": 6.38
+  },
+  {
+    "id": 50,
+    "title": "Personal Safety - Threat and Danger Response",
+    "category": "all",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Threat'",
+        "Line 2: Missing end punctuation: 'Threat'",
+        "Line 3: Missing end punctuation: 'Amenaza'",
+        "Line 4: Missing end punctuation: 'Weapon'",
+        "Line 5: Missing end punctuation: 'Weapon'",
+        "Line 6: Missing end punctuation: 'Arma'",
+        "Line 7: Missing end punctuation: 'Police'",
+        "Line 8: Missing end punctuation: 'Police'",
+        "Line 9: Missing end punctuation: 'Policía'",
+        "Line 10: Missing end punctuation: 'Help'"
+      ],
+      "E7_truncation": [
+        "Line 41: Incomplete sentence: 'Voy a llamar a la policía...'",
+        "Line 59: Incomplete sentence: 'Manténgase atrás / No se acerque...'",
+        "Line 65: Incomplete sentence: 'Déjeme en paz...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 4,
+      "spanish": 4,
+      "ambiguous": 25,
+      "ratio": 1.0
+    },
+    "audio_size_mb": 1.7
+  },
+  {
+    "id": 51,
+    "title": "Vehicle Breakdown and Mechanical Emergencies",
+    "category": "all",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Breakdown'",
+        "Line 2: Missing end punctuation: 'Breakdown'",
+        "Line 3: Missing end punctuation: 'Avería / Falla mecánica'",
+        "Line 4: Missing end punctuation: 'Flat tire'",
+        "Line 5: Missing end punctuation: 'Flat tire'",
+        "Line 6: Missing end punctuation: 'Llanta ponchada / pinchada'",
+        "Line 7: Missing end punctuation: 'Dead battery'",
+        "Line 8: Missing end punctuation: 'Dead battery'",
+        "Line 9: Missing end punctuation: 'Batería muerta / descargada'",
+        "Line 10: Missing end punctuation: 'Overheating'"
+      ],
+      "E7_truncation": [
+        "Line 5: Incomplete sentence: 'Avería / Falla mecánica...'",
+        "Line 17: Incomplete sentence: 'Batería muerta / descargada...'",
+        "Line 47: Incomplete sentence: 'Mi vehículo se ha averiado...'",
+        "Line 71: Incomplete sentence: 'No se le cobrará por este viaje...'",
+        "Line 77: Incomplete sentence: 'Lamento sinceramente este problema mecánico...'",
+        "Line 83: Incomplete sentence: 'La plataforma le organizará otro viaje sin cargo...'",
+        "Line 89: Incomplete sentence: 'Por favor permanezca en el vehículo hasta que este...'",
+        "Line 95: Incomplete sentence: 'Le ayudaré a solicitar otro conductor ahora mismo...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 12,
+      "spanish": 9,
+      "ambiguous": 27,
+      "ratio": 1.3333333333333333
+    },
+    "audio_size_mb": 3.14
+  },
+  {
+    "id": 52,
+    "title": "Severe Weather and Hazardous Conditions",
+    "category": "all",
+    "level": "intermedio",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Severe weather'",
+        "Line 2: Missing end punctuation: 'Severe weather'",
+        "Line 3: Missing end punctuation: 'Clima severo'",
+        "Line 4: Missing end punctuation: 'Tornado'",
+        "Line 5: Missing end punctuation: 'Tornado'",
+        "Line 6: Missing end punctuation: 'Tornado'",
+        "Line 7: Missing end punctuation: 'Flash flood'",
+        "Line 8: Missing end punctuation: 'Flash flood'",
+        "Line 9: Missing end punctuation: 'Inundación repentina'",
+        "Line 10: Missing end punctuation: 'Ice / Black ice'"
+      ],
+      "E7_truncation": [
+        "Line 17: Incomplete sentence: 'Inundación repentina...'"
+      ]
+    },
+    "overall_score": 80.5,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 10,
+      "spanish": 7,
+      "ambiguous": 19,
+      "ratio": 1.4285714285714286
+    },
+    "audio_size_mb": 3.78
+  },
+  {
+    "id": 53,
+    "title": "Airport Rideshare - Essential Procedures and Communication",
+    "category": "conductor",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'TNC lot / Staging area'",
+        "Line 2: Missing end punctuation: 'TNC lot / Staging area'",
+        "Line 3: Missing end punctuation: 'Área de espera TNC / Zona de preparación'",
+        "Line 4: Missing end punctuation: 'Geofence / Designated pickup area'",
+        "Line 5: Missing end punctuation: 'Geofence / Designated pickup area'",
+        "Line 6: Missing end punctuation: 'Geo-cerca / Área designada de recogida'",
+        "Line 7: Missing end punctuation: 'Terminal / Concourse'",
+        "Line 8: Missing end punctuation: 'Terminal / Concourse'",
+        "Line 9: Missing end punctuation: 'Terminal / Concurso'",
+        "Line 10: Missing end punctuation: 'Arrivals / Departures'"
+      ],
+      "E7_truncation": [
+        "Line 5: Incomplete sentence: 'Área de espera TNC / Zona de preparación...'",
+        "Line 11: Incomplete sentence: 'Geo-cerca / Área designada de recogida...'",
+        "Line 53: Incomplete sentence: 'Voy a dar otra vuelta - el tráfico está pesado...'",
+        "Line 59: Incomplete sentence: 'Permítame ayudarle con su equipaje...'",
+        "Line 101: Incomplete sentence: 'Abra la cajuela - sacaré su equipaje...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 26,
+      "spanish": 17,
+      "ambiguous": 17,
+      "ratio": 1.5294117647058822
+    },
+    "audio_size_mb": 5.45
+  },
+  {
+    "id": 54,
+    "title": "DoorDash Delivery - Essential Vocabulary and Scenarios",
+    "category": "conductor",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Dasher'",
+        "Line 2: Missing end punctuation: 'Dasher'",
+        "Line 3: Missing end punctuation: 'Dasher / Repartidor'",
+        "Line 4: Missing end punctuation: 'Dash / Dashing'",
+        "Line 5: Missing end punctuation: 'Dash / Dashing'",
+        "Line 6: Missing end punctuation: 'Dash / Repartiendo'",
+        "Line 7: Missing end punctuation: 'Peak Pay'",
+        "Line 8: Missing end punctuation: 'Peak Pay'",
+        "Line 9: Missing end punctuation: 'Pago pico / Bonificación de hora pico'",
+        "Line 10: Missing end punctuation: 'Base pay'"
+      ],
+      "E7_truncation": [
+        "Line 17: Incomplete sentence: 'Pago pico / Bonificación de hora pico...'",
+        "Line 29: Incomplete sentence: 'Tasa de finalización...'",
+        "Line 35: Incomplete sentence: 'Tasa de aceptación...'",
+        "Line 41: Incomplete sentence: 'Bolsa térmica / Tarjeta Roja...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 4,
+      "spanish": 6,
+      "ambiguous": 20,
+      "ratio": 0.6666666666666666
+    },
+    "audio_size_mb": 1.99
+  },
+  {
+    "id": 55,
+    "title": "Lyft Driver - Essential Scenarios and Vocabulary",
+    "category": "conductor",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Prime Time'",
+        "Line 2: Missing end punctuation: 'Prime Time'",
+        "Line 3: Missing end punctuation: 'Tiempo Prime / Tarifa elevada'",
+        "Line 4: Missing end punctuation: 'Lyft / Lyft XL / Lux / Lux Black'",
+        "Line 5: Missing end punctuation: 'Lyft / Lyft XL / Lux / Lux Black'",
+        "Line 6: Missing end punctuation: 'Lyft / Lyft XL / Lux / Lux Black'",
+        "Line 7: Missing end punctuation: 'Power Driver Bonus'",
+        "Line 8: Missing end punctuation: 'Power Driver Bonus'",
+        "Line 9: Missing end punctuation: 'Bono de conductor destacado'",
+        "Line 10: Missing end punctuation: 'Streak bonus'"
+      ],
+      "E7_truncation": [
+        "Line 35: Incomplete sentence: 'Estoy en un bono de racha, así que realmente aprec...'"
+      ]
+    },
+    "overall_score": 80.5,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 8,
+      "spanish": 4,
+      "ambiguous": 15,
+      "ratio": 2.0
+    },
+    "audio_size_mb": 2.4
+  },
+  {
+    "id": 56,
+    "title": "Multi-App Strategy - Maximizing Gig Work Earnings",
+    "category": "all",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 70,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Multi-apping'",
+        "Line 2: Missing end punctuation: 'Multi-apping'",
+        "Line 3: Missing end punctuation: 'Multi-aplicaciones / Trabajar múltiples apps'",
+        "Line 4: Missing end punctuation: 'Cherry-picking'",
+        "Line 5: Missing end punctuation: 'Cherry-picking'",
+        "Line 6: Missing end punctuation: 'Selección selectiva / Escoger los mejores'",
+        "Line 7: Missing end punctuation: 'Dead miles / Unpaid miles'",
+        "Line 8: Missing end punctuation: 'Dead miles / Unpaid miles'",
+        "Line 9: Missing end punctuation: 'Millas muertas / Millas no pagadas'",
+        "Line 10: Missing end punctuation: 'Stacking / Double-dipping'"
+      ],
+      "E7_truncation": [
+        "Line 5: Incomplete sentence: 'Multi-aplicaciones / Trabajar múltiples apps...'",
+        "Line 11: Incomplete sentence: 'Selección selectiva / Escoger los mejores...'"
+      ]
+    },
+    "overall_score": 80.5,
+    "status": "GOOD",
+    "language_stats": {
+      "english": 2,
+      "spanish": 4,
+      "ambiguous": 12,
+      "ratio": 0.5
+    },
+    "audio_size_mb": 1.49
+  },
+  {
+    "id": 57,
+    "title": "Platform Ratings System - Mastery Guide",
+    "category": "all",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Rating / Score'",
+        "Line 2: Missing end punctuation: 'Rating / Score'",
+        "Line 3: Missing end punctuation: 'Calificación / Puntuación'",
+        "Line 4: Missing end punctuation: 'Deactivation threshold'",
+        "Line 5: Missing end punctuation: 'Deactivation threshold'",
+        "Line 6: Missing end punctuation: 'Umbral de desactivación'",
+        "Line 7: Missing end punctuation: 'Rolling average'",
+        "Line 8: Missing end punctuation: 'Rolling average'",
+        "Line 9: Missing end punctuation: 'Promedio móvil'",
+        "Line 10: Missing end punctuation: 'I have water and phone chargers available if you n'"
+      ],
+      "E7_truncation": [
+        "Line 5: Incomplete sentence: 'Calificación / Puntuación...'",
+        "Line 11: Incomplete sentence: 'Umbral de desactivación...'",
+        "Line 17: Incomplete sentence: 'Promedio móvil...'",
+        "Line 23: Incomplete sentence: 'Tengo agua y cargadores de teléfono disponibles si...'",
+        "Line 35: Incomplete sentence: '¡Hola [nombre]! ¿Cómo está hoy? [Confirmación de d...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 12,
+      "spanish": 9,
+      "ambiguous": 6,
+      "ratio": 1.3333333333333333
+    },
+    "audio_size_mb": 2.77
+  },
+  {
+    "id": 58,
+    "title": "Tax Management and Business Expenses for Gig Workers",
+    "category": "all",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Independent contractor / Self-employed'",
+        "Line 2: Missing end punctuation: 'Independent contractor / Self-employed'",
+        "Line 3: Missing end punctuation: 'Contratista independiente / Trabajador autónomo'",
+        "Line 4: Missing end punctuation: 'Tax deduction / Write-off'",
+        "Line 5: Missing end punctuation: 'Tax deduction / Write-off'",
+        "Line 6: Missing end punctuation: 'Deducción de impuestos / Gasto deducible'",
+        "Line 7: Missing end punctuation: 'Quarterly estimated taxes'",
+        "Line 8: Missing end punctuation: 'Quarterly estimated taxes'",
+        "Line 9: Missing end punctuation: 'Impuestos estimados trimestrales'",
+        "Line 10: Missing end punctuation: 'Form 1099-NEC / 1099-K'"
+      ],
+      "E7_truncation": [
+        "Line 5: Incomplete sentence: 'Contratista independiente / Trabajador autónomo...'",
+        "Line 11: Incomplete sentence: 'Deducción de impuestos / Gasto deducible...'",
+        "Line 35: Incomplete sentence: 'Impuesto de trabajo autónomo...'",
+        "Line 41: Incomplete sentence: 'Kilometraje / Tarifa estándar por milla...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 4,
+      "spanish": 7,
+      "ambiguous": 19,
+      "ratio": 0.5714285714285714
+    },
+    "audio_size_mb": 2.56
+  },
+  {
+    "id": 59,
+    "title": "Uber Driver - Essential Scenarios and Vocabulary",
+    "category": "conductor",
+    "level": "avanzado",
+    "scores": {
+      "C1_no_metadata": 100,
+      "E2_punctuation": 0,
+      "E7_translation": 0,
+      "B3_balance": 100,
+      "E1_format": 100,
+      "D2_audio_exists": 100,
+      "C2_file_size": 100
+    },
+    "issues": {
+      "E2_punctuation": [
+        "Line 1: Missing end punctuation: 'Surge pricing'",
+        "Line 2: Missing end punctuation: 'Surge pricing'",
+        "Line 3: Missing end punctuation: 'Tarifa de demanda alta / Surge'",
+        "Line 4: Missing end punctuation: 'Upfront pricing'",
+        "Line 5: Missing end punctuation: 'Upfront pricing'",
+        "Line 6: Missing end punctuation: 'Precio anticipado'",
+        "Line 7: Missing end punctuation: 'Pool / UberX / Comfort / XL'",
+        "Line 8: Missing end punctuation: 'Pool / UberX / Comfort / XL'",
+        "Line 9: Missing end punctuation: 'Pool / UberX / Comfort / XL'",
+        "Line 10: Missing end punctuation: 'Acceptance rate'"
+      ],
+      "E7_truncation": [
+        "Line 23: Incomplete sentence: 'Tasa de aceptación...'",
+        "Line 29: Incomplete sentence: 'Tasa de cancelación...'",
+        "Line 35: Incomplete sentence: 'Calificación...'",
+        "Line 41: Incomplete sentence: 'Pin / Ubicación de recogida...'"
+      ]
+    },
+    "overall_score": 70.0,
+    "status": "ACCEPTABLE",
+    "language_stats": {
+      "english": 2,
+      "spanish": 5,
+      "ambiguous": 17,
+      "ratio": 0.4
+    },
+    "audio_size_mb": 1.64
+  }
+]
