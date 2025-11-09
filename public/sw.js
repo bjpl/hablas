@@ -85,23 +85,29 @@ self.addEventListener('fetch', (event) => {
 
       return fetch(request).then((response) => {
         // Don't cache non-successful responses
-        if (!response || response.status !== 200 || response.type !== 'basic') {
+        if (!response || response.status !== 200) {
           return response
         }
 
-        // Cache generated resources and static assets
+        // Cache audio files, generated resources and static assets
         if (
+          request.url.includes('/audio/') ||
           request.url.includes('/generated-resources/') ||
           request.url.includes('/_next/static/') ||
           request.url.includes('/recursos/')
         ) {
           const responseToCache = response.clone()
           caches.open(RUNTIME_CACHE).then((cache) => {
-            cache.put(request, responseToCache)
+            cache.put(request, responseToCache).catch((err) => {
+              console.warn('[SW] Failed to cache:', request.url, err)
+            })
           })
         }
 
         return response
+      }).catch((err) => {
+        console.error('[SW] Fetch failed:', request.url, err)
+        throw err
       }).catch((err) => {
         console.error('[SW] Fetch failed:', err)
 
