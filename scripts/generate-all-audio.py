@@ -129,11 +129,54 @@ async def generate_dual_voice_audio(resource_id: int):
     print(f"   Spanish: {spanish_voice}")
     print(f"   English: {english_voice}")
 
-    # Split into lines
-    lines = [line.strip() for line in script_text.split('\n') if line.strip()]
+    # Split into lines and FILTER OUT FORMATTING
+    all_lines = [line.strip() for line in script_text.split('\n') if line.strip()]
+
+    # STRICT FILTER: Only keep actual spoken content
+    lines = []
+    i = 0
+    while i < len(all_lines):
+        line = all_lines[i]
+
+        # Skip ALL non-content lines
+        if (line.startswith('#') or          # Headers
+            line.startswith('=') or          # Dividers
+            line.startswith('━') or          # Dividers
+            line.startswith('-') or          # Dividers
+            line.startswith('**') or         # Metadata
+            'SECTION' in line.upper()):      # Section headers
+            i += 1
+            continue
+
+        # Keep tips as-is
+        if line.startswith('[Tip:'):
+            lines.append(line)
+            i += 1
+            continue
+
+        # For phrase groups after "=== PHRASE N:", there are 2 duplicate lines
+        # After filtering empty lines: duplicate, ACTUAL ENGLISH, ACTUAL SPANISH, [Tip]
+        # Skip the first (duplicate), keep the next two (English, Spanish)
+        if i > 0 and '===' in all_lines[i-1] and 'PHRASE' in all_lines[i-1].upper():
+            # This is the duplicate English description - SKIP IT
+            i += 1
+            # Now at actual English phrase - KEEP IT
+            if i < len(all_lines):
+                lines.append(all_lines[i])
+                i += 1
+            # Now at Spanish phrase - KEEP IT
+            if i < len(all_lines) and not all_lines[i].startswith('['):
+                lines.append(all_lines[i])
+                i += 1
+            continue
+
+        # Default: keep the line if it's not empty
+        if line:
+            lines.append(line)
+        i += 1
 
     if not lines:
-        print(f"   ❌ No content in script")
+        print(f"   ❌ No content in script after filtering")
         return False
 
     # Create temp directory
