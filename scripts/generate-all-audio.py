@@ -138,18 +138,29 @@ async def generate_dual_voice_audio(resource_id: int):
     while i < len(all_lines):
         line = all_lines[i]
 
-        # Skip ALL non-content lines
+        # Skip ALL non-content lines (but be precise - don't over-match!)
         if (line.startswith('#') or          # Headers
-            line.startswith('=') or          # Dividers
-            line.startswith('━') or          # Dividers
-            line.startswith('-') or          # Dividers
+            line.startswith('===') or        # Dividers/Phrase markers (3 or more =)
+            line.startswith('━━━') or        # Dividers (3 or more)
+            line.startswith('---') or        # Dividers (3 or more -)
             line.startswith('**') or         # Metadata
-            'SECTION' in line.upper()):      # Section headers
+            line.startswith('(')):           # Parenthetical notes
             i += 1
             continue
 
-        # Keep tips as-is
-        if line.startswith('[Tip:'):
+        # Skip specific section header lines (exact or near-exact matches)
+        line_upper = line.upper().strip()
+        if (line_upper.startswith('SECTION ') or
+            line_upper == 'CORE CONCEPTS' or
+            line_upper == 'MULTI-APP STRATEGY' or
+            line_upper == 'EFFICIENCY METRICS' or
+            line_upper == 'STRATEGY DISCUSSIONS' or
+            line_upper.endswith(' BEST PRACTICES')):
+            i += 1
+            continue
+
+        # Keep tips/notes as-is
+        if line.startswith('['):
             lines.append(line)
             i += 1
             continue
@@ -170,8 +181,22 @@ async def generate_dual_voice_audio(resource_id: int):
                 i += 1
             continue
 
-        # Default: keep the line if it's not empty
-        if line:
+        # UNIVERSAL DUPLICATE DETECTOR: Check if next line is identical
+        # This handles resources without "=== PHRASE N:" markers
+        # Pattern: English, English (duplicate), Spanish
+        if i + 1 < len(all_lines) and line == all_lines[i + 1]:
+            # Found duplicate! Skip THIS line, keep the next TWO
+            i += 1  # Skip the first duplicate
+            if i < len(all_lines):
+                lines.append(all_lines[i])  # Keep second English
+                i += 1
+            if i < len(all_lines) and not all_lines[i].startswith('['):
+                lines.append(all_lines[i])  # Keep Spanish
+                i += 1
+            continue
+
+        # Default: keep the line if it's not empty and not parenthetical
+        if line and not line.startswith('('):
             lines.append(line)
         i += 1
 
@@ -247,17 +272,15 @@ async def generate_dual_voice_audio(resource_id: int):
 def parse_resource_list(args) -> list:
     """Parse command line arguments into list of resource IDs"""
     if args.all:
-        # All resources 1-59 except those with existing audio
-        existing = [2, 7, 10, 13, 18, 21, 28, 32, 34]
-        return [i for i in range(1, 60) if i not in existing]
+        # All resources 1-59
+        return list(range(1, 60))
 
     if args.batch:
         # Parse batch format: "1-9" or "11-20"
         parts = args.batch.split('-')
         if len(parts) == 2:
             start, end = int(parts[0]), int(parts[1])
-            existing = [2, 7, 10, 13, 18, 21, 28, 32, 34]
-            return [i for i in range(start, end + 1) if i not in existing]
+            return list(range(start, end + 1))
 
     if args.resources:
         # Parse comma-separated list: "1,3,4,5"
