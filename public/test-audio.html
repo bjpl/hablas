@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Test - No Service Worker</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #1a1a1a;
+      color: #fff;
+    }
+    h1 { color: #4ade80; }
+    .audio-player {
+      background: #2a2a2a;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    audio {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .info {
+      background: #3a3a3a;
+      padding: 15px;
+      border-radius: 4px;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    .success { color: #4ade80; }
+    .error { color: #ef4444; }
+    button {
+      background: #4ade80;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px;
+    }
+    button:hover { background: #22c55e; }
+    .phrase-list {
+      background: #2a2a2a;
+      padding: 15px;
+      border-radius: 4px;
+      margin: 10px 0;
+    }
+    .phrase-list li { margin: 8px 0; }
+  </style>
+</head>
+<body>
+  <h1>🎧 Audio Test Page (No Service Worker)</h1>
+
+  <div class="info">
+    <strong>Purpose:</strong> This page loads audio directly from the server without service worker interference.
+    <br>Use this to verify the audio content is correct.
+  </div>
+
+  <div class="audio-player">
+    <h2>Resource 1: Essential Delivery Phrases</h2>
+
+    <p>Expected: All 13 phrases in order</p>
+
+    <audio id="audio1" controls preload="auto">
+      <source src="/audio/resource-1.mp3" type="audio/mpeg">
+      Your browser doesn't support audio playback.
+    </audio>
+
+    <div>
+      <button onclick="testAudio()">Test Audio</button>
+      <button onclick="downloadAudio()">Download Audio</button>
+      <button onclick="showMetadata()">Show Metadata</button>
+    </div>
+
+    <div id="status" class="info" style="display:none;"></div>
+  </div>
+
+  <div class="phrase-list">
+    <h3>Resource 1 Should Contain (in this order):</h3>
+    <ol>
+      <li><strong>Phrase 1:</strong> Good morning! I have a delivery for you. / Buenos días! Tengo una entrega para ti.</li>
+      <li><strong>Phrase 2:</strong> Are you Sarah? / ¿Eres Sarah?</li>
+      <li><strong>Phrase 3:</strong> Is this 425 Main Street? / ¿Esta es la 425 de la calle Main?</li>
+      <li><strong>Phrase 4:</strong> Where would you like me to leave it? / ¿Dónde quieres que lo deje?</li>
+      <li><strong>Phrase 5:</strong> I see your note. No problem! / Vi tu nota. ¡Sin problema!</li>
+      <li><strong>Phrase 6:</strong> Can you come outside? / ¿Puedes salir afuera?</li>
+      <li><strong>Phrase 7:</strong> What color is your house? / ¿De qué color es tu casa?</li>
+      <li><strong>Phrase 8:</strong> Can you give me directions? / ¿Me puedes dar instrucciones?</li>
+      <li><strong>Phrase 9:</strong> Can you meet me in the lobby? / ¿Puedes encontrarme en el lobby?</li>
+      <li><strong>Phrase 10:</strong> Here you go! Have a great day! / ¡Aquí tienes! ¡Que tengas un gran día!</li>
+      <li><strong>Phrase 11:</strong> Thank you! Take care! / ¡Gracias! ¡Cuídate!</li>
+      <li><strong>Phrase 12:</strong> Enjoy your meal! / ¡Buen provecho!</li>
+      <li><strong>Phrase 13:</strong> I left it at the door for you. / Lo dejé en la puerta para ti.</li>
+    </ol>
+  </div>
+
+  <script>
+    // Disable service worker for this page
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        console.log('Service workers found:', registrations.length);
+        console.log('This page bypasses service worker caching');
+      });
+    }
+
+    function testAudio() {
+      const audio = document.getElementById('audio1');
+      const status = document.getElementById('status');
+
+      audio.load(); // Force reload from server
+
+      audio.onloadedmetadata = function() {
+        const duration = Math.round(audio.duration);
+        const size = '3.2 MB';
+        status.innerHTML = `
+          <span class="success">✅ Audio loaded successfully!</span><br>
+          Duration: ${Math.floor(duration / 60)}:${String(duration % 60).padStart(2, '0')} (${duration} seconds)<br>
+          Expected duration: ~3 minutes<br>
+          File size: ${size}<br>
+          <br>
+          <strong>If duration is ~3 minutes, the audio is CORRECT!</strong><br>
+          <strong>If duration is ~6 minutes, the audio is the OLD version with formatting!</strong>
+        `;
+        status.style.display = 'block';
+      };
+
+      audio.onerror = function() {
+        status.innerHTML = `<span class="error">❌ Failed to load audio!</span>`;
+        status.style.display = 'block';
+      };
+    }
+
+    function downloadAudio() {
+      window.open('/audio/resource-1.mp3', '_blank');
+    }
+
+    function showMetadata() {
+      const audio = document.getElementById('audio1');
+      const status = document.getElementById('status');
+
+      fetch('/audio/resource-1.mp3', { cache: 'reload' })
+        .then(response => {
+          const size = response.headers.get('content-length');
+          const sizeInMB = (parseInt(size) / 1024 / 1024).toFixed(2);
+          const lastModified = response.headers.get('last-modified');
+
+          status.innerHTML = `
+            <strong>Server Response:</strong><br>
+            Size: ${sizeInMB} MB (${size} bytes)<br>
+            Last Modified: ${lastModified}<br>
+            Status: ${response.status} ${response.statusText}<br>
+            <br>
+            ${sizeInMB < 4 ? '<span class="success">✅ Size is correct! (3.2 MB = new version)</span>' : '<span class="error">❌ Size is wrong! (6.5 MB = old version)</span>'}
+          `;
+          status.style.display = 'block';
+        })
+        .catch(err => {
+          status.innerHTML = `<span class="error">Error: ${err.message}</span>`;
+          status.style.display = 'block';
+        });
+    }
+
+    // Auto-test on page load
+    window.onload = function() {
+      setTimeout(testAudio, 500);
+    };
+  </script>
+</body>
+</html>
