@@ -3,8 +3,8 @@
  * Provides offline functionality and resource caching
  */
 
-const CACHE_NAME = 'hablas-v1'
-const RUNTIME_CACHE = 'hablas-runtime-v1'
+const CACHE_NAME = 'hablas-v2-audio-fixed'
+const RUNTIME_CACHE = 'hablas-runtime-v2'
 
 // Resources to cache on install
 const PRECACHE_URLS = [
