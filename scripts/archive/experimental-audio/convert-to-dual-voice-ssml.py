@@ -14,20 +14,29 @@ from pathlib import Path
 
 def detect_language(text: str) -> str:
     """
-    Detect if text is primarily Spanish or English
+    Detect if text is primarily Spanish or English using word-boundary matching
 
     Returns: 'spanish', 'english', or 'mixed'
     """
-    text_lower = text.lower()
-
-    # Strong Spanish indicators
+    # Spanish characters are definitive
     spanish_chars = bool(re.search(r'[¿¡áéíóúüñ]', text))
-    spanish_words = bool(re.search(
-        r'\b(hola|tengo|su|entrega|está?|dónde|qué|cómo|puedo|favor|gracias|'
-        r'por|para|cuando|frase|número|uno|dos|tres|cliente|pedido|'
-        r'siempre|usa|confirma|importante|español)\b',
-        text_lower
-    ))
+    if spanish_chars:
+        return 'spanish'
+
+    # Use word boundaries to match complete words only
+    spanish_words = [
+        'hola', 'tengo', 'su', 'entrega', 'está', 'dónde',
+        'qué', 'cómo', 'puedo', 'favor', 'gracias', 'por',
+        'para', 'cuando', 'frase', 'número', 'uno', 'dos',
+        'tres', 'cliente', 'pedido', 'siempre', 'usa',
+        'confirma', 'importante', 'español'
+    ]
+
+    text_lower = text.lower()
+    for word in spanish_words:
+        pattern = r'\b' + re.escape(word) + r'\b'
+        if re.search(pattern, text_lower):
+            return 'spanish'
 
     # English indicators
     english_words = bool(re.search(
@@ -36,14 +45,11 @@ def detect_language(text: str) -> str:
         text_lower
     ))
 
-    # Decision logic
-    if spanish_chars or spanish_words:
-        return 'spanish'
-    elif english_words:
+    if english_words:
         return 'english'
-    else:
-        # Default to Spanish for narrator context
-        return 'spanish'
+
+    # Default to Spanish for narrator context
+    return 'spanish'
 
 def convert_to_ssml(script_text: str, resource_id: int) -> str:
     """

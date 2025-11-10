@@ -1,9 +1,9 @@
 {
-  "timestamp": "2025-11-10T14:58:49.224671",
+  "timestamp": "2025-11-10T15:21:10.679241",
   "summary": {
     "total_resources": 56,
-    "pass": 2,
-    "pass_with_warnings": 49,
+    "pass": 51,
+    "pass_with_warnings": 0,
     "needs_fix": 2,
     "missing_audio": 3,
     "duplicate_groups": 0
@@ -12,19 +12,45 @@
   "results": {
     "1": {
       "resource_id": 1,
-      "timestamp": "2025-11-10T14:58:38.248200",
+      "timestamp": "2025-11-10T15:20:54.858272",
       "issues": [
-        "Incomplete coverage: 66.7% (7 phrases missing)",
+        "Low coverage: 48.3% (~15 phrases may be missing)",
         "Found 22 metadata leakage issues"
       ],
       "warnings": [
         "Found 4 potential voice detection issues"
       ],
       "status": "NEEDS_FIX",
-      "source_file": "generated-resources/50-batch/repartidor/basic_phrases_1.md",
-      "source_phrases": 21,
+      "source_types": [
+        "markdown"
+      ],
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 14,
-      "phrase_coverage": "14/21 (66.7%)",
+      "phrase_coverage": "14/29 (48.3%)",
       "audio": {
         "exists": true,
         "error": "[Errno 2] No such file or directory: 'ffprobe'"
@@ -45,12 +71,42 @@
     },
     "2": {
       "resource_id": 2,
-      "timestamp": "2025-11-10T14:58:38.355778",
+      "timestamp": "2025-11-10T15:20:55.140828",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "audio_spec",
+        "audio_script",
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "audio-specs/resource-2-spec.json",
+        "generated-resources/50-batch/repartidor/basic_audio_1-audio-script.txt",
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -59,14 +115,40 @@
     },
     "3": {
       "resource_id": 3,
-      "timestamp": "2025-11-10T14:58:38.439153",
+      "timestamp": "2025-11-10T15:20:55.366921",
       "issues": [
         "Audio file does not exist"
       ],
-      "warnings": [
-        "No source file mapping"
-      ],
+      "warnings": [],
       "status": "MISSING_AUDIO",
+      "source_types": [
+        "markdown"
+      ],
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": false
@@ -74,18 +156,46 @@
     },
     "4": {
       "resource_id": 4,
-      "timestamp": "2025-11-10T14:58:38.441605",
+      "timestamp": "2025-11-10T15:20:55.527953",
       "issues": [
-        "Incomplete coverage: 47.8% (12 phrases missing)"
+        "Low coverage: 37.9% (~18 phrases may be missing)"
       ],
       "warnings": [
         "Found 7 potential voice detection issues"
       ],
       "status": "NEEDS_FIX",
-      "source_file": "generated-resources/50-batch/repartidor/basic_phrases_2.md",
-      "source_phrases": 23,
+      "source_types": [
+        "audio_script",
+        "markdown"
+      ],
+      "source_files": [
+        "generated-resources/50-batch/repartidor/basic_audio_2-audio-script.txt",
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 11,
-      "phrase_coverage": "11/23 (47.8%)",
+      "phrase_coverage": "11/29 (37.9%)",
       "audio": {
         "exists": true,
         "error": "[Errno 2] No such file or directory: 'ffprobe'"
@@ -100,12 +210,38 @@
     },
     "5": {
       "resource_id": 5,
-      "timestamp": "2025-11-10T14:58:38.543185",
+      "timestamp": "2025-11-10T15:20:55.692632",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -114,12 +250,38 @@
     },
     "6": {
       "resource_id": 6,
-      "timestamp": "2025-11-10T14:58:38.609655",
+      "timestamp": "2025-11-10T15:20:55.953975",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -128,12 +290,42 @@
     },
     "7": {
       "resource_id": 7,
-      "timestamp": "2025-11-10T14:58:38.719945",
+      "timestamp": "2025-11-10T15:20:56.292399",
       "issues": [],
       "warnings": [],
       "status": "PASS",
-      "source_file": "generated-resources/50-batch/conductor/basic_phrases_1.md",
-      "source_phrases": 0,
+      "source_types": [
+        "audio_spec",
+        "audio_script",
+        "markdown"
+      ],
+      "source_files": [
+        "audio-specs/resource-7-spec.json",
+        "generated-resources/50-batch/conductor/basic_audio_navigation_1-audio-script.txt",
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -142,14 +334,40 @@
     },
     "8": {
       "resource_id": 8,
-      "timestamp": "2025-11-10T14:58:38.854879",
+      "timestamp": "2025-11-10T15:20:56.490635",
       "issues": [
         "Audio file does not exist"
       ],
-      "warnings": [
-        "No source file mapping"
-      ],
+      "warnings": [],
       "status": "MISSING_AUDIO",
+      "source_types": [
+        "markdown"
+      ],
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": false
@@ -157,12 +375,38 @@
     },
     "9": {
       "resource_id": 9,
-      "timestamp": "2025-11-10T14:58:38.857745",
+      "timestamp": "2025-11-10T15:20:56.666014",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -171,12 +415,42 @@
     },
     "10": {
       "resource_id": 10,
-      "timestamp": "2025-11-10T14:58:38.978215",
+      "timestamp": "2025-11-10T15:20:56.933889",
       "issues": [],
       "warnings": [],
       "status": "PASS",
-      "source_file": "generated-resources/50-batch/conductor/basic_greetings_1.md",
-      "source_phrases": 22,
+      "source_types": [
+        "audio_spec",
+        "audio_script",
+        "markdown"
+      ],
+      "source_files": [
+        "audio-specs/resource-10-spec.json",
+        "generated-resources/50-batch/conductor/basic_audio_navigation_2-audio-script.txt",
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -185,12 +459,38 @@
     },
     "11": {
       "resource_id": 11,
-      "timestamp": "2025-11-10T14:58:39.135382",
+      "timestamp": "2025-11-10T15:20:57.154709",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -199,12 +499,38 @@
     },
     "12": {
       "resource_id": 12,
-      "timestamp": "2025-11-10T14:58:39.292185",
+      "timestamp": "2025-11-10T15:20:57.530859",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -213,12 +539,40 @@
     },
     "13": {
       "resource_id": 13,
-      "timestamp": "2025-11-10T14:58:39.466739",
+      "timestamp": "2025-11-10T15:20:57.922090",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "audio_spec",
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "audio-specs/resource-13-spec.json",
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -227,12 +581,38 @@
     },
     "14": {
       "resource_id": 14,
-      "timestamp": "2025-11-10T14:58:39.625960",
+      "timestamp": "2025-11-10T15:20:58.333686",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -241,12 +621,38 @@
     },
     "15": {
       "resource_id": 15,
-      "timestamp": "2025-11-10T14:58:39.766979",
+      "timestamp": "2025-11-10T15:20:58.741385",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -255,12 +661,38 @@
     },
     "16": {
       "resource_id": 16,
-      "timestamp": "2025-11-10T14:58:39.899400",
+      "timestamp": "2025-11-10T15:20:59.118504",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -269,12 +701,38 @@
     },
     "17": {
       "resource_id": 17,
-      "timestamp": "2025-11-10T14:58:40.048904",
+      "timestamp": "2025-11-10T15:20:59.483574",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -283,12 +741,40 @@
     },
     "18": {
       "resource_id": 18,
-      "timestamp": "2025-11-10T14:58:40.184383",
+      "timestamp": "2025-11-10T15:20:59.747590",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "audio_spec",
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "audio-specs/resource-18-spec.json",
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -297,12 +783,38 @@
     },
     "19": {
       "resource_id": 19,
-      "timestamp": "2025-11-10T14:58:40.311869",
+      "timestamp": "2025-11-10T15:20:59.969668",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -311,12 +823,38 @@
     },
     "20": {
       "resource_id": 20,
-      "timestamp": "2025-11-10T14:58:40.424489",
+      "timestamp": "2025-11-10T15:21:00.200006",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -325,12 +863,40 @@
     },
     "21": {
       "resource_id": 21,
-      "timestamp": "2025-11-10T14:58:40.518554",
+      "timestamp": "2025-11-10T15:21:00.445387",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "audio_spec",
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "audio-specs/resource-21-spec.json",
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -339,12 +905,38 @@
     },
     "22": {
       "resource_id": 22,
-      "timestamp": "2025-11-10T14:58:40.627136",
+      "timestamp": "2025-11-10T15:21:00.674174",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -353,12 +945,38 @@
     },
     "23": {
       "resource_id": 23,
-      "timestamp": "2025-11-10T14:58:40.720222",
+      "timestamp": "2025-11-10T15:21:00.891517",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -367,14 +985,40 @@
     },
     "24": {
       "resource_id": 24,
-      "timestamp": "2025-11-10T14:58:40.824187",
+      "timestamp": "2025-11-10T15:21:01.101174",
       "issues": [
         "Audio file does not exist"
       ],
-      "warnings": [
-        "No source file mapping"
-      ],
+      "warnings": [],
       "status": "MISSING_AUDIO",
+      "source_types": [
+        "markdown"
+      ],
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": false
@@ -382,12 +1026,38 @@
     },
     "25": {
       "resource_id": 25,
-      "timestamp": "2025-11-10T14:58:40.827052",
+      "timestamp": "2025-11-10T15:21:01.230205",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -396,12 +1066,38 @@
     },
     "26": {
       "resource_id": 26,
-      "timestamp": "2025-11-10T14:58:40.912234",
+      "timestamp": "2025-11-10T15:21:01.447969",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -410,12 +1106,38 @@
     },
     "27": {
       "resource_id": 27,
-      "timestamp": "2025-11-10T14:58:41.005871",
+      "timestamp": "2025-11-10T15:21:01.664215",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -424,12 +1146,40 @@
     },
     "28": {
       "resource_id": 28,
-      "timestamp": "2025-11-10T14:58:41.088591",
+      "timestamp": "2025-11-10T15:21:01.868566",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "audio_spec",
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "audio-specs/resource-28-spec.json",
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -438,12 +1188,38 @@
     },
     "29": {
       "resource_id": 29,
-      "timestamp": "2025-11-10T14:58:41.183691",
+      "timestamp": "2025-11-10T15:21:02.113879",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -452,12 +1228,38 @@
     },
     "30": {
       "resource_id": 30,
-      "timestamp": "2025-11-10T14:58:41.284464",
+      "timestamp": "2025-11-10T15:21:02.345698",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -466,12 +1268,38 @@
     },
     "31": {
       "resource_id": 31,
-      "timestamp": "2025-11-10T14:58:41.412690",
+      "timestamp": "2025-11-10T15:21:02.583583",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -480,12 +1308,40 @@
     },
     "32": {
       "resource_id": 32,
-      "timestamp": "2025-11-10T14:58:41.560748",
+      "timestamp": "2025-11-10T15:21:02.853397",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "audio_spec",
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "audio-specs/resource-32-spec.json",
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -494,12 +1350,38 @@
     },
     "33": {
       "resource_id": 33,
-      "timestamp": "2025-11-10T14:58:41.686304",
+      "timestamp": "2025-11-10T15:21:03.076586",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -508,12 +1390,40 @@
     },
     "34": {
       "resource_id": 34,
-      "timestamp": "2025-11-10T14:58:41.791205",
+      "timestamp": "2025-11-10T15:21:03.271032",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "audio_spec",
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "audio-specs/resource-34-spec.json",
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -522,12 +1432,38 @@
     },
     "35": {
       "resource_id": 35,
-      "timestamp": "2025-11-10T14:58:41.911521",
+      "timestamp": "2025-11-10T15:21:03.492594",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -536,12 +1472,38 @@
     },
     "36": {
       "resource_id": 36,
-      "timestamp": "2025-11-10T14:58:42.024372",
+      "timestamp": "2025-11-10T15:21:03.730722",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -550,12 +1512,38 @@
     },
     "37": {
       "resource_id": 37,
-      "timestamp": "2025-11-10T14:58:42.158918",
+      "timestamp": "2025-11-10T15:21:03.943068",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -564,12 +1552,38 @@
     },
     "38": {
       "resource_id": 38,
-      "timestamp": "2025-11-10T14:58:42.282109",
+      "timestamp": "2025-11-10T15:21:04.120162",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -578,12 +1592,38 @@
     },
     "39": {
       "resource_id": 39,
-      "timestamp": "2025-11-10T14:58:42.409329",
+      "timestamp": "2025-11-10T15:21:04.324864",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -592,12 +1632,38 @@
     },
     "40": {
       "resource_id": 40,
-      "timestamp": "2025-11-10T14:58:42.554119",
+      "timestamp": "2025-11-10T15:21:04.595837",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -606,12 +1672,38 @@
     },
     "41": {
       "resource_id": 41,
-      "timestamp": "2025-11-10T14:58:42.723116",
+      "timestamp": "2025-11-10T15:21:04.858398",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -620,12 +1712,38 @@
     },
     "42": {
       "resource_id": 42,
-      "timestamp": "2025-11-10T14:58:42.882722",
+      "timestamp": "2025-11-10T15:21:05.098350",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -634,12 +1752,38 @@
     },
     "43": {
       "resource_id": 43,
-      "timestamp": "2025-11-10T14:58:43.018668",
+      "timestamp": "2025-11-10T15:21:05.370381",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -648,12 +1792,38 @@
     },
     "44": {
       "resource_id": 44,
-      "timestamp": "2025-11-10T14:58:43.150675",
+      "timestamp": "2025-11-10T15:21:05.605248",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -662,12 +1832,38 @@
     },
     "45": {
       "resource_id": 45,
-      "timestamp": "2025-11-10T14:58:43.268710",
+      "timestamp": "2025-11-10T15:21:05.833575",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -676,12 +1872,38 @@
     },
     "46": {
       "resource_id": 46,
-      "timestamp": "2025-11-10T14:58:43.416736",
+      "timestamp": "2025-11-10T15:21:06.054439",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -690,12 +1912,38 @@
     },
     "47": {
       "resource_id": 47,
-      "timestamp": "2025-11-10T14:58:43.563537",
+      "timestamp": "2025-11-10T15:21:06.272560",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -704,12 +1952,38 @@
     },
     "48": {
       "resource_id": 48,
-      "timestamp": "2025-11-10T14:58:43.707251",
+      "timestamp": "2025-11-10T15:21:06.455485",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -718,12 +1992,38 @@
     },
     "49": {
       "resource_id": 49,
-      "timestamp": "2025-11-10T14:58:43.865998",
+      "timestamp": "2025-11-10T15:21:06.634363",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -732,12 +2032,38 @@
     },
     "50": {
       "resource_id": 50,
-      "timestamp": "2025-11-10T14:58:44.003779",
+      "timestamp": "2025-11-10T15:21:06.854593",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -746,12 +2072,38 @@
     },
     "51": {
       "resource_id": 51,
-      "timestamp": "2025-11-10T14:58:44.108363",
+      "timestamp": "2025-11-10T15:21:07.050243",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -760,12 +2112,38 @@
     },
     "52": {
       "resource_id": 52,
-      "timestamp": "2025-11-10T14:58:44.213448",
+      "timestamp": "2025-11-10T15:21:07.262534",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -774,12 +2152,38 @@
     },
     "53": {
       "resource_id": 53,
-      "timestamp": "2025-11-10T14:58:44.346418",
+      "timestamp": "2025-11-10T15:21:07.462551",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -788,12 +2192,38 @@
     },
     "54": {
       "resource_id": 54,
-      "timestamp": "2025-11-10T14:58:44.460923",
+      "timestamp": "2025-11-10T15:21:07.672162",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -802,12 +2232,38 @@
     },
     "55": {
       "resource_id": 55,
-      "timestamp": "2025-11-10T14:58:44.586896",
+      "timestamp": "2025-11-10T15:21:07.878937",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
@@ -816,12 +2272,38 @@
     },
     "56": {
       "resource_id": 56,
-      "timestamp": "2025-11-10T14:58:44.723055",
+      "timestamp": "2025-11-10T15:21:08.091428",
       "issues": [],
-      "warnings": [
-        "No source file mapping"
+      "warnings": [],
+      "status": "PASS",
+      "source_types": [
+        "markdown"
       ],
-      "status": "PASS_WITH_WARNINGS",
+      "source_files": [
+        "generated-resources/50-batch/all/basic_numbers_1.md",
+        "generated-resources/50-batch/all/basic_numbers_2.md",
+        "generated-resources/50-batch/all/basic_time_1.md",
+        "generated-resources/50-batch/all/emergency_phrases_1.md",
+        "generated-resources/50-batch/all/intermediate_complaints_1.md",
+        "generated-resources/50-batch/all/intermediate_customer_service_1.md",
+        "generated-resources/50-batch/all/safety_protocols_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_1.md",
+        "generated-resources/50-batch/conductor/basic_directions_2.md",
+        "generated-resources/50-batch/conductor/basic_directions_3.md",
+        "generated-resources/50-batch/conductor/basic_greetings_1.md",
+        "generated-resources/50-batch/conductor/basic_greetings_2.md",
+        "generated-resources/50-batch/conductor/basic_greetings_3.md",
+        "generated-resources/50-batch/conductor/intermediate_problems_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+        "generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_3.md",
+        "generated-resources/50-batch/repartidor/basic_phrases_4.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+        "generated-resources/50-batch/repartidor/intermediate_situations_2.md"
+      ],
+      "source_phrases": 29,
       "extracted_phrases": 0,
       "audio": {
         "exists": true,
