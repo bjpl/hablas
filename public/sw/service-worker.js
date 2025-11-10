@@ -3,7 +3,7 @@
  * Caches static assets and API responses for offline access
  */
 
-const CACHE_NAME = 'hablas-cache-v2'
+const CACHE_NAME = 'hablas-cache-v3'
 const RUNTIME_CACHE = 'hablas-runtime-v2'
 const AUDIO_CACHE = 'hablas-audio-v1'
 
