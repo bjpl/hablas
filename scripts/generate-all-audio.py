@@ -57,15 +57,26 @@ def get_voices_for_resource(resource_id: int) -> tuple:
     return (spanish, english)
 
 def detect_language(text: str) -> str:
-    """Detect if text is Spanish or English"""
-    # Spanish indicators - check FIRST for definitive Spanish markers
+    """Detect if text is Spanish or English using word-boundary matching"""
+    # Spanish characters are definitive
     if re.search(r'[¿¡áéíóúüñ]', text):
         return 'spanish'
 
-    # Common Spanish words (expanded list)
-    spanish_words = r'\b(hola|tengo|su|entrega|español|gracias|día|gran|está|estoy|puede|quiere|necesito|disculpe|por favor|buenos|buenas|cómo|dónde|cuál|qué|soy|eres|usted|señor|señora)\b'
-    if re.search(spanish_words, text.lower()):
-        return 'spanish'
+    # Use word boundaries to match complete words only
+    spanish_words = [
+        'hola', 'tengo', 'su', 'entrega', 'español', 'gracias',
+        'día', 'gran', 'está', 'estoy', 'puede', 'quiere',
+        'necesito', 'disculpe', 'por favor', 'buenos', 'buenas',
+        'cómo', 'dónde', 'cuál', 'qué', 'soy', 'eres',
+        'usted', 'señor', 'señora', 'de', 'el', 'la',
+        'los', 'las', 'un', 'una', 'para', 'por', 'con'
+    ]
+
+    text_lower = text.lower()
+    for word in spanish_words:
+        pattern = r'\b' + re.escape(word) + r'\b'
+        if re.search(pattern, text_lower):
+            return 'spanish'
 
     # English indicators - expanded to catch more phrases
     english_words = r'\b(hello|how|are|you|delivery|order|customer|thank|thanks|please|have|your|great|good|day|hi|morning|evening|night|yes|no|can|could|would|will|my|the|this|that|what|where|when|who|why|sorry|excuse|me)\b'
@@ -76,14 +87,9 @@ def detect_language(text: str) -> str:
     if re.search(r"(I'm|I am|you're|you are|it's|that's|what's)", text, re.IGNORECASE):
         return 'english'
 
-    # If still unclear, check character distribution
-    # English uses more common letters like 'a', 'e', 'i', 'o', 'u' without accents
-    # Spanish has different frequency and uses accents
-    text_lower = text.lower()
-
     # Count definitive indicators
-    has_articles_the = 'the ' in text_lower or ' the' in text_lower
-    has_articles_el = 'el ' in text_lower or ' la ' in text_lower
+    has_articles_the = re.search(r'\bthe\b', text_lower)
+    has_articles_el = re.search(r'\bel\b|\bla\b', text_lower)
 
     if has_articles_the:
         return 'english'

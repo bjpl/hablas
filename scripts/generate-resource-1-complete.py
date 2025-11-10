@@ -27,20 +27,29 @@ SPANISH_VOICE = 'es-CO-SalomeNeural'  # Female Colombian
 ENGLISH_VOICE = 'en-US-JennyNeural'   # Female US
 
 def is_spanish(text: str) -> bool:
-    """Simple Spanish detection - if has Spanish characters or common words"""
+    """Detect Spanish using character markers and whole-word matching"""
+    import re
+
+    # Spanish characters are definitive
     spanish_chars = 'áéíóúñ¿¡'
-    spanish_words = ['hola', 'tengo', 'su', 'entrega', 'español', 'gracias', 'día',
-                     'buenos', 'soy', 'tu', 'para', 'con', 'una', 'el', 'la', 'de']
-
-    text_lower = text.lower()
-
-    # Check for Spanish characters
     if any(char in text for char in spanish_chars):
         return True
 
-    # Check for Spanish words
-    if any(word in text_lower for word in spanish_words):
-        return True
+    # Use word boundaries to match complete words only
+    spanish_words = [
+        'hola', 'tengo', 'entrega', 'español', 'gracias',
+        'buenos', 'soy', 'para', 'con', 'una',
+        'día', 'días', 'tu', 'tus', 'que', 'qué',
+        'mi', 'mis', 'lo', 'los', 'las'
+    ]
+
+    text_lower = text.lower()
+
+    for word in spanish_words:
+        # Match whole words only using word boundaries
+        pattern = r'\b' + re.escape(word) + r'\b'
+        if re.search(pattern, text_lower):
+            return True
 
     return False
 

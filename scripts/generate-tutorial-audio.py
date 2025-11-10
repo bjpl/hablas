@@ -21,15 +21,29 @@ SPANISH_NARRATOR = 'es-CO-SalomeNeural'  # Warm, professional female narrator
 ENGLISH_VOICE = 'en-US-JennyNeural'
 
 def detect_language(text: str) -> str:
-    """Detect if text is Spanish or English"""
-    # Spanish indicators - check FIRST for definitive Spanish markers
+    """Detect if text is Spanish or English using word-boundary matching"""
+    # Spanish characters are definitive
     if re.search(r'[¿¡áéíóúüñ]', text):
         return 'spanish'
 
-    # Common Spanish words
-    spanish_words = r'\b(hola|tengo|su|entrega|español|gracias|día|gran|está|estoy|puede|quiere|necesito|disculpe|por favor|buenos|buenas|cómo|dónde|cuál|qué|soy|eres|usted|señor|señora|instructor|repartidor|escucharás|aprender|frases|cliente|pedido|trabajo|profesional|usar|práctica|minutos|veces|lentamente|claridad|traducción|consejo|recomendación)\b'
-    if re.search(spanish_words, text.lower()):
-        return 'spanish'
+    # Use word boundaries to match complete words only
+    spanish_words = [
+        'hola', 'tengo', 'su', 'entrega', 'español', 'gracias',
+        'día', 'gran', 'está', 'estoy', 'puede', 'quiere',
+        'necesito', 'disculpe', 'por favor', 'buenos', 'buenas',
+        'cómo', 'dónde', 'cuál', 'qué', 'soy', 'eres',
+        'usted', 'señor', 'señora', 'instructor', 'repartidor',
+        'escucharás', 'aprender', 'frases', 'cliente', 'pedido',
+        'trabajo', 'profesional', 'usar', 'práctica', 'minutos',
+        'veces', 'lentamente', 'claridad', 'traducción', 'consejo',
+        'recomendación'
+    ]
+
+    text_lower = text.lower()
+    for word in spanish_words:
+        pattern = r'\b' + re.escape(word) + r'\b'
+        if re.search(pattern, text_lower):
+            return 'spanish'
 
     # English indicators
     english_words = r'\b(hello|how|are|you|delivery|order|customer|thank|thanks|please|have|your|great|good|day|hi|morning|evening|driver|here|outside|gate|house|street|meet|lobby|meal|enjoy|take care)\b'

@@ -51,15 +51,27 @@ VOICES = {
 }
 
 def detect_language(text: str) -> str:
-    """Detect if text is Spanish or English"""
-    # Spanish indicators
+    """Detect if text is Spanish or English using word-boundary matching"""
+    # Spanish characters are definitive
     if re.search(r'[¿¡áéíóúüñ]', text):
         return 'spanish'
-    if re.search(r'\b(hola|tengo|su|entrega|español|frase|número|cliente)\b', text.lower()):
-        return 'spanish'
+
+    # Use word boundaries to match complete words only
+    spanish_words = [
+        'hola', 'tengo', 'su', 'entrega', 'español', 'frase',
+        'número', 'cliente', 'gracias', 'buenos', 'días'
+    ]
+
+    text_lower = text.lower()
+    for word in spanish_words:
+        pattern = r'\b' + re.escape(word) + r'\b'
+        if re.search(pattern, text_lower):
+            return 'spanish'
+
     # English indicators
     if re.search(r'\b(delivery|order|customer|michael|thank|please|have|your)\b', text.lower()):
         return 'english'
+
     # Default to Spanish (narrator context)
     return 'spanish'
 

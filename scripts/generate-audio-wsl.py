@@ -48,14 +48,25 @@ SPANISH_VOICE = 'es-CO-SalomeNeural'  # Colombian female
 ENGLISH_VOICE = 'en-US-JennyNeural'    # US female
 
 def detect_language(text: str) -> str:
-    """Detect if text is Spanish or English"""
-    # Spanish indicators
+    """Detect if text is Spanish or English using word-boundary matching"""
+    # Spanish characters are definitive
     if re.search(r'[¿¡áéíóúüñ]', text):
         return 'spanish'
 
-    spanish_words = r'\b(hola|tengo|su|entrega|español|gracias|día|gran|está|estoy|puede|quiere|necesito|disculpe|por favor|buenos|buenas|cómo|dónde|cuál|qué|soy|eres|usted|señor|señora)\b'
-    if re.search(spanish_words, text.lower()):
-        return 'spanish'
+    # Use word boundaries to match complete words only
+    spanish_words = [
+        'hola', 'tengo', 'su', 'entrega', 'español', 'gracias',
+        'día', 'gran', 'está', 'estoy', 'puede', 'quiere',
+        'necesito', 'disculpe', 'por favor', 'buenos', 'buenas',
+        'cómo', 'dónde', 'cuál', 'qué', 'soy', 'eres',
+        'usted', 'señor', 'señora'
+    ]
+
+    text_lower = text.lower()
+    for word in spanish_words:
+        pattern = r'\b' + re.escape(word) + r'\b'
+        if re.search(pattern, text_lower):
+            return 'spanish'
 
     # Default to English
     return 'english'
