@@ -1,0 +1,76 @@
+1. Good morning! I have your delivery.
+   ¡Buenos días! Tengo su entrega.         │
+
+2. Are you [Name]?
+   ¿Es usted ?                     │
+
+3. I'm your driver from [Uber/Rappi].
+   Soy su conductor/repartidor de .  │
+
+4. Here you go! Have a great day.
+   ¡Aquí tiene! Que tenga un gran día.    │
+
+5. Can I help you with anything else?
+   ¿Puedo ayudarle con algo más?          │
+
+6. How do I get to your apartment?
+   ¿Cómo llego a su apartamento?          │
+
+7. I'm here with your order.
+   Estoy aquí con su pedido.              │
+
+8. What's the gate code, please?
+   ¿Cuál es el código de la puerta?       │
+
+9. Could you come down to meet me?
+   ¿Podría bajar a encontrarse conmigo?   │
+
+10. I'm parked in front of your building.
+   Estoy estacionado frente a su edificio.│
+
+11. I apologize for the delay.
+   Me disculpo por el retraso.            │
+
+12. The restaurant was running behind.
+   El restaurante estaba atrasado.        │
+
+13. It looks like an item is missing.
+   Parece que falta un artículo.          │
+
+14. I can contact support to help with this.
+   Puedo contactar a soporte para ayudar. │
+
+15. Does everything look correct?
+   ¿Todo se ve correcto?                  │
+
+16. I'm very sorry, something spilled.
+   Lo siento mucho, algo se derramó.      │
+
+17. I'll leave it at the door for you.
+   Lo dejaré en la puerta para usted.     │
+
+18. Where would you like me to place it?
+   ¿Dónde le gustaría que lo coloque?     │
+
+19. Would you like me to bring it inside?
+   ¿Quisiera que lo lleve adentro?        │
+
+20. I'll ask the restaurant for extra sauce.
+   Pediré salsa extra al restaurante.     │
+
+21. I saw your note. I'll make sure to do     │
+│               that.
+   Vi su nota. Me aseguraré de hacerlo.   │
+
+22. I can wait a few minutes, no problem.
+   Puedo esperar unos minutos, sin problema│
+
+23. You're all set! Have a wonderful day.
+   ¡Ya está todo listo! Que tenga un día  │
+
+24. Thank you so much! Take care.
+   ¡Muchas gracias! Cuídese.              │
+
+25. Enjoy your food!
+   ¡Disfrute su comida!                   │
+

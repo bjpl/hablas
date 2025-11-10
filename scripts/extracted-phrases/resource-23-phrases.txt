@@ -1,0 +1,69 @@
+1. It's three o'clock.
+   Son las tres en punto.                  │
+
+2. It's three thirty.
+   Son las tres y media.                   │
+
+3. It's seven AM.
+   Son las siete de la mañana.             │
+
+4. Around five o'clock.
+   Alrededor de las cinco.                 │
+
+5. I'll be there in five minutes.
+   Llegaré en cinco minutos.               │
+
+6. It's about twenty minutes away.
+   Está a unos veinte minutos.             │
+
+7. I'm here.
+   Ya llegué / Estoy aquí.                 │
+
+8. I'm waiting for the order.
+   Estoy esperando la orden.               │
+
+9. How long will it take?
+   ¿Cuánto tiempo tomará?                  │
+
+10. The trip takes thirty minutes.
+   El viaje toma treinta minutos.          │
+
+11. There's traffic right now.
+   Hay tráfico ahora mismo.                │
+
+12. It depends on traffic.
+   Depende del tráfico.                    │
+
+13. Just a few minutes.
+   Solo unos minutos.                      │
+
+14. It's taking longer than expected.
+   Está tomando más tiempo de lo esperado. │
+
+15. Sorry I'm late.
+   Perdón por llegar tarde.                │
+
+16. There was an accident on the road.
+   Hubo un accidente en el camino.         │
+
+17. I'm running a little late.
+   Voy un poco tarde.                      │
+
+18. I'll be there in ten more minutes.
+   Llegaré en diez minutos más.            │
+
+19. Thank you for your patience.
+   Gracias por tu paciencia.               │
+
+20. What time is it?
+   ¿Qué hora es?                           │
+
+21. What time do you close?
+   ¿A qué hora cierran?                    │
+
+22. What time will it be ready?
+   ¿A qué hora estará listo?               │
+
+23. What time should I pick you up?
+   ¿A qué hora debo recogerte?             │
+

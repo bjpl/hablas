@@ -1,0 +1,94 @@
+1. Zero, one, two, three, four, five, six,   │
+│ seven, eight, nine, ten
+   Cero, uno, dos, tres, cuatro, cinco,    │
+
+2. Eleven, twelve, thirteen, fourteen,       │
+│ fifteen, sixteen, seventeen, eighteen, nineteen, twenty
+   Once, doce, trece, catorce, quince,     │
+
+3. Twenty, thirty, forty, fifty, sixty,      │
+│ seventy, eighty, ninety, one hundred
+   Veinte, treinta, cuarenta, cincuenta,   │
+
+4. Twenty-five, thirty-seven, forty-two,     │
+│ fifty-eight
+   Veinticinco, treinta y siete, cuarenta  │
+
+5. Is this 245 Oak Street?
+   ¿Es este el 245 de la calle Oak?        │
+
+6. Number 328?
+   ¿Número 328?                            │
+
+7. What street is this?
+   ¿Qué calle es esta?                     │
+
+8. Is this Main Street?
+   ¿Esta es la calle Main?                 │
+
+9. What's the apartment number?
+   ¿Cuál es el número de apartamento?      │
+
+10. Apartment 3B?
+   ¿Apartamento 3B?                        │
+
+11. I'm looking for Suite 201
+   Estoy buscando la Suite 201             │
+
+12. Where is apartment 15?
+   ¿Dónde está el apartamento 15?          │
+
+13. What floor?
+   ¿Qué piso?                              │
+
+14. Third floor?
+   ¿Tercer piso?                           │
+
+15. I'm going to the fifth floor
+   Voy al quinto piso                      │
+
+16. Is this Building A or Building B?
+   ¿Este es el Edificio A o el Edificio B? │
+
+17. Is it on the corner?
+   ¿Está en la esquina?                    │
+
+18. Which side of the street?
+   ¿Qué lado de la calle?                  │
+
+19. Is it near the Starbucks?
+   ¿Está cerca del Starbucks?              │
+
+20. Is it in front or in back?
+   ¿Está enfrente o atrás?                 │
+
+21. Excuse me, can you help me find this      │
+│ address?
+   Disculpe, ¿puede ayudarme a encontrar   │
+
+22. I have a delivery for apartment 5C
+   Tengo una entrega para el apartamento 5C│
+
+23. How do I get there?
+   ¿Cómo llego allá?                       │
+
+24. Is it far from here?
+   ¿Está lejos de aquí?                    │
+
+25. So, it's 742 West Main Street, apartment  │
+│ 3A, right?
+   Entonces, es 742 West Main Street,      │
+
+26. How do you spell that?
+   ¿Cómo se deletrea eso?                  │
+
+27. What's the gate code?
+   ¿Cuál es el código de la puerta?        │
+
+28. Any special instructions?
+   ¿Alguna instrucción especial?           │
+
+29. I'm sorry, I can't find your address. Can │
+│ you help me?
+   Lo siento, no puedo encontrar tu        │
+

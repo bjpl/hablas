@@ -1,0 +1,92 @@
+1. Can I double-check the order before I     │
+│ leave?
+   ¿Puedo verificar dos veces el pedido   │
+
+2. I see three items on the order. Are they  │
+│ all in here?
+   Veo tres artículos en el pedido. ¿Están│
+
+3. Hi, I'm sorry but the restaurant didn't   │
+│ include the [item]. I can go back if you'd like.
+   Hola, lo siento pero el restaurante no │
+
+4. The bag was sealed by the restaurant, so  │
+│ I couldn't check inside.
+   La bolsa fue sellada por el            │
+
+5. You can report this through the app and   │
+│ get a refund right away.
+   Puedes reportar esto a través de la app│
+
+6. Hi, I'm your delivery driver. I'm having  │
+│ trouble finding your address. Can you help me?
+   Hola, soy tu repartidor. Estoy teniendo│
+
+7. What's the nearest cross street or        │
+│ landmark?
+   ¿Cuál es la calle más cercana que      │
+
+8. I'm at [building name/address]. Which     │
+│ unit number or floor?
+   Estoy en .  │
+
+9. I'm near your location. Can you come out  │
+│ or wave to me?
+   Estoy cerca de tu ubicación. ¿Puedes   │
+
+10. The address in the app shows [wrong       │
+│ address]. Can you confirm the correct one?
+   La dirección en la app muestra         │
+
+11. I sincerely apologize for the delay. I    │
+│ got here as fast as I could.
+   Me disculpo sinceramente por el        │
+
+12. I understand your frustration. The        │
+│ restaurant took longer than expected to prepare it.
+   Entiendo tu frustración. El restaurante│
+
+13. I'm doing my best to help you. Let's work │
+│ together to solve this.
+   Estoy haciendo mi mejor esfuerzo para  │
+
+14. I need to ask you to speak to me          │
+│ respectfully, please.
+   Necesito pedirte que me hables         │
+
+15. Let me contact support right now while    │
+│ I'm here with you.
+   Déjame contactar a soporte ahora mismo │
+
+16. How much longer will the order take? I    │
+│ need to update my customer.
+   ¿Cuánto más tardará el pedido? Necesito│
+
+17. I arrived at the pickup time, but the     │
+│ order isn't ready yet.
+   Llegué a la hora de recogida, pero el  │
+
+18. The customer requested no onions. Can you │
+│ confirm that's correct?
+   El cliente pidió sin cebollas. ¿Puedes │
+
+19. Can I get napkins, utensils, and straws   │
+│ for this order?
+   ¿Puedo obtener servilletas, cubiertos, │
+
+20. I see there are two drinks on the order.  │
+│ Where are they?
+   Veo que hay dos bebidas en el pedido.  │
+
+21. Hi! I'm your driver. There's heavy traffic│
+│ but I'll be there in about 10 minutes.
+   ¡Hola! Soy tu conductor. Hay mucho     │
+
+22. I apologize for the delay. The weather    │
+│ conditions are making driving difficult.
+   Me disculpo por el retraso. Las        │
+
+23. I had to make another delivery on the way.│
+│ Thank you for your patience.
+   Tuve que hacer otra entrega en el      │
+

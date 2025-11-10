@@ -1,0 +1,70 @@
+1. How's your day going so far?
+   ¿Cómo va tu día hasta ahora?            │
+
+2. Nice weather we're having today.
+   Qué buen clima tenemos hoy.             │
+
+3. Is the temperature okay for you?
+   ¿Está bien la temperatura para ti?      │
+
+4. Feel free to change the music if you'd    │
+│              like.
+   Siéntete libre de cambiar la música si  │
+
+5. Are you from around here?
+   ¿Eres de por aquí?                      │
+
+6. That's a nice part of town.
+   Esa es una buena zona de la ciudad.     │
+
+7. It's really hot out there today.
+   Hace mucho calor allá afuera hoy.       │
+
+8. It's freezing out there!
+   ¡Está helado allá afuera!               │
+
+9. Looks like we're going to get some rain.
+   Parece que va a llover.                 │
+
+10. The weather has been so unpredictable     │
+│              lately.
+   El clima ha estado tan impredecible     │
+
+11. Finally some nice weather!
+   ¡Por fin buen clima!                    │
+
+12. Do you like this kind of weather?
+   ¿Te gusta este tipo de clima?           │
+
+13. This is perfect weather for [activity].
+   Este es el clima perfecto para          │
+
+14. Traffic is pretty heavy right now.
+   El tráfico está bastante pesado ahora.  │
+
+15. We might be a few minutes late because of │
+│              the traffic.
+   Podríamos llegar unos minutos tarde por │
+
+16. Are you in a hurry? I can try a different │
+│              route.
+   ¿Tienes prisa? Puedo intentar una ruta  │
+
+17. Rush hour traffic can be crazy around     │
+│              here.
+   El tráfico de hora pico puede ser loco  │
+
+18. There's construction up ahead, that's why │
+│              it's slow.
+   Hay construcción más adelante, por eso  │
+
+19. Traffic should clear up soon.
+   El tráfico debería despejarse pronto.   │
+
+20. Drivers can be pretty aggressive during   │
+│              rush hour.
+   Los conductores pueden ser bastante     │
+
+21. Have you been to this city before?
+   ¿Has estado en esta ciudad antes?       │
+

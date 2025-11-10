@@ -1,0 +1,74 @@
+======================================================================
+BATCH REGENERATION - Incomplete Resources
+======================================================================
+Started: 2025-11-09 16:51:02
+
+Processing 7 resources...
+
+
+======================================================================
+Resource 23: Tiempo y Horarios - Var 1
+Priority: CRITICAL | Missing: 15 phrases
+======================================================================
+  1. Extracting phrases from markdown...
+  ✗ Markdown file not found: generated-resources/50-batch/all/basic_time_1.md
+  ✗ No phrases extracted from: generated-resources/50-batch/all/basic_time_1.md
+
+======================================================================
+Resource 22: Números y Direcciones - Var 1
+Priority: HIGH | Missing: 12 phrases
+======================================================================
+  1. Extracting phrases from markdown...
+  ✗ Markdown file not found: generated-resources/50-batch/all/basic_numbers_1.md
+  ✗ No phrases extracted from: generated-resources/50-batch/all/basic_numbers_1.md
+
+======================================================================
+Resource 29: Números y Direcciones - Var 2
+Priority: MEDIUM | Missing: 10 phrases
+======================================================================
+  1. Extracting phrases from markdown...
+  ✗ Markdown file not found: generated-resources/50-batch/all/basic_numbers_2.md
+  ✗ No phrases extracted from: generated-resources/50-batch/all/basic_numbers_2.md
+
+======================================================================
+Resource 25: Servicio al Cliente - Var 1
+Priority: MEDIUM | Missing: 10 phrases
+======================================================================
+  1. Extracting phrases from markdown...
+  ✗ Markdown file not found: generated-resources/50-batch/all/intermediate_customer_service_1.md
+  ✗ No phrases extracted from: generated-resources/50-batch/all/intermediate_customer_service_1.md
+
+======================================================================
+Resource 30: Protocolos de Seguridad - Var 1
+Priority: MEDIUM | Missing: 10 phrases
+======================================================================
+  1. Extracting phrases from markdown...
+  ✗ Markdown file not found: generated-resources/50-batch/all/safety_protocols_1.md
+  ✗ No phrases extracted from: generated-resources/50-batch/all/safety_protocols_1.md
+
+======================================================================
+Resource 31: Situaciones Complejas - Var 2
+Priority: MEDIUM | Missing: 9 phrases
+======================================================================
+  1. Extracting phrases from markdown...
+  ✗ Markdown file not found: generated-resources/50-batch/repartidor/intermediate_situations_2.md
+  ✗ No phrases extracted from: generated-resources/50-batch/repartidor/intermediate_situations_2.md
+
+======================================================================
+Resource 33: Small Talk con Pasajeros - Var 2
+Priority: MEDIUM | Missing: 9 phrases
+======================================================================
+  1. Extracting phrases from markdown...
+  ✗ Markdown file not found: generated-resources/50-batch/conductor/intermediate_smalltalk_2.md
+  ✗ No phrases extracted from: generated-resources/50-batch/conductor/intermediate_smalltalk_2.md
+
+======================================================================
+BATCH REGENERATION COMPLETE
+======================================================================
+
+Completed: 2025-11-09 16:51:22
+Total Time: 0.3 minutes
+Successfully Processed: 0 resources
+Failed: 7 resources
+
+✗ Failed: Resources 23, 22, 29, 25, 30, 31, 33

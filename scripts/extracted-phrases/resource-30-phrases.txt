@@ -1,0 +1,95 @@
+1. I need to report a car accident. No one   │
+│ is injured, but we need police assistance.
+   Necesito reportar un accidente de auto. │
+
+2. I'm at the intersection of Main Street    │
+│ and 5th Avenue, near the gas station.
+   Estoy en la intersección de Main Street │
+
+3. We need to exchange insurance             │
+│ information. Can I see your license and insurance       │
+│ card?
+   Necesitamos intercambiar información de │
+
+4. I need to take photos for my insurance    │
+│ company. This is standard procedure.
+   Necesito tomar fotos para mi compañía   │
+
+5. I was involved in an accident while       │
+│ making a delivery. I've already contacted the police    │
+│ and need to file an incident report.
+   Estuve involucrado en un accidente      │
+
+6. My car is making a strange noise and I    │
+│ don't think it's safe to drive. I need to cancel this   │
+│ delivery.
+   Mi carro está haciendo un ruido extraño │
+
+7. I have a flat tire and I'm pulled over    │
+│ on the side of the road. I need roadside assistance.
+   Tengo una llanta ponchada y estoy       │
+
+8. My car won't start. I think the battery   │
+│ is dead. Can you send someone to jump-start it?
+   Mi carro no arranca. Creo que la        │
+
+9. I scraped my car against a pole in the    │
+│ parking lot. There's minor damage but the car is still  │
+│ drivable.
+   Raspé mi carro contra un poste en el    │
+
+10. My vehicle needs repairs and won't be     │
+│ available for work for the next two days. When can I    │
+│ resume deliveries?
+   Mi vehículo necesita reparaciones y no  │
+
+11. I don't feel safe completing this         │
+│ delivery. The customer is being aggressive and I need   │
+│ to leave.
+   No me siento seguro completando esta    │
+
+12. I understand you're upset, but I need     │
+│ you to speak to me respectfully. Otherwise, I'll have   │
+│ to contact support.
+   Entiendo que estás molesto, pero        │
+
+13. The customer appears to be intoxicated    │
+│ and I'm concerned about completing this delivery        │
+│ safely.
+   El cliente parece estar intoxicado y    │
+
+14. The customer made me uncomfortable with   │
+│ inappropriate comments. I completed the delivery but    │
+│ want to report this incident.
+   El cliente me hizo sentir incómodo con  │
+
+15. I'm not comfortable entering the           │
+│ property. I can leave the delivery at the door or in    │
+│ the lobby.
+   No me siento cómodo entrando a la       │
+
+16. The weather conditions are too dangerous  │
+│ to drive safely. There's heavy rain and flooding on     │
+│ the roads.
+   Las condiciones climáticas son          │
+
+17. I don't feel safe in this neighborhood.   │
+│ I've seen suspicious activity and would like to cancel  │
+│ this delivery.
+   No me siento seguro en este vecindario. │
+
+18. There's an aggressive dog on the          │
+│ property and I cannot safely approach the door. Can     │
+│ you contact the customer?
+   Hay un perro agresivo en la propiedad y │
+
+19. The walkway to the door is unsafe. There  │
+│ are broken steps and no lighting. I'm worried about     │
+│ falling.
+   El camino a la puerta no es seguro. Hay │
+
+20. I cannot access the building. The gate    │
+│ is locked and there's no call box. How should I         │
+│ proceed?
+   No puedo acceder al edificio. El        │
+

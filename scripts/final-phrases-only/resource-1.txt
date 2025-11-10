@@ -1,26 +1,14 @@
-# Resource 1: Essential Delivery Phrases - Variation 1
-**Level**: Básico
-**Category**: Repartidor
-**Duration**: 4 minutes
-**Phrases**: 13 essential phrases
-**Focus**: Core delivery communication
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-SECTION 1: ARRIVING & GREETING
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-=== PHRASE 1: Initial greeting at customer's door ===
-
 Good morning! I have a delivery for you.
 
 Good morning! I have a delivery for you.
 
 Buenos días! Tengo una entrega para ti.
 
-[Tip: Use "Good morning" (before noon), "Good afternoon" (noon-5pm), or "Good evening" (after 5pm)]
+I'm your Uber Eats driver.
 
+I'm your Uber Eats driver.
 
-=== PHRASE 2: Confirm customer identity ===
+Soy tu conductor de Uber Eats.
 
 Are you Sarah?
 
@@ -28,14 +16,11 @@ Are you Sarah?
 
 ¿Eres Sarah?
 
-[Tip: Replace "Sarah" with the customer's name from the app. This prevents wrong deliveries]
+Hi! I'm Carlos, your driver today.
 
+Hi! I'm Carlos, your driver today.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-SECTION 2: CONFIRMING LOCATION
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-=== PHRASE 3: Verify address ===
+Hola! Soy Carlos, tu conductor hoy.
 
 Is this 425 Main Street?
 
@@ -43,10 +28,11 @@ Is this 425 Main Street?
 
 ¿Esta es la 425 de la calle Main?
 
-[Tip: Use when the building numbers are unclear or confusing]
+I have your order from McDonald's.
 
+I have your order from McDonald's.
 
-=== PHRASE 4: Ask for drop-off preference ===
+Tengo tu pedido de McDonald's.
 
 Where would you like me to leave it?
 
@@ -54,25 +40,17 @@ Where would you like me to leave it?
 
 ¿Dónde quieres que lo deje?
 
-[Common responses: "At the door" / "Hand it to me" / "On the table"]
-
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-SECTION 3: HANDLING INSTRUCTIONS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-=== PHRASE 5: Acknowledge special instructions ===
-
 I see your note. No problem!
 
 I see your note. No problem!
 
 Vi tu nota. ¡Sin problema!
 
-[Tip: This shows you read their delivery instructions and builds trust]
+I'm having trouble finding your address.
 
+I'm having trouble finding your address.
 
-=== PHRASE 6: Request customer comes outside ===
+Tengo problemas para encontrar tu dirección.
 
 Can you come outside?
 
@@ -80,25 +58,29 @@ Can you come outside?
 
 ¿Puedes salir afuera?
 
-[Tip: Use when you can't access building or can't find apartment]
-
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-SECTION 4: FINDING THE LOCATION
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-=== PHRASE 7: Ask for visual identification ===
-
 What color is your house?
 
 What color is your house?
 
 ¿De qué color es tu casa?
 
-[Tip: Helpful in neighborhoods with similar-looking houses]
+I'm at the gate. What's the code?
 
+I'm at the gate. What's the code?
 
-=== PHRASE 8: Request directions ===
+Estoy en la puerta. ¿Cuál es el código?
+
+I'm here. I'm in a blue car.
+
+I'm here. I'm in a blue car.
+
+Ya llegué. Estoy en un carro azul.
+
+Hi! I'm outside with your order.
+
+Hi! I'm outside with your order.
+
+Hola! Estoy afuera con tu pedido.
 
 Can you give me directions?
 
@@ -106,10 +88,11 @@ Can you give me directions?
 
 ¿Me puedes dar instrucciones?
 
-[Tip: Better than getting lost. Customers appreciate the direct communication]
+Sorry, I'm running a little late.
 
+Sorry, I'm running a little late.
 
-=== PHRASE 9: Arrange lobby meetup ===
+Disculpa, voy un poco retrasado.
 
 Can you meet me in the lobby?
 
@@ -117,25 +100,11 @@ Can you meet me in the lobby?
 
 ¿Puedes encontrarme en el lobby?
 
-[Tip: Perfect for secured buildings where you can't go upstairs]
-
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-SECTION 5: COMPLETING DELIVERY
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-=== PHRASE 10: Hand over the order ===
-
 Here you go! Have a great day!
 
 Here you go! Have a great day!
 
 ¡Aquí tienes! ¡Que tengas un gran día!
-
-[Tip: A friendly tone increases tips. Smile when you say this!]
-
-
-=== PHRASE 11: Thank the customer ===
 
 Thank you! Take care!
 
@@ -143,21 +112,11 @@ Thank you! Take care!
 
 ¡Gracias! ¡Cuídate!
 
-[Tip: Use when customer tips or is especially friendly]
-
-
-=== PHRASE 12: Wish them well with their meal ===
-
 Enjoy your meal!
 
 Enjoy your meal!
 
 ¡Buen provecho!
-
-[Cultural note: "Enjoy your meal" is common courtesy in US delivery culture]
-
-
-=== PHRASE 13: Confirm contactless drop-off ===
 
 I left it at the door for you.
 
@@ -165,4 +124,56 @@ I left it at the door for you.
 
 Lo dejé en la puerta para ti.
 
-[Tip: Say this if you need to leave before they answer, or send as text message]
+Do you need utensils or napkins?
+
+Do you need utensils or napkins?
+
+¿Necesitas cubiertos o servilletas?
+
+Everything should be in the bag.
+
+Everything should be in the bag.
+
+Todo debería estar en la bolsa.
+
+The restaurant was out of that item.
+
+The restaurant was out of that item.
+
+El restaurante no tenía ese artículo.
+
+I can call the restaurant for you.
+
+I can call the restaurant for you.
+
+Puedo llamar al restaurante por ti.
+
+Something spilled. I'm sorry.
+
+Something spilled. I'm sorry.
+
+Se derramó algo. Lo siento.
+
+Can you buzz me in?
+
+Can you buzz me in?
+
+¿Puedes abrirme?
+
+Do you have your ID?
+
+Do you have your ID?
+
+¿Tienes tu identificación?
+
+I need to verify your age.
+
+I need to verify your age.
+
+Necesito verificar tu edad.
+
+I'll wait here for security.
+
+I'll wait here for security.
+
+Esperaré aquí a seguridad.

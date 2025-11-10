@@ -1,0 +1,66 @@
+1. Is this number fifteen?
+   ¿Es este el número quince?              │
+
+2. My number is five, five, five...
+   Mi número es cinco, cinco, cinco...     │
+
+3. I'm looking for forty-five Oak Street.
+   Estoy buscando el cuarenta y cinco de   │
+
+4. Is this twelve fifty-six Main Street?
+   ¿Es este el doce cincuenta y seis de    │
+
+5. Is this the right address?
+   ¿Es esta la dirección correcta?         │
+
+6. So, it's twenty-three Park Avenue?
+   Entonces, ¿es el veintitrés de la       │
+
+7. What's the full address?
+   ¿Cuál es la dirección completa?         │
+
+8. I'm here at the address.
+   Estoy aquí en la dirección.             │
+
+9. I'm going to Oak Street.
+   Voy a la calle Oak.                     │
+
+10. Where is Park Avenue?
+   ¿Dónde está la avenida Park?            │
+
+11. It's on Main Street and First Avenue.
+   Está en la calle Main y la avenida      │
+
+12. What street is this?
+   ¿Qué calle es esta?                     │
+
+13. Apartment two-oh-five?
+   ¿Apartamento dos cero cinco?            │
+
+14. What floor are you on?
+   ¿En qué piso estás?                     │
+
+15. I'm in the lobby.
+   Estoy en el lobby/vestíbulo.            │
+
+16. What's the building code?
+   ¿Cuál es el código del edificio?        │
+
+17. I'm at your door.
+   Estoy en tu puerta.                     │
+
+18. Is it close to here?
+   ¿Está cerca de aquí?                    │
+
+19. Where is it located?
+   ¿Dónde está ubicado/localizado?         │
+
+20. It's next to the gas station.
+   Está al lado de la gasolinera.          │
+
+21. Is there a landmark nearby?
+   ¿Hay algún punto de referencia cerca?   │
+
+22. I think I'm at the wrong address.
+   Creo que estoy en la dirección          │
+

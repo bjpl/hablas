@@ -1,0 +1,150 @@
+======================================================================
+COMPLETE AUDIO REGENERATION FROM SOURCE MARKDOWN
+======================================================================
+Started: 2025-11-09 16:55:58
+
+
+[1/7]
+
+======================================================================
+Resource 22: Basic Numbers 1
+Source: generated-resources/50-batch/all/basic_numbers_1.md
+======================================================================
+  1. Extracting phrases from markdown...
+  ✓ Extracted 22 phrases
+  ✓ Saved phrase list: scripts/extracted-phrases/resource-22-phrases.txt
+  2. Creating tutorial script...
+  ✓ Script created: 4465 chars
+  ✓ Saved: scripts/complete-scripts/resource-22-complete.txt
+  3. Generating audio with edge-tts...
+  Generating audio...
+  ✓ Audio generated: 2.18 MB
+  ✓ Copied to public: public/audio/resource-22.mp3
+  ✓ Resource 22 COMPLETE
+
+[2/7]
+
+======================================================================
+Resource 23: Basic Time 1
+Source: generated-resources/50-batch/all/basic_time_1.md
+======================================================================
+  1. Extracting phrases from markdown...
+  ✓ Extracted 23 phrases
+  ✓ Saved phrase list: scripts/extracted-phrases/resource-23-phrases.txt
+  2. Creating tutorial script...
+  ✓ Script created: 4480 chars
+  ✓ Saved: scripts/complete-scripts/resource-23-complete.txt
+  3. Generating audio with edge-tts...
+  Generating audio...
+  ✓ Audio generated: 2.19 MB
+  ✓ Copied to public: public/audio/resource-23.mp3
+  ✓ Resource 23 COMPLETE
+
+[3/7]
+
+======================================================================
+Resource 25: Intermediate Customer Service 1
+Source: generated-resources/50-batch/all/intermediate_customer_service_1.md
+======================================================================
+  1. Extracting phrases from markdown...
+  ✓ Extracted 25 phrases
+  ✓ Saved phrase list: scripts/extracted-phrases/resource-25-phrases.txt
+  2. Creating tutorial script...
+  ✓ Script created: 5464 chars
+  ✓ Saved: scripts/complete-scripts/resource-25-complete.txt
+  3. Generating audio with edge-tts...
+  Generating audio...
+  ✓ Audio generated: 2.72 MB
+  ✓ Copied to public: public/audio/resource-25.mp3
+  ✓ Resource 25 COMPLETE
+
+[4/7]
+
+======================================================================
+Resource 29: Basic Numbers 2
+Source: generated-resources/50-batch/all/basic_numbers_2.md
+======================================================================
+  1. Extracting phrases from markdown...
+  ✓ Extracted 29 phrases
+  ✓ Saved phrase list: scripts/extracted-phrases/resource-29-phrases.txt
+  2. Creating tutorial script...
+  ✓ Script created: 6175 chars
+  ✓ Saved: scripts/complete-scripts/resource-29-complete.txt
+  3. Generating audio with edge-tts...
+  Generating audio...
+  ✓ Audio generated: 3.29 MB
+  ✓ Copied to public: public/audio/resource-29.mp3
+  ✓ Resource 29 COMPLETE
+
+[5/7]
+
+======================================================================
+Resource 30: Safety Protocols 1
+Source: generated-resources/50-batch/all/safety_protocols_1.md
+======================================================================
+  1. Extracting phrases from markdown...
+  ✓ Extracted 20 phrases
+  ✓ Saved phrase list: scripts/extracted-phrases/resource-30-phrases.txt
+  2. Creating tutorial script...
+  ✓ Script created: 9352 chars
+  ✓ Saved: scripts/complete-scripts/resource-30-complete.txt
+  3. Generating audio with edge-tts...
+  Generating audio...
+  ✓ Audio generated: 4.45 MB
+  ✓ Copied to public: public/audio/resource-30.mp3
+  ✓ Resource 30 COMPLETE
+
+[6/7]
+
+======================================================================
+Resource 31: Intermediate Situations 2
+Source: generated-resources/50-batch/repartidor/intermediate_situations_2.md
+======================================================================
+  1. Extracting phrases from markdown...
+  ✓ Extracted 23 phrases
+  ✓ Saved phrase list: scripts/extracted-phrases/resource-31-phrases.txt
+  2. Creating tutorial script...
+  ✓ Script created: 7756 chars
+  ✓ Saved: scripts/complete-scripts/resource-31-complete.txt
+  3. Generating audio with edge-tts...
+  Generating audio...
+  ✓ Audio generated: 3.92 MB
+  ✓ Copied to public: public/audio/resource-31.mp3
+  ✓ Resource 31 COMPLETE
+
+[7/7]
+
+======================================================================
+Resource 33: Intermediate Smalltalk 2
+Source: generated-resources/50-batch/conductor/intermediate_smalltalk_2.md
+======================================================================
+  1. Extracting phrases from markdown...
+  ✓ Extracted 21 phrases
+  ✓ Saved phrase list: scripts/extracted-phrases/resource-33-phrases.txt
+  2. Creating tutorial script...
+  ✓ Script created: 5398 chars
+  ✓ Saved: scripts/complete-scripts/resource-33-complete.txt
+  3. Generating audio with edge-tts...
+  Generating audio...
+  ✓ Audio generated: 2.46 MB
+  ✓ Copied to public: public/audio/resource-33.mp3
+  ✓ Resource 33 COMPLETE
+
+======================================================================
+REGENERATION COMPLETE
+======================================================================
+Completed: 2025-11-09 16:57:22
+Total Time: 1.4 minutes
+Success: 7/7
+Total Phrases: 163
+
+✓ Success: 22, 23, 25, 29, 30, 31, 33
+
+✓ All resources regenerated with COMPLETE phrase sets!
+
+Next steps:
+1. Verify audio files sound complete
+2. Check phrase counts match expectations
+3. Update service worker cache version
+4. Run: npm run build
+5. Deploy to production
