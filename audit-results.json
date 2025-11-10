@@ -1,0 +1,832 @@
+{
+  "timestamp": "2025-11-10T14:58:49.224671",
+  "summary": {
+    "total_resources": 56,
+    "pass": 2,
+    "pass_with_warnings": 49,
+    "needs_fix": 2,
+    "missing_audio": 3,
+    "duplicate_groups": 0
+  },
+  "duplicates": {},
+  "results": {
+    "1": {
+      "resource_id": 1,
+      "timestamp": "2025-11-10T14:58:38.248200",
+      "issues": [
+        "Incomplete coverage: 66.7% (7 phrases missing)",
+        "Found 22 metadata leakage issues"
+      ],
+      "warnings": [
+        "Found 4 potential voice detection issues"
+      ],
+      "status": "NEEDS_FIX",
+      "source_file": "generated-resources/50-batch/repartidor/basic_phrases_1.md",
+      "source_phrases": 21,
+      "extracted_phrases": 14,
+      "phrase_coverage": "14/21 (66.7%)",
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      },
+      "voice_issues": [
+        "Line 53: 'order' might use Spanish voice (contains Spanish substring)",
+        "Line 55: 'order' might use Spanish voice (contains Spanish substring)",
+        "Line 123: 'outside' might use Spanish voice (contains Spanish substring)",
+        "Line 125: 'outside' might use Spanish voice (contains Spanish substring)"
+      ],
+      "metadata_issues": [
+        "Line 1: Contains metadata 'PHRASE \\d+:' that shouldn't be narrated",
+        "Line 11: Contains metadata 'PHRASE \\d+:' that shouldn't be narrated",
+        "Line 21: Contains metadata 'PHRASE \\d+:' that shouldn't be narrated",
+        "Line 31: Contains metadata 'PHRASE \\d+:' that shouldn't be narrated",
+        "Line 41: Contains metadata 'PHRASE \\d+:' that shouldn't be narrated"
+      ]
+    },
+    "2": {
+      "resource_id": 2,
+      "timestamp": "2025-11-10T14:58:38.355778",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "3": {
+      "resource_id": 3,
+      "timestamp": "2025-11-10T14:58:38.439153",
+      "issues": [
+        "Audio file does not exist"
+      ],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "MISSING_AUDIO",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": false
+      }
+    },
+    "4": {
+      "resource_id": 4,
+      "timestamp": "2025-11-10T14:58:38.441605",
+      "issues": [
+        "Incomplete coverage: 47.8% (12 phrases missing)"
+      ],
+      "warnings": [
+        "Found 7 potential voice detection issues"
+      ],
+      "status": "NEEDS_FIX",
+      "source_file": "generated-resources/50-batch/repartidor/basic_phrases_2.md",
+      "source_phrases": 23,
+      "extracted_phrases": 11,
+      "phrase_coverage": "11/23 (47.8%)",
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      },
+      "voice_issues": [
+        "Line 65: 'edificio' needs Spanish voice (delivery-specific Spanish)",
+        "Line 95: 'dejaré' needs Spanish voice (delivery-specific Spanish)",
+        "Line 97: 'outside' might use Spanish voice (contains Spanish substring)",
+        "Line 99: 'outside' might use Spanish voice (contains Spanish substring)",
+        "Line 131: 'solo' needs Spanish voice (delivery-specific Spanish)"
+      ]
+    },
+    "5": {
+      "resource_id": 5,
+      "timestamp": "2025-11-10T14:58:38.543185",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "6": {
+      "resource_id": 6,
+      "timestamp": "2025-11-10T14:58:38.609655",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "7": {
+      "resource_id": 7,
+      "timestamp": "2025-11-10T14:58:38.719945",
+      "issues": [],
+      "warnings": [],
+      "status": "PASS",
+      "source_file": "generated-resources/50-batch/conductor/basic_phrases_1.md",
+      "source_phrases": 0,
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "8": {
+      "resource_id": 8,
+      "timestamp": "2025-11-10T14:58:38.854879",
+      "issues": [
+        "Audio file does not exist"
+      ],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "MISSING_AUDIO",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": false
+      }
+    },
+    "9": {
+      "resource_id": 9,
+      "timestamp": "2025-11-10T14:58:38.857745",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "10": {
+      "resource_id": 10,
+      "timestamp": "2025-11-10T14:58:38.978215",
+      "issues": [],
+      "warnings": [],
+      "status": "PASS",
+      "source_file": "generated-resources/50-batch/conductor/basic_greetings_1.md",
+      "source_phrases": 22,
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "11": {
+      "resource_id": 11,
+      "timestamp": "2025-11-10T14:58:39.135382",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "12": {
+      "resource_id": 12,
+      "timestamp": "2025-11-10T14:58:39.292185",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "13": {
+      "resource_id": 13,
+      "timestamp": "2025-11-10T14:58:39.466739",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "14": {
+      "resource_id": 14,
+      "timestamp": "2025-11-10T14:58:39.625960",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "15": {
+      "resource_id": 15,
+      "timestamp": "2025-11-10T14:58:39.766979",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "16": {
+      "resource_id": 16,
+      "timestamp": "2025-11-10T14:58:39.899400",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "17": {
+      "resource_id": 17,
+      "timestamp": "2025-11-10T14:58:40.048904",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "18": {
+      "resource_id": 18,
+      "timestamp": "2025-11-10T14:58:40.184383",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "19": {
+      "resource_id": 19,
+      "timestamp": "2025-11-10T14:58:40.311869",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "20": {
+      "resource_id": 20,
+      "timestamp": "2025-11-10T14:58:40.424489",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "21": {
+      "resource_id": 21,
+      "timestamp": "2025-11-10T14:58:40.518554",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "22": {
+      "resource_id": 22,
+      "timestamp": "2025-11-10T14:58:40.627136",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "23": {
+      "resource_id": 23,
+      "timestamp": "2025-11-10T14:58:40.720222",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "24": {
+      "resource_id": 24,
+      "timestamp": "2025-11-10T14:58:40.824187",
+      "issues": [
+        "Audio file does not exist"
+      ],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "MISSING_AUDIO",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": false
+      }
+    },
+    "25": {
+      "resource_id": 25,
+      "timestamp": "2025-11-10T14:58:40.827052",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "26": {
+      "resource_id": 26,
+      "timestamp": "2025-11-10T14:58:40.912234",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "27": {
+      "resource_id": 27,
+      "timestamp": "2025-11-10T14:58:41.005871",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "28": {
+      "resource_id": 28,
+      "timestamp": "2025-11-10T14:58:41.088591",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "29": {
+      "resource_id": 29,
+      "timestamp": "2025-11-10T14:58:41.183691",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "30": {
+      "resource_id": 30,
+      "timestamp": "2025-11-10T14:58:41.284464",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "31": {
+      "resource_id": 31,
+      "timestamp": "2025-11-10T14:58:41.412690",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "32": {
+      "resource_id": 32,
+      "timestamp": "2025-11-10T14:58:41.560748",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "33": {
+      "resource_id": 33,
+      "timestamp": "2025-11-10T14:58:41.686304",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "34": {
+      "resource_id": 34,
+      "timestamp": "2025-11-10T14:58:41.791205",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "35": {
+      "resource_id": 35,
+      "timestamp": "2025-11-10T14:58:41.911521",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "36": {
+      "resource_id": 36,
+      "timestamp": "2025-11-10T14:58:42.024372",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "37": {
+      "resource_id": 37,
+      "timestamp": "2025-11-10T14:58:42.158918",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "38": {
+      "resource_id": 38,
+      "timestamp": "2025-11-10T14:58:42.282109",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "39": {
+      "resource_id": 39,
+      "timestamp": "2025-11-10T14:58:42.409329",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "40": {
+      "resource_id": 40,
+      "timestamp": "2025-11-10T14:58:42.554119",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "41": {
+      "resource_id": 41,
+      "timestamp": "2025-11-10T14:58:42.723116",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "42": {
+      "resource_id": 42,
+      "timestamp": "2025-11-10T14:58:42.882722",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "43": {
+      "resource_id": 43,
+      "timestamp": "2025-11-10T14:58:43.018668",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "44": {
+      "resource_id": 44,
+      "timestamp": "2025-11-10T14:58:43.150675",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "45": {
+      "resource_id": 45,
+      "timestamp": "2025-11-10T14:58:43.268710",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "46": {
+      "resource_id": 46,
+      "timestamp": "2025-11-10T14:58:43.416736",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "47": {
+      "resource_id": 47,
+      "timestamp": "2025-11-10T14:58:43.563537",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "48": {
+      "resource_id": 48,
+      "timestamp": "2025-11-10T14:58:43.707251",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "49": {
+      "resource_id": 49,
+      "timestamp": "2025-11-10T14:58:43.865998",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "50": {
+      "resource_id": 50,
+      "timestamp": "2025-11-10T14:58:44.003779",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "51": {
+      "resource_id": 51,
+      "timestamp": "2025-11-10T14:58:44.108363",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "52": {
+      "resource_id": 52,
+      "timestamp": "2025-11-10T14:58:44.213448",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "53": {
+      "resource_id": 53,
+      "timestamp": "2025-11-10T14:58:44.346418",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "54": {
+      "resource_id": 54,
+      "timestamp": "2025-11-10T14:58:44.460923",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "55": {
+      "resource_id": 55,
+      "timestamp": "2025-11-10T14:58:44.586896",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    },
+    "56": {
+      "resource_id": 56,
+      "timestamp": "2025-11-10T14:58:44.723055",
+      "issues": [],
+      "warnings": [
+        "No source file mapping"
+      ],
+      "status": "PASS_WITH_WARNINGS",
+      "extracted_phrases": 0,
+      "audio": {
+        "exists": true,
+        "error": "[Errno 2] No such file or directory: 'ffprobe'"
+      }
+    }
+  }
+}
