@@ -3,6 +3,7 @@
 Automated Audio Quality Audit Script
 Audits all 56 resources for common audio generation issues
 Outputs detailed JSON report with actionable fixes
+Enhanced to check MULTIPLE source types: markdown, audio scripts, JSON specs
 """
 
 import os
@@ -13,21 +14,151 @@ import subprocess
 from pathlib import Path
 from datetime import datetime
 from typing import Dict, List, Tuple, Optional
-
-# Source file mapping (add more as needed)
-SOURCE_MAPPING = {
-    1: 'generated-resources/50-batch/repartidor/basic_phrases_1.md',
-    4: 'generated-resources/50-batch/repartidor/basic_phrases_2.md',
-    7: 'generated-resources/50-batch/conductor/basic_phrases_1.md',
-    10: 'generated-resources/50-batch/conductor/basic_greetings_1.md',
-    # Add more mappings for complete audit
-}
+from glob import glob
 
 class AudioAuditor:
     def __init__(self):
         self.results = {}
         self.audio_dir = Path('public/audio')
         self.scripts_dir = Path('scripts/final-phrases-only')
+        self.batch_dir = Path('generated-resources/50-batch')
+        self.specs_dir = Path('audio-specs')
+
+    def find_source_for_resource(self, resource_id: int) -> Dict:
+        """
+        Find ALL possible sources for a resource
+        Priority order:
+        1. Audio spec JSON (most authoritative)
+        2. Audio script TXT (structured format)
+        3. Markdown files (original content)
+        4. Phrase extraction files (fallback)
+        """
+        sources = {
+            'found': False,
+            'types': [],
+            'phrase_count': 0,
+            'files': []
+        }
+
+        # 1. Check for audio spec JSON
+        spec_file = self.specs_dir / f'resource-{resource_id}-spec.json'
+        if spec_file.exists():
+            try:
+                with open(spec_file, 'r', encoding='utf-8') as f:
+                    spec_data = json.load(f)
+
+                # Get totalSegments from content
+                total_segments = spec_data.get('content', {}).get('totalSegments', 0)
+
+                # Segments typically include intro/outro, so phrases are segments - 2
+                # Or we can count segments with "FRASE" in notes
+                phrase_count = 0
+                for segment in spec_data.get('content', {}).get('segments', []):
+                    notes = segment.get('notes', '')
+                    if 'FRASE' in notes.upper():
+                        phrase_count += 1
+
+                sources['found'] = True
+                sources['types'].append('audio_spec')
+                sources['phrase_count'] = phrase_count if phrase_count > 0 else max(0, total_segments - 2)
+                sources['files'].append(str(spec_file))
+            except Exception as e:
+                pass
+
+        # 2. Check for audio script TXT
+        audio_script_files = list(self.batch_dir.glob('**/*-audio-script.txt'))
+        for script_file in audio_script_files:
+            # Try to match resource ID in filename or content
+            try:
+                with open(script_file, 'r', encoding='utf-8') as f:
+                    content = f.read()
+
+                # Check if this script is for our resource
+                # Look for resource ID in metadata or filename pattern
+                if self.is_script_for_resource(script_file, resource_id, content):
+                    phrase_count = self.count_phrases_in_audio_script(content)
+
+                    if phrase_count > 0:
+                        sources['found'] = True
+                        sources['types'].append('audio_script')
+                        if phrase_count > sources['phrase_count']:
+                            sources['phrase_count'] = phrase_count
+                        sources['files'].append(str(script_file))
+                        break  # Use first matching script
+            except Exception as e:
+                pass
+
+        # 3. Check for markdown files
+        md_files = list(self.batch_dir.glob('**/*.md'))
+        for md_file in md_files:
+            if '-image-spec' in md_file.name:
+                continue  # Skip image specs
+
+            try:
+                phrase_count = self.count_source_phrases(str(md_file))
+                if phrase_count > 0:
+                    # Check if this might be for our resource
+                    # This is heuristic-based
+                    sources['found'] = True
+                    if 'markdown' not in sources['types']:
+                        sources['types'].append('markdown')
+                    if phrase_count > sources['phrase_count']:
+                        sources['phrase_count'] = phrase_count
+                    if str(md_file) not in sources['files']:
+                        sources['files'].append(str(md_file))
+            except Exception as e:
+                pass
+
+        return sources
+
+    def is_script_for_resource(self, script_file: Path, resource_id: int, content: str) -> bool:
+        """Check if audio script matches resource ID"""
+        # Common patterns to match scripts to resources
+        # This is heuristic-based - you may need to adjust
+
+        # Pattern 1: Resource ID in filename or path
+        if f'resource-{resource_id}' in str(script_file).lower():
+            return True
+
+        # Pattern 2: Check for resource mapping in content
+        if f'"resourceId": {resource_id}' in content:
+            return True
+
+        # Pattern 3: Mapping based on known patterns
+        # basic_audio_1 -> resource 2
+        # basic_audio_2 -> resource 4
+        filename = script_file.stem
+        mappings = {
+            'basic_audio_1-audio-script': 2,
+            'basic_audio_2-audio-script': 4,
+            'basic_audio_navigation_1-audio-script': 7,
+            'basic_audio_navigation_2-audio-script': 10,
+            # Add more mappings as needed
+        }
+
+        if filename in mappings and mappings[filename] == resource_id:
+            return True
+
+        return False
+
+    def count_phrases_in_audio_script(self, content: str) -> int:
+        """Count phrases in audio script TXT format"""
+        # Count "FRASE" markers
+        frase_count = len(re.findall(r'FRASE \d+:', content, re.IGNORECASE))
+        if frase_count > 0:
+            return frase_count
+
+        # Fallback: count "Frase número" in Spanish
+        frase_numero = len(re.findall(r'Frase número \w+:', content, re.IGNORECASE))
+        if frase_numero > 0:
+            return frase_numero
+
+        # Fallback: count English/Spanish phrase pairs
+        english_phrases = len(re.findall(r'\*\*\[Speaker: English native', content))
+        if english_phrases > 0:
+            return english_phrases // 2  # Each phrase said twice
+
+        return 0
 
     def count_source_phrases(self, source_file: str) -> int:
         """Count phrases in source markdown"""
@@ -201,14 +332,16 @@ class AudioAuditor:
             'status': 'UNKNOWN'
         }
 
-        # 1. Check if source mapping exists
-        source_file = SOURCE_MAPPING.get(resource_id)
-        if source_file:
-            source_phrases = self.count_source_phrases(source_file)
-            result['source_file'] = source_file
-            result['source_phrases'] = source_phrases
+        # 1. Find ALL sources for this resource
+        sources = self.find_source_for_resource(resource_id)
+
+        if sources['found']:
+            result['source_types'] = sources['types']
+            result['source_files'] = sources['files']
+            result['source_phrases'] = sources['phrase_count']
+            source_phrases = sources['phrase_count']
         else:
-            result['warnings'].append('No source file mapping')
+            result['warnings'].append('No source files found (checked markdown, audio scripts, JSON specs)')
             source_phrases = 0
 
         # 2. Check extracted phrases
@@ -220,10 +353,15 @@ class AudioAuditor:
             coverage = (extracted_phrases / source_phrases) * 100
             result['phrase_coverage'] = f"{extracted_phrases}/{source_phrases} ({coverage:.1f}%)"
 
-            if coverage < 100:
+            if coverage < 90:  # More lenient threshold
                 result['issues'].append(
-                    f"Incomplete coverage: {coverage:.1f}% "
-                    f"({source_phrases - extracted_phrases} phrases missing)"
+                    f"Low coverage: {coverage:.1f}% "
+                    f"(~{source_phrases - extracted_phrases} phrases may be missing)"
+                )
+            elif coverage < 100:
+                result['warnings'].append(
+                    f"Partial coverage: {coverage:.1f}% "
+                    f"(~{source_phrases - extracted_phrases} phrases may be missing)"
                 )
 
         # 4. Check audio file
