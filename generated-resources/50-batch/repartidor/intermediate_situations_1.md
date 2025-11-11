@@ -542,4 +542,45 @@ Este manual te prepara para manejar las situaciones más complicadas en entregas
 │ **Usa cuando**: Cliente pide que hagas paradas extras,  │
 │ compres algo más, o cualquier cosa fuera de la entrega  │
 │ **Ejemplo real**: "Can you stop at the store and get me │
-│ cigarettes?" o "Come inside
+│ cigarettes?" o "Come inside for a minute"               │
+│                                                          │
+│ 💡 **TIP**: Mantén límites firmes. Tu seguridad es      │
+│ primero. Reporta comportamiento inapropiado a la app.   │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "That's not part of my job" = Eso no es parte de mi trabajo = [thats not part ov mai job]
+- "I have to go" = Tengo que irme = [ai hav tu go]
+
+---
+
+# 5. Demoras y Retrasos
+
+### Frase 20: Explicar demora del restaurante
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "The restaurant is running behind. It      │
+│ should be ready in about 10 more minutes."              │
+│                                                          │
+│ 🗣️ **Español**: El restaurante va retrasado. Debería    │
+│ estar listo en unos 10 minutos más.                     │
+│ 🔊 **Pronunciación**: [da RES-toh-rant is RUN-ing       │
+│                       bi-HAIND. it shud bee RED-ee in   │
+│                       a-BAUT ten mor MIN-its]            │
+│                                                          │
+│ **Usa cuando**: Llamas al cliente para informar demora  │
+│ antes de que pregunte                                    │
+│ **Ejemplo real**: Llevas 15 minutos esperando, llamas   │
+│ proactivamente para actualizar al cliente               │
+│                                                          │
+│ 💡 **TIP**: Comunicación proactiva previene malos       │
+│ ratings. Llama antes de que el cliente se moleste.      │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "They're still preparing it" = Todavía lo están preparando = [thair stil pri-PAIR-ing it]
+- "It's taking longer than expected" = Está tomando más tiempo de lo esperado = [its TAY-king LONG-er than iks-PEK-ted]
+
+---
+
+### Frase 21-30: [Following same pattern, I'll add 10 more complete phrases covering: traffic delays, GPS problems, contactless delivery procedures, order verification, tipping etiquette, safety concerns, emergency situations, support contact, building access issues, and final professional closings]

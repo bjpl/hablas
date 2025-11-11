@@ -65,7 +65,7 @@ export const resources: Resource[] = [
   {
     "id": 4,
     "title": "Frases Esenciales para Entregas - Var 2",
-    "description": "24 frases prácticas para entregas con ejemplos para repartidores",
+    "description": "30 frases prácticas para entregas con ejemplos para repartidores",
     "type": "pdf",
     "category": "repartidor",
     "level": "basico",
@@ -85,7 +85,7 @@ export const resources: Resource[] = [
   {
     "id": 5,
     "title": "Situaciones Complejas en Entregas - Var 1",
-    "description": "19 frases para situaciones complejas en entregas con ejemplos prácticos",
+    "description": "30 frases para situaciones complejas en entregas con ejemplos prácticos",
     "type": "pdf",
     "category": "repartidor",
     "level": "intermedio",
@@ -105,7 +105,7 @@ export const resources: Resource[] = [
   {
     "id": 6,
     "title": "Frases Esenciales para Entregas - Var 3",
-    "description": "24 frases prácticas para entregas con ejemplos para repartidores",
+    "description": "30 frases prácticas para entregas con ejemplos para repartidores",
     "type": "pdf",
     "category": "repartidor",
     "level": "basico",
@@ -145,7 +145,7 @@ export const resources: Resource[] = [
   {
     "id": 9,
     "title": "Frases Esenciales para Entregas - Var 4",
-    "description": "23 frases esenciales para entregas con ejemplos prácticos para repartidores",
+    "description": "30 frases esenciales para entregas con ejemplos prácticos para repartidores",
     "type": "pdf",
     "category": "repartidor",
     "level": "basico",

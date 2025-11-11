@@ -572,4 +572,161 @@ Este manual contiene las 30 frases más importantes que necesitas como repartido
 
 ---
 
-### Frase 24:
+### Frase 24: Entrega retrasada
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Sorry for the delay."                     │
+│                                                          │
+│ 🗣️ **Español**: Disculpa el retraso.                    │
+│ 🔊 **Pronunciación**: [SOR-ee for dha dih-LAY]          │
+│                                                          │
+│ **Usa cuando**: Llegas tarde por tráfico o problema     │
+│ en el restaurante                                        │
+│ **Ejemplo real**: Cliente abre visiblemente molesto,    │
+│ primero te disculpas antes de entregar                  │
+│                                                          │
+│ 💡 **TIP**: Una disculpa sincera puede salvar tu rating.│
+│ No inventes excusas, sé breve y honesto.                │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Traffic was bad" = El tráfico estuvo mal = [TRA-fik waz bad]
+- "The restaurant was slow" = El restaurante fue lento = [dha RES-tau-rant waz sloh]
+
+---
+
+### Frase 25: Problema con la app
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I need to call support."                  │
+│                                                          │
+│ 🗣️ **Español**: Necesito llamar a soporte.              │
+│ 🔊 **Pronunciación**: [ai niid tu kol sa-PORT]          │
+│                                                          │
+│ **Usa cuando**: La app tiene error o no funciona bien   │
+│ **Ejemplo real**: La app se congela y no puedes marcar  │
+│ "entregado", le explicas al cliente la situación        │
+│                                                          │
+│ 💡 **TIP**: Mantén siempre el número de soporte guardado│
+│ en tu teléfono para emergencias.                        │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "The app isn't working" = La app no funciona = [dha ap IZ-ent WER-king]
+- "Give me one moment" = Dame un momento = [giv mii wan MOH-ment]
+
+---
+
+### Frase 26: Cambio de efectivo
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Do you need change?"                      │
+│                                                          │
+│ 🗣️ **Español**: ¿Necesitas cambio?                      │
+│ 🔊 **Pronunciación**: [duu yuu niid cheynj?]            │
+│                                                          │
+│ **Usa cuando**: Cliente paga en efectivo                │
+│ **Ejemplo real**: Cliente te da un billete de $20,      │
+│ preguntas si quiere cambio de vuelta                    │
+│                                                          │
+│ 💡 **TIP**: La mayoría dirá "keep the change" (quédate  │
+│ el cambio) si es propina. Di "Thank you!"               │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I don't have change" = No tengo cambio = [ai dohnt hav cheynj]
+- "Keep the change" = Quédate el cambio = [kiip dha cheynj]
+
+---
+
+# 7. Despedidas y Agradecimientos
+
+### Frase 27: Despedida simple
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Have a great day!"                        │
+│                                                          │
+│ 🗣️ **Español**: ¡Que tengas un gran día!                │
+│ 🔊 **Pronunciación**: [hav a greyt day!]                │
+│                                                          │
+│ **Usa cuando**: Terminas la entrega exitosamente        │
+│ **Ejemplo real**: Entregas la comida, el cliente        │
+│ agradece, y tú respondes con esta frase alegre          │
+│                                                          │
+│ 💡 **TIP**: Di esto siempre, incluso si el cliente fue  │
+│ difícil. El profesionalismo aumenta las propinas.       │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Have a good one!" = ¡Que la pases bien! = [hav a gud wan!]
+- "See you next time!" = ¡Hasta la próxima! = [sii yuu nekst taim!]
+
+---
+
+### Frase 28: Agradecer al cliente
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Thank you so much!"                       │
+│                                                          │
+│ 🗣️ **Español**: ¡Muchas gracias!                        │
+│ 🔊 **Pronunciación**: [THANK yuu soh much!]             │
+│                                                          │
+│ **Usa cuando**: Cliente te da propina o es muy amable   │
+│ **Ejemplo real**: Cliente te da $5 en efectivo, tú      │
+│ agradeces sinceramente antes de irte                    │
+│                                                          │
+│ 💡 **TIP**: Di "so much" en vez de solo "thank you"     │
+│ cuando hay propina. Suena más agradecido.               │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I really appreciate it!" = ¡Lo aprecio mucho! = [ai RII-lee a-PREE-shee-ayt it!]
+- "You're very kind!" = ¡Eres muy amable! = [yor VER-ee kaind!]
+
+---
+
+### Frase 29: Deseo para la comida
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Enjoy your meal!"                         │
+│                                                          │
+│ 🗣️ **Español**: ¡Disfruta tu comida!                    │
+│ 🔊 **Pronunciación**: [en-JOY yor miil!]                │
+│                                                          │
+│ **Usa cuando**: Te despides después de entregar comida  │
+│ **Ejemplo real**: Cliente recibe la pizza caliente, tú  │
+│ dices esto mientras caminas hacia tu carro              │
+│                                                          │
+│ 💡 **TIP**: Frase clásica de servicio al cliente. Muy   │
+│ profesional y siempre apreciada.                        │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Bon appétit!" = ¡Buen provecho! = [bon a-peh-TEE]
+- "Enjoy!" = ¡Disfruta! = [en-JOY!]
+
+---
+
+### Frase 30: Despedida nocturna
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Have a good night!"                       │
+│                                                          │
+│ 🗣️ **Español**: ¡Que tengas buena noche!                │
+│ 🔊 **Pronunciación**: [hav a gud nait!]                 │
+│                                                          │
+│ **Usa cuando**: Entregas después de las 8-9pm           │
+│ **Ejemplo real**: Entrega nocturna, cliente abre en     │
+│ pijama, te despides con esta frase apropiada           │
+│                                                          │
+│ 💡 **TIP**: Usar saludos apropiados a la hora muestra   │
+│ atención al detalle. Los clientes lo notan.            │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Sleep well!" = ¡Duerme bien! = [sliip wel!]
+- "Good night!" = ¡Buenas noches! = [gud nait!]
+
+---
+
+# 8. Tarjeta de Referencia Rápida

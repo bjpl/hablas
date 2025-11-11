@@ -560,4 +560,306 @@ Este manual contiene las 30 frases más importantes que necesitas para trabajar 
 └─────────────────────────────────────────────────────────┘
 
 **Variaciones**:
-- "Your order is at the door" = Tu pedido está en la puerta = [yor
+- "Your order is at the door" = Tu pedido está en la puerta = [yor OR-der is at the dor]
+- "It's right here" = Está justo aquí = [its rait hir]
+
+---
+
+### Frase 22: Agradecer al entregar
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Thank you very much! Have a nice day!"    │
+│                                                          │
+│ 🗣️ **Español**: ¡Muchas gracias! ¡Que tengas un buen    │
+│ día!                                                     │
+│ 🔊 **Pronunciación**: [thank yoo VER-ee much! hav a     │
+│                       nais dei!]                         │
+│                                                          │
+│ **Usa cuando**: Terminas la entrega y te despides       │
+│ **Ejemplo real**: Cliente toma la comida, tú te         │
+│ despides con esta frase amable mientras te retiras      │
+│                                                          │
+│ 💡 **TIP**: Agradecer al final deja buena impresión y   │
+│ puede resultar en mejores propinas.                      │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 6. Problemas con el Pedido
+
+### Frase 23: Artículo faltante
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm sorry, the restaurant didn't include  │
+│ [item]. You can contact support for a refund."          │
+│                                                          │
+│ 🗣️ **Español**: Lo siento, el restaurante no incluyó    │
+│ [artículo]. Puedes contactar soporte para reembolso.    │
+│ 🔊 **Pronunciación**: [aim SOR-ee, the RES-tau-rant     │
+│                       DID-ent in-KLOOD [AI-tem]. yoo kan│
+│                       KON-takt su-PORT for a REE-fund]  │
+│                                                          │
+│ **Usa cuando**: Cliente se da cuenta que falta algo     │
+│ **Ejemplo real**: Cliente dice "Where are my fries?" y  │
+│ no las ves en la bolsa. Explicas profesionalmente.      │
+│                                                          │
+│ 💡 **TIP**: No es tu culpa lo que empaca el restaurante.│
+│ Mantén la calma y dirige al cliente hacia la solución.  │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "The restaurant made a mistake" = El restaurante cometió un error = [the RES-tau-rant meid a mis-TEIK]
+- "I can't control what they pack" = No puedo controlar lo que empacan = [ai kant kon-TROL wat thei pak]
+
+---
+
+### Frase 24: Pedido derramado
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm sorry, something spilled during       │
+│ delivery. Please contact support."                       │
+│                                                          │
+│ 🗣️ **Español**: Lo siento, algo se derramó durante la   │
+│ entrega. Por favor contacta soporte.                     │
+│ 🔊 **Pronunciación**: [aim SOR-ee, SUM-thing spild      │
+│                       DUR-ing di-LIV-er-ee. plees        │
+│                       KON-takt su-PORT]                  │
+│                                                          │
+│ **Usa cuando**: Hubo un accidente y algo se derramó     │
+│ **Ejemplo real**: Frenazo fuerte, la sopa se movió. Sé  │
+│ honesto cuando entregas y ofrece solución.              │
+│                                                          │
+│ 💡 **TIP**: Honestidad es clave. Nunca escondas un      │
+│ problema. Los clientes aprecian la transparencia.        │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 25: Pedido incorrecto
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "This is what the restaurant gave me. You  │
+│ should contact them or support."                         │
+│                                                          │
+│ 🗣️ **Español**: Esto es lo que me dio el restaurante.   │
+│ Deberías contactarlos a ellos o a soporte.              │
+│ 🔊 **Pronunciación**: [this is wat the RES-tau-rant     │
+│                       geiv mi. yoo shud KON-takt them or │
+│                       su-PORT]                           │
+│                                                          │
+│ **Usa cuando**: Cliente dice que no es lo que ordenó    │
+│ **Ejemplo real**: Cliente esperaba pizza pero llegó     │
+│ pasta. Explicas que solo entregas lo que te dan.        │
+│                                                          │
+│ 💡 **TIP**: Sé firme pero amable. Tu trabajo es         │
+│ entregar, no verificar cada ingrediente.                 │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 26: Cliente enojado
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I understand you're upset. I just deliver │
+│ the food. Please contact customer service."             │
+│                                                          │
+│ 🗣️ **Español**: Entiendo que estás molesto. Solo        │
+│ entrego la comida. Por favor contacta servicio al       │
+│ cliente.                                                 │
+│ 🔊 **Pronunciación**: [ai un-der-STAND yoor up-SET. ai  │
+│                       just di-LIV-er the fuud. plees    │
+│                       KON-takt KUS-toh-mer SER-vis]      │
+│                                                          │
+│ **Usa cuando**: Cliente está enojado por algo que no    │
+│ controlaste                                              │
+│ **Ejemplo real**: Cliente furioso porque la comida      │
+│ tardó mucho. Mantén la calma y establece límites.       │
+│                                                          │
+│ 💡 **TIP**: No discutas. Mantén tono calmado, reconoce  │
+│ sus sentimientos, y redirige a la solución correcta.     │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 7. Situaciones de Seguridad
+
+### Frase 27: Solicitar acceso a edificio
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Can you buzz me in? I have your delivery."│
+│                                                          │
+│ 🗣️ **Español**: ¿Puedes abrirme? Tengo tu entrega.      │
+│ 🔊 **Pronunciación**: [kan yoo buz mi in? ai hav yor    │
+│                       di-LIV-er-ee]                      │
+│                                                          │
+│ **Usa cuando**: Hablas por el interfón del edificio     │
+│ **Ejemplo real**: Presionas el botón del apartamento    │
+│ correcto en el panel de interfón y solicitas acceso     │
+│                                                          │
+│ 💡 **TIP**: Identifícate claramente. Los clientes a     │
+│ veces no reconocen tu voz por el interfón.               │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I need you to let me in" = Necesito que me dejes entrar = [ai need yoo tu let mi in]
+- "Can you open the door?" = ¿Puedes abrir la puerta? = [kan yoo OH-pen the dor?]
+
+---
+
+### Frase 28: Verificar identidad
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Can you confirm your name, please?"       │
+│                                                          │
+│ 🗣️ **Español**: ¿Puedes confirmar tu nombre, por favor? │
+│ 🔊 **Pronunciación**: [kan yoo kon-FIRM yor neim,       │
+│                       plees?]                            │
+│                                                          │
+│ **Usa cuando**: Alguien abre pero no estás 100% seguro  │
+│ que es la persona correcta                               │
+│ **Ejemplo real**: En hotel o edificio grande, varias    │
+│ personas en el pasillo, verificas antes de entregar     │
+│                                                          │
+│ 💡 **TIP**: Mejor verificar dos veces que entregar a la │
+│ persona equivocada y perder el pago.                     │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 29: Situación incómoda
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I need to leave now. Have a good day."    │
+│                                                          │
+│ 🗣️ **Español**: Necesito irme ahora. Que tengas buen    │
+│ día.                                                     │
+│ 🔊 **Pronunciación**: [ai need tu leev nau. hav a gud   │
+│                       dei]                               │
+│                                                          │
+│ **Usa cuando**: Cliente te hace sentir incómodo o pide  │
+│ algo inapropiado                                         │
+│ **Ejemplo real**: Cliente invita a entrar o hace        │
+│ comentario inapropiado. Te vas educadamente pero firme. │
+│                                                          │
+│ 💡 **TIP**: Tu seguridad primero. Si algo se siente mal,│
+│ termina la entrega rápido y reporta si es necesario.     │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 30: Cancelar entrega por seguridad
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I don't feel safe here. I need to cancel  │
+│ this delivery."                                          │
+│                                                          │
+│ 🗣️ **Español**: No me siento seguro aquí. Necesito      │
+│ cancelar esta entrega.                                   │
+│ 🔊 **Pronunciación**: [ai dohnt feel seif hir. ai need  │
+│                       tu KAN-sel this di-LIV-er-ee]      │
+│                                                          │
+│ **Usa cuando**: La situación es peligrosa o amenazante  │
+│ **Ejemplo real**: Llegas a área obviamente peligrosa,   │
+│ contactas soporte y cancelas la entrega                  │
+│                                                          │
+│ 💡 **TIP**: NUNCA pongas en riesgo tu seguridad por una │
+│ entrega. Las apps apoyan cancelaciones por seguridad.   │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 8. Guía de Referencia Rápida
+
+## Frases Esenciales Más Usadas
+
+**Al Llegar:**
+1. "Hello! I have your delivery." = ¡Hola! Tengo tu entrega.
+2. "Are you [name]?" = ¿Eres [nombre]?
+
+**Problemas de Ubicación:**
+3. "I can't find your address." = No puedo encontrar tu dirección.
+4. "Can you come outside?" = ¿Puedes salir afuera?
+5. "What's the gate code?" = ¿Cuál es el código del portón?
+
+**Al Entregar:**
+6. "Here you go!" = ¡Aquí tienes!
+7. "Enjoy your meal!" = ¡Buen provecho!
+8. "Have a great day!" = ¡Que tengas un gran día!
+
+**Emergencias:**
+9. "I'm sorry, something spilled." = Lo siento, algo se derramó.
+10. "Please contact support." = Por favor contacta soporte.
+
+---
+
+## Tips Culturales Importantes
+
+### 🇺🇸 Diferencias con Colombia
+
+1. **Propinas**: En USA son esperadas (15-20%). Sé extra amable.
+2. **Sonreír**: Los estadounidenses sonríen mucho. Hazlo también.
+3. **Contacto Visual**: Muestra que el contacto visual es normal y muestra confianza.
+4. **Personal Space**: Mantén 3 pies (1 metro) de distancia.
+5. **"How are you?"**: Es saludo, no pregunta real. Di "Good, thanks!"
+
+### 🎯 Para Mejores Propinas
+
+1. ✅ Sonríe siempre
+2. ✅ Di "Enjoy your meal!" al entregar
+3. ✅ Llega a tiempo o avisa si hay retraso
+4. ✅ Verifica que la orden esté completa
+5. ✅ Sé profesional incluso con clientes difíciles
+
+---
+
+## Números de Emergencia en USA
+
+- **911** = Policía, Bomberos, Ambulancia (gratis siempre)
+- **311** = Servicios no-emergencia de la ciudad
+- **Soporte de tu app** = En la aplicación
+
+---
+
+## Frases de Números (para direcciones)
+
+- 0 = zero [ZEE-roh]
+- 1 = one [wun]
+- 2 = two [too]
+- 3 = three [three]
+- 4 = four [for]
+- 5 = five [faiv]
+- 6 = six [siks]
+- 7 = seven [SEV-en]
+- 8 = eight [eit]
+- 9 = nine [nain]
+
+**Ejemplo**: 4523 = "four five two three" [for faiv too three]
+
+---
+
+## Palabras de Ubicación
+
+- Front = Enfrente = [frunt]
+- Back = Atrás = [bak]
+- Left = Izquierda = [left]
+- Right = Derecha = [rait]
+- Upstairs = Arriba = [up-STERS]
+- Downstairs = Abajo = [daun-STERS]
+- Lobby = Vestíbulo = [LOB-ee]
+- Entrance = Entrada = [EN-trans]
+- Gate = Portón = [geit]
+- Building = Edificio = [BIL-ding]
+
+---
+
+## ¡Éxito en tu trabajo de repartidor!
+
+Este manual te da las herramientas básicas para comenzar. Practica estas frases en voz alta antes de tu primer día. Con el tiempo, saldrán naturales.
+
+**Recuerda**:
+- La sonrisa es universal
+- La actitud positiva supera al inglés perfecto
+- Pedir ayuda es señal de profesionalismo, no debilidad
+- Tu seguridad siempre va primero
+
+**¡Buena suerte y excelentes propinas!** 🚗💨📦
