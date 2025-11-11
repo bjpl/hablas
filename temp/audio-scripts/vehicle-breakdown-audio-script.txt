@@ -1,0 +1,123 @@
+# Vehicle Breakdown Emergency - Audio Script
+## Avería del Vehículo
+
+**Duration**: 8 minutes | **Level**: Emergency | **Category**: All Workers
+
+---
+
+## CRITICAL INFO
+
+Vehicle problems don't penalize you if reported correctly. How you handle it affects your rating more than the problem itself.
+
+---
+
+## Phrase 1: Report Breakdown
+
+### English:
+"My vehicle has broken down"
+"My vehicle has broken down"
+
+### Spanish:
+Mi vehículo se ha averiado.
+
+Use IMMEDIATELY when discovering serious problem.
+
+---
+
+## Phrase 2: Need to Pull Over
+
+### English:
+"I need to pull over immediately"
+"I need to pull over immediately"
+
+### Spanish:
+Necesito detenerme inmediatamente.
+
+Warn passenger of emergency stop.
+
+---
+
+## Phrase 3: Call Roadside Assistance
+
+### English:
+"I'm calling roadside assistance"
+"I'm calling roadside assistance"
+
+### Spanish:
+Estoy llamando a asistencia en carretera.
+
+Explain your next action to passenger.
+
+---
+
+## Phrase 4: Cannot Continue
+
+### English:
+"I apologize, but I cannot continue this trip"
+"I apologize, but I cannot continue this trip"
+
+### Spanish:
+Disculpe, pero no puedo continuar este viaje.
+
+Professional and empathetic.
+
+---
+
+## Phrase 5: Customer Won't Be Charged
+
+### English:
+"You won't be charged for this trip"
+"You won't be charged for this trip"
+
+### Spanish:
+No se le cobrará por este viaje.
+
+Reassures anxious customer.
+
+---
+
+## Common Problems
+
+Flat tire = Llanta ponchada
+Dead battery = Batería muerta
+Overheating = Sobrecalentamiento
+Out of gas = Sin gasolina
+Won't start = No arranca
+
+---
+
+## Calling Roadside Assistance
+
+### English:
+"I need roadside assistance. I'm a rideshare driver at [location]."
+"I need roadside assistance. I'm a rideshare driver at [location]."
+
+### Spanish:
+Necesito asistencia en carretera. Soy conductor de rideshare en [ubicación].
+
+---
+
+## Help Customer Get Another Ride
+
+### English:
+"The platform will send another driver at no charge to you."
+"The platform will send another driver at no charge to you."
+
+### Spanish:
+La plataforma enviará otro conductor sin cargo para usted.
+
+---
+
+## Emergency Numbers
+
+AAA: 1-800-AAA-HELP (1-800-222-4357)
+Uber Support: 1-800-593-7069
+Lyft: 855-865-9553
+
+---
+
+**Voice Notes**:
+- Professional, problem-solving tone
+- Reassuring to passengers
+- Clear mechanical terminology
+- Emphasize customer service during crisis
