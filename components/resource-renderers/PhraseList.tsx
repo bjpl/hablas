@@ -22,7 +22,7 @@ export default function PhraseList({ phrase }: PhraseListProps) {
             </span>
           )}
         </p>
-        <p className="text-sm text-gray-600 italic">{phrase.pronunciation}</p>
+        <p className="text-base text-gray-600 italic leading-relaxed">{phrase.pronunciation}</p>
       </div>
       <p className="text-base text-gray-800" lang="en">
         {phrase.english}

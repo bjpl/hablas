@@ -1,0 +1,461 @@
+{
+  "timestamp": "2025-11-11T04:27:29.468Z",
+  "totalResources": 25,
+  "issues": {
+    "truncatedContent": 0,
+    "falseAdvertising": 0,
+    "missingAudio": 0,
+    "wrongVoiceAssignment": 0,
+    "structuralIssues": 0
+  },
+  "qualityScore": 100,
+  "improvements": {
+    "before": {
+      "qualityScore": 72,
+      "truncated": 22,
+      "falseAdvertising": 15
+    },
+    "after": {
+      "qualityScore": 100,
+      "truncated": 0,
+      "falseAdvertising": 0
+    }
+  },
+  "spotCheck": [
+    {
+      "id": "app-007",
+      "title": "Multi-App Strategy - Maximizing Gig Work Earnings",
+      "descriptionMatches": [
+        {
+          "english": "Multi-apping",
+          "spanish": "Multi-aplicaciones / Trabajar múltiples apps",
+          "pronunciation": "mool-tee-ah-plee-kah-see-OH-nes",
+          "context": "Running multiple gig apps simultaneously to maximize income"
+        },
+        {
+          "english": "Cherry-picking",
+          "spanish": "Selección selectiva / Escoger los mejores",
+          "pronunciation": "seh-lek-see-ON seh-lek-TEE-vah",
+          "context": "Only accepting high-value orders/rides"
+        },
+        {
+          "english": "Dead miles / Unpaid miles",
+          "spanish": "Millas muertas / Millas no pagadas",
+          "pronunciation": "MEE-yahs MWER-tahs",
+          "context": "Miles driven without earning (between trips, returning from dropoff)"
+        },
+        {
+          "english": "Stacking / Double-dipping",
+          "spanish": "Apilar / Doble ganancia",
+          "pronunciation": "ah-pee-LAR / DOH-bleh gah-NAN-see-ah",
+          "context": "Working on orders from multiple apps at same time"
+        }
+      ],
+      "phraseCount": 0,
+      "hasAudio": false
+    },
+    {
+      "id": "app-006",
+      "title": "Tax Management and Business Expenses for Gig Workers",
+      "descriptionMatches": [
+        {
+          "english": "Independent contractor / Self-employed",
+          "spanish": "Contratista independiente / Trabajador autónomo",
+          "pronunciation": "kon-trah-TEES-tah een-deh-pen-dee-EN-teh / trah-bah-hah-DOR ow-TOH-noh-moh",
+          "context": "Your legal employment status (NOT employee)"
+        },
+        {
+          "english": "Tax deduction / Write-off",
+          "spanish": "Deducción de impuestos / Gasto deducible",
+          "pronunciation": "deh-dook-see-ON deh eem-PWES-tohs / GAS-toh deh-doo-SEE-bleh",
+          "context": "Business expense that reduces taxable income"
+        },
+        {
+          "english": "Quarterly estimated taxes",
+          "spanish": "Impuestos estimados trimestrales",
+          "pronunciation": "eem-PWES-tohs es-tee-MAH-dohs tree-mes-TRAH-les",
+          "context": "Tax payments made four times per year"
+        },
+        {
+          "english": "Form 1099-NEC / 1099-K",
+          "spanish": "Formulario 1099-NEC / 1099-K",
+          "pronunciation": "for-moo-LAH-ree-oh mil noh-VEN-tah ee nweh-veh",
+          "context": "Tax form showing your annual earnings from platforms"
+        },
+        {
+          "english": "Schedule C",
+          "spanish": "Anexo C / Schedule C",
+          "pronunciation": "ah-NEK-soh seh / schedule seh",
+          "context": "Tax form for reporting business profit or loss"
+        },
+        {
+          "english": "Self-employment tax",
+          "spanish": "Impuesto de trabajo autónomo",
+          "pronunciation": "eem-PWES-toh deh trah-BAH-hoh ow-TOH-noh-moh",
+          "context": "Additional 15.3% tax for Social Security and Medicare"
+        },
+        {
+          "english": "Mileage / Standard mileage rate",
+          "spanish": "Kilometraje / Tarifa estándar por milla",
+          "pronunciation": "kee-loh-meh-TRAH-heh / tah-REE-fah es-TAN-dar",
+          "context": "IRS allows deduction of $0.655 per mile (2023 rate)"
+        }
+      ],
+      "phraseCount": 0,
+      "hasAudio": false
+    },
+    {
+      "id": "app-001",
+      "title": "Uber Driver - Essential Scenarios and Vocabulary",
+      "descriptionMatches": {
+        "pickup": {
+          "findingCustomer": {
+            "phrases": [
+              {
+                "english": "Hi, I'm here for [name]. Are you at [landmark]?",
+                "spanish": "Hola, estoy aquí para [nombre]. ¿Está en [punto de referencia]?",
+                "pronunciation": "OH-lah, es-TOY ah-KEE PAH-rah [NOHM-breh]",
+                "context": "When you arrive at pin but don't see customer"
+              },
+              {
+                "english": "I'm in the [color] [vehicle type] at [location]",
+                "spanish": "Estoy en el [color] [tipo de vehículo] en [ubicación]",
+                "pronunciation": "es-TOY en el [koh-LOR] [TEE-poh deh veh-EE-koo-loh]",
+                "context": "Helping customer identify your vehicle"
+              },
+              {
+                "english": "I'll circle around once more",
+                "spanish": "Daré una vuelta más",
+                "pronunciation": "dah-REH OO-nah VWEL-tah mahs",
+                "context": "If pick-up area is no-stopping zone"
+              }
+            ],
+            "tips": [
+              "Text through app if customer hard to find",
+              "Use app's call feature (masks both phone numbers)",
+              "Wait at pin for full wait time (5 minutes)",
+              "Can't charge cancellation fee if you don't wait"
+            ]
+          },
+          "verifyPassenger": {
+            "phrases": [
+              {
+                "english": "Are you [name]?",
+                "spanish": "¿Es usted [nombre]?",
+                "pronunciation": "es oos-TED [NOHM-breh]",
+                "context": "Always verify name before letting them in"
+              },
+              {
+                "english": "Where are we headed today?",
+                "spanish": "¿Hacia dónde vamos hoy?",
+                "pronunciation": "AH-see-ah DOHN-deh VAH-mohs oy",
+                "context": "Secondary verification - they should know destination"
+              }
+            ],
+            "safeTyRule": "ALWAYS verify passenger name before starting trip. Wrong person = safety risk + payment issues"
+          },
+          "lateCustomer": {
+            "waitTime": "Must wait 5 minutes for UberX, 7 minutes for XL/Select before can cancel with fee",
+            "communication": [
+              {
+                "english": "I've been waiting 4 minutes. I'll need to cancel in 1 minute if you're not here.",
+                "spanish": "He estado esperando 4 minutos. Tendré que cancelar en 1 minuto si no está aquí.",
+                "pronunciation": "eh es-TAH-doh es-peh-RAN-doh KWAH-troh mee-NOO-tohs",
+                "context": "Warning message via app at 4-minute mark"
+              }
+            ],
+            "cancellationFee": "Customer charged cancellation fee if you wait full time. You receive portion of fee"
+          }
+        },
+        "duringTrip": {
+          "routeQuestions": {
+            "phrases": [
+              {
+                "english": "I'm following the app's navigation. Would you prefer a different route?",
+                "spanish": "Estoy siguiendo la navegación de la aplicación. ¿Preferiría una ruta diferente?",
+                "pronunciation": "es-TOY see-gee-EN-doh lah nah-veh-gah-see-ON",
+                "context": "When passenger questions your route"
+              },
+              {
+                "english": "The app is routing us this way to avoid traffic",
+                "spanish": "La aplicación nos está dirigiendo por aquí para evitar tráfico",
+                "pronunciation": "lah ah-plee-kah-see-ON nohs es-TAH dee-ree-hee-EN-doh",
+                "context": "Explaining seemingly longer route"
+              }
+            ],
+            "protection": "App navigation protects you in fare disputes. Always mention you're following app"
+          },
+          "stops": {
+            "phrases": [
+              {
+                "english": "You can add stops in the app. Each stop has a 3-minute wait time included.",
+                "spanish": "Puede agregar paradas en la aplicación. Cada parada incluye 3 minutos de espera.",
+                "pronunciation": "PWEH-deh ah-greh-GAR pah-RAH-dahs en lah ah-plee-kah-see-ON",
+                "context": "When passenger asks about stops"
+              },
+              {
+                "english": "We've been stopped for 3 minutes. The app charges a per-minute wait fee after that.",
+                "spanish": "Hemos estado detenidos por 3 minutos. La aplicación cobra una tarifa por minuto de espera después de eso.",
+                "pronunciation": "EH-mohs es-TAH-doh deh-teh-NEE-dohs",
+                "context": "Explaining wait time charges"
+              }
+            ],
+            "rules": [
+              "3 minutes free wait time per stop",
+              "After 3 minutes, per-minute waiting fee applies",
+              "Can end trip if excessive waiting (after communicating)",
+              "Stops must be added in app - not verbal agreements"
+            ]
+          },
+          "weatherOrTraffic": {
+            "phrases": [
+              {
+                "english": "There's heavy traffic ahead. The app is recalculating the best route.",
+                "spanish": "Hay tráfico pesado adelante. La aplicación está recalculando la mejor ruta.",
+                "pronunciation": "eye TRAH-fee-koh peh-SAH-doh ah-deh-LAN-teh",
+                "context": "Explaining delay"
+              },
+              {
+                "english": "I need to slow down due to weather conditions for everyone's safety.",
+                "spanish": "Necesito reducir la velocidad debido a las condiciones climáticas por la seguridad de todos.",
+                "pronunciation": "neh-seh-SEE-toh reh-doo-SEER lah veh-loh-see-DAD",
+                "context": "Explaining slower driving"
+              }
+            ]
+          }
+        },
+        "endOfTrip": {
+          "thankYou": {
+            "phrases": [
+              {
+                "english": "Thank you for riding with Uber. Have a great day!",
+                "spanish": "Gracias por viajar con Uber. ¡Que tenga un excelente día!",
+                "pronunciation": "GRAH-see-ahs por vee-ah-HAR kon oo-ber",
+                "context": "Professional trip conclusion"
+              },
+              {
+                "english": "Please be careful exiting on that side",
+                "spanish": "Por favor tenga cuidado al salir por ese lado",
+                "pronunciation": "por fah-VOR TEN-gah kwee-DAH-doh",
+                "context": "Safety reminder for traffic side exit"
+              }
+            ]
+          },
+          "ratingRequest": {
+            "phrases": [
+              {
+                "english": "If you enjoyed the ride, I'd appreciate a 5-star rating",
+                "spanish": "Si disfrutó el viaje, agradecería una calificación de 5 estrellas",
+                "pronunciation": "see dees-froo-TOH el vee-AH-heh",
+                "context": "Polite request after excellent service"
+              }
+            ],
+            "timing": "Only mention if service was genuinely good. Let quality speak for itself otherwise"
+          }
+        }
+      },
+      "phraseCount": 0,
+      "hasAudio": false
+    },
+    {
+      "id": "adv-007",
+      "title": "Professional Complaint Handling",
+      "descriptionMatches": true,
+      "phraseCount": 8,
+      "hasAudio": false
+    },
+    {
+      "id": "adv-008",
+      "title": "Cross-Cultural Professional Communication",
+      "descriptionMatches": true,
+      "phraseCount": 6,
+      "hasAudio": false
+    },
+    {
+      "id": "adv-002",
+      "title": "Customer Service Excellence",
+      "descriptionMatches": true,
+      "phraseCount": 8,
+      "hasAudio": false
+    },
+    {
+      "id": "adv-001",
+      "title": "Professional Communication Essentials",
+      "descriptionMatches": true,
+      "phraseCount": 7,
+      "hasAudio": false
+    },
+    {
+      "id": "emerg-006",
+      "title": "Vehicle Accident Procedures",
+      "descriptionMatches": [
+        {
+          "english": "Accident / Collision",
+          "spanish": "Accidente / Colisión",
+          "pronunciation": "ak-see-DEN-teh / koh-lee-see-ON",
+          "context": "Vehicle crash"
+        },
+        {
+          "english": "Injured",
+          "spanish": "Herido / Lesionado",
+          "pronunciation": "eh-REE-doh / leh-see-oh-NAH-doh",
+          "context": "Person hurt in accident"
+        },
+        {
+          "english": "Police report",
+          "spanish": "Reporte policial / Informe policial",
+          "pronunciation": "reh-POR-teh poh-lee-see-AL / een-FOR-meh poh-lee-see-AL",
+          "context": "Official accident documentation"
+        },
+        {
+          "english": "Insurance",
+          "spanish": "Seguro",
+          "pronunciation": "seh-GOO-roh",
+          "context": "Coverage for damages"
+        },
+        {
+          "english": "Witness",
+          "spanish": "Testigo",
+          "pronunciation": "tes-TEE-goh",
+          "context": "Person who saw accident"
+        },
+        {
+          "english": "Damage",
+          "spanish": "Daño",
+          "pronunciation": "DAH-nyoh",
+          "context": "Physical harm to vehicle"
+        },
+        {
+          "english": "License and registration",
+          "spanish": "Licencia y registro",
+          "pronunciation": "lee-SEN-see-ah ee reh-HEES-troh",
+          "context": "Required vehicle documents"
+        }
+      ],
+      "phraseCount": 0,
+      "hasAudio": false
+    },
+    {
+      "id": "emerg-008",
+      "title": "Lost Items and Property Disputes",
+      "descriptionMatches": [
+        {
+          "english": "Lost item / Lost property",
+          "spanish": "Artículo perdido / Propiedad perdida",
+          "pronunciation": "ar-TEE-koo-loh per-DEE-doh / proh-pee-eh-DAD per-DEE-dah",
+          "context": "Item left behind"
+        },
+        {
+          "english": "Found / Located",
+          "spanish": "Encontrado / Ubicado",
+          "pronunciation": "en-kon-TRAH-doh / oo-bee-KAH-doh",
+          "context": "Item has been recovered"
+        },
+        {
+          "english": "Return / Give back",
+          "spanish": "Devolver / Regresar",
+          "pronunciation": "deh-vol-VER / reh-greh-SAR",
+          "context": "Give item back to owner"
+        },
+        {
+          "english": "Valuable",
+          "spanish": "Valioso",
+          "pronunciation": "vah-lee-OH-soh",
+          "context": "High-value item"
+        },
+        {
+          "english": "Identification",
+          "spanish": "Identificación",
+          "pronunciation": "ee-den-tee-fee-kah-see-ON",
+          "context": "ID document"
+        },
+        {
+          "english": "Theft / Stolen",
+          "spanish": "Robo / Robado",
+          "pronunciation": "ROH-boh / roh-BAH-doh",
+          "context": "Item taken illegally"
+        }
+      ],
+      "phraseCount": 0,
+      "hasAudio": false
+    },
+    {
+      "id": "emerg-001",
+      "title": "Medical Emergencies - Critical Communication",
+      "descriptionMatches": [
+        {
+          "english": "Emergency",
+          "spanish": "Emergencia",
+          "pronunciation": "eh-mer-HEN-see-ah",
+          "context": "Urgent medical situation"
+        },
+        {
+          "english": "Ambulance",
+          "spanish": "Ambulancia",
+          "pronunciation": "am-boo-LAN-see-ah",
+          "context": "Emergency medical vehicle"
+        },
+        {
+          "english": "Unconscious",
+          "spanish": "Inconsciente",
+          "pronunciation": "een-kon-see-EN-teh",
+          "context": "Not awake or responsive"
+        },
+        {
+          "english": "Chest pain",
+          "spanish": "Dolor de pecho",
+          "pronunciation": "doh-LOR deh PEH-choh",
+          "context": "Possible heart attack symptom"
+        },
+        {
+          "english": "Breathing difficulty",
+          "spanish": "Dificultad para respirar",
+          "pronunciation": "dee-fee-kool-TAD PAH-rah res-pee-RAR",
+          "context": "Respiratory distress"
+        },
+        {
+          "english": "Allergic reaction",
+          "spanish": "Reacción alérgica",
+          "pronunciation": "reh-ak-see-ON ah-LER-hee-kah",
+          "context": "Severe allergy symptoms"
+        },
+        {
+          "english": "Bleeding",
+          "spanish": "Sangrado / Hemorragia",
+          "pronunciation": "san-GRAH-doh / eh-moh-RAH-hee-ah",
+          "context": "Blood loss"
+        },
+        {
+          "english": "Seizure",
+          "spanish": "Convulsión",
+          "pronunciation": "kon-vool-see-ON",
+          "context": "Uncontrolled body movements"
+        }
+      ],
+      "phraseCount": 0,
+      "hasAudio": false
+    }
+  ],
+  "criticalVoiceTests": [
+    {
+      "phrase": "Solo recojo y entrego",
+      "expectedVoice": "spanish",
+      "language": "spanish"
+    },
+    {
+      "phrase": "Good morning! I have a delivery",
+      "expectedVoice": "english",
+      "language": "english"
+    },
+    {
+      "phrase": "I'm outside, can you come out?",
+      "expectedVoice": "english",
+      "language": "english"
+    },
+    {
+      "phrase": "¿Dónde está la dirección?",
+      "expectedVoice": "spanish",
+      "language": "spanish"
+    }
+  ]
+}

@@ -470,10 +470,25 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                       ),
                       table: ({ children }) => (
                         <div className="overflow-x-auto mb-4">
-                          <table className="min-w-full divide-y divide-gray-200">
+                          <table className="min-w-full border-collapse border border-gray-300">
                             {children}
                           </table>
                         </div>
+                      ),
+                      thead: ({ children }) => (
+                        <thead className="bg-gray-50">
+                          {children}
+                        </thead>
+                      ),
+                      th: ({ children }) => (
+                        <th className="border border-gray-300 px-4 py-2 text-left font-semibold">
+                          {children}
+                        </th>
+                      ),
+                      td: ({ children }) => (
+                        <td className="border border-gray-300 px-4 py-2">
+                          {children}
+                        </td>
                       ),
                     }}
                   >

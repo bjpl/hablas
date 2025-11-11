@@ -25,7 +25,7 @@ export const resources: Resource[] = [
   {
     "id": 1,
     "title": "Frases Esenciales para Entregas - Var 1",
-    "description": "Guía completa con frases prácticas y ejemplos para repartidores",
+    "description": "21 frases esenciales para entregas con ejemplos prácticos para repartidores",
     "type": "pdf",
     "category": "repartidor",
     "level": "basico",
@@ -65,7 +65,7 @@ export const resources: Resource[] = [
   {
     "id": 4,
     "title": "Frases Esenciales para Entregas - Var 2",
-    "description": "Guía completa con frases prácticas y ejemplos para repartidores",
+    "description": "24 frases prácticas para entregas con ejemplos para repartidores",
     "type": "pdf",
     "category": "repartidor",
     "level": "basico",
@@ -85,7 +85,7 @@ export const resources: Resource[] = [
   {
     "id": 5,
     "title": "Situaciones Complejas en Entregas - Var 1",
-    "description": "Guía completa con frases prácticas y ejemplos para repartidores",
+    "description": "19 frases para situaciones complejas en entregas con ejemplos prácticos",
     "type": "pdf",
     "category": "repartidor",
     "level": "intermedio",
@@ -105,7 +105,7 @@ export const resources: Resource[] = [
   {
     "id": 6,
     "title": "Frases Esenciales para Entregas - Var 3",
-    "description": "Guía completa con frases prácticas y ejemplos para repartidores",
+    "description": "24 frases prácticas para entregas con ejemplos para repartidores",
     "type": "pdf",
     "category": "repartidor",
     "level": "basico",
@@ -145,7 +145,7 @@ export const resources: Resource[] = [
   {
     "id": 9,
     "title": "Frases Esenciales para Entregas - Var 4",
-    "description": "Guía completa con frases prácticas y ejemplos para repartidores",
+    "description": "23 frases esenciales para entregas con ejemplos prácticos para repartidores",
     "type": "pdf",
     "category": "repartidor",
     "level": "basico",
@@ -186,7 +186,7 @@ export const resources: Resource[] = [
   {
     "id": 11,
     "title": "Saludos y Confirmación de Pasajeros - Var 1",
-    "description": "Guía completa con frases prácticas y ejemplos para conductores",
+    "description": "23 frases para saludos y confirmación de pasajeros con ejemplos prácticos",
     "type": "pdf",
     "category": "conductor",
     "level": "basico",
@@ -255,7 +255,7 @@ export const resources: Resource[] = [
   {
     "id": 14,
     "title": "Saludos y Confirmación de Pasajeros - Var 2",
-    "description": "Guía completa con frases prácticas y ejemplos para conductores",
+    "description": "24 frases prácticas para saludos y confirmación de pasajeros con ejemplos",
     "type": "pdf",
     "category": "conductor",
     "level": "basico",
@@ -301,7 +301,7 @@ export const resources: Resource[] = [
   {
     "id": 16,
     "title": "Small Talk con Pasajeros - Var 1",
-    "description": "Guía completa con frases prácticas y ejemplos para conductores",
+    "description": "24 frases prácticas para conversación con pasajeros con ejemplos",
     "type": "pdf",
     "category": "conductor",
     "level": "intermedio",
@@ -392,7 +392,7 @@ export const resources: Resource[] = [
   {
     "id": 20,
     "title": "Manejo de Situaciones Difíciles - Var 1",
-    "description": "Guía completa con frases prácticas y ejemplos para conductores",
+    "description": "24 frases prácticas para situaciones difíciles con ejemplos para conductores",
     "type": "pdf",
     "category": "conductor",
     "level": "intermedio",
@@ -431,7 +431,7 @@ export const resources: Resource[] = [
   {
     "id": 22,
     "title": "Números y Direcciones - Var 1",
-    "description": "Guía completa con frases prácticas y ejemplos para todos los trabajadores",
+    "description": "22 frases esenciales sobre números y direcciones con ejemplos prácticos",
     "type": "pdf",
     "category": "all",
     "level": "basico",
@@ -451,7 +451,7 @@ export const resources: Resource[] = [
   {
     "id": 23,
     "title": "Tiempo y Horarios - Var 1",
-    "description": "Guía completa con frases prácticas y ejemplos para todos los trabajadores",
+    "description": "24 frases prácticas sobre tiempo y horarios con ejemplos para todos",
     "type": "pdf",
     "category": "all",
     "level": "basico",
@@ -468,7 +468,7 @@ export const resources: Resource[] = [
   {
     "id": 25,
     "title": "Servicio al Cliente en Inglés - Var 1",
-    "description": "Guía completa con frases prácticas y ejemplos para todos los trabajadores",
+    "description": "25 frases esenciales de servicio al cliente con ejemplos prácticos",
     "type": "pdf",
     "category": "all",
     "level": "intermedio",
@@ -561,7 +561,7 @@ export const resources: Resource[] = [
   {
     "id": 30,
     "title": "Protocolos de Seguridad - Var 1",
-    "description": "Guía completa con frases prácticas y ejemplos para todos los trabajadores",
+    "description": "20 frases de protocolos de seguridad con ejemplos prácticos para todos",
     "type": "pdf",
     "category": "all",
     "level": "intermedio",
@@ -578,7 +578,7 @@ export const resources: Resource[] = [
   {
     "id": 31,
     "title": "Situaciones Complejas en Entregas - Var 2",
-    "description": "Guía completa con frases prácticas y ejemplos para repartidores",
+    "description": "24 frases prácticas para situaciones complejas en entregas con ejemplos",
     "type": "pdf",
     "category": "repartidor",
     "level": "intermedio",
@@ -619,7 +619,7 @@ export const resources: Resource[] = [
   {
     "id": 33,
     "title": "Small Talk con Pasajeros - Var 2",
-    "description": "Guía completa con frases prácticas y ejemplos para conductores",
+    "description": "21 frases esenciales para conversación con pasajeros con ejemplos prácticos",
     "type": "pdf",
     "category": "conductor",
     "level": "intermedio",
