@@ -1,0 +1,906 @@
+{
+  "1": {
+    "source_file": "basic_phrases_1.md",
+    "source_type": "markdown",
+    "expected_phrases": 30,
+    "current_audio_size": "3381K",
+    "sample_phrases": [
+      "Saludo básico al llegar",
+      "Identificarte como repartidor",
+      "Confirmar el nombre del cliente"
+    ],
+    "extraction_file": "resource-1.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 30,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 30 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "2": {
+    "source_file": "basic_audio_1-audio-script.txt",
+    "source_type": "audio_script",
+    "expected_phrases": 8,
+    "current_audio_size": "5493K",
+    "sample_phrases": [
+      "LLEGADA AL CLIENTE",
+      "CONFIRMANDO NOMBRE",
+      "ENTREGANDO EL PEDIDO"
+    ],
+    "extraction_file": "resource-2.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 8,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 8 phrase(s)",
+    "audio_note": "MEDIUM_FILE - likely single-voice"
+  },
+  "4": {
+    "source_file": "basic_phrases_2.md",
+    "source_type": "markdown",
+    "expected_phrases": 30,
+    "current_audio_size": "2561K",
+    "sample_phrases": [
+      "Saludo básico al llegar",
+      "Saludo con hora del día",
+      "Identificándote como repartidor"
+    ],
+    "extraction_file": "resource-4.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 30,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 30 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "5": {
+    "source_file": "intermediate_situations_1.md",
+    "source_type": "markdown",
+    "expected_phrases": 19,
+    "current_audio_size": "3297K",
+    "sample_phrases": [
+      "Verificar el pedido con el restaurante",
+      "Cuando falta algo del pedido",
+      "Verificar artículos especiales"
+    ],
+    "extraction_file": "resource-5.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 19,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 19 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "6": {
+    "source_file": "basic_phrases_3.md",
+    "source_type": "markdown",
+    "expected_phrases": 30,
+    "current_audio_size": "3822K",
+    "sample_phrases": [
+      "Saludo general al llegar",
+      "Identificarte como repartidor",
+      "Respuesta simple a \"How are you?\""
+    ],
+    "extraction_file": "resource-6.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 30,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 30 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "7": {
+    "source_file": "basic_audio_2-audio-script.txt",
+    "source_type": "audio_script",
+    "expected_phrases": 6,
+    "current_audio_size": "4898K",
+    "sample_phrases": [
+      "Cuando llegas al lugar de entrega y necesitas avisar al cliente.\"",
+      "Para confirmar que estás entregando a la persona correcta.\"",
+      "En el momento de entregar el pedido al cliente.\""
+    ],
+    "extraction_file": "resource-7.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 6,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 6 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "9": {
+    "source_file": "basic_phrases_4.md",
+    "source_type": "markdown",
+    "expected_phrases": 30,
+    "current_audio_size": "3129K",
+    "sample_phrases": [
+      "Saludo básico al llegar",
+      "Saludo con nombre del cliente",
+      "Saludo según la hora del día"
+    ],
+    "extraction_file": "resource-9.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 30,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 30 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "10": {
+    "source_file": "intermediate_conversations_1-audio-script.txt",
+    "source_type": "audio_script",
+    "expected_phrases": 8,
+    "current_audio_size": "7830K",
+    "sample_phrases": [
+      "Cuando llegas a la dirección del cliente.",
+      "Para confirmar que es la persona correcta.",
+      "Cuando entregas el pedido al cliente."
+    ],
+    "extraction_file": "resource-10.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 8,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 8 phrase(s)",
+    "audio_note": "MEDIUM_FILE - likely single-voice"
+  },
+  "11": {
+    "source_file": "basic_greetings_1.md",
+    "source_type": "markdown",
+    "expected_phrases": 30,
+    "current_audio_size": "3653K",
+    "sample_phrases": [
+      "Saludo general por la mañana",
+      "Saludo informal y amigable",
+      "Saludo con bienvenida"
+    ],
+    "extraction_file": "resource-11.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 30,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 30 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "12": {
+    "source_file": "basic_directions_1.md",
+    "source_type": "markdown",
+    "expected_phrases": 32,
+    "current_audio_size": "4122K",
+    "sample_phrases": [
+      "Girar a la derecha",
+      "Seguir derecho",
+      "Dar vuelta en U"
+    ],
+    "extraction_file": "resource-12.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 32,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 32 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "13": {
+    "source_file": "basic_audio_navigation_1-audio-script.txt",
+    "source_type": "audio_script",
+    "expected_phrases": 10,
+    "current_audio_size": "5911K",
+    "sample_phrases": [
+      "La dirección más común. Girar a la izquierda.\"",
+      "Girar a la derecha.\"",
+      "Seguir derecho. Muy fácil esta.\""
+    ],
+    "extraction_file": "resource-13.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 10,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 10 phrase(s)",
+    "audio_note": "MEDIUM_FILE - likely single-voice"
+  },
+  "14": {
+    "source_file": "basic_greetings_2.md",
+    "source_type": "markdown",
+    "expected_phrases": 32,
+    "current_audio_size": "3645K",
+    "sample_phrases": [
+      "Saludo general al ver al pasajero",
+      "Saludo mientras confirmas que es tu pasajero",
+      "Saludo amigable y profesional"
+    ],
+    "extraction_file": "resource-14.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 32,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 32 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "15": {
+    "source_file": "basic_directions_2.md",
+    "source_type": "markdown",
+    "expected_phrases": 28,
+    "current_audio_size": "5076K",
+    "sample_phrases": [
+      "Verificar destino al inicio del viaje",
+      "Confirmar cambio de destino",
+      "Confirmar parada adicional"
+    ],
+    "extraction_file": "resource-15.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 28,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 28 phrase(s)",
+    "audio_note": "MEDIUM_FILE - likely single-voice"
+  },
+  "16": {
+    "source_file": "intermediate_smalltalk_1.md",
+    "source_type": "markdown",
+    "expected_phrases": 24,
+    "current_audio_size": "4325K",
+    "sample_phrases": [
+      "Saludo inicial amigable",
+      "Confirmando el destino de manera conversacional",
+      "Preguntando si tienen prisa"
+    ],
+    "extraction_file": "resource-16.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 24,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 24 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "17": {
+    "source_file": "basic_greetings_3.md",
+    "source_type": "markdown",
+    "expected_phrases": 30,
+    "current_audio_size": "3615K",
+    "sample_phrases": [
+      "Saludo básico al llegar al punto de recogida",
+      "Preguntando si es tu pasajero sin decir el nombre",
+      "Presentándote como su conductor"
+    ],
+    "extraction_file": "resource-17.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 30,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 30 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "18": {
+    "source_file": "basic_audio_navigation_2-audio-script.txt",
+    "source_type": "audio_script",
+    "expected_phrases": 8,
+    "current_audio_size": "5729K",
+    "sample_phrases": [
+      "Cuando recoges al pasajero y quieres confirmar su destino.\"",
+      "Para preguntar si el pasajero prefiere una ruta específica.\"",
+      "Cuando explicas por qué elegiste cierta ruta.\""
+    ],
+    "extraction_file": "resource-18.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 8,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 8 phrase(s)",
+    "audio_note": "MEDIUM_FILE - likely single-voice"
+  },
+  "19": {
+    "source_file": "basic_directions_3.md",
+    "source_type": "markdown",
+    "expected_phrases": 30,
+    "current_audio_size": "3236K",
+    "sample_phrases": [
+      "Verificar la dirección al recoger",
+      "Confirmar el número de casa",
+      "Confirmar el nombre de la calle"
+    ],
+    "extraction_file": "resource-19.txt",
+    "extracted_phrases": 4,
+    "discrepancy": 26,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 26 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "20": {
+    "source_file": "intermediate_problems_1.md",
+    "source_type": "markdown",
+    "expected_phrases": 24,
+    "current_audio_size": "4433K",
+    "sample_phrases": [
+      "Cuando el pasajero no aparece",
+      "Informar sobre tiempo de espera",
+      "Explicar cancelación por tiempo"
+    ],
+    "extraction_file": "resource-20.txt",
+    "extracted_phrases": 6,
+    "discrepancy": 18,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 18 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "21": {
+    "source_file": "basic_greetings_all_1-audio-script.txt",
+    "source_type": "audio_script",
+    "expected_phrases": 6,
+    "current_audio_size": "5528K",
+    "sample_phrases": [
+      "SALUDO GENERAL - MAÑANA",
+      "SALUDO GENERAL - TARDE",
+      "SALUDO GENERAL - NOCHE"
+    ],
+    "extraction_file": "resource-21.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 6,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 6 phrase(s)",
+    "audio_note": "MEDIUM_FILE - likely single-voice"
+  },
+  "22": {
+    "source_file": "basic_numbers_1.md",
+    "source_type": "markdown",
+    "expected_phrases": 30,
+    "current_audio_size": "2236K",
+    "sample_phrases": [
+      "Confirmando un número de casa",
+      "Diciendo tu número de celular",
+      "Diciendo una dirección de dos dígitos"
+    ],
+    "extraction_file": "resource-22.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 30,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 30 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "23": {
+    "source_file": "basic_time_1.md",
+    "source_type": "markdown",
+    "expected_phrases": 30,
+    "current_audio_size": "2245K",
+    "sample_phrases": [
+      "Decir la hora en punto",
+      "Decir la hora con minutos (y media)",
+      "Distinguir AM y PM"
+    ],
+    "extraction_file": "resource-23.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 30,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 30 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "25": {
+    "source_file": "intermediate_customer_service_1.md",
+    "source_type": "markdown",
+    "expected_phrases": 25,
+    "current_audio_size": "2789K",
+    "sample_phrases": [
+      "Saludo profesional al llegar",
+      "Confirmar la identidad del cliente",
+      "Presentarse profesionalmente"
+    ],
+    "extraction_file": "resource-25.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 25,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 25 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "26": {
+    "source_file": "intermediate_complaints_1.md",
+    "source_type": "markdown",
+    "expected_phrases": 43,
+    "current_audio_size": "1617K",
+    "sample_phrases": [
+      "Cuando notas que el cliente está molesto",
+      "Pidiendo que te expliquen el problema",
+      "Mostrando empatía"
+    ],
+    "extraction_file": "resource-26.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 43,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 43 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "27": {
+    "source_file": "emergency_phrases_1.md",
+    "source_type": "markdown",
+    "expected_phrases": 30,
+    "current_audio_size": "1286K",
+    "sample_phrases": [
+      "Identificar la emergencia",
+      "Dar tu ubicación",
+      "Describir lesiones"
+    ],
+    "extraction_file": "resource-27.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 30,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 30 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "28": {
+    "source_file": "basic_greetings_all_2-audio-script.txt",
+    "source_type": "audio_script",
+    "expected_phrases": 16,
+    "current_audio_size": "6956K",
+    "sample_phrases": [
+      "SALUDO GENERAL - MAÑANA",
+      "El saludo más común de la mañana, hasta las 12 del mediodía. Úsalo con clientes, en restaurantes, co",
+      "SALUDO GENERAL - TARDE"
+    ],
+    "extraction_file": "resource-28.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 16,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 16 phrase(s)",
+    "audio_note": "MEDIUM_FILE - likely single-voice"
+  },
+  "29": {
+    "source_file": "basic_numbers_2.md",
+    "source_type": "markdown",
+    "expected_phrases": 30,
+    "current_audio_size": "3371K",
+    "sample_phrases": [
+      "Números del 0 al 10",
+      "Números del 11 al 20",
+      "Decenas (20, 30, 40...)"
+    ],
+    "extraction_file": "resource-29.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 30,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 30 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "30": {
+    "source_file": "safety_protocols_1.md",
+    "source_type": "markdown",
+    "expected_phrases": 20,
+    "current_audio_size": "4557K",
+    "sample_phrases": [
+      "Llamando al 911",
+      "Dando tu ubicación",
+      "Intercambiando información con el otro conductor"
+    ],
+    "extraction_file": "resource-30.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 20,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 20 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "31": {
+    "source_file": "intermediate_situations_2.md",
+    "source_type": "markdown",
+    "expected_phrases": 24,
+    "current_audio_size": "4012K",
+    "sample_phrases": [
+      "Verificar el pedido antes de salir del restaurante",
+      "Confirmar artículos específicos",
+      "Reportar artículo faltante al cliente"
+    ],
+    "extraction_file": "resource-31.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 24,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 24 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "32": {
+    "source_file": "intermediate_conversations_2-audio-script.txt",
+    "source_type": "audio_script",
+    "expected_phrases": 8,
+    "current_audio_size": "781K",
+    "sample_phrases": [
+      "CONFIRMAR NOMBRE DEL CLIENTE",
+      "Necesitas confirmar que es la persona correcta.\"",
+      "ENTREGANDO EL PEDIDO"
+    ],
+    "extraction_file": "resource-32.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 8,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 8 phrase(s)",
+    "audio_note": "SMALL_FILE"
+  },
+  "33": {
+    "source_file": "intermediate_smalltalk_2.md",
+    "source_type": "markdown",
+    "expected_phrases": 45,
+    "current_audio_size": "2520K",
+    "sample_phrases": [
+      "Rompiendo el hielo al comenzar el viaje",
+      "Comentario neutral para iniciar conversación",
+      "Pregunta sobre comodidad"
+    ],
+    "extraction_file": "resource-33.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 45,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 45 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "34": {
+    "source_file": "intermediate_audio_conversations_1-audio-script.txt",
+    "source_type": "audio_script",
+    "expected_phrases": 8,
+    "current_audio_size": "7070K",
+    "sample_phrases": [
+      "El saludo inicial cuando el pasajero entra al auto.\"",
+      "Para confirmar el destino del viaje.\"",
+      "Para ofrecer comodidad al pasajero.\""
+    ],
+    "extraction_file": "resource-34.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 8,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 8 phrase(s)",
+    "audio_note": "MEDIUM_FILE - likely single-voice"
+  },
+  "35": {
+    "source_file": "business-terminology.md",
+    "source_type": "markdown",
+    "expected_phrases": 4,
+    "current_audio_size": "1780K",
+    "sample_phrases": [
+      "I'm an independent contractor, not an employee",
+      "I need to track my business expenses for taxes",
+      "The platform takes a 25% commission"
+    ],
+    "extraction_file": "resource-35.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 4,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 4 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "36": {
+    "source_file": "complaint-handling.md",
+    "source_type": "markdown",
+    "expected_phrases": 5,
+    "current_audio_size": "1317K",
+    "sample_phrases": [
+      "Thank you for bringing this to my attention",
+      "You're absolutely right to be concerned about this",
+      "What can I do to make this right?"
+    ],
+    "extraction_file": "resource-36.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 5,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 5 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "37": {
+    "source_file": "conflict-resolution.md",
+    "source_type": "markdown",
+    "expected_phrases": 6,
+    "current_audio_size": "1543K",
+    "sample_phrases": [
+      "I understand you're upset. Let's work together to fix this",
+      "I take full responsibility for this error",
+      "Let me make this right for you"
+    ],
+    "extraction_file": "resource-37.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 6,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 6 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "38": {
+    "source_file": "cross-cultural-communication.md",
+    "source_type": "markdown",
+    "expected_phrases": 3,
+    "current_audio_size": "1068K",
+    "sample_phrases": [
+      "In my culture we..., but I understand here in the US...",
+      "I'm still learning American customs",
+      "Please let me know if I do anything that seems unusual"
+    ],
+    "extraction_file": "resource-38.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 3,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 3 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "39": {
+    "source_file": "customer-service-excellence.md",
+    "source_type": "markdown",
+    "expected_phrases": 5,
+    "current_audio_size": "1176K",
+    "sample_phrases": [
+      "How can I make your experience better?",
+      "Your comfort is my priority",
+      "I want to ensure you're completely satisfied"
+    ],
+    "extraction_file": "resource-39.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 5,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 5 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "40": {
+    "source_file": "earnings-optimization.md",
+    "source_type": "markdown",
+    "expected_phrases": 5,
+    "current_audio_size": "1396K",
+    "sample_phrases": [
+      "I have water and phone chargers available if needed",
+      "Please let me know your temperature preference",
+      "I appreciate your business"
+    ],
+    "extraction_file": "resource-40.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 5,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 5 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "41": {
+    "source_file": "negotiation-skills.md",
+    "source_type": "markdown",
+    "expected_phrases": 6,
+    "current_audio_size": "3431K",
+    "sample_phrases": [
+      "I understand your request, but I need to follow platform policies",
+      "Let's find a solution that works for both of us",
+      "I can offer you this alternative"
+    ],
+    "extraction_file": "resource-41.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 6,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 6 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "42": {
+    "source_file": "professional-boundaries.md",
+    "source_type": "markdown",
+    "expected_phrases": 5,
+    "current_audio_size": "4708K",
+    "sample_phrases": [
+      "I'm not comfortable with that",
+      "That's outside the scope of my service",
+      "I need to end this trip for safety reasons"
+    ],
+    "extraction_file": "resource-42.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 5,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 5 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "43": {
+    "source_file": "professional-communication.md",
+    "source_type": "markdown",
+    "expected_phrases": 5,
+    "current_audio_size": "3756K",
+    "sample_phrases": [
+      "Thank you for choosing my service",
+      "I'm here to help you",
+      "Please let me know if you need anything"
+    ],
+    "extraction_file": "resource-43.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 5,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 5 phrase(s)",
+    "audio_note": "NORMAL_FILE"
+  },
+  "44": {
+    "source_file": "time-management.md",
+    "source_type": "markdown",
+    "expected_phrases": 6,
+    "current_audio_size": "5565K",
+    "sample_phrases": [
+      "I'll arrive in approximately 5 minutes",
+      "I apologize for the delay. Traffic is heavy on this route",
+      "I'm ahead of schedule"
+    ],
+    "extraction_file": "resource-44.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 6,
+    "status": "INCOMPLETE_EXTRACTION",
+    "issue": "Missing 6 phrase(s)",
+    "audio_note": "MEDIUM_FILE - likely single-voice"
+  },
+  "45": {
+    "source_file": "accident-procedures.md",
+    "source_type": "markdown",
+    "expected_phrases": 0,
+    "current_audio_size": "13599K",
+    "sample_phrases": [],
+    "extraction_file": "resource-45.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 0,
+    "status": "NEEDS_INVESTIGATION",
+    "issue": "No phrases detected in source",
+    "audio_note": "LARGE_FILE - likely dual-voice bilingual"
+  },
+  "46": {
+    "source_file": "customer-conflict.md",
+    "source_type": "markdown",
+    "expected_phrases": 0,
+    "current_audio_size": "7350K",
+    "sample_phrases": [],
+    "extraction_file": "resource-46.txt",
+    "extracted_phrases": 17,
+    "discrepancy": -17,
+    "status": "NEEDS_INVESTIGATION",
+    "issue": "No phrases detected in source",
+    "audio_note": "MEDIUM_FILE - likely single-voice"
+  },
+  "47": {
+    "source_file": "lost-or-found-items.md",
+    "source_type": "markdown",
+    "expected_phrases": 0,
+    "current_audio_size": "8668K",
+    "sample_phrases": [],
+    "extraction_file": "resource-47.txt",
+    "extracted_phrases": 26,
+    "discrepancy": -26,
+    "status": "NEEDS_INVESTIGATION",
+    "issue": "No phrases detected in source",
+    "audio_note": "MEDIUM_FILE - likely single-voice"
+  },
+  "48": {
+    "source_file": "medical-emergencies.md",
+    "source_type": "markdown",
+    "expected_phrases": 5,
+    "current_audio_size": "11419K",
+    "sample_phrases": [
+      "Call 911 immediately!",
+      "I need medical help now",
+      "Are you okay? Can you hear me?"
+    ],
+    "extraction_file": "resource-48.txt",
+    "extracted_phrases": 48,
+    "discrepancy": -43,
+    "status": "OVER_EXTRACTION",
+    "issue": "43 extra phrase(s)",
+    "audio_note": "LARGE_FILE - likely dual-voice bilingual"
+  },
+  "49": {
+    "source_file": "payment-disputes.md",
+    "source_type": "markdown",
+    "expected_phrases": 0,
+    "current_audio_size": "12644K",
+    "sample_phrases": [],
+    "extraction_file": "resource-49.txt",
+    "extracted_phrases": 33,
+    "discrepancy": -33,
+    "status": "NEEDS_INVESTIGATION",
+    "issue": "No phrases detected in source",
+    "audio_note": "LARGE_FILE - likely dual-voice bilingual"
+  },
+  "50": {
+    "source_file": "safety-concerns.md",
+    "source_type": "markdown",
+    "expected_phrases": 5,
+    "current_audio_size": "17471K",
+    "sample_phrases": [
+      "I'm calling the police",
+      "Get out of the car now",
+      "I need help, I'm in danger"
+    ],
+    "extraction_file": "resource-50.txt",
+    "extracted_phrases": 55,
+    "discrepancy": -50,
+    "status": "OVER_EXTRACTION",
+    "issue": "50 extra phrase(s)",
+    "audio_note": "LARGE_FILE - likely dual-voice bilingual"
+  },
+  "51": {
+    "source_file": "vehicle-breakdown.md",
+    "source_type": "markdown",
+    "expected_phrases": 5,
+    "current_audio_size": "19473K",
+    "sample_phrases": [
+      "My vehicle has broken down",
+      "I need to pull over immediately",
+      "I'm calling roadside assistance"
+    ],
+    "extraction_file": "resource-51.txt",
+    "extracted_phrases": 37,
+    "discrepancy": -32,
+    "status": "OVER_EXTRACTION",
+    "issue": "32 extra phrase(s)",
+    "audio_note": "LARGE_FILE - likely dual-voice bilingual"
+  },
+  "52": {
+    "source_file": "weather-hazards.md",
+    "source_type": "markdown",
+    "expected_phrases": 3,
+    "current_audio_size": "23647K",
+    "sample_phrases": [],
+    "extraction_file": "resource-52.txt",
+    "extracted_phrases": 50,
+    "discrepancy": -47,
+    "status": "OVER_EXTRACTION",
+    "issue": "47 extra phrase(s)",
+    "audio_note": "LARGE_FILE - likely dual-voice bilingual"
+  },
+  "53": {
+    "source_file": "airport-rideshare.md",
+    "source_type": "markdown",
+    "expected_phrases": 0,
+    "current_audio_size": "3919K",
+    "sample_phrases": [],
+    "extraction_file": "resource-53.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 0,
+    "status": "NEEDS_INVESTIGATION",
+    "issue": "No phrases detected in source",
+    "audio_note": "NORMAL_FILE"
+  },
+  "54": {
+    "source_file": "doordash-delivery.md",
+    "source_type": "markdown",
+    "expected_phrases": 0,
+    "current_audio_size": "1382K",
+    "sample_phrases": [],
+    "extraction_file": "resource-54.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 0,
+    "status": "NEEDS_INVESTIGATION",
+    "issue": "No phrases detected in source",
+    "audio_note": "NORMAL_FILE"
+  },
+  "55": {
+    "source_file": "lyft-driver-essentials.md",
+    "source_type": "markdown",
+    "expected_phrases": 0,
+    "current_audio_size": "1666K",
+    "sample_phrases": [],
+    "extraction_file": "resource-55.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 0,
+    "status": "NEEDS_INVESTIGATION",
+    "issue": "No phrases detected in source",
+    "audio_note": "NORMAL_FILE"
+  },
+  "56": {
+    "source_file": "multi-app-strategy.md",
+    "source_type": "markdown",
+    "expected_phrases": 0,
+    "current_audio_size": "1757K",
+    "sample_phrases": [],
+    "extraction_file": "resource-56.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 0,
+    "status": "NEEDS_INVESTIGATION",
+    "issue": "No phrases detected in source",
+    "audio_note": "NORMAL_FILE"
+  },
+  "57": {
+    "source_file": "platform-ratings-mastery.md",
+    "source_type": "markdown",
+    "expected_phrases": 0,
+    "current_audio_size": "1903K",
+    "sample_phrases": [],
+    "extraction_file": "resource-57.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 0,
+    "status": "NEEDS_INVESTIGATION",
+    "issue": "No phrases detected in source",
+    "audio_note": "NORMAL_FILE"
+  },
+  "58": {
+    "source_file": "tax-and-expenses.md",
+    "source_type": "markdown",
+    "expected_phrases": 0,
+    "current_audio_size": "1760K",
+    "sample_phrases": [],
+    "extraction_file": "resource-58.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 0,
+    "status": "NEEDS_INVESTIGATION",
+    "issue": "No phrases detected in source",
+    "audio_note": "NORMAL_FILE"
+  },
+  "59": {
+    "source_file": "uber-driver-essentials.md",
+    "source_type": "markdown",
+    "expected_phrases": 0,
+    "current_audio_size": "1135K",
+    "sample_phrases": [],
+    "extraction_file": "resource-59.txt",
+    "extracted_phrases": 0,
+    "discrepancy": 0,
+    "status": "NEEDS_INVESTIGATION",
+    "issue": "No phrases detected in source",
+    "audio_note": "NORMAL_FILE"
+  }
+}
