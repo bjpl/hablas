@@ -565,4 +565,201 @@ Aprenderás las frases esenciales en inglés para saludar a tus pasajeros, confi
 
 ---
 
-### Frase
+### Frase 23: Showing you understand the confusion
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I understand the confusion."               │
+│                                                          │
+│ 🗣️ **Español**: Entiendo la confusión.                  │
+│ 🔊 **Pronunciación**: [ai un-der-STAND the              │
+│                       kon-FYU-zhon]                      │
+│                                                          │
+│ **Usa cuando**: Hay un malentendido sobre quién es el   │
+│ conductor o el pasajero                                  │
+│ **Ejemplo real**: Dos conductores llegaron al mismo     │
+│ lugar y el pasajero está confundido                      │
+│                                                          │
+│ 💡 **TIP**: Esta frase calma situaciones tensas y       │
+│ muestra profesionalismo.                                 │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 24: Confirmando modelo del veh ículo
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Do you see my car model?"                  │
+│                                                          │
+│ 🗣️ **Español**: ¿Ves el modelo de mi carro?             │
+│ 🔊 **Pronunciación**: [doo yoo see mai kar MOD-el]      │
+│                                                          │
+│ **Usa cuando**: El pasajero está buscando tu carro      │
+│ **Ejemplo real**: Hay varios carros del mismo color y   │
+│ quieres que vean el modelo específico                    │
+│                                                          │
+│ 💡 **TIP**: La app muestra el modelo del carro. Pídeles │
+│ que lo verifiquen.                                       │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 7. Despedidas y Cierre del Viaje
+
+### Frase 25: Agradecer al pasajero
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Thank you for riding with me!"             │
+│                                                          │
+│ 🗣️ **Español**: ¡Gracias por viajar conmigo!            │
+│ 🔊 **Pronunciación**: [thank yoo for RAI-ding with mee] │
+│                                                          │
+│ **Usa cuando**: El pasajero está bajando del auto       │
+│ **Ejemplo real**: Al finalizar el viaje, antes de que   │
+│ el pasajero cierre la puerta                             │
+│                                                          │
+│ 💡 **TIP**: Un agradecimiento sincero puede resultar en │
+│ mejor propina y rating de 5 estrellas.                   │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Thanks for choosing Uber/Lyft!" = ¡Gracias por elegir Uber/Lyft! = [thanks for CHOO-zing OO-ber/lift]
+- "Have a great day!" = ¡Ten un excelente día! = [hav a greit dei]
+
+---
+
+### Frase 26: Desear buen viaje
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Have a safe trip!"                         │
+│                                                          │
+│ 🗣️ **Español**: ¡Ten un viaje seguro!                   │
+│ 🔊 **Pronunciación**: [hav a seif trip]                 │
+│                                                          │
+│ **Usa cuando**: Dejas al pasajero en aeropuerto o       │
+│ estación                                                 │
+│ **Ejemplo real**: Pasajero va al aeropuerto y te dice   │
+│ que viajará a otro país                                  │
+│                                                          │
+│ 💡 **TIP**: Pequeños gestos de cortesía marcan gran     │
+│ diferencia en tu rating.                                 │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Safe travels!" = ¡Buen viaje! = [seif TRAV-els]
+- "Have a good flight!" = ¡Buen vuelo! = [hav a gud flait]
+
+---
+
+### Frase 27: Despedida casual
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Take care!"                                │
+│                                                          │
+│ 🗣️ **Español**: ¡Cuídate!                               │
+│ 🔊 **Pronunciación**: [teik kair]                       │
+│                                                          │
+│ **Usa cuando**: Despedida amigable al final del viaje   │
+│ **Ejemplo real**: Tuviste buena conversación con el     │
+│ pasajero y quieres despedirte amablemente                │
+│                                                          │
+│ 💡 **TIP**: Frase corta, amigable y fácil de recordar.  │
+│ Funciona en cualquier situación.                         │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "See you!" = ¡Nos vemos! = [see yoo]
+- "Bye bye!" = ¡Adiós! = [bai bai]
+- "Goodbye!" = ¡Adiós! = [gud-BAI]
+
+---
+
+### Frase 28: Pedir rating
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Please rate the trip if you can."          │
+│                                                          │
+│ 🗣️ **Español**: Por favor califica el viaje si puedes.  │
+│ 🔊 **Pronunciación**: [pleez reit the trip if yoo kan]  │
+│                                                          │
+│ **Usa cuando**: Quieres recordar al pasajero que        │
+│ califique (usa con cuidado)                              │
+│ **Ejemplo real**: Después de un buen viaje, dices esto  │
+│ al despedirte                                            │
+│                                                          │
+│ 💡 **TIP**: Úsalo solo si el viaje fue muy bueno. No lo │
+│ uses si hubo problemas.                                  │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 8. Frases para Situaciones Confusas
+
+### Frase 29: Cuando el nombre no coincide
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "The app shows a different name."           │
+│                                                          │
+│ 🗣️ **Español**: La app muestra un nombre diferente.     │
+│ 🔊 **Pronunciación**: [thee ap shous a DIF-rent neim]   │
+│                                                          │
+│ **Usa cuando**: El nombre que te dicen no es el que     │
+│ aparece en tu app                                        │
+│ **Ejemplo real**: Persona dice "I'm John" pero tu app   │
+│ dice "Maria"                                             │
+│                                                          │
+│ 💡 **TIP**: Puede ser que pidió el viaje para otra      │
+│ persona. Confirma antes de rechazar.                     │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 30: Ofreciendo ayuda adicional
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Is there anything else you need?"          │
+│                                                          │
+│ 🗣️ **Español**: ¿Hay algo más que necesites?            │
+│ 🔊 **Pronunciación**: [iz thair EN-ee-thing els yoo     │
+│                       niid]                              │
+│                                                          │
+│ **Usa cuando**: Quieres ofrecer excelente servicio      │
+│ **Ejemplo real**: Antes de arrancar, preguntas si       │
+│ necesitan ajustar temperatura, abrir ventana, etc.       │
+│                                                          │
+│ 💡 **TIP**: Este detalle extra puede convertir un viaje │
+│ de 4 estrellas en 5 estrellas.                           │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# Tarjeta de Referencia Rápida
+
+**Saludos Básicos**:
+- "Hello! Good morning!" = ¡Hola! ¡Buenos días!
+- "Are you waiting for Uber?" = ¿Estás esperando un Uber?
+- "I'm your driver" = Soy tu conductor
+
+**Confirmación**:
+- "What's your name?" = ¿Cuál es tu nombre?
+- "Where are we going?" = ¿A dónde vamos?
+- "Is anyone else coming?" = ¿Viene alguien más?
+
+**Ubicación**:
+- "I'm here" = Ya llegué
+- "I'm outside" = Estoy afuera
+- "I'm in a [color] [car]" = Estoy en un [color] [carro]
+
+**Despedidas**:
+- "Thank you!" = ¡Gracias!
+- "Have a great day!" = ¡Ten un excelente día!
+- "Take care!" = ¡Cuídate!
+
+---
+
+**¡Practica estas 30 frases todos los días!**
+
+Con estas frases esenciales, tendrás la base para iniciar cualquier viaje de manera profesional y segura. Recuerda: la primera impresión cuenta, y un buen saludo prepara el camino para un viaje exitoso y una buena calificación.
+
+---
+
+*Fin del Manual - Saludos y Confirmación de Pasajeros Var 3*

@@ -518,4 +518,185 @@ Aprenderás a manejar profesionalmente situaciones complicadas como cancelacione
 │ to request a pet-friendly driver."                      │
 │                                                          │
 │ 🗣️ **Español**: Lo siento, tengo alergias. Necesitas    │
-│ pedir un conductor que acept
+│ pedir un conductor que acepte mascotas.               │
+│ 🔊 **Pronunciación**: [aim SOR-i, ai hav AL-er-jeez.    │
+│                       yuul niid tu ri-KWEST a pet-       │
+│                       FREND-lee DRAI-ver]                │
+│                                                          │
+│ **Usa cuando**: Tienes alergias y no puedes llevar      │
+│ mascotas                                                 │
+│ **Ejemplo real**: Pasajero aparece con gato o perro y   │
+│ necesitas rechazarlo por salud                           │
+│                                                          │
+│ 💡 **TIP**: Las compañías de rideshare permiten que     │
+│ rechaces mascotas por alergias. Es una razón válida.    │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 6. Pasajeros Intoxicados
+
+### Frase 25: Evaluar condición del pasajero
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Are you okay to ride?"                    │
+│                                                          │
+│ 🗣️ **Español**: ¿Estás bien para viajar?                │
+│ 🔊 **Pronunciación**: [ar yoo o-KEI tu raid]            │
+│                                                          │
+│ **Usa cuando**: El pasajero parece muy intoxicado       │
+│ **Ejemplo real**: Pasajero se tambalea o habla muy      │
+│ raro al acercarse al auto                                │
+│                                                          │
+│ 💡 **TIP**: Si crees que vomitará o es inseguro,        │
+│ puedes cancelar sin penalización.                        │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 26: Advertir sobre vómito
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "If you need to throw up, please tell me  │
+│ to pull over."                                          │
+│                                                          │
+│ 🗣️ **Español**: Si necesitas vomitar, por favor dime    │
+│ que me detenga.                                          │
+│ 🔊 **Pronunciación**: [if yoo niid tu throu up, pliiz   │
+│                       tel mi tu pul OU-ver]              │
+│                                                          │
+│ **Usa cuando**: El pasajero está mareado o muy          │
+│ intoxicado                                               │
+│ **Ejemplo real**: Pasajero sube después de fiesta y     │
+│ se ve mal                                                │
+│                                                          │
+│ 💡 **TIP**: Prevenir es mejor que limpiar. Ofrece una   │
+│ bolsa plástica si la tienes.                             │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 27: Rechazar pasajero por estado
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm sorry, but I can't take you in this  │
+│ condition."                                             │
+│                                                          │
+│ 🗣️ **Español**: Lo siento, pero no puedo llevarte en    │
+│ este estado.                                             │
+│ 🔊 **Pronunciación**: [aim SOR-i, bot ai kant teik yoo  │
+│                       in this kon-DISH-on]               │
+│                                                          │
+│ **Usa cuando**: El pasajero está demasiado intoxicado   │
+│ para viajar de forma segura                              │
+│ **Ejemplo real**: Pasajero no puede caminar derecho,    │
+│ vomitó, o parece peligroso                               │
+│                                                          │
+│ 💡 **TIP**: Tu seguridad primero. Documenta con foto    │
+│ si es necesario para proteger tu cuenta.                 │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 7. Conflictos Durante el Viaje
+
+### Frase 28: Responder a comentario ofensivo
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "That comment makes me uncomfortable."     │
+│                                                          │
+│ 🗣️ **Español**: Ese comentario me incomoda.             │
+│ 🔊 **Pronunciación**: [that KOM-ent meiks mi            │
+│                       un-KUM-for-ta-bol]                 │
+│                                                          │
+│ **Usa cuando**: Pasajero hace comentario inapropiado    │
+│ **Ejemplo real**: Comentario sexual, racista, o muy     │
+│ personal que te hace sentir mal                          │
+│                                                          │
+│ 💡 **TIP**: Establece límites claramente. Puedes        │
+│ terminar el viaje si continúa.                           │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 29: Cuando el pasajero discute con otro
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Please keep it down. I need to            │
+│ concentrate on driving."                                │
+│                                                          │
+│ 🗣️ **Español**: Por favor bajen el volumen. Necesito    │
+│ concentrarme en manejar.                                 │
+│ 🔊 **Pronunciación**: [pliiz kiip it daun. ai niid tu   │
+│                       KON-sen-treit on DRAI-ving]        │
+│                                                          │
+│ **Usa cuando**: Los pasajeros están gritando o          │
+│ discutiendo                                              │
+│ **Ejemplo real**: Pareja o amigos empiezan a pelear     │
+│ fuertemente en tu auto                                   │
+│                                                          │
+│ 💡 **TIP**: Si la situación escala, detente en lugar    │
+│ seguro y pide que se calmen o salgan.                    │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 8. Problemas de Seguridad
+
+### Frase 30: Terminar viaje por seguridad
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "For safety reasons, this ride ends here." │
+│                                                          │
+│ 🗣️ **Español**: Por razones de seguridad, este viaje    │
+│ termina aquí.                                            │
+│ 🔊 **Pronunciación**: [for SEIF-ti RII-sons, this raid  │
+│                       ends hir]                          │
+│                                                          │
+│ **Usa cuando**: Debes terminar el viaje inmediatamente  │
+│ por tu seguridad                                         │
+│ **Ejemplo real**: Situación se vuelve peligrosa,        │
+│ amenazante, o muy incómoda                               │
+│                                                          │
+│ 💡 **TIP**: Di esto con firmeza. Detente en lugar       │
+│ público y seguro. Llama 911 si es necesario.             │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 9. Tarjeta de Referencia Rápida
+
+### Situaciones Difíciles - Frases Clave
+
+**Cancelaciones**:
+- "I'm here. Are you on your way?" = Estoy aquí. ¿Vienes?
+- "I've been waiting. I need to cancel." = He esperado. Necesito cancelar.
+
+**Ubicación**:
+- "I'm at the pin location." = Estoy en la ubicación del pin.
+- "Where exactly are you?" = ¿Dónde exactamente estás?
+
+**Tarifas**:
+- "The price is higher because of surge pricing." = El precio es alto por tarifa dinámica.
+- "I don't set the prices." = Yo no establezco los precios.
+
+**Pasajeros Difíciles**:
+- "I need you to speak respectfully." = Necesito que me hables con respeto.
+- "I'm ending the ride here for safety." = Termino el viaje por seguridad.
+
+**Equipaje/Mascotas**:
+- "That luggage is too large for my vehicle." = Ese equipaje es muy grande.
+- "Pets need to be in a carrier." = Mascotas deben estar en transportadora.
+
+**Emergencia**:
+- "For safety reasons, this ride ends here." = Por seguridad, el viaje termina aquí.
+
+---
+
+**¡Manéjate con Profesionalismo y Firmeza!**
+
+Con estas 30 frases para situaciones difíciles, estarás preparado para manejar profesionalmente cualquier conflicto. Recuerda: tu seguridad es primero, siempre establece límites claros, documenta todo, y reporta situaciones graves a la compañía.
+
+---
+
+*Fin del Manual - Manejo de Situaciones Difíciles Var 1*

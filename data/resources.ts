@@ -323,7 +323,7 @@ export const resources: Resource[] = [
   {
     "id": 17,
     "title": "Saludos y Confirmación de Pasajeros - Var 3",
-    "description": "Guía completa con frases prácticas y ejemplos para conductores",
+    "description": "30 frases prácticas para saludos con pasajeros",
     "type": "pdf",
     "category": "conductor",
     "level": "basico",
@@ -369,7 +369,7 @@ export const resources: Resource[] = [
   {
     "id": 19,
     "title": "Direcciones y Navegación GPS - Var 3",
-    "description": "Guía completa con frases prácticas y ejemplos para conductores",
+    "description": "30 frases de direcciones y navegación GPS",
     "type": "pdf",
     "category": "conductor",
     "level": "basico",
@@ -392,7 +392,7 @@ export const resources: Resource[] = [
   {
     "id": 20,
     "title": "Manejo de Situaciones Difíciles - Var 1",
-    "description": "24 frases prácticas para situaciones difíciles con ejemplos para conductores",
+    "description": "30 frases prácticas para situaciones difíciles",
     "type": "pdf",
     "category": "conductor",
     "level": "intermedio",
@@ -431,7 +431,7 @@ export const resources: Resource[] = [
   {
     "id": 22,
     "title": "Números y Direcciones - Var 1",
-    "description": "22 frases esenciales sobre números y direcciones con ejemplos prácticos",
+    "description": "30 frases esenciales sobre números y direcciones",
     "type": "pdf",
     "category": "all",
     "level": "basico",
@@ -451,7 +451,7 @@ export const resources: Resource[] = [
   {
     "id": 23,
     "title": "Tiempo y Horarios - Var 1",
-    "description": "24 frases prácticas sobre tiempo y horarios con ejemplos para todos",
+    "description": "30 frases prácticas sobre tiempo y horarios",
     "type": "pdf",
     "category": "all",
     "level": "basico",
@@ -463,7 +463,7 @@ export const resources: Resource[] = [
     ],
     "offline": true,
     "audioUrl": "/audio/resource-23.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\all\\basic_time_1.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace/active-development/hablas/generated-resources/50-batch/all/basic_time_1.md"
   },
   {
     "id": 25,

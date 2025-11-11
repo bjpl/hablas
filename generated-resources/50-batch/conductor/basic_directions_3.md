@@ -584,4 +584,147 @@ Dominarás el vocabulario esencial de direcciones y navegación GPS en inglés. 
 │ **Ejemplo real**: Persona mayor o con equipaje pesado   │
 │ y ofreces acercarte más a la puerta                      │
 │                                                          │
-│ 
+│  💡 **TIP**: Ofrecer ayuda adicional sin que te lo pidan   │
+│ puede marcar la diferencia entre 4 y 5 estrellas.        │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Let me help you" = Déjame ayudarte = [let mi help yoo]
+- "I'll move closer to the door" = Me acercaré más a la puerta = [ail muuv KLOH-ser tu the dor]
+
+---
+
+### Frase 28: Confirmar que el pasajero bajó todo
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Do you have everything?"                   │
+│                                                          │
+│ 🗣️ **Español**: ¿Tienes todo?                           │
+│ 🔊 **Pronunciación**: [doo yoo hav EV-ree-thing]        │
+│                                                          │
+│ **Usa cuando**: Antes de que el pasajero cierre la      │
+│ puerta final                                             │
+│ **Ejemplo real**: Pasajero sale y tú preguntas para     │
+│ asegurar que no olvidó nada en el auto                   │
+│                                                          │
+│ 💡 **TIP**: Esto previene llamadas de "olvidé algo en   │
+│ el auto" y muestra que te importa.                       │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Check for your belongings" = Verifica tus pertenencias = [chek for yor bi-LONG-ings]
+- "Nothing left behind?" = ¿No dejaste nada? = [NUTH-ing left bi-HAIND]
+
+---
+
+### Frase 29: Informar sobre construcción
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "There's construction ahead."              │
+│                                                          │
+│ 🗣️ **Español**: Hay construcción adelante.              │
+│ 🔊 **Pronunciación**: [therz kon-STRUK-shon a-HED]      │
+│                                                          │
+│ **Usa cuando**: Ves señales de construcción y quieres   │
+│ avisar al pasajero                                       │
+│ **Ejemplo real**: GPS muestra ruta normal pero ves      │
+│ señales de obra en la carretera                          │
+│                                                          │
+│ 💡 **TIP**: Avisar con anticipación previene que el     │
+│ pasajero piense que te perdiste o tomaste ruta mala.     │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Road work ahead" = Trabajo en la carretera adelante = [rohd werk a-HED]
+- "The road is under construction" = La carretera está en construcción = [the rohd iz UN-der kon-STRUK-shon]
+
+---
+
+### Frase 30: Despedida profesional
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Thank you! Have a great day!"             │
+│                                                          │
+│ 🗣️ **Español**: ¡Gracias! ¡Ten un excelente día!        │
+│ 🔊 **Pronunciación**: [thank yoo! hav a greit dei]      │
+│                                                          │
+│ **Usa cuando**: El pasajero está bajando del auto al    │
+│ final del viaje                                          │
+│ **Ejemplo real**: Llegaron al destino, el pasajero se   │
+│ despide, y tú respondes con esta frase                   │
+│                                                          │
+│ 💡 **TIP**: Terminar con cortesía y gratitud puede      │
+│ resultar en mejor propina y calificación de 5 estrellas. │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Thanks for riding!" = ¡Gracias por el viaje! = [thanks for RAI-ding]
+- "Take care!" = ¡Cuídate! = [teik kair]
+- "Have a good one!" = ¡Que te vaya bien! = [hav a gud wun]
+
+---
+
+# 8. Tarjeta de Referencia Rápida
+
+### Frases Esenciales de Navegación
+
+**Confirmando Dirección**:
+- "What's the address?" = ¿Cuál es la dirección?
+- "Is this Main Street?" = ¿Es esta la calle Main?
+- "Is it number 245?" = ¿Es el número 245?
+
+**Entendiendo GPS**:
+- "Turn right/left" = Gira a la derecha/izquierda
+- "Continue straight" = Continúa recto
+- "You have arrived" = Has llegado
+
+**Problemas**:
+- "I can't find the address" = No puedo encontrar la dirección
+- "My GPS isn't working" = Mi GPS no funciona
+- "Can you come outside?" = ¿Puedes salir?
+
+**Cambios de Ruta**:
+- "There's traffic ahead" = Hay tráfico adelante
+- "I'll take a different way" = Tomaré un camino diferente
+- "Should I take the highway?" = ¿Debería tomar la autopista?
+
+**Puntos de Referencia**:
+- "Is it near the McDonald's?" = ¿Está cerca del McDonald's?
+- "Which corner?" = ¿Qué esquina?
+- "On the right/left side" = En el lado derecho/izquierdo
+
+**Estacionamiento**:
+- "Where should I stop?" = ¿Dónde debería parar?
+- "Can I park here?" = ¿Puedo estacionarme aquí?
+- "We're here" = Llegamos
+
+---
+
+### Tipos de Calles en Inglés
+- **Street** = Calle
+- **Avenue** = Avenida
+- **Road** = Camino
+- **Drive** = Camino
+- **Boulevard** = Bulevar
+- **Lane** = Callejón
+
+### Distancias Comunes
+- **Block** = Cuadra
+- **Mile** = Milla (1.6 km)
+- **Feet** = Pies (30 cm aprox)
+
+### Direcciones Cardinales
+- **North** = Norte
+- **South** = Sur
+- **East** = Este
+- **West** = Oeste
+
+---
+
+**¡Practica estas 30 frases todos los días!**
+
+Con estas frases esenciales de navegación y direcciones, estarás preparado para cualquier situación en la carretera. Recuerda: la comunicación clara sobre rutas y ubicaciones previene confusiones y mejora la experiencia del pasajero.
+
+---
+
+*Fin del Manual - Direcciones y Navegación GPS Var 3*

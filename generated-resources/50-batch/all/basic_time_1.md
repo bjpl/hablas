@@ -575,4 +575,211 @@ Aprenderás a decir la hora en inglés, hablar sobre tiempos de espera, duracion
 
 # Sección 6: Horarios de Trabajo
 
-### Frase 24: Decir
+### Frase 24: Decir cuándo debo trabajar
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I work from nine to five."               │
+│                                                          │
+│ 🗣️ **Español**: Trabajo de nueve a cinco.               │
+│ 🔊 **Pronunciación**: [ai werk from nain tu faiv]       │
+│                                                          │
+│ **Usa cuando**: Alguien pregunta tu horario de trabajo  │
+│ **Ejemplo real**: Otro trabajador pregunta: "What are   │
+│ your hours?" y tú respondes                              │
+│                                                          │
+│ 💡 **TIP**: "From... to..." es la estructura para       │
+│ horarios. 9-5 es el horario clásico de oficina en USA.  │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I work mornings" = Trabajo en las mañanas = [ai werk MOR-nings]
+- "I work nights" = Trabajo en las noches = [ai werk naits]
+- "I work weekends" = Trabajo los fines de semana = [ai werk WII-kends]
+
+---
+
+### Frase 25: Decir cuándo estás disponible
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm available after six PM."              │
+│                                                          │
+│ 🗣️ **Español**: Estoy disponible después de las seis PM.│
+│ 🔊 **Pronunciación**: [aim a-VEI-la-bol AF-ter siks     │
+│                       pee-em]                            │
+│                                                          │
+│ **Usa cuando**: Cliente o app pregunta cuándo puedes    │
+│ trabajar                                                 │
+│ **Ejemplo real**: Restaurante pregunta: "When can you   │
+│ pick up?" y tú das tu disponibilidad                     │
+│                                                          │
+│ 💡 **TIP**: "Available" significa disponible. Útil para │
+│ coordinar entregas o viajes.                             │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I'm free now" = Estoy libre ahora = [aim frii nau]
+- "I'm busy until three" = Estoy ocupado hasta las tres = [aim BIZ-ee un-TIL three]
+
+---
+
+### Frase 26: Preguntar horario de negocio
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Are you open now?"                        │
+│                                                          │
+│ 🗣️ **Español**: ¿Están abiertos ahora?                  │
+│ 🔊 **Pronunciación**: [ar yoo OU-pen nau]               │
+│                                                          │
+│ **Usa cuando**: Necesitas saber si un negocio está      │
+│ funcionando                                              │
+│ **Ejemplo real**: Llegas a restaurante y no estás       │
+│ seguro si ya abrieron                                    │
+│                                                          │
+│ 💡 **TIP**: "Open" = abierto, "Closed" = cerrado.       │
+│ Pregunta antes de perder tiempo.                         │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Are you still open?" = ¿Todavía están abiertos? = [ar yoo stil OU-pen]
+- "When do you open?" = ¿Cuándo abren? = [wen du yu OU-pen]
+
+---
+
+# Sección 7: Frases de Urgencia
+
+### Frase 27: Expresar que tienes prisa
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm in a hurry."                          │
+│                                                          │
+│ 🗣️ **Español**: Tengo prisa.                            │
+│ 🔊 **Pronunciación**: [aim in a HER-ee]                 │
+│                                                          │
+│ **Usa cuando**: Necesitas que te atiendan rápido        │
+│ **Ejemplo real**: Llegas al restaurante y la orden      │
+│ debió estar lista hace rato                              │
+│                                                          │
+│ 💡 **TIP**: Di esto educadamente con "Excuse me" al     │
+│ inicio: "Excuse me, I'm in a hurry."                     │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I need this quickly" = Necesito esto rápido = [ai niid this KWIK-lee]
+- "It's urgent" = Es urgente = [its ER-jent]
+- "I'm running late" = Voy retrasado = [aim RUN-ing leit]
+
+---
+
+### Frase 28: Preguntar cuánto falta urgentemente
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "How much longer? I'm late."              │
+│                                                          │
+│ 🗣️ **Español**: ¿Cuánto más falta? Voy tarde.           │
+│ 🔊 **Pronunciación**: [hau moch LONG-er? aim leit]      │
+│                                                          │
+│ **Usa cuando**: Estás esperando y el tiempo corre       │
+│ **Ejemplo real**: Esperando orden y tienes otra entrega │
+│ o pasajero esperando                                     │
+│                                                          │
+│ 💡 **TIP**: Agregar "I'm late" explica por qué tienes   │
+│ prisa y puede acelerar el servicio.                      │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Can you hurry please?" = ¿Pueden apurarse por favor? = [kan yu HER-ee pliiz]
+- "I really need to go" = Realmente necesito irme = [ai RII-lee niid tu gou]
+
+---
+
+### Frase 29: Avisar tiempo crítico
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "The customer is waiting."                 │
+│                                                          │
+│ 🗣️ **Español**: El cliente está esperando.              │
+│ 🔊 **Pronunciación**: [the KUS-to-mer iz WEI-ting]      │
+│                                                          │
+│ **Usa cuando**: Necesitas que el restaurante se apure   │
+│ **Ejemplo real**: Orden tarda mucho y quieres explicar  │
+│ la urgencia sin sonar grosero                            │
+│                                                          │
+│ 💡 **TIP**: Esta frase traslada la presión al cliente   │
+│ final, no a ti. Más efectiva que solo decir "hurry".    │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "The passenger is waiting" = El pasajero está esperando = [the PAS-en-jer iz WEI-ting]
+- "They're expecting me soon" = Me esperan pronto = [thair eks-PEK-ting mi suun]
+
+---
+
+### Frase 30: Confirmar tiempo de entrega urgente
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I need to deliver this by six."          │
+│                                                          │
+│ 🗣️ **Español**: Necesito entregar esto para las seis.   │
+│ 🔊 **Pronunciación**: [ai niid tu di-LIV-er this bai    │
+│                       siks]                              │
+│                                                          │
+│ **Usa cuando**: Hay deadline estricto de entrega        │
+│ **Ejemplo real**: Cliente especificó hora exacta y      │
+│ necesitas que el restaurante entienda la urgencia        │
+│                                                          │
+│ 💡 **TIP**: "By" significa "para" (deadline). Diferente │
+│ de "at" que es la hora exacta.                           │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I have to be there by noon" = Debo estar ahí para el mediodía = [ai hav tu bii thair bai nuun]
+- "The deadline is 5 PM" = La fecha límite es 5 PM = [the DED-lain iz faiv pee-em]
+
+---
+
+# Tarjeta de Referencia Rápida
+
+### Horas del Día
+**Mañana**: 6 AM - 12 PM (noon)
+**Tarde**: 12 PM - 6 PM
+**Noche**: 6 PM - 12 AM (midnight)
+**Madrugada**: 12 AM - 6 AM
+
+### Decir la Hora
+- **En punto**: "three o'clock"
+- **Y media**: "three thirty" o "half past three"
+- **Y cuarto**: "three fifteen" o "quarter past three"
+- **Menos cuarto**: "two forty-five" o "quarter to three"
+
+### Tiempo de Llegada
+- "I'll be there in 5 minutes" = Llegaré en 5 minutos
+- "About 20 minutes away" = A unos 20 minutos
+- "I'm here" = Ya llegué
+- "I just arrived" = Acabo de llegar
+
+### Esperas
+- "How long will it take?" = ¿Cuánto tomará?
+- "I'm waiting for the order" = Estoy esperando la orden
+- "It's taking longer than expected" = Está tardando más de lo esperado
+
+### Retrasos
+- "Sorry I'm late" = Perdón por llegar tarde
+- "I'm running late" = Voy retrasado
+- "There was traffic" = Hubo tráfico
+- "Thank you for your patience" = Gracias por tu paciencia
+
+### Urgencias
+- "I'm in a hurry" = Tengo prisa
+- "It's urgent" = Es urgente
+- "I need this quickly" = Necesito esto rápido
+- "The customer is waiting" = El cliente está esperando
+
+---
+
+**¡Practica hablar sobre tiempo todos los días!**
+
+Con estas 30 frases sobre tiempo y horarios, podrás manejar cualquier situación relacionada con tiempos de entrega, horarios de trabajo, y coordinación con clientes y restaurantes. Recuerda: la comunicación clara sobre tiempos previene malentendidos y mejora tu servicio.
+
+---
+
+*Fin del Manual - Tiempo y Horarios Var 1*
