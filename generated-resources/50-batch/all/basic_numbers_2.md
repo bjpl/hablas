@@ -547,4 +547,78 @@ Dominarás los números, direcciones y referencias geográficas esenciales para 
 │ 🔊 **Pronunciación**: [aim SOR-ee, ai kant faind yor    │
 │ ah-DRESS. kan yoo help mee?]                             │
 │                                                          │
-│ **Usa cuando**: Llevas 5+ minutos
+│ **Usa cuando**: Llevas 5+ minutos buscando y no encuentras  │
+│ el lugar exacto                                          │
+│ **Ejemplo real**: Has buscado 5+ minutos y no encuentras│
+│ el número de casa, llamas al cliente para ayuda         │
+│                                                          │
+│ 💡 **TIP**: Llama antes de marcar "can't find customer".│
+│ Los clientes aprecian el esfuerzo extra.                 │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 30: Pedir que salgan a recibirte
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Can you come outside? I'm having trouble  │
+│ finding your exact location."                           │
+│                                                          │
+│ 🗣️ **Español**: ¿Puedes salir afuera? Estoy teniendo    │
+│ problemas encontrando tu ubicación exacta.              │
+│ 🔊 **Pronunciación**: [kan yoo kam aut-SAID? aim        │
+│                       HAV-ing TROB-el FAIN-ding yor     │
+│                       eks-AKT lo-KEI-shun]               │
+│                                                          │
+│ **Usa cuando**: Estás en el área correcta pero no       │
+│ identificas la casa o apartamento exacto                 │
+│ **Ejemplo real**: Vecindario con casas similares sin    │
+│ números visibles, de noche, o edificio sin señalización  │
+│                                                          │
+│ 💡 **TIP**: La mayoría de clientes están dispuestos a   │
+│ salir si pides amablemente. Ahorra tiempo y frustración.│
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 9. Tarjeta de Referencia Rápida
+
+## 📊 NÚMEROS BÁSICOS ESENCIALES
+
+**0-10**: zero, one, two, three, four, five, six, seven, eight, nine, ten
+**11-20**: eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty
+**Decenas**: twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred
+
+## 🏠 FRASES MÁS ÚTILES PARA DIRECCIONES
+
+1. "Is this [number] [street name]?"
+2. "What's the apartment number?"
+3. "Which floor?"
+4. "Can you come outside?"
+5. "Is it on the corner?"
+
+## 📝 EJEMPLOS DE DIRECCIONES COMPLETAS
+
+- "245 Oak Street, Apartment 3B"
+- "Suite 201, Third floor"
+- "Building A, Unit 15"
+- "Near the Starbucks on Main Street"
+
+## ✅ CHECKLIST PARA CONFIRMAR DIRECCIONES
+
+☐ Número de casa/edificio correcto
+☐ Nombre de calle confirmado
+☐ Número de apartamento/suite (si aplica)
+☐ Piso correcto (si es edificio)
+☐ Edificio correcto (si hay múltiples)
+☐ Código de acceso (comunidades cerradas)
+
+---
+
+**RECUERDA**: Siempre verifica ANTES de llegar. Una llamada rápida de 30 segundos ahorra 15 minutos de búsqueda y protege tu rating.
+
+---
+
+**Fin del Manual**
+*Última actualización: 2025-11-11*
+*Parte de la serie "English for Gig Workers"*

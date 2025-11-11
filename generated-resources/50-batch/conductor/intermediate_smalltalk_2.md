@@ -539,4 +539,244 @@ Aprenderás a mantener conversaciones ligeras y naturales con tus pasajeros sobr
 │ **Usa cuando**: Pasajero parece ser turista o va al     │
 │ hotel/aeropuerto                                        │
 │ **Ejemplo real**: Recoges en aeropuerto o hotel,        │
-│ preguntas para saber si ofrecer información             │
+│ preguntas para saber si ofrecer información             ││                                                          │
+│ 💡 **TIP**: Si dicen "no", ofrece recomendaciones. Si   │
+│ dicen "yes", pregunta qué les gusta de la ciudad.       │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 22: Dando recomendaciones locales
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "If you like [type of food], there's a     │
+│ great place on Main Street."                            │
+│                                                          │
+│ 🗣️ **Español**: Si te gusta [tipo de comida], hay un    │
+│ excelente lugar en Main Street.                         │
+│ 🔊 **Pronunciación**: [if yoo laik... therz a greit     │
+│                       pleis on mein striit]              │
+│                                                          │
+│ **Usa cuando**: Pasajero pregunta sobre restaurantes o  │
+│ lugares para visitar                                    │
+│ **Ejemplo real**: "If you like Italian food, there's a  │
+│ great place on 5th Avenue called Luigi's"               │
+│                                                          │
+│ 💡 **TIP**: Recomendaciones locales aumentan propinas   │
+│ significativamente. Muestra conocimiento del área.      │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 23: Hablando sobre eventos locales
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "There's a big game/concert/event tonight. │
+│ That's why traffic is so heavy."                        │
+│                                                          │
+│ 🗣️ **Español**: Hay un gran juego/concierto/evento esta │
+│ noche. Por eso el tráfico está tan pesado.             │
+│ 🔊 **Pronunciación**: [therz a big geim/KON-sert/i-VENT │
+│                       tu-NAIT. thats wai TRA-fik is so  │
+│                       HEV-ee]                            │
+│                                                          │
+│ **Usa cuando**: Hay evento importante en la ciudad      │
+│ **Ejemplo real**: Noche de juego importante del equipo  │
+│ local, explicas el tráfico extra                        │
+│                                                          │
+│ 💡 **TIP**: Conocer eventos locales te hace parecer     │
+│ profesional y conectado con la comunidad.               │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 24: Comentando sobre landmarks
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "That building over there is [famous       │
+│ landmark]. It's really popular."                        │
+│                                                          │
+│ 🗣️ **Español**: Ese edificio de allá es [punto famoso]. │
+│ Es muy popular.                                          │
+│ 🔊 **Pronunciación**: [that BIL-ding O-ver ther iz...   │
+│                       its RIL-ee POP-yu-lar]             │
+│                                                          │
+│ **Usa cuando**: Pasan cerca de edificio o lugar famoso  │
+│ **Ejemplo real**: "That building over there is City     │
+│ Hall. It was built in 1920."                            │
+│                                                          │
+│ 💡 **TIP**: Aprende 5-10 landmarks locales. Turistas    │
+│ aman esta información.                                   │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 25: Preguntando sobre su viaje
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Is this a business trip or vacation?"     │
+│                                                          │
+│ 🗣️ **Español**: ¿Es un viaje de negocios o vacaciones?  │
+│ 🔊 **Pronunciación**: [iz this a BIZ-nes trip or        │
+│                       vei-KEI-shun]                      │
+│                                                          │
+│ **Usa cuando**: Pasajero claramente es visitante        │
+│ **Ejemplo real**: Recoges en hotel, preguntas para      │
+│ ajustar conversación                                    │
+│                                                          │
+│ 💡 **TIP**: Si es negocios, sé más profesional. Si es   │
+│ vacaciones, sé más amigable y casual.                   │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 26: Comentando sobre el destino
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Oh, you're going to [destination]? That's │
+│ a nice area!"                                            │
+│                                                          │
+│ 🗣️ **Español**: ¿Oh, vas a [destino]? ¡Esa es una buena │
+│ área!                                                   │
+│ 🔊 **Pronunciación**: [oh, yor GO-ing tu... thats a nais│
+│                       EH-ree-a]                          │
+│                                                          │
+│ **Usa cuando**: El destino es un buen lugar conocido    │
+│ **Ejemplo real**: Van a zona de restaurantes populares  │
+│ o vecindario bonito                                     │
+│                                                          │
+│ 💡 **TIP**: Comentarios positivos crean buen ambiente   │
+│ y muestran conocimiento local.                          │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 27: Ofreciendo sugerencias de ruta
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I know a faster way if you're not in a    │
+│ hurry. Want to avoid tolls?"                            │
+│                                                          │
+│ 🗣️ **Español**: Conozco una ruta más rápida si no       │
+│ tienes prisa. ¿Quieres evitar peajes?                  │
+│ 🔊 **Pronunciación**: [ai no a FAS-ter wei if yor not   │
+│                       in a HUR-ee. wont tu a-VOID tolz] │
+│                                                          │
+│ **Usa cuando**: Hay opción de tomar ruta alternativa    │
+│ **Ejemplo real**: GPS sugiere autopista de peaje, tú    │
+│ ofreces ruta gratis similar                             │
+│                                                          │
+│ 💡 **TIP**: Siempre PREGUNTA antes de cambiar ruta.     │
+│ Algunos pasajeros prefieren ruta GPS original.          │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 28: Cerrando conversación naturalmente
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Well, we're almost there. Thanks for the  │
+│ interesting conversation!"                              │
+│                                                          │
+│ 🗣️ **Español**: Bueno, ya casi llegamos. ¡Gracias por   │
+│ la conversación interesante!                            │
+│ 🔊 **Pronunciación**: [wel, wir OL-most ther. thanks for│
+│                       the IN-tres-ting kon-ver-SEI-shun]│
+│                                                          │
+│ **Usa cuando**: Viaje termina y tuvieron buena          │
+│ conversación                                            │
+│ **Ejemplo real**: 2-3 minutos antes de llegar, cierras  │
+│ conversación positivamente                              │
+│                                                          │
+│ 💡 **TIP**: Terminar conversación positivamente deja    │
+│ buena última impresión para rating.                     │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 29: Deseando buen día/evento
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Have a great time at [event/place]!"      │
+│                                                          │
+│ 🗣️ **Español**: ¡Que te diviertas en [evento/lugar]!    │
+│ 🔊 **Pronunciación**: [hav a greit taim at...]          │
+│                                                          │
+│ **Usa cuando**: Al despedirte, mencionas su destino     │
+│ **Ejemplo real**: "Have a great time at the concert!"   │
+│ o "Enjoy your dinner!"                                  │
+│                                                          │
+│ 💡 **TIP**: Personalizar despedida muestra que          │
+│ prestaste atención. Aumenta propinas.                   │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 30: Agradeciendo y pidiendo rating
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Thanks for riding with me today. If you   │
+│ enjoyed the trip, a 5-star rating would be awesome!"    │
+│                                                          │
+│ 🗣️ **Español**: Gracias por viajar conmigo hoy. ¡Si     │
+│ disfrutaste el viaje, una calificación de 5 estrellas   │
+│ sería genial!                                           │
+│ 🔊 **Pronunciación**: [thanks for RAI-ding with mii     │
+│                       tu-DEI. if yoo en-JOID the trip, a│
+│                       faiv-star REI-ting wud bi O-sum]  │
+│                                                          │
+│ **Usa cuando**: Al terminar viaje positivo              │
+│ **Ejemplo real**: Despedida final después de viaje      │
+│ agradable con buena conversación                        │
+│                                                          │
+│ 💡 **TIP**: Solo pide rating después de viaje excelente.│
+│ Sé genuino y sonríe al decirlo.                         │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 8. Tarjeta de Referencia Rápida
+
+## 🎯 TEMAS SEGUROS PARA SMALL TALK
+
+✅ Clima
+✅ Tráfico
+✅ Eventos locales
+✅ Recomendaciones de restaurantes
+✅ Lugares turísticos
+✅ Deportes (si pasajero menciona primero)
+
+## ❌ TEMAS A EVITAR
+
+❌ Política
+❌ Religión
+❌ Dinero/salarios
+❌ Temas muy personales
+❌ Chistes arriesgados
+
+## 💡 REGLAS DE ORO DEL SMALL TALK
+
+1. **Lee las señales**: Si pasajero da respuestas cortas, quiere silencio
+2. **Escucha más que hablas**: Haz preguntas, deja que ellos hablen
+3. **Mantén tono positivo**: Nunca te quejes del trabajo o vida
+4. **Sé auténtico**: No finjas interés, sé genuinamente curioso
+5. **Respeta el silencio**: No todos quieren conversar, está bien
+
+## 📱 FRASES MÁS ÚTILES
+
+1. "How's your day going so far?"
+2. "Nice weather we're having today."
+3. "Is the temperature okay for you?"
+4. "Are you from around here?"
+5. "Have a great time at [destination]!"
+6. "Thanks for riding with me today!"
+
+---
+
+**RECUERDA**: El small talk natural y amigable puede aumentar tus propinas en 20-30%. ¡La conversación es inversión en tu éxito!
+
+---
+
+**Fin del Manual**
+*Última actualización: 2025-11-11*
+*Parte de la serie "English for Gig Workers"*

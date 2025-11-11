@@ -527,3 +527,188 @@ Este manual te enseñará a manejar las situaciones más difíciles en entregas:
 │ **English**: "I'm about 5 minutes away from you right   │
 │ now."                                                    │
 │                                                          │
+│ 🗣️ **Español**: Estoy como a 5 minutos de distancia    │
+│ ahora mismo.                                             │
+│ 🔊 **Pronunciación**: [aim a-BAUT faiv MIN-its a-WEI    │
+│                       from yoo rait nau]                 │
+│                                                          │
+│ **Usa cuando**: Cliente pregunta cuánto falta o envías  │
+│ mensaje proactivo                                        │
+│ **Ejemplo real**: Cliente llama preocupado, tú le das   │
+│ tiempo estimado preciso                                  │
+│                                                          │
+│ 💡 **TIP**: Sé honesto con el tiempo. Mejor decir "10   │
+│ minutes" y llegar en 8, que decir "5" y tardar 12.      │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 25: Disculparse por error del restaurante
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm so sorry about the mistake. This was  │
+│ the restaurant's error, not mine."                      │
+│                                                          │
+│ 🗣️ **Español**: Lo siento mucho por el error. Este fue  │
+│ error del restaurante, no mío.                          │
+│ 🔊 **Pronunciación**: [aim so SOR-ee a-BAUT the         │
+│                       mis-TEIK. this waz the            │
+│                       RES-tuh-rants ER-or, not main]    │
+│                                                          │
+│ **Usa cuando**: Cliente reclama y tú no tuviste la      │
+│ culpa                                                    │
+│ **Ejemplo real**: Pedido viene sin salsa que pidieron,  │
+│ explicas que el restaurante preparó mal                  │
+│                                                          │
+│ 💡 **TIP**: Muestra empatía pero aclara responsabilidad.│
+│ Esto protege tu rating.                                 │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 26: Ofrecer reportar problema juntos
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Would you like me to contact support with │
+│ you right now to resolve this?"                        │
+│                                                          │
+│ 🗣️ **Español**: ¿Te gustaría que contacte a soporte     │
+│ contigo ahora mismo para resolver esto?                │
+│ 🔊 **Pronunciación**: [wud yoo laik mee tu KON-takt     │
+│                       su-PORT with yoo rait nau tu      │
+│                       ri-ZOLV this]                      │
+│                                                          │
+│ **Usa cuando**: Problema serio que requiere intervención│
+│ de soporte                                              │
+│ **Ejemplo real**: Orden completamente incorrecta,       │
+│ ofreces llamar juntos para solución inmediata            │
+│                                                          │
+│ 💡 **TIP**: Esto muestra iniciativa excepcional. Los    │
+│ clientes casi siempre dan 5 estrellas por este esfuerzo.│
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 27: Confirmar detalles antes de salir
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Just to confirm: you ordered [items],     │
+│ correct?"                                                │
+│                                                          │
+│ 🗣️ **Español**: Solo para confirmar: ordenaste          │
+│ [artículos], ¿correcto?                                 │
+│ 🔊 **Pronunciación**: [just tu kon-FIRM: yoo OR-derd... │
+│                       ko-REKT]                           │
+│                                                          │
+│ **Usa cuando**: Estás en el restaurante verificando el  │
+│ pedido antes de partir                                  │
+│ **Ejemplo real**: Lees la lista de items al empleado:   │
+│ "2 burgers, 1 fries, 1 coke, correct?"                 │
+│                                                          │
+│ 💡 **TIP**: Esta verificación previene el 90% de        │
+│ problemas con órdenes incorrectas.                      │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 28: Manejar propinas en efectivo
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Thank you so much for the tip. I really   │
+│ appreciate it!"                                          │
+│                                                          │
+│ 🗣️ **Español**: Muchas gracias por la propina. ¡Lo      │
+│ aprecio mucho!                                           │
+│ 🔊 **Pronunciación**: [thank yoo so much for the tip. ai│
+│                       RIL-ee a-PREE-shi-eit it]          │
+│                                                          │
+│ **Usa cuando**: Cliente te da propina en efectivo       │
+│ **Ejemplo real**: Al entregar, cliente te da $5 extra,  │
+│ agradeces genuinamente                                   │
+│                                                          │
+│ 💡 **TIP**: Sonríe y agradece con entusiasmo genuino.   │
+│ Esto puede resultar en propinas futuras más altas.      │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 29: Despedida profesional
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Have a great day! Enjoy your food!"       │
+│                                                          │
+│ 🗣️ **Español**: ¡Que tengas un excelente día! ¡Disfruta│
+│ tu comida!                                               │
+│ 🔊 **Pronunciación**: [hav a greit dei! en-JOI yor food]│
+│                                                          │
+│ **Usa cuando**: Al terminar la entrega exitosamente     │
+│ **Ejemplo real**: Después de entregar, te despides con  │
+│ esta frase amigable                                      │
+│                                                          │
+│ 💡 **TIP**: Una despedida positiva deja última          │
+│ impresión excelente. Aumenta ratings y propinas.        │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 30: Pedir rating positivo (sutilmente)
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "If everything was good, I'd really        │
+│ appreciate a 5-star rating. Thank you!"                 │
+│                                                          │
+│ 🗣️ **Español**: Si todo estuvo bien, apreciaría mucho   │
+│ una calificación de 5 estrellas. ¡Gracias!             │
+│ 🔊 **Pronunciación**: [if EV-ree-thing waz gud, aid     │
+│                       RIL-ee a-PREE-shi-eit a faiv-star │
+│                       REI-ting. thank yoo]               │
+│                                                          │
+│ **Usa cuando**: Entrega fue perfecta y quieres asegurar │
+│ buen rating                                             │
+│ **Ejemplo real**: Al despedirte, mencionas esto         │
+│ brevemente con sonrisa                                  │
+│                                                          │
+│ 💡 **TIP**: Solo pide rating si todo fue perfecto. Si   │
+│ hubo problemas, mejor no mencionar ratings.             │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 9. Tarjeta de Referencia Rápida
+
+## 🎯 FRASES MÁS IMPORTANTES
+
+**Verificación del pedido:**
+- "Can I double-check the order before I leave?"
+- "Are they all in here?"
+- "The bag was sealed by the restaurant."
+
+**Problemas con pedido:**
+- "I'm sorry but the restaurant didn't include..."
+- "You can report this through the app."
+- "The bag was sealed, so I couldn't check inside."
+
+**Direcciones difíciles:**
+- "Can you help me find your address?"
+- "Can you come outside or wave to me?"
+- "What's the gate code?"
+
+**Clientes difíciles:**
+- "I sincerely apologize for the delay."
+- "I understand your frustration."
+- "I'm doing my best to help you."
+
+**Profesionalismo:**
+- "Thank you for your patience."
+- "Have a great day! Enjoy your food!"
+- "I really appreciate the tip!"
+
+---
+
+**RECUERDA**: Tu actitud profesional y comunicación clara son tus mejores herramientas para excelentes ratings y propinas generosas.
+
+---
+
+**Fin del Manual**
+*Última actualización: 2025-11-11*
+*Parte de la serie "English for Gig Workers"*

@@ -537,4 +537,318 @@ En este manual aprenderás a comunicar problemas de seguridad en inglés de mane
 │ ai pro-SEED]                                             │
 │                                                          │
 │ **Usa cuando**: Llegas a edificio o comunidad cerrada   │
-│ sin forma de entrar
+│ sin forma de entrar                            │
+│ **Ejemplo real**: Comunidad gated sin código de acceso  │
+│ en las notas del pedido                                  │
+│                                                          │
+│ 💡 **TIP**: Llama al cliente ANTES de marcar "can't     │
+│ deliver". Muchas comunidades tienen códigos temporales. │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 5. Emergencias Médicas
+
+### Frase 21: Cliente con emergencia médica
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Are you okay? Should I call 911?"         │
+│                                                          │
+│ 🗣️ **Español**: ¿Estás bien? ¿Debo llamar al 911?       │
+│ 🔊 **Pronunciación**: [ar yuu o-KEI? shud ai kol        │
+│                       nain-wun-wun]                      │
+│                                                          │
+│ **Usa cuando**: Cliente parece enfermo, mareado o en    │
+│ peligro médico                                           │
+│ **Ejemplo real**: Pasajero en Uber se ve muy pálido,    │
+│ sudando, o tiene dolor en el pecho                       │
+│                                                          │
+│ 💡 **TIP**: Mejor preguntar 100 veces que ignorar una   │
+│ emergencia real. Tu pregunta puede salvar una vida.     │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 22: Describir síntomas al 911
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "The person is having chest pain and      │
+│ difficulty breathing. We need an ambulance immediately."│
+│                                                          │
+│ 🗣️ **Español**: La persona tiene dolor en el pecho y    │
+│ dificultad para respirar. Necesitamos una ambulancia    │
+│ inmediatamente.                                          │
+│ 🔊 **Pronunciación**: [the PER-son is HAV-ing chest     │
+│                       pein and DIF-i-kul-ti BRIITH-ing. │
+│                       wi need an AM-byu-lans            │
+│                       i-MEE-di-et-lee]                   │
+│                                                          │
+│ **Usa cuando**: Llamas al 911 por emergencia médica     │
+│ de cliente o pasajero                                    │
+│ **Ejemplo real**: Pasajero colapsa en tu carro,         │
+│ llamas y describes síntomas claramente                   │
+│                                                          │
+│ 💡 **TIP**: Mantén la calma. El operador del 911 te     │
+│ guiará sobre qué hacer mientras llega ayuda.            │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 23: Informar a soporte sobre emergencia médica
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "A passenger had a medical emergency       │
+│ during the trip. I've called 911 and I'm waiting with  │
+│ them for the ambulance."                                │
+│                                                          │
+│ 🗣️ **Español**: Un pasajero tuvo una emergencia médica  │
+│ durante el viaje. Llamé al 911 y estoy esperando con   │
+│ ellos por la ambulancia.                                │
+│ 🔊 **Pronunciación**: [a PAS-en-jer had a MED-i-kal     │
+│                       i-MER-jen-si DUR-ing the trip. aiv│
+│                       kold nain-wun-wun and aim         │
+│                       WEI-ting with them for the        │
+│                       AM-byu-lans]                       │
+│                                                          │
+│ **Usa cuando**: Contactas soporte de app después de     │
+│ emergencia médica                                        │
+│ **Ejemplo real**: Después de llamar al 911, llamas a    │
+│ soporte de Uber/Lyft para reportar el incidente          │
+│                                                          │
+│ 💡 **TIP**: La app te respaldará 100% por ayudar en     │
+│ emergencias médicas. Es tu deber moral y legal.         │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 6. Contactando a Soporte de la App
+
+### Frase 24: Inicio de llamada a soporte
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Hi, this is [your name], driver ID       │
+│ [number]. I need to report a safety incident."         │
+│                                                          │
+│ 🗣️ **Español**: Hola, soy [tu nombre], conductor ID     │
+│ [número]. Necesito reportar un incidente de seguridad.  │
+│ 🔊 **Pronunciación**: [hai, this iz... DRAI-ver ai-di  │
+│                       ... ai need tu ri-PORT a SEIF-ti  │
+│                       IN-si-dent]                        │
+│                                                          │
+│ **Usa cuando**: Llamas a soporte para reportar          │
+│ cualquier problema de seguridad                          │
+│ **Ejemplo real**: Cliente amenazante, accidente,        │
+│ propiedad dañada - siempre empieza así                   │
+│                                                          │
+│ 💡 **TIP**: Ten tu ID de conductor memorizado. Acelera  │
+│ el proceso significativamente.                           │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 25: Explicar cronología del incidente
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "This happened about 10 minutes ago at     │
+│ [location]. Here's what happened..."                    │
+│                                                          │
+│ 🗣️ **Español**: Esto pasó hace unos 10 minutos en       │
+│ [ubicación]. Esto es lo que pasó...                     │
+│ 🔊 **Pronunciación**: [this HAP-end a-BAUT ten MIN-its  │
+│                       a-GO at ... heerz wat HAP-end]    │
+│                                                          │
+│ **Usa cuando**: Soporte te pide detalles del incidente  │
+│ **Ejemplo real**: "This happened about 10 minutes ago   │
+│ at 123 Main Street. The customer was yelling..."        │
+│                                                          │
+│ 💡 **TIP**: Sé específico con tiempo y lugar. Ayuda a   │
+│ soporte a verificar tu historia con datos de la app.    │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 26: Solicitar cambio de asignación
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I don't feel comfortable completing this  │
+│ delivery. Can you reassign it to another driver?"       │
+│                                                          │
+│ 🗣️ **Español**: No me siento cómodo completando esta    │
+│ entrega. ¿Pueden reasignarla a otro conductor?          │
+│ 🔊 **Pronunciación**: [ai DONT feel KUM-for-ta-bul      │
+│                       kom-PLEE-ting this di-LIV-er-i.   │
+│                       kan yuu ree-a-SAIN it tu          │
+│                       a-NUTH-er DRAI-ver]                │
+│                                                          │
+│ **Usa cuando**: Situación parece peligrosa antes de     │
+│ llegar al destino                                        │
+│ **Ejemplo real**: Ves que la dirección está en zona     │
+│ muy peligrosa de noche, o cliente tiene mal historial   │
+│                                                          │
+│ 💡 **TIP**: Es tu derecho rechazar entregas que te      │
+│ hagan sentir inseguro. No te penalizarán.               │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 27: Pedir compensación por tiempo perdido
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I spent 20 minutes waiting and was unable │
+│ to complete the delivery due to safety concerns. Can I  │
+│ receive compensation for my time?"                      │
+│                                                          │
+│ 🗣️ **Español**: Pasé 20 minutos esperando y no pude     │
+│ completar la entrega por razones de seguridad. ¿Puedo   │
+│ recibir compensación por mi tiempo?                     │
+│ 🔊 **Pronunciación**: [ai spent TWEN-ti MIN-its         │
+│                       WEI-ting and waz un-EI-bul tu     │
+│                       kom-PLEET the di-LIV-er-i duu tu  │
+│                       SEIF-ti kon-SERNZ. kan ai         │
+│                       ri-SEEV kom-pen-SEI-shun for mai  │
+│                       taim]                              │
+│                                                          │
+│ **Usa cuando**: Perdiste tiempo por problema de         │
+│ seguridad legítimo                                       │
+│ **Ejemplo real**: Esperaste 15 minutos en edificio sin  │
+│ acceso, luego cancelaste por seguridad                   │
+│                                                          │
+│ 💡 **TIP**: Pide compensación profesionalmente. Las     │
+│ apps usualmente compensan tiempo perdido por seguridad. │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 7. Documentando Incidentes
+
+### Frase 28: Solicitar confirmación escrita
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Can you send me written confirmation of   │
+│ this incident report via email?"                        │
+│                                                          │
+│ 🗣️ **Español**: ¿Pueden enviarme confirmación escrita   │
+│ de este reporte de incidente por correo electrónico?    │
+│ 🔊 **Pronunciación**: [kan yuu send mii RIT-en          │
+│                       kon-fer-MEI-shun ov this IN-si-dent│
+│                       ri-PORT vai EE-meil]               │
+│                                                          │
+│ **Usa cuando**: Terminas de reportar incidente a        │
+│ soporte                                                  │
+│ **Ejemplo real**: Después de explicar todo, pides       │
+│ confirmación para tus registros                          │
+│                                                          │
+│ 💡 **TIP**: SIEMPRE pide confirmación escrita. Es tu    │
+│ evidencia si hay problemas legales después.             │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 29: Tomar declaración de testigo
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Excuse me, you witnessed what happened.   │
+│ Can I have your name and phone number in case I need a  │
+│ witness?"                                                │
+│                                                          │
+│ 🗣️ **Español**: Disculpe, usted fue testigo de lo que   │
+│ pasó. ¿Puedo tener su nombre y número de teléfono en    │
+│ caso de necesitar un testigo?                           │
+│ 🔊 **Pronunciación**: [eks-KYOOS mee, yuu WIT-nest wat  │
+│                       HAP-end. kan ai hav yor neim and  │
+│                       fon NUM-ber in keis ai need a     │
+│                       WIT-nes]                           │
+│                                                          │
+│ **Usa cuando**: Alguien vio el incidente y podría       │
+│ testificar en tu favor                                   │
+│ **Ejemplo real**: Accidente de carro, otro conductor    │
+│ vio todo, pides su información                           │
+│                                                          │
+│ 💡 **TIP**: La mayoría de personas cooperan si eres     │
+│ educado. Explica brevemente por qué necesitas su info.  │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 30: Seguimiento de reporte
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I reported an incident yesterday, case    │
+│ number [number]. What's the status of the investigation?"│
+│                                                          │
+│ 🗣️ **Español**: Reporté un incidente ayer, número de    │
+│ caso [número]. ¿Cuál es el estado de la investigación?  │
+│ 🔊 **Pronunciación**: [ai ri-PORT-ed an IN-si-dent      │
+│                       YES-ter-dei, keis NUM-ber ... wats│
+│                       the STEI-tus ov the               │
+│                       in-ves-ti-GEI-shun]                │
+│                                                          │
+│ **Usa cuando**: Sigues up sobre incidente previo        │
+│ **Ejemplo real**: 24-48 horas después, llamas para      │
+│ verificar qué está pasando con tu reporte                │
+│                                                          │
+│ 💡 **TIP**: Haz seguimiento profesionalmente cada 48    │
+│ horas hasta resolver. Muestra que tomas esto en serio.  │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 8. Protegiendo tu Seguridad Personal
+
+## ✅ CHECKLIST DE SEGURIDAD DIARIA
+
+**ANTES de empezar a trabajar:**
+☐ Carro con suficiente gasolina
+☐ Teléfono 100% cargado + cargador de emergencia
+☐ Números de emergencia guardados
+☐ Seguro de auto actualizado
+☐ Linterna funcional en el carro
+☐ Botella de agua
+
+**DURANTE el trabajo:**
+☐ Compartes tu ubicación en tiempo real con familiar/amigo
+☐ Mantienes puertas del carro cerradas siempre
+☐ Evalúas cada situación ANTES de salir del carro
+☐ Confías en tu instinto - si algo se siente mal, VETE
+☐ Reportas situaciones sospechosas inmediatamente
+☐ Mantienes tu teléfono accesible
+
+**DESPUÉS de incidente:**
+☐ Reportaste al 911 (si fue necesario)
+☐ Reportaste a soporte de la app
+☐ Tomaste fotos de evidencia
+☐ Obtuviste información de testigos
+☐ Solicitaste confirmación escrita
+☐ Seguimiento 24-48 horas después
+
+---
+
+## 🚨 SEÑALES DE PELIGRO - CANCELA INMEDIATAMENTE SI:
+
+❌ Cliente está visiblemente intoxicado o bajo influencia de drogas
+❌ Hay actividad de pandillas o criminal obvia
+❌ Perro agresivo suelto en la propiedad
+❌ Propiedad completamente oscura sin iluminación
+❌ Grupo de personas bloqueando acceso actuando amenazante
+❌ Tu instinto te dice que algo está mal
+
+**RECUERDA**: ¡Ninguna entrega o viaje vale tu vida!
+
+---
+
+## 📱 NÚMEROS IMPORTANTES
+
+**Emergencias**: 911
+**App Support**: 
+- Uber: (800) 593-7069
+- Lyft: (855) 865-9553
+- DoorDash: (855) 973-1040
+- Uber Eats: (800) 253-9377
+
+**Policía no-emergencia**: 311 (en muchas ciudades)
+
+---
+
+**Fin del Manual**
+*Última actualización: 2025-11-11*
+*Parte de la serie "English for Gig Workers"*

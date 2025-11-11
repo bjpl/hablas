@@ -504,7 +504,7 @@ export const resources: Resource[] = [
   {
     "id": 27,
     "title": "Frases de Emergencia - Var 1",
-    "description": "Guía completa con frases prácticas y ejemplos para todos los trabajadores",
+    "description": "30 frases esenciales de emergencia con ejemplos prácticos para todos los trabajadores",
     "type": "pdf",
     "category": "all",
     "level": "basico",
@@ -541,7 +541,7 @@ export const resources: Resource[] = [
   {
     "id": 29,
     "title": "Números y Direcciones - Var 2",
-    "description": "Guía completa con frases prácticas y ejemplos para todos los trabajadores",
+    "description": "30 frases prácticas para números y direcciones con ejemplos para todos los trabajadores",
     "type": "pdf",
     "category": "all",
     "level": "basico",
@@ -561,7 +561,7 @@ export const resources: Resource[] = [
   {
     "id": 30,
     "title": "Protocolos de Seguridad - Var 1",
-    "description": "20 frases de protocolos de seguridad con ejemplos prácticos para todos",
+    "description": "30 frases de protocolos de seguridad con ejemplos prácticos para todos",
     "type": "pdf",
     "category": "all",
     "level": "intermedio",
@@ -578,7 +578,7 @@ export const resources: Resource[] = [
   {
     "id": 31,
     "title": "Situaciones Complejas en Entregas - Var 2",
-    "description": "24 frases prácticas para situaciones complejas en entregas con ejemplos",
+    "description": "30 frases prácticas para situaciones complejas en entregas con ejemplos",
     "type": "pdf",
     "category": "repartidor",
     "level": "intermedio",
@@ -619,7 +619,7 @@ export const resources: Resource[] = [
   {
     "id": 33,
     "title": "Small Talk con Pasajeros - Var 2",
-    "description": "21 frases esenciales para conversación con pasajeros con ejemplos prácticos",
+    "description": "30 frases esenciales para conversación con pasajeros con ejemplos prácticos",
     "type": "pdf",
     "category": "conductor",
     "level": "intermedio",

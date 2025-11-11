@@ -54,12 +54,44 @@ ENGLISH_VOICE = "en-US-JennyNeural"   # US English
 ENGLISH_SPEED = "-20%"  # Slower for learning
 SPANISH_SPEED = "+0%"   # Normal speed
 
-# Pause durations (in milliseconds)
+# Pause durations (in milliseconds) - DEFAULTS for basic phrases
 PAUSE_AFTER_ENGLISH_1 = 1000      # After first English phrase
 PAUSE_AFTER_ENGLISH_2 = 1000      # After second English phrase
 PAUSE_AFTER_SPANISH = 2500        # After Spanish (for learner repetition)
 PAUSE_BETWEEN_PHRASES = 1500      # Between different phrases
 PAUSE_SECTION = 2000              # Between sections
+
+# Resource type-specific pause configurations
+PAUSE_CONFIGS = {
+    'conversation': {
+        'after_english_1': 1000,
+        'after_english_2': 1000,
+        'after_spanish': 3000,      # Longer for formulating response
+        'between_phrases': 2000,     # Extra time between exchanges
+        'section': 2500,
+    },
+    'directions': {
+        'after_english_1': 800,      # Quicker for rapid reference
+        'after_english_2': 800,
+        'after_spanish': 2000,       # Shorter practice time
+        'between_phrases': 1000,     # Fast-paced
+        'section': 1500,
+    },
+    'emergency': {
+        'after_english_1': 1500,     # Slower, clearer
+        'after_english_2': 1500,
+        'after_spanish': 3500,       # Extra time to internalize
+        'between_phrases': 2000,
+        'section': 2500,
+    },
+    'basic_phrases': {
+        'after_english_1': 1000,     # Standard format
+        'after_english_2': 1000,
+        'after_spanish': 2500,
+        'between_phrases': 1500,
+        'section': 2000,
+    }
+}
 
 
 def log_message(message: str, also_print: bool = True):
@@ -73,6 +105,37 @@ def log_message(message: str, also_print: bool = True):
 
     if also_print:
         print(message)
+
+
+def detect_resource_type(resource_id: str, title: str) -> str:
+    """
+    Detect resource type based on ID and title to apply appropriate audio format.
+
+    Returns:
+        'conversation' - Dialogue/smalltalk format (longer pauses, back-and-forth)
+        'directions' - Quick reference format (rapid, concise)
+        'emergency' - Serious instruction format (slower, clearer, longer pauses)
+        'basic_phrases' - Standard tutorial format (default)
+    """
+    title_lower = title.lower()
+
+    # Check for conversation/dialogue indicators
+    if any(word in title_lower for word in ['conversation', 'conversaciones', 'smalltalk',
+                                             'small talk', 'dialogue', 'diálogo', 'diálogos']):
+        return 'conversation'
+
+    # Check for directions/navigation indicators
+    if any(word in title_lower for word in ['direction', 'direcciones', 'navigation',
+                                             'navegación', 'gps', 'números']):
+        return 'directions'
+
+    # Check for emergency indicators
+    if any(word in title_lower for word in ['emergency', 'emergencia', 'safety',
+                                             'seguridad', 'protocolo', 'accident']):
+        return 'emergency'
+
+    # Default to basic phrases
+    return 'basic_phrases'
 
 
 def load_master_mapping() -> Dict:
@@ -398,45 +461,67 @@ async def concatenate_audio_files(file_list: List[Path], output_file: Path) -> b
         return False
 
 
-async def generate_phrase_audio(english: str, spanish: str, phrase_num: int) -> List[Path]:
-    """Generate audio segments for a single phrase, return list of temp files."""
+async def generate_phrase_audio(english: str, spanish: str, phrase_num: int,
+                               resource_type: str = 'basic_phrases') -> List[Path]:
+    """
+    Generate audio segments for a single phrase, return list of temp files.
+
+    Args:
+        english: English phrase text
+        spanish: Spanish translation
+        phrase_num: Phrase number (1-indexed)
+        resource_type: Type of resource (conversation, directions, emergency, basic_phrases)
+    """
     segments = []
+    pauses = PAUSE_CONFIGS[resource_type]
 
     try:
-        # 1. Context (Spanish)
-        context = f"Frase {phrase_num}."
+        # 1. Context (Spanish) - varies by resource type
+        if resource_type == 'conversation':
+            context = f"Intercambio {phrase_num}."
+        elif resource_type == 'emergency':
+            context = f"Frase de emergencia {phrase_num}."
+        else:
+            context = f"Frase {phrase_num}."
+
         context_file = await synthesize_text(context, SPANISH_VOICE, SPANISH_SPEED)
         if context_file:
             segments.append(context_file)
 
-        # 2. English phrase (first time, slow)
-        english_file_1 = await synthesize_text(english, ENGLISH_VOICE, ENGLISH_SPEED)
+        # 2. English phrase (first time) - speed varies by type
+        if resource_type == 'emergency':
+            english_speed = "-30%"  # Extra slow for emergencies
+        else:
+            english_speed = ENGLISH_SPEED
+
+        english_file_1 = await synthesize_text(english, ENGLISH_VOICE, english_speed)
         if english_file_1:
             segments.append(english_file_1)
 
         # 3. Pause 1
         pause1 = TEMP_DIR / f"pause1_{phrase_num}.mp3"
-        if await generate_silence_mp3(PAUSE_AFTER_ENGLISH_1, pause1):
+        if await generate_silence_mp3(pauses['after_english_1'], pause1):
             segments.append(pause1)
 
-        # 4. English phrase (repeat, slow)
-        english_file_2 = await synthesize_text(english, ENGLISH_VOICE, ENGLISH_SPEED)
-        if english_file_2:
-            segments.append(english_file_2)
+        # 4. English phrase (repeat) - skip for directions (rapid reference)
+        if resource_type != 'directions':
+            english_file_2 = await synthesize_text(english, ENGLISH_VOICE, english_speed)
+            if english_file_2:
+                segments.append(english_file_2)
 
-        # 5. Pause 2
-        pause2 = TEMP_DIR / f"pause2_{phrase_num}.mp3"
-        if await generate_silence_mp3(PAUSE_AFTER_ENGLISH_2, pause2):
-            segments.append(pause2)
+            # 5. Pause 2
+            pause2 = TEMP_DIR / f"pause2_{phrase_num}.mp3"
+            if await generate_silence_mp3(pauses['after_english_2'], pause2):
+                segments.append(pause2)
 
         # 6. Spanish translation
         spanish_file = await synthesize_text(spanish, SPANISH_VOICE, SPANISH_SPEED)
         if spanish_file:
             segments.append(spanish_file)
 
-        # 7. Pause 3 (for learner repetition)
+        # 7. Pause 3 (for learner repetition/thinking)
         pause3 = TEMP_DIR / f"pause3_{phrase_num}.mp3"
-        if await generate_silence_mp3(PAUSE_AFTER_SPANISH, pause3):
+        if await generate_silence_mp3(pauses['after_spanish'], pause3):
             segments.append(pause3)
 
         return segments
@@ -446,86 +531,183 @@ async def generate_phrase_audio(english: str, spanish: str, phrase_num: int) -> 
         return []
 
 
-async def generate_introduction(phrase_count: int) -> Optional[Path]:
-    """Generate introduction section."""
-    intro_text = (
-        f"¡Hola! Bienvenido a Hablas. "
-        f"En los próximos minutos vas a aprender {phrase_count} frases esenciales en inglés. "
-        f"Escucha cada frase dos veces en inglés, luego en español. "
-        f"Después de cada traducción, tendrás tiempo para repetir. "
-        f"¡Vamos a empezar!"
-    )
+async def generate_introduction(phrase_count: int, resource_type: str = 'basic_phrases') -> Optional[Path]:
+    """Generate introduction section adapted to resource type."""
+
+    if resource_type == 'conversation':
+        intro_text = (
+            f"¡Hola! Bienvenido a Hablas. "
+            f"En esta lección practicarás {phrase_count} intercambios conversacionales. "
+            f"Imagina cada situación, escucha la conversación en inglés y español. "
+            f"Tendrás tiempo para formular tu respuesta después de cada intercambio. "
+            f"¡Vamos a practicar!"
+        )
+    elif resource_type == 'directions':
+        intro_text = (
+            f"¡Hola! Bienvenido a Hablas. "
+            f"Esta es una guía rápida con {phrase_count} frases de navegación y direcciones. "
+            f"Escucha cada frase en inglés y español. "
+            f"Ideal para consulta rápida mientras trabajas. "
+            f"¡Empecemos!"
+        )
+    elif resource_type == 'emergency':
+        intro_text = (
+            f"¡Atención! Esta es una lección importante de seguridad. "
+            f"Aprenderás {phrase_count} frases de emergencia que pueden salvar vidas. "
+            f"Escucha con cuidado cada frase, despacio y claramente. "
+            f"Estas frases son fundamentales para tu seguridad y la de otros. "
+            f"Pon atención completa. ¡Comencemos!"
+        )
+    else:  # basic_phrases
+        intro_text = (
+            f"¡Hola! Bienvenido a Hablas. "
+            f"En los próximos minutos vas a aprender {phrase_count} frases esenciales en inglés. "
+            f"Escucha cada frase dos veces en inglés, luego en español. "
+            f"Después de cada traducción, tendrás tiempo para repetir. "
+            f"¡Vamos a empezar!"
+        )
 
     intro_file = await synthesize_text(intro_text, SPANISH_VOICE, SPANISH_SPEED)
     return intro_file
 
 
-async def generate_practice(phrases: List[Tuple[str, str]]) -> List[Path]:
-    """Generate practice section."""
+async def generate_practice(phrases: List[Tuple[str, str]],
+                           resource_type: str = 'basic_phrases') -> List[Path]:
+    """Generate practice section adapted to resource type."""
     segments = []
+    pauses = PAUSE_CONFIGS[resource_type]
 
-    practice_intro = "¡Ahora practica! Repite después de cada frase."
+    if resource_type == 'conversation':
+        practice_intro = "¡Ahora practica la conversación completa! Intenta responder como si estuvieras allí."
+    elif resource_type == 'directions':
+        practice_intro = "¡Repaso rápido! Todas las frases a velocidad normal."
+    elif resource_type == 'emergency':
+        practice_intro = "¡Repaso de emergencias! Estas frases pueden salvar vidas. Repite con claridad."
+    else:
+        practice_intro = "¡Ahora practica! Repite después de cada frase."
+
     intro_file = await synthesize_text(practice_intro, SPANISH_VOICE, SPANISH_SPEED)
     if intro_file:
         segments.append(intro_file)
 
         # Add pause after intro
         pause = TEMP_DIR / "practice_intro_pause.mp3"
-        if await generate_silence_mp3(PAUSE_SECTION, pause):
+        if await generate_silence_mp3(pauses['section'], pause):
             segments.append(pause)
 
-    # All English phrases at normal speed with pauses
-    for i, (english, _) in enumerate(phrases):
-        phrase_file = await synthesize_text(english, ENGLISH_VOICE, "+0%")  # Normal speed
-        if phrase_file:
-            segments.append(phrase_file)
+    # Generate practice based on type
+    if resource_type == 'conversation':
+        # For conversations: full exchange at normal speed
+        for i, (english, spanish) in enumerate(phrases):
+            # English at normal speed
+            english_file = await synthesize_text(english, ENGLISH_VOICE, "+0%")
+            if english_file:
+                segments.append(english_file)
+
+            # Pause for thinking
+            pause = TEMP_DIR / f"practice_pause_{i}.mp3"
+            if await generate_silence_mp3(3000, pause):  # 3 seconds
+                segments.append(pause)
+
+    elif resource_type == 'directions':
+        # For directions: rapid-fire all English phrases
+        for i, (english, _) in enumerate(phrases):
+            phrase_file = await synthesize_text(english, ENGLISH_VOICE, "+10%")  # Slightly faster
+            if phrase_file:
+                segments.append(phrase_file)
+
+            # Shorter pause
+            pause = TEMP_DIR / f"practice_pause_{i}.mp3"
+            if await generate_silence_mp3(1500, pause):
+                segments.append(pause)
+
+    else:  # basic_phrases and emergency
+        # Standard: All English phrases at normal speed with pauses
+        for i, (english, _) in enumerate(phrases):
+            phrase_file = await synthesize_text(english, ENGLISH_VOICE, "+0%")
+            if phrase_file:
+                segments.append(phrase_file)
 
             # Pause for repetition
             pause = TEMP_DIR / f"practice_pause_{i}.mp3"
-            if await generate_silence_mp3(PAUSE_AFTER_SPANISH, pause):
+            if await generate_silence_mp3(pauses['after_spanish'], pause):
                 segments.append(pause)
 
     return segments
 
 
-async def generate_conclusion(phrase_count: int) -> Optional[Path]:
-    """Generate conclusion section."""
-    conclusion_text = (
-        f"¡Excelente! Acabas de aprender {phrase_count} frases. "
-        f"Practica dos veces al día: por la mañana y por la noche. "
-        f"Cada palabra que aprendes es dinero en tu bolsillo. "
-        f"¡Nos vemos en la siguiente lección!"
-    )
+async def generate_conclusion(phrase_count: int, resource_type: str = 'basic_phrases') -> Optional[Path]:
+    """Generate conclusion section adapted to resource type."""
+
+    if resource_type == 'conversation':
+        conclusion_text = (
+            f"¡Muy bien! Practicaste {phrase_count} conversaciones reales. "
+            f"Escucha esta lección varias veces hasta que las respuestas salgan naturalmente. "
+            f"Cada conversación exitosa aumenta tus propinas. "
+            f"¡Sigue practicando!"
+        )
+    elif resource_type == 'directions':
+        conclusion_text = (
+            f"¡Listo! Ahora tienes {phrase_count} frases de navegación a tu disposición. "
+            f"Regresa a esta lección cuando necesites una consulta rápida. "
+            f"Conocer direcciones te hace más eficiente y ganas más. "
+            f"¡Éxito en tu ruta!"
+        )
+    elif resource_type == 'emergency':
+        conclusion_text = (
+            f"¡Importante! Acabas de aprender {phrase_count} frases de emergencia. "
+            f"Repasa esta lección regularmente. Nunca se sabe cuándo las necesitarás. "
+            f"Tu seguridad y la de otros depende de que recuerdes estas frases. "
+            f"Numeros de emergencia: nueve uno uno, nine one one. "
+            f"Mantente seguro. ¡Hasta la próxima!"
+        )
+    else:  # basic_phrases
+        conclusion_text = (
+            f"¡Excelente! Acabas de aprender {phrase_count} frases. "
+            f"Practica dos veces al día: por la mañana y por la noche. "
+            f"Cada palabra que aprendes es dinero en tu bolsillo. "
+            f"¡Nos vemos en la siguiente lección!"
+        )
 
     conclusion_file = await synthesize_text(conclusion_text, SPANISH_VOICE, SPANISH_SPEED)
     return conclusion_file
 
 
-async def generate_complete_audio(resource_id: str, phrases: List[Tuple[str, str]]) -> bool:
-    """Generate complete audio file for a resource."""
+async def generate_complete_audio(resource_id: str, phrases: List[Tuple[str, str]],
+                                 resource_type: str = 'basic_phrases') -> bool:
+    """
+    Generate complete audio file for a resource with type-specific formatting.
+
+    Args:
+        resource_id: Resource ID number
+        phrases: List of (English, Spanish) phrase tuples
+        resource_type: Type of resource (conversation, directions, emergency, basic_phrases)
+    """
     try:
         TEMP_DIR.mkdir(parents=True, exist_ok=True)
         all_segments = []
+        pauses = PAUSE_CONFIGS[resource_type]
 
+        log_message(f"  🎯 Format: {resource_type.upper()}")
         log_message(f"  🎤 Generating introduction...")
-        intro = await generate_introduction(len(phrases))
+        intro = await generate_introduction(len(phrases), resource_type)
         if intro:
             all_segments.append(intro)
 
             # Pause after intro
             pause = TEMP_DIR / "intro_pause.mp3"
-            if await generate_silence_mp3(PAUSE_SECTION, pause):
+            if await generate_silence_mp3(pauses['section'], pause):
                 all_segments.append(pause)
 
         # Generate each phrase
         log_message(f"  🎤 Generating {len(phrases)} phrases...")
         for i, (english, spanish) in enumerate(phrases, 1):
-            phrase_segments = await generate_phrase_audio(english, spanish, i)
+            phrase_segments = await generate_phrase_audio(english, spanish, i, resource_type)
             all_segments.extend(phrase_segments)
 
             # Pause between phrases
             pause = TEMP_DIR / f"between_pause_{i}.mp3"
-            if await generate_silence_mp3(PAUSE_BETWEEN_PHRASES, pause):
+            if await generate_silence_mp3(pauses['between_phrases'], pause):
                 all_segments.append(pause)
 
             if i % 5 == 0:
@@ -533,12 +715,12 @@ async def generate_complete_audio(resource_id: str, phrases: List[Tuple[str, str
 
         # Practice section
         log_message(f"  🎤 Generating practice section...")
-        practice_segments = await generate_practice(phrases)
+        practice_segments = await generate_practice(phrases, resource_type)
         all_segments.extend(practice_segments)
 
         # Conclusion
         log_message(f"  🎤 Generating conclusion...")
-        conclusion = await generate_conclusion(len(phrases))
+        conclusion = await generate_conclusion(len(phrases), resource_type)
         if conclusion:
             all_segments.append(conclusion)
 
@@ -566,11 +748,49 @@ async def generate_complete_audio(resource_id: str, phrases: List[Tuple[str, str
         return False
 
 
+def get_resource_title(resource_id: str, mapping: Dict) -> str:
+    """
+    Get resource title from source file or by ID.
+    Falls back to analyzing the source filename if title not in mapping.
+    """
+    resource_data = mapping.get(resource_id, {})
+
+    # Check if title is directly in mapping
+    if 'title' in resource_data:
+        return resource_data['title']
+
+    # Analyze source filename for clues
+    source_file = resource_data.get('source_file', '')
+    filename = resource_data.get('filename', '')
+
+    # Extract hints from filename
+    filename_lower = (filename or source_file).lower()
+
+    if 'conversation' in filename_lower:
+        return 'Conversaciones'
+    elif 'smalltalk' in filename_lower:
+        return 'Small Talk'
+    elif 'direction' in filename_lower or 'navigation' in filename_lower:
+        return 'Direcciones y Navegación'
+    elif 'emergency' in filename_lower or 'emergencia' in filename_lower:
+        return 'Frases de Emergencia'
+
+    return f"Resource {resource_id}"
+
+
 async def regenerate_resource(resource_id: str, mapping: Dict) -> bool:
-    """Regenerate audio for a single resource."""
+    """Regenerate audio for a single resource with type detection."""
     log_message(f"\n{'='*60}")
     log_message(f"🔄 Processing Resource {resource_id}")
     log_message(f"{'='*60}")
+
+    # Get resource title (from mapping or filename)
+    title = get_resource_title(resource_id, mapping)
+
+    # Detect resource type
+    resource_type = detect_resource_type(resource_id, title)
+    log_message(f"  📋 Title/Type hint: {title}")
+    log_message(f"  🎯 Detected format: {resource_type}")
 
     # Load phrases
     phrases = load_phrases_for_resource(resource_id, mapping)
@@ -579,8 +799,8 @@ async def regenerate_resource(resource_id: str, mapping: Dict) -> bool:
         log_message(f"  ❌ No phrases found")
         return False
 
-    # Generate audio
-    success = await generate_complete_audio(resource_id, phrases)
+    # Generate audio with type-specific formatting
+    success = await generate_complete_audio(resource_id, phrases, resource_type)
 
     if success:
         log_message(f"  ✅ Resource {resource_id} COMPLETE")

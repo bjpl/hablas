@@ -563,4 +563,207 @@ Aprenderás las 30 frases más importantes para manejar emergencias mientras tra
 │                                                          │
 │ 🗣️ **Español**: No me siento seguro. Necesito           │
 │ cancelar.                                                │
-│ 🔊 **Pronunciación**: [ai dont fiil seif. ai nii
+│ 🔊 **Pronunciación**: [ai dont fiil seif. ai niid tu    │
+│                       KAN-sel]                           │
+│                                                          │
+│ **Usa cuando**: Situación te hace sentir en peligro     │
+│ **Ejemplo real**: Cliente borracho se acerca             │
+│ agresivamente, o área parece peligrosa                   │
+│                                                          │
+│ 💡 **TIP**: Tu seguridad es lo más importante. Las apps │
+│ entienden y no te penalizan por razones de seguridad.   │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 7. Reportar Problemas
+
+## Frase 24: Reportar a soporte de la app
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I need to report a safety issue with      │
+│ this delivery."                                          │
+│                                                          │
+│ 🗣️ **Español**: Necesito reportar un problema de        │
+│ seguridad con esta entrega.                              │
+│ 🔊 **Pronunciación**: [ai niid tu ri-PORT a SEIF-ti     │
+│                       ISH-oo with this di-LIV-er-i]      │
+│                                                          │
+│ **Usa cuando**: Llamas a soporte después de una         │
+│ situación peligrosa                                      │
+│ **Ejemplo real**: Cliente amenazó con violencia, área   │
+│ peligrosa, perro agresivo - reportas inmediatamente      │
+│                                                          │
+│ 💡 **TIP**: Repórtalo SIEMPRE. Esto crea un registro    │
+│ oficial y te protege legalmente si hay problemas después│
+└─────────────────────────────────────────────────────────┘
+
+---
+
+## Frase 25: Pedir asistencia policial
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I need police assistance. There's a       │
+│ dangerous situation."                                    │
+│                                                          │
+│ 🗣️ **Español**: Necesito asistencia policial. Hay una   │
+│ situación peligrosa.                                     │
+│ 🔊 **Pronunciación**: [ai niid po-LEES a-SIS-tans.      │
+│                       therz a DEIN-jer-us sit-yu-EI-shun]│
+│                                                          │
+│ **Usa cuando**: Situación escala y necesitas ayuda      │
+│ oficial inmediata                                        │
+│ **Ejemplo real**: Cliente te amenaza físicamente,       │
+│ alguien te sigue, o ves actividad criminal               │
+│                                                          │
+│ 💡 **TIP**: Llama 911 PRIMERO, luego informa a tu app.  │
+│ La policía es tu prioridad en emergencias reales.       │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+## Frase 26: Explicar el problema al operador
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm a delivery driver and I feel          │
+│ threatened by a customer."                               │
+│                                                          │
+│ 🗣️ **Español**: Soy repartidor y me siento amenazado    │
+│ por un cliente.                                          │
+│ 🔊 **Pronunciación**: [aim a di-LIV-er-i DRAI-ver and   │
+│                       ai fiil THRET-end bai a            │
+│                       KUS-to-mer]                        │
+│                                                          │
+│ **Usa cuando**: Hablas con 911 o policía sobre una      │
+│ amenaza de cliente                                       │
+│ **Ejemplo real**: Operador del 911 pregunta qué pasó,   │
+│ tú explicas tu situación claramente                      │
+│                                                          │
+│ 💡 **TIP**: Di "delivery driver" primero. Esto ayuda a  │
+│ que entiendan el contexto inmediatamente.                │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+## Frase 27: Solicitar número de reporte
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Can I get a report number for my          │
+│ records?"                                                │
+│                                                          │
+│ 🗣️ **Español**: ¿Puedo obtener un número de reporte     │
+│ para mis registros?                                      │
+│ 🔊 **Pronunciación**: [kan ai get a ri-PORT NUM-ber     │
+│                       for mai REK-ordz]                  │
+│                                                          │
+│ **Usa cuando**: Después de hacer reporte oficial con    │
+│ policía o seguridad                                      │
+│ **Ejemplo real**: Policía toma tu declaración, tú       │
+│ pides el número de caso para documentación               │
+│                                                          │
+│ 💡 **TIP**: SIEMPRE pide número de reporte. Lo          │
+│ necesitarás para seguro, app, o seguimiento legal.      │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+## Frase 28: Contactar a un amigo o familiar
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm in an emergency situation. I need     │
+│ you to call the police for me."                         │
+│                                                          │
+│ 🗣️ **Español**: Estoy en una situación de emergencia.   │
+│ Necesito que llames a la policía por mí.                │
+│ 🔊 **Pronunciación**: [aim in an i-MER-jen-si           │
+│                       sit-yu-EI-shun. ai niid yuu tu kol │
+│                       the po-LEES for mii]               │
+│                                                          │
+│ **Usa cuando**: No puedes llamar al 911 directamente    │
+│ pero puedes contactar a alguien de confianza             │
+│ **Ejemplo real**: Situación tensa donde hacer llamada   │
+│ obvia empeoraría las cosas, contactas discretamente      │
+│                                                          │
+│ 💡 **TIP**: Ten un contacto de emergencia programado    │
+│ en tu teléfono. Presiona botón de emergencia en apps.   │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+## Frase 29: Describir a un sospechoso
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "The person is approximately [height],     │
+│ wearing [clothing description]."                        │
+│                                                          │
+│ 🗣️ **Español**: La persona mide aproximadamente         │
+│ [altura], vistiendo [descripción de ropa].              │
+│ 🔊 **Pronunciación**: [the PER-son iz a-PROK-si-mat-lee │
+│                       ... WER-ing...]                    │
+│                                                          │
+│ **Usa cuando**: Policía te pide descripción de alguien  │
+│ **Ejemplo real**: "The person is approximately 6 feet   │
+│ tall, wearing a black hoodie and jeans"                  │
+│                                                          │
+│ 💡 **TIP**: Aprende: height (altura), hair (cabello),   │
+│ clothing (ropa), vehicle (vehículo) - palabras clave    │
+│ para descripciones.                                      │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+## Frase 30: Confirmar que estás a salvo
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm safe now. Thank you for your help."   │
+│                                                          │
+│ 🗣️ **Español**: Estoy a salvo ahora. Gracias por tu     │
+│ ayuda.                                                   │
+│ 🔊 **Pronunciación**: [aim seif nau. thank yuu for yor  │
+│                       help]                              │
+│                                                          │
+│ **Usa cuando**: Después de resolverse la emergencia,    │
+│ contactas a quien te ayudó                               │
+│ **Ejemplo real**: Policía llegó, situación controlada,  │
+│ agradeces su ayuda profesionalmente                      │
+│                                                          │
+│ 💡 **TIP**: Siempre agradece a las personas que te      │
+│ ayudaron. Esto incluye policía, soporte de app, y       │
+│ testigos que llamaron al 911.                            │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 8. Tarjeta de Referencia Rápida
+
+## 🚨 NÚMEROS DE EMERGENCIA ESENCIALES
+
+**911** - Policía, Bomberos, Ambulancia (TODAS las emergencias)
+**App Support** - Encuentra el número en la app antes de necesitarlo
+
+## 📋 FRASES MÁS IMPORTANTES (Memoriza estas AHORA)
+
+1. "I need help. There's been an accident."
+2. "Someone is hurt. Please hurry."
+3. "I'm at [location]. Please send police."
+4. "I don't feel safe. I need to leave."
+5. "I need to report a safety issue."
+
+## ✅ DESPUÉS DE UNA EMERGENCIA
+
+☐ Llamaste al 911 si fue necesario
+☐ Reportaste a soporte de la app
+☐ Tomaste fotos de evidencia
+☐ Obtuviste número de reporte policial
+☐ Guardaste información de contacto de testigos
+☐ Documentaste todo por escrito
+
+---
+
+**RECUERDA**: Tu seguridad es MÁS IMPORTANTE que cualquier entrega o viaje. Si sientes peligro, VETE INMEDIATAMENTE y reporta después. Las apps SIEMPRE entienden problemas legítimos de seguridad.
+
+---
+
+**Fin del Manual**
+*Última actualización: 2025-11-11*
+*Parte de la serie "English for Gig Workers"*
