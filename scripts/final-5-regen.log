@@ -1,0 +1,225 @@
+================================================================================
+🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+================================================================================
+📅 Started: 2025-11-11 12:11:06
+
+✅ Loaded mapping for 56 resources
+
+============================================================
+🔄 Processing Resource 1
+============================================================
+  📋 Title/Type hint: Resource 1
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_phrases_1.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-1.mp3 (3.25 MB)
+  ✅ Resource 1 COMPLETE
+
+============================================================
+🔄 Processing Resource 2
+============================================================
+  📋 Title/Type hint: Resource 2
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_audio_1-audio-script.txt
+  ✓ Extracted 3 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 3 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 35 audio segments...
+  ✅ Generated: resource-2.mp3 (0.43 MB)
+  ✅ Resource 2 COMPLETE
+
+============================================================
+🔄 Processing Resource 4
+============================================================
+  📋 Title/Type hint: Resource 4
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_phrases_2.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-4.mp3 (2.23 MB)
+  ✅ Resource 4 COMPLETE
+
+============================================================
+🔄 Processing Resource 5
+============================================================
+  📋 Title/Type hint: Resource 5
+  🎯 Detected format: basic_phrases
+  📄 Source: intermediate_situations_1.md
+  ✓ Extracted 20 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 20 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 205 audio segments...
+  ✅ Generated: resource-5.mp3 (3.89 MB)
+  ✅ Resource 5 COMPLETE
+
+============================================================
+🔄 Processing Resource 6
+============================================================
+  📋 Title/Type hint: Resource 6
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_phrases_3.md
+  ✓ Extracted 24 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 24 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 245 audio segments...
+  ✅ Generated: resource-6.mp3 (1.92 MB)
+  ✅ Resource 6 COMPLETE
+
+============================================================
+🔄 Processing Resource 7
+============================================================
+  📋 Title/Type hint: Resource 7
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_audio_2-audio-script.txt
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 9
+============================================================
+  📋 Title/Type hint: Resource 9
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_phrases_4.md
+  ✓ Extracted 23 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 23 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 235 audio segments...
+  ✅ Generated: resource-9.mp3 (1.95 MB)
+  ✅ Resource 9 COMPLETE
+
+============================================================
+🔄 Processing Resource 10
+============================================================
+  📋 Title/Type hint: Conversaciones
+  🎯 Detected format: conversation
+  📄 Source: intermediate_conversations_1-audio-script.txt
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 11
+============================================================
+  📋 Title/Type hint: Resource 11
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_greetings_1.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-11.mp3 (2.64 MB)
+  ✅ Resource 11 COMPLETE
+
+============================================================
+🔄 Processing Resource 12
+============================================================
+  📋 Title/Type hint: Direcciones y Navegación
+  🎯 Detected format: directions
+  📄 Source: basic_directions_1.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: DIRECTIONS
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-12.mp3 (2.32 MB)
+  ✅ Resource 12 COMPLETE
+
+============================================================
+🔄 Processing Resource 13
+============================================================
+  📋 Title/Type hint: Direcciones y Navegación
+  🎯 Detected format: directions
+  📄 Source: basic_audio_navigation_1-audio-script.txt
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 14
+============================================================
+  📋 Title/Type hint: Resource 14
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_greetings_2.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-14.mp3 (3.20 MB)
+  ✅ Resource 14 COMPLETE
+
+============================================================
+🔄 Processing Resource 15
+============================================================
+  📋 Title/Type hint: Direcciones y Navegación
+  🎯 Detected format: directions
+  📄 Source: basic_directions_2.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: DIRECTIONS
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-15.mp3 (2.52 MB)
+  ✅ Resource 15 COMPLETE
+
+============================================================
+🔄 Processing Resource 16
+============================================================
+  📋 Title/Type hint: Small Talk
+  🎯 Detected format: conversation
+  📄 Source: intermediate_smalltalk_1.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: CONVERSATION
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-16.mp3 (2.89 MB)
+  ✅ Resource 16 COMPLETE
+
+============================================================
+🔄 Processing Resource 17
+============================================================
+  📋 Title/Type hint: Resource 17
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_greetings_3.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-17.mp3 (2.54 MB)
+  ✅ Resource 17 COMPLETE

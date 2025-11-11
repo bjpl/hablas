@@ -1986,3 +1986,1352 @@ OSError: [Errno 39] Directory not empty: '/mnt/c/Users/brand/Development/Project
 [2025-11-10 21:06:04] 
 📋 Full log: /mnt/c/Users/brand/Development/Project_Workspace/active-development/hablas/scripts/complete-regeneration-log.txt
 [2025-11-10 21:06:04] ================================================================================
+[2025-11-11 10:40:40] ================================================================================
+[2025-11-11 10:40:40] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-11 10:40:41] ================================================================================
+[2025-11-11 10:40:41] 📅 Started: 2025-11-11 10:40:41
+[2025-11-11 10:40:41] 
+[2025-11-11 10:40:41] ✅ Loaded mapping for 56 resources
+[2025-11-11 10:40:41] 
+============================================================
+[2025-11-11 10:40:41] 🔄 Processing Resource 1
+[2025-11-11 10:40:41] ============================================================
+[2025-11-11 10:40:41]   📋 Title/Type hint: Resource 1
+[2025-11-11 10:40:41]   🎯 Detected format: basic_phrases
+[2025-11-11 10:40:41]   📄 Source: basic_phrases_1.md
+[2025-11-11 10:40:41]   ✓ Extracted 30 phrase pairs
+[2025-11-11 10:40:41]   🎯 Format: BASIC_PHRASES
+[2025-11-11 10:40:42]   🎤 Generating introduction...
+[2025-11-11 10:40:43]   🎤 Generating 30 phrases...
+[2025-11-11 10:40:58]     ✓ 5/30 phrases generated
+[2025-11-11 10:41:14]     ✓ 10/30 phrases generated
+[2025-11-11 10:41:33]     ✓ 15/30 phrases generated
+[2025-11-11 10:41:50]     ✓ 20/30 phrases generated
+[2025-11-11 10:42:05]     ✓ 25/30 phrases generated
+[2025-11-11 10:42:20]     ✓ 30/30 phrases generated
+[2025-11-11 10:42:20]   🎤 Generating practice section...
+[2025-11-11 10:42:47]   🎤 Generating conclusion...
+[2025-11-11 10:42:48]   🔧 Concatenating 305 audio segments...
+[2025-11-11 10:42:49]   ✅ Generated: resource-1.mp3 (3.25 MB)
+[2025-11-11 10:42:50]   ✅ Resource 1 COMPLETE
+[2025-11-11 10:42:50] 
+============================================================
+[2025-11-11 10:42:50] 🔄 Processing Resource 2
+[2025-11-11 10:42:51] ============================================================
+[2025-11-11 10:42:51]   📋 Title/Type hint: Resource 2
+[2025-11-11 10:42:51]   🎯 Detected format: basic_phrases
+[2025-11-11 10:42:51]   📄 Source: basic_audio_1-audio-script.txt
+[2025-11-11 10:42:51]   ✓ Extracted 3 phrase pairs
+[2025-11-11 10:42:51]   🎯 Format: BASIC_PHRASES
+[2025-11-11 10:42:51]   🎤 Generating introduction...
+[2025-11-11 10:42:50]   🎤 Generating 3 phrases...
+[2025-11-11 10:43:02]   🎤 Generating practice section...
+[2025-11-11 10:43:07]   🎤 Generating conclusion...
+[2025-11-11 10:43:08]   🔧 Concatenating 35 audio segments...
+[2025-11-11 10:43:09]   ✅ Generated: resource-2.mp3 (0.43 MB)
+[2025-11-11 10:43:09]   ✅ Resource 2 COMPLETE
+[2025-11-11 10:43:09] 
+============================================================
+[2025-11-11 10:43:09] 🔄 Processing Resource 4
+[2025-11-11 10:43:09] ============================================================
+[2025-11-11 10:43:10]   📋 Title/Type hint: Resource 4
+[2025-11-11 10:43:10]   🎯 Detected format: basic_phrases
+[2025-11-11 10:43:10]   📄 Source: basic_phrases_2.md
+[2025-11-11 10:43:10]   ✓ Extracted 30 phrase pairs
+[2025-11-11 10:43:10]   🎯 Format: BASIC_PHRASES
+[2025-11-11 10:43:10]   🎤 Generating introduction...
+[2025-11-11 10:43:16]   🎤 Generating 30 phrases...
+[2025-11-11 10:43:31]     ✓ 5/30 phrases generated
+[2025-11-11 10:43:48]     ✓ 10/30 phrases generated
+[2025-11-11 10:44:00]     ✓ 15/30 phrases generated
+[2025-11-11 10:44:19]     ✓ 20/30 phrases generated
+[2025-11-11 10:44:34]     ✓ 25/30 phrases generated
+[2025-11-11 10:44:49]     ✓ 30/30 phrases generated
+[2025-11-11 10:44:49]   🎤 Generating practice section...
+[2025-11-11 10:45:12]   🎤 Generating conclusion...
+[2025-11-11 10:45:14]   🔧 Concatenating 305 audio segments...
+[2025-11-11 10:45:15]   ✅ Generated: resource-4.mp3 (2.23 MB)
+[2025-11-11 10:45:15]   ✅ Resource 4 COMPLETE
+[2025-11-11 10:45:16] 
+============================================================
+[2025-11-11 10:45:16] 🔄 Processing Resource 5
+[2025-11-11 10:45:16] ============================================================
+[2025-11-11 10:45:16]   📋 Title/Type hint: Resource 5
+[2025-11-11 10:45:16]   🎯 Detected format: basic_phrases
+[2025-11-11 10:45:16]   📄 Source: intermediate_situations_1.md
+[2025-11-11 10:45:16]   ✓ Extracted 20 phrase pairs
+[2025-11-11 10:45:17]   🎯 Format: BASIC_PHRASES
+[2025-11-11 10:45:17]   🎤 Generating introduction...
+[2025-11-11 10:45:19]   🎤 Generating 20 phrases...
+[2025-11-11 10:45:32]     ✓ 5/20 phrases generated
+[2025-11-11 10:45:50]     ✓ 10/20 phrases generated
+[2025-11-11 10:46:04]     ✓ 15/20 phrases generated
+[2025-11-11 10:46:20]     ✓ 20/20 phrases generated
+[2025-11-11 10:46:20]   🎤 Generating practice section...
+[2025-11-11 10:46:37]   🎤 Generating conclusion...
+[2025-11-11 10:46:39]   🔧 Concatenating 205 audio segments...
+[2025-11-11 10:46:39]   ✅ Generated: resource-5.mp3 (3.89 MB)
+[2025-11-11 10:46:40]   ✅ Resource 5 COMPLETE
+[2025-11-11 10:46:40] 
+============================================================
+[2025-11-11 10:46:40] 🔄 Processing Resource 6
+[2025-11-11 10:46:40] ============================================================
+[2025-11-11 10:46:41]   📋 Title/Type hint: Resource 6
+[2025-11-11 10:46:41]   🎯 Detected format: basic_phrases
+[2025-11-11 10:46:41]   📄 Source: basic_phrases_3.md
+[2025-11-11 10:46:41]   ✓ Extracted 24 phrase pairs
+[2025-11-11 10:46:41]   🎯 Format: BASIC_PHRASES
+[2025-11-11 10:46:41]   🎤 Generating introduction...
+[2025-11-11 10:46:42]   🎤 Generating 24 phrases...
+[2025-11-11 10:46:57]     ✓ 5/24 phrases generated
+[2025-11-11 10:47:15]     ✓ 10/24 phrases generated
+[2025-11-11 10:47:33]     ✓ 15/24 phrases generated
+[2025-11-11 10:47:48]     ✓ 20/24 phrases generated
+[2025-11-11 10:47:56]   🎤 Generating practice section...
+[2025-11-11 10:48:19]   🎤 Generating conclusion...
+[2025-11-11 10:48:19]   🔧 Concatenating 245 audio segments...
+[2025-11-11 10:48:20]   ✅ Generated: resource-6.mp3 (1.92 MB)
+[2025-11-11 10:48:20]   ✅ Resource 6 COMPLETE
+[2025-11-11 10:48:18] 
+============================================================
+[2025-11-11 10:48:18] 🔄 Processing Resource 7
+[2025-11-11 10:48:18] ============================================================
+[2025-11-11 10:48:18]   📋 Title/Type hint: Resource 7
+[2025-11-11 10:48:18]   🎯 Detected format: basic_phrases
+[2025-11-11 10:48:19]   📄 Source: basic_audio_2-audio-script.txt
+[2025-11-11 10:48:19]   ✓ Extracted 0 phrase pairs
+[2025-11-11 10:48:19]   ❌ No phrases found
+[2025-11-11 10:48:19] 
+============================================================
+[2025-11-11 10:48:19] 🔄 Processing Resource 9
+[2025-11-11 10:48:20] ============================================================
+[2025-11-11 10:48:20]   📋 Title/Type hint: Resource 9
+[2025-11-11 10:48:20]   🎯 Detected format: basic_phrases
+[2025-11-11 10:48:20]   📄 Source: basic_phrases_4.md
+[2025-11-11 10:48:20]   ✓ Extracted 23 phrase pairs
+[2025-11-11 10:48:20]   🎯 Format: BASIC_PHRASES
+[2025-11-11 10:48:20]   🎤 Generating introduction...
+[2025-11-11 10:48:21]   🎤 Generating 23 phrases...
+[2025-11-11 10:48:40]     ✓ 5/23 phrases generated
+[2025-11-11 10:48:53]     ✓ 10/23 phrases generated
+[2025-11-11 10:49:11]     ✓ 15/23 phrases generated
+[2025-11-11 10:49:21]     ✓ 20/23 phrases generated
+[2025-11-11 10:49:33]   🎤 Generating practice section...
+[2025-11-11 10:49:55]   🎤 Generating conclusion...
+[2025-11-11 10:49:57]   🔧 Concatenating 235 audio segments...
+[2025-11-11 10:49:57]   ✅ Generated: resource-9.mp3 (1.95 MB)
+[2025-11-11 10:49:57]   ✅ Resource 9 COMPLETE
+[2025-11-11 10:49:58] 
+============================================================
+[2025-11-11 10:49:58] 🔄 Processing Resource 10
+[2025-11-11 10:49:58] ============================================================
+[2025-11-11 10:49:58]   📋 Title/Type hint: Conversaciones
+[2025-11-11 10:49:58]   🎯 Detected format: conversation
+[2025-11-11 10:49:58]   📄 Source: intermediate_conversations_1-audio-script.txt
+[2025-11-11 10:49:58]   ✓ Extracted 0 phrase pairs
+[2025-11-11 10:49:58]   ❌ No phrases found
+[2025-11-11 10:49:59] 
+============================================================
+[2025-11-11 10:49:59] 🔄 Processing Resource 11
+[2025-11-11 10:49:59] ============================================================
+[2025-11-11 10:49:59]   📋 Title/Type hint: Resource 11
+[2025-11-11 10:49:59]   🎯 Detected format: basic_phrases
+[2025-11-11 10:49:59]   📄 Source: basic_greetings_1.md
+[2025-11-11 10:49:59]   ✓ Extracted 30 phrase pairs
+[2025-11-11 10:49:59]   🎯 Format: BASIC_PHRASES
+[2025-11-11 10:49:59]   🎤 Generating introduction...
+[2025-11-11 10:50:01]   🎤 Generating 30 phrases...
+[2025-11-11 10:50:16]     ✓ 5/30 phrases generated
+[2025-11-11 10:50:29]     ✓ 10/30 phrases generated
+[2025-11-11 10:50:45]     ✓ 15/30 phrases generated
+[2025-11-11 10:51:00]     ✓ 20/30 phrases generated
+[2025-11-11 10:51:16]     ✓ 25/30 phrases generated
+[2025-11-11 10:51:28]     ✓ 30/30 phrases generated
+[2025-11-11 10:51:28]   🎤 Generating practice section...
+[2025-11-11 10:51:54]   🎤 Generating conclusion...
+[2025-11-11 10:51:55]   🔧 Concatenating 305 audio segments...
+[2025-11-11 10:51:55]   ✅ Generated: resource-11.mp3 (2.64 MB)
+[2025-11-11 10:51:55]   ✅ Resource 11 COMPLETE
+[2025-11-11 10:51:56] 
+============================================================
+[2025-11-11 10:51:56] 🔄 Processing Resource 12
+[2025-11-11 10:51:56] ============================================================
+[2025-11-11 10:51:56]   📋 Title/Type hint: Direcciones y Navegación
+[2025-11-11 10:51:56]   🎯 Detected format: directions
+[2025-11-11 10:51:56]   📄 Source: basic_directions_1.md
+[2025-11-11 10:51:56]   ✓ Extracted 30 phrase pairs
+[2025-11-11 10:51:56]   🎯 Format: DIRECTIONS
+[2025-11-11 10:51:56]   🎤 Generating introduction...
+[2025-11-11 10:51:59]   🎤 Generating 30 phrases...
+[2025-11-11 10:52:19]     ✓ 5/30 phrases generated
+[2025-11-11 10:52:35]     ✓ 10/30 phrases generated
+[2025-11-11 10:52:51]     ✓ 15/30 phrases generated
+[2025-11-11 10:53:08]     ✓ 20/30 phrases generated
+[2025-11-11 10:53:20]     ✓ 25/30 phrases generated
+[2025-11-11 10:53:37]     ✓ 30/30 phrases generated
+[2025-11-11 10:53:37]   🎤 Generating practice section...
+[2025-11-11 10:54:00]   🎤 Generating conclusion...
+[2025-11-11 10:54:01]   🔧 Concatenating 305 audio segments...
+[2025-11-11 10:54:02]   ✅ Generated: resource-12.mp3 (2.32 MB)
+[2025-11-11 10:54:02]   ✅ Resource 12 COMPLETE
+[2025-11-11 10:54:03] 
+============================================================
+[2025-11-11 10:54:03] 🔄 Processing Resource 13
+[2025-11-11 10:54:03] ============================================================
+[2025-11-11 10:54:03]   📋 Title/Type hint: Direcciones y Navegación
+[2025-11-11 10:54:03]   🎯 Detected format: directions
+[2025-11-11 10:54:03]   📄 Source: basic_audio_navigation_1-audio-script.txt
+[2025-11-11 10:54:03]   ✓ Extracted 0 phrase pairs
+[2025-11-11 10:54:03]   ❌ No phrases found
+[2025-11-11 10:54:04] 
+============================================================
+[2025-11-11 10:54:04] 🔄 Processing Resource 14
+[2025-11-11 10:54:04] ============================================================
+[2025-11-11 10:54:04]   📋 Title/Type hint: Resource 14
+[2025-11-11 10:54:04]   🎯 Detected format: basic_phrases
+[2025-11-11 10:54:04]   📄 Source: basic_greetings_2.md
+[2025-11-11 10:54:04]   ✓ Extracted 30 phrase pairs
+[2025-11-11 10:54:05]   🎯 Format: BASIC_PHRASES
+[2025-11-11 10:54:05]   🎤 Generating introduction...
+[2025-11-11 10:54:06]   🎤 Generating 30 phrases...
+[2025-11-11 10:54:29]     ✓ 5/30 phrases generated
+[2025-11-11 10:54:43]     ✓ 10/30 phrases generated
+[2025-11-11 10:54:55]     ✓ 15/30 phrases generated
+[2025-11-11 10:55:13]     ✓ 20/30 phrases generated
+[2025-11-11 10:55:30]     ✓ 25/30 phrases generated
+[2025-11-11 10:55:44]     ✓ 30/30 phrases generated
+[2025-11-11 10:55:44]   🎤 Generating practice section...
+[2025-11-11 10:56:10]   🎤 Generating conclusion...
+[2025-11-11 10:56:10]   🔧 Concatenating 305 audio segments...
+[2025-11-11 10:56:11]   ✅ Generated: resource-14.mp3 (3.20 MB)
+[2025-11-11 10:56:11]   ✅ Resource 14 COMPLETE
+[2025-11-11 10:56:12] 
+============================================================
+[2025-11-11 10:56:12] 🔄 Processing Resource 15
+[2025-11-11 10:56:12] ============================================================
+[2025-11-11 10:56:12]   📋 Title/Type hint: Direcciones y Navegación
+[2025-11-11 10:56:12]   🎯 Detected format: directions
+[2025-11-11 10:56:12]   📄 Source: basic_directions_2.md
+[2025-11-11 10:56:12]   ✓ Extracted 30 phrase pairs
+[2025-11-11 10:56:12]   🎯 Format: DIRECTIONS
+[2025-11-11 10:56:12]   🎤 Generating introduction...
+[2025-11-11 10:56:14]   🎤 Generating 30 phrases...
+[2025-11-11 10:56:31]     ✓ 5/30 phrases generated
+[2025-11-11 10:56:43]     ✓ 10/30 phrases generated
+[2025-11-11 10:56:59]     ✓ 15/30 phrases generated
+[2025-11-11 10:57:16]     ✓ 20/30 phrases generated
+[2025-11-11 10:57:35]     ✓ 25/30 phrases generated
+[2025-11-11 10:57:46]     ✓ 30/30 phrases generated
+[2025-11-11 10:57:46]   🎤 Generating practice section...
+[2025-11-11 10:58:11]   🎤 Generating conclusion...
+[2025-11-11 10:58:13]   🔧 Concatenating 305 audio segments...
+[2025-11-11 10:58:13]   ✅ Generated: resource-15.mp3 (2.52 MB)
+[2025-11-11 10:58:13]   ✅ Resource 15 COMPLETE
+[2025-11-11 10:58:14] 
+============================================================
+[2025-11-11 10:58:14] 🔄 Processing Resource 16
+[2025-11-11 10:58:14] ============================================================
+[2025-11-11 10:58:14]   📋 Title/Type hint: Small Talk
+[2025-11-11 10:58:14]   🎯 Detected format: conversation
+[2025-11-11 10:58:14]   📄 Source: intermediate_smalltalk_1.md
+[2025-11-11 10:58:14]   ✓ Extracted 30 phrase pairs
+[2025-11-11 10:58:14]   🎯 Format: CONVERSATION
+[2025-11-11 10:58:15]   🎤 Generating introduction...
+[2025-11-11 10:58:16]   🎤 Generating 30 phrases...
+[2025-11-11 10:58:37]     ✓ 5/30 phrases generated
+[2025-11-11 10:58:49]     ✓ 10/30 phrases generated
+[2025-11-11 10:59:07]     ✓ 15/30 phrases generated
+[2025-11-11 10:59:22]     ✓ 20/30 phrases generated
+[2025-11-11 10:59:40]     ✓ 25/30 phrases generated
+[2025-11-11 10:59:59]     ✓ 30/30 phrases generated
+[2025-11-11 10:59:59]   🎤 Generating practice section...
+[2025-11-11 11:00:21]   🎤 Generating conclusion...
+[2025-11-11 11:00:23]   🔧 Concatenating 305 audio segments...
+[2025-11-11 11:00:23]   ✅ Generated: resource-16.mp3 (2.89 MB)
+[2025-11-11 11:00:24]   ✅ Resource 16 COMPLETE
+[2025-11-11 11:00:24] 
+============================================================
+[2025-11-11 11:00:24] 🔄 Processing Resource 17
+[2025-11-11 11:00:24] ============================================================
+[2025-11-11 11:00:24]   📋 Title/Type hint: Resource 17
+[2025-11-11 11:00:25]   🎯 Detected format: basic_phrases
+[2025-11-11 11:00:25]   📄 Source: basic_greetings_3.md
+[2025-11-11 11:00:25]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:00:25]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:00:25]   🎤 Generating introduction...
+[2025-11-11 11:00:26]   🎤 Generating 30 phrases...
+[2025-11-11 11:00:40]     ✓ 5/30 phrases generated
+[2025-11-11 11:00:56]     ✓ 10/30 phrases generated
+[2025-11-11 11:01:10]     ✓ 15/30 phrases generated
+[2025-11-11 11:01:27]     ✓ 20/30 phrases generated
+[2025-11-11 11:01:42]     ✓ 25/30 phrases generated
+[2025-11-11 11:01:56]     ✓ 30/30 phrases generated
+[2025-11-11 11:01:56]   🎤 Generating practice section...
+[2025-11-11 11:02:20]   🎤 Generating conclusion...
+[2025-11-11 11:02:21]   🔧 Concatenating 305 audio segments...
+[2025-11-11 11:02:22]   ✅ Generated: resource-17.mp3 (2.54 MB)
+[2025-11-11 11:02:23]   ✅ Resource 17 COMPLETE
+[2025-11-11 11:02:23] 
+============================================================
+[2025-11-11 11:02:23] 🔄 Processing Resource 18
+[2025-11-11 11:02:23] ============================================================
+[2025-11-11 11:02:24]   📋 Title/Type hint: Direcciones y Navegación
+[2025-11-11 11:02:24]   🎯 Detected format: directions
+[2025-11-11 11:02:24]   📄 Source: basic_audio_navigation_2-audio-script.txt
+[2025-11-11 11:02:24]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:02:24]   ❌ No phrases found
+[2025-11-11 11:02:25] 
+============================================================
+[2025-11-11 11:02:25] 🔄 Processing Resource 19
+[2025-11-11 11:02:25] ============================================================
+[2025-11-11 11:02:25]   📋 Title/Type hint: Direcciones y Navegación
+[2025-11-11 11:02:25]   🎯 Detected format: directions
+[2025-11-11 11:02:25]   📄 Source: basic_directions_3.md
+[2025-11-11 11:02:26]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:02:26]   🎯 Format: DIRECTIONS
+[2025-11-11 11:02:26]   🎤 Generating introduction...
+[2025-11-11 11:02:27]   🎤 Generating 30 phrases...
+[2025-11-11 11:02:40]     ✓ 5/30 phrases generated
+[2025-11-11 11:02:56]     ✓ 10/30 phrases generated
+[2025-11-11 11:03:10]     ✓ 15/30 phrases generated
+[2025-11-11 11:03:27]     ✓ 20/30 phrases generated
+[2025-11-11 11:03:39]     ✓ 25/30 phrases generated
+[2025-11-11 11:03:53]     ✓ 30/30 phrases generated
+[2025-11-11 11:03:53]   🎤 Generating practice section...
+[2025-11-11 11:04:17]   🎤 Generating conclusion...
+[2025-11-11 11:04:18]   🔧 Concatenating 305 audio segments...
+[2025-11-11 11:04:19]   ✅ Generated: resource-19.mp3 (2.29 MB)
+[2025-11-11 11:04:20]   ✅ Resource 19 COMPLETE
+[2025-11-11 11:04:21] 
+============================================================
+[2025-11-11 11:04:21] 🔄 Processing Resource 20
+[2025-11-11 11:04:21] ============================================================
+[2025-11-11 11:04:21]   📋 Title/Type hint: Resource 20
+[2025-11-11 11:04:21]   🎯 Detected format: basic_phrases
+[2025-11-11 11:04:21]   📄 Source: intermediate_problems_1.md
+[2025-11-11 11:04:21]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:04:22]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:04:22]   🎤 Generating introduction...
+[2025-11-11 11:04:23]   🎤 Generating 30 phrases...
+[2025-11-11 11:04:44]     ✓ 5/30 phrases generated
+[2025-11-11 11:05:04]     ✓ 10/30 phrases generated
+[2025-11-11 11:05:18]     ✓ 15/30 phrases generated
+[2025-11-11 11:05:34]     ✓ 20/30 phrases generated
+[2025-11-11 11:05:51]     ✓ 25/30 phrases generated
+[2025-11-11 11:06:04]     ✓ 30/30 phrases generated
+[2025-11-11 11:06:04]   🎤 Generating practice section...
+[2025-11-11 11:06:30]   🎤 Generating conclusion...
+[2025-11-11 11:06:32]   🔧 Concatenating 305 audio segments...
+[2025-11-11 11:06:33]   ✅ Generated: resource-20.mp3 (4.64 MB)
+[2025-11-11 11:06:31]   ✅ Resource 20 COMPLETE
+[2025-11-11 11:06:32] 
+============================================================
+[2025-11-11 11:06:32] 🔄 Processing Resource 21
+[2025-11-11 11:06:32] ============================================================
+[2025-11-11 11:06:32]   📋 Title/Type hint: Resource 21
+[2025-11-11 11:06:32]   🎯 Detected format: basic_phrases
+[2025-11-11 11:06:32]   📄 Source: basic_greetings_all_1-audio-script.txt
+[2025-11-11 11:06:33]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:06:33]   ❌ No phrases found
+[2025-11-11 11:06:33] 
+============================================================
+[2025-11-11 11:06:33] 🔄 Processing Resource 22
+[2025-11-11 11:06:34] ============================================================
+[2025-11-11 11:06:34]   📋 Title/Type hint: Resource 22
+[2025-11-11 11:06:34]   🎯 Detected format: basic_phrases
+[2025-11-11 11:06:34]   📄 Source: basic_numbers_1.md
+[2025-11-11 11:06:34]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:06:34]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:06:35]   🎤 Generating introduction...
+[2025-11-11 11:06:36]   🎤 Generating 30 phrases...
+[2025-11-11 11:06:55]     ✓ 5/30 phrases generated
+[2025-11-11 11:07:10]     ✓ 10/30 phrases generated
+[2025-11-11 11:07:29]     ✓ 15/30 phrases generated
+[2025-11-11 11:07:46]     ✓ 20/30 phrases generated
+[2025-11-11 11:08:01]     ✓ 25/30 phrases generated
+[2025-11-11 11:08:12]     ✓ 30/30 phrases generated
+[2025-11-11 11:08:12]   🎤 Generating practice section...
+[2025-11-11 11:08:32]   🎤 Generating conclusion...
+[2025-11-11 11:08:33]   🔧 Concatenating 305 audio segments...
+[2025-11-11 11:08:34]   ✅ Generated: resource-22.mp3 (2.33 MB)
+[2025-11-11 11:08:34]   ✅ Resource 22 COMPLETE
+[2025-11-11 11:08:34] 
+============================================================
+[2025-11-11 11:08:34] 🔄 Processing Resource 23
+[2025-11-11 11:08:34] ============================================================
+[2025-11-11 11:08:35]   📋 Title/Type hint: Resource 23
+[2025-11-11 11:08:35]   🎯 Detected format: basic_phrases
+[2025-11-11 11:08:35]   📄 Source: basic_time_1.md
+[2025-11-11 11:08:35]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:08:35]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:08:35]   🎤 Generating introduction...
+[2025-11-11 11:08:36]   🎤 Generating 30 phrases...
+[2025-11-11 11:08:53]     ✓ 5/30 phrases generated
+[2025-11-11 11:09:10]     ✓ 10/30 phrases generated
+[2025-11-11 11:09:29]     ✓ 15/30 phrases generated
+[2025-11-11 11:09:44]     ✓ 20/30 phrases generated
+[2025-11-11 11:09:58]     ✓ 25/30 phrases generated
+[2025-11-11 11:10:17]     ✓ 30/30 phrases generated
+[2025-11-11 11:10:17]   🎤 Generating practice section...
+[2025-11-11 11:10:39]   🎤 Generating conclusion...
+[2025-11-11 11:10:40]   🔧 Concatenating 305 audio segments...
+[2025-11-11 11:10:40]   ✅ Generated: resource-23.mp3 (2.31 MB)
+[2025-11-11 11:10:40]   ✅ Resource 23 COMPLETE
+[2025-11-11 11:10:41] 
+============================================================
+[2025-11-11 11:10:41] 🔄 Processing Resource 25
+[2025-11-11 11:10:41] ============================================================
+[2025-11-11 11:10:41]   📋 Title/Type hint: Resource 25
+[2025-11-11 11:10:41]   🎯 Detected format: basic_phrases
+[2025-11-11 11:10:41]   📄 Source: intermediate_customer_service_1.md
+[2025-11-11 11:10:41]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:10:41]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:10:42]   🎤 Generating introduction...
+[2025-11-11 11:10:42]   🎤 Generating 30 phrases...
+[2025-11-11 11:10:56]     ✓ 5/30 phrases generated
+[2025-11-11 11:11:11]     ✓ 10/30 phrases generated
+[2025-11-11 11:11:26]     ✓ 15/30 phrases generated
+[2025-11-11 11:11:42]     ✓ 20/30 phrases generated
+[2025-11-11 11:11:58]     ✓ 25/30 phrases generated
+[2025-11-11 11:12:13]     ✓ 30/30 phrases generated
+[2025-11-11 11:12:13]   🎤 Generating practice section...
+[2025-11-11 11:12:38]   🎤 Generating conclusion...
+[2025-11-11 11:12:38]   🔧 Concatenating 305 audio segments...
+[2025-11-11 11:12:39]   ✅ Generated: resource-25.mp3 (2.83 MB)
+[2025-11-11 11:12:39]   ✅ Resource 25 COMPLETE
+[2025-11-11 11:12:40] 
+============================================================
+[2025-11-11 11:12:40] 🔄 Processing Resource 26
+[2025-11-11 11:12:40] ============================================================
+[2025-11-11 11:12:40]   📋 Title/Type hint: Resource 26
+[2025-11-11 11:12:40]   🎯 Detected format: basic_phrases
+[2025-11-11 11:12:40]   📄 Source: intermediate_complaints_1.md
+[2025-11-11 11:12:40]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:12:40]   ❌ No phrases found
+[2025-11-11 11:12:41] 
+============================================================
+[2025-11-11 11:12:41] 🔄 Processing Resource 27
+[2025-11-11 11:12:41] ============================================================
+[2025-11-11 11:12:41]   📋 Title/Type hint: Frases de Emergencia
+[2025-11-11 11:12:41]   🎯 Detected format: emergency
+[2025-11-11 11:12:42]   📄 Source: emergency_phrases_1.md
+[2025-11-11 11:12:42]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:12:42]   ❌ No phrases found
+[2025-11-11 11:12:42] 
+============================================================
+[2025-11-11 11:12:42] 🔄 Processing Resource 28
+[2025-11-11 11:12:42] ============================================================
+[2025-11-11 11:12:42]   📋 Title/Type hint: Resource 28
+[2025-11-11 11:12:43]   🎯 Detected format: basic_phrases
+[2025-11-11 11:12:43]   📄 Source: basic_greetings_all_2-audio-script.txt
+[2025-11-11 11:12:43]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:12:43]   ❌ No phrases found
+[2025-11-11 11:12:43] 
+============================================================
+[2025-11-11 11:12:43] 🔄 Processing Resource 29
+[2025-11-11 11:12:43] ============================================================
+[2025-11-11 11:12:44]   📋 Title/Type hint: Resource 29
+[2025-11-11 11:12:44]   🎯 Detected format: basic_phrases
+[2025-11-11 11:12:44]   📄 Source: basic_numbers_2.md
+[2025-11-11 11:12:44]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:12:44]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:12:44]   🎤 Generating introduction...
+[2025-11-11 11:12:46]   🎤 Generating 30 phrases...
+[2025-11-11 11:13:02]     ✓ 5/30 phrases generated
+[2025-11-11 11:13:19]     ✓ 10/30 phrases generated
+[2025-11-11 11:13:33]     ✓ 15/30 phrases generated
+[2025-11-11 11:13:52]     ✓ 20/30 phrases generated
+[2025-11-11 11:14:05]     ✓ 25/30 phrases generated
+[2025-11-11 11:14:22]     ✓ 30/30 phrases generated
+[2025-11-11 11:14:22]   🎤 Generating practice section...
+[2025-11-11 11:14:46]   🎤 Generating conclusion...
+[2025-11-11 11:14:46]   🔧 Concatenating 305 audio segments...
+[2025-11-11 11:14:47]   ✅ Generated: resource-29.mp3 (3.10 MB)
+[2025-11-11 11:14:48]   ✅ Resource 29 COMPLETE
+[2025-11-11 11:14:49] 
+============================================================
+[2025-11-11 11:14:49] 🔄 Processing Resource 30
+[2025-11-11 11:14:49] ============================================================
+[2025-11-11 11:14:49]   📋 Title/Type hint: Resource 30
+[2025-11-11 11:14:49]   🎯 Detected format: basic_phrases
+[2025-11-11 11:14:49]   📄 Source: safety_protocols_1.md
+[2025-11-11 11:14:49]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:14:49]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:14:50]   🎤 Generating introduction...
+[2025-11-11 11:14:51]   🎤 Generating 30 phrases...
+[2025-11-11 11:15:06]     ✓ 5/30 phrases generated
+[2025-11-11 11:15:23]     ✓ 10/30 phrases generated
+[2025-11-11 11:15:38]     ✓ 15/30 phrases generated
+[2025-11-11 11:15:55]     ✓ 20/30 phrases generated
+[2025-11-11 11:16:11]     ✓ 25/30 phrases generated
+[2025-11-11 11:16:24]     ✓ 30/30 phrases generated
+[2025-11-11 11:16:24]   🎤 Generating practice section...
+[2025-11-11 11:16:53]   🎤 Generating conclusion...
+[2025-11-11 11:16:54]   🔧 Concatenating 305 audio segments...
+[2025-11-11 11:16:54]   ✅ Generated: resource-30.mp3 (6.09 MB)
+[2025-11-11 11:16:55]   ✅ Resource 30 COMPLETE
+[2025-11-11 11:16:55] 
+============================================================
+[2025-11-11 11:16:55] 🔄 Processing Resource 31
+[2025-11-11 11:16:55] ============================================================
+[2025-11-11 11:16:55]   📋 Title/Type hint: Resource 31
+[2025-11-11 11:16:56]   🎯 Detected format: basic_phrases
+[2025-11-11 11:16:56]   📄 Source: intermediate_situations_2.md
+[2025-11-11 11:16:56]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:16:56]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:16:56]   🎤 Generating introduction...
+[2025-11-11 11:16:57]   🎤 Generating 30 phrases...
+[2025-11-11 11:17:15]     ✓ 5/30 phrases generated
+[2025-11-11 11:17:30]     ✓ 10/30 phrases generated
+[2025-11-11 11:17:47]     ✓ 15/30 phrases generated
+[2025-11-11 11:18:05]     ✓ 20/30 phrases generated
+[2025-11-11 11:18:20]     ✓ 25/30 phrases generated
+[2025-11-11 11:18:35]     ✓ 30/30 phrases generated
+[2025-11-11 11:18:35]   🎤 Generating practice section...
+[2025-11-11 11:18:58]   🎤 Generating conclusion...
+[2025-11-11 11:18:59]   🔧 Concatenating 305 audio segments...
+[2025-11-11 11:18:59]   ✅ Generated: resource-31.mp3 (4.64 MB)
+[2025-11-11 11:18:59]   ✅ Resource 31 COMPLETE
+[2025-11-11 11:19:00] 
+============================================================
+[2025-11-11 11:19:00] 🔄 Processing Resource 32
+[2025-11-11 11:19:00] ============================================================
+[2025-11-11 11:19:00]   📋 Title/Type hint: Conversaciones
+[2025-11-11 11:19:00]   🎯 Detected format: conversation
+[2025-11-11 11:19:00]   📄 Source: intermediate_conversations_2-audio-script.txt
+[2025-11-11 11:19:00]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:19:00]   ❌ No phrases found
+[2025-11-11 11:19:01] 
+============================================================
+[2025-11-11 11:19:01] 🔄 Processing Resource 33
+[2025-11-11 11:19:01] ============================================================
+[2025-11-11 11:19:01]   📋 Title/Type hint: Small Talk
+[2025-11-11 11:19:01]   🎯 Detected format: conversation
+[2025-11-11 11:19:01]   📄 Source: intermediate_smalltalk_2.md
+[2025-11-11 11:19:01]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:19:02]   🎯 Format: CONVERSATION
+[2025-11-11 11:19:02]   🎤 Generating introduction...
+[2025-11-11 11:19:03]   🎤 Generating 30 phrases...
+[2025-11-11 11:19:20]     ✓ 5/30 phrases generated
+[2025-11-11 11:19:38]     ✓ 10/30 phrases generated
+[2025-11-11 11:19:51]     ✓ 15/30 phrases generated
+[2025-11-11 11:20:08]     ✓ 20/30 phrases generated
+[2025-11-11 11:20:22]     ✓ 25/30 phrases generated
+[2025-11-11 11:20:40]     ✓ 30/30 phrases generated
+[2025-11-11 11:20:40]   🎤 Generating practice section...
+[2025-11-11 11:21:01]   🎤 Generating conclusion...
+[2025-11-11 11:21:02]   🔧 Concatenating 305 audio segments...
+[2025-11-11 11:21:03]   ✅ Generated: resource-33.mp3 (3.47 MB)
+[2025-11-11 11:21:03]   ✅ Resource 33 COMPLETE
+[2025-11-11 11:21:04] 
+============================================================
+[2025-11-11 11:21:04] 🔄 Processing Resource 34
+[2025-11-11 11:21:04] ============================================================
+[2025-11-11 11:21:04]   📋 Title/Type hint: Conversaciones
+[2025-11-11 11:21:04]   🎯 Detected format: conversation
+[2025-11-11 11:21:04]   📄 Source: intermediate_audio_conversations_1-audio-script.txt
+[2025-11-11 11:21:04]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:04]   ❌ No phrases found
+[2025-11-11 11:21:05] 
+============================================================
+[2025-11-11 11:21:05] 🔄 Processing Resource 35
+[2025-11-11 11:21:05] ============================================================
+[2025-11-11 11:21:05]   📋 Title/Type hint: Resource 35
+[2025-11-11 11:21:06]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:06]   📄 Source: business-terminology.md
+[2025-11-11 11:21:06]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:06]   ❌ No phrases found
+[2025-11-11 11:21:07] 
+============================================================
+[2025-11-11 11:21:07] 🔄 Processing Resource 36
+[2025-11-11 11:21:07] ============================================================
+[2025-11-11 11:21:07]   📋 Title/Type hint: Resource 36
+[2025-11-11 11:21:07]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:07]   📄 Source: complaint-handling.md
+[2025-11-11 11:21:07]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:07]   ❌ No phrases found
+[2025-11-11 11:21:08] 
+============================================================
+[2025-11-11 11:21:08] 🔄 Processing Resource 37
+[2025-11-11 11:21:08] ============================================================
+[2025-11-11 11:21:08]   📋 Title/Type hint: Resource 37
+[2025-11-11 11:21:08]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:09]   📄 Source: conflict-resolution.md
+[2025-11-11 11:21:09]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:09]   ❌ No phrases found
+[2025-11-11 11:21:09] 
+============================================================
+[2025-11-11 11:21:09] 🔄 Processing Resource 38
+[2025-11-11 11:21:10] ============================================================
+[2025-11-11 11:21:10]   📋 Title/Type hint: Resource 38
+[2025-11-11 11:21:10]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:10]   📄 Source: cross-cultural-communication.md
+[2025-11-11 11:21:10]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:10]   ❌ No phrases found
+[2025-11-11 11:21:11] 
+============================================================
+[2025-11-11 11:21:11] 🔄 Processing Resource 39
+[2025-11-11 11:21:11] ============================================================
+[2025-11-11 11:21:11]   📋 Title/Type hint: Resource 39
+[2025-11-11 11:21:11]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:11]   📄 Source: customer-service-excellence.md
+[2025-11-11 11:21:11]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:11]   ❌ No phrases found
+[2025-11-11 11:21:12] 
+============================================================
+[2025-11-11 11:21:12] 🔄 Processing Resource 40
+[2025-11-11 11:21:12] ============================================================
+[2025-11-11 11:21:12]   📋 Title/Type hint: Resource 40
+[2025-11-11 11:21:12]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:13]   📄 Source: earnings-optimization.md
+[2025-11-11 11:21:13]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:13]   ❌ No phrases found
+[2025-11-11 11:21:13] 
+============================================================
+[2025-11-11 11:21:13] 🔄 Processing Resource 41
+[2025-11-11 11:21:14] ============================================================
+[2025-11-11 11:21:14]   📋 Title/Type hint: Resource 41
+[2025-11-11 11:21:14]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:14]   📄 Source: negotiation-skills.md
+[2025-11-11 11:21:14]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:14]   ❌ No phrases found
+[2025-11-11 11:21:15] 
+============================================================
+[2025-11-11 11:21:15] 🔄 Processing Resource 42
+[2025-11-11 11:21:15] ============================================================
+[2025-11-11 11:21:15]   📋 Title/Type hint: Resource 42
+[2025-11-11 11:21:15]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:15]   📄 Source: professional-boundaries.md
+[2025-11-11 11:21:13]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:13]   ❌ No phrases found
+[2025-11-11 11:21:13] 
+============================================================
+[2025-11-11 11:21:13] 🔄 Processing Resource 43
+[2025-11-11 11:21:14] ============================================================
+[2025-11-11 11:21:14]   📋 Title/Type hint: Resource 43
+[2025-11-11 11:21:14]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:14]   📄 Source: professional-communication.md
+[2025-11-11 11:21:14]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:14]   ❌ No phrases found
+[2025-11-11 11:21:15] 
+============================================================
+[2025-11-11 11:21:15] 🔄 Processing Resource 44
+[2025-11-11 11:21:15] ============================================================
+[2025-11-11 11:21:15]   📋 Title/Type hint: Resource 44
+[2025-11-11 11:21:15]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:15]   📄 Source: time-management.md
+[2025-11-11 11:21:15]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:15]   ❌ No phrases found
+[2025-11-11 11:21:16] 
+============================================================
+[2025-11-11 11:21:16] 🔄 Processing Resource 45
+[2025-11-11 11:21:16] ============================================================
+[2025-11-11 11:21:16]   📋 Title/Type hint: Resource 45
+[2025-11-11 11:21:16]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:16]   📄 Source: accident-procedures.md
+[2025-11-11 11:21:17]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:17]   ❌ No phrases found
+[2025-11-11 11:21:17] 
+============================================================
+[2025-11-11 11:21:17] 🔄 Processing Resource 46
+[2025-11-11 11:21:17] ============================================================
+[2025-11-11 11:21:18]   📋 Title/Type hint: Resource 46
+[2025-11-11 11:21:18]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:18]   📄 Source: customer-conflict.md
+[2025-11-11 11:21:18]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:18]   ❌ No phrases found
+[2025-11-11 11:21:19] 
+============================================================
+[2025-11-11 11:21:19] 🔄 Processing Resource 47
+[2025-11-11 11:21:19] ============================================================
+[2025-11-11 11:21:19]   📋 Title/Type hint: Resource 47
+[2025-11-11 11:21:19]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:19]   📄 Source: lost-or-found-items.md
+[2025-11-11 11:21:19]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:20]   ❌ No phrases found
+[2025-11-11 11:21:20] 
+============================================================
+[2025-11-11 11:21:20] 🔄 Processing Resource 48
+[2025-11-11 11:21:20] ============================================================
+[2025-11-11 11:21:20]   📋 Title/Type hint: Resource 48
+[2025-11-11 11:21:21]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:21]   📄 Source: medical-emergencies.md
+[2025-11-11 11:21:21]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:21]   ❌ No phrases found
+[2025-11-11 11:21:22] 
+============================================================
+[2025-11-11 11:21:22] 🔄 Processing Resource 49
+[2025-11-11 11:21:22] ============================================================
+[2025-11-11 11:21:22]   📋 Title/Type hint: Resource 49
+[2025-11-11 11:21:22]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:22]   📄 Source: payment-disputes.md
+[2025-11-11 11:21:22]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:22]   ❌ No phrases found
+[2025-11-11 11:21:23] 
+============================================================
+[2025-11-11 11:21:23] 🔄 Processing Resource 50
+[2025-11-11 11:21:23] ============================================================
+[2025-11-11 11:21:23]   📋 Title/Type hint: Resource 50
+[2025-11-11 11:21:23]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:24]   📄 Source: safety-concerns.md
+[2025-11-11 11:21:24]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:24]   ❌ No phrases found
+[2025-11-11 11:21:25] 
+============================================================
+[2025-11-11 11:21:25] 🔄 Processing Resource 51
+[2025-11-11 11:21:25] ============================================================
+[2025-11-11 11:21:25]   📋 Title/Type hint: Resource 51
+[2025-11-11 11:21:25]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:25]   📄 Source: vehicle-breakdown.md
+[2025-11-11 11:21:25]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:26]   ❌ No phrases found
+[2025-11-11 11:21:26] 
+============================================================
+[2025-11-11 11:21:26] 🔄 Processing Resource 52
+[2025-11-11 11:21:26] ============================================================
+[2025-11-11 11:21:26]   📋 Title/Type hint: Resource 52
+[2025-11-11 11:21:27]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:27]   📄 Source: weather-hazards.md
+[2025-11-11 11:21:27]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:27]   ❌ No phrases found
+[2025-11-11 11:21:28] 
+============================================================
+[2025-11-11 11:21:28] 🔄 Processing Resource 53
+[2025-11-11 11:21:28] ============================================================
+[2025-11-11 11:21:28]   📋 Title/Type hint: Resource 53
+[2025-11-11 11:21:28]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:28]   📄 Source: airport-rideshare.md
+[2025-11-11 11:21:28]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:29]   ❌ No phrases found
+[2025-11-11 11:21:29] 
+============================================================
+[2025-11-11 11:21:29] 🔄 Processing Resource 54
+[2025-11-11 11:21:29] ============================================================
+[2025-11-11 11:21:29]   📋 Title/Type hint: Resource 54
+[2025-11-11 11:21:30]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:30]   📄 Source: doordash-delivery.md
+[2025-11-11 11:21:30]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:30]   ❌ No phrases found
+[2025-11-11 11:21:30] 
+============================================================
+[2025-11-11 11:21:30] 🔄 Processing Resource 55
+[2025-11-11 11:21:31] ============================================================
+[2025-11-11 11:21:31]   📋 Title/Type hint: Resource 55
+[2025-11-11 11:21:31]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:31]   📄 Source: lyft-driver-essentials.md
+[2025-11-11 11:21:31]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:31]   ❌ No phrases found
+[2025-11-11 11:21:32] 
+============================================================
+[2025-11-11 11:21:32] 🔄 Processing Resource 56
+[2025-11-11 11:21:32] ============================================================
+[2025-11-11 11:21:32]   📋 Title/Type hint: Resource 56
+[2025-11-11 11:21:32]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:32]   📄 Source: multi-app-strategy.md
+[2025-11-11 11:21:32]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:32]   ❌ No phrases found
+[2025-11-11 11:21:33] 
+============================================================
+[2025-11-11 11:21:33] 🔄 Processing Resource 57
+[2025-11-11 11:21:33] ============================================================
+[2025-11-11 11:21:33]   📋 Title/Type hint: Resource 57
+[2025-11-11 11:21:33]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:33]   📄 Source: platform-ratings-mastery.md
+[2025-11-11 11:21:34]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:34]   ❌ No phrases found
+[2025-11-11 11:21:34] 
+============================================================
+[2025-11-11 11:21:34] 🔄 Processing Resource 58
+[2025-11-11 11:21:34] ============================================================
+[2025-11-11 11:21:34]   📋 Title/Type hint: Resource 58
+[2025-11-11 11:21:35]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:35]   📄 Source: tax-and-expenses.md
+[2025-11-11 11:21:35]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:35]   ❌ No phrases found
+[2025-11-11 11:21:36] 
+============================================================
+[2025-11-11 11:21:36] 🔄 Processing Resource 59
+[2025-11-11 11:21:36] ============================================================
+[2025-11-11 11:21:36]   📋 Title/Type hint: Resource 59
+[2025-11-11 11:21:36]   🎯 Detected format: basic_phrases
+[2025-11-11 11:21:36]   📄 Source: uber-driver-essentials.md
+[2025-11-11 11:21:36]   ✓ Extracted 0 phrase pairs
+[2025-11-11 11:21:36]   ❌ No phrases found
+[2025-11-11 11:21:37] 
+================================================================================
+[2025-11-11 11:21:37] 📊 REGENERATION SUMMARY
+[2025-11-11 11:21:37] ================================================================================
+[2025-11-11 11:21:37] ✅ Successful: 21 resources
+[2025-11-11 11:21:37] ❌ Failed: 35 resources
+[2025-11-11 11:21:37] ⏱️  Total time: 40.9 minutes
+[2025-11-11 11:21:37] 
+✅ Successful: 1, 2, 4, 5, 6, 9, 11, 12, 14, 15, 16, 17, 19, 20, 22, 23, 25, 29, 30, 31, 33
+[2025-11-11 11:21:37] 
+❌ Failed: 7, 10, 13, 18, 21, 26, 27, 28, 32, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59
+[2025-11-11 11:21:37] 
+📋 Full log: /mnt/c/Users/brand/Development/Project_Workspace/active-development/hablas/scripts/complete-regeneration-log.txt
+[2025-11-11 11:21:38] ================================================================================
+[2025-11-11 11:46:13] ================================================================================
+[2025-11-11 11:46:13] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-11 11:46:13] ================================================================================
+[2025-11-11 11:46:14] 📅 Started: 2025-11-11 11:46:14
+[2025-11-11 11:46:14] 
+[2025-11-11 11:46:14] ✅ Loaded mapping for 56 resources
+[2025-11-11 11:46:14] 
+============================================================
+[2025-11-11 11:46:14] 🔄 Processing Resource 1
+[2025-11-11 11:46:14] ============================================================
+[2025-11-11 11:46:14]   📋 Title/Type hint: Resource 1
+[2025-11-11 11:46:14]   🎯 Detected format: basic_phrases
+[2025-11-11 11:46:14]   📄 Source: basic_phrases_1.md
+[2025-11-11 11:46:14]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:46:15]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:46:15]   🎤 Generating introduction...
+[2025-11-11 11:46:16]   🎤 Generating 30 phrases...
+[2025-11-11 11:46:39]     ✓ 5/30 phrases generated
+[2025-11-11 11:46:52]     ✓ 10/30 phrases generated
+[2025-11-11 11:47:10]     ✓ 15/30 phrases generated
+[2025-11-11 11:47:21]     ✓ 20/30 phrases generated
+[2025-11-11 11:47:40]     ✓ 25/30 phrases generated
+[2025-11-11 11:47:56]     ✓ 30/30 phrases generated
+[2025-11-11 11:47:56]   🎤 Generating practice section...
+[2025-11-11 11:48:24]   🎤 Generating conclusion...
+[2025-11-11 11:48:25]   🔧 Concatenating 305 audio segments...
+[2025-11-11 11:48:25]   ✅ Generated: resource-1.mp3 (3.25 MB)
+[2025-11-11 11:48:25]   ✅ Resource 1 COMPLETE
+[2025-11-11 11:48:26] 
+============================================================
+[2025-11-11 11:48:26] 🔄 Processing Resource 2
+[2025-11-11 11:48:26] ============================================================
+[2025-11-11 11:48:26]   📋 Title/Type hint: Resource 2
+[2025-11-11 11:48:26]   🎯 Detected format: basic_phrases
+[2025-11-11 11:48:26]   📄 Source: basic_audio_1-audio-script.txt
+[2025-11-11 11:48:26]   ✓ Extracted 3 phrase pairs
+[2025-11-11 11:48:27]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:48:27]   🎤 Generating introduction...
+[2025-11-11 11:48:28]   🎤 Generating 3 phrases...
+[2025-11-11 11:48:38]   🎤 Generating practice section...
+[2025-11-11 11:48:40]   🎤 Generating conclusion...
+[2025-11-11 11:48:38]   🔧 Concatenating 35 audio segments...
+[2025-11-11 11:48:38]   ✅ Generated: resource-2.mp3 (0.43 MB)
+[2025-11-11 11:48:38]   ✅ Resource 2 COMPLETE
+[2025-11-11 11:48:39] 
+============================================================
+[2025-11-11 11:48:39] 🔄 Processing Resource 4
+[2025-11-11 11:48:39] ============================================================
+[2025-11-11 11:48:39]   📋 Title/Type hint: Resource 4
+[2025-11-11 11:48:39]   🎯 Detected format: basic_phrases
+[2025-11-11 11:48:39]   📄 Source: basic_phrases_2.md
+[2025-11-11 11:48:39]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:48:40]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:48:40]   🎤 Generating introduction...
+[2025-11-11 11:48:40]   🎤 Generating 30 phrases...
+[2025-11-11 11:48:56]     ✓ 5/30 phrases generated
+[2025-11-11 11:50:29] ================================================================================
+[2025-11-11 11:50:29] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-11 11:50:29] ================================================================================
+[2025-11-11 11:50:29] 📅 Started: 2025-11-11 11:50:29
+[2025-11-11 11:50:29] 
+[2025-11-11 11:50:30] ✅ Loaded mapping for 56 resources
+[2025-11-11 11:50:30] 
+============================================================
+[2025-11-11 11:50:30] 🔄 Processing Resource 1
+[2025-11-11 11:50:30] ============================================================
+[2025-11-11 11:50:30]   📋 Title/Type hint: Resource 1
+[2025-11-11 11:50:30]   🎯 Detected format: basic_phrases
+[2025-11-11 11:50:30]   📄 Source: basic_phrases_1.md
+[2025-11-11 11:50:30]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:50:30]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:50:30]   🎤 Generating introduction...
+[2025-11-11 11:50:31]   🎤 Generating 30 phrases...
+[2025-11-11 11:50:42]     ✓ 5/30 phrases generated
+[2025-11-11 11:51:02]     ✓ 10/30 phrases generated
+[2025-11-11 11:51:19]     ✓ 15/30 phrases generated
+[2025-11-11 11:51:36]     ✓ 20/30 phrases generated
+[2025-11-11 11:51:49]     ✓ 25/30 phrases generated
+[2025-11-11 11:52:09]     ✓ 30/30 phrases generated
+[2025-11-11 11:52:09]   🎤 Generating practice section...
+[2025-11-11 11:52:46]   🎤 Generating conclusion...
+[2025-11-11 11:52:47]   🔧 Concatenating 305 audio segments...
+[2025-11-11 11:52:47]   ✅ Generated: resource-1.mp3 (3.25 MB)
+[2025-11-11 11:52:48]   ✅ Resource 1 COMPLETE
+[2025-11-11 11:52:48] 
+============================================================
+[2025-11-11 11:52:48] 🔄 Processing Resource 2
+[2025-11-11 11:52:49] ============================================================
+[2025-11-11 11:52:49]   📋 Title/Type hint: Resource 2
+[2025-11-11 11:52:49]   🎯 Detected format: basic_phrases
+[2025-11-11 11:52:49]   📄 Source: basic_audio_1-audio-script.txt
+[2025-11-11 11:52:49]   ✓ Extracted 3 phrase pairs
+[2025-11-11 11:52:49]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:52:49]   🎤 Generating introduction...
+[2025-11-11 11:52:51]   🎤 Generating 3 phrases...
+[2025-11-11 11:53:00]   🎤 Generating practice section...
+[2025-11-11 11:53:02]   🎤 Generating conclusion...
+[2025-11-11 11:53:03]   🔧 Concatenating 35 audio segments...
+[2025-11-11 11:53:04]   ✅ Generated: resource-2.mp3 (0.43 MB)
+[2025-11-11 11:53:04]   ✅ Resource 2 COMPLETE
+[2025-11-11 11:53:04] 
+============================================================
+[2025-11-11 11:53:04] 🔄 Processing Resource 4
+[2025-11-11 11:53:04] ============================================================
+[2025-11-11 11:53:04]   📋 Title/Type hint: Resource 4
+[2025-11-11 11:53:05]   🎯 Detected format: basic_phrases
+[2025-11-11 11:53:05]   📄 Source: basic_phrases_2.md
+[2025-11-11 11:53:05]   ✓ Extracted 30 phrase pairs
+[2025-11-11 11:53:05]   🎯 Format: BASIC_PHRASES
+[2025-11-11 11:53:05]   🎤 Generating introduction...
+[2025-11-11 11:53:04]   🎤 Generating 30 phrases...
+[2025-11-11 11:53:20]     ✓ 5/30 phrases generated
+[2025-11-11 11:53:35]     ✓ 10/30 phrases generated
+[2025-11-11 11:53:53]     ✓ 15/30 phrases generated
+[2025-11-11 11:54:05]     ✓ 20/30 phrases generated
+[2025-11-11 11:54:21]     ✓ 25/30 phrases generated
+[2025-11-11 11:54:35]     ✓ 30/30 phrases generated
+[2025-11-11 11:54:36]   🎤 Generating practice section...
+[2025-11-11 12:11:05] ================================================================================
+[2025-11-11 12:11:05] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-11 12:11:05] ================================================================================
+[2025-11-11 12:11:06] 📅 Started: 2025-11-11 12:11:06
+[2025-11-11 12:11:06] 
+[2025-11-11 12:11:06] ✅ Loaded mapping for 56 resources
+[2025-11-11 12:11:06] 
+============================================================
+[2025-11-11 12:11:06] 🔄 Processing Resource 1
+[2025-11-11 12:11:06] ============================================================
+[2025-11-11 12:11:06]   📋 Title/Type hint: Resource 1
+[2025-11-11 12:11:07]   🎯 Detected format: basic_phrases
+[2025-11-11 12:11:07]   📄 Source: basic_phrases_1.md
+[2025-11-11 12:11:07]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:11:07]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:11:07]   🎤 Generating introduction...
+[2025-11-11 12:11:08]   🎤 Generating 30 phrases...
+[2025-11-11 12:11:20]     ✓ 5/30 phrases generated
+[2025-11-11 12:11:39]     ✓ 10/30 phrases generated
+[2025-11-11 12:11:54]     ✓ 15/30 phrases generated
+[2025-11-11 12:12:09]     ✓ 20/30 phrases generated
+[2025-11-11 12:12:28]     ✓ 25/30 phrases generated
+[2025-11-11 12:12:42]     ✓ 30/30 phrases generated
+[2025-11-11 12:12:42]   🎤 Generating practice section...
+[2025-11-11 12:13:12]   🎤 Generating conclusion...
+[2025-11-11 12:13:13]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:13:14]   ✅ Generated: resource-1.mp3 (3.25 MB)
+[2025-11-11 12:13:14]   ✅ Resource 1 COMPLETE
+[2025-11-11 12:13:15] 
+============================================================
+[2025-11-11 12:13:15] 🔄 Processing Resource 2
+[2025-11-11 12:13:15] ============================================================
+[2025-11-11 12:13:15]   📋 Title/Type hint: Resource 2
+[2025-11-11 12:13:15]   🎯 Detected format: basic_phrases
+[2025-11-11 12:13:15]   📄 Source: basic_audio_1-audio-script.txt
+[2025-11-11 12:13:15]   ✓ Extracted 3 phrase pairs
+[2025-11-11 12:13:16]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:13:16]   🎤 Generating introduction...
+[2025-11-11 12:13:17]   🎤 Generating 3 phrases...
+[2025-11-11 12:13:28]   🎤 Generating practice section...
+[2025-11-11 12:13:31]   🎤 Generating conclusion...
+[2025-11-11 12:13:34]   🔧 Concatenating 35 audio segments...
+[2025-11-11 12:13:34]   ✅ Generated: resource-2.mp3 (0.43 MB)
+[2025-11-11 12:13:34]   ✅ Resource 2 COMPLETE
+[2025-11-11 12:13:35] 
+============================================================
+[2025-11-11 12:13:35] 🔄 Processing Resource 4
+[2025-11-11 12:13:35] ============================================================
+[2025-11-11 12:13:35]   📋 Title/Type hint: Resource 4
+[2025-11-11 12:13:35]   🎯 Detected format: basic_phrases
+[2025-11-11 12:13:35]   📄 Source: basic_phrases_2.md
+[2025-11-11 12:13:36]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:13:36]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:13:36]   🎤 Generating introduction...
+[2025-11-11 12:13:37]   🎤 Generating 30 phrases...
+[2025-11-11 12:13:51]     ✓ 5/30 phrases generated
+[2025-11-11 12:14:07]     ✓ 10/30 phrases generated
+[2025-11-11 12:14:21]     ✓ 15/30 phrases generated
+[2025-11-11 12:14:36]     ✓ 20/30 phrases generated
+[2025-11-11 12:14:51]     ✓ 25/30 phrases generated
+[2025-11-11 12:15:06]     ✓ 30/30 phrases generated
+[2025-11-11 12:15:06]   🎤 Generating practice section...
+[2025-11-11 12:15:27]   🎤 Generating conclusion...
+[2025-11-11 12:15:28]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:15:29]   ✅ Generated: resource-4.mp3 (2.23 MB)
+[2025-11-11 12:15:29]   ✅ Resource 4 COMPLETE
+[2025-11-11 12:15:30] 
+============================================================
+[2025-11-11 12:15:30] 🔄 Processing Resource 5
+[2025-11-11 12:15:30] ============================================================
+[2025-11-11 12:15:30]   📋 Title/Type hint: Resource 5
+[2025-11-11 12:15:30]   🎯 Detected format: basic_phrases
+[2025-11-11 12:15:30]   📄 Source: intermediate_situations_1.md
+[2025-11-11 12:15:30]   ✓ Extracted 20 phrase pairs
+[2025-11-11 12:15:31]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:15:31]   🎤 Generating introduction...
+[2025-11-11 12:15:32]   🎤 Generating 20 phrases...
+[2025-11-11 12:15:45]     ✓ 5/20 phrases generated
+[2025-11-11 12:16:01]     ✓ 10/20 phrases generated
+[2025-11-11 12:16:16]     ✓ 15/20 phrases generated
+[2025-11-11 12:16:32]     ✓ 20/20 phrases generated
+[2025-11-11 12:16:32]   🎤 Generating practice section...
+[2025-11-11 12:16:49]   🎤 Generating conclusion...
+[2025-11-11 12:16:51]   🔧 Concatenating 205 audio segments...
+[2025-11-11 12:16:51]   ✅ Generated: resource-5.mp3 (3.89 MB)
+[2025-11-11 12:16:52]   ✅ Resource 5 COMPLETE
+[2025-11-11 12:16:52] 
+============================================================
+[2025-11-11 12:16:52] 🔄 Processing Resource 6
+[2025-11-11 12:16:53] ============================================================
+[2025-11-11 12:16:53]   📋 Title/Type hint: Resource 6
+[2025-11-11 12:16:53]   🎯 Detected format: basic_phrases
+[2025-11-11 12:16:53]   📄 Source: basic_phrases_3.md
+[2025-11-11 12:16:53]   ✓ Extracted 24 phrase pairs
+[2025-11-11 12:16:53]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:16:53]   🎤 Generating introduction...
+[2025-11-11 12:16:54]   🎤 Generating 24 phrases...
+[2025-11-11 12:17:09]     ✓ 5/24 phrases generated
+[2025-11-11 12:17:24]     ✓ 10/24 phrases generated
+[2025-11-11 12:17:37]     ✓ 15/24 phrases generated
+[2025-11-11 12:17:53]     ✓ 20/24 phrases generated
+[2025-11-11 12:18:02]   🎤 Generating practice section...
+[2025-11-11 12:18:22]   🎤 Generating conclusion...
+[2025-11-11 12:18:22]   🔧 Concatenating 245 audio segments...
+[2025-11-11 12:18:23]   ✅ Generated: resource-6.mp3 (1.92 MB)
+[2025-11-11 12:18:23]   ✅ Resource 6 COMPLETE
+[2025-11-11 12:18:24] 
+============================================================
+[2025-11-11 12:18:24] 🔄 Processing Resource 7
+[2025-11-11 12:18:24] ============================================================
+[2025-11-11 12:18:24]   📋 Title/Type hint: Resource 7
+[2025-11-11 12:18:24]   🎯 Detected format: basic_phrases
+[2025-11-11 12:18:24]   📄 Source: basic_audio_2-audio-script.txt
+[2025-11-11 12:18:24]   ✓ Extracted 0 phrase pairs
+[2025-11-11 12:18:24]   ❌ No phrases found
+[2025-11-11 12:18:25] 
+============================================================
+[2025-11-11 12:18:25] 🔄 Processing Resource 9
+[2025-11-11 12:18:25] ============================================================
+[2025-11-11 12:18:25]   📋 Title/Type hint: Resource 9
+[2025-11-11 12:18:25]   🎯 Detected format: basic_phrases
+[2025-11-11 12:18:25]   📄 Source: basic_phrases_4.md
+[2025-11-11 12:18:26]   ✓ Extracted 23 phrase pairs
+[2025-11-11 12:18:26]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:18:26]   🎤 Generating introduction...
+[2025-11-11 12:18:27]   🎤 Generating 23 phrases...
+[2025-11-11 12:18:38]     ✓ 5/23 phrases generated
+[2025-11-11 12:18:54]     ✓ 10/23 phrases generated
+[2025-11-11 12:19:11]     ✓ 15/23 phrases generated
+[2025-11-11 12:19:27]     ✓ 20/23 phrases generated
+[2025-11-11 12:19:33]   🎤 Generating practice section...
+[2025-11-11 12:19:52]   🎤 Generating conclusion...
+[2025-11-11 12:19:53]   🔧 Concatenating 235 audio segments...
+[2025-11-11 12:19:53]   ✅ Generated: resource-9.mp3 (1.95 MB)
+[2025-11-11 12:19:53]   ✅ Resource 9 COMPLETE
+[2025-11-11 12:19:54] 
+============================================================
+[2025-11-11 12:19:54] 🔄 Processing Resource 10
+[2025-11-11 12:19:54] ============================================================
+[2025-11-11 12:19:54]   📋 Title/Type hint: Conversaciones
+[2025-11-11 12:19:54]   🎯 Detected format: conversation
+[2025-11-11 12:19:54]   📄 Source: intermediate_conversations_1-audio-script.txt
+[2025-11-11 12:19:54]   ✓ Extracted 0 phrase pairs
+[2025-11-11 12:19:55]   ❌ No phrases found
+[2025-11-11 12:19:55] 
+============================================================
+[2025-11-11 12:19:55] 🔄 Processing Resource 11
+[2025-11-11 12:19:55] ============================================================
+[2025-11-11 12:19:55]   📋 Title/Type hint: Resource 11
+[2025-11-11 12:19:55]   🎯 Detected format: basic_phrases
+[2025-11-11 12:19:56]   📄 Source: basic_greetings_1.md
+[2025-11-11 12:19:56]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:19:56]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:19:56]   🎤 Generating introduction...
+[2025-11-11 12:19:57]   🎤 Generating 30 phrases...
+[2025-11-11 12:20:09]     ✓ 5/30 phrases generated
+[2025-11-11 12:20:25]     ✓ 10/30 phrases generated
+[2025-11-11 12:20:39]     ✓ 15/30 phrases generated
+[2025-11-11 12:20:56]     ✓ 20/30 phrases generated
+[2025-11-11 12:21:09]     ✓ 25/30 phrases generated
+[2025-11-11 12:21:26]     ✓ 30/30 phrases generated
+[2025-11-11 12:21:26]   🎤 Generating practice section...
+[2025-11-11 12:21:48]   🎤 Generating conclusion...
+[2025-11-11 12:21:49]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:21:49]   ✅ Generated: resource-11.mp3 (2.64 MB)
+[2025-11-11 12:21:50]   ✅ Resource 11 COMPLETE
+[2025-11-11 12:21:50] 
+============================================================
+[2025-11-11 12:21:50] 🔄 Processing Resource 12
+[2025-11-11 12:21:51] ============================================================
+[2025-11-11 12:21:51]   📋 Title/Type hint: Direcciones y Navegación
+[2025-11-11 12:21:51]   🎯 Detected format: directions
+[2025-11-11 12:21:51]   📄 Source: basic_directions_1.md
+[2025-11-11 12:21:51]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:21:51]   🎯 Format: DIRECTIONS
+[2025-11-11 12:21:51]   🎤 Generating introduction...
+[2025-11-11 12:21:52]   🎤 Generating 30 phrases...
+[2025-11-11 12:22:10]     ✓ 5/30 phrases generated
+[2025-11-11 12:22:25]     ✓ 10/30 phrases generated
+[2025-11-11 12:22:40]     ✓ 15/30 phrases generated
+[2025-11-11 12:22:51]     ✓ 20/30 phrases generated
+[2025-11-11 12:23:08]     ✓ 25/30 phrases generated
+[2025-11-11 12:23:21]     ✓ 30/30 phrases generated
+[2025-11-11 12:23:21]   🎤 Generating practice section...
+[2025-11-11 12:23:42]   🎤 Generating conclusion...
+[2025-11-11 12:23:43]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:23:43]   ✅ Generated: resource-12.mp3 (2.32 MB)
+[2025-11-11 12:23:44]   ✅ Resource 12 COMPLETE
+[2025-11-11 12:23:44] 
+============================================================
+[2025-11-11 12:23:44] 🔄 Processing Resource 13
+[2025-11-11 12:23:44] ============================================================
+[2025-11-11 12:23:44]   📋 Title/Type hint: Direcciones y Navegación
+[2025-11-11 12:23:45]   🎯 Detected format: directions
+[2025-11-11 12:23:45]   📄 Source: basic_audio_navigation_1-audio-script.txt
+[2025-11-11 12:23:45]   ✓ Extracted 0 phrase pairs
+[2025-11-11 12:23:45]   ❌ No phrases found
+[2025-11-11 12:23:45] 
+============================================================
+[2025-11-11 12:23:45] 🔄 Processing Resource 14
+[2025-11-11 12:23:46] ============================================================
+[2025-11-11 12:23:46]   📋 Title/Type hint: Resource 14
+[2025-11-11 12:23:46]   🎯 Detected format: basic_phrases
+[2025-11-11 12:23:46]   📄 Source: basic_greetings_2.md
+[2025-11-11 12:23:46]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:23:46]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:23:46]   🎤 Generating introduction...
+[2025-11-11 12:23:48]   🎤 Generating 30 phrases...
+[2025-11-11 12:24:04]     ✓ 5/30 phrases generated
+[2025-11-11 12:24:15]     ✓ 10/30 phrases generated
+[2025-11-11 12:24:32]     ✓ 15/30 phrases generated
+[2025-11-11 12:24:46]     ✓ 20/30 phrases generated
+[2025-11-11 12:25:00]     ✓ 25/30 phrases generated
+[2025-11-11 12:25:13]     ✓ 30/30 phrases generated
+[2025-11-11 12:25:13]   🎤 Generating practice section...
+[2025-11-11 12:25:36]   🎤 Generating conclusion...
+[2025-11-11 12:25:37]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:25:37]   ✅ Generated: resource-14.mp3 (3.20 MB)
+[2025-11-11 12:25:38]   ✅ Resource 14 COMPLETE
+[2025-11-11 12:25:38] 
+============================================================
+[2025-11-11 12:25:38] 🔄 Processing Resource 15
+[2025-11-11 12:25:38] ============================================================
+[2025-11-11 12:25:38]   📋 Title/Type hint: Direcciones y Navegación
+[2025-11-11 12:25:39]   🎯 Detected format: directions
+[2025-11-11 12:25:39]   📄 Source: basic_directions_2.md
+[2025-11-11 12:25:39]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:25:39]   🎯 Format: DIRECTIONS
+[2025-11-11 12:25:39]   🎤 Generating introduction...
+[2025-11-11 12:25:40]   🎤 Generating 30 phrases...
+[2025-11-11 12:25:55]     ✓ 5/30 phrases generated
+[2025-11-11 12:26:07]     ✓ 10/30 phrases generated
+[2025-11-11 12:26:25]     ✓ 15/30 phrases generated
+[2025-11-11 12:26:41]     ✓ 20/30 phrases generated
+[2025-11-11 12:26:59]     ✓ 25/30 phrases generated
+[2025-11-11 12:27:12]     ✓ 30/30 phrases generated
+[2025-11-11 12:27:12]   🎤 Generating practice section...
+[2025-11-11 12:27:39]   🎤 Generating conclusion...
+[2025-11-11 12:27:40]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:27:40]   ✅ Generated: resource-15.mp3 (2.52 MB)
+[2025-11-11 12:27:41]   ✅ Resource 15 COMPLETE
+[2025-11-11 12:27:41] 
+============================================================
+[2025-11-11 12:27:41] 🔄 Processing Resource 16
+[2025-11-11 12:27:41] ============================================================
+[2025-11-11 12:27:41]   📋 Title/Type hint: Small Talk
+[2025-11-11 12:27:42]   🎯 Detected format: conversation
+[2025-11-11 12:27:42]   📄 Source: intermediate_smalltalk_1.md
+[2025-11-11 12:27:42]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:27:42]   🎯 Format: CONVERSATION
+[2025-11-11 12:27:42]   🎤 Generating introduction...
+[2025-11-11 12:27:43]   🎤 Generating 30 phrases...
+[2025-11-11 12:27:58]     ✓ 5/30 phrases generated
+[2025-11-11 12:28:12]     ✓ 10/30 phrases generated
+[2025-11-11 12:28:29]     ✓ 15/30 phrases generated
+[2025-11-11 12:28:44]     ✓ 20/30 phrases generated
+[2025-11-11 12:28:59]     ✓ 25/30 phrases generated
+[2025-11-11 12:29:14]     ✓ 30/30 phrases generated
+[2025-11-11 12:29:14]   🎤 Generating practice section...
+[2025-11-11 12:29:53]   🎤 Generating conclusion...
+[2025-11-11 12:29:54]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:29:54]   ✅ Generated: resource-16.mp3 (2.89 MB)
+[2025-11-11 12:29:55]   ✅ Resource 16 COMPLETE
+[2025-11-11 12:29:55] 
+============================================================
+[2025-11-11 12:29:55] 🔄 Processing Resource 17
+[2025-11-11 12:29:56] ============================================================
+[2025-11-11 12:29:56]   📋 Title/Type hint: Resource 17
+[2025-11-11 12:29:56]   🎯 Detected format: basic_phrases
+[2025-11-11 12:29:56]   📄 Source: basic_greetings_3.md
+[2025-11-11 12:29:56]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:29:56]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:29:56]   🎤 Generating introduction...
+[2025-11-11 12:29:58]   🎤 Generating 30 phrases...
+[2025-11-11 12:30:13]     ✓ 5/30 phrases generated
+[2025-11-11 12:30:31]     ✓ 10/30 phrases generated
+[2025-11-11 12:30:46]     ✓ 15/30 phrases generated
+[2025-11-11 12:31:01]     ✓ 20/30 phrases generated
+[2025-11-11 12:31:20]     ✓ 25/30 phrases generated
+[2025-11-11 12:31:35]     ✓ 30/30 phrases generated
+[2025-11-11 12:31:35]   🎤 Generating practice section...
+[2025-11-11 12:32:02]   🎤 Generating conclusion...
+[2025-11-11 12:32:03]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:32:03]   ✅ Generated: resource-17.mp3 (2.54 MB)
+[2025-11-11 12:32:04]   ✅ Resource 17 COMPLETE
+[2025-11-11 12:32:04] 
+============================================================
+[2025-11-11 12:32:04] 🔄 Processing Resource 18
+[2025-11-11 12:32:04] ============================================================
+[2025-11-11 12:32:05]   📋 Title/Type hint: Direcciones y Navegación
+[2025-11-11 12:32:05]   🎯 Detected format: directions
+[2025-11-11 12:32:05]   📄 Source: basic_audio_navigation_2-audio-script.txt
+[2025-11-11 12:32:05]   ✓ Extracted 0 phrase pairs
+[2025-11-11 12:32:05]   ❌ No phrases found
+[2025-11-11 12:32:06] 
+============================================================
+[2025-11-11 12:32:06] 🔄 Processing Resource 19
+[2025-11-11 12:32:06] ============================================================
+[2025-11-11 12:32:06]   📋 Title/Type hint: Direcciones y Navegación
+[2025-11-11 12:32:06]   🎯 Detected format: directions
+[2025-11-11 12:32:06]   📄 Source: basic_directions_3.md
+[2025-11-11 12:32:06]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:32:06]   🎯 Format: DIRECTIONS
+[2025-11-11 12:32:07]   🎤 Generating introduction...
+[2025-11-11 12:32:07]   🎤 Generating 30 phrases...
+[2025-11-11 12:32:26]     ✓ 5/30 phrases generated
+[2025-11-11 12:32:43]     ✓ 10/30 phrases generated
+[2025-11-11 12:32:57]     ✓ 15/30 phrases generated
+[2025-11-11 12:33:15]     ✓ 20/30 phrases generated
+[2025-11-11 12:33:33]     ✓ 25/30 phrases generated
+[2025-11-11 12:33:53]     ✓ 30/30 phrases generated
+[2025-11-11 12:33:53]   🎤 Generating practice section...
+[2025-11-11 12:34:21]   🎤 Generating conclusion...
+[2025-11-11 12:34:23]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:34:23]   ✅ Generated: resource-19.mp3 (2.29 MB)
+[2025-11-11 12:34:23]   ✅ Resource 19 COMPLETE
+[2025-11-11 12:34:24] 
+============================================================
+[2025-11-11 12:34:24] 🔄 Processing Resource 20
+[2025-11-11 12:34:24] ============================================================
+[2025-11-11 12:34:24]   📋 Title/Type hint: Resource 20
+[2025-11-11 12:34:24]   🎯 Detected format: basic_phrases
+[2025-11-11 12:34:24]   📄 Source: intermediate_problems_1.md
+[2025-11-11 12:34:24]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:34:25]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:34:25]   🎤 Generating introduction...
+[2025-11-11 12:34:26]   🎤 Generating 30 phrases...
+[2025-11-11 12:34:44]     ✓ 5/30 phrases generated
+[2025-11-11 12:35:00]     ✓ 10/30 phrases generated
+[2025-11-11 12:35:19]     ✓ 15/30 phrases generated
+[2025-11-11 12:35:36]     ✓ 20/30 phrases generated
+[2025-11-11 12:35:53]     ✓ 25/30 phrases generated
+[2025-11-11 12:36:15]     ✓ 30/30 phrases generated
+[2025-11-11 12:36:15]   🎤 Generating practice section...
+[2025-11-11 12:36:44]   🎤 Generating conclusion...
+[2025-11-11 12:36:44]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:36:45]   ✅ Generated: resource-20.mp3 (4.64 MB)
+[2025-11-11 12:36:45]   ✅ Resource 20 COMPLETE
+[2025-11-11 12:36:46] 
+============================================================
+[2025-11-11 12:36:46] 🔄 Processing Resource 21
+[2025-11-11 12:36:46] ============================================================
+[2025-11-11 12:36:46]   📋 Title/Type hint: Resource 21
+[2025-11-11 12:36:46]   🎯 Detected format: basic_phrases
+[2025-11-11 12:36:46]   📄 Source: basic_greetings_all_1-audio-script.txt
+[2025-11-11 12:36:46]   ✓ Extracted 0 phrase pairs
+[2025-11-11 12:36:46]   ❌ No phrases found
+[2025-11-11 12:36:47] 
+============================================================
+[2025-11-11 12:36:47] 🔄 Processing Resource 22
+[2025-11-11 12:36:47] ============================================================
+[2025-11-11 12:36:47]   📋 Title/Type hint: Resource 22
+[2025-11-11 12:36:47]   🎯 Detected format: basic_phrases
+[2025-11-11 12:36:47]   📄 Source: basic_numbers_1.md
+[2025-11-11 12:36:48]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:36:48]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:36:48]   🎤 Generating introduction...
+[2025-11-11 12:36:49]   🎤 Generating 30 phrases...
+[2025-11-11 12:37:08]     ✓ 5/30 phrases generated
+[2025-11-11 12:37:26]     ✓ 10/30 phrases generated
+[2025-11-11 12:37:46]     ✓ 15/30 phrases generated
+[2025-11-11 12:38:01]     ✓ 20/30 phrases generated
+[2025-11-11 12:38:19]     ✓ 25/30 phrases generated
+[2025-11-11 12:38:34]     ✓ 30/30 phrases generated
+[2025-11-11 12:38:34]   🎤 Generating practice section...
+[2025-11-11 12:39:05]   🎤 Generating conclusion...
+[2025-11-11 12:39:06]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:39:06]   ✅ Generated: resource-22.mp3 (2.33 MB)
+[2025-11-11 12:39:07]   ✅ Resource 22 COMPLETE
+[2025-11-11 12:39:08] 
+============================================================
+[2025-11-11 12:39:08] 🔄 Processing Resource 23
+[2025-11-11 12:39:08] ============================================================
+[2025-11-11 12:39:08]   📋 Title/Type hint: Resource 23
+[2025-11-11 12:39:08]   🎯 Detected format: basic_phrases
+[2025-11-11 12:39:08]   📄 Source: basic_time_1.md
+[2025-11-11 12:39:09]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:39:09]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:39:09]   🎤 Generating introduction...
+[2025-11-11 12:39:10]   🎤 Generating 30 phrases...
+[2025-11-11 12:39:34]     ✓ 5/30 phrases generated
+[2025-11-11 12:39:49]     ✓ 10/30 phrases generated
+[2025-11-11 12:40:09]     ✓ 15/30 phrases generated
+[2025-11-11 12:40:25]     ✓ 20/30 phrases generated
+[2025-11-11 12:40:43]     ✓ 25/30 phrases generated
+[2025-11-11 12:40:58]     ✓ 30/30 phrases generated
+[2025-11-11 12:40:58]   🎤 Generating practice section...
+[2025-11-11 12:41:24]   🎤 Generating conclusion...
+[2025-11-11 12:41:25]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:41:26]   ✅ Generated: resource-23.mp3 (2.31 MB)
+[2025-11-11 12:41:26]   ✅ Resource 23 COMPLETE
+[2025-11-11 12:41:27] 
+============================================================
+[2025-11-11 12:41:27] 🔄 Processing Resource 25
+[2025-11-11 12:41:27] ============================================================
+[2025-11-11 12:41:27]   📋 Title/Type hint: Resource 25
+[2025-11-11 12:41:27]   🎯 Detected format: basic_phrases
+[2025-11-11 12:41:27]   📄 Source: intermediate_customer_service_1.md
+[2025-11-11 12:41:28]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:41:28]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:41:28]   🎤 Generating introduction...
+[2025-11-11 12:41:29]   🎤 Generating 30 phrases...
+[2025-11-11 12:41:46]     ✓ 5/30 phrases generated
+[2025-11-11 12:42:01]     ✓ 10/30 phrases generated
+[2025-11-11 12:42:17]     ✓ 15/30 phrases generated
+[2025-11-11 12:42:39]     ✓ 20/30 phrases generated
+[2025-11-11 12:42:54]     ✓ 25/30 phrases generated
+[2025-11-11 12:43:14]     ✓ 30/30 phrases generated
+[2025-11-11 12:43:14]   🎤 Generating practice section...
+[2025-11-11 12:43:44]   🎤 Generating conclusion...
+[2025-11-11 12:43:43]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:43:44]   ✅ Generated: resource-25.mp3 (2.83 MB)
+[2025-11-11 12:43:44]   ✅ Resource 25 COMPLETE
+[2025-11-11 12:43:45] 
+============================================================
+[2025-11-11 12:43:45] 🔄 Processing Resource 26
+[2025-11-11 12:43:45] ============================================================
+[2025-11-11 12:43:45]   📋 Title/Type hint: Resource 26
+[2025-11-11 12:43:45]   🎯 Detected format: basic_phrases
+[2025-11-11 12:43:45]   📄 Source: intermediate_complaints_1.md
+[2025-11-11 12:43:45]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:43:45]   🎯 Format: BASIC_PHRASES
+[2025-11-11 12:43:45]   🎤 Generating introduction...
+[2025-11-11 12:43:46]   🎤 Generating 30 phrases...
+[2025-11-11 12:44:04]     ✓ 5/30 phrases generated
+[2025-11-11 12:44:20]     ✓ 10/30 phrases generated
+[2025-11-11 12:44:37]     ✓ 15/30 phrases generated
+[2025-11-11 12:44:53]     ✓ 20/30 phrases generated
+[2025-11-11 12:45:13]     ✓ 25/30 phrases generated
+[2025-11-11 12:45:29]     ✓ 30/30 phrases generated
+[2025-11-11 12:45:29]   🎤 Generating practice section...
+[2025-11-11 12:45:55]   🎤 Generating conclusion...
+[2025-11-11 12:45:56]   🔧 Concatenating 305 audio segments...
+[2025-11-11 12:45:57]   ✅ Generated: resource-26.mp3 (4.08 MB)
+[2025-11-11 12:45:57]   ✅ Resource 26 COMPLETE
+[2025-11-11 12:45:58] 
+============================================================
+[2025-11-11 12:45:58] 🔄 Processing Resource 27
+[2025-11-11 12:45:58] ============================================================
+[2025-11-11 12:45:58]   📋 Title/Type hint: Frases de Emergencia
+[2025-11-11 12:45:58]   🎯 Detected format: emergency
+[2025-11-11 12:45:58]   📄 Source: emergency_phrases_1.md
+[2025-11-11 12:45:58]   ✓ Extracted 30 phrase pairs
+[2025-11-11 12:45:59]   🎯 Format: EMERGENCY
+[2025-11-11 12:45:59]   🎤 Generating introduction...
+[2025-11-11 12:46:02]   🎤 Generating 30 phrases...
