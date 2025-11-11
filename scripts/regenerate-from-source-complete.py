@@ -199,8 +199,8 @@ def extract_phrases_from_markdown(file_path: Path) -> List[Tuple[str, str]]:
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
 
-        # Find all "### Frase" sections
-        sections = re.split(r'^### Frase \d+:', content, flags=re.MULTILINE)
+        # Find all "### Frase" or "## Frase" sections (handle both header levels)
+        sections = re.split(r'^##+ Frase \d+:', content, flags=re.MULTILINE)
 
         for section in sections[1:]:  # Skip first empty section
             # Pattern 1: **English**: "phrase text"
