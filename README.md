@@ -1,5 +1,7 @@
 # Hablas.co - English Learning Hub for Colombian Workers
 
+**Version:** 1.2.0 | **Status:** VERY ACTIVE - Latest commit 2025-01-08
+
 A mobile-first web application connecting Colombian delivery drivers and rideshare workers to practical English learning resources through WhatsApp communities.
 
 ## 🎯 Mission
@@ -21,11 +23,15 @@ Help working-class Colombians (Rappi/Didi/Uber/inDriver drivers and delivery wor
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Next.js 15 with TypeScript
-- **Deployment**: GitHub Pages (static export)
+- **Frontend**: Next.js 15.0 with React 18 and TypeScript 5.6
+- **AI Integration**: Anthropic Claude SDK 0.65.0 for AI resource generation
+- **Database**: Supabase 2.58.0 (devDependency)
+- **Validation**: Zod 4.1.12 for schema validation
+- **Icons**: Lucide React 0.548
+- **Deployment**: Vercel (language-learning/hablas/) + GitHub Pages
 - **Styling**: Tailwind CSS with custom design system
 - **PWA**: Service Workers for offline functionality
-- **AI Generation**: Anthropic Claude API for resource creation
+- **Testing**: Jest 30.2 + jest-axe for accessibility testing
 - **Build Automation**: Automated documentation sync
 
 ## 📱 Optimization for Colombia
@@ -71,11 +77,13 @@ Help working-class Colombians (Rappi/Didi/Uber/inDriver drivers and delivery wor
 
 ## 🌐 Deployment
 
-Deployed to GitHub Pages using static export:
+**Primary Deployment:** Vercel at language-learning/hablas/
+**Secondary Deployment:** GitHub Pages (static export)
 
 1. Push to `main` branch
 2. GitHub Actions automatically builds and deploys
-3. Live at: `https://bjpl.github.io/hablas/`
+3. Vercel URL: Production deployment configured
+4. GitHub Pages: `https://bjpl.github.io/hablas/`
 
 ### Build Configuration
 
@@ -85,21 +93,27 @@ Deployed to GitHub Pages using static export:
 
 ## 📊 Current Status
 
-- **Version**: 1.1.0
-- **Last Updated**: October 8, 2025
+- **Version**: 1.2.0
+- **Last Updated**: 2025-01-08
 - **Resources**: 50+ AI-generated learning materials
 - **Design System**: 100% integrated across all components
 - **Documentation**: Comprehensive with automated sync
 - **Performance**: 95+ Lighthouse score, 50% speed improvement
 
-### Recent Improvements (October 2025)
+### Recent Improvements (Latest)
 
+- ✅ Phase 1A completion: 22 resources with audio
+- ✅ Audio script transformation system
+- ✅ Type-aware audio generation
+- ✅ Content alignment improvements
 - ✅ AI-powered resource generation system (50+ resources)
+- ✅ Rate limiting infrastructure
+- ✅ Markdown rendering capabilities
 - ✅ Performance optimizations (95+ Lighthouse score)
 - ✅ Complete design system integration
 - ✅ Automated documentation sync
 - ✅ TypeScript strict mode enabled
-- ✅ Next.js 15 upgrade with React 19 support
+- ✅ Next.js 15.0 upgrade with React 18 support
 - ✅ Component data extraction (57% size reduction)
 - ✅ Comprehensive cleanup and optimization
 - ✅ Service Worker for offline capability
