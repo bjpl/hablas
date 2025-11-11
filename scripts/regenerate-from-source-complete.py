@@ -503,16 +503,15 @@ async def generate_phrase_audio(english: str, spanish: str, phrase_num: int,
         if await generate_silence_mp3(pauses['after_english_1'], pause1):
             segments.append(pause1)
 
-        # 4. English phrase (repeat) - skip for directions (rapid reference)
-        if resource_type != 'directions':
-            english_file_2 = await synthesize_text(english, ENGLISH_VOICE, english_speed)
-            if english_file_2:
-                segments.append(english_file_2)
+        # 4. English phrase (repeat) - ALWAYS for all types (proper repetition)
+        english_file_2 = await synthesize_text(english, ENGLISH_VOICE, english_speed)
+        if english_file_2:
+            segments.append(english_file_2)
 
-            # 5. Pause 2
-            pause2 = TEMP_DIR / f"pause2_{phrase_num}.mp3"
-            if await generate_silence_mp3(pauses['after_english_2'], pause2):
-                segments.append(pause2)
+        # 5. Pause 2 - always include
+        pause2 = TEMP_DIR / f"pause2_{phrase_num}.mp3"
+        if await generate_silence_mp3(pauses['after_english_2'], pause2):
+            segments.append(pause2)
 
         # 6. Spanish translation
         spanish_file = await synthesize_text(spanish, SPANISH_VOICE, SPANISH_SPEED)
@@ -610,9 +609,9 @@ async def generate_practice(phrases: List[Tuple[str, str]],
                 segments.append(pause)
 
     elif resource_type == 'directions':
-        # For directions: rapid-fire all English phrases
+        # For directions: normal speed with adequate pauses
         for i, (english, _) in enumerate(phrases):
-            phrase_file = await synthesize_text(english, ENGLISH_VOICE, "+10%")  # Slightly faster
+            phrase_file = await synthesize_text(english, ENGLISH_VOICE, "+0%")  # Normal speed
             if phrase_file:
                 segments.append(phrase_file)
 
