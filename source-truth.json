@@ -1,0 +1,282 @@
+{
+  "1": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "2": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "3": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "4": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "5": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "6": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "7": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "8": {
+    "source": "docs/templates/avanzado/08-reporte-incidente-autoridades.md",
+    "expected_phrases": 2,
+    "type": "markdown"
+  },
+  "9": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "10": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "11": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "12": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "13": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "14": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "15": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "16": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "17": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "18": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "19": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "20": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "21": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "22": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "23": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "24": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "25": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "26": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "27": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "28": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "29": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "30": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "31": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "32": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "33": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "34": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "35": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "36": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "37": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "38": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "39": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "40": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "41": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "42": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "43": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "44": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "45": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "46": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "47": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "48": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "49": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "50": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "51": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "52": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "53": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "54": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "55": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  },
+  "56": {
+    "source": "MISSING",
+    "expected_phrases": 0,
+    "type": "unknown"
+  }
+}
