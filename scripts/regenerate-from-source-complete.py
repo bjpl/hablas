@@ -71,11 +71,11 @@ PAUSE_CONFIGS = {
         'section': 2500,
     },
     'directions': {
-        'after_english_1': 800,      # Quicker for rapid reference
-        'after_english_2': 800,
-        'after_spanish': 2000,       # Shorter practice time
-        'between_phrases': 1000,     # Fast-paced
-        'section': 1500,
+        'after_english_1': 1000,     # Adequate time for all types
+        'after_english_2': 1000,
+        'after_spanish': 2500,       # Full repetition time (minimum)
+        'between_phrases': 1500,     # Standard spacing
+        'section': 2000,
     },
     'emergency': {
         'after_english_1': 1500,     # Slower, clearer
