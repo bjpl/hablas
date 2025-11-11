@@ -168,4 +168,112 @@
   .animate-slide-up {
     animation: slide-up 0.3s ease-out;
   }
+
+  /* Enhanced Typography for Better Readability */
+  .prose {
+    line-height: 1.7;
+  }
+
+  .prose p {
+    margin-bottom: 1rem;
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4,
+  .prose h5,
+  .prose h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .prose h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+
+  .prose h2 {
+    font-size: 1.875rem;
+  }
+
+  .prose h3 {
+    font-size: 1.5rem;
+  }
+
+  .prose ul,
+  .prose ol {
+    margin-bottom: 1.5rem;
+  }
+
+  .prose li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Enhanced Blockquote Styling */
+  .prose blockquote {
+    background: rgba(59, 130, 246, 0.05);
+    border-left: 4px solid #3b82f6;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+    font-style: normal;
+  }
+
+  .prose blockquote p {
+    margin: 0.5rem 0;
+  }
+
+  /* Code blocks with better background */
+  .prose code {
+    background: rgba(229, 231, 235, 0.5);
+    padding: 0.2em 0.4em;
+    border-radius: 0.25rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.875em;
+  }
+
+  .prose pre {
+    background: rgba(31, 41, 55, 0.95);
+    color: #e5e7eb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+
+  .prose pre code {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+  }
+
+  /* Mobile-optimized font sizes */
+  @media (max-width: 768px) {
+    .prose {
+      font-size: 16px;
+    }
+
+    .prose h1 {
+      font-size: 1.875rem;
+    }
+
+    .prose h2 {
+      font-size: 1.5rem;
+    }
+
+    .prose h3 {
+      font-size: 1.25rem;
+    }
+  }
+
+  /* Touch targets for mobile */
+  .min-h-touch {
+    min-height: 44px;
+  }
+
+  .min-w-touch {
+    min-width: 44px;
+  }
 }

@@ -39,15 +39,45 @@ function cleanBoxCharacters(text: string): string {
     .replace(/\n{3,}/g, '\n\n')  // Max 2 consecutive newlines
 }
 
-// Helper: Clean audio script formatting (keep structure, remove only noise)
+// Helper: Clean audio script formatting - remove production metadata
 function cleanAudioScript(text: string): string {
-  // Don't filter anything - let the BilingualDialogueFormatter handle display
-  // Just do basic cleanup
-  return text
-    .split('\n')
-    .map(line => line.trim())
-    .join('\n')
-    .replace(/\n{3,}/g, '\n\n')  // Max 2 consecutive newlines
+  let cleaned = text;
+
+  // Remove all production metadata and instructions
+  cleaned = cleaned.replace(/\*\*\[Tone:.*?\]\*\*/gi, '');
+  cleaned = cleaned.replace(/\*\*\[Speaker:.*?\]\*\*/gi, '');
+  cleaned = cleaned.replace(/\*\*\[PAUSE:.*?\]\*\*/gi, '');
+  cleaned = cleaned.replace(/\[Pause:.*?\]/gi, '');
+  cleaned = cleaned.replace(/\[Sound effect:.*?\]/gi, '');
+  cleaned = cleaned.replace(/\[Speaker:.*?\]/gi, '');
+  cleaned = cleaned.replace(/\[Tone:.*?\]/gi, '');
+
+  // Remove timestamp headers but keep section structure
+  cleaned = cleaned.replace(/###\s*\[[\d:]+\]\s*/g, '### ');
+  cleaned = cleaned.replace(/##\s*\[[\d:]+\s*-\s*[\d:]+\]\s*/g, '## ');
+
+  // Remove production duration/metadata from header
+  cleaned = cleaned.replace(/\*\*Total Duration\*\*:.*?\n/gi, '');
+  cleaned = cleaned.replace(/\*\*Target\*\*:.*?\n/gi, '');
+  cleaned = cleaned.replace(/\*\*Language\*\*:.*?\n/gi, '');
+
+  // Convert quoted speech to blockquotes
+  cleaned = cleaned.replace(/"([^"]+)"/g, (match, quote) => {
+    if (quote.length < 5) return match;
+    return `\n> ${quote}\n`;
+  });
+
+  // Clean up section dividers
+  cleaned = cleaned.replace(/---+\n*/g, '\n\n');
+
+  // Remove excessive blank lines
+  cleaned = cleaned.replace(/\n{3,}/g, '\n\n');
+
+  // Clean up whitespace around blockquotes
+  cleaned = cleaned.replace(/\n+>/g, '\n\n>');
+  cleaned = cleaned.replace(/>\s+\n+/g, '>\n\n');
+
+  return cleaned.trim();
 }
 
 // Server component wrapper - load and clean content at build time

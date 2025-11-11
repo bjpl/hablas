@@ -10,6 +10,7 @@ import VocabularyCard from '@/components/resource-renderers/VocabularyCard'
 import CulturalNote from '@/components/resource-renderers/CulturalNote'
 import PracticalScenario from '@/components/resource-renderers/PracticalScenario'
 import PhraseList from '@/components/resource-renderers/PhraseList'
+import { cleanAudioScript, isAudioScript } from './clean-audio-script'
 import type { JsonResourceContent } from '@/lib/types/resource-content'
 
 export default function ResourceDetail({ id, initialContent = '' }: { id: string; initialContent?: string }) {
@@ -42,10 +43,20 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
         if (parsed && typeof parsed === 'object' && parsed.type) {
           setJsonContent(parsed)
         } else {
-          setContent(initialContent)
+          // Check if this is an audio script and clean it
+          if (resource.type === 'audio' && isAudioScript(initialContent)) {
+            setContent(cleanAudioScript(initialContent))
+          } else {
+            setContent(initialContent)
+          }
         }
       } catch {
-        setContent(initialContent)
+        // Check if this is an audio script and clean it
+        if (resource.type === 'audio' && isAudioScript(initialContent)) {
+          setContent(cleanAudioScript(initialContent))
+        } else {
+          setContent(initialContent)
+        }
       }
 
       // Extract audio metadata if this is an audio resource
@@ -421,22 +432,22 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                   <ReactMarkdown
                     components={{
                       h1: ({ children }) => (
-                        <h1 className="text-3xl font-bold mt-8 mb-4 text-gray-900">
+                        <h1 className="text-3xl font-bold mt-8 mb-4 text-gray-900 leading-tight">
                           {children}
                         </h1>
                       ),
                       h2: ({ children }) => (
-                        <h2 className="text-2xl font-bold mt-6 mb-3 text-gray-800">
+                        <h2 className="text-2xl font-semibold mt-8 mb-3 text-gray-800 leading-tight">
                           {children}
                         </h2>
                       ),
                       h3: ({ children }) => (
-                        <h3 className="text-xl font-bold mt-4 mb-2 text-gray-800">
+                        <h3 className="text-xl font-semibold mt-6 mb-2 text-gray-800 leading-snug">
                           {children}
                         </h3>
                       ),
                       p: ({ children }) => (
-                        <p className="mb-4 text-gray-700 leading-relaxed">
+                        <p className="mb-4 text-gray-700 leading-7">
                           {children}
                         </p>
                       ),
@@ -461,7 +472,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                         </code>
                       ),
                       blockquote: ({ children }) => (
-                        <blockquote className="border-l-4 border-accent-blue pl-4 italic my-4 text-gray-700">
+                        <blockquote className="bg-blue-50/80 border-l-4 border-accent-blue pl-6 pr-4 py-4 my-6 text-gray-700 rounded-r-lg shadow-sm">
                           {children}
                         </blockquote>
                       ),
