@@ -603,4 +603,297 @@ Aprenderás a decir números, direcciones y referencias geográficas en inglés 
 - **North** = Norte = [north]
 - **South** = Sur = [south]
 - **East** = Este = [eest]
-- **West** = Oeste =
+- **West** = Oeste = [west]
+
+💡 **TIP**: Los estadounidenses usan puntos cardinales frecuentemente en direcciones. "Go north on Main Street" es muy común.
+
+---
+
+### Frase 23: Indicando dirección cardinal
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "It's on the north side of the street."    │
+│                                                          │
+│ 🗣️ **Español**: Está en el lado norte de la calle.      │
+│ 🔊 **Pronunciación**: [its on the north said ov the     │
+│                       street]                            │
+│                                                          │
+│ **Usa cuando**: Das o recibes direcciones usando puntos │
+│ cardinales                                               │
+│ **Ejemplo real**: Cliente te dice: "I'm on the north    │
+│ side of Main Street". Necesitas entender que está en el │
+│ lado que da hacia el norte                               │
+│                                                          │
+│ 💡 **TIP**: En ciudades estadounidenses, las calles     │
+│ suelen tener nombres como "North Main" o "East 5th".    │
+└─────────────────────────────────────────────────────────┘
+
+**Direcciones combinadas**:
+- **Northeast** = Noreste = [north-EEST]
+- **Northwest** = Noroeste = [north-WEST]
+- **Southeast** = Sureste = [south-EEST]
+- **Southwest** = Suroeste = [south-WEST]
+
+---
+
+### Frase 24: Preguntando hacia dónde ir
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Which way should I go?"                    │
+│                                                          │
+│ 🗣️ **Español**: ¿Hacia dónde debo ir?                   │
+│ 🔊 **Pronunciación**: [wich wei shud ai go]             │
+│                                                          │
+│ **Usa cuando**: Estás en una intersección y necesitas   │
+│ saber la dirección correcta                              │
+│ **Ejemplo real**: Llegas a una esquina con 4 opciones.  │
+│ Llamas al cliente: "I'm at the corner. Which way should │
+│ I go?"                                                   │
+│                                                          │
+│ 💡 **TIP**: Cliente puede responder: "Go north" (ve al  │
+│ norte) o "Turn left" (gira a la izquierda).             │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 8. Preguntas sobre Ubicación
+
+### Frase 25: Preguntando qué tan lejos está
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "How far is it?"                            │
+│                                                          │
+│ 🗣️ **Español**: ¿Qué tan lejos está?                    │
+│ 🔊 **Pronunciación**: [hao far iz it]                   │
+│                                                          │
+│ **Usa cuando**: Necesitas saber la distancia a tu       │
+│ destino                                                  │
+│ **Ejemplo real**: Cliente te da nuevas instrucciones.   │
+│ Preguntas: "How far is it from here?" para calcular     │
+│ tiempo de llegada                                        │
+│                                                          │
+│ 💡 **TIP**: Respuestas comunes: "Two blocks" (dos       │
+│ cuadras), "Five minutes" (cinco minutos), "A mile"      │
+│ (una milla)                                              │
+└─────────────────────────────────────────────────────────┘
+
+**Unidades de distancia**:
+- **Block** = Cuadra = [blok]
+- **Mile** = Milla (1.6 km) = [mail]
+- **Feet** = Pies = [feet]
+- **Minutes away** = Minutos de distancia = [MIN-its a-WEY]
+
+---
+
+### Frase 26: Confirmando que estás cerca
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm almost there."                         │
+│                                                          │
+│ 🗣️ **Español**: Ya casi llego.                          │
+│ 🔊 **Pronunciación**: [aim OL-moust thair]              │
+│                                                          │
+│ **Usa cuando**: Estás cerca de la dirección y quieres   │
+│ que el cliente sepa                                      │
+│ **Ejemplo real**: Cliente te llama preguntando dónde    │
+│ estás. Respondes: "Hi! I'm almost there, about two      │
+│ minutes away"                                            │
+│                                                          │
+│ 💡 **TIP**: Esta frase tranquiliza a clientes           │
+│ impacientes y muestra profesionalismo.                   │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I'm close" = Estoy cerca = [aim klohs]
+- "I'm around the corner" = Estoy a la vuelta de la esquina = [aim a-RAUND the KOR-ner]
+- "I'll be there in two minutes" = Llego en dos minutos = [ail bi thair in too MIN-its]
+
+---
+
+### Frase 27: Preguntando si pasaste el lugar
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Did I pass it?"                            │
+│                                                          │
+│ 🗣️ **Español**: ¿Ya lo pasé?                            │
+│ 🔊 **Pronunciación**: [did ai pas it]                   │
+│                                                          │
+│ **Usa cuando**: Crees que te pasaste de la dirección    │
+│ **Ejemplo real**: Conduciendo por una calle larga sin   │
+│ ver el número. Llamas: "I'm on Oak Street but I don't   │
+│ see your address. Did I pass it?"                        │
+│                                                          │
+│ 💡 **TIP**: Es mejor preguntar que dar vueltas          │
+│ innecesarias. El cliente apreciará tu honestidad.        │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 28: Diciendo que llegaste al lugar
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm here!"                                 │
+│                                                          │
+│ 🗣️ **Español**: ¡Ya llegué!                             │
+│ 🔊 **Pronunciación**: [aim heer]                        │
+│                                                          │
+│ **Usa cuando**: Llegas exactamente a la dirección       │
+│ **Ejemplo real**: Estacionas frente a la casa. Envías   │
+│ un mensaje: "Hi! I'm here!" para que el cliente salga o │
+│ te abra la puerta                                        │
+│                                                          │
+│ 💡 **TIP**: Simple y efectivo. Todos entienden esta     │
+│ frase, incluso con acento.                               │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I'm outside" = Estoy afuera = [aim aut-SAID]
+- "I'm at your place" = Estoy en tu lugar = [aim at yor pleis]
+- "I arrived" = Llegué = [ai a-RAIVD]
+
+---
+
+### Frase 29: Confirmando ubicación exacta
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm parked in front of your house."       │
+│                                                          │
+│ 🗣️ **Español**: Estoy estacionado enfrente de tu casa.  │
+│ 🔊 **Pronunciación**: [aim parkt in frunt ov yor haus]  │
+│                                                          │
+│ **Usa cuando**: Cliente te pregunta dónde estás         │
+│ exactamente                                              │
+│ **Ejemplo real**: Cliente llama preguntando: "Where are │
+│ you?" Respondes: "I'm parked in front of your house, in │
+│ a blue Toyota"                                           │
+│                                                          │
+│ 💡 **TIP**: Ser específico ayuda al cliente a           │
+│ encontrarte rápido y evita confusión.                    │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I'm across the street" = Estoy al otro lado de la calle = [aim a-KROS the street]
+- "I'm in the driveway" = Estoy en la entrada del garaje = [aim in the DRAIV-wei]
+
+---
+
+### Frase 30: Preguntando por señales o indicaciones
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Do you see any signs?"                     │
+│                                                          │
+│ 🗣️ **Español**: ¿Ves alguna señal?                      │
+│ 🔊 **Pronunciación**: [doo yoo see EN-ee sainz]         │
+│                                                          │
+│ **Usa cuando**: Necesitas que el cliente te dé pistas   │
+│ visuales para encontrarlo                                │
+│ **Ejemplo real**: Estás en zona comercial con muchos    │
+│ negocios. Preguntas: "I'm on Main Street. Do you see    │
+│ any signs near you?"                                     │
+│                                                          │
+│ 💡 **TIP**: Cliente puede responder con nombres de      │
+│ tiendas, restaurantes, o señales que te ayuden.          │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 9. Tarjeta de Referencia Rápida
+
+### Números Esenciales (0-20)
+```
+0 = zero [ZEE-roh]          11 = eleven [ee-LEV-en]
+1 = one [wuhn]              12 = twelve [twelv]
+2 = two [too]               13 = thirteen [ther-TEEN]
+3 = three [three]           14 = fourteen [for-TEEN]
+4 = four [for]              15 = fifteen [fif-TEEN]
+5 = five [faiv]             16 = sixteen [siks-TEEN]
+6 = six [siks]              17 = seventeen [sev-en-TEEN]
+7 = seven [SEV-en]          18 = eighteen [ei-TEEN]
+8 = eight [eit]             19 = nineteen [nain-TEEN]
+9 = nine [nain]             20 = twenty [TWEN-tee]
+10 = ten [ten]
+```
+
+### Decenas (20-90)
+```
+20 = twenty [TWEN-tee]      60 = sixty [SIKS-tee]
+30 = thirty [THER-tee]      70 = seventy [SEV-en-tee]
+40 = forty [FOR-tee]        80 = eighty [EI-tee]
+50 = fifty [FIF-tee]        90 = ninety [NAIN-tee]
+```
+
+### Tipos de Calles
+```
+Street = Calle              Lane = Callejón
+Avenue = Avenida            Way = Vía
+Road = Camino               Court = Corte
+Drive = Camino              Place = Plaza
+Boulevard = Bulevar
+```
+
+### Puntos Cardinales
+```
+North = Norte [north]       Northeast = Noreste [north-EEST]
+South = Sur [south]         Northwest = Noroeste [north-WEST]
+East = Este [eest]          Southeast = Sureste [south-EEST]
+West = Oeste [west]         Southwest = Suroeste [south-WEST]
+```
+
+### Frases de Emergencia
+```
+"Where is it?"              = ¿Dónde está?
+"Is this the right place?"  = ¿Es el lugar correcto?
+"I'm here"                  = Ya llegué
+"I'm lost"                  = Estoy perdido
+"Can you help me?"          = ¿Puedes ayudarme?
+"What's the address?"       = ¿Cuál es la dirección?
+```
+
+### Edificios y Apartamentos
+```
+Apartment = Apartamento     Lobby = Vestíbulo
+Floor = Piso                Elevator = Elevador
+Building = Edificio         Stairs = Escaleras
+Unit = Unidad               Ground floor = Planta baja
+```
+
+---
+
+## Consejos Culturales Importantes
+
+**1. Pronunciación de Números**:
+- Los estadounidenses dicen direcciones en pares: 2468 = "twenty-four sixty-eight"
+- En números de teléfono, di cada dígito por separado
+- El cero se dice "oh" en apartamentos (205 = "two-oh-five")
+
+**2. Confirmación es Clave**:
+- SIEMPRE confirma el número de casa o apartamento
+- Pregunta si no estás seguro - es mejor que equivocarte
+- Usa tu teléfono para mostrar la dirección si hay confusión
+
+**3. Puntos Cardinales**:
+- Aprende a ubicarte con norte, sur, este, oeste
+- Muchas ciudades usan sistema de cuadrícula (grid system)
+- Las calles pueden llamarse "North Main" o "East 5th"
+
+**4. Comunicación Clara**:
+- Habla despacio y claro cuando digas números
+- Repite si el cliente dice "Sorry?" o "What?"
+- Usa gestos y señales cuando sea posible
+
+**5. Tecnología como Apoyo**:
+- Muestra tu teléfono con la dirección si hay confusión
+- Toma screenshots de instrucciones especiales
+- Usa Google Maps además del GPS de la app
+
+---
+
+**¡Practica estos números y direcciones todos los días!**
+
+Con estas 30 frases esenciales, tendrás la base para comunicarte efectivamente en cualquier situación de entrega. Recuerda: la práctica hace al maestro. Usa estas frases en cada viaje y pronto se volverán automáticas.
+
+**Siguiente paso**: Combina estas frases con las de confirmación de pedidos y problemas comunes para tener una comunicación completa y profesional.
+
+---
+
+*Fin del Manual de Números y Direcciones - Variación 1*

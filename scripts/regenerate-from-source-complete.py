@@ -41,11 +41,12 @@ except ImportError:
     print("⚠️  edge-tts not installed. Install with: pip install edge-tts")
     sys.exit(1)
 
-# Configuration
-MASTER_MAPPING_FILE = Path("resource-full-paths.json")
-OUTPUT_DIR = Path("public/audio")
-TEMP_DIR = Path("temp-audio-generation")
-LOG_FILE = Path("scripts/complete-regeneration-log.txt")
+# Configuration - all paths relative to script's parent directory (project root)
+BASE_DIR = Path(__file__).parent.parent  # Go up from scripts/ to project root
+MASTER_MAPPING_FILE = BASE_DIR / "resource-full-paths.json"
+OUTPUT_DIR = BASE_DIR / "public/audio"
+TEMP_DIR = BASE_DIR / "temp-audio-generation"
+LOG_FILE = BASE_DIR / "scripts/complete-regeneration-log.txt"
 
 # Voice configuration - CONSISTENT for all resources
 SPANISH_VOICE = "es-CO-SalomeNeural"  # Colombian Spanish
@@ -97,24 +98,27 @@ def find_source_file(resource_id: str, mapping: Dict) -> Optional[Path]:
     # Extract filename from full path if needed
     source_filename = Path(source_file).name
 
-    # Search in multiple locations
+    # Get the base directory (go up one level from scripts/)
+    base_dir = Path(__file__).parent.parent
+
+    # Search in multiple locations (all relative to base_dir)
     search_paths = [
         # Try as-is first (handles paths like "generated-resources/...")
-        Path(source_file),
+        base_dir / source_file,
         # Try removing leading slash
-        Path(source_file.lstrip('/')),
+        base_dir / source_file.lstrip('/'),
         # Try just the filename in common locations
-        Path("generated-resources/50-batch/repartidor") / source_filename,
-        Path("generated-resources/50-batch/conductor") / source_filename,
-        Path("generated-resources/50-batch/all") / source_filename,
-        Path("data/resources/app-specific") / source_filename,
-        Path("data/resources/avanzado") / source_filename,
-        Path("data/resources/emergency") / source_filename,
+        base_dir / "generated-resources/50-batch/repartidor" / source_filename,
+        base_dir / "generated-resources/50-batch/conductor" / source_filename,
+        base_dir / "generated-resources/50-batch/all" / source_filename,
+        base_dir / "data/resources/app-specific" / source_filename,
+        base_dir / "data/resources/avanzado" / source_filename,
+        base_dir / "data/resources/emergency" / source_filename,
         # Audio specs by resource ID
-        Path("audio-specs") / f"resource-{resource_id}-spec.json",
+        base_dir / "audio-specs" / f"resource-{resource_id}-spec.json",
         # Audio scripts
-        Path("audio-specs") / source_filename.replace('.txt', '-audio-script.txt'),
-        Path("generated-resources/50-batch/repartidor") / source_filename.replace('.md', '-audio-script.txt'),
+        base_dir / "audio-specs" / source_filename.replace('.txt', '-audio-script.txt'),
+        base_dir / "generated-resources/50-batch/repartidor" / source_filename.replace('.md', '-audio-script.txt'),
     ]
 
     for path in search_paths:

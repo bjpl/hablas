@@ -1,0 +1,191 @@
+Building source truth map from authoritative files...
+======================================================================
+
+Resource 1:
+  ✗ No source file found
+
+Resource 2:
+  ✗ No source file found
+
+Resource 3:
+  ✗ No source file found
+
+Resource 4:
+  ✗ No source file found
+
+Resource 5:
+  ✗ No source file found
+
+Resource 6:
+  ✗ No source file found
+
+Resource 7:
+  ✗ No source file found
+
+Resource 8:
+  ✓ Found: docs/templates/avanzado/08-reporte-incidente-autoridades.md
+    Type: markdown
+    Phrases: 2
+    Sample phrases:
+      - I think it was a [Honda/Yamaha/Chevrolet]...
+      - I'm not sure of the model...
+
+Resource 9:
+  ✗ No source file found
+
+Resource 10:
+  ✗ No source file found
+
+Resource 11:
+  ✗ No source file found
+
+Resource 12:
+  ✗ No source file found
+
+Resource 13:
+  ✗ No source file found
+
+Resource 14:
+  ✗ No source file found
+
+Resource 15:
+  ✗ No source file found
+
+Resource 16:
+  ✗ No source file found
+
+Resource 17:
+  ✗ No source file found
+
+Resource 18:
+  ✗ No source file found
+
+Resource 19:
+  ✗ No source file found
+
+Resource 20:
+  ✗ No source file found
+
+Resource 21:
+  ✗ No source file found
+
+Resource 22:
+  ✗ No source file found
+
+Resource 23:
+  ✗ No source file found
+
+Resource 24:
+  ✗ No source file found
+
+Resource 25:
+  ✗ No source file found
+
+Resource 26:
+  ✗ No source file found
+
+Resource 27:
+  ✗ No source file found
+
+Resource 28:
+  ✗ No source file found
+
+Resource 29:
+  ✗ No source file found
+
+Resource 30:
+  ✗ No source file found
+
+Resource 31:
+  ✗ No source file found
+
+Resource 32:
+  ✗ No source file found
+
+Resource 33:
+  ✗ No source file found
+
+Resource 34:
+  ✗ No source file found
+
+Resource 35:
+  ✗ No source file found
+
+Resource 36:
+  ✗ No source file found
+
+Resource 37:
+  ✗ No source file found
+
+Resource 38:
+  ✗ No source file found
+
+Resource 39:
+  ✗ No source file found
+
+Resource 40:
+  ✗ No source file found
+
+Resource 41:
+  ✗ No source file found
+
+Resource 42:
+  ✗ No source file found
+
+Resource 43:
+  ✗ No source file found
+
+Resource 44:
+  ✗ No source file found
+
+Resource 45:
+  ✗ No source file found
+
+Resource 46:
+  ✗ No source file found
+
+Resource 47:
+  ✗ No source file found
+
+Resource 48:
+  ✗ No source file found
+
+Resource 49:
+  ✗ No source file found
+
+Resource 50:
+  ✗ No source file found
+
+Resource 51:
+  ✗ No source file found
+
+Resource 52:
+  ✗ No source file found
+
+Resource 53:
+  ✗ No source file found
+
+Resource 54:
+  ✗ No source file found
+
+Resource 55:
+  ✗ No source file found
+
+Resource 56:
+  ✗ No source file found
+
+======================================================================
+
+Source truth map saved to: /mnt/c/Users/brand/Development/Project_Workspace/active-development/hablas/source-truth.json
+
+Statistics:
+  Total resources: 56
+  Sources found: 1
+  Missing sources: 55
+  Total expected phrases: 2
+
+Resources by source type:
+  markdown: 1 resources
+  unknown: 55 resources
+
+⚠️  Resources without source files: 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56

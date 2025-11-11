@@ -125,3 +125,1864 @@ Traceback (most recent call last):
   File "/usr/lib/python3.12/pathlib.py", line 1353, in rmdir
     os.rmdir(self)
 OSError: [Errno 39] Directory not empty: '/mnt/c/Users/brand/Development/Project_Workspace/active-development/hablas/public/audio/temp'
+[2025-11-10 18:07:43] ================================================================================
+[2025-11-10 18:07:43] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-10 18:07:43] ================================================================================
+[2025-11-10 18:07:43] 📅 Started: 2025-11-10 18:07:43
+[2025-11-10 18:07:43] 
+[2025-11-10 18:07:43] ✅ Loaded mapping for 56 resources
+[2025-11-10 18:07:43] 
+============================================================
+[2025-11-10 18:07:43] 🔄 Processing Resource 1
+[2025-11-10 18:07:43] ============================================================
+[2025-11-10 18:07:43]   📄 Source: basic_phrases_1.md
+[2025-11-10 18:07:44]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:07:44]   ❌ No phrases found
+[2025-11-10 18:07:44] 
+============================================================
+[2025-11-10 18:07:44] 🔄 Processing Resource 2
+[2025-11-10 18:07:44] ============================================================
+[2025-11-10 18:07:44]   📄 Source: basic_audio_1-audio-script.txt
+[2025-11-10 18:07:44]   ✓ Extracted 8 phrase pairs
+[2025-11-10 18:07:44]   🎤 Generating introduction...
+[2025-11-10 18:07:47]   ❌ Error generating audio: [Errno 2] No such file or directory: 'ffprobe'
+[2025-11-10 18:07:47]   ❌ Resource 2 FAILED
+[2025-11-10 18:07:47] 
+============================================================
+[2025-11-10 18:07:47] 🔄 Processing Resource 4
+[2025-11-10 18:07:47] ============================================================
+[2025-11-10 18:07:47]   📄 Source: basic_phrases_2.md
+[2025-11-10 18:07:47]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:07:47]   ❌ No phrases found
+[2025-11-10 18:07:48] 
+============================================================
+[2025-11-10 18:07:48] 🔄 Processing Resource 5
+[2025-11-10 18:07:48] ============================================================
+[2025-11-10 18:07:48]   📄 Source: intermediate_situations_1.md
+[2025-11-10 18:07:48]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:07:48]   ❌ No phrases found
+[2025-11-10 18:07:49] 
+============================================================
+[2025-11-10 18:07:49] 🔄 Processing Resource 6
+[2025-11-10 18:07:49] ============================================================
+[2025-11-10 18:07:49]   📄 Source: basic_phrases_3.md
+[2025-11-10 18:07:49]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:07:49]   ❌ No phrases found
+[2025-11-10 18:07:49] 
+============================================================
+[2025-11-10 18:07:49] 🔄 Processing Resource 7
+[2025-11-10 18:07:49] ============================================================
+[2025-11-10 18:07:50]   📄 Source: basic_audio_2-audio-script.txt
+[2025-11-10 18:07:50]   ✓ Extracted 1 phrase pairs
+[2025-11-10 18:07:50]   🎤 Generating introduction...
+[2025-11-10 18:07:52]   ❌ Error generating audio: [Errno 2] No such file or directory: 'ffprobe'
+[2025-11-10 18:07:52]   ❌ Resource 7 FAILED
+[2025-11-10 18:07:52] 
+============================================================
+[2025-11-10 18:07:52] 🔄 Processing Resource 9
+[2025-11-10 18:07:52] ============================================================
+[2025-11-10 18:07:53]   📄 Source: basic_phrases_4.md
+[2025-11-10 18:07:53]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:07:53]   ❌ No phrases found
+[2025-11-10 18:07:53] 
+============================================================
+[2025-11-10 18:07:53] 🔄 Processing Resource 10
+[2025-11-10 18:07:53] ============================================================
+[2025-11-10 18:07:53]   📄 Source: intermediate_conversations_1-audio-script.txt
+[2025-11-10 18:07:53]   ✓ Extracted 1 phrase pairs
+[2025-11-10 18:07:53]   🎤 Generating introduction...
+[2025-11-10 18:07:55]   ❌ Error generating audio: [Errno 2] No such file or directory: 'ffprobe'
+[2025-11-10 18:07:55]   ❌ Resource 10 FAILED
+[2025-11-10 18:07:55] 
+============================================================
+[2025-11-10 18:07:55] 🔄 Processing Resource 11
+[2025-11-10 18:07:55] ============================================================
+[2025-11-10 18:07:55]   📄 Source: basic_greetings_1.md
+[2025-11-10 18:07:55]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:07:55]   ❌ No phrases found
+[2025-11-10 18:07:56] 
+============================================================
+[2025-11-10 18:07:56] 🔄 Processing Resource 12
+[2025-11-10 18:07:56] ============================================================
+[2025-11-10 18:07:56]   📄 Source: basic_directions_1.md
+[2025-11-10 18:07:56]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:07:56]   ❌ No phrases found
+[2025-11-10 18:07:57] 
+============================================================
+[2025-11-10 18:07:57] 🔄 Processing Resource 13
+[2025-11-10 18:07:57] ============================================================
+[2025-11-10 18:07:57]   📄 Source: basic_audio_navigation_1-audio-script.txt
+[2025-11-10 18:07:57]   ✓ Extracted 1 phrase pairs
+[2025-11-10 18:07:57]   🎤 Generating introduction...
+[2025-11-10 18:07:58]   ❌ Error generating audio: [Errno 2] No such file or directory: 'ffprobe'
+[2025-11-10 18:07:58]   ❌ Resource 13 FAILED
+[2025-11-10 18:07:58] 
+============================================================
+[2025-11-10 18:07:58] 🔄 Processing Resource 14
+[2025-11-10 18:07:58] ============================================================
+[2025-11-10 18:07:58]   📄 Source: basic_greetings_2.md
+[2025-11-10 18:07:58]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:07:58]   ❌ No phrases found
+[2025-11-10 18:07:59] 
+============================================================
+[2025-11-10 18:07:59] 🔄 Processing Resource 15
+[2025-11-10 18:07:59] ============================================================
+[2025-11-10 18:07:59]   📄 Source: basic_directions_2.md
+[2025-11-10 18:07:59]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:07:59]   ❌ No phrases found
+[2025-11-10 18:08:00] 
+============================================================
+[2025-11-10 18:08:00] 🔄 Processing Resource 16
+[2025-11-10 18:08:00] ============================================================
+[2025-11-10 18:08:00]   📄 Source: intermediate_smalltalk_1.md
+[2025-11-10 18:08:00]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:08:00]   ❌ No phrases found
+[2025-11-10 18:08:01] 
+============================================================
+[2025-11-10 18:08:01] 🔄 Processing Resource 17
+[2025-11-10 18:08:01] ============================================================
+[2025-11-10 18:08:01]   📄 Source: basic_greetings_3.md
+[2025-11-10 18:08:01]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:08:01]   ❌ No phrases found
+[2025-11-10 18:08:01] 
+============================================================
+[2025-11-10 18:08:01] 🔄 Processing Resource 18
+[2025-11-10 18:08:02] ============================================================
+[2025-11-10 18:08:02]   📄 Source: basic_audio_navigation_2-audio-script.txt
+[2025-11-10 18:08:02]   ✓ Extracted 1 phrase pairs
+[2025-11-10 18:08:02]   🎤 Generating introduction...
+[2025-11-10 18:08:03]   ❌ Error generating audio: [Errno 2] No such file or directory: 'ffprobe'
+[2025-11-10 18:08:03]   ❌ Resource 18 FAILED
+[2025-11-10 18:08:03] 
+============================================================
+[2025-11-10 18:08:03] 🔄 Processing Resource 19
+[2025-11-10 18:08:03] ============================================================
+[2025-11-10 18:08:03]   📄 Source: basic_directions_3.md
+[2025-11-10 18:08:03]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:08:03]   ❌ No phrases found
+[2025-11-10 18:08:04] 
+============================================================
+[2025-11-10 18:08:04] 🔄 Processing Resource 20
+[2025-11-10 18:08:04] ============================================================
+[2025-11-10 18:08:04]   📄 Source: intermediate_problems_1.md
+[2025-11-10 18:08:04]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:08:04]   ❌ No phrases found
+[2025-11-10 18:08:05] 
+============================================================
+[2025-11-10 18:08:05] 🔄 Processing Resource 21
+[2025-11-10 18:08:05] ============================================================
+[2025-11-10 18:08:05]   📄 Source: resource-21-spec.json
+[2025-11-10 18:08:05]   ✓ Extracted 7 phrase pairs
+[2025-11-10 18:08:05]   🎤 Generating introduction...
+[2025-11-10 18:08:07]   ❌ Error generating audio: [Errno 2] No such file or directory: 'ffprobe'
+[2025-11-10 18:08:07]   ❌ Resource 21 FAILED
+[2025-11-10 18:08:08] 
+============================================================
+[2025-11-10 18:08:08] 🔄 Processing Resource 22
+[2025-11-10 18:08:08] ============================================================
+[2025-11-10 18:08:08]   ❌ No source file found for resource 22
+[2025-11-10 18:08:08]   ❌ No phrases found
+[2025-11-10 18:08:09] 
+============================================================
+[2025-11-10 18:08:09] 🔄 Processing Resource 23
+[2025-11-10 18:08:09] ============================================================
+[2025-11-10 18:08:09]   ❌ No source file found for resource 23
+[2025-11-10 18:08:09]   ❌ No phrases found
+[2025-11-10 18:08:09] 
+============================================================
+[2025-11-10 18:08:09] 🔄 Processing Resource 25
+[2025-11-10 18:08:09] ============================================================
+[2025-11-10 18:08:10]   ❌ No source file found for resource 25
+[2025-11-10 18:08:10]   ❌ No phrases found
+[2025-11-10 18:08:10] 
+============================================================
+[2025-11-10 18:08:10] 🔄 Processing Resource 26
+[2025-11-10 18:08:10] ============================================================
+[2025-11-10 18:08:10]   ❌ No source file found for resource 26
+[2025-11-10 18:08:10]   ❌ No phrases found
+[2025-11-10 18:08:11] 
+============================================================
+[2025-11-10 18:08:11] 🔄 Processing Resource 27
+[2025-11-10 18:08:11] ============================================================
+[2025-11-10 18:08:11]   ❌ No source file found for resource 27
+[2025-11-10 18:08:11]   ❌ No phrases found
+[2025-11-10 18:08:12] 
+============================================================
+[2025-11-10 18:08:12] 🔄 Processing Resource 28
+[2025-11-10 18:08:12] ============================================================
+[2025-11-10 18:08:12]   📄 Source: resource-28-spec.json
+[2025-11-10 18:08:12]   ✓ Extracted 10 phrase pairs
+[2025-11-10 18:08:12]   🎤 Generating introduction...
+[2025-11-10 18:08:15]   ❌ Error generating audio: [Errno 2] No such file or directory: 'ffprobe'
+[2025-11-10 18:08:15]   ❌ Resource 28 FAILED
+[2025-11-10 18:08:15] 
+============================================================
+[2025-11-10 18:08:15] 🔄 Processing Resource 29
+[2025-11-10 18:08:15] ============================================================
+[2025-11-10 18:08:15]   ❌ No source file found for resource 29
+[2025-11-10 18:08:15]   ❌ No phrases found
+[2025-11-10 18:08:16] 
+============================================================
+[2025-11-10 18:08:16] 🔄 Processing Resource 30
+[2025-11-10 18:08:16] ============================================================
+[2025-11-10 18:08:16]   ❌ No source file found for resource 30
+[2025-11-10 18:08:16]   ❌ No phrases found
+[2025-11-10 18:08:17] 
+============================================================
+[2025-11-10 18:08:17] 🔄 Processing Resource 31
+[2025-11-10 18:08:17] ============================================================
+[2025-11-10 18:08:17]   📄 Source: intermediate_situations_2.md
+[2025-11-10 18:08:17]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:08:17]   ❌ No phrases found
+[2025-11-10 18:08:18] 
+============================================================
+[2025-11-10 18:08:18] 🔄 Processing Resource 32
+[2025-11-10 18:08:18] ============================================================
+[2025-11-10 18:08:18]   📄 Source: intermediate_conversations_2-audio-script.txt
+[2025-11-10 18:08:18]   ✓ Extracted 4 phrase pairs
+[2025-11-10 18:08:18]   🎤 Generating introduction...
+[2025-11-10 18:08:20]   ❌ Error generating audio: [Errno 2] No such file or directory: 'ffprobe'
+[2025-11-10 18:08:20]   ❌ Resource 32 FAILED
+[2025-11-10 18:08:20] 
+============================================================
+[2025-11-10 18:08:20] 🔄 Processing Resource 33
+[2025-11-10 18:08:21] ============================================================
+[2025-11-10 18:08:21]   📄 Source: intermediate_smalltalk_2.md
+[2025-11-10 18:08:21]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:08:21]   ❌ No phrases found
+[2025-11-10 18:08:21] 
+============================================================
+[2025-11-10 18:08:21] 🔄 Processing Resource 34
+[2025-11-10 18:08:21] ============================================================
+[2025-11-10 18:08:21]   📄 Source: intermediate_audio_conversations_1-audio-script.txt
+[2025-11-10 18:08:22]   ✓ Extracted 1 phrase pairs
+[2025-11-10 18:08:22]   🎤 Generating introduction...
+[2025-11-10 18:08:23]   ❌ Error generating audio: [Errno 2] No such file or directory: 'ffprobe'
+[2025-11-10 18:08:23]   ❌ Resource 34 FAILED
+[2025-11-10 18:08:24] 
+============================================================
+[2025-11-10 18:08:24] 🔄 Processing Resource 35
+[2025-11-10 18:08:24] ============================================================
+[2025-11-10 18:08:24]   ❌ No source file found for resource 35
+[2025-11-10 18:08:24]   ❌ No phrases found
+[2025-11-10 18:08:24] 
+============================================================
+[2025-11-10 18:08:24] 🔄 Processing Resource 36
+[2025-11-10 18:08:24] ============================================================
+[2025-11-10 18:08:25]   ❌ No source file found for resource 36
+[2025-11-10 18:08:25]   ❌ No phrases found
+[2025-11-10 18:08:25] 
+============================================================
+[2025-11-10 18:08:25] 🔄 Processing Resource 37
+[2025-11-10 18:08:25] ============================================================
+[2025-11-10 18:08:25]   ❌ No source file found for resource 37
+[2025-11-10 18:08:25]   ❌ No phrases found
+[2025-11-10 18:08:26] 
+============================================================
+[2025-11-10 18:08:26] 🔄 Processing Resource 38
+[2025-11-10 18:08:26] ============================================================
+[2025-11-10 18:08:26]   ❌ No source file found for resource 38
+[2025-11-10 18:08:26]   ❌ No phrases found
+[2025-11-10 18:08:27] 
+============================================================
+[2025-11-10 18:08:27] 🔄 Processing Resource 39
+[2025-11-10 18:08:27] ============================================================
+[2025-11-10 18:08:27]   ❌ No source file found for resource 39
+[2025-11-10 18:08:27]   ❌ No phrases found
+[2025-11-10 18:08:28] 
+============================================================
+[2025-11-10 18:08:28] 🔄 Processing Resource 40
+[2025-11-10 18:08:28] ============================================================
+[2025-11-10 18:08:28]   ❌ No source file found for resource 40
+[2025-11-10 18:08:28]   ❌ No phrases found
+[2025-11-10 18:08:29] 
+============================================================
+[2025-11-10 18:08:29] 🔄 Processing Resource 41
+[2025-11-10 18:08:29] ============================================================
+[2025-11-10 18:08:29]   ❌ No source file found for resource 41
+[2025-11-10 18:08:29]   ❌ No phrases found
+[2025-11-10 18:08:29] 
+============================================================
+[2025-11-10 18:08:29] 🔄 Processing Resource 42
+[2025-11-10 18:08:29] ============================================================
+[2025-11-10 18:08:30]   ❌ No source file found for resource 42
+[2025-11-10 18:08:28]   ❌ No phrases found
+[2025-11-10 18:08:29] 
+============================================================
+[2025-11-10 18:08:29] 🔄 Processing Resource 43
+[2025-11-10 18:08:29] ============================================================
+[2025-11-10 18:08:29]   ❌ No source file found for resource 43
+[2025-11-10 18:08:29]   ❌ No phrases found
+[2025-11-10 18:08:30] 
+============================================================
+[2025-11-10 18:08:30] 🔄 Processing Resource 44
+[2025-11-10 18:08:30] ============================================================
+[2025-11-10 18:08:30]   ❌ No source file found for resource 44
+[2025-11-10 18:08:30]   ❌ No phrases found
+[2025-11-10 18:08:30] 
+============================================================
+[2025-11-10 18:08:30] 🔄 Processing Resource 45
+[2025-11-10 18:08:30] ============================================================
+[2025-11-10 18:08:31]   ❌ No source file found for resource 45
+[2025-11-10 18:08:31]   ❌ No phrases found
+[2025-11-10 18:08:31] 
+============================================================
+[2025-11-10 18:08:31] 🔄 Processing Resource 46
+[2025-11-10 18:08:31] ============================================================
+[2025-11-10 18:08:31]   ❌ No source file found for resource 46
+[2025-11-10 18:08:31]   ❌ No phrases found
+[2025-11-10 18:08:32] 
+============================================================
+[2025-11-10 18:08:32] 🔄 Processing Resource 47
+[2025-11-10 18:08:32] ============================================================
+[2025-11-10 18:08:32]   ❌ No source file found for resource 47
+[2025-11-10 18:08:32]   ❌ No phrases found
+[2025-11-10 18:08:33] 
+============================================================
+[2025-11-10 18:08:33] 🔄 Processing Resource 48
+[2025-11-10 18:08:33] ============================================================
+[2025-11-10 18:08:33]   ❌ No source file found for resource 48
+[2025-11-10 18:08:33]   ❌ No phrases found
+[2025-11-10 18:08:34] 
+============================================================
+[2025-11-10 18:08:34] 🔄 Processing Resource 49
+[2025-11-10 18:08:34] ============================================================
+[2025-11-10 18:08:34]   ❌ No source file found for resource 49
+[2025-11-10 18:08:34]   ❌ No phrases found
+[2025-11-10 18:08:35] 
+============================================================
+[2025-11-10 18:08:35] 🔄 Processing Resource 50
+[2025-11-10 18:08:35] ============================================================
+[2025-11-10 18:08:35]   ❌ No source file found for resource 50
+[2025-11-10 18:08:35]   ❌ No phrases found
+[2025-11-10 18:08:36] 
+============================================================
+[2025-11-10 18:08:36] 🔄 Processing Resource 51
+[2025-11-10 18:08:36] ============================================================
+[2025-11-10 18:08:36]   ❌ No source file found for resource 51
+[2025-11-10 18:08:36]   ❌ No phrases found
+[2025-11-10 18:08:36] 
+============================================================
+[2025-11-10 18:08:36] 🔄 Processing Resource 52
+[2025-11-10 18:08:36] ============================================================
+[2025-11-10 18:08:37]   ❌ No source file found for resource 52
+[2025-11-10 18:08:37]   ❌ No phrases found
+[2025-11-10 18:08:37] 
+============================================================
+[2025-11-10 18:08:37] 🔄 Processing Resource 53
+[2025-11-10 18:08:37] ============================================================
+[2025-11-10 18:08:37]   ❌ No source file found for resource 53
+[2025-11-10 18:08:37]   ❌ No phrases found
+[2025-11-10 18:08:38] 
+============================================================
+[2025-11-10 18:08:38] 🔄 Processing Resource 54
+[2025-11-10 18:08:38] ============================================================
+[2025-11-10 18:08:38]   ❌ No source file found for resource 54
+[2025-11-10 18:08:38]   ❌ No phrases found
+[2025-11-10 18:08:39] 
+============================================================
+[2025-11-10 18:08:39] 🔄 Processing Resource 55
+[2025-11-10 18:08:39] ============================================================
+[2025-11-10 18:08:39]   ❌ No source file found for resource 55
+[2025-11-10 18:08:39]   ❌ No phrases found
+[2025-11-10 18:08:40] 
+============================================================
+[2025-11-10 18:08:40] 🔄 Processing Resource 56
+[2025-11-10 18:08:40] ============================================================
+[2025-11-10 18:08:40]   ❌ No source file found for resource 56
+[2025-11-10 18:08:40]   ❌ No phrases found
+[2025-11-10 18:08:41] 
+============================================================
+[2025-11-10 18:08:41] 🔄 Processing Resource 57
+[2025-11-10 18:08:41] ============================================================
+[2025-11-10 18:08:41]   ❌ No source file found for resource 57
+[2025-11-10 18:08:41]   ❌ No phrases found
+[2025-11-10 18:08:42] 
+============================================================
+[2025-11-10 18:08:42] 🔄 Processing Resource 58
+[2025-11-10 18:08:42] ============================================================
+[2025-11-10 18:08:42]   ❌ No source file found for resource 58
+[2025-11-10 18:08:42]   ❌ No phrases found
+[2025-11-10 18:08:43] 
+============================================================
+[2025-11-10 18:08:43] 🔄 Processing Resource 59
+[2025-11-10 18:08:43] ============================================================
+[2025-11-10 18:08:43]   ❌ No source file found for resource 59
+[2025-11-10 18:08:43]   ❌ No phrases found
+[2025-11-10 18:08:43] 
+================================================================================
+[2025-11-10 18:08:43] 📊 REGENERATION SUMMARY
+[2025-11-10 18:08:44] ================================================================================
+[2025-11-10 18:08:44] ✅ Successful: 0 resources
+[2025-11-10 18:08:44] ❌ Failed: 56 resources
+[2025-11-10 18:08:44] ⏱️  Total time: 1.0 minutes
+[2025-11-10 18:08:44] 
+❌ Failed: 1, 2, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59
+[2025-11-10 18:08:44] 
+📋 Full log: scripts/complete-regeneration-log.txt
+[2025-11-10 18:08:44] ================================================================================
+[2025-11-10 18:15:08] ================================================================================
+[2025-11-10 18:15:08] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-10 18:15:08] ================================================================================
+[2025-11-10 18:15:09] 📅 Started: 2025-11-10 18:15:09
+[2025-11-10 18:15:07] 
+[2025-11-10 18:15:07] ✅ Loaded mapping for 56 resources
+[2025-11-10 18:15:07] 
+============================================================
+[2025-11-10 18:15:07] 🔄 Processing Resource 1
+[2025-11-10 18:15:08] ============================================================
+[2025-11-10 18:15:08]   📄 Source: basic_phrases_1.md
+[2025-11-10 18:15:08]   ✓ Extracted 21 phrase pairs
+[2025-11-10 18:15:08]   🎤 Generating introduction...
+[2025-11-10 18:15:10]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:10]   🎤 Generating 21 phrases...
+[2025-11-10 18:15:11]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:12]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:13]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:13]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:15]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:17]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:18]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:18]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:21]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:22]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:23]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:23]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:24]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:25]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:26]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:26]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:29]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:30]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:31]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:31]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:31]     ✓ 5/21 phrases generated
+[2025-11-10 18:15:34]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:35]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:36]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:37]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:39]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:38]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:40]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:40]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:43]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:45]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:46]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:47]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:48]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:50]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:53]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:53]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:54]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:56]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:57]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:57]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:15:57]     ✓ 10/21 phrases generated
+[2025-11-10 18:15:59]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:00]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:01]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:01]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:02]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:03]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:06]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:06]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:10]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:10]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:11]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:11]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:13]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:15]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:16]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:16]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:20]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:21]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:22]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:22]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:22]     ✓ 15/21 phrases generated
+[2025-11-10 18:16:26]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:27]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:30]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:30]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:32]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:34]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:38]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:38]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:41]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:43]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:49]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:16:50]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:17:01]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:17:02]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:17:03]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:10] ================================================================================
+[2025-11-10 18:21:10] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-10 18:21:10] ================================================================================
+[2025-11-10 18:21:10] 📅 Started: 2025-11-10 18:21:10
+[2025-11-10 18:21:10] 
+[2025-11-10 18:21:10] ✅ Loaded mapping for 56 resources
+[2025-11-10 18:21:10] 
+============================================================
+[2025-11-10 18:21:10] 🔄 Processing Resource 1
+[2025-11-10 18:21:10] ============================================================
+[2025-11-10 18:21:11]   📄 Source: basic_phrases_1.md
+[2025-11-10 18:21:11]   ✓ Extracted 21 phrase pairs
+[2025-11-10 18:21:11]   🎤 Generating introduction...
+[2025-11-10 18:21:14]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:14]   🎤 Generating 21 phrases...
+[2025-11-10 18:21:17]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:19]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:20]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:20]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:22]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:23]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:24]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:24]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:26]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:27]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:28]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:28]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:29]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:30]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:31]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:31]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:33]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:34]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:35]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:35]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:35]     ✓ 5/21 phrases generated
+[2025-11-10 18:21:37]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:38]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:39]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:39]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:41]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:42]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:43]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:43]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:44]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:45]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:46]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:46]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:46]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:48]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:49]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:49]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:51]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:52]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:53]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:53]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:53]     ✓ 10/21 phrases generated
+[2025-11-10 18:21:54]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:55]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:56]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:56]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:57]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:21:58]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:00]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:00]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:01]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:02]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:04]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:04]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:05]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:06]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:08]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:08]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:10]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:11]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:12]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:12]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:12]     ✓ 15/21 phrases generated
+[2025-11-10 18:22:14]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:15]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:16]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:16]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:17]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:17]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:18]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:18]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:20]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:21]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:22]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:22]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:24]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:25]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:26]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:26]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:28]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:29]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:31]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:31]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:31]     ✓ 20/21 phrases generated
+[2025-11-10 18:22:32]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:33]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:34]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:34]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:34]   🎤 Generating practice section...
+[2025-11-10 18:22:35]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:37]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:37]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:38]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:39]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:40]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:41]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:42]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:43]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:43]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:44]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:45]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:46]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:47]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:48]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:47]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:48]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:49]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:50]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:50]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:51]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:52]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:52]   🎤 Generating conclusion...
+[2025-11-10 18:22:53]   🔧 Concatenating 108 audio segments...
+[2025-11-10 18:22:54]   ⚠️  Concatenation error: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:54]   ❌ Resource 1 FAILED
+[2025-11-10 18:22:55] 
+============================================================
+[2025-11-10 18:22:55] 🔄 Processing Resource 2
+[2025-11-10 18:22:55] ============================================================
+[2025-11-10 18:22:55]   📄 Source: basic_audio_1-audio-script.txt
+[2025-11-10 18:22:55]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:22:55]   ❌ No phrases found
+[2025-11-10 18:22:56] 
+============================================================
+[2025-11-10 18:22:56] 🔄 Processing Resource 4
+[2025-11-10 18:22:56] ============================================================
+[2025-11-10 18:22:56]   📄 Source: basic_phrases_2.md
+[2025-11-10 18:22:56]   ✓ Extracted 23 phrase pairs
+[2025-11-10 18:22:56]   🎤 Generating introduction...
+[2025-11-10 18:22:58]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:22:58]   🎤 Generating 23 phrases...
+[2025-11-10 18:23:00]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:00]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:01]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:01]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:03]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:04]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:05]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:05]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:06]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:07]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:08]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:08]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:10]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:10]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:11]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:11]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:14]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:15]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:16]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:16]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:16]     ✓ 5/23 phrases generated
+[2025-11-10 18:23:18]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:19]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:21]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:21]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:23]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:24]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:25]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:25]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:27]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:29]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:30]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:30]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:32]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:33]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:34]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:34]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:36]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:37]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:40]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:40]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:40]     ✓ 10/23 phrases generated
+[2025-11-10 18:23:42]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:43]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:44]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:44]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:46]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:47]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:48]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:48]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:48]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:51]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:52]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:52]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:55]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:56]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:57]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:57]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:23:59]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:24:00]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:24:01]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:24:01]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:24:01]     ✓ 15/23 phrases generated
+[2025-11-10 18:24:03]   ⚠️  Error generating silence: [Errno 2] No such file or directory: 'ffmpeg'
+[2025-11-10 18:30:04] ================================================================================
+[2025-11-10 18:30:04] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-10 18:30:04] ================================================================================
+[2025-11-10 18:30:04] 📅 Started: 2025-11-10 18:30:04
+[2025-11-10 18:30:04] 
+[2025-11-10 18:30:04] ✅ Loaded mapping for 56 resources
+[2025-11-10 18:30:04] 
+============================================================
+[2025-11-10 18:30:04] 🔄 Processing Resource 1
+[2025-11-10 18:30:05] ============================================================
+[2025-11-10 18:30:05]   📄 Source: basic_phrases_1.md
+[2025-11-10 18:30:05]   ✓ Extracted 21 phrase pairs
+[2025-11-10 18:30:05]   🎤 Generating introduction...
+[2025-11-10 18:30:06]   🎤 Generating 21 phrases...
+[2025-11-10 18:30:20]     ✓ 5/21 phrases generated
+[2025-11-10 18:30:34]     ✓ 10/21 phrases generated
+[2025-11-10 18:30:46]     ✓ 15/21 phrases generated
+[2025-11-10 18:30:58]     ✓ 20/21 phrases generated
+[2025-11-10 18:31:00]   🎤 Generating practice section...
+[2025-11-10 18:31:22]   🎤 Generating conclusion...
+[2025-11-10 18:31:22]   🔧 Concatenating 215 audio segments...
+[2025-11-10 18:31:23]   ✅ Generated: resource-1.mp3 (1.98 MB)
+[2025-11-10 18:31:24]   ✅ Resource 1 COMPLETE
+[2025-11-10 18:31:25] 
+============================================================
+[2025-11-10 18:31:25] 🔄 Processing Resource 2
+[2025-11-10 18:31:25] ============================================================
+[2025-11-10 18:31:25]   📄 Source: basic_audio_1-audio-script.txt
+[2025-11-10 18:31:25]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:31:25]   ❌ No phrases found
+[2025-11-10 18:31:26] 
+============================================================
+[2025-11-10 18:31:26] 🔄 Processing Resource 4
+[2025-11-10 18:31:26] ============================================================
+[2025-11-10 18:31:26]   📄 Source: basic_phrases_2.md
+[2025-11-10 18:31:26]   ✓ Extracted 23 phrase pairs
+[2025-11-10 18:31:26]   🎤 Generating introduction...
+[2025-11-10 18:31:27]   🎤 Generating 23 phrases...
+[2025-11-10 18:31:38]     ✓ 5/23 phrases generated
+[2025-11-10 18:31:51]     ✓ 10/23 phrases generated
+[2025-11-10 18:32:01]     ✓ 15/23 phrases generated
+[2025-11-10 18:32:15]     ✓ 20/23 phrases generated
+[2025-11-10 18:32:24]   🎤 Generating practice section...
+[2025-11-10 18:32:42]   🎤 Generating conclusion...
+[2025-11-10 18:32:43]   🔧 Concatenating 235 audio segments...
+[2025-11-10 18:32:45]   ✅ Generated: resource-4.mp3 (1.79 MB)
+[2025-11-10 18:32:46]   ✅ Resource 4 COMPLETE
+[2025-11-10 18:32:46] 
+============================================================
+[2025-11-10 18:32:46] 🔄 Processing Resource 5
+[2025-11-10 18:32:46] ============================================================
+[2025-11-10 18:32:46]   📄 Source: intermediate_situations_1.md
+[2025-11-10 18:32:46]   ✓ Extracted 19 phrase pairs
+[2025-11-10 18:32:47]   🎤 Generating introduction...
+[2025-11-10 18:32:48]   🎤 Generating 19 phrases...
+[2025-11-10 18:44:33] ================================================================================
+[2025-11-10 18:44:33] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-10 18:44:33] ================================================================================
+[2025-11-10 18:44:33] 📅 Started: 2025-11-10 18:44:33
+[2025-11-10 18:44:33] 
+[2025-11-10 18:44:33] ✅ Loaded mapping for 56 resources
+[2025-11-10 18:44:33] 
+============================================================
+[2025-11-10 18:44:33] 🔄 Processing Resource 1
+[2025-11-10 18:44:34] ============================================================
+[2025-11-10 18:44:34]   📄 Source: basic_phrases_1.md
+[2025-11-10 18:44:34]   ✓ Extracted 21 phrase pairs
+[2025-11-10 18:44:34]   🎤 Generating introduction...
+[2025-11-10 18:44:35]   🎤 Generating 21 phrases...
+[2025-11-10 18:44:48]     ✓ 5/21 phrases generated
+[2025-11-10 18:45:05]     ✓ 10/21 phrases generated
+[2025-11-10 18:45:20]     ✓ 15/21 phrases generated
+[2025-11-10 18:45:34]     ✓ 20/21 phrases generated
+[2025-11-10 18:45:37]   🎤 Generating practice section...
+[2025-11-10 18:46:00]   🎤 Generating conclusion...
+[2025-11-10 18:46:01]   🔧 Concatenating 215 audio segments...
+[2025-11-10 18:46:02]   ✅ Generated: resource-1.mp3 (1.98 MB)
+[2025-11-10 18:46:03]   ✅ Resource 1 COMPLETE
+[2025-11-10 18:46:03] 
+============================================================
+[2025-11-10 18:46:03] 🔄 Processing Resource 2
+[2025-11-10 18:46:03] ============================================================
+[2025-11-10 18:46:04]   📄 Source: basic_audio_1-audio-script.txt
+[2025-11-10 18:46:04]   ✓ Extracted 0 phrase pairs
+[2025-11-10 18:46:04]   ❌ No phrases found
+[2025-11-10 18:46:04] 
+============================================================
+[2025-11-10 18:46:04] 🔄 Processing Resource 4
+[2025-11-10 18:46:05] ============================================================
+[2025-11-10 18:46:05]   📄 Source: basic_phrases_2.md
+[2025-11-10 18:46:05]   ✓ Extracted 23 phrase pairs
+[2025-11-10 18:46:05]   🎤 Generating introduction...
+[2025-11-10 18:46:06]   🎤 Generating 23 phrases...
+[2025-11-10 18:46:19]     ✓ 5/23 phrases generated
+[2025-11-10 19:08:09]   ❌ No source file found for resource 1
+[2025-11-10 19:08:09]   📄 Source: resource-2-spec.json
+[2025-11-10 19:08:09]   ✓ Extracted 6 phrase pairs
+[2025-11-10 19:08:09]   ❌ No source file found for resource 4
+[2025-11-10 19:09:19]   ❌ No source file found for resource 1
+[2025-11-10 19:09:19]   📄 Source: resource-2-spec.json
+[2025-11-10 19:09:19]   ✓ Extracted 7 phrase pairs
+[2025-11-10 19:09:19]   ❌ No source file found for resource 4
+[2025-11-10 19:09:53]   📄 Source: basic_phrases_1.md
+[2025-11-10 19:09:53]   ✓ Extracted 21 phrase pairs
+[2025-11-10 19:09:54]   📄 Source: basic_audio_1-audio-script.txt
+[2025-11-10 19:09:54]   ✓ Extracted 0 phrase pairs
+[2025-11-10 19:09:54]   📄 Source: basic_phrases_2.md
+[2025-11-10 19:09:54]   ✓ Extracted 23 phrase pairs
+[2025-11-10 19:10:44]   📄 Source: basic_phrases_1.md
+[2025-11-10 19:10:44]   ✓ Extracted 21 phrase pairs
+[2025-11-10 19:10:44]   📄 Source: basic_audio_1-audio-script.txt
+[2025-11-10 19:10:44]   ✓ Extracted 5 phrase pairs
+[2025-11-10 19:10:44]   📄 Source: basic_phrases_2.md
+[2025-11-10 19:10:44]   ✓ Extracted 23 phrase pairs
+[2025-11-10 19:11:37]   📄 Source: basic_phrases_1.md
+[2025-11-10 19:11:37]   ✓ Extracted 21 phrase pairs
+[2025-11-10 19:11:37]   📄 Source: basic_audio_1-audio-script.txt
+[2025-11-10 19:11:38]   ✓ Extracted 3 phrase pairs
+[2025-11-10 19:11:38]   📄 Source: basic_phrases_2.md
+[2025-11-10 19:11:38]   ✓ Extracted 23 phrase pairs
+[2025-11-10 19:15:05] ================================================================================
+[2025-11-10 19:15:05] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-10 19:15:05] ================================================================================
+[2025-11-10 19:15:05] 📅 Started: 2025-11-10 19:15:05
+[2025-11-10 19:15:05] 
+[2025-11-10 19:15:05] ✅ Loaded mapping for 56 resources
+[2025-11-10 19:15:05] 
+============================================================
+[2025-11-10 19:15:05] 🔄 Processing Resource 1
+[2025-11-10 19:15:05] ============================================================
+[2025-11-10 19:15:06]   📄 Source: basic_phrases_1.md
+[2025-11-10 19:15:06]   ✓ Extracted 21 phrase pairs
+[2025-11-10 19:15:06]   🎤 Generating introduction...
+[2025-11-10 19:15:07]   🎤 Generating 21 phrases...
+[2025-11-10 19:15:24]     ✓ 5/21 phrases generated
+[2025-11-10 19:15:49]     ✓ 10/21 phrases generated
+[2025-11-10 19:16:10]     ✓ 15/21 phrases generated
+[2025-11-10 19:16:26]     ✓ 20/21 phrases generated
+[2025-11-10 19:16:29]   🎤 Generating practice section...
+[2025-11-10 19:16:50]   🎤 Generating conclusion...
+[2025-11-10 19:16:51]   🔧 Concatenating 215 audio segments...
+[2025-11-10 19:16:53]   ✅ Generated: resource-1.mp3 (1.98 MB)
+[2025-11-10 19:16:54]   ✅ Resource 1 COMPLETE
+[2025-11-10 19:16:54] 
+============================================================
+[2025-11-10 19:16:54] 🔄 Processing Resource 2
+[2025-11-10 19:16:54] ============================================================
+[2025-11-10 19:16:54]   📄 Source: basic_audio_1-audio-script.txt
+[2025-11-10 19:16:55]   ✓ Extracted 3 phrase pairs
+[2025-11-10 19:16:55]   🎤 Generating introduction...
+[2025-11-10 19:16:56]   🎤 Generating 3 phrases...
+[2025-11-10 19:17:08]   🎤 Generating practice section...
+[2025-11-10 20:24:25] ================================================================================
+[2025-11-10 20:24:25] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-10 20:24:25] ================================================================================
+[2025-11-10 20:24:25] 📅 Started: 2025-11-10 20:24:25
+[2025-11-10 20:24:25] 
+[2025-11-10 20:24:25] ✅ Loaded mapping for 56 resources
+[2025-11-10 20:24:25] 
+============================================================
+[2025-11-10 20:24:25] 🔄 Processing Resource 1
+[2025-11-10 20:24:26] ============================================================
+[2025-11-10 20:24:26]   📄 Source: basic_phrases_1.md
+[2025-11-10 20:24:26]   ✓ Extracted 21 phrase pairs
+[2025-11-10 20:24:26]   🎤 Generating introduction...
+[2025-11-10 20:24:27]   🎤 Generating 21 phrases...
+[2025-11-10 20:24:46]     ✓ 5/21 phrases generated
+[2025-11-10 20:25:32] ================================================================================
+[2025-11-10 20:25:32] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-10 20:25:32] ================================================================================
+[2025-11-10 20:25:32] 📅 Started: 2025-11-10 20:25:32
+[2025-11-10 20:25:33] 
+[2025-11-10 20:25:33] ✅ Loaded mapping for 56 resources
+[2025-11-10 20:25:33] 
+============================================================
+[2025-11-10 20:25:33] 🔄 Processing Resource 1
+[2025-11-10 20:25:33] ============================================================
+[2025-11-10 20:25:33]   ❌ No source file found for resource 1
+[2025-11-10 20:25:33]   ❌ No phrases found
+[2025-11-10 20:25:34] 
+============================================================
+[2025-11-10 20:25:34] 🔄 Processing Resource 2
+[2025-11-10 20:25:34] ============================================================
+[2025-11-10 20:25:34]   ❌ No source file found for resource 2
+[2025-11-10 20:25:34]   ❌ No phrases found
+[2025-11-10 20:25:35] 
+============================================================
+[2025-11-10 20:25:35] 🔄 Processing Resource 4
+[2025-11-10 20:25:35] ============================================================
+[2025-11-10 20:25:35]   ❌ No source file found for resource 4
+[2025-11-10 20:25:35]   ❌ No phrases found
+[2025-11-10 20:25:35] 
+============================================================
+[2025-11-10 20:25:35] 🔄 Processing Resource 5
+[2025-11-10 20:25:36] ============================================================
+[2025-11-10 20:25:36]   ❌ No source file found for resource 5
+[2025-11-10 20:25:36]   ❌ No phrases found
+[2025-11-10 20:25:36] 
+============================================================
+[2025-11-10 20:25:36] 🔄 Processing Resource 6
+[2025-11-10 20:25:36] ============================================================
+[2025-11-10 20:25:37]   ❌ No source file found for resource 6
+[2025-11-10 20:25:37]   ❌ No phrases found
+[2025-11-10 20:25:37] 
+============================================================
+[2025-11-10 20:25:37] 🔄 Processing Resource 7
+[2025-11-10 20:25:37] ============================================================
+[2025-11-10 20:25:37]   ❌ No source file found for resource 7
+[2025-11-10 20:25:37]   ❌ No phrases found
+[2025-11-10 20:25:38] 
+============================================================
+[2025-11-10 20:25:38] 🔄 Processing Resource 9
+[2025-11-10 20:25:38] ============================================================
+[2025-11-10 20:25:38]   ❌ No source file found for resource 9
+[2025-11-10 20:25:38]   ❌ No phrases found
+[2025-11-10 20:25:39] 
+============================================================
+[2025-11-10 20:25:39] 🔄 Processing Resource 10
+[2025-11-10 20:25:39] ============================================================
+[2025-11-10 20:25:39]   ❌ No source file found for resource 10
+[2025-11-10 20:25:39]   ❌ No phrases found
+[2025-11-10 20:25:40] 
+============================================================
+[2025-11-10 20:25:40] 🔄 Processing Resource 11
+[2025-11-10 20:25:40] ============================================================
+[2025-11-10 20:25:40]   ❌ No source file found for resource 11
+[2025-11-10 20:25:40]   ❌ No phrases found
+[2025-11-10 20:25:41] 
+============================================================
+[2025-11-10 20:25:41] 🔄 Processing Resource 12
+[2025-11-10 20:25:41] ============================================================
+[2025-11-10 20:25:41]   ❌ No source file found for resource 12
+[2025-11-10 20:25:41]   ❌ No phrases found
+[2025-11-10 20:25:41] 
+============================================================
+[2025-11-10 20:25:41] 🔄 Processing Resource 13
+[2025-11-10 20:25:42] ============================================================
+[2025-11-10 20:25:42]   ❌ No source file found for resource 13
+[2025-11-10 20:25:42]   ❌ No phrases found
+[2025-11-10 20:25:42] 
+============================================================
+[2025-11-10 20:25:42] 🔄 Processing Resource 14
+[2025-11-10 20:25:42] ============================================================
+[2025-11-10 20:25:42]   ❌ No source file found for resource 14
+[2025-11-10 20:25:43]   ❌ No phrases found
+[2025-11-10 20:25:43] 
+============================================================
+[2025-11-10 20:25:43] 🔄 Processing Resource 15
+[2025-11-10 20:25:43] ============================================================
+[2025-11-10 20:25:43]   ❌ No source file found for resource 15
+[2025-11-10 20:25:43]   ❌ No phrases found
+[2025-11-10 20:25:42] 
+============================================================
+[2025-11-10 20:25:42] 🔄 Processing Resource 16
+[2025-11-10 20:25:42] ============================================================
+[2025-11-10 20:25:42]   ❌ No source file found for resource 16
+[2025-11-10 20:25:42]   ❌ No phrases found
+[2025-11-10 20:25:43] 
+============================================================
+[2025-11-10 20:25:43] 🔄 Processing Resource 17
+[2025-11-10 20:25:43] ============================================================
+[2025-11-10 20:25:43]   ❌ No source file found for resource 17
+[2025-11-10 20:25:43]   ❌ No phrases found
+[2025-11-10 20:25:43] 
+============================================================
+[2025-11-10 20:25:43] 🔄 Processing Resource 18
+[2025-11-10 20:25:44] ============================================================
+[2025-11-10 20:25:44]   ❌ No source file found for resource 18
+[2025-11-10 20:25:44]   ❌ No phrases found
+[2025-11-10 20:25:44] 
+============================================================
+[2025-11-10 20:25:44] 🔄 Processing Resource 19
+[2025-11-10 20:25:44] ============================================================
+[2025-11-10 20:25:45]   ❌ No source file found for resource 19
+[2025-11-10 20:25:45]   ❌ No phrases found
+[2025-11-10 20:25:45] 
+============================================================
+[2025-11-10 20:25:45] 🔄 Processing Resource 20
+[2025-11-10 20:25:45] ============================================================
+[2025-11-10 20:25:45]   ❌ No source file found for resource 20
+[2025-11-10 20:25:46]   ❌ No phrases found
+[2025-11-10 20:25:46] 
+============================================================
+[2025-11-10 20:25:46] 🔄 Processing Resource 21
+[2025-11-10 20:25:46] ============================================================
+[2025-11-10 20:25:46]   ❌ No source file found for resource 21
+[2025-11-10 20:25:46]   ❌ No phrases found
+[2025-11-10 20:25:47] 
+============================================================
+[2025-11-10 20:25:47] 🔄 Processing Resource 22
+[2025-11-10 20:25:47] ============================================================
+[2025-11-10 20:25:47]   ❌ No source file found for resource 22
+[2025-11-10 20:25:47]   ❌ No phrases found
+[2025-11-10 20:25:48] 
+============================================================
+[2025-11-10 20:25:48] 🔄 Processing Resource 23
+[2025-11-10 20:25:48] ============================================================
+[2025-11-10 20:25:48]   ❌ No source file found for resource 23
+[2025-11-10 20:25:48]   ❌ No phrases found
+[2025-11-10 20:25:49] 
+============================================================
+[2025-11-10 20:25:49] 🔄 Processing Resource 25
+[2025-11-10 20:25:49] ============================================================
+[2025-11-10 20:25:49]   ❌ No source file found for resource 25
+[2025-11-10 20:25:49]   ❌ No phrases found
+[2025-11-10 20:25:50] 
+============================================================
+[2025-11-10 20:25:50] 🔄 Processing Resource 26
+[2025-11-10 20:25:50] ============================================================
+[2025-11-10 20:25:50]   ❌ No source file found for resource 26
+[2025-11-10 20:25:50]   ❌ No phrases found
+[2025-11-10 20:25:51] 
+============================================================
+[2025-11-10 20:25:51] 🔄 Processing Resource 27
+[2025-11-10 20:25:51] ============================================================
+[2025-11-10 20:25:51]   ❌ No source file found for resource 27
+[2025-11-10 20:25:51]   ❌ No phrases found
+[2025-11-10 20:25:52] 
+============================================================
+[2025-11-10 20:25:52] 🔄 Processing Resource 28
+[2025-11-10 20:25:52] ============================================================
+[2025-11-10 20:25:52]   ❌ No source file found for resource 28
+[2025-11-10 20:25:52]   ❌ No phrases found
+[2025-11-10 20:25:52] 
+============================================================
+[2025-11-10 20:25:52] 🔄 Processing Resource 29
+[2025-11-10 20:25:53] ============================================================
+[2025-11-10 20:25:53]   ❌ No source file found for resource 29
+[2025-11-10 20:25:53]   ❌ No phrases found
+[2025-11-10 20:25:53] 
+============================================================
+[2025-11-10 20:25:53] 🔄 Processing Resource 30
+[2025-11-10 20:25:53] ============================================================
+[2025-11-10 20:25:54]   ❌ No source file found for resource 30
+[2025-11-10 20:25:54]   ❌ No phrases found
+[2025-11-10 20:25:54] 
+============================================================
+[2025-11-10 20:25:54] 🔄 Processing Resource 31
+[2025-11-10 20:25:54] ============================================================
+[2025-11-10 20:25:54]   ❌ No source file found for resource 31
+[2025-11-10 20:25:55]   ❌ No phrases found
+[2025-11-10 20:25:55] 
+============================================================
+[2025-11-10 20:25:55] 🔄 Processing Resource 32
+[2025-11-10 20:25:55] ============================================================
+[2025-11-10 20:25:55]   ❌ No source file found for resource 32
+[2025-11-10 20:25:55]   ❌ No phrases found
+[2025-11-10 20:25:56] 
+============================================================
+[2025-11-10 20:25:56] 🔄 Processing Resource 33
+[2025-11-10 20:25:56] ============================================================
+[2025-11-10 20:25:56]   ❌ No source file found for resource 33
+[2025-11-10 20:25:56]   ❌ No phrases found
+[2025-11-10 20:25:57] 
+============================================================
+[2025-11-10 20:25:57] 🔄 Processing Resource 34
+[2025-11-10 20:25:57] ============================================================
+[2025-11-10 20:25:57]   ❌ No source file found for resource 34
+[2025-11-10 20:25:57]   ❌ No phrases found
+[2025-11-10 20:25:58] 
+============================================================
+[2025-11-10 20:25:58] 🔄 Processing Resource 35
+[2025-11-10 20:25:58] ============================================================
+[2025-11-10 20:25:58]   ❌ No source file found for resource 35
+[2025-11-10 20:25:58]   ❌ No phrases found
+[2025-11-10 20:25:59] 
+============================================================
+[2025-11-10 20:25:59] 🔄 Processing Resource 36
+[2025-11-10 20:25:59] ============================================================
+[2025-11-10 20:25:59]   ❌ No source file found for resource 36
+[2025-11-10 20:25:59]   ❌ No phrases found
+[2025-11-10 20:26:00] 
+============================================================
+[2025-11-10 20:26:00] 🔄 Processing Resource 37
+[2025-11-10 20:26:00] ============================================================
+[2025-11-10 20:26:00]   ❌ No source file found for resource 37
+[2025-11-10 20:26:00]   ❌ No phrases found
+[2025-11-10 20:26:01] 
+============================================================
+[2025-11-10 20:26:01] 🔄 Processing Resource 38
+[2025-11-10 20:26:01] ============================================================
+[2025-11-10 20:26:01]   ❌ No source file found for resource 38
+[2025-11-10 20:26:01]   ❌ No phrases found
+[2025-11-10 20:26:02] 
+============================================================
+[2025-11-10 20:26:02] 🔄 Processing Resource 39
+[2025-11-10 20:26:02] ============================================================
+[2025-11-10 20:26:02]   ❌ No source file found for resource 39
+[2025-11-10 20:26:02]   ❌ No phrases found
+[2025-11-10 20:26:02] 
+============================================================
+[2025-11-10 20:26:02] 🔄 Processing Resource 40
+[2025-11-10 20:26:02] ============================================================
+[2025-11-10 20:26:03]   ❌ No source file found for resource 40
+[2025-11-10 20:26:03]   ❌ No phrases found
+[2025-11-10 20:26:03] 
+============================================================
+[2025-11-10 20:26:03] 🔄 Processing Resource 41
+[2025-11-10 20:26:03] ============================================================
+[2025-11-10 20:26:04]   ❌ No source file found for resource 41
+[2025-11-10 20:26:04]   ❌ No phrases found
+[2025-11-10 20:26:04] 
+============================================================
+[2025-11-10 20:26:04] 🔄 Processing Resource 42
+[2025-11-10 20:26:04] ============================================================
+[2025-11-10 20:26:04]   ❌ No source file found for resource 42
+[2025-11-10 20:26:05]   ❌ No phrases found
+[2025-11-10 20:26:05] 
+============================================================
+[2025-11-10 20:26:05] 🔄 Processing Resource 43
+[2025-11-10 20:26:05] ============================================================
+[2025-11-10 20:26:05]   ❌ No source file found for resource 43
+[2025-11-10 20:26:06]   ❌ No phrases found
+[2025-11-10 20:26:06] 
+============================================================
+[2025-11-10 20:26:06] 🔄 Processing Resource 44
+[2025-11-10 20:26:06] ============================================================
+[2025-11-10 20:26:06]   ❌ No source file found for resource 44
+[2025-11-10 20:26:06]   ❌ No phrases found
+[2025-11-10 20:26:07] 
+============================================================
+[2025-11-10 20:26:07] 🔄 Processing Resource 45
+[2025-11-10 20:26:07] ============================================================
+[2025-11-10 20:26:07]   ❌ No source file found for resource 45
+[2025-11-10 20:26:07]   ❌ No phrases found
+[2025-11-10 20:26:08] 
+============================================================
+[2025-11-10 20:26:08] 🔄 Processing Resource 46
+[2025-11-10 20:26:08] ============================================================
+[2025-11-10 20:26:08]   ❌ No source file found for resource 46
+[2025-11-10 20:26:08]   ❌ No phrases found
+[2025-11-10 20:26:09] 
+============================================================
+[2025-11-10 20:26:09] 🔄 Processing Resource 47
+[2025-11-10 20:26:09] ============================================================
+[2025-11-10 20:26:09]   ❌ No source file found for resource 47
+[2025-11-10 20:26:09]   ❌ No phrases found
+[2025-11-10 20:26:10] 
+============================================================
+[2025-11-10 20:26:10] 🔄 Processing Resource 48
+[2025-11-10 20:26:10] ============================================================
+[2025-11-10 20:26:10]   ❌ No source file found for resource 48
+[2025-11-10 20:26:10]   ❌ No phrases found
+[2025-11-10 20:26:11] 
+============================================================
+[2025-11-10 20:26:11] 🔄 Processing Resource 49
+[2025-11-10 20:26:11] ============================================================
+[2025-11-10 20:26:11]   ❌ No source file found for resource 49
+[2025-11-10 20:26:11]   ❌ No phrases found
+[2025-11-10 20:26:12] 
+============================================================
+[2025-11-10 20:26:12] 🔄 Processing Resource 50
+[2025-11-10 20:26:12] ============================================================
+[2025-11-10 20:26:12]   ❌ No source file found for resource 50
+[2025-11-10 20:26:12]   ❌ No phrases found
+[2025-11-10 20:26:13] 
+============================================================
+[2025-11-10 20:26:13] 🔄 Processing Resource 51
+[2025-11-10 20:26:13] ============================================================
+[2025-11-10 20:26:13]   ❌ No source file found for resource 51
+[2025-11-10 20:26:13]   ❌ No phrases found
+[2025-11-10 20:26:11] 
+============================================================
+[2025-11-10 20:26:11] 🔄 Processing Resource 52
+[2025-11-10 20:26:12] ============================================================
+[2025-11-10 20:26:12]   ❌ No source file found for resource 52
+[2025-11-10 20:26:12]   ❌ No phrases found
+[2025-11-10 20:26:12] 
+============================================================
+[2025-11-10 20:26:13] 🔄 Processing Resource 53
+[2025-11-10 20:26:13] ============================================================
+[2025-11-10 20:26:13]   ❌ No source file found for resource 53
+[2025-11-10 20:26:13]   ❌ No phrases found
+[2025-11-10 20:26:13] 
+============================================================
+[2025-11-10 20:26:13] 🔄 Processing Resource 54
+[2025-11-10 20:26:14] ============================================================
+[2025-11-10 20:26:14]   ❌ No source file found for resource 54
+[2025-11-10 20:26:14]   ❌ No phrases found
+[2025-11-10 20:26:14] 
+============================================================
+[2025-11-10 20:26:14] 🔄 Processing Resource 55
+[2025-11-10 20:26:15] ============================================================
+[2025-11-10 20:26:15]   ❌ No source file found for resource 55
+[2025-11-10 20:26:15]   ❌ No phrases found
+[2025-11-10 20:26:16] 
+============================================================
+[2025-11-10 20:26:16] 🔄 Processing Resource 56
+[2025-11-10 20:26:16] ============================================================
+[2025-11-10 20:26:16]   ❌ No source file found for resource 56
+[2025-11-10 20:26:16]   ❌ No phrases found
+[2025-11-10 20:26:17] 
+============================================================
+[2025-11-10 20:26:17] 🔄 Processing Resource 57
+[2025-11-10 20:26:17] ============================================================
+[2025-11-10 20:26:17]   ❌ No source file found for resource 57
+[2025-11-10 20:26:17]   ❌ No phrases found
+[2025-11-10 20:26:17] 
+============================================================
+[2025-11-10 20:26:17] 🔄 Processing Resource 58
+[2025-11-10 20:26:18] ============================================================
+[2025-11-10 20:26:18]   ❌ No source file found for resource 58
+[2025-11-10 20:26:18]   ❌ No phrases found
+[2025-11-10 20:26:18] 
+============================================================
+[2025-11-10 20:26:18] 🔄 Processing Resource 59
+[2025-11-10 20:26:19] ============================================================
+[2025-11-10 20:26:19]   ❌ No source file found for resource 59
+[2025-11-10 20:26:19]   ❌ No phrases found
+[2025-11-10 20:26:19] 
+================================================================================
+[2025-11-10 20:26:19] 📊 REGENERATION SUMMARY
+[2025-11-10 20:26:20] ================================================================================
+[2025-11-10 20:26:20] ✅ Successful: 0 resources
+[2025-11-10 20:26:20] ❌ Failed: 56 resources
+[2025-11-10 20:26:20] ⏱️  Total time: 0.8 minutes
+[2025-11-10 20:26:20] 
+❌ Failed: 1, 2, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59
+[2025-11-10 20:26:20] 
+📋 Full log: complete-regeneration-log.txt
+[2025-11-10 20:26:20] ================================================================================
+[2025-11-10 20:29:02] ================================================================================
+[2025-11-10 20:29:02] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-10 20:29:02] ================================================================================
+[2025-11-10 20:29:02] 📅 Started: 2025-11-10 20:29:02
+[2025-11-10 20:29:02] 
+[2025-11-10 20:29:02] ✅ Loaded mapping for 56 resources
+[2025-11-10 20:29:02] 
+============================================================
+[2025-11-10 20:29:02] 🔄 Processing Resource 1
+[2025-11-10 20:29:02] ============================================================
+[2025-11-10 20:29:03]   📄 Source: basic_phrases_1.md
+[2025-11-10 20:29:03]   ✓ Extracted 21 phrase pairs
+[2025-11-10 20:29:03]   🎤 Generating introduction...
+[2025-11-10 20:29:04]   🎤 Generating 21 phrases...
+[2025-11-10 20:29:17]     ✓ 5/21 phrases generated
+[2025-11-10 20:29:33]     ✓ 10/21 phrases generated
+[2025-11-10 20:29:48]     ✓ 15/21 phrases generated
+[2025-11-10 20:30:16] ================================================================================
+[2025-11-10 20:30:16] 🚀 DEFINITIVE REGENERATION - ALL 56 RESOURCES
+[2025-11-10 20:30:16] ================================================================================
+[2025-11-10 20:30:16] 📅 Started: 2025-11-10 20:30:16
+[2025-11-10 20:30:16] 
+[2025-11-10 20:30:16] ✅ Loaded mapping for 56 resources
+[2025-11-10 20:30:16] 
+============================================================
+[2025-11-10 20:30:16] 🔄 Processing Resource 1
+[2025-11-10 20:30:17] ============================================================
+[2025-11-10 20:30:17]   📄 Source: basic_phrases_1.md
+[2025-11-10 20:30:17]   ✓ Extracted 21 phrase pairs
+[2025-11-10 20:30:17]   🎤 Generating introduction...
+[2025-11-10 20:30:18]   🎤 Generating 21 phrases...
+[2025-11-10 20:30:35]     ✓ 5/21 phrases generated
+[2025-11-10 20:30:48]     ✓ 10/21 phrases generated
+[2025-11-10 20:31:07]     ✓ 15/21 phrases generated
+[2025-11-10 20:31:24]     ✓ 20/21 phrases generated
+[2025-11-10 20:31:27]   🎤 Generating practice section...
+[2025-11-10 20:31:46]   🎤 Generating conclusion...
+[2025-11-10 20:31:47]   🔧 Concatenating 215 audio segments...
+[2025-11-10 20:31:48]   ✅ Generated: resource-1.mp3 (1.98 MB)
+[2025-11-10 20:31:49]   ✅ Resource 1 COMPLETE
+[2025-11-10 20:31:49] 
+============================================================
+[2025-11-10 20:31:49] 🔄 Processing Resource 2
+[2025-11-10 20:31:49] ============================================================
+[2025-11-10 20:31:49]   📄 Source: basic_audio_1-audio-script.txt
+[2025-11-10 20:31:49]   ✓ Extracted 3 phrase pairs
+[2025-11-10 20:31:50]   🎤 Generating introduction...
+[2025-11-10 20:31:51]   🎤 Generating 3 phrases...
+[2025-11-10 20:32:00]   🎤 Generating practice section...
+[2025-11-10 20:32:04]   🎤 Generating conclusion...
+[2025-11-10 20:32:05]   🔧 Concatenating 35 audio segments...
+[2025-11-10 20:32:05]   ✅ Generated: resource-2.mp3 (0.43 MB)
+[2025-11-10 20:32:06]   ✅ Resource 2 COMPLETE
+[2025-11-10 20:32:06] 
+============================================================
+[2025-11-10 20:32:06] 🔄 Processing Resource 4
+[2025-11-10 20:32:06] ============================================================
+[2025-11-10 20:32:06]   📄 Source: basic_phrases_2.md
+[2025-11-10 20:32:06]   ✓ Extracted 23 phrase pairs
+[2025-11-10 20:32:06]   🎤 Generating introduction...
+[2025-11-10 20:32:07]   🎤 Generating 23 phrases...
+[2025-11-10 20:32:23]     ✓ 5/23 phrases generated
+[2025-11-10 20:32:39]     ✓ 10/23 phrases generated
+[2025-11-10 20:32:51]     ✓ 15/23 phrases generated
+[2025-11-10 20:33:08]     ✓ 20/23 phrases generated
+[2025-11-10 20:33:17]   🎤 Generating practice section...
+[2025-11-10 20:33:38]   🎤 Generating conclusion...
+[2025-11-10 20:33:39]   🔧 Concatenating 235 audio segments...
+[2025-11-10 20:33:40]   ✅ Generated: resource-4.mp3 (1.79 MB)
+[2025-11-10 20:33:41]   ✅ Resource 4 COMPLETE
+[2025-11-10 20:33:41] 
+============================================================
+[2025-11-10 20:33:41] 🔄 Processing Resource 5
+[2025-11-10 20:33:41] ============================================================
+[2025-11-10 20:33:41]   📄 Source: intermediate_situations_1.md
+[2025-11-10 20:33:42]   ✓ Extracted 19 phrase pairs
+[2025-11-10 20:33:42]   🎤 Generating introduction...
+[2025-11-10 20:33:40]   🎤 Generating 19 phrases...
+[2025-11-10 20:33:58]     ✓ 5/19 phrases generated
+[2025-11-10 20:34:15]     ✓ 10/19 phrases generated
+[2025-11-10 20:34:32]     ✓ 15/19 phrases generated
+[2025-11-10 20:34:41]   🎤 Generating practice section...
+[2025-11-10 20:34:56]   🎤 Generating conclusion...
+[2025-11-10 20:34:58]   🔧 Concatenating 195 audio segments...
+[2025-11-10 20:34:58]   ✅ Generated: resource-5.mp3 (3.73 MB)
+[2025-11-10 20:34:59]   ✅ Resource 5 COMPLETE
+[2025-11-10 20:34:59] 
+============================================================
+[2025-11-10 20:34:59] 🔄 Processing Resource 6
+[2025-11-10 20:34:59] ============================================================
+[2025-11-10 20:34:59]   📄 Source: basic_phrases_3.md
+[2025-11-10 20:34:59]   ✓ Extracted 24 phrase pairs
+[2025-11-10 20:34:59]   🎤 Generating introduction...
+[2025-11-10 20:35:01]   🎤 Generating 24 phrases...
+[2025-11-10 20:35:15]     ✓ 5/24 phrases generated
+[2025-11-10 20:35:31]     ✓ 10/24 phrases generated
+[2025-11-10 20:35:47]     ✓ 15/24 phrases generated
+[2025-11-10 20:36:01]     ✓ 20/24 phrases generated
+[2025-11-10 20:36:11]   🎤 Generating practice section...
+[2025-11-10 20:36:32]   🎤 Generating conclusion...
+[2025-11-10 20:36:33]   🔧 Concatenating 245 audio segments...
+[2025-11-10 20:36:35]   ✅ Generated: resource-6.mp3 (1.92 MB)
+[2025-11-10 20:36:35]   ✅ Resource 6 COMPLETE
+[2025-11-10 20:36:36] 
+============================================================
+[2025-11-10 20:36:36] 🔄 Processing Resource 7
+[2025-11-10 20:36:36] ============================================================
+[2025-11-10 20:36:36]   📄 Source: basic_audio_2-audio-script.txt
+[2025-11-10 20:36:36]   ✓ Extracted 0 phrase pairs
+[2025-11-10 20:36:36]   ❌ No phrases found
+[2025-11-10 20:36:37] 
+============================================================
+[2025-11-10 20:36:37] 🔄 Processing Resource 9
+[2025-11-10 20:36:37] ============================================================
+[2025-11-10 20:36:37]   📄 Source: basic_phrases_4.md
+[2025-11-10 20:36:37]   ✓ Extracted 23 phrase pairs
+[2025-11-10 20:36:37]   🎤 Generating introduction...
+[2025-11-10 20:36:39]   🎤 Generating 23 phrases...
+[2025-11-10 20:36:52]     ✓ 5/23 phrases generated
+[2025-11-10 20:37:08]     ✓ 10/23 phrases generated
+[2025-11-10 20:37:22]     ✓ 15/23 phrases generated
+[2025-11-10 20:37:40]     ✓ 20/23 phrases generated
+[2025-11-10 20:37:47]   🎤 Generating practice section...
+[2025-11-10 20:38:06]   🎤 Generating conclusion...
+[2025-11-10 20:38:06]   🔧 Concatenating 235 audio segments...
+[2025-11-10 20:38:07]   ✅ Generated: resource-9.mp3 (1.95 MB)
+[2025-11-10 20:38:08]   ✅ Resource 9 COMPLETE
+[2025-11-10 20:38:08] 
+============================================================
+[2025-11-10 20:38:08] 🔄 Processing Resource 10
+[2025-11-10 20:38:08] ============================================================
+[2025-11-10 20:38:08]   📄 Source: intermediate_conversations_1-audio-script.txt
+[2025-11-10 20:38:09]   ✓ Extracted 0 phrase pairs
+[2025-11-10 20:38:09]   ❌ No phrases found
+[2025-11-10 20:38:09] 
+============================================================
+[2025-11-10 20:38:09] 🔄 Processing Resource 11
+[2025-11-10 20:38:09] ============================================================
+[2025-11-10 20:38:10]   📄 Source: basic_greetings_1.md
+[2025-11-10 20:38:10]   ✓ Extracted 22 phrase pairs
+[2025-11-10 20:38:10]   🎤 Generating introduction...
+[2025-11-10 20:38:09]   🎤 Generating 22 phrases...
+[2025-11-10 20:38:25]     ✓ 5/22 phrases generated
+[2025-11-10 20:38:39]     ✓ 10/22 phrases generated
+[2025-11-10 20:38:56]     ✓ 15/22 phrases generated
+[2025-11-10 20:39:14]     ✓ 20/22 phrases generated
+[2025-11-10 20:39:20]   🎤 Generating practice section...
+[2025-11-10 20:39:40]   🎤 Generating conclusion...
+[2025-11-10 20:39:41]   🔧 Concatenating 225 audio segments...
+[2025-11-10 20:39:42]   ✅ Generated: resource-11.mp3 (1.95 MB)
+[2025-11-10 20:39:42]   ✅ Resource 11 COMPLETE
+[2025-11-10 20:39:43] 
+============================================================
+[2025-11-10 20:39:43] 🔄 Processing Resource 12
+[2025-11-10 20:39:43] ============================================================
+[2025-11-10 20:39:43]   📄 Source: basic_directions_1.md
+[2025-11-10 20:39:43]   ✓ Extracted 28 phrase pairs
+[2025-11-10 20:39:43]   🎤 Generating introduction...
+[2025-11-10 20:39:45]   🎤 Generating 28 phrases...
+[2025-11-10 20:40:03]     ✓ 5/28 phrases generated
+[2025-11-10 20:40:22]     ✓ 10/28 phrases generated
+[2025-11-10 20:40:40]     ✓ 15/28 phrases generated
+[2025-11-10 20:40:56]     ✓ 20/28 phrases generated
+[2025-11-10 20:41:12]     ✓ 25/28 phrases generated
+[2025-11-10 20:41:21]   🎤 Generating practice section...
+[2025-11-10 20:41:45]   🎤 Generating conclusion...
+[2025-11-10 20:41:47]   🔧 Concatenating 285 audio segments...
+[2025-11-10 20:41:47]   ✅ Generated: resource-12.mp3 (2.19 MB)
+[2025-11-10 20:41:48]   ✅ Resource 12 COMPLETE
+[2025-11-10 20:41:49] 
+============================================================
+[2025-11-10 20:41:49] 🔄 Processing Resource 13
+[2025-11-10 20:41:49] ============================================================
+[2025-11-10 20:41:49]   📄 Source: basic_audio_navigation_1-audio-script.txt
+[2025-11-10 20:41:49]   ✓ Extracted 0 phrase pairs
+[2025-11-10 20:41:49]   ❌ No phrases found
+[2025-11-10 20:41:50] 
+============================================================
+[2025-11-10 20:41:50] 🔄 Processing Resource 14
+[2025-11-10 20:41:50] ============================================================
+[2025-11-10 20:41:50]   📄 Source: basic_greetings_2.md
+[2025-11-10 20:41:50]   ✓ Extracted 24 phrase pairs
+[2025-11-10 20:41:50]   🎤 Generating introduction...
+[2025-11-10 20:41:51]   🎤 Generating 24 phrases...
+[2025-11-10 20:42:09]     ✓ 5/24 phrases generated
+[2025-11-10 20:42:24]     ✓ 10/24 phrases generated
+[2025-11-10 20:42:40]     ✓ 15/24 phrases generated
+[2025-11-10 20:42:55]     ✓ 20/24 phrases generated
+[2025-11-10 20:43:08]   🎤 Generating practice section...
+[2025-11-10 20:43:30]   🎤 Generating conclusion...
+[2025-11-10 20:43:31]   🔧 Concatenating 245 audio segments...
+[2025-11-10 20:43:32]   ✅ Generated: resource-14.mp3 (2.46 MB)
+[2025-11-10 20:43:33]   ✅ Resource 14 COMPLETE
+[2025-11-10 20:43:34] 
+============================================================
+[2025-11-10 20:43:34] 🔄 Processing Resource 15
+[2025-11-10 20:43:34] ============================================================
+[2025-11-10 20:43:34]   📄 Source: basic_directions_2.md
+[2025-11-10 20:43:34]   ✓ Extracted 28 phrase pairs
+[2025-11-10 20:43:34]   🎤 Generating introduction...
+[2025-11-10 20:43:35]   🎤 Generating 28 phrases...
+[2025-11-10 20:43:49]     ✓ 5/28 phrases generated
+[2025-11-10 20:44:07]     ✓ 10/28 phrases generated
+[2025-11-10 20:44:22]     ✓ 15/28 phrases generated
+[2025-11-10 20:44:40]     ✓ 20/28 phrases generated
+[2025-11-10 20:45:02]     ✓ 25/28 phrases generated
+[2025-11-10 20:45:09]   🎤 Generating practice section...
+[2025-11-10 20:45:39]   🎤 Generating conclusion...
+[2025-11-10 20:45:37]   🔧 Concatenating 285 audio segments...
+[2025-11-10 20:45:38]   ✅ Generated: resource-15.mp3 (2.35 MB)
+[2025-11-10 20:45:39]   ✅ Resource 15 COMPLETE
+[2025-11-10 20:45:39] 
+============================================================
+[2025-11-10 20:45:39] 🔄 Processing Resource 16
+[2025-11-10 20:45:39] ============================================================
+[2025-11-10 20:45:39]   📄 Source: intermediate_smalltalk_1.md
+[2025-11-10 20:45:39]   ✓ Extracted 24 phrase pairs
+[2025-11-10 20:45:39]   🎤 Generating introduction...
+[2025-11-10 20:45:40]   🎤 Generating 24 phrases...
+[2025-11-10 20:46:01]     ✓ 5/24 phrases generated
+[2025-11-10 20:46:14]     ✓ 10/24 phrases generated
+[2025-11-10 20:46:32]     ✓ 15/24 phrases generated
+[2025-11-10 20:46:47]     ✓ 20/24 phrases generated
+[2025-11-10 20:47:05]   🎤 Generating practice section...
+[2025-11-10 20:47:26]   🎤 Generating conclusion...
+[2025-11-10 20:47:27]   🔧 Concatenating 245 audio segments...
+[2025-11-10 20:47:28]   ✅ Generated: resource-16.mp3 (2.27 MB)
+[2025-11-10 20:47:29]   ✅ Resource 16 COMPLETE
+[2025-11-10 20:47:30] 
+============================================================
+[2025-11-10 20:47:30] 🔄 Processing Resource 17
+[2025-11-10 20:47:30] ============================================================
+[2025-11-10 20:47:30]   📄 Source: basic_greetings_3.md
+[2025-11-10 20:47:30]   ✓ Extracted 22 phrase pairs
+[2025-11-10 20:47:30]   🎤 Generating introduction...
+[2025-11-10 20:47:31]   🎤 Generating 22 phrases...
+[2025-11-10 20:47:44]     ✓ 5/22 phrases generated
+[2025-11-10 20:48:03]     ✓ 10/22 phrases generated
+[2025-11-10 20:48:18]     ✓ 15/22 phrases generated
+[2025-11-10 20:48:36]     ✓ 20/22 phrases generated
+[2025-11-10 20:48:40]   🎤 Generating practice section...
+[2025-11-10 20:48:58]   🎤 Generating conclusion...
+[2025-11-10 20:48:59]   🔧 Concatenating 225 audio segments...
+[2025-11-10 20:49:00]   ✅ Generated: resource-17.mp3 (1.98 MB)
+[2025-11-10 20:49:00]   ✅ Resource 17 COMPLETE
+[2025-11-10 20:49:00] 
+============================================================
+[2025-11-10 20:49:00] 🔄 Processing Resource 18
+[2025-11-10 20:49:01] ============================================================
+[2025-11-10 20:49:01]   📄 Source: basic_audio_navigation_2-audio-script.txt
+[2025-11-10 20:49:01]   ✓ Extracted 0 phrase pairs
+[2025-11-10 20:49:01]   ❌ No phrases found
+[2025-11-10 20:49:02] 
+============================================================
+[2025-11-10 20:49:02] 🔄 Processing Resource 19
+[2025-11-10 20:49:02] ============================================================
+[2025-11-10 20:49:02]   📄 Source: basic_directions_3.md
+[2025-11-10 20:49:02]   ✓ Extracted 27 phrase pairs
+[2025-11-10 20:49:02]   🎤 Generating introduction...
+[2025-11-10 20:49:04]   🎤 Generating 27 phrases...
+[2025-11-10 20:49:16]     ✓ 5/27 phrases generated
+[2025-11-10 20:49:32]     ✓ 10/27 phrases generated
+[2025-11-10 20:49:45]     ✓ 15/27 phrases generated
+[2025-11-10 20:50:03]     ✓ 20/27 phrases generated
+[2025-11-10 20:50:18]     ✓ 25/27 phrases generated
+[2025-11-10 20:50:24]   🎤 Generating practice section...
+[2025-11-10 20:50:42]   🎤 Generating conclusion...
+[2025-11-10 20:50:44]   🔧 Concatenating 275 audio segments...
+[2025-11-10 20:50:44]   ✅ Generated: resource-19.mp3 (2.07 MB)
+[2025-11-10 20:50:45]   ✅ Resource 19 COMPLETE
+[2025-11-10 20:50:45] 
+============================================================
+[2025-11-10 20:50:45] 🔄 Processing Resource 20
+[2025-11-10 20:50:45] ============================================================
+[2025-11-10 20:50:46]   📄 Source: intermediate_problems_1.md
+[2025-11-10 20:50:46]   ✓ Extracted 24 phrase pairs
+[2025-11-10 20:50:46]   🎤 Generating introduction...
+[2025-11-10 20:50:47]   🎤 Generating 24 phrases...
+[2025-11-10 20:51:07]     ✓ 5/24 phrases generated
+[2025-11-10 20:51:27]     ✓ 10/24 phrases generated
+[2025-11-10 20:51:45]     ✓ 15/24 phrases generated
+[2025-11-10 20:52:04]     ✓ 20/24 phrases generated
+[2025-11-10 20:52:19]   🎤 Generating practice section...
+[2025-11-10 20:52:57]   🎤 Generating conclusion...
+[2025-11-10 20:52:59]   🔧 Concatenating 245 audio segments...
+[2025-11-10 20:52:59]   ✅ Generated: resource-20.mp3 (4.00 MB)
+[2025-11-10 20:53:00]   ✅ Resource 20 COMPLETE
+[2025-11-10 20:53:00] 
+============================================================
+[2025-11-10 20:53:00] 🔄 Processing Resource 21
+[2025-11-10 20:53:00] ============================================================
+[2025-11-10 20:53:00]   📄 Source: basic_greetings_all_1-audio-script.txt
+[2025-11-10 20:53:01]   ✓ Extracted 0 phrase pairs
+[2025-11-10 20:53:01]   ❌ No phrases found
+[2025-11-10 20:53:01] 
+============================================================
+[2025-11-10 20:53:01] 🔄 Processing Resource 22
+[2025-11-10 20:53:01] ============================================================
+[2025-11-10 20:53:02]   📄 Source: basic_numbers_1.md
+[2025-11-10 20:53:02]   ✓ Extracted 30 phrase pairs
+[2025-11-10 20:53:02]   🎤 Generating introduction...
+[2025-11-10 20:53:03]   🎤 Generating 30 phrases...
+[2025-11-10 20:53:24]     ✓ 5/30 phrases generated
+[2025-11-10 20:53:36]     ✓ 10/30 phrases generated
+[2025-11-10 20:53:52]     ✓ 15/30 phrases generated
+[2025-11-10 20:54:08]     ✓ 20/30 phrases generated
+[2025-11-10 20:54:25]     ✓ 25/30 phrases generated
+[2025-11-10 20:54:38]     ✓ 30/30 phrases generated
+[2025-11-10 20:54:38]   🎤 Generating practice section...
+[2025-11-10 20:55:05]   🎤 Generating conclusion...
+[2025-11-10 20:55:06]   🔧 Concatenating 305 audio segments...
+[2025-11-10 20:55:07]   ✅ Generated: resource-22.mp3 (2.33 MB)
+[2025-11-10 20:55:05]   ✅ Resource 22 COMPLETE
+[2025-11-10 20:55:06] 
+============================================================
+[2025-11-10 20:55:06] 🔄 Processing Resource 23
+[2025-11-10 20:55:06] ============================================================
+[2025-11-10 20:55:06]   📄 Source: basic_time_1.md
+[2025-11-10 20:55:06]   ✓ Extracted 23 phrase pairs
+[2025-11-10 20:55:06]   🎤 Generating introduction...
+[2025-11-10 20:55:08]   🎤 Generating 23 phrases...
+[2025-11-10 20:55:27]     ✓ 5/23 phrases generated
+[2025-11-10 20:55:42]     ✓ 10/23 phrases generated
+[2025-11-10 20:55:59]     ✓ 15/23 phrases generated
+[2025-11-10 20:56:14]     ✓ 20/23 phrases generated
+[2025-11-10 20:56:26]   🎤 Generating practice section...
+[2025-11-10 20:56:46]   🎤 Generating conclusion...
+[2025-11-10 20:56:47]   🔧 Concatenating 235 audio segments...
+[2025-11-10 20:56:49]   ✅ Generated: resource-23.mp3 (1.79 MB)
+[2025-11-10 20:56:50]   ✅ Resource 23 COMPLETE
+[2025-11-10 20:56:50] 
+============================================================
+[2025-11-10 20:56:50] 🔄 Processing Resource 25
+[2025-11-10 20:56:51] ============================================================
+[2025-11-10 20:56:51]   📄 Source: intermediate_customer_service_1.md
+[2025-11-10 20:56:51]   ✓ Extracted 25 phrase pairs
+[2025-11-10 20:56:51]   🎤 Generating introduction...
+[2025-11-10 20:56:53]   🎤 Generating 25 phrases...
+[2025-11-10 20:57:09]     ✓ 5/25 phrases generated
+[2025-11-10 20:57:28]     ✓ 10/25 phrases generated
+[2025-11-10 20:57:47]     ✓ 15/25 phrases generated
+[2025-11-10 20:58:05]     ✓ 20/25 phrases generated
+[2025-11-10 20:58:21]     ✓ 25/25 phrases generated
+[2025-11-10 20:58:21]   🎤 Generating practice section...
+[2025-11-10 20:58:44]   🎤 Generating conclusion...
+[2025-11-10 20:58:46]   🔧 Concatenating 255 audio segments...
+[2025-11-10 20:58:47]   ✅ Generated: resource-25.mp3 (2.32 MB)
+[2025-11-10 20:58:47]   ✅ Resource 25 COMPLETE
+[2025-11-10 20:58:48] 
+============================================================
+[2025-11-10 20:58:48] 🔄 Processing Resource 26
+[2025-11-10 20:58:48] ============================================================
+[2025-11-10 20:58:48]   📄 Source: intermediate_complaints_1.md
+[2025-11-10 20:58:48]   ✓ Extracted 0 phrase pairs
+[2025-11-10 20:58:48]   ❌ No phrases found
+[2025-11-10 20:58:49] 
+============================================================
+[2025-11-10 20:58:49] 🔄 Processing Resource 27
+[2025-11-10 20:58:49] ============================================================
+[2025-11-10 20:58:49]   📄 Source: emergency_phrases_1.md
+[2025-11-10 20:58:49]   ✓ Extracted 0 phrase pairs
+[2025-11-10 20:58:49]   ❌ No phrases found
+[2025-11-10 20:58:50] 
+============================================================
+[2025-11-10 20:58:50] 🔄 Processing Resource 28
+[2025-11-10 20:58:50] ============================================================
+[2025-11-10 20:58:50]   📄 Source: basic_greetings_all_2-audio-script.txt
+[2025-11-10 20:58:51]   ✓ Extracted 0 phrase pairs
+[2025-11-10 20:58:51]   ❌ No phrases found
+[2025-11-10 20:58:51] 
+============================================================
+[2025-11-10 20:58:51] 🔄 Processing Resource 29
+[2025-11-10 20:58:51] ============================================================
+[2025-11-10 20:58:52]   📄 Source: basic_numbers_2.md
+[2025-11-10 20:58:52]   ✓ Extracted 29 phrase pairs
+[2025-11-10 20:58:52]   🎤 Generating introduction...
+[2025-11-10 20:58:53]   🎤 Generating 29 phrases...
+[2025-11-10 20:59:09]     ✓ 5/29 phrases generated
+[2025-11-10 20:59:31]     ✓ 10/29 phrases generated
+[2025-11-10 20:59:44]     ✓ 15/29 phrases generated
+[2025-11-10 20:59:58]     ✓ 20/29 phrases generated
+[2025-11-10 21:00:11]     ✓ 25/29 phrases generated
+[2025-11-10 21:00:24]   🎤 Generating practice section...
+[2025-11-10 21:00:50]   🎤 Generating conclusion...
+[2025-11-10 21:00:51]   🔧 Concatenating 295 audio segments...
+[2025-11-10 21:00:54]   ✅ Generated: resource-29.mp3 (2.95 MB)
+[2025-11-10 21:00:55]   ✅ Resource 29 COMPLETE
+[2025-11-10 21:00:55] 
+============================================================
+[2025-11-10 21:00:55] 🔄 Processing Resource 30
+[2025-11-10 21:00:56] ============================================================
+[2025-11-10 21:00:56]   📄 Source: safety_protocols_1.md
+[2025-11-10 21:00:56]   ✓ Extracted 20 phrase pairs
+[2025-11-10 21:00:56]   🎤 Generating introduction...
+[2025-11-10 21:00:58]   🎤 Generating 20 phrases...
+[2025-11-10 21:01:12]     ✓ 5/20 phrases generated
+[2025-11-10 21:01:28]     ✓ 10/20 phrases generated
+[2025-11-10 21:01:42]     ✓ 15/20 phrases generated
+[2025-11-10 21:02:00]     ✓ 20/20 phrases generated
+[2025-11-10 21:02:00]   🎤 Generating practice section...
+[2025-11-10 21:02:19]   🎤 Generating conclusion...
+[2025-11-10 21:02:21]   🔧 Concatenating 205 audio segments...
+[2025-11-10 21:02:21]   ✅ Generated: resource-30.mp3 (4.27 MB)
+[2025-11-10 21:02:22]   ✅ Resource 30 COMPLETE
+[2025-11-10 21:02:23] 
+============================================================
+[2025-11-10 21:02:23] 🔄 Processing Resource 31
+[2025-11-10 21:02:23] ============================================================
+[2025-11-10 21:02:23]   📄 Source: intermediate_situations_2.md
+[2025-11-10 21:02:23]   ✓ Extracted 23 phrase pairs
+[2025-11-10 21:02:23]   🎤 Generating introduction...
+[2025-11-10 21:02:24]   🎤 Generating 23 phrases...
+[2025-11-10 21:02:38]     ✓ 5/23 phrases generated
+[2025-11-10 21:02:55]     ✓ 10/23 phrases generated
+[2025-11-10 21:03:13]     ✓ 15/23 phrases generated
+[2025-11-10 21:03:31]     ✓ 20/23 phrases generated
+[2025-11-10 21:03:39]   🎤 Generating practice section...
+[2025-11-10 21:04:00]   🎤 Generating conclusion...
+[2025-11-10 21:04:01]   🔧 Concatenating 235 audio segments...
+[2025-11-10 21:04:02]   ✅ Generated: resource-31.mp3 (3.65 MB)
+[2025-11-10 21:04:03]   ✅ Resource 31 COMPLETE
+[2025-11-10 21:04:04] 
+============================================================
+[2025-11-10 21:04:04] 🔄 Processing Resource 32
+[2025-11-10 21:04:04] ============================================================
+[2025-11-10 21:04:04]   📄 Source: intermediate_conversations_2-audio-script.txt
+[2025-11-10 21:04:04]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:04:04]   ❌ No phrases found
+[2025-11-10 21:04:02] 
+============================================================
+[2025-11-10 21:04:02] 🔄 Processing Resource 33
+[2025-11-10 21:04:03] ============================================================
+[2025-11-10 21:04:03]   📄 Source: intermediate_smalltalk_2.md
+[2025-11-10 21:04:03]   ✓ Extracted 21 phrase pairs
+[2025-11-10 21:04:03]   🎤 Generating introduction...
+[2025-11-10 21:04:05]   🎤 Generating 21 phrases...
+[2025-11-10 21:04:21]     ✓ 5/21 phrases generated
+[2025-11-10 21:04:36]     ✓ 10/21 phrases generated
+[2025-11-10 21:04:55]     ✓ 15/21 phrases generated
+[2025-11-10 21:05:11]     ✓ 20/21 phrases generated
+[2025-11-10 21:05:14]   🎤 Generating practice section...
+[2025-11-10 21:05:31]   🎤 Generating conclusion...
+[2025-11-10 21:05:32]   🔧 Concatenating 215 audio segments...
+[2025-11-10 21:05:33]   ✅ Generated: resource-33.mp3 (2.11 MB)
+[2025-11-10 21:05:33]   ✅ Resource 33 COMPLETE
+[2025-11-10 21:05:34] 
+============================================================
+[2025-11-10 21:05:34] 🔄 Processing Resource 34
+[2025-11-10 21:05:34] ============================================================
+[2025-11-10 21:05:34]   📄 Source: intermediate_audio_conversations_1-audio-script.txt
+[2025-11-10 21:05:32]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:32]   ❌ No phrases found
+[2025-11-10 21:05:33] 
+============================================================
+[2025-11-10 21:05:33] 🔄 Processing Resource 35
+[2025-11-10 21:05:33] ============================================================
+[2025-11-10 21:05:33]   📄 Source: business-terminology.md
+[2025-11-10 21:05:33]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:33]   ❌ No phrases found
+[2025-11-10 21:05:34] 
+============================================================
+[2025-11-10 21:05:34] 🔄 Processing Resource 36
+[2025-11-10 21:05:34] ============================================================
+[2025-11-10 21:05:34]   📄 Source: complaint-handling.md
+[2025-11-10 21:05:34]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:35]   ❌ No phrases found
+[2025-11-10 21:05:35] 
+============================================================
+[2025-11-10 21:05:35] 🔄 Processing Resource 37
+[2025-11-10 21:05:35] ============================================================
+[2025-11-10 21:05:36]   📄 Source: conflict-resolution.md
+[2025-11-10 21:05:36]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:36]   ❌ No phrases found
+[2025-11-10 21:05:36] 
+============================================================
+[2025-11-10 21:05:36] 🔄 Processing Resource 38
+[2025-11-10 21:05:37] ============================================================
+[2025-11-10 21:05:37]   📄 Source: cross-cultural-communication.md
+[2025-11-10 21:05:37]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:37]   ❌ No phrases found
+[2025-11-10 21:05:38] 
+============================================================
+[2025-11-10 21:05:38] 🔄 Processing Resource 39
+[2025-11-10 21:05:38] ============================================================
+[2025-11-10 21:05:38]   📄 Source: customer-service-excellence.md
+[2025-11-10 21:05:38]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:38]   ❌ No phrases found
+[2025-11-10 21:05:39] 
+============================================================
+[2025-11-10 21:05:39] 🔄 Processing Resource 40
+[2025-11-10 21:05:39] ============================================================
+[2025-11-10 21:05:39]   📄 Source: earnings-optimization.md
+[2025-11-10 21:05:39]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:39]   ❌ No phrases found
+[2025-11-10 21:05:40] 
+============================================================
+[2025-11-10 21:05:40] 🔄 Processing Resource 41
+[2025-11-10 21:05:40] ============================================================
+[2025-11-10 21:05:40]   📄 Source: negotiation-skills.md
+[2025-11-10 21:05:41]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:41]   ❌ No phrases found
+[2025-11-10 21:05:41] 
+============================================================
+[2025-11-10 21:05:41] 🔄 Processing Resource 42
+[2025-11-10 21:05:41] ============================================================
+[2025-11-10 21:05:42]   📄 Source: professional-boundaries.md
+[2025-11-10 21:05:42]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:42]   ❌ No phrases found
+[2025-11-10 21:05:42] 
+============================================================
+[2025-11-10 21:05:42] 🔄 Processing Resource 43
+[2025-11-10 21:05:43] ============================================================
+[2025-11-10 21:05:43]   📄 Source: professional-communication.md
+[2025-11-10 21:05:43]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:43]   ❌ No phrases found
+[2025-11-10 21:05:44] 
+============================================================
+[2025-11-10 21:05:44] 🔄 Processing Resource 44
+[2025-11-10 21:05:44] ============================================================
+[2025-11-10 21:05:44]   📄 Source: time-management.md
+[2025-11-10 21:05:44]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:44]   ❌ No phrases found
+[2025-11-10 21:05:45] 
+============================================================
+[2025-11-10 21:05:45] 🔄 Processing Resource 45
+[2025-11-10 21:05:45] ============================================================
+[2025-11-10 21:05:45]   📄 Source: accident-procedures.md
+[2025-11-10 21:05:45]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:46]   ❌ No phrases found
+[2025-11-10 21:05:46] 
+============================================================
+[2025-11-10 21:05:46] 🔄 Processing Resource 46
+[2025-11-10 21:05:46] ============================================================
+[2025-11-10 21:05:46]   📄 Source: customer-conflict.md
+[2025-11-10 21:05:47]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:47]   ❌ No phrases found
+[2025-11-10 21:05:47] 
+============================================================
+[2025-11-10 21:05:47] 🔄 Processing Resource 47
+[2025-11-10 21:05:48] ============================================================
+[2025-11-10 21:05:48]   📄 Source: lost-or-found-items.md
+[2025-11-10 21:05:48]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:48]   ❌ No phrases found
+[2025-11-10 21:05:49] 
+============================================================
+[2025-11-10 21:05:49] 🔄 Processing Resource 48
+[2025-11-10 21:05:49] ============================================================
+[2025-11-10 21:05:49]   📄 Source: medical-emergencies.md
+[2025-11-10 21:05:49]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:49]   ❌ No phrases found
+[2025-11-10 21:05:50] 
+============================================================
+[2025-11-10 21:05:50] 🔄 Processing Resource 49
+[2025-11-10 21:05:50] ============================================================
+[2025-11-10 21:05:50]   📄 Source: payment-disputes.md
+[2025-11-10 21:05:50]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:50]   ❌ No phrases found
+[2025-11-10 21:05:51] 
+============================================================
+[2025-11-10 21:05:51] 🔄 Processing Resource 50
+[2025-11-10 21:05:51] ============================================================
+[2025-11-10 21:05:51]   📄 Source: safety-concerns.md
+[2025-11-10 21:05:51]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:52]   ❌ No phrases found
+[2025-11-10 21:05:52] 
+============================================================
+[2025-11-10 21:05:52] 🔄 Processing Resource 51
+[2025-11-10 21:05:52] ============================================================
+[2025-11-10 21:05:52]   📄 Source: vehicle-breakdown.md
+[2025-11-10 21:05:53]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:53]   ❌ No phrases found
+[2025-11-10 21:05:53] 
+============================================================
+[2025-11-10 21:05:53] 🔄 Processing Resource 52
+[2025-11-10 21:05:53] ============================================================
+[2025-11-10 21:05:54]   📄 Source: weather-hazards.md
+[2025-11-10 21:05:54]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:54]   ❌ No phrases found
+[2025-11-10 21:05:54] 
+============================================================
+[2025-11-10 21:05:54] 🔄 Processing Resource 53
+[2025-11-10 21:05:55] ============================================================
+[2025-11-10 21:05:55]   📄 Source: airport-rideshare.md
+[2025-11-10 21:05:55]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:55]   ❌ No phrases found
+[2025-11-10 21:05:56] 
+============================================================
+[2025-11-10 21:05:56] 🔄 Processing Resource 54
+[2025-11-10 21:05:56] ============================================================
+[2025-11-10 21:05:56]   📄 Source: doordash-delivery.md
+[2025-11-10 21:05:56]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:56]   ❌ No phrases found
+[2025-11-10 21:05:57] 
+============================================================
+[2025-11-10 21:05:57] 🔄 Processing Resource 55
+[2025-11-10 21:05:57] ============================================================
+[2025-11-10 21:05:57]   📄 Source: lyft-driver-essentials.md
+[2025-11-10 21:05:57]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:57]   ❌ No phrases found
+[2025-11-10 21:05:58] 
+============================================================
+[2025-11-10 21:05:58] 🔄 Processing Resource 56
+[2025-11-10 21:05:58] ============================================================
+[2025-11-10 21:05:58]   📄 Source: multi-app-strategy.md
+[2025-11-10 21:05:58]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:05:59]   ❌ No phrases found
+[2025-11-10 21:05:59] 
+============================================================
+[2025-11-10 21:05:59] 🔄 Processing Resource 57
+[2025-11-10 21:05:59] ============================================================
+[2025-11-10 21:06:00]   📄 Source: platform-ratings-mastery.md
+[2025-11-10 21:06:00]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:06:00]   ❌ No phrases found
+[2025-11-10 21:06:01] 
+============================================================
+[2025-11-10 21:06:01] 🔄 Processing Resource 58
+[2025-11-10 21:06:01] ============================================================
+[2025-11-10 21:06:01]   📄 Source: tax-and-expenses.md
+[2025-11-10 21:06:01]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:06:01]   ❌ No phrases found
+[2025-11-10 21:06:02] 
+============================================================
+[2025-11-10 21:06:02] 🔄 Processing Resource 59
+[2025-11-10 21:06:02] ============================================================
+[2025-11-10 21:06:02]   📄 Source: uber-driver-essentials.md
+[2025-11-10 21:06:02]   ✓ Extracted 0 phrase pairs
+[2025-11-10 21:06:02]   ❌ No phrases found
+[2025-11-10 21:06:03] 
+================================================================================
+[2025-11-10 21:06:03] 📊 REGENERATION SUMMARY
+[2025-11-10 21:06:03] ================================================================================
+[2025-11-10 21:06:03] ✅ Successful: 21 resources
+[2025-11-10 21:06:03] ❌ Failed: 35 resources
+[2025-11-10 21:06:03] ⏱️  Total time: 35.8 minutes
+[2025-11-10 21:06:04] 
+✅ Successful: 1, 2, 4, 5, 6, 9, 11, 12, 14, 15, 16, 17, 19, 20, 22, 23, 25, 29, 30, 31, 33
+[2025-11-10 21:06:04] 
+❌ Failed: 7, 10, 13, 18, 21, 26, 27, 28, 32, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59
+[2025-11-10 21:06:04] 
+📋 Full log: /mnt/c/Users/brand/Development/Project_Workspace/active-development/hablas/scripts/complete-regeneration-log.txt
+[2025-11-10 21:06:04] ================================================================================
