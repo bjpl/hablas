@@ -4,11 +4,11 @@
 **Para**: Todos los trabajadores de gig economy
 
 ### ¿Qué aprenderás?
-En este guía aprenderás a manejar situaciones difíciles con profesionalismo y calma. Dominarás frases para resolver conflictos, responder a quejas, y mantener tu reputación como trabajador excelente, incluso cuando los clientes están molestos o hay problemas con el pedido.
+En esta guía aprenderás a manejar situaciones difíciles con profesionalismo y calma. Dominarás 30 frases prácticas para resolver conflictos, responder a quejas, y mantener tu reputación como trabajador excelente, incluso cuando los clientes están molestos o hay problemas con el pedido.
 
 ### Lo que necesitas saber:
 ✅ Frases para desescalar conflictos
-✅ 40+ expresiones prácticas para problemas comunes
+✅ 30 expresiones prácticas para problemas comunes
 ✅ Técnicas para mantener la calma bajo presión
 ✅ Pronunciación clara para cada situación
 ✅ Ejemplos de la vida real
@@ -23,13 +23,11 @@ En este guía aprenderás a manejar situaciones difíciles con profesionalismo y
 
 **Sección 3**: Explicando Problemas con el Pedido (Frases 13-18) ... Pág. 7
 
-**Sección 4**: Manejando Clientes Molestos (Frases 19-25) ............. Pág. 9
+**Sección 4**: Manejando Clientes Molestos (Frases 19-24) ............. Pág. 9
 
-**Sección 5**: Ofreciendo Soluciones (Frases 26-32) ...................... Pág. 12
+**Sección 5**: Ofreciendo Soluciones (Frases 25-28) ...................... Pág. 12
 
-**Sección 6**: Contactando con Soporte (Frases 33-38) .................. Pág. 14
-
-**Sección 7**: Cerrando la Situación Positivamente (Frases 39-43) .. Pág. 16
+**Sección 6**: Contactando con Soporte (Frases 29-30) .................. Pág. 14
 
 **Tarjeta de Referencia Rápida** .................................................. Pág. 18
 
@@ -551,4 +549,251 @@ En este guía aprenderás a manejar situaciones difíciles con profesionalismo y
 │ **English**: "I hear you. Now, what can I do to make    │
 │ this right?"                                             │
 │                                                          │
-│ 🗣️ **Español**: Te escucho.
+│ 🗣️ **Español**: Te escucho. Ahora, ¿qué puedo hacer    │
+│ para arreglar esto?                                      │
+│ 🔊 **Pronunciación**: [ai heer yoo. nau, wut kan ai doo │
+│                       tu mayk this rait]                 │
+│                                                          │
+│ **Usa cuando**: Cliente está desahogándose y necesitas  │
+│ mover la conversación hacia acción                       │
+│ **Ejemplo real**: Cliente ha estado quejándose por 2    │
+│ minutos. Reconoces su frustración y enfocas en resolver │
+│                                                          │
+│ 💡 **TIP**: "I hear you" valida sus sentimientos. "Now" │
+│ cambia el enfoque a solución sin ser grosero.            │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+## Frase 23: Cuando cliente exige hablar con gerente/supervisor
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm an independent contractor. Please     │
+│ contact customer service through the app."               │
+│                                                          │
+│ 🗣️ **Español**: Soy contratista independiente. Por favor│
+│ contacta servicio al cliente a través de la app.         │
+│ 🔊 **Pronunciación**: [aim an in-di-PEN-dent            │
+│                       KON-trak-ter. pleez KON-takt       │
+│                       KUS-tə-mer SER-vis throo thee ap]  │
+│                                                          │
+│ **Usa cuando**: Cliente pide hablar con tu "jefe" o     │
+│ gerente                                                  │
+│ **Ejemplo real**: "I want to speak to your manager!"    │
+│ Explicas profesionalmente tu situación laboral           │
+│                                                          │
+│ 💡 **TIP**: Mantén calma. Explica que pueden contactar  │
+│ soporte de la app para ayuda adicional.                  │
+└─────────────────────────────────────────────────────────┘
+
+**Variación**:
+- "The app has 24/7 customer support that can help" = La app tiene soporte 24/7 que puede ayudar = [thee ap haz twen-tee-for/SEV-en KUS-tə-mer suh-PORT that kan help]
+
+---
+
+## Frase 24: Terminando interacción con cliente abusivo
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I've done what I can. Please contact      │
+│ support for further assistance."                         │
+│                                                          │
+│ 🗣️ **Español**: He hecho lo que puedo. Por favor        │
+│ contacta soporte para asistencia adicional.              │
+│ 🔊 **Pronunciación**: [aiv dun wut ai kan. pleez        │
+│                       KON-takt suh-PORT for FUR-ther     │
+│                       ə-SIS-təns]                        │
+│                                                          │
+│ **Usa cuando**: Has intentado resolver pero cliente     │
+│ continúa siendo abusivo o irrazonable                    │
+│ **Ejemplo real**: Cliente no acepta ninguna solución y  │
+│ está siendo ofensivo. Estableces límite final            │
+│                                                          │
+│ 💡 **TIP**: Está bien retirarte de situaciones abusivas.│
+│ Tu seguridad es prioridad. Documenta todo.               │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# Sección 5: Ofreciendo Soluciones
+
+## Frase 25: Ofreciendo regresar al restaurante
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I can go back to the restaurant to get    │
+│ the missing item."                                       │
+│                                                          │
+│ 🗣️ **Español**: Puedo regresar al restaurante para      │
+│ obtener el artículo faltante.                            │
+│ 🔊 **Pronunciación**: [ai kan goh bak tu the            │
+│                       RES-tə-rant tu get the MIS-ing     │
+│                       AI-tem]                            │
+│                                                          │
+│ **Usa cuando**: Falta algo menor y el restaurante está  │
+│ cerca (y tienes tiempo)                                  │
+│ **Ejemplo real**: Faltan las salsas extra que pidieron. │
+│ Ofreces ir a buscarlas si el cliente puede esperar       │
+│                                                          │
+│ 💡 **TIP**: Solo ofrece esto si realmente puedes hacerlo│
+│ No prometas algo que no cumplirás.                       │
+└─────────────────────────────────────────────────────────┘
+
+**Variación**:
+- "Would you like me to go get it?" = ¿Quieres que vaya a buscarlo? = [wud yoo laik mee tu goh get it]
+
+---
+
+## Frase 26: Sugiriendo reembolso parcial
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "You can request a partial refund for the  │
+│ missing items through the app."                          │
+│                                                          │
+│ 🗣️ **Español**: Puedes solicitar un reembolso parcial   │
+│ por los ítems faltantes a través de la app.             │
+│ 🔊 **Pronunciación**: [yoo kan ri-KWEST a PAR-shəl      │
+│                       REE-fund for the MIS-ing AI-temz   │
+│                       throo thee ap]                     │
+│                                                          │
+│ **Usa cuando**: Hay ítems faltantes pero no puedes      │
+│ regresar al restaurante                                  │
+│ **Ejemplo real**: Faltan 2 de 5 ítems. Explicas cómo   │
+│ pueden obtener reembolso por lo que falta                │
+│                                                          │
+│ 💡 **TIP**: Ofrece ayudarlos a iniciar el proceso si no │
+│ están seguros cómo hacerlo.                              │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+## Frase 27: Ofreciendo documentar con foto
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Let me take a photo of this to send to    │
+│ support for you."                                        │
+│                                                          │
+│ 🗣️ **Español**: Déjame tomar una foto de esto para      │
+│ enviarla a soporte por ti.                               │
+│ 🔊 **Pronunciación**: [let mi tayk a FOH-toh ov this tu │
+│                       send tu suh-PORT for yoo]          │
+│                                                          │
+│ **Usa cuando**: Hay problema visible que necesita       │
+│ documentación (pedido derramado, dañado, etc.)           │
+│ **Ejemplo real**: Comida llegó derramada. Tomas foto    │
+│ como evidencia para ayudar con reclamación               │
+│                                                          │
+│ 💡 **TIP**: Esto muestra proactividad y ayuda al cliente│
+│ con su caso ante soporte.                                │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+## Frase 28: Explicando proceso de reembolso completo
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Support will process a full refund within │
+│ 3-5 business days."                                      │
+│                                                          │
+│ 🗣️ **Español**: Soporte procesará un reembolso completo │
+│ dentro de 3-5 días hábiles.                              │
+│ 🔊 **Pronunciación**: [suh-PORT wil PROS-es a ful       │
+│                       REE-fund with-IN three tu faiv     │
+│                       BIZ-ness dayz]                     │
+│                                                          │
+│ **Usa cuando**: Pedido completamente incorrecto o       │
+│ inutilizable                                             │
+│ **Ejemplo real**: Pedido completamente equivocado.      │
+│ Informas sobre proceso y tiempo de reembolso             │
+│                                                          │
+│ 💡 **TIP**: Dar información específica (plazos) reduce  │
+│ ansiedad del cliente.                                    │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# Sección 6: Contactando con Soporte
+
+## Frase 29: Llamando a soporte frente al cliente
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm calling support right now to help     │
+│ resolve this for you."                                   │
+│                                                          │
+│ 🗣️ **Español**: Estoy llamando a soporte ahora mismo    │
+│ para ayudar a resolver esto por ti.                      │
+│ 🔊 **Pronunciación**: [aim KOL-ing suh-PORT rait nau tu │
+│                       help ri-ZOLV this for yoo]         │
+│                                                          │
+│ **Usa cuando**: Problema serio que requiere intervención│
+│ inmediata de la app                                      │
+│ **Ejemplo real**: Pedido completo incorrecto y cliente  │
+│ muy molesto. Llamas a soporte mientras estás ahí         │
+│                                                          │
+│ 💡 **TIP**: Hacer esto frente al cliente muestra que    │
+│ realmente te importa resolver el problema.               │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+## Frase 30: Confirmando que soporte ayudará
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Support has been notified and will contact│
+│ you within 24 hours to resolve this."                    │
+│                                                          │
+│ 🗣️ **Español**: Soporte ha sido notificado y te         │
+│ contactará dentro de 24 horas para resolver esto.        │
+│ 🔊 **Pronunciación**: [suh-PORT haz bin NOH-ti-faid and │
+│                       wil KON-takt yoo with-IN twen-tee- │
+│                       for aurz tu ri-ZOLV this]          │
+│                                                          │
+│ **Usa cuando**: Ya reportaste el problema a soporte y   │
+│ necesitas asegurar al cliente                            │
+│ **Ejemplo real**: Después de reportar incidente,        │
+│ confirmas al cliente que recibirán seguimiento           │
+│                                                          │
+│ 💡 **TIP**: Da plazos realistas. No prometas "inmediato"│
+│ si no estás seguro. Mejor bajo-promete y sobre-entrega. │
+└─────────────────────────────────────────────────────────┘
+
+**Variación**:
+- "I've submitted a report on your behalf" = He enviado un reporte en tu nombre = [aiv səb-MIT-əd a ri-PORT on yor bi-HAF]
+
+---
+
+# Tarjeta de Referencia Rápida
+
+## Reconociendo Problemas
+✅ "I can see there's an issue. Let me help you with that."
+✅ "Could you please tell me what happened?"
+✅ "I completely understand your frustration."
+
+## Disculpándose
+✅ "I sincerely apologize for the inconvenience."
+✅ "I'm really sorry about this."
+✅ "I apologize for the delay. There was heavy traffic."
+
+## Explicando Problemas
+✅ "It looks like something is missing from your order."
+✅ "The restaurant sealed the bag, so I couldn't check inside."
+✅ "This doesn't match what you ordered. Let's get this corrected."
+
+## Manejando Clientes Molestos
+✅ "I understand you're upset. Let's work through this calmly."
+✅ "I want to help you, but I need you to speak respectfully."
+✅ "I hear you. Now, what can I do to make this right?"
+
+## Ofreciendo Soluciones
+✅ "I can go back to the restaurant to get the missing item."
+✅ "You can request a partial refund through the app."
+✅ "Let me take a photo of this to send to support for you."
+
+## Contactando Soporte
+✅ "I'm calling support right now to help resolve this."
+✅ "Support has been notified and will contact you within 24 hours."
+
+**Recuerda**:
+- Mantén la calma SIEMPRE
+- Tu tono es más importante que tus palabras
+- Escucha activamente antes de responder
+- Enfócate en soluciones, no en culpar
+- Tu seguridad es prioridad #1 - está bien retirarte de situaciones peligrosas

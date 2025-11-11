@@ -4,13 +4,13 @@
 **Para**: Todos los trabajadores de gig economy
 
 ### ¿Qué aprenderás?
-Dominarás 40+ frases profesionales en inglés para brindar un servicio al cliente excepcional. Aprenderás a manejar situaciones comunes y desafiantes con confianza, desde saludos profesionales hasta resolver problemas con cortesía.
+Dominarás 30 frases profesionales en inglés para brindar un servicio al cliente excepcional. Aprenderás a manejar situaciones comunes y desafiantes con confianza, desde saludos profesionales hasta resolver problemas con cortesía.
 
 ### Lo que necesitas saber:
-✅ Alguna experiencia básica con inglés recomendada  
-✅ 40+ frases prácticas y profesionales  
-✅ Ejemplos de situaciones reales del día a día  
-✅ Pronunciación detallada incluida  
+✅ Alguna experiencia básica con inglés recomendada
+✅ 30 frases prácticas y profesionales
+✅ Ejemplos de situaciones reales del día a día
+✅ Pronunciación detallada incluida
 ✅ Tips culturales para mejores propinas
 
 ---
@@ -529,4 +529,155 @@ Dominarás 40+ frases profesionales en inglés para brindar un servicio al clien
 
 **Variaciones**:
 - "Enjoy!" = ¡Disfruta! = [en-JOY] (más casual)
-- "Hope you enjoy it!" = 
+- "Hope you enjoy it!" = Espero que lo disfrutes = [hohp yoo en-JOY it]
+
+---
+
+# 6. Conversación Amigable (Small Talk)
+
+### Frase 26: Comentar sobre el clima
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Beautiful weather today, isn't it?"       │
+│                                                          │
+│ 🗣️ **Español**: Hermoso clima hoy, ¿verdad?            │
+│ 🔊 **Pronunciación**: [BYOO-ti-ful WETH-er tu-DAY,     │
+│                       IZ-ent it]                         │
+│                                                          │
+│ **Usa cuando**: Esperas en la puerta o tienes un        │
+│ momento casual con el cliente                            │
+│ **Ejemplo real**: Cliente sale a recibir el pedido,     │
+│ tienes un momento para hacer conversación amigable       │
+│                                                          │
+│ 💡 **TIP**: El "small talk" sobre clima es universal    │
+│ y seguro. Evita temas controversiales o personales.      │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Nice day out!" = ¡Lindo día afuera! = [nais day aut]
+- "Crazy weather we're having" = Clima loco que estamos teniendo = [KRAY-zee WETH-er weer HAV-ing]
+
+### Frase 27: Reconocer casa bonita o mascota
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "You have a beautiful home!"               │
+│                                                          │
+│ 🗣️ **Español**: ¡Tiene una casa hermosa!               │
+│ 🔊 **Pronunciación**: [yoo hav a BYOO-ti-ful hohm]     │
+│                                                          │
+│ **Usa cuando**: Casa tiene jardín notable o decoración  │
+│ que quieres elogiar genuinamente                         │
+│ **Ejemplo real**: Casa con jardín bien cuidado,         │
+│ haces un comentario positivo mientras entregas           │
+│                                                          │
+│ 💡 **TIP**: Los cumplidos genuinos crean conexión y     │
+│ frecuentemente resultan en mejores propinas.             │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones para mascotas**:
+- "What a cute dog!" = ¡Qué perro más lindo! = [wut a kyoot dog]
+- "Your dog is so friendly!" = ¡Tu perro es muy amigable! = [yor dog iz soh FREND-lee]
+
+### Frase 28: Desear buen fin de semana
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Have a great weekend!"                    │
+│                                                          │
+│ 🗣️ **Español**: ¡Que tengas un gran fin de semana!     │
+│ 🔊 **Pronunciación**: [hav a grayt WEEK-end]           │
+│                                                          │
+│ **Usa cuando**: Es viernes o sábado                     │
+│ **Ejemplo real**: Entregas en viernes por la noche,     │
+│ te despides deseando buen fin de semana                  │
+│                                                          │
+│ 💡 **TIP**: Usar frases apropiadas al día/hora muestra │
+│ atención y conexión humana real.                         │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones según el día**:
+- "Happy Friday!" = ¡Feliz viernes! = [HAP-ee FRAI-day]
+- "Hope you have a relaxing Sunday" = Espero que tengas un domingo relajante = [hohp yoo hav a ri-LAK-sing SUN-day]
+
+---
+
+# 7. Situaciones Difíciles con Cortesía
+
+### Frase 29: Cuando necesitas irte urgentemente
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I have another delivery waiting, but      │
+│ please contact support for help."                        │
+│                                                          │
+│ 🗣️ **Español**: Tengo otra entrega esperando, pero por  │
+│ favor contacta soporte para ayuda.                       │
+│ 🔊 **Pronunciación**: [ai hav ə-NUTH-er di-LIV-er-ee   │
+│                       WAIT-ing, but pleez KON-takt       │
+│                       suh-PORT for help]                 │
+│                                                          │
+│ **Usa cuando**: Hay problema pero tienes otro pedido    │
+│ esperando y no puedes quedarte                           │
+│ **Ejemplo real**: Cliente tiene queja compleja pero     │
+│ tienes 3 pedidos más. Diriges profesionalmente           │
+│                                                          │
+│ 💡 **TIP**: Sé honesto sobre tu situación pero ofrece   │
+│ alternativa clara (soporte/app). No huyas sin ayudar.    │
+└─────────────────────────────────────────────────────────┘
+
+### Frase 30: Despedida después de resolver problema
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm glad we could resolve this. Thank you │
+│ for your patience."                                      │
+│                                                          │
+│ 🗣️ **Español**: Me alegra que pudiéramos resolver esto. │
+│ Gracias por tu paciencia.                                │
+│ 🔊 **Pronunciación**: [aim glad wee kud ri-ZOLV this.   │
+│                       thank yoo for yor PAY-shens]       │
+│                                                          │
+│ **Usa cuando**: Resolviste exitosamente un problema o   │
+│ queja del cliente                                        │
+│ **Ejemplo real**: Después de llamar a soporte y lograr  │
+│ reembolso o reenvío, te despides positivamente           │
+│                                                          │
+│ 💡 **TIP**: Terminar positivamente después de problema  │
+│ convierte situación negativa en oportunidad de 5★.       │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Thanks for understanding" = Gracias por entender = [thanks for un-der-STAN-ding]
+- "I appreciate your patience" = Aprecio tu paciencia = [ai ə-PREE-shee-ayt yor PAY-shens]
+
+---
+
+# Tarjeta de Referencia Rápida
+
+## Saludos y Entregas
+✅ "Good [morning/afternoon/evening]! I have your delivery."
+✅ "Are you [Name]?"
+✅ "Here you go! Have a great day."
+
+## Problemas y Disculpas
+✅ "I apologize for the delay."
+✅ "The restaurant was running behind."
+✅ "It looks like an item is missing."
+
+## Solicitudes del Cliente
+✅ "I'll leave it at the door for you."
+✅ "Where would you like me to place it?"
+✅ "I can wait a few minutes, no problem."
+
+## Despedidas Profesionales
+✅ "You're all set! Have a wonderful day."
+✅ "Enjoy your food!"
+✅ "Thank you so much! Take care."
+
+## Small Talk
+✅ "Beautiful weather today, isn't it?"
+✅ "You have a beautiful home!"
+✅ "Have a great weekend!"
+
+## Situaciones Difíciles
+✅ "I have another delivery waiting, but please contact support."
+✅ "I'm glad we could resolve this. Thank you for your patience."
+
+**Recuerda**: Siempre mantén una actitud positiva, haz contacto visual, sonríe genuinamente, y usa "please" y "thank you" frecuentemente. ¡Pequeños detalles = grandes propinas!
