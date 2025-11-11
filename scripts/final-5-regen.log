@@ -223,3 +223,463 @@
   🔧 Concatenating 305 audio segments...
   ✅ Generated: resource-17.mp3 (2.54 MB)
   ✅ Resource 17 COMPLETE
+
+============================================================
+🔄 Processing Resource 18
+============================================================
+  📋 Title/Type hint: Direcciones y Navegación
+  🎯 Detected format: directions
+  📄 Source: basic_audio_navigation_2-audio-script.txt
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 19
+============================================================
+  📋 Title/Type hint: Direcciones y Navegación
+  🎯 Detected format: directions
+  📄 Source: basic_directions_3.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: DIRECTIONS
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-19.mp3 (2.29 MB)
+  ✅ Resource 19 COMPLETE
+
+============================================================
+🔄 Processing Resource 20
+============================================================
+  📋 Title/Type hint: Resource 20
+  🎯 Detected format: basic_phrases
+  📄 Source: intermediate_problems_1.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-20.mp3 (4.64 MB)
+  ✅ Resource 20 COMPLETE
+
+============================================================
+🔄 Processing Resource 21
+============================================================
+  📋 Title/Type hint: Resource 21
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_greetings_all_1-audio-script.txt
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 22
+============================================================
+  📋 Title/Type hint: Resource 22
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_numbers_1.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-22.mp3 (2.33 MB)
+  ✅ Resource 22 COMPLETE
+
+============================================================
+🔄 Processing Resource 23
+============================================================
+  📋 Title/Type hint: Resource 23
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_time_1.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-23.mp3 (2.31 MB)
+  ✅ Resource 23 COMPLETE
+
+============================================================
+🔄 Processing Resource 25
+============================================================
+  📋 Title/Type hint: Resource 25
+  🎯 Detected format: basic_phrases
+  📄 Source: intermediate_customer_service_1.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-25.mp3 (2.83 MB)
+  ✅ Resource 25 COMPLETE
+
+============================================================
+🔄 Processing Resource 26
+============================================================
+  📋 Title/Type hint: Resource 26
+  🎯 Detected format: basic_phrases
+  📄 Source: intermediate_complaints_1.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-26.mp3 (4.08 MB)
+  ✅ Resource 26 COMPLETE
+
+============================================================
+🔄 Processing Resource 27
+============================================================
+  📋 Title/Type hint: Frases de Emergencia
+  🎯 Detected format: emergency
+  📄 Source: emergency_phrases_1.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: EMERGENCY
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-27.mp3 (3.85 MB)
+  ✅ Resource 27 COMPLETE
+
+============================================================
+🔄 Processing Resource 28
+============================================================
+  📋 Title/Type hint: Resource 28
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_greetings_all_2-audio-script.txt
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 29
+============================================================
+  📋 Title/Type hint: Resource 29
+  🎯 Detected format: basic_phrases
+  📄 Source: basic_numbers_2.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-29.mp3 (3.10 MB)
+  ✅ Resource 29 COMPLETE
+
+============================================================
+🔄 Processing Resource 30
+============================================================
+  📋 Title/Type hint: Resource 30
+  🎯 Detected format: basic_phrases
+  📄 Source: safety_protocols_1.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-30.mp3 (6.09 MB)
+  ✅ Resource 30 COMPLETE
+
+============================================================
+🔄 Processing Resource 31
+============================================================
+  📋 Title/Type hint: Resource 31
+  🎯 Detected format: basic_phrases
+  📄 Source: intermediate_situations_2.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: BASIC_PHRASES
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-31.mp3 (4.64 MB)
+  ✅ Resource 31 COMPLETE
+
+============================================================
+🔄 Processing Resource 32
+============================================================
+  📋 Title/Type hint: Conversaciones
+  🎯 Detected format: conversation
+  📄 Source: intermediate_conversations_2-audio-script.txt
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 33
+============================================================
+  📋 Title/Type hint: Small Talk
+  🎯 Detected format: conversation
+  📄 Source: intermediate_smalltalk_2.md
+  ✓ Extracted 30 phrase pairs
+  🎯 Format: CONVERSATION
+  🎤 Generating introduction...
+  🎤 Generating 30 phrases...
+  🎤 Generating practice section...
+  🎤 Generating conclusion...
+  🔧 Concatenating 305 audio segments...
+  ✅ Generated: resource-33.mp3 (3.47 MB)
+  ✅ Resource 33 COMPLETE
+
+============================================================
+🔄 Processing Resource 34
+============================================================
+  📋 Title/Type hint: Conversaciones
+  🎯 Detected format: conversation
+  📄 Source: intermediate_audio_conversations_1-audio-script.txt
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 35
+============================================================
+  📋 Title/Type hint: Resource 35
+  🎯 Detected format: basic_phrases
+  📄 Source: business-terminology.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 36
+============================================================
+  📋 Title/Type hint: Resource 36
+  🎯 Detected format: basic_phrases
+  📄 Source: complaint-handling.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 37
+============================================================
+  📋 Title/Type hint: Resource 37
+  🎯 Detected format: basic_phrases
+  📄 Source: conflict-resolution.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 38
+============================================================
+  📋 Title/Type hint: Resource 38
+  🎯 Detected format: basic_phrases
+  📄 Source: cross-cultural-communication.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 39
+============================================================
+  📋 Title/Type hint: Resource 39
+  🎯 Detected format: basic_phrases
+  📄 Source: customer-service-excellence.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 40
+============================================================
+  📋 Title/Type hint: Resource 40
+  🎯 Detected format: basic_phrases
+  📄 Source: earnings-optimization.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 41
+============================================================
+  📋 Title/Type hint: Resource 41
+  🎯 Detected format: basic_phrases
+  📄 Source: negotiation-skills.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 42
+============================================================
+  📋 Title/Type hint: Resource 42
+  🎯 Detected format: basic_phrases
+  📄 Source: professional-boundaries.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 43
+============================================================
+  📋 Title/Type hint: Resource 43
+  🎯 Detected format: basic_phrases
+  📄 Source: professional-communication.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 44
+============================================================
+  📋 Title/Type hint: Resource 44
+  🎯 Detected format: basic_phrases
+  📄 Source: time-management.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 45
+============================================================
+  📋 Title/Type hint: Resource 45
+  🎯 Detected format: basic_phrases
+  📄 Source: accident-procedures.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 46
+============================================================
+  📋 Title/Type hint: Resource 46
+  🎯 Detected format: basic_phrases
+  📄 Source: customer-conflict.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 47
+============================================================
+  📋 Title/Type hint: Resource 47
+  🎯 Detected format: basic_phrases
+  📄 Source: lost-or-found-items.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 48
+============================================================
+  📋 Title/Type hint: Resource 48
+  🎯 Detected format: basic_phrases
+  📄 Source: medical-emergencies.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 49
+============================================================
+  📋 Title/Type hint: Resource 49
+  🎯 Detected format: basic_phrases
+  📄 Source: payment-disputes.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 50
+============================================================
+  📋 Title/Type hint: Resource 50
+  🎯 Detected format: basic_phrases
+  📄 Source: safety-concerns.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 51
+============================================================
+  📋 Title/Type hint: Resource 51
+  🎯 Detected format: basic_phrases
+  📄 Source: vehicle-breakdown.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 52
+============================================================
+  📋 Title/Type hint: Resource 52
+  🎯 Detected format: basic_phrases
+  📄 Source: weather-hazards.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 53
+============================================================
+  📋 Title/Type hint: Resource 53
+  🎯 Detected format: basic_phrases
+  📄 Source: airport-rideshare.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 54
+============================================================
+  📋 Title/Type hint: Resource 54
+  🎯 Detected format: basic_phrases
+  📄 Source: doordash-delivery.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 55
+============================================================
+  📋 Title/Type hint: Resource 55
+  🎯 Detected format: basic_phrases
+  📄 Source: lyft-driver-essentials.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 56
+============================================================
+  📋 Title/Type hint: Resource 56
+  🎯 Detected format: basic_phrases
+  📄 Source: multi-app-strategy.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 57
+============================================================
+  📋 Title/Type hint: Resource 57
+  🎯 Detected format: basic_phrases
+  📄 Source: platform-ratings-mastery.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 58
+============================================================
+  📋 Title/Type hint: Resource 58
+  🎯 Detected format: basic_phrases
+  📄 Source: tax-and-expenses.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+============================================================
+🔄 Processing Resource 59
+============================================================
+  📋 Title/Type hint: Resource 59
+  🎯 Detected format: basic_phrases
+  📄 Source: uber-driver-essentials.md
+  ✓ Extracted 0 phrase pairs
+  ❌ No phrases found
+
+================================================================================
+📊 REGENERATION SUMMARY
+================================================================================
+✅ Successful: 23 resources
+❌ Failed: 33 resources
+⏱️  Total time: 46.3 minutes
+
+✅ Successful: 1, 2, 4, 5, 6, 9, 11, 12, 14, 15, 16, 17, 19, 20, 22, 23, 25, 26, 27, 29, 30, 31, 33
+
+❌ Failed: 7, 10, 13, 18, 21, 28, 32, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59
+
+📋 Full log: /mnt/c/Users/brand/Development/Project_Workspace/active-development/hablas/scripts/complete-regeneration-log.txt
+================================================================================
