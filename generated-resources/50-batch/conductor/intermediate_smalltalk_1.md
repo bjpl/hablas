@@ -559,4 +559,208 @@ Aprenderás a mantener conversaciones ligeras y naturales con tus pasajeros sobr
 │ **Usa cuando**: Es hora laboral y el pasajero parece    │
 │ profesional                                              │
 │ **Ejemplo real**: Son las 8am un lunes, recoges a       │
-│ alguien con laptop, preguntas
+│ alguien con laptop, preguntas casualmente                │
+│                                                          │
+│ 💡 **TIP**: Esta pregunta abre posibilidad de           │
+│ conversación sobre su trabajo sin ser invasivo.          │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Off to work?" = ¿A trabajar? = [of tuu work]
+- "Work day?" = ¿Día de trabajo? = [work dei]
+
+---
+
+### Frase 25: Preguntando sobre fin de semana
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Any plans for the weekend?"               │
+│                                                          │
+│ 🗣️ **Español**: ¿Algún plan para el fin de semana?      │
+│ 🔊 **Pronunciación**: [E-nii planz for da WIIK-end]     │
+│                                                          │
+│ **Usa cuando**: Es jueves o viernes y quieres hacer     │
+│ conversación ligera                                      │
+│ **Ejemplo real**: Viernes por la tarde, pasajero se ve  │
+│ relajado, preguntas sobre sus planes                     │
+│                                                          │
+│ 💡 **TIP**: Esta es una pregunta muy común en USA para  │
+│ small talk, especialmente viernes.                       │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Do you have plans this weekend?" = ¿Tienes planes este fin de semana? = [doo yoo hav planz dis WIIK-end]
+- "Big weekend coming up?" = ¿Gran fin de semana próximo? = [big WIIK-end KO-ming up]
+
+---
+
+### Frase 26: Comentando sobre hora de viaje
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Early start today!"                       │
+│                                                          │
+│ 🗣️ **Español**: ¡Empezó temprano hoy!                   │
+│ 🔊 **Pronunciación**: [ER-li start tu-DEI]              │
+│                                                          │
+│ **Usa cuando**: Recoges pasajero muy temprano (6-7am)   │
+│ **Ejemplo real**: Son las 6:30am, pasajero se ve        │
+│ cansado, comentas sobre la hora temprana                 │
+│                                                          │
+│ 💡 **TIP**: Este tipo de comentario compartido crea     │
+│ conexión y puede iniciar conversación.                   │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "You're up early!" = ¡Estás despierto temprano! = [yoor up ER-li]
+- "Long day ahead?" = ¿Día largo por delante? = [long dei a-HED]
+
+---
+
+### Frase 27: Respondiendo a quejas sobre tráfico
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Yeah, it's been like this all week."      │
+│                                                          │
+│ 🗣️ **Español**: Sí, ha estado así toda la semana.       │
+│ 🔊 **Pronunciación**: [ya, its bin laik dis ol wiik]    │
+│                                                          │
+│ **Usa cuando**: Pasajero se queja del tráfico           │
+│ **Ejemplo real**: Pasajero comenta "This traffic is     │
+│ terrible!" Tú respondes validando su frustración         │
+│                                                          │
+│ 💡 **TIP**: Validar quejas del pasajero sobre cosas     │
+│ fuera de tu control muestra empatía.                     │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I know, right?" = Lo sé, ¿verdad? = [ai noh, rait]
+- "Tell me about it!" = ¡Ni me digas! = [tel mii a-BAUT it]
+
+---
+
+### Frase 28: Cerrando conversación educadamente
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'll let you relax for the rest of the    │
+│              ride."                                      │
+│                                                          │
+│ 🗣️ **Español**: Te dejaré relajarte el resto del viaje. │
+│ 🔊 **Pronunciación**: [ail let yoo ri-LAKS for da rest  │
+│                       ov da raid]                        │
+│                                                          │
+│ **Usa cuando**: Conversación se vuelve breve y pasajero │
+│ parece cansado o distraído                               │
+│ **Ejemplo real**: Después de charlar un poco, pasajero  │
+│ da respuestas cortas. Cierras conversación cortésmente   │
+│                                                          │
+│ 💡 **TIP**: No todos quieren charlar. Saber cuándo      │
+│ parar es tan importante como saber iniciar.              │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Feel free to relax" = Siéntete libre de relajarte = [fiil frii tuu ri-LAKS]
+- "I'll let you enjoy the ride" = Te dejo disfrutar el viaje = [ail let yoo en-JOI da raid]
+
+---
+
+### Frase 29: Comentario final positivo
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "It was nice chatting with you!"           │
+│                                                          │
+│ 🗣️ **Español**: ¡Fue agradable charlar contigo!         │
+│ 🔊 **Pronunciación**: [it waz nais CHA-ting with yoo]   │
+│                                                          │
+│ **Usa cuando**: Al final de viaje donde hubo buena      │
+│ conversación                                             │
+│ **Ejemplo real**: Después de platicar durante el viaje, │
+│ te despides reconociendo la conversación                 │
+│                                                          │
+│ 💡 **TIP**: Cerrar con nota positiva sobre la           │
+│ conversación aumenta probabilidad de buena propina.      │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Enjoyed talking to you!" = ¡Disfruté platicando contigo! = [en-JOID TO-king tuu yoo]
+- "Great conversation!" = ¡Gran conversación! = [greit kon-ver-SEI-shon]
+
+---
+
+### Frase 30: Invitación a calificar positivamente
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "If you had a good experience, I'd really  │
+│              appreciate a five-star rating!"             │
+│                                                          │
+│ 🗣️ **Español**: Si tuviste una buena experiencia, de    │
+│ verdad apreciaría una calificación de cinco estrellas!   │
+│ 🔊 **Pronunciación**: [if yoo had a gud ik-SPEER-i-ens, │
+│                       aid RI-li a-PREE-shi-eit a faiv-  │
+│                       star REI-ting]                     │
+│                                                          │
+│ **Usa cuando**: Al final de un viaje que fue bien       │
+│ **Ejemplo real**: Pasajero baja del auto después de     │
+│ buen viaje, mencionas esto mientras se despide           │
+│                                                          │
+│ 💡 **TIP**: Pedirlo directamente pero de forma amable   │
+│ aumenta significativamente las calificaciones de 5       │
+│ estrellas. No tengas pena de pedirlo.                    │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Hope you'll give me five stars!" = ¡Espero que me des cinco estrellas! = [houp yool giv mii faiv starz]
+- "Five stars would really help!" = ¡Cinco estrellas ayudaría mucho! = [faiv starz wud RI-li help]
+
+---
+
+# 8. Cerrando la Conversación
+
+## Resumen de Mejores Prácticas para Small Talk
+
+**DO's (Hacer)**:
+✅ Leer el lenguaje corporal - si usan audífonos, no inicies conversación
+✅ Hacer preguntas abiertas que inviten a compartir
+✅ Ser genuino y auténtico en tu interés
+✅ Comentar sobre temas neutrales (clima, ciudad, tráfico)
+✅ Saber cuándo parar si no están interesados
+
+**DON'Ts (No Hacer)**:
+❌ Preguntar sobre política o religión
+❌ Hacer comentarios personales sobre apariencia
+❌ Ser demasiado insistente si no quieren hablar
+❌ Compartir problemas personales profundos
+❌ Interrumpir si están en llamada o trabajando
+
+---
+
+# Tarjeta de Referencia Rápida
+
+## Iniciadores de Conversación
+1. "How's it going today?" - Saludo casual
+2. "Beautiful weather!" - Comentario sobre clima
+3. "Traffic is pretty heavy" - Sobre el tráfico
+4. "Are you from around here?" - Sobre la ciudad
+
+## Temas Seguros
+- Clima y estaciones del año
+- Tráfico y transporte
+- La ciudad y sus cambios
+- Eventos locales
+- Planes de fin de semana
+
+## Cerrar Conversación
+- "I'll let you relax" - Dar espacio
+- "It was nice chatting!" - Despedida positiva
+- "Hope you have a great day!" - Deseo final
+
+## Tips Culturales
+- Los estadounidenses valoran el small talk
+- Es normal hablar con extraños brevemente
+- "How are you?" no siempre requiere respuesta honesta
+- Silencio cómodo también está bien
+
+---
+
+**¡Éxito en tus conversaciones!**
+
+Dominar el small talk en inglés no solo mejora tu experiencia como conductor, sino que también aumenta tus propinas y calificaciones significativamente. Recuerda: la autenticidad y el respeto siempre ganan.

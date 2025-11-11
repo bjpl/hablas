@@ -560,4 +560,186 @@ Dominarás las frases esenciales para saludar profesionalmente y confirmar la id
 │ **Ejemplo real**: Recoges a mujer sola de noche en      │
 │ área poco iluminada                                      │
 │                                                          │
-│ 💡 **TIP**: Por segur
+│ 💡 **TIP**: Por seguridad, siempre verifica placas.     │
+│ Protege tanto al conductor como al pasajero.             │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Check the last 4 digits" = Verifica los últimos 4 dígitos = [chek da last for DIJ-its]
+- "Does it match?" = ¿Coincide? = [daz it match]
+
+---
+
+# 7. Errores Comunes y Cómo Corregirlos
+
+### Frase 25: Cuando confundiste el nombre
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm sorry, I thought you were someone     │
+│              else."                                      │
+│                                                          │
+│ 🗣️ **Español**: Disculpa, pensé que eras otra persona.  │
+│ 🔊 **Pronunciación**: [aim SOR-ii, ai thot yuu wer      │
+│                       SOM-uan els]                       │
+│                                                          │
+│ **Usa cuando**: Confundiste a alguien con tu pasajero   │
+│ **Ejemplo real**: Confirmaste mal y la persona          │
+│ equivocada subió. Te disculpas profesionalmente          │
+│                                                          │
+│ 💡 **TIP**: Siempre verifica el nombre ANTES de que     │
+│ entre al auto para evitar esta situación.                │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+### Frase 26: Corrigiendo destino equivocado
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Let me update that in the app real quick."│
+│                                                          │
+│ 🗣️ **Español**: Déjame actualizar eso en la app rápido. │
+│ 🔊 **Pronunciación**: [let mii UP-deit that in di ap    │
+│                       riil kwik]                         │
+│                                                          │
+│ **Usa cuando**: El destino en la app está incorrecto    │
+│ **Ejemplo real**: Pasajero menciona un destino diferente│
+│ al de la app, actualizas antes de arrancar               │
+│                                                          │
+│ 💡 **TIP**: "Real quick" = muy rápido. Frase común en   │
+│ inglés americano.                                        │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Let me fix that" = Déjame arreglar eso = [let mii fiks that]
+- "One second" = Un segundo = [wun SEK-ond]
+
+---
+
+### Frase 27: Cuando llegas tarde
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Sorry for the wait. Traffic was crazy."   │
+│                                                          │
+│ 🗣️ **Español**: Disculpa la espera. El tráfico estaba   │
+│ terrible.                                                │
+│ 🔊 **Pronunciación**: [SOR-ii for da weit. TRA-fik waz  │
+│                       KREI-zi]                           │
+│                                                          │
+│ **Usa cuando**: Llegaste tarde a recoger al pasajero    │
+│ **Ejemplo real**: Tráfico te retrasó 5+ minutos.        │
+│ Te disculpas inmediatamente al llegar                    │
+│                                                          │
+│ 💡 **TIP**: Sé honesto sobre demoras. Los pasajeros     │
+│ aprecian la comunicación.                                │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Sorry I'm late" = Disculpa que llegué tarde = [SOR-ii aim leit]
+- "Thanks for waiting" = Gracias por esperar = [thanks for WEIT-ing]
+
+---
+
+### Frase 28: Ofreciendo compensación
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Let me give you a complimentary water to  │
+│              make up for it."                            │
+│                                                          │
+│ 🗣️ **Español**: Déjame darte un agua de cortesía para   │
+│ compensar.                                               │
+│ 🔊 **Pronunciación**: [let mii giv yuu a kom-pli-MEN-   │
+│                       ta-rii WA-ter tuu meik up for it] │
+│                                                          │
+│ **Usa cuando**: Quieres compensar por algún inconveniente│
+│ **Ejemplo real**: Llegaste tarde o hubo confusión.      │
+│ Ofreces algo extra como gesto de disculpa                │
+│                                                          │
+│ 💡 **TIP**: Pequeños gestos pueden salvar una mala      │
+│ calificación y mostrar profesionalismo.                  │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "To make up for the delay" = Para compensar el retraso = [tuu meik up for da di-LEI]
+- "As an apology" = Como disculpa = [az an a-POL-o-ji]
+
+---
+
+### Frase 29: Cuando no encuentras la ubicación
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'm having trouble finding you. Can you   │
+│              send me your exact location?"               │
+│                                                          │
+│ 🗣️ **Español**: Estoy teniendo problemas encontrándote. │
+│ ¿Puedes enviarme tu ubicación exacta?                    │
+│ 🔊 **Pronunciación**: [aim HAV-ing TRO-bel FAIN-ding    │
+│                       yuu. kan yuu send mii yor          │
+│                       eg-ZAKT lo-KEI-shon]               │
+│                                                          │
+│ **Usa cuando**: El GPS no te lleva al lugar correcto    │
+│ **Ejemplo real**: Llegas al área pero no ves al         │
+│ pasajero. Pides ayuda para ubicarlo                      │
+│                                                          │
+│ 💡 **TIP**: La app permite compartir ubicación. Es más  │
+│ preciso que describir verbalmente.                       │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Where exactly are you?" = ¿Dónde estás exactamente? = [wer eg-ZAKT-li ar yuu]
+- "Can you describe what you see?" = ¿Puedes describir lo que ves? = [kan yuu di-SKRAIB wat yuu sii]
+
+---
+
+### Frase 30: Despedida positiva después de problema
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Thanks for your patience. Have a great    │
+│              day!"                                       │
+│                                                          │
+│ 🗣️ **Español**: Gracias por tu paciencia. ¡Que tengas   │
+│ un gran día!                                             │
+│ 🔊 **Pronunciación**: [thanks for yor PEI-shens. hav a  │
+│                       greit dei]                         │
+│                                                          │
+│ **Usa cuando**: Hubo algún inconveniente pero lo        │
+│ resolviste                                               │
+│ **Ejemplo real**: Después de demora o confusión, te     │
+│ despides agradeciendo la paciencia del pasajero          │
+│                                                          │
+│ 💡 **TIP**: Terminar en nota positiva puede convertir   │
+│ una experiencia negativa en calificación de 5 estrellas.│
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I appreciate your understanding" = Aprecio tu comprensión = [ai a-PREE-shi-eit yor un-der-STAN-ding]
+- "Sorry again for the trouble" = Disculpa de nuevo por el problema = [SOR-ii a-GEIN for da TRO-bel]
+
+---
+
+# Tarjeta de Referencia Rápida
+
+## Saludos Iniciales
+- "Hi! How are you?" - Saludo estándar
+- "Hey! Welcome!" - Casual y amigable
+- "Good morning/afternoon/evening!" - Formal por hora
+
+## Confirmación
+- "Are you [name]?" - Verificación directa
+- "What's your name?" - Más seguro
+- "Can you check the license plate?" - Máxima seguridad
+
+## Verificación de Destino
+- "You're going to [place], right?" - Confirmar
+- "Where are we going today?" - Pregunta abierta
+- "Let me update that in the app" - Corregir destino
+
+## Cortesía
+- "Is the temperature okay?" - Comodidad
+- "Do you need anything?" - Servicio extra
+- "Thanks for riding with me!" - Despedida
+
+---
+
+**¡Éxito en tus viajes!**
+
+Dominar estos saludos y confirmaciones te ayudará a crear una excelente primera impresión, evitar confusiones, y obtener mejores calificaciones consistentemente.

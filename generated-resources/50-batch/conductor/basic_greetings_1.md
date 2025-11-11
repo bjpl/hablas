@@ -548,4 +548,215 @@ Este manual te enseña las frases esenciales para saludar y confirmar la identid
 
 ### Frase 23: Con mascotas
 
-┌─────────────────────────────────────────────────
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Is that your dog? So cute!"                │
+│                                                          │
+│ 🗣️ **Español**: ¿Es tu perro? ¡Qué lindo!               │
+│ 🔊 **Pronunciación**: [iz that yor dog? so kyoot]       │
+│                                                          │
+│ **Usa cuando**: El pasajero trae una mascota             │
+│ **Ejemplo real**: Pasajero entra con un perro pequeño.  │
+│ Comentas de manera amigable sobre la mascota             │
+│                                                          │
+│ 💡 **TIP**: Siempre pregunta si está bien que la        │
+│ mascota entre. Algunas plataformas requieren aprobación. │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "What's your dog's name?" = ¿Cómo se llama tu perro? = [wats yor dogz neim]
+- "Pets are welcome!" = ¡Las mascotas son bienvenidas! = [pets ar WEL-kum]
+
+---
+
+### Frase 24: Cuando el pasajero lleva niños pequeños
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Do you need help with the car seat?"       │
+│                                                          │
+│ 🗣️ **Español**: ¿Necesitas ayuda con la silla de auto?  │
+│ 🔊 **Pronunciación**: [doo yoo need help with da kar    │
+│                       siit]                              │
+│                                                          │
+│ **Usa cuando**: Pasajero viaja con niños pequeños       │
+│ **Ejemplo real**: Ves a un padre con bebé y silla de    │
+│ auto. Ofreces ayuda para instalarla correctamente        │
+│                                                          │
+│ 💡 **TIP**: En algunos estados es requerido por ley que │
+│ niños usen car seat. Familiarízate con las reglas.      │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "The car seat goes in the middle" = La silla va en medio = [da kar siit gohz in da MID-el]
+- "Is the car seat secure?" = ¿Está segura la silla? = [iz da kar siit si-KYOOR]
+
+---
+
+### Frase 25: Ofreciendo agua embotellada
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Would you like a bottle of water?"         │
+│                                                          │
+│ 🗣️ **Español**: ¿Quieres una botella de agua?           │
+│ 🔊 **Pronunciación**: [wud yoo laik a BA-tel ov WA-ter] │
+│                                                          │
+│ **Usa cuando**: Quieres ofrecer un extra de servicio    │
+│ **Ejemplo real**: Día caluroso, tienes botellas de agua │
+│ en el auto y ofreces una al pasajero                     │
+│                                                          │
+│ 💡 **TIP**: Tener agua, dulces o toallitas húmedas      │
+│ puede aumentar tus propinas significativamente.          │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Help yourself to water" = Sírvete agua = [help yor-SELF tu WA-ter]
+- "There's water in the back" = Hay agua atrás = [ders WA-ter in da bak]
+
+---
+
+### Frase 26: Despedida al finalizar viaje
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Here we are! Have a great day!"            │
+│                                                          │
+│ 🗣️ **Español**: ¡Aquí estamos! ¡Que tengas un gran día! │
+│ 🔊 **Pronunciación**: [hiir wi ar! hav a greit dei]     │
+│                                                          │
+│ **Usa cuando**: Llegas al destino final                 │
+│ **Ejemplo real**: Te detienes frente al destino, volteas│
+│ y dices esto con energía positiva                        │
+│                                                          │
+│ 💡 **TIP**: Una despedida positiva deja buena impresión │
+│ y puede resultar en mejores calificaciones.             │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Have a good one!" = ¡Que te vaya bien! = [hav a gud wun]
+- "Take care!" = ¡Cuídate! = [teik kair]
+- "Enjoy your day!" = ¡Disfruta tu día! = [en-JOI yor dei]
+
+---
+
+### Frase 27: Deseando buen viaje (aeropuerto)
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Have a safe flight!"                       │
+│                                                          │
+│ 🗣️ **Español**: ¡Que tengas un vuelo seguro!            │
+│ 🔊 **Pronunciación**: [hav a seif flait]                │
+│                                                          │
+│ **Usa cuando**: Dejas pasajero en el aeropuerto         │
+│ **Ejemplo real**: Pasajero baja del auto con maletas en │
+│ la terminal, le deseas buen viaje                        │
+│                                                          │
+│ 💡 **TIP**: Usa "safe flight" para vuelos o "safe       │
+│ travels" para cualquier tipo de viaje.                   │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Have a great trip!" = ¡Que tengas un gran viaje! = [hav a greit trip]
+- "Safe travels!" = ¡Viaja seguro! = [seif TRA-velz]
+
+---
+
+### Frase 28: Agradeciendo por usar el servicio
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Thanks for riding with me!"                │
+│                                                          │
+│ 🗣️ **Español**: ¡Gracias por viajar conmigo!            │
+│ 🔊 **Pronunciación**: [thanks for RAI-ding with mii]    │
+│                                                          │
+│ **Usa cuando**: Antes de que el pasajero baje del auto  │
+│ **Ejemplo real**: Pasajero abre la puerta para salir,   │
+│ volteas y dices esto con una sonrisa                     │
+│                                                          │
+│ 💡 **TIP**: Mostrar agradecimiento hace que los         │
+│ pasajeros se sientan valorados y mejora calificaciones.  │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Thank you for choosing Uber/Lyft!" = ¡Gracias por elegir Uber/Lyft! = [thank yoo for CHOO-zing OO-ber/lift]
+- "I appreciate it!" = ¡Lo aprecio! = [ai a-PREE-shi-eit it]
+
+---
+
+### Frase 29: Respondiendo a propina
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Thank you so much! I really appreciate it!"│
+│                                                          │
+│ 🗣️ **Español**: ¡Muchas gracias! ¡Lo aprecio mucho!     │
+│ 🔊 **Pronunciación**: [thank yoo so much! ai RI-li      │
+│                       a-PREE-shi-eit it]                 │
+│                                                          │
+│ **Usa cuando**: Pasajero te da propina en efectivo      │
+│ **Ejemplo real**: Pasajero te entrega billetes antes de │
+│ bajar, respondes con gratitud genuina                    │
+│                                                          │
+│ 💡 **TIP**: Siempre agradece las propinas con          │
+│ entusiasmo, pero nunca las pidas directamente.           │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "That's very kind of you!" = ¡Eres muy amable! = [thats VER-i kaind ov yoo]
+- "You didn't have to!" = ¡No tenías que hacerlo! = [yoo DID-ent hav too]
+
+---
+
+### Frase 30: Ofreciendo ayuda con puertas
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Let me get the door for you."              │
+│                                                          │
+│ 🗣️ **Español**: Déjame abrirte la puerta.               │
+│ 🔊 **Pronunciación**: [let mii get da dor for yoo]      │
+│                                                          │
+│ **Usa cuando**: Pasajero mayor, con equipaje pesado, o  │
+│ en viaje premium                                         │
+│ **Ejemplo real**: Llegas al destino, sales rápido del   │
+│ auto para abrir la puerta trasera                        │
+│                                                          │
+│ 💡 **TIP**: Este nivel de servicio es excepcional y     │
+│ puede resultar en propinas generosas y 5 estrellas.      │
+└─────────────────────────────────────────────────────────┘
+
+---
+
+# 8. Frases de Emergencia
+
+Para situaciones de emergencia, consulta los manuales específicos de seguridad para conductores.
+
+---
+
+# 9. Tarjeta de Referencia Rápida
+
+## Saludos Básicos
+1. "Good morning/afternoon/evening!" - Saludos formales
+2. "Hey! How's it going?" - Saludo casual
+3. "Hi! Welcome!" - Bienvenida amigable
+
+## Confirmación de Pasajero
+4. "Are you [name]?" - Confirmación directa
+5. "What's your name?" - Pregunta de verificación
+6. "I'm looking for [name]" - Búsqueda en área concurrida
+
+## Verificación de Destino
+7. "You're going to [location], right?" - Confirmar destino
+8. "Where are we headed today?" - Pregunta abierta
+9. "I'll take the highway. Is that okay?" - Confirmar ruta
+
+## Comodidades
+10. "Is the temperature okay?" - Temperatura
+11. "Feel free to open the window" - Ventanas
+12. "I have a charger if you need one" - Cargador
+
+## Despedidas
+13. "Here we are! Have a great day!" - Despedida general
+14. "Have a safe flight!" - Aeropuerto
+15. "Thanks for riding with me!" - Agradecimiento
+
+---
+
+**¡Éxito en tus viajes!**
+
+Recuerda: Una buena primera impresión y comunicación clara son la clave para obtener 5 estrellas y mejores propinas. Practica estas frases hasta que se sientan naturales.

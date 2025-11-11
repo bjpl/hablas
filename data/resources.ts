@@ -186,7 +186,7 @@ export const resources: Resource[] = [
   {
     "id": 11,
     "title": "Saludos y Confirmación de Pasajeros - Var 1",
-    "description": "23 frases para saludos y confirmación de pasajeros con ejemplos prácticos",
+    "description": "30 frases para saludos y confirmación de pasajeros con ejemplos prácticos",
     "type": "pdf",
     "category": "conductor",
     "level": "basico",
@@ -209,7 +209,7 @@ export const resources: Resource[] = [
   {
     "id": 12,
     "title": "Direcciones y Navegación GPS - Var 1",
-    "description": "Guía completa con frases prácticas y ejemplos para conductores",
+    "description": "30 frases de direcciones y navegación GPS con ejemplos para conductores",
     "type": "pdf",
     "category": "conductor",
     "level": "basico",
@@ -255,7 +255,7 @@ export const resources: Resource[] = [
   {
     "id": 14,
     "title": "Saludos y Confirmación de Pasajeros - Var 2",
-    "description": "24 frases prácticas para saludos y confirmación de pasajeros con ejemplos",
+    "description": "30 frases prácticas para saludos y confirmación con ejemplos para conductores",
     "type": "pdf",
     "category": "conductor",
     "level": "basico",
@@ -278,7 +278,7 @@ export const resources: Resource[] = [
   {
     "id": 15,
     "title": "Direcciones y Navegación GPS - Var 2",
-    "description": "Guía completa con frases prácticas y ejemplos para conductores",
+    "description": "30 frases de direcciones y navegación GPS con ejemplos para conductores",
     "type": "pdf",
     "category": "conductor",
     "level": "basico",
@@ -301,7 +301,7 @@ export const resources: Resource[] = [
   {
     "id": 16,
     "title": "Small Talk con Pasajeros - Var 1",
-    "description": "24 frases prácticas para conversación con pasajeros con ejemplos",
+    "description": "30 frases prácticas para conversación con pasajeros con ejemplos",
     "type": "pdf",
     "category": "conductor",
     "level": "intermedio",

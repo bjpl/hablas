@@ -593,4 +593,70 @@ Dominarás el vocabulario esencial de navegación GPS y direcciones en inglés. 
 ┌─────────────────────────────────────────────────────────┐
 │ **English**: "Where should I park?"                      │
 │                                                          │
-│ 
+│ 🗣️ **Español**: ¿Dónde debo estacionarme?               │
+│ 🔊 **Pronunciación**: [wer shud ai park]                │
+│                                                          │
+│ **Usa cuando**: Llegas pero no está claro dónde parar   │
+│ **Ejemplo real**: Llegas a un edificio grande y no      │
+│ sabes si estacionar en frente o en estacionamiento      │
+│                                                          │
+│ 💡 **TIP**: "In front" = enfrente. "In the back" = atrás│
+│ "Parking lot" = estacionamiento.                         │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Should I wait here?" = ¿Espero aquí? = [shud ai weit hiir]
+- "Is this spot okay?" = ¿Está bien este lugar? = [iz dis spot o-KEI]
+
+---
+
+### Frase 30: Preguntando sobre punto de recogida
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "I'll be at the main entrance."            │
+│                                                          │
+│ 🗣️ **Español**: Estaré en la entrada principal.         │
+│ 🔊 **Pronunciación**: [ail bii at da mein EN-trans]     │
+│                                                          │
+│ **Usa cuando**: Llamando al pasajero para indicar donde │
+│ estás esperando                                          │
+│ **Ejemplo real**: Llegas a edificio grande, llamas para │
+│ decir exactamente dónde estás                            │
+│                                                          │
+│ 💡 **TIP**: Sé específico sobre tu ubicación: "south    │
+│ entrance" (entrada sur), "door 5" (puerta 5), etc.      │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "I'm at the front door" = Estoy en la puerta principal = [aim at da front dor]
+- "Look for the blue car" = Busca el auto azul = [luk for da blu kar]
+
+---
+
+# 8. Tarjeta de Referencia Rápida
+
+## Vocabulario Esencial GPS
+
+**Direcciones Básicas**:
+- Turn right = Gira derecha = [tern rait]
+- Turn left = Gira izquierda = [tern left]
+- Go straight = Sigue derecho = [go streit]
+- Make a U-turn = Da vuelta en U = [meik a YOO-tern]
+
+**Distancias**:
+- 500 feet = 150 metros aprox.
+- Quarter mile = 400 metros aprox.
+- Half mile = 800 metros aprox.
+- Mile = 1.6 kilómetros aprox.
+
+**Ubicaciones**:
+- Next to = Al lado de = [nekst tu]
+- Across from = Enfrente de = [a-KROS from]
+- Between = Entre = [bi-TWEEN]
+- On the corner = En la esquina = [on da KOR-ner]
+
+---
+
+**¡Éxito en tus viajes!**
+
+Dominar estas frases te ayudará a navegar con confianza y comunicarte efectivamente con tus pasajeros, resultando en mejores calificaciones y experiencias más fluidas. 

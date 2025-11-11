@@ -577,4 +577,121 @@ Este manual te enseña el vocabulario esencial para entender direcciones en ingl
 │ 🔊 **Pronunciación**: [wiir hiir]                        │
 │                                                          │
 │ **Usa cuando**: Llegas al destino final                 │
-│
+│ **Ejemplo real**: Te detienes frente al destino,        │
+│ volteas y anuncias la llegada                            │
+│                                                          │
+│ 💡 **TIP**: Anuncia la llegada claramente. Algunos      │
+│ pasajeros están distraídos con el teléfono.              │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "We made it!" = ¡Llegamos! = [wii meid it]
+- "This is your stop" = Esta es tu parada = [dis iz yor stop]
+
+---
+
+### Frase 29: Confirmando ubicación exacta
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Is this the right spot?"                   │
+│                                                          │
+│ 🗣️ **Español**: ¿Es este el lugar correcto?             │
+│ 🔊 **Pronunciación**: [iz dis da rait spot]             │
+│                                                          │
+│ **Usa cuando**: Quieres confirmar que estás exactamente │
+│ donde el pasajero quiere                                 │
+│ **Ejemplo real**: Llegas al área indicada pero hay      │
+│ múltiples entradas, confirmas con el pasajero            │
+│                                                          │
+│ 💡 **TIP**: SPOT = lugar/punto específico. Muy común    │
+│ en inglés conversacional.                                │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Is this good?" = ¿Está bien aquí? = [iz dis gud]
+- "Where would you like me to stop?" = ¿Dónde quieres que pare? = [wer wud yuu laik mii tuu stop]
+
+---
+
+### Frase 30: Despedida con direcciones
+
+┌─────────────────────────────────────────────────────────┐
+│ **English**: "Have a great day! Good luck finding it!"   │
+│                                                          │
+│ 🗣️ **Español**: ¡Que tengas un gran día! ¡Suerte        │
+│ encontrándolo!                                           │
+│ 🔊 **Pronunciación**: [hav a greit dei! gud luk          │
+│                       FAIN-ding it]                      │
+│                                                          │
+│ **Usa cuando**: Dejas al pasajero y dieron direcciones  │
+│ a un lugar específico                                    │
+│ **Ejemplo real**: Pasajero preguntó cómo llegar a algún │
+│ lugar, le diste direcciones y te despides                │
+│                                                          │
+│ 💡 **TIP**: Agregar "good luck" muestra que te importa  │
+│ y crea una despedida más personal.                       │
+└─────────────────────────────────────────────────────────┘
+
+**Variaciones**:
+- "Hope you find it easily!" = ¡Espero que lo encuentres fácil! = [houp yuu faind it IIZ-i-lii]
+- "Take care!" = ¡Cuídate! = [teik kair]
+
+---
+
+# 8. Vocabulario Esencial de Calles y Direcciones
+
+## Tipos de Calles
+- **Street** [striit] = Calle
+- **Avenue** [AV-en-yuu] = Avenida
+- **Boulevard** [BUU-le-vard] = Bulevar
+- **Drive** [draiv] = Camino
+- **Road** [roud] = Carretera
+- **Lane** [lein] = Callejón/Carril
+- **Way** [wei] = Vía
+- **Court** [kort] = Corte (calle sin salida)
+
+## Números Ordinales (para calles)
+- 1st = First [first]
+- 2nd = Second [SEK-ond]
+- 3rd = Third [third]
+- 4th = Fourth [forth]
+- 5th = Fifth [fifth]
+- 10th = Tenth [tenth]
+- 20th = Twentieth [TWEN-ti-eth]
+
+## Direcciones Cardinales
+- North = Norte = [north]
+- South = Sur = [sauth]
+- East = Este = [iist]
+- West = Oeste = [west]
+
+---
+
+# 9. Tarjeta de Referencia Rápida
+
+## GPS Básico
+- Turn right = Gira derecha
+- Turn left = Gira izquierda
+- Go straight = Sigue derecho
+- Make a U-turn = Da vuelta en U
+
+## Confirmación de Dirección
+- "Is this the correct address?" = ¿Es la dirección correcta?
+- "Going to [place], right?" = Vas a [lugar], ¿verdad?
+- "What's the house number?" = ¿Cuál es el número?
+
+## Problemas de Navegación
+- "My GPS lost signal" = Mi GPS perdió señal
+- "Can you help me with directions?" = ¿Me ayudas con direcciones?
+- "I'm here. Where are you?" = Ya llegué. ¿Dónde estás?
+
+## Tráfico y Demoras
+- "There's heavy traffic" = Hay mucho tráfico
+- "It might take 10 more minutes" = Puede tomar 10 minutos más
+- "Should I take a different route?" = ¿Debo tomar otra ruta?
+
+---
+
+**¡Éxito navegando!**
+
+Dominar estas frases de navegación te ayudará a comunicarte efectivamente sobre rutas, direcciones y destinos, resultando en viajes más fluidos y mejores calificaciones.
