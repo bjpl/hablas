@@ -1,0 +1,365 @@
+# App Screen Phrases Part 2 - Audio Script
+## Frases de Pantalla de App Parte 2
+
+**Duration**: 8 minutes | **Level**: Beginner | **Category**: Delivery Drivers
+
+---
+
+## Welcome
+
+¡Hola de nuevo, repartidor! Bienvenido a la segunda parte de las frases de tu app.
+
+En el audio anterior aprendiste las frases desde aceptar un pedido hasta recoger la comida.
+
+Ahora vas a aprender las 20 frases que ves cuando entregas la comida al cliente. Estas son las palabras para la parte final y más importante: la entrega que te gana las propinas.
+
+Cada frase la escucharás DOS veces. Después te explico exactamente qué hacer cuando la veas.
+
+¿Listo para completar tu entrenamiento de app? ¡Empecemos!
+
+---
+
+## Phrase 1: DELIVERING ORDER
+
+**Lo que ves:** Estado cuando vas al cliente.
+
+### English:
+"Delivering order"
+"Delivering order"
+
+### Spanish:
+Entregando pedido.
+
+Tu app cambia a este estado automáticamente después de confirmar la recogida. El cliente ve que vienes con su comida.
+
+---
+
+## Phrase 2: Customer location
+
+**Lo que ves:** Mapa con la casa del cliente.
+
+### English:
+"Customer location"
+"Customer location"
+
+### Spanish:
+Ubicación del cliente.
+
+El punto en el mapa que muestra exactamente dónde entregar. Verifica esto antes de salir del restaurante.
+
+---
+
+## Phrase 3: Arriving in
+
+**Lo que ves:** Tiempo para llegar.
+
+### English:
+"Arriving in"
+"Arriving in"
+
+### Spanish:
+Llegando en.
+
+Ejemplo: "Arriving in eight minutes" significa llegando en ocho minutos. El GPS calcula esto automáticamente.
+
+---
+
+## Phrase 4: Delivery notes
+
+**Lo que ves:** Instrucciones del cliente.
+
+### English:
+"Delivery notes"
+"Delivery notes"
+
+### Spanish:
+Notas de entrega.
+
+SIEMPRE lee esto antes de llegar. Puede decir "Leave at door, ring bell" o "Apartment 4B". Información crítica.
+
+---
+
+## Phrase 5: Gate code
+
+**Lo que ves:** Código para entrar.
+
+### English:
+"Gate code"
+"Gate code"
+
+### Spanish:
+Código de portón.
+
+Ejemplo: "Gate code: hashtag two-five-four-seven". Memoriza o copia este número antes de llegar. Lo necesitas para entrar.
+
+---
+
+## Phrase 6: Apartment number
+
+**Lo que ves:** Número de apartamento.
+
+### English:
+"Apartment number"
+"Apartment number"
+
+### Spanish:
+Número de apartamento.
+
+Ejemplo: "Apartment 4B" se lee "apartment four B". La letra puede ser A, B, C, o D. Muy importante en edificios grandes.
+
+---
+
+## Phrase 7: Leave at door
+
+**Lo que ves:** Instrucción de entrega sin contacto.
+
+### English:
+"Leave at door"
+"Leave at door"
+
+### Spanish:
+Dejar en la puerta.
+
+Esto significa: deja la comida, toca el timbre, toma foto, retrocede. No esperes al cliente. Entrega sin contacto.
+
+---
+
+## Phrase 8: Ring bell
+
+**Lo que ves:** Instrucción para tocar timbre.
+
+### English:
+"Ring bell"
+"Ring bell"
+
+### Spanish:
+Tocar timbre.
+
+Toca el timbre o llama a la puerta. Espera unos segundos para que el cliente abra.
+
+---
+
+## Phrase 9: CALL CUSTOMER
+
+**Lo que ves:** Botón para llamar.
+
+### English:
+"Call customer"
+"Call customer"
+
+### Spanish:
+Llamar al cliente.
+
+Presiona si no encuentras la dirección, el portón está cerrado, o hay confusión. La app llama sin mostrar tu número personal.
+
+---
+
+## Phrase 10: SEND MESSAGE
+
+**Lo que ves:** Botón para escribir mensaje.
+
+### English:
+"Send message"
+"Send message"
+
+### Spanish:
+Enviar mensaje.
+
+Usa esto si prefieres escribir en vez de llamar. Ejemplo: "I'm outside" significa estoy afuera.
+
+---
+
+## Phrase 11: DELIVERY LOCATION REACHED
+
+**Lo que ves:** Confirmación de llegada.
+
+### English:
+"Delivery location reached"
+"Delivery location reached"
+
+### Spanish:
+Ubicación de entrega alcanzada.
+
+Tu app detecta automáticamente que llegaste. Ahora puedes completar la entrega.
+
+---
+
+## Phrase 12: TAKE PHOTO OF DELIVERY
+
+**Lo que ves:** Instrucción para tomar foto.
+
+### English:
+"Take photo of delivery"
+"Take photo of delivery"
+
+### Spanish:
+Tomar foto de la entrega.
+
+MUY IMPORTANTE: Toma una foto clara que muestre la comida en la puerta. Esta es tu protección si el cliente dice que no recibió.
+
+---
+
+## Phrase 13: Required for contactless delivery
+
+**Lo que ves:** Aviso de foto obligatoria.
+
+### English:
+"Required for contactless delivery"
+"Required for contactless delivery"
+
+### Spanish:
+Requerido para entrega sin contacto.
+
+Esto significa que NO puedes completar la entrega sin tomar la foto. Es obligatorio.
+
+---
+
+## Phrase 14: Handed to customer
+
+**Lo que ves:** Opción cuando entregas en persona.
+
+### English:
+"Handed to customer"
+"Handed to customer"
+
+### Spanish:
+Entregado al cliente.
+
+Selecciona esto si le diste la comida directamente al cliente en su mano. Entrega con contacto personal.
+
+---
+
+## Phrase 15: Left at door
+
+**Lo que ves:** Opción para entrega sin contacto.
+
+### English:
+"Left at door"
+"Left at door"
+
+### Spanish:
+Dejado en la puerta.
+
+Selecciona si dejaste la comida en la puerta sin ver al cliente. Entrega sin contacto.
+
+---
+
+## Phrase 16: Left with doorman
+
+**Lo que ves:** Opción para edificios con portería.
+
+### English:
+"Left with doorman"
+"Left with doorman"
+
+### Spanish:
+Dejado con portero.
+
+Selecciona si le diste la comida al portero o guardia de seguridad del edificio. Común en edificios de oficinas o apartamentos de lujo.
+
+---
+
+## Phrase 17: Customer didn't answer
+
+**Lo que ves:** Opción si cliente no responde.
+
+### English:
+"Customer didn't answer"
+"Customer didn't answer"
+
+### Spanish:
+Cliente no contestó.
+
+Usa esto si tocaste, llamaste, esperaste, pero el cliente no abre o no responde. Protege tu tiempo.
+
+---
+
+## Phrase 18: Wrong address
+
+**Lo que ves:** Reporte de error.
+
+### English:
+"Wrong address"
+"Wrong address"
+
+### Spanish:
+Dirección incorrecta.
+
+Usa si la dirección en la app no existe o está equivocada. La plataforma contactará al cliente.
+
+---
+
+## Phrase 19: Unable to deliver
+
+**Lo que ves:** Opción para problemas serios.
+
+### English:
+"Unable to deliver"
+"Unable to deliver"
+
+### Spanish:
+No se pudo entregar.
+
+Usa SOLO si hay problema grave: dirección no existe, cliente canceló al llegar, o situación insegura.
+
+---
+
+## Phrase 20: COMPLETE DELIVERY
+
+**Lo que ves:** Botón verde final.
+
+### English:
+"Complete delivery"
+"Complete delivery"
+
+### Spanish:
+Completar entrega.
+
+¡El botón más satisfactorio! Presiona después de entregar y tomar foto. Esto finaliza el pedido y registra tu pago.
+
+---
+
+## Quick Practice
+
+¡Perfecto! Ahora practicamos las diez frases más importantes. Repite cada una.
+
+1. "Delivering order"
+2. "Delivery notes"
+3. "Gate code"
+4. "Leave at door"
+5. "Ring bell"
+6. "Call customer"
+7. "Take photo of delivery"
+8. "Handed to customer"
+9. "Left at door"
+10. "Complete delivery"
+
+---
+
+## Closing
+
+¡Excelente trabajo! Ahora dominas todas las 40 frases de tu app de entregas.
+
+Conoces cada palabra desde aceptar el pedido hasta completar la entrega.
+
+Mi consejo más importante: Lee SIEMPRE las "Delivery notes" y el "Gate code" antes de llegar. Esto previene el 90% de los problemas.
+
+Y SIEMPRE toma una foto clara para "Take photo of delivery". Es tu protección.
+
+Practica buscando estas frases en tu app real mientras escuchas este audio. La combinación de oír y ver es la forma más rápida de aprender.
+
+En una semana, estas frases serán automáticas. No tendrás que pensar, solo actuarás.
+
+¡Felicidades por invertir en tu inglés profesional! Esto te hará ganar más dinero con mejores propinas.
+
+¡Nos vemos en el siguiente audio!
+
+---
+
+**Voice Notes**:
+- Spanish narrator: Warm, encouraging, Latino accent
+- English phrases: Native speaker, 80% speed, clear enunciation
+- Each English phrase repeated twice
+- 3-second pause after each English repetition
+- Emphasize critical safety phrases (photo, gate code, delivery notes)
+- Professional but friendly tone throughout

@@ -1,0 +1,360 @@
+# App Screen Phrases Part 1 - Audio Script
+## Frases de Pantalla de App Parte 1
+
+**Duration**: 8 minutes | **Level**: Beginner | **Category**: Delivery Drivers
+
+---
+
+## Welcome
+
+¡Hola, repartidor! Bienvenido a Hablas. Soy tu instructor de inglés para domiciliarios.
+
+Hoy vas a aprender las frases exactas que ves en tu pantalla cada día. Las palabras en inglés de tu app de entregas que necesitas entender perfectamente.
+
+Este audio te enseña 20 frases que aparecen cuando aceptas pedidos, vas al restaurante, y recoges la comida. Estas son las palabras que controlan tu trabajo diario.
+
+Cada frase la escucharás DOS veces en inglés. Después te digo exactamente qué significa y cuándo la verás.
+
+¿Listo para dominar tu app? ¡Vamos!
+
+---
+
+## Phrase 1: NEW ORDER AVAILABLE
+
+**Lo que ves:** Cuando llega un pedido nuevo.
+
+### English:
+"New order available"
+"New order available"
+
+### Spanish:
+Nuevo pedido disponible.
+
+Esta es la frase más importante en tu app. Cuando la veas, tienes 20 a 30 segundos para decidir si aceptas. Lee rápido toda la información del pedido.
+
+---
+
+## Phrase 2: ACCEPT
+
+**Lo que ves:** Botón verde para tomar el pedido.
+
+### English:
+"Accept"
+"Accept"
+
+### Spanish:
+Aceptar.
+
+Presiona este botón verde cuando quieres el pedido. Una vez que presionas, el pedido es tuyo y debes completarlo.
+
+---
+
+## Phrase 3: DECLINE
+
+**Lo que ves:** Botón para rechazar el pedido.
+
+### English:
+"Decline"
+"Decline"
+
+### Spanish:
+Rechazar.
+
+Presiona si el pedido no te conviene. Puede ser muy lejos, poco pago, o mala zona. Está bien rechazar pedidos.
+
+---
+
+## Phrase 4: Order number
+
+**Lo que ves:** Número de identificación del pedido.
+
+### English:
+"Order number"
+"Order number"
+
+### Spanish:
+Número de orden.
+
+Ejemplo: Order number four-five-two-one. Usa este número cuando hablas con el restaurante para recoger.
+
+---
+
+## Phrase 5: Pickup address
+
+**Lo que ves:** Dirección del restaurante.
+
+### English:
+"Pickup address"
+"Pickup address"
+
+### Spanish:
+Dirección de recogida.
+
+Aquí es donde vas primero a recoger la comida. Tu GPS usa esta dirección automáticamente.
+
+---
+
+## Phrase 6: Delivery address
+
+**Lo que ves:** Dirección del cliente.
+
+### English:
+"Delivery address"
+"Delivery address"
+
+### Spanish:
+Dirección de entrega.
+
+Aquí es donde llevas la comida al cliente. Verifica esta dirección antes de aceptar para saber qué tan lejos está.
+
+---
+
+## Phrase 7: Customer name
+
+**Lo que ves:** Nombre de la persona que ordenó.
+
+### English:
+"Customer name"
+"Customer name"
+
+### Spanish:
+Nombre del cliente.
+
+Memoriza este nombre. Lo necesitas para confirmar en el restaurante y con el cliente.
+
+---
+
+## Phrase 8: Estimated payment
+
+**Lo que ves:** Cuánto ganarás.
+
+### English:
+"Estimated payment"
+"Estimated payment"
+
+### Spanish:
+Pago estimado.
+
+Ejemplo: fifteen dollars and seventy-five cents. Esto incluye tu tarifa base más propina estimada. Es una estimación, puede ser más o menos.
+
+---
+
+## Phrase 9: Distance
+
+**Lo que ves:** Qué tan lejos está.
+
+### English:
+"Distance"
+"Distance"
+
+### Spanish:
+Distancia.
+
+Ejemplo: two point three miles. Recuerda: one mile igual uno punto seis kilómetros. Usa esto para decidir si aceptas.
+
+---
+
+## Phrase 10: Estimated time
+
+**Lo que ves:** Cuánto tiempo tomará.
+
+### English:
+"Estimated time"
+"Estimated time"
+
+### Spanish:
+Tiempo estimado.
+
+Ejemplo: twenty-five minutes. Esto es el tiempo total desde recoger hasta entregar.
+
+---
+
+## Phrase 11: HEADING TO RESTAURANT
+
+**Lo que ves:** Estado cuando vas al restaurante.
+
+### English:
+"Heading to restaurant"
+"Heading to restaurant"
+
+### Spanish:
+Yendo al restaurante.
+
+Tu app cambia a este estado automáticamente después de aceptar. El cliente ve que estás en camino.
+
+---
+
+## Phrase 12: NAVIGATE
+
+**Lo que ves:** Botón para abrir GPS.
+
+### English:
+"Navigate"
+"Navigate"
+
+### Spanish:
+Navegar.
+
+Presiona para abrir Google Maps o Waze. La app envía la dirección automáticamente.
+
+---
+
+## Phrase 13: CALL RESTAURANT
+
+**Lo que ves:** Botón para llamar al restaurante.
+
+### English:
+"Call restaurant"
+"Call restaurant"
+
+### Spanish:
+Llamar al restaurante.
+
+Usa esto si hay problemas o el pedido no está listo. La app llama por ti sin mostrar tu número personal.
+
+---
+
+## Phrase 14: Time remaining
+
+**Lo que ves:** Tiempo para llegar.
+
+### English:
+"Time remaining"
+"Time remaining"
+
+### Spanish:
+Tiempo restante.
+
+Ejemplo: eight minutes. Esto es cuánto falta para llegar según el GPS. Trata de llegar a tiempo.
+
+---
+
+## Phrase 15: Special instructions
+
+**Lo que ves:** Indicaciones del restaurante.
+
+### English:
+"Special instructions"
+"Special instructions"
+
+### Spanish:
+Instrucciones especiales.
+
+Ejemplo: "Use side entrance" significa usa entrada lateral. Lee esto ANTES de llegar al restaurante.
+
+---
+
+## Phrase 16: ARRIVED AT RESTAURANT
+
+**Lo que ves:** Confirmación de llegada.
+
+### English:
+"Arrived at restaurant"
+"Arrived at restaurant"
+
+### Spanish:
+Llegaste al restaurante.
+
+Desliza o presiona para confirmar que llegaste. Esto le avisa al cliente que estás recogiendo su comida.
+
+---
+
+## Phrase 17: Swipe to confirm
+
+**Lo que ves:** Instrucción para confirmar.
+
+### English:
+"Swipe to confirm"
+"Swipe to confirm"
+
+### Spanish:
+Desliza para confirmar.
+
+Desliza tu dedo sobre el botón para confirmar que llegaste. Algunas apps usan 'tap to confirm' que significa presiona para confirmar.
+
+---
+
+## Phrase 18: Order is ready
+
+**Lo que ves:** Marcar que la comida está lista.
+
+### English:
+"Order is ready"
+"Order is ready"
+
+### Spanish:
+El pedido está listo.
+
+Marca esta opción si el restaurante ya tiene la comida lista cuando llegas. Si no está lista, no marques nada todavía.
+
+---
+
+## Phrase 19: All items received
+
+**Lo que ves:** Confirmar que tienes todo.
+
+### English:
+"All items received"
+"All items received"
+
+### Spanish:
+Todos los artículos recibidos.
+
+MUY IMPORTANTE: Verifica que tengas toda la comida antes de marcar esto. Cuenta los artículos en la app.
+
+---
+
+## Phrase 20: CONFIRM PICKUP
+
+**Lo que ves:** Botón verde final.
+
+### English:
+"Confirm pickup"
+"Confirm pickup"
+
+### Spanish:
+Confirmar recogida.
+
+Presiona este botón verde SOLO cuando tienes toda la comida y estás listo para salir. Después de esto, vas a la dirección del cliente.
+
+---
+
+## Quick Practice
+
+¡Excelente! Ahora la práctica rápida. Voy a decir diez frases clave. Repite cada una en voz alta.
+
+1. "New order available"
+2. "Accept"
+3. "Pickup address"
+4. "Customer name"
+5. "Heading to restaurant"
+6. "Navigate"
+7. "Arrived at restaurant"
+8. "Order is ready"
+9. "All items received"
+10. "Confirm pickup"
+
+---
+
+## Closing
+
+¡Muy bien! Ahora conoces las 20 frases más importantes de la primera parte de tu entrega.
+
+Estas son las palabras que controlan desde aceptar el pedido hasta recoger la comida.
+
+En el siguiente audio aprenderás las frases para entregar al cliente.
+
+Mi consejo: Abre tu app ahora mismo y busca estas frases. Verlas y escucharlas juntas las grabará en tu memoria.
+
+Escucha este audio cada mañana antes de empezar a trabajar durante una semana. Después de una semana, entenderás tu app automáticamente sin traducir en tu cabeza.
+
+¡Sigue aprendiendo! Te veo en el siguiente audio.
+
+---
+
+**Voice Notes**:
+- Spanish narrator: Warm, encouraging, Latino accent
+- English phrases: Native speaker, 80% speed, clear enunciation
+- Each English phrase repeated twice
+- 3-second pause after each English repetition
+- Professional but friendly tone throughout

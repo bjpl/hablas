@@ -99,7 +99,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-5.mp3",
+    "audioUrl": "/audio-scripts/intermediate_situations_1-audio-script.txt",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_situations_1.md"
   },
   {
@@ -592,7 +592,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio/resource-31.mp3",
+    "audioUrl": "/audio-scripts/intermediate_situations_2-audio-script.txt",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_situations_2.md"
   },
   {
@@ -812,7 +812,7 @@ export const resources: Resource[] = [
     "downloadUrl": "/docs/resources/converted/emergency/accident-procedures.md",
     "tags": ["emergency", "accident", "gig-workers", "intermedio", "pdf"],
     "offline": true,
-    "audioUrl": "/audio/resource-45.mp3",
+    "audioUrl": "/audio-scripts/accident-procedures-audio-script.txt",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\accident-procedures.md"
   },
   {
@@ -826,7 +826,7 @@ export const resources: Resource[] = [
     "downloadUrl": "/docs/resources/converted/emergency/customer-conflict.md",
     "tags": ["emergency", "conflict", "gig-workers", "intermedio", "customer-service", "conflict-resolution", "pdf"],
     "offline": true,
-    "audioUrl": "/audio/resource-46.mp3",
+    "audioUrl": "/audio-scripts/customer-conflict-audio-script.txt",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\customer-conflict.md"
   },
   {
@@ -840,7 +840,7 @@ export const resources: Resource[] = [
     "downloadUrl": "/docs/resources/converted/emergency/lost-or-found-items.md",
     "tags": ["emergency", "property", "gig-workers", "intermedio", "pdf"],
     "offline": true,
-    "audioUrl": "/audio/resource-47.mp3",
+    "audioUrl": "/audio-scripts/lost-or-found-items-audio-script.txt",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\lost-or-found-items.md"
   },
   {
@@ -854,7 +854,7 @@ export const resources: Resource[] = [
     "downloadUrl": "/docs/resources/converted/emergency/medical-emergencies.md",
     "tags": ["emergency", "medical", "gig-workers", "intermedio", "safety", "health", "pdf"],
     "offline": true,
-    "audioUrl": "/audio/resource-48.mp3",
+    "audioUrl": "/audio-scripts/medical-emergencies-audio-script.txt",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\medical-emergencies.md"
   },
   {
@@ -868,7 +868,7 @@ export const resources: Resource[] = [
     "downloadUrl": "/docs/resources/converted/emergency/payment-disputes.md",
     "tags": ["emergency", "payment", "gig-workers", "intermedio", "conflict-resolution", "pdf"],
     "offline": true,
-    "audioUrl": "/audio/resource-49.mp3",
+    "audioUrl": "/audio-scripts/payment-disputes-audio-script.txt",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\payment-disputes.md"
   },
   {
@@ -882,7 +882,7 @@ export const resources: Resource[] = [
     "downloadUrl": "/docs/resources/converted/emergency/safety-concerns.md",
     "tags": ["emergency", "safety", "gig-workers", "intermedio", "pdf"],
     "offline": true,
-    "audioUrl": "/audio/emergency-var2-en.mp3",
+    "audioUrl": "/audio-scripts/safety-concerns-audio-script.txt",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\safety-concerns.md"
   },
   {
@@ -896,7 +896,7 @@ export const resources: Resource[] = [
     "downloadUrl": "/docs/resources/converted/emergency/vehicle-breakdown.md",
     "tags": ["emergency", "vehicle", "gig-workers", "intermedio", "safety", "pdf"],
     "offline": true,
-    "audioUrl": "/audio/resource-51.mp3",
+    "audioUrl": "/audio-scripts/vehicle-breakdown-audio-script.txt",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\vehicle-breakdown.md"
   },
   {
@@ -910,7 +910,7 @@ export const resources: Resource[] = [
     "downloadUrl": "/docs/resources/converted/emergency/weather-hazards.md",
     "tags": ["emergency", "weather", "gig-workers", "intermedio", "pdf"],
     "offline": true,
-    "audioUrl": "/audio/resource-52.mp3",
+    "audioUrl": "/audio-scripts/weather-hazards-audio-script.txt",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\weather-hazards.md"
   },
   {
