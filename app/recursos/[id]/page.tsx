@@ -2,6 +2,7 @@ import { resources } from '@/data/resources'
 import ResourceDetail from './ResourceDetail'
 import fs from 'fs'
 import path from 'path'
+import { transformAudioScriptToUserFormat, isAudioProductionScript } from './transform-audio-script'
 
 // Generate static paths for all resources at build time (server component)
 export async function generateStaticParams() {
@@ -96,8 +97,13 @@ export default async function ResourceDetailPage({ params }: { params: Promise<{
 
       // Clean content based on resource type
       if (resource.type === 'audio') {
-        // Audio scripts need special cleaning to remove production directions
-        contentText = cleanAudioScript(rawContent)
+        // Audio scripts: Check if it's a production script and transform it
+        if (isAudioProductionScript(rawContent)) {
+          contentText = transformAudioScriptToUserFormat(rawContent)
+        } else {
+          // Fallback to basic cleaning for non-production audio content
+          contentText = cleanAudioScript(rawContent)
+        }
       } else {
         // Other resources just need box characters removed
         contentText = cleanBoxCharacters(rawContent)
