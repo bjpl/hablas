@@ -1,0 +1,13 @@
+# TTS Audio Generation Dependencies
+# Install with: pip3 install -r requirements.txt
+
+# Core TTS library (Google Text-to-Speech)
+gTTS>=2.5.0
+
+# Audio processing and manipulation
+pydub>=0.25.1
+
+# Note: pydub requires ffmpeg to be installed separately
+# Ubuntu/Debian: sudo apt install ffmpeg
+# macOS: brew install ffmpeg
+# Windows: Download from ffmpeg.org
