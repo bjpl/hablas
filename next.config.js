@@ -4,8 +4,7 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   output: 'export',
-  basePath: '/hablas',
-  assetPrefix: '/hablas',
+  // Custom domain configuration - no basePath or assetPrefix needed
   generateBuildId: async () => {
     // Generate unique build ID with timestamp
     return `hablas-${Date.now()}`
