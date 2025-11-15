@@ -202,16 +202,18 @@ If you encounter issues:
 ## ✅ Checklist
 
 - [x] CNAME file created and pushed
-- [ ] GitHub Pages custom domain configured
-- [ ] Namecheap DNS A records added (4 records)
-- [ ] Namecheap DNS CNAME record added (www)
-- [ ] DNS propagation complete (check with nslookup)
-- [ ] GitHub DNS check passes
-- [ ] HTTPS enabled in GitHub Pages
-- [ ] Site accessible at https://hablas.co
-- [ ] Site accessible at https://www.hablas.co
-- [ ] Update next.config.js (remove basePath)
-- [ ] Rebuild and deploy final version
+- [x] GitHub Pages custom domain configured
+- [x] Namecheap DNS A records added (4 records)
+- [x] Namecheap DNS CNAME record added (www)
+- [x] DNS propagation complete (check with nslookup)
+- [x] GitHub DNS check passes
+- [x] HTTPS enabled in GitHub Pages
+- [x] Site accessible at https://hablas.co
+- [x] Site accessible at https://www.hablas.co
+- [x] Update next.config.js (remove basePath) - COMPLETED
+- [x] Update all path references to remove `/hablas` prefix - COMPLETED
+- [x] Fix audio download functionality - COMPLETED
+- [x] Rebuild and deploy final version
 
 ---
 

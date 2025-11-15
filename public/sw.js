@@ -3,16 +3,16 @@
  * Provides offline functionality and resource caching
  */
 
-const CACHE_NAME = 'hablas-v2-audio-fixed'
-const RUNTIME_CACHE = 'hablas-runtime-v2'
+const CACHE_NAME = 'hablas-v3-custom-domain'
+const RUNTIME_CACHE = 'hablas-runtime-v3'
 
 // Resources to cache on install
 const PRECACHE_URLS = [
-  '/hablas/',
-  '/hablas/index.html',
-  '/hablas/manifest.json',
-  '/hablas/_next/static/css/',
-  '/hablas/_next/static/chunks/',
+  '/',
+  '/index.html',
+  '/manifest.json',
+  '/_next/static/css/',
+  '/_next/static/chunks/',
 ]
 
 // Install event - precache core resources
@@ -69,8 +69,8 @@ self.addEventListener('fetch', (event) => {
     return
   }
 
-  // Skip cross-origin requests (except for same-origin resources)
-  if (url.origin !== location.origin && !request.url.includes('/hablas/')) {
+  // Skip cross-origin requests
+  if (url.origin !== location.origin) {
     return
   }
 
@@ -113,7 +113,7 @@ self.addEventListener('fetch', (event) => {
 
         // Return offline page for navigation requests
         if (request.mode === 'navigate') {
-          return caches.match('/hablas/index.html')
+          return caches.match('/index.html')
         }
 
         // Return a basic offline response for other requests

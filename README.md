@@ -77,19 +77,20 @@ Help working-class Colombians (Rappi/Didi/Uber/inDriver drivers and delivery wor
 
 ## 🌐 Deployment
 
-**Primary Deployment:** Vercel at language-learning/hablas/
-**Secondary Deployment:** GitHub Pages (static export)
+**Primary Domain:** https://hablas.co (custom domain)
+**Previous Deployment:** GitHub Pages at `https://bjpl.github.io/hablas/`
 
 1. Push to `main` branch
-2. GitHub Actions automatically builds and deploys
-3. Vercel URL: Production deployment configured
-4. GitHub Pages: `https://bjpl.github.io/hablas/`
+2. Build with `npm run build`
+3. Deploy the `out` directory to your hosting service
+4. Domain configured for hablas.co
 
 ### Build Configuration
 
 - **Static Export**: `output: 'export'` in next.config.js
-- **Base Path**: `/hablas` for GitHub Pages
-- **Automated Sync**: Design system docs copied to public/ during build
+- **No Base Path**: Custom domain doesn't require base path
+- **Service Worker**: Configured for offline functionality
+- **PWA Support**: Full Progressive Web App capabilities
 
 ## 📊 Current Status
 

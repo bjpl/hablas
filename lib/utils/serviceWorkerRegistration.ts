@@ -9,7 +9,7 @@ export function registerServiceWorker() {
   }
 
   window.addEventListener('load', () => {
-    const swUrl = '/hablas/sw/service-worker.js'
+    const swUrl = '/sw.js'
 
     navigator.serviceWorker
       .register(swUrl)

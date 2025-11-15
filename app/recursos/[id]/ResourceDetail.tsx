@@ -27,8 +27,8 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
   const resourceId = parseInt(id)
   const resource = resources.find(r => r.id === resourceId)
 
-  // BasePath for GitHub Pages
-  const basePath = process.env.NODE_ENV === 'production' ? '/hablas' : ''
+  // No basePath needed for custom domain (hablas.co)
+  const basePath = ''
 
   useEffect(() => {
     if (!resource) {
@@ -67,8 +67,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
 
     // Load audio metadata if this is an audio resource
     if (resource.type === 'audio') {
-      const basePath = process.env.NODE_ENV === 'production' ? '/hablas' : ''
-      fetch(`${basePath}/audio/metadata.json`)
+      fetch('/audio/metadata.json')
         .then(res => res.json())
         .then(data => {
           if (data.resources && data.resources[resourceId]) {

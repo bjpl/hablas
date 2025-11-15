@@ -61,7 +61,7 @@ Value: 185.199.108.153
 ```
 Type: CNAME
 Host: www
-Value: <your-github-username>.github.io
+Value: bjpl.github.io
 ```
 
 ### Step 6: Wait for SSL Certificate
@@ -99,9 +99,13 @@ Once SSL is provisioned:
 ## Current Status
 
 - ✅ Configuration fixed in `next.config.js`
+- ✅ All path references updated to remove `/hablas` prefix
+- ✅ Service worker configuration updated for custom domain
+- ✅ Audio download functionality fixed
+- ✅ Manifest.json updated for custom domain
 - ⏳ Rebuild required (`npm run build`)
 - ⏳ Push to GitHub required
-- ⏳ SSL certificate provisioning (automatic, 10min-48hrs)
+- ✅ SSL certificate provisioned for hablas.co
 
 ## Expected Timeline
 

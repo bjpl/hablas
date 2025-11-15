@@ -20,7 +20,7 @@ export default function Home() {
     // Register service worker
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
-        .register('/hablas/sw.js', { scope: '/hablas/' })
+        .register('/sw.js')
         .then((registration) => {
           console.log('Service Worker registered:', registration)
         })
