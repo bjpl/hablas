@@ -4,8 +4,10 @@ import React, { useState, useEffect, use } from 'react';
 import { useRouter } from 'next/navigation';
 import { ArrowLeft, Loader2, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
-import { ContentReviewTool, ContentItem } from '@/components/content-review';
+import { MediaReviewTool } from '@/components/media-review';
 import type { GetContentResponse } from '@/lib/types/content-edits';
+import type { MediaResource } from '@/lib/types/media';
+import { resources } from '@/data/resources';
 
 /**
  * Edit Page for Specific Resource
@@ -15,10 +17,9 @@ import type { GetContentResponse } from '@/lib/types/content-edits';
 export default function EditResourcePage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
   const router = useRouter();
-  const [content, setContent] = useState<ContentItem | null>(null);
+  const [resource, setResource] = useState<MediaResource | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string>('');
-  const [resourceTitle, setResourceTitle] = useState<string>('');
 
   useEffect(() => {
     fetchContent();
@@ -27,24 +28,25 @@ export default function EditResourcePage({ params }: { params: Promise<{ id: str
   const fetchContent = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`/api/content/${resolvedParams.id}`);
 
+      // Find resource from data source
+      const foundResource = resources.find(r => r.id === parseInt(resolvedParams.id));
+      if (!foundResource) {
+        throw new Error('Resource not found');
+      }
+
+      // Fetch content and metadata from API
+      const response = await fetch(`/api/content/${resolvedParams.id}`);
       if (!response.ok) {
         throw new Error('Failed to fetch content');
       }
 
       const data: GetContentResponse = await response.json();
 
-      setResourceTitle(data.title);
-      setContent({
-        id: `resource-${data.resourceId}`,
-        original: data.originalContent,
-        edited: data.editedContent || data.originalContent,
-        metadata: {
-          title: data.title,
-          category: 'Resource',
-          lastModified: data.currentEdit?.updatedAt || new Date().toISOString(),
-        },
+      // Combine resource with API data
+      setResource({
+        ...foundResource,
+        metadata: data.metadata,
       });
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load content');
@@ -53,7 +55,7 @@ export default function EditResourcePage({ params }: { params: Promise<{ id: str
     }
   };
 
-  const handleSave = async (updatedContent: ContentItem) => {
+  const handleSave = async (editedContent: string) => {
     try {
       const response = await fetch('/api/content/save', {
         method: 'POST',
@@ -62,7 +64,7 @@ export default function EditResourcePage({ params }: { params: Promise<{ id: str
         },
         body: JSON.stringify({
           resourceId: parseInt(resolvedParams.id),
-          editedContent: updatedContent.edited,
+          editedContent,
           status: 'pending',
           editedBy: 'admin',
         }),
@@ -90,7 +92,7 @@ export default function EditResourcePage({ params }: { params: Promise<{ id: str
     );
   }
 
-  if (error || !content) {
+  if (error || !resource) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center max-w-md">
@@ -131,16 +133,18 @@ export default function EditResourcePage({ params }: { params: Promise<{ id: str
           <div className="border-l border-gray-300 h-6"></div>
           <div>
             <p className="text-sm text-gray-600">Editing Resource #{resolvedParams.id}</p>
-            <h1 className="text-lg font-semibold text-gray-900">{resourceTitle}</h1>
+            <h1 className="text-lg font-semibold text-gray-900">{resource.title}</h1>
+            <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800 mt-1">
+              {resource.type.toUpperCase()}
+            </span>
           </div>
         </div>
       </div>
 
-      {/* Content Review Tool */}
-      <ContentReviewTool
-        initialContent={content}
+      {/* Media Review Tool - Intelligently routes based on media type */}
+      <MediaReviewTool
+        resource={resource}
         onSave={handleSave}
-        autoSaveDelay={3000}
       />
     </div>
   );

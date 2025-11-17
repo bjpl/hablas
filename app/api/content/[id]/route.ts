@@ -61,13 +61,35 @@ export async function GET(
         )
       : [];
 
+    // Gather media metadata
+    const metadata: any = {
+      format: path.extname(resource.downloadUrl).slice(1),
+    };
+
+    // Add audio-specific metadata if available
+    if (resource.type === 'audio' && resource.audioUrl) {
+      try {
+        const audioPath = path.join(process.cwd(), 'public', resource.audioUrl);
+        const audioStats = await fs.stat(audioPath);
+        metadata.size = audioStats.size;
+        // Note: Duration would require audio parsing library (e.g., music-metadata)
+        // For now, we'll leave it as optional
+      } catch (err) {
+        console.warn('Could not read audio metadata:', err);
+      }
+    }
+
     const response: GetContentResponse = {
       resourceId,
       title: resource.title,
+      type: resource.type,
       originalContent,
       editedContent: currentEdit?.editedContent,
       currentEdit,
       editHistory,
+      audioUrl: resource.audioUrl,
+      downloadUrl: resource.downloadUrl,
+      metadata,
     };
 
     return NextResponse.json(response);

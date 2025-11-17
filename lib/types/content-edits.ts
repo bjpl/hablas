@@ -53,10 +53,19 @@ export interface SaveContentResponse {
 export interface GetContentResponse {
   resourceId: number;
   title: string;
+  type?: 'pdf' | 'audio' | 'image' | 'video';
   originalContent: string;
   editedContent?: string;
   currentEdit?: ContentEdit;
   editHistory: EditHistory[];
+  audioUrl?: string;
+  downloadUrl?: string;
+  metadata?: {
+    duration?: number;
+    dimensions?: { width: number; height: number };
+    format?: string;
+    size?: number;
+  };
 }
 
 export interface ListResourcesResponse {
