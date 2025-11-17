@@ -4,6 +4,8 @@ import '@/styles/resource-content.css'
 import { Providers } from './providers'
 import ErrorBoundary from '@/components/ErrorBoundary'
 import AdminNav from '@/components/AdminNav'
+import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export const metadata: Metadata = {
   title: 'Hablas - Aprende Inglés para Trabajo',
@@ -62,6 +64,8 @@ export default function RootLayout({
             <AdminNav />
           </Providers>
         </ErrorBoundary>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
