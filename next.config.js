@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   compress: true,
   poweredByHeader: false,
-  output: 'export',
+  // output: 'export', // Disabled - incompatible with middleware (required for auth)
   // Custom domain configuration - no basePath or assetPrefix needed
   generateBuildId: async () => {
     // Generate unique build ID with timestamp
