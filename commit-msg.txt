@@ -1,0 +1,13 @@
+fix: Update all paths for custom domain hablas.co
+
+- Remove /hablas basePath references throughout codebase
+- Update service worker configuration for custom domain
+- Fix manifest.json URLs
+- Update layout metadata URLs
+- Fix audio download functionality
+- Clean up old service worker directory
+- Update documentation to reflect custom domain
+
+🤖 Generated with Claude Code
+
+Co-Authored-By: Claude <noreply@anthropic.com>
