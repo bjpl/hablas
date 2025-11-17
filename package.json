@@ -46,7 +46,8 @@
     "perf:test": "tsx scripts/performance-test.ts",
     "perf:load": "k6 run docs/performance/load-test.js",
     "perf:lighthouse": "lighthouse http://localhost:3000 --view",
-    "perf:metrics": "curl http://localhost:3000/api/performance/metrics | jq"
+    "perf:metrics": "curl http://localhost:3000/api/performance/metrics | jq",
+    "verify:redis": "tsx scripts/verify-redis.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.65.0",

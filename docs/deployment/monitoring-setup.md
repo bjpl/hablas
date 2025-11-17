@@ -1,8 +1,8 @@
-# Monitoring and Observability Setup Guide
+# Hablas Production Monitoring Setup Guide
 
 ## Overview
 
-This guide covers comprehensive monitoring, error tracking, performance monitoring, and log aggregation for the Hablas application deployed on Vercel. Implementing robust monitoring ensures application reliability, quick issue resolution, and optimal user experience.
+Comprehensive monitoring and observability setup for Hablas production environment covering error tracking, performance monitoring, uptime monitoring, log aggregation, and alerting. This guide ensures application reliability, quick issue resolution, and optimal user experience.
 
 ## Table of Contents
 
@@ -10,10 +10,14 @@ This guide covers comprehensive monitoring, error tracking, performance monitori
 2. [Error Tracking with Sentry](#error-tracking-with-sentry)
 3. [Vercel Analytics](#vercel-analytics)
 4. [Performance Monitoring](#performance-monitoring)
-5. [Log Aggregation](#log-aggregation)
-6. [Alert Configuration](#alert-configuration)
-7. [Monitoring Dashboard](#monitoring-dashboard)
-8. [Best Practices](#best-practices)
+5. [Uptime Monitoring](#uptime-monitoring)
+6. [Log Aggregation](#log-aggregation)
+7. [Alert Configuration](#alert-configuration)
+8. [Monitoring Dashboard](#monitoring-dashboard)
+9. [Health Check Endpoints](#health-check-endpoints)
+10. [Incident Response Plan](#incident-response-plan)
+11. [Cost Estimation](#cost-estimation)
+12. [Best Practices](#best-practices)
 
 ## Monitoring Strategy
 
@@ -564,28 +568,121 @@ export class Logger {
 
 ## Alert Configuration
 
-### Uptime Monitoring
+## Uptime Monitoring
 
-Use **Uptime Robot** for availability monitoring:
+### Option A: UptimeRobot (Recommended - Free Tier)
 
-1. Sign up at [uptimerobot.com](https://uptimerobot.com)
-2. Create monitors:
+#### Features
+- Monitor up to 50 sites (Free)
+- 5-minute check intervals
+- Email/SMS/Slack alerts
+- Public status page
+- SSL certificate monitoring
+- 99.98% monitoring uptime SLA
 
+#### Setup Steps
+
+1. **Sign up** at [uptimerobot.com](https://uptimerobot.com)
+
+2. **Create Main Site Monitor**:
+   ```yaml
+   Monitor Type: HTTPS
+   URL: https://hablas.vercel.app
+   Friendly Name: Hablas - Main Site
+   Monitoring Interval: 5 minutes
+   Monitor Timeout: 30 seconds
+   ```
+
+3. **Create API Health Monitor**:
+   ```yaml
+   Monitor Type: Keyword
+   URL: https://hablas.vercel.app/api/health
+   Friendly Name: Hablas - API Health
+   Monitoring Interval: 5 minutes
+   Keyword: "healthy"
+   Keyword Type: exists
+   ```
+
+4. **Create Critical Endpoints Monitors**:
+   ```yaml
+   # Topics API
+   URL: https://hablas.vercel.app/api/topics
+   Expected Status Code: 200
+
+   # Audio API
+   URL: https://hablas.vercel.app/api/audio/metadata
+   Expected Status Code: 200
+
+   # Database Health
+   URL: https://hablas.vercel.app/api/health
+   Keyword: "database\":true"
+   ```
+
+5. **Configure Alert Contacts**:
+   - Go to My Settings > Alert Contacts
+   - Add email addresses
+   - Set up Slack webhook (see Alert Configuration section)
+   - Configure SMS (optional, for critical alerts)
+
+6. **Create Status Page** (Optional):
+   - Go to Status Pages > Add Status Page
+   - Select monitors to display
+   - Customize branding
+   - Share public URL with users
+
+#### Alert Thresholds
 ```yaml
-# Main Site Monitor
-URL: https://hablas.co
-Interval: 5 minutes
-Alert Contacts: team@hablas.co
-
-# API Health Monitor
-URL: https://hablas.co/api/health
-Interval: 5 minutes
-Keyword: "ok"
-
-# Database Health Monitor
-URL: https://hablas.co/api/health/db
-Interval: 10 minutes
+Down: 2 consecutive failures (10 minutes)
+Up: 1 successful check after downtime
+Notification Frequency: Every 5 minutes while down
 ```
+
+### Option B: Better Uptime (Advanced Alternative)
+
+#### Features
+- 30-second check intervals
+- Multi-region monitoring (10+ locations)
+- Incident management timeline
+- On-call schedules and escalations
+- Status page with subscriber notifications
+- Free tier: 10 monitors
+
+#### Setup Steps
+
+1. **Sign up** at [betteruptime.com](https://betteruptime.com)
+
+2. **Create Monitors**:
+   ```yaml
+   # Application Monitor
+   URL: https://hablas.vercel.app
+   Check Frequency: 30 seconds
+   Regions: North America, Europe, Asia
+   Expected Status Code: 200
+   Timeout: 10 seconds
+
+   # API Health Check
+   URL: https://hablas.vercel.app/api/health
+   Check Frequency: 1 minute
+   Response Time Threshold: 500ms
+   ```
+
+3. **Configure Incident Timeline**:
+   - Automatic incident creation on failure
+   - Incident status updates
+   - Post-mortem templates
+
+4. **Set Up On-Call Rotation**:
+   - Define team members
+   - Set escalation policies
+   - Configure notification methods
+
+### Option C: Pingdom (Enterprise)
+
+For high-traffic production:
+- Transaction monitoring
+- Real user monitoring
+- Synthetic monitoring from 100+ locations
+- Starting at $10/month
 
 ### Alert Channels
 
@@ -680,6 +777,390 @@ export default async function MonitoringDashboard() {
 }
 ```
 
+## Health Check Endpoints
+
+### Create Comprehensive Health Check
+
+Create `app/api/health/route.ts`:
+
+```typescript
+import { NextResponse } from 'next/server';
+import { pool } from '@/lib/db/pool';
+import { redisClient } from '@/lib/utils/rate-limiter';
+
+interface HealthCheck {
+  status: 'healthy' | 'degraded' | 'unhealthy';
+  timestamp: string;
+  version: string;
+  checks: {
+    database: boolean;
+    redis: boolean;
+    storage?: boolean;
+  };
+  metrics?: {
+    databaseLatency: number;
+    redisLatency: number;
+  };
+}
+
+export async function GET() {
+  const startTime = Date.now();
+  const checks: HealthCheck = {
+    status: 'healthy',
+    timestamp: new Date().toISOString(),
+    version: process.env.VERCEL_GIT_COMMIT_SHA || 'unknown',
+    checks: {
+      database: false,
+      redis: false,
+    },
+    metrics: {
+      databaseLatency: 0,
+      redisLatency: 0,
+    },
+  };
+
+  try {
+    // Database health check
+    const dbStart = Date.now();
+    const dbResult = await Promise.race([
+      pool.query('SELECT NOW()'),
+      new Promise((_, reject) =>
+        setTimeout(() => reject(new Error('Database timeout')), 5000)
+      ),
+    ]);
+    checks.metrics!.databaseLatency = Date.now() - dbStart;
+    checks.checks.database = true;
+
+    // Redis health check
+    const redisStart = Date.now();
+    const redisCheck = await Promise.race([
+      redisClient.ping(),
+      new Promise((_, reject) =>
+        setTimeout(() => reject(new Error('Redis timeout')), 5000)
+      ),
+    ]);
+    checks.metrics!.redisLatency = Date.now() - redisStart;
+    checks.checks.redis = redisCheck === 'PONG';
+
+    // Determine overall status
+    const allHealthy = checks.checks.database && checks.checks.redis;
+    checks.status = allHealthy ? 'healthy' : 'degraded';
+
+    const statusCode = allHealthy ? 200 : 503;
+
+    return NextResponse.json(checks, { status: statusCode });
+  } catch (error) {
+    checks.status = 'unhealthy';
+
+    return NextResponse.json(
+      {
+        ...checks,
+        error: error instanceof Error ? error.message : 'Unknown error',
+      },
+      { status: 503 }
+    );
+  }
+}
+```
+
+### Database-Specific Health Check
+
+Create `app/api/health/db/route.ts`:
+
+```typescript
+import { NextResponse } from 'next/server';
+import { pool } from '@/lib/db/pool';
+
+export async function GET() {
+  try {
+    // Check connection
+    const connectionResult = await pool.query('SELECT NOW()');
+
+    // Check table access
+    const tableCheck = await pool.query(`
+      SELECT table_name
+      FROM information_schema.tables
+      WHERE table_schema = 'public'
+      LIMIT 5
+    `);
+
+    // Check pool stats
+    const poolStats = {
+      totalCount: pool.totalCount,
+      idleCount: pool.idleCount,
+      waitingCount: pool.waitingCount,
+    };
+
+    return NextResponse.json({
+      status: 'healthy',
+      database: {
+        connected: true,
+        tablesAccessible: tableCheck.rows.length > 0,
+        pool: poolStats,
+        latency: connectionResult.rowCount ? 'ok' : 'slow',
+      },
+    });
+  } catch (error) {
+    return NextResponse.json(
+      {
+        status: 'unhealthy',
+        database: {
+          connected: false,
+          error: error instanceof Error ? error.message : 'Unknown error',
+        },
+      },
+      { status: 503 }
+    );
+  }
+}
+```
+
+### Redis Health Check
+
+Create `app/api/health/redis/route.ts`:
+
+```typescript
+import { NextResponse } from 'next/server';
+import { redisClient } from '@/lib/utils/rate-limiter';
+
+export async function GET() {
+  try {
+    const start = Date.now();
+
+    // Test connection
+    const pingResult = await redisClient.ping();
+
+    // Test write/read
+    await redisClient.set('health-check', Date.now().toString(), { EX: 60 });
+    const getValue = await redisClient.get('health-check');
+
+    const latency = Date.now() - start;
+
+    return NextResponse.json({
+      status: 'healthy',
+      redis: {
+        connected: pingResult === 'PONG',
+        readable: getValue !== null,
+        writable: true,
+        latency: `${latency}ms`,
+      },
+    });
+  } catch (error) {
+    return NextResponse.json(
+      {
+        status: 'unhealthy',
+        redis: {
+          connected: false,
+          error: error instanceof Error ? error.message : 'Unknown error',
+        },
+      },
+      { status: 503 }
+    );
+  }
+}
+```
+
+## Incident Response Plan
+
+### Severity Levels
+
+| Level | Description | Response Time | Examples |
+|-------|-------------|---------------|----------|
+| **P0** | Critical - Site Down | 15 minutes | Complete outage, database failure, data loss |
+| **P1** | High - Major Feature Broken | 1 hour | Authentication failure, API completely down |
+| **P2** | Medium - Feature Degraded | 4 hours | Slow queries, partial API failure, cache issues |
+| **P3** | Low - Minor Issue | 24 hours | UI bugs, analytics issues, minor performance degradation |
+
+### Response Workflow
+
+#### Phase 1: Detection (0-5 minutes)
+
+```yaml
+Detection Sources:
+  - UptimeRobot alert received
+  - Sentry error spike detected
+  - User reports via support
+  - Monitoring dashboard alarm
+
+Immediate Actions:
+  1. Acknowledge alert in monitoring system
+  2. Check Vercel deployment status
+  3. Verify issue in multiple browsers/locations
+  4. Check status page (status.hablas.co)
+  5. Create incident in tracking system
+```
+
+#### Phase 2: Triage (5-15 minutes)
+
+```yaml
+Investigation Checklist:
+  - [ ] Check recent deployments (last 24 hours)
+  - [ ] Review Vercel function logs
+  - [ ] Check Sentry error dashboard
+  - [ ] Verify database connectivity (/api/health/db)
+  - [ ] Check Redis status (/api/health/redis)
+  - [ ] Review API response times
+  - [ ] Check rate limiting logs
+  - [ ] Verify environment variables
+  - [ ] Check third-party service status
+
+Tools to Use:
+  - Vercel Dashboard: https://vercel.com/dashboard
+  - Sentry Dashboard: https://sentry.io
+  - UptimeRobot: https://uptimerobot.com/dashboard
+  - Health Check: https://hablas.vercel.app/api/health
+```
+
+#### Phase 3: Resolution (15-60 minutes)
+
+```yaml
+Resolution Options:
+
+Option A - Rollback (fastest):
+  1. Identify last working deployment
+  2. In Vercel: Deployments → Click working deployment → "Redeploy"
+  3. Monitor for 5 minutes
+  4. Verify fix via health checks
+
+Option B - Hotfix:
+  1. Create hotfix branch from main
+  2. Apply minimal fix
+  3. Test locally
+  4. Deploy to production
+  5. Monitor closely
+
+Option C - Configuration Change:
+  1. Update environment variables in Vercel
+  2. Redeploy current version
+  3. Verify configuration applied
+  4. Monitor for issues
+
+Verification Steps:
+  - [ ] Health check returns 200
+  - [ ] UptimeRobot shows green
+  - [ ] Sentry error rate normalized
+  - [ ] API response times normal
+  - [ ] Test critical user flows
+```
+
+#### Phase 4: Post-Incident (1-24 hours)
+
+```yaml
+Post-Mortem Template:
+
+1. Incident Summary
+   - Date/Time: [timestamp]
+   - Duration: [minutes]
+   - Severity: [P0/P1/P2/P3]
+   - Impact: [users affected, features down]
+
+2. Timeline
+   - [HH:MM] Issue detected
+   - [HH:MM] Team notified
+   - [HH:MM] Root cause identified
+   - [HH:MM] Fix deployed
+   - [HH:MM] Verified resolved
+
+3. Root Cause
+   - What happened: [description]
+   - Why it happened: [technical explanation]
+   - Why it wasn't caught: [monitoring gaps]
+
+4. Resolution
+   - Actions taken: [steps]
+   - Fix applied: [code/config changes]
+
+5. Prevention
+   - [ ] Add monitoring for similar issues
+   - [ ] Update deployment checklist
+   - [ ] Improve testing coverage
+   - [ ] Update documentation
+   - [ ] Create runbook for similar incidents
+
+6. Action Items
+   - [ ] Task 1 (Owner: @person, Due: date)
+   - [ ] Task 2 (Owner: @person, Due: date)
+```
+
+### Incident Communication Template
+
+```markdown
+**Incident Alert - [Severity]**
+
+Status: [Investigating | Identified | Monitoring | Resolved]
+Started: [timestamp]
+Last Update: [timestamp]
+
+**Impact:**
+- Affected Services: [list]
+- Estimated Users Affected: [number/percentage]
+- Current Status: [description]
+
+**Updates:**
+[timestamp] - [status update]
+[timestamp] - [status update]
+
+**Next Update:** [timestamp or "when resolved"]
+```
+
+## Cost Estimation
+
+### Monthly Monitoring Costs (1000 DAU)
+
+| Service | Plan | Cost/Month | Notes |
+|---------|------|------------|-------|
+| **Sentry** | Developer | $26 | 50k errors + performance monitoring |
+| **UptimeRobot** | Free | $0 | 50 monitors, 5-min intervals |
+| **Vercel Analytics** | Hobby | $0 | Included with deployment |
+| **Vercel Speed Insights** | Hobby | $0 | Included with deployment |
+| **Axiom/Logtail** | Free | $0 | 100GB/month (sufficient for start) |
+| **Better Uptime** | Free | $0 | Optional, 10 monitors |
+| **Total (Minimum)** | | **$26** | Basic production monitoring |
+| **Total (Recommended)** | | **$26-50** | With optional paid tiers |
+
+### Scaling Costs (10,000 DAU)
+
+| Service | Plan | Cost/Month |
+|---------|------|------------|
+| **Sentry** | Team | $80 | 250k errors + advanced features |
+| **UptimeRobot** | Pro | $18 | 1-min intervals, 50 monitors |
+| **Vercel Analytics** | Pro | $10 | 100k events |
+| **Axiom** | Starter | $25 | 1TB/month |
+| **Total** | | **$133** |
+
+### Enterprise Costs (100,000+ DAU)
+
+| Service | Plan | Cost/Month |
+|---------|------|------------|
+| **Sentry** | Business | $259 | Unlimited errors + enterprise features |
+| **Better Uptime** | Pro | $49 | 30-sec intervals, incident management |
+| **Vercel Analytics** | Enterprise | Custom | Unlimited events |
+| **Datadog** | Pro | $300+ | Full APM + infrastructure monitoring |
+| **Total** | | **$600+** |
+
+### Cost Optimization Tips
+
+1. **Start with Free Tiers**:
+   - Sentry Free: 5k errors/month
+   - UptimeRobot Free: 50 monitors
+   - Vercel Analytics: Included
+   - Axiom Free: 100GB/month
+
+2. **Upgrade Strategically**:
+   - Upgrade Sentry when hitting error limits
+   - Upgrade UptimeRobot for faster checks
+   - Add paid logging when log volume increases
+
+3. **Sample Wisely**:
+   - Set Sentry trace sample rate to 0.1-0.2 (10-20%)
+   - Use conditional error capture
+   - Filter out known/expected errors
+
+4. **Monitor Usage**:
+   - Review Sentry quota usage weekly
+   - Check log aggregation volume
+   - Optimize noisy error sources
+
 ## Best Practices
 
 ### 1. Error Budget
@@ -734,22 +1215,158 @@ Set performance budgets:
 - Monthly: Analyze performance metrics
 - Quarterly: Audit alert configurations
 
+## Production Monitoring Checklist
+
+### Pre-Launch Setup
+
+- [ ] **Sentry Configuration**
+  - [ ] Account created and project set up
+  - [ ] SDK installed (@sentry/nextjs)
+  - [ ] Environment variables configured in Vercel
+  - [ ] Error boundary implemented
+  - [ ] Source maps upload configured
+  - [ ] Alert rules created
+  - [ ] Slack integration configured
+  - [ ] Tested error tracking in staging
+
+- [ ] **Uptime Monitoring**
+  - [ ] UptimeRobot account created
+  - [ ] Main site monitor configured (5-min interval)
+  - [ ] API health monitor configured
+  - [ ] Critical endpoint monitors added
+  - [ ] Alert contacts configured (email, Slack)
+  - [ ] Status page created (optional)
+  - [ ] Test monitors with downtime simulation
+
+- [ ] **Health Check Endpoints**
+  - [ ] /api/health endpoint created
+  - [ ] /api/health/db endpoint created
+  - [ ] /api/health/redis endpoint created
+  - [ ] Endpoints tested and verified
+  - [ ] Added to UptimeRobot monitors
+
+- [ ] **Analytics Setup**
+  - [ ] Vercel Analytics enabled
+  - [ ] @vercel/analytics package installed
+  - [ ] Analytics component added to layout
+  - [ ] Vercel Speed Insights enabled
+  - [ ] @vercel/speed-insights package installed
+  - [ ] Custom events implemented
+  - [ ] Tested in production
+
+- [ ] **Alert Configuration**
+  - [ ] Slack webhook configured
+  - [ ] Email alerts configured
+  - [ ] Alert severity levels defined
+  - [ ] Alert throttling configured
+  - [ ] Test alerts sent and verified
+
+- [ ] **Documentation**
+  - [ ] Incident response plan documented
+  - [ ] Runbooks created for common issues
+  - [ ] Team contact list updated
+  - [ ] Monitoring dashboard URLs documented
+
+### Week 1 Post-Launch
+
+- [ ] Monitor error rate daily
+- [ ] Review slow query logs
+- [ ] Check uptime percentage (target: 99.9%)
+- [ ] Verify all alerts functioning
+- [ ] Review Sentry dashboard
+- [ ] Check API response times
+- [ ] Monitor database connection pool
+- [ ] Test incident response procedures
+- [ ] Review Core Web Vitals
+- [ ] Analyze user traffic patterns
+
+### Ongoing Monthly
+
+- [ ] Review incident reports and post-mortems
+- [ ] Analyze error trends and patterns
+- [ ] Update alert thresholds as needed
+- [ ] Optimize slow database queries
+- [ ] Review monitoring costs and usage
+- [ ] Update monitoring documentation
+- [ ] Test disaster recovery procedures
+- [ ] Review and update runbooks
+- [ ] Check for monitoring tool updates
+- [ ] Conduct team training on monitoring tools
+
+### Performance Targets
+
+| Metric | Target | Critical Threshold |
+|--------|--------|-------------------|
+| Uptime | 99.9% | 99.5% |
+| Error Rate | < 0.1% | < 1% |
+| API Response Time (p95) | < 500ms | < 1000ms |
+| Database Query Time (avg) | < 50ms | < 200ms |
+| Page Load Time (LCP) | < 2.5s | < 4s |
+| Redis Hit Rate | > 80% | > 60% |
+
 ## Additional Resources
 
+### Documentation
 - [Sentry Documentation](https://docs.sentry.io/)
 - [Vercel Analytics Documentation](https://vercel.com/docs/analytics)
+- [Vercel Speed Insights](https://vercel.com/docs/speed-insights)
 - [Axiom Documentation](https://axiom.co/docs)
 - [Web Vitals](https://web.dev/vitals/)
 - [Uptime Robot Guide](https://uptimerobot.com/guide/)
+- [Better Uptime Docs](https://docs.betteruptime.com/)
+
+### Quick Links
+
+| Resource | URL |
+|----------|-----|
+| Vercel Dashboard | https://vercel.com/dashboard |
+| Sentry Dashboard | https://sentry.io |
+| UptimeRobot Dashboard | https://uptimerobot.com/dashboard |
+| Health Check | https://hablas.vercel.app/api/health |
+| Database Health | https://hablas.vercel.app/api/health/db |
+| Redis Health | https://hablas.vercel.app/api/health/redis |
 
 ## Support
 
-For monitoring-related issues:
-- Sentry: [support@sentry.io](mailto:support@sentry.io)
-- Vercel: [vercel.com/support](https://vercel.com/support)
-- Axiom: [axiom.co/support](https://axiom.co/support)
+### For Monitoring Tool Issues
+- **Sentry**: [support@sentry.io](mailto:support@sentry.io) | [Sentry Help Center](https://help.sentry.io/)
+- **Vercel**: [vercel.com/support](https://vercel.com/support) | [Vercel Discord](https://vercel.com/discord)
+- **UptimeRobot**: [support@uptimerobot.com](mailto:support@uptimerobot.com)
+- **Axiom**: [support@axiom.co](mailto:support@axiom.co)
 
-For Hablas-specific monitoring questions:
-- Review monitoring dashboards
-- Check alert configurations
-- Contact development team
+### For Hablas Production Issues
+1. Check monitoring dashboards (Sentry, Vercel, UptimeRobot)
+2. Review alert configurations
+3. Consult incident response plan
+4. Check relevant runbooks
+5. Contact development team if needed
+
+## Next Steps
+
+1. **Immediate (Today)**:
+   - Set up Sentry account and install SDK
+   - Configure UptimeRobot monitors
+   - Create health check endpoints
+   - Set up Slack webhook
+
+2. **This Week**:
+   - Implement error tracking in all API routes
+   - Set up alert rules and test notifications
+   - Create monitoring dashboard
+   - Document incident response procedures
+
+3. **This Month**:
+   - Review and optimize alert thresholds
+   - Conduct incident response drill
+   - Set up log aggregation (Axiom/Logtail)
+   - Create custom monitoring dashboard
+
+4. **Ongoing**:
+   - Monitor metrics daily
+   - Review incidents weekly
+   - Update documentation monthly
+   - Optimize monitoring costs quarterly
+
+---
+
+**Critical**: At minimum, set up Sentry (error tracking) and UptimeRobot (uptime monitoring) before launching to production. These provide essential visibility into application health and user-impacting issues.

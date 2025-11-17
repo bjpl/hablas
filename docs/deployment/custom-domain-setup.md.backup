@@ -1,0 +1,603 @@
+# Custom Domain Setup Guide for Vercel
+
+This comprehensive guide walks you through adding a custom domain to your Hablas application deployed on Vercel, including DNS configuration, SSL setup, and troubleshooting.
+
+## Table of Contents
+
+1. [Prerequisites](#prerequisites)
+2. [Understanding Domain Types](#understanding-domain-types)
+3. [DNS Configuration Methods](#dns-configuration-methods)
+4. [Step-by-Step Setup](#step-by-step-setup)
+5. [DNS Provider-Specific Instructions](#dns-provider-specific-instructions)
+6. [SSL/HTTPS Configuration](#sslhttps-configuration)
+7. [Domain Verification](#domain-verification)
+8. [Troubleshooting](#troubleshooting)
+9. [Setup Checklist](#setup-checklist)
+
+## Prerequisites
+
+Before starting, ensure you have:
+
+- ✅ A Vercel account with your Hablas project deployed
+- ✅ A registered domain name from a domain registrar
+- ✅ Access to your domain's DNS management panel
+- ✅ Owner or admin access to your Vercel project
+
+---
+
+## Understanding Domain Types
+
+### Apex/Root Domain
+- Format: `example.com`
+- Also called: naked domain, root domain
+- Configuration: A record or Vercel Nameservers
+- Use case: Primary website address
+
+### Subdomain
+- Format: `www.example.com`, `app.example.com`, `docs.example.com`
+- Configuration: CNAME record
+- Use case: Separate sections or environments
+
+### Wildcard Domain
+- Format: `*.example.com`
+- Configuration: Vercel Nameservers (required)
+- Use case: Multi-tenant applications, dynamic subdomains
+- **Note**: Requires Vercel nameservers for SSL certificate generation
+
+---
+
+## DNS Configuration Methods
+
+Vercel supports three methods for custom domain configuration:
+
+### Method 1: CNAME Record (Recommended for Subdomains)
+**Best for**: `www.example.com`, `app.example.com`
+
+**Pros**:
+- Simple configuration
+- Quick propagation
+- Works with existing DNS provider
+
+**Cons**:
+- Cannot be used for apex domains with some providers
+
+### Method 2: A Record (For Apex Domains)
+**Best for**: `example.com`
+
+**Pros**:
+- Works with any DNS provider
+- Standard DNS configuration
+
+**Cons**:
+- Requires IP address updates if Vercel changes infrastructure
+- Manual configuration
+
+### Method 3: Vercel Nameservers (Full DNS Management)
+**Best for**: Advanced setups, wildcard domains
+
+**Pros**:
+- Automatic DNS management
+- Required for wildcard SSL
+- Simplified configuration
+
+**Cons**:
+- Transfers DNS control to Vercel
+- Migration from existing DNS setup required
+
+---
+
+## Step-by-Step Setup
+
+### Step 1: Add Domain in Vercel Dashboard
+
+1. Log in to [Vercel Dashboard](https://vercel.com/dashboard)
+2. Select your Hablas project
+3. Navigate to **Settings** → **Domains**
+4. Click **Add Domain**
+5. Enter your domain name:
+   - For apex: `example.com`
+   - For subdomain: `www.example.com` or `app.example.com`
+   - For wildcard: `*.example.com`
+6. Click **Add**
+
+### Step 2: Choose Configuration Method
+
+Vercel will display recommended DNS records based on your domain type:
+
+**For Apex Domain (`example.com`)**:
+```
+Type: A
+Name: @
+Value: 76.76.21.21
+```
+
+**For Subdomain (`www.example.com`)**:
+```
+Type: CNAME
+Name: www
+Value: cname.vercel-dns.com
+```
+
+**For Wildcard (`*.example.com`)**:
+```
+Type: NS
+Name: @
+Value: ns1.vercel-dns.com
+       ns2.vercel-dns.com
+```
+
+### Step 3: Configure DNS Records
+
+Choose your DNS provider below for specific instructions.
+
+---
+
+## DNS Provider-Specific Instructions
+
+### Cloudflare
+
+1. Log in to [Cloudflare Dashboard](https://dash.cloudflare.com/)
+2. Select your domain
+3. Navigate to **DNS** → **Records**
+4. Click **Add record**
+
+**For Apex Domain**:
+```
+Type: A
+Name: @
+IPv4 address: 76.76.21.21
+Proxy status: DNS only (gray cloud)
+TTL: Auto
+```
+
+**For Subdomain (www)**:
+```
+Type: CNAME
+Name: www
+Target: cname.vercel-dns.com
+Proxy status: DNS only (gray cloud)
+TTL: Auto
+```
+
+**Important**: Set proxy status to "DNS only" (gray cloud icon), not "Proxied" (orange cloud)
+
+5. Click **Save**
+
+**For Vercel Nameservers**:
+1. Go to **DNS** → **Settings**
+2. Click **Change** next to Nameservers
+3. Select **Custom nameservers**
+4. Add:
+   - `ns1.vercel-dns.com`
+   - `ns2.vercel-dns.com`
+5. Click **Continue**
+
+---
+
+### GoDaddy
+
+1. Log in to [GoDaddy](https://www.godaddy.com/)
+2. Go to **My Products** → **Domains**
+3. Click on your domain → **Manage DNS**
+
+**For Apex Domain**:
+1. Find or add an A record
+2. Configure:
+   ```
+   Type: A
+   Host: @
+   Points to: 76.76.21.21
+   TTL: 600 seconds (10 minutes)
+   ```
+3. Click **Save**
+
+**For Subdomain (www)**:
+1. Find or add a CNAME record
+2. Configure:
+   ```
+   Type: CNAME
+   Host: www
+   Points to: cname.vercel-dns.com
+   TTL: 1 Hour
+   ```
+3. Click **Save**
+
+**For Vercel Nameservers**:
+1. Scroll to **Nameservers** section
+2. Click **Change**
+3. Select **Custom**
+4. Enter:
+   - `ns1.vercel-dns.com`
+   - `ns2.vercel-dns.com`
+5. Click **Save**
+
+---
+
+### Namecheap
+
+1. Log in to [Namecheap](https://www.namecheap.com/)
+2. Go to **Domain List** → Click **Manage** next to your domain
+3. Navigate to **Advanced DNS** tab
+
+**For Apex Domain**:
+1. Click **Add New Record**
+2. Configure:
+   ```
+   Type: A Record
+   Host: @
+   Value: 76.76.21.21
+   TTL: Automatic
+   ```
+3. Click **Save Changes** (green checkmark)
+
+**For Subdomain (www)**:
+1. Click **Add New Record**
+2. Configure:
+   ```
+   Type: CNAME Record
+   Host: www
+   Value: cname.vercel-dns.com
+   TTL: Automatic
+   ```
+3. Click **Save Changes**
+
+**For Vercel Nameservers**:
+1. Go to **Domain** tab
+2. Under **Nameservers**, select **Custom DNS**
+3. Enter:
+   - `ns1.vercel-dns.com`
+   - `ns2.vercel-dns.com`
+4. Click **Save**
+
+---
+
+### Google Domains (Now Squarespace Domains)
+
+1. Log in to [Google Domains](https://domains.google.com/) or [Squarespace Domains](https://domains.squarespace.com/)
+2. Select your domain
+3. Click **DNS** in the left menu
+
+**For Apex Domain**:
+1. Scroll to **Custom resource records**
+2. Add:
+   ```
+   Name: @
+   Type: A
+   TTL: 1H
+   Data: 76.76.21.21
+   ```
+3. Click **Add**
+
+**For Subdomain (www)**:
+1. Scroll to **Custom resource records**
+2. Add:
+   ```
+   Name: www
+   Type: CNAME
+   TTL: 1H
+   Data: cname.vercel-dns.com
+   ```
+3. Click **Add**
+
+**For Vercel Nameservers**:
+1. Scroll to **Name servers**
+2. Select **Use custom name servers**
+3. Enter:
+   - `ns1.vercel-dns.com`
+   - `ns2.vercel-dns.com`
+4. Click **Save**
+
+---
+
+### Route 53 (AWS)
+
+1. Log in to [AWS Console](https://console.aws.amazon.com/)
+2. Navigate to **Route 53** → **Hosted zones**
+3. Select your domain
+
+**For Apex Domain**:
+1. Click **Create record**
+2. Configure:
+   ```
+   Record name: (leave empty for apex)
+   Record type: A
+   Value: 76.76.21.21
+   TTL: 300
+   Routing policy: Simple
+   ```
+3. Click **Create records**
+
+**For Subdomain (www)**:
+1. Click **Create record**
+2. Configure:
+   ```
+   Record name: www
+   Record type: CNAME
+   Value: cname.vercel-dns.com
+   TTL: 300
+   Routing policy: Simple
+   ```
+3. Click **Create records**
+
+**For Vercel Nameservers**:
+1. Update NS records to point to:
+   - `ns1.vercel-dns.com`
+   - `ns2.vercel-dns.com`
+
+---
+
+## SSL/HTTPS Configuration
+
+Vercel automatically provisions and manages SSL/TLS certificates for all custom domains using Let's Encrypt.
+
+### Automatic SSL Provisioning
+
+1. **After DNS Configuration**: Once your DNS records are properly configured and verified, Vercel automatically issues an SSL certificate
+2. **Certificate Type**: TLS/SSL certificates are provided via Let's Encrypt
+3. **Automatic Renewal**: Vercel handles all certificate renewals automatically
+4. **No Manual Configuration**: No additional steps required from you
+
+### SSL Certificate Timeline
+
+- **Standard domains**: SSL certificate issued within minutes to hours after DNS verification
+- **Wildcard domains**: Requires Vercel nameservers; certificate issued after nameserver propagation
+- **DNS propagation**: Can take 24-48 hours globally
+
+### Monitoring SSL Status
+
+Check SSL certificate status in Vercel Dashboard:
+
+1. Go to **Settings** → **Domains**
+2. Find your domain in the list
+3. Check status indicators:
+   - ✅ **Valid**: SSL certificate active
+   - 🔄 **Pending**: Certificate being issued
+   - ⚠️ **Error**: Configuration issue (see troubleshooting)
+
+### HTTPS Enforcement
+
+Vercel automatically redirects HTTP to HTTPS. No configuration needed.
+
+### SSL Certificate Details
+
+- **Encryption**: TLS 1.2 and TLS 1.3
+- **Certificate Authority**: Let's Encrypt
+- **Validity Period**: 90 days (auto-renewed)
+- **Cipher Suites**: Modern, secure cipher suites only
+
+---
+
+## Domain Verification
+
+### Standard Verification Process
+
+For most domains, verification is automatic:
+
+1. Add domain in Vercel Dashboard
+2. Configure DNS records at your provider
+3. Wait for DNS propagation (up to 48 hours)
+4. Vercel automatically verifies and provisions SSL
+
+### Manual Verification (Domain Already in Use)
+
+If your domain is already registered on another Vercel account:
+
+1. Vercel will display a TXT record requirement
+2. Add the TXT record to your DNS:
+   ```
+   Type: TXT
+   Name: _vercel
+   Value: vc-domain-verify=<your-verification-code>
+   TTL: 600
+   ```
+3. Return to Vercel Dashboard
+4. Click **Verify** or **Refresh**
+5. Once verified, configure your A/CNAME records
+
+### Checking Verification Status
+
+**Via Vercel Dashboard**:
+- Go to **Settings** → **Domains**
+- Status indicators:
+  - ✅ **Active**: Domain verified and SSL active
+  - 🔄 **Pending Configuration**: Awaiting DNS records
+  - ⚠️ **Invalid Configuration**: DNS records incorrect
+  - ⏳ **Verification Required**: TXT record needed
+
+**Via Command Line** (for technical verification):
+
+```bash
+# Check DNS propagation
+dig example.com A
+dig www.example.com CNAME
+
+# Check nameservers
+dig example.com NS
+
+# Check TXT verification record
+dig _vercel.example.com TXT
+
+# Check SSL certificate
+openssl s_client -connect example.com:443 -servername example.com
+```
+
+**Via Online Tools**:
+- [DNS Checker](https://dnschecker.org/) - Check global DNS propagation
+- [What's My DNS](https://www.whatsmydns.net/) - Verify DNS records worldwide
+- [SSL Labs](https://www.ssllabs.com/ssltest/) - Test SSL configuration
+
+---
+
+## Troubleshooting
+
+### Issue 1: Domain Shows "Invalid Configuration"
+
+**Causes**:
+- DNS not propagated
+- Incorrect DNS records
+- TTL too high
+
+**Solutions**:
+```bash
+# Verify DNS records
+dig hablas.co A
+dig www.hablas.co CNAME
+
+# Check propagation globally
+# Visit: https://www.whatsmydns.net/#A/hablas.co
+
+# Wait for propagation (up to 48 hours)
+# Reduce TTL if possible (3600 or less)
+```
+
+### Issue 2: SSL Certificate Not Provisioning
+
+**Causes**:
+- Domain not verified
+- DNS misconfiguration
+- CAA records blocking Let's Encrypt
+
+**Solutions**:
+
+1. Verify DNS configuration
+2. Check CAA records:
+```bash
+dig hablas.co CAA
+
+# Should allow Let's Encrypt
+# If present, ensure it includes:
+# 0 issue "letsencrypt.org"
+```
+
+3. Remove conflicting CAA records or add Let's Encrypt
+
+### Issue 3: Redirect Loop
+
+**Cause**: Cloudflare + Vercel SSL mismatch
+
+**Solution**:
+1. In Cloudflare → SSL/TLS settings
+2. Change mode to **Full** or **Full (strict)**
+3. Ensure **Always Use HTTPS** is enabled
+
+### Issue 4: DNS Propagation Taking Too Long
+
+**Solutions**:
+```bash
+# Flush local DNS cache
+
+# macOS
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+
+# Windows
+ipconfig /flushdns
+
+# Linux
+sudo systemd-resolve --flush-caches
+
+# Use alternative DNS servers
+# Google DNS: 8.8.8.8, 8.8.4.4
+# Cloudflare DNS: 1.1.1.1, 1.0.0.1
+```
+
+### Issue 5: www Not Redirecting
+
+**Solution**:
+1. Ensure CNAME record for www exists
+2. In Vercel Dashboard → Domains
+3. Both `hablas.co` and `www.hablas.co` should be listed
+4. One should show "Redirect" status
+
+## Post-Setup Verification
+
+### Final Checklist
+
+- [ ] `hablas.co` loads correctly over HTTPS
+- [ ] `www.hablas.co` redirects to `hablas.co` (or vice versa)
+- [ ] SSL certificate valid and trusted
+- [ ] No mixed content warnings
+- [ ] All assets load from HTTPS
+- [ ] Favicon displays correctly
+- [ ] Meta tags include correct domain
+- [ ] Sitemap references correct domain
+- [ ] robots.txt accessible
+
+### Update Application Configuration
+
+Update any hardcoded URLs:
+
+```typescript
+// lib/config.ts
+export const config = {
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://hablas.co',
+  apiUrl: process.env.NEXT_PUBLIC_API_URL || 'https://hablas.co/api',
+};
+```
+
+### Update Environment Variables
+
+```bash
+# Vercel Dashboard → Settings → Environment Variables
+NEXT_PUBLIC_SITE_URL=https://hablas.co
+NEXT_PUBLIC_APP_URL=https://hablas.co
+```
+
+### Update External Services
+
+Update domain in:
+- Google Search Console
+- Google Analytics
+- Social media meta tags
+- API CORS origins
+- OAuth redirect URIs
+- Webhook endpoints
+
+## Performance Optimization
+
+### Enable Edge Network
+
+Vercel automatically uses edge network for:
+- Static assets
+- Image optimization
+- API routes (with Edge Runtime)
+
+### Configure Headers
+
+```javascript
+// next.config.mjs
+async headers() {
+  return [
+    {
+      source: '/:path*',
+      headers: [
+        {
+          key: 'X-DNS-Prefetch-Control',
+          value: 'on'
+        },
+        {
+          key: 'Strict-Transport-Security',
+          value: 'max-age=63072000; includeSubDomains; preload'
+        },
+      ],
+    },
+  ];
+}
+```
+
+## Additional Resources
+
+- [Vercel Custom Domains Documentation](https://vercel.com/docs/concepts/projects/domains)
+- [DNS Propagation Checker](https://www.whatsmydns.net/)
+- [SSL Certificate Checker](https://www.ssllabs.com/ssltest/)
+- [Let's Encrypt Documentation](https://letsencrypt.org/docs/)
+
+## Support
+
+For domain-related issues:
+- [Vercel Support](https://vercel.com/support)
+- [Domain Registrar Support](https://www.namecheap.com/support/)
+
+For Hablas-specific issues:
+- Check Vercel deployment logs
+- Review DNS configuration
+- Contact development team
