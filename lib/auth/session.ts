@@ -7,22 +7,10 @@
 import { SignJWT, jwtVerify } from 'jose';
 import type { UserRole } from './types';
 
-// Edge Runtime compatible - no file system access
-// File-based sessions are deprecated in favor of database sessions
-let SESSIONS_FILE: string | undefined;
-let BLACKLIST_FILE: string | undefined;
-
-// Only initialize file paths in Node.js runtime (not Edge)
-if (typeof process !== 'undefined' && process.cwd) {
-  try {
-    const fs = require('fs');
-    const path = require('path');
-    SESSIONS_FILE = path.join(process.cwd(), 'data', 'sessions.json');
-    BLACKLIST_FILE = path.join(process.cwd(), 'data', 'token-blacklist.json');
-  } catch {
-    // Edge Runtime - skip file initialization
-  }
-}
+// Edge Runtime compatible - using database sessions instead of file-based
+// File operations are deprecated and disabled for Edge Runtime compatibility
+const SESSIONS_FILE = 'deprecated';
+const BLACKLIST_FILE = 'deprecated';
 
 /**
  * SECURITY FIX: Remove hardcoded fallback secret
