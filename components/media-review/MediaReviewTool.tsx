@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { AudioReview } from './AudioReview';
+import { PDFWithAudioReview } from './PDFWithAudioReview';
 import { ImageReview } from './ImageReview';
 import { VideoReview } from './VideoReview';
 import { ContentReviewTool, type ContentItem } from '@/components/content-review';
@@ -112,7 +113,18 @@ export const MediaReviewTool: React.FC<MediaReviewToolProps> = ({
 
     case 'pdf':
     default:
-      // Reuse existing ContentReviewTool for PDF/text content
+      // Check if PDF resource has audio - use enhanced component if it does
+      if (resource.audioUrl) {
+        return (
+          <PDFWithAudioReview
+            resource={resource}
+            content={content}
+            onContentSave={handleTranscriptSave}
+          />
+        );
+      }
+
+      // Reuse existing ContentReviewTool for PDF/text content without audio
       const contentItem: ContentItem = {
         id: `resource-${resource.id}`,
         original: content,

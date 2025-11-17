@@ -14,6 +14,7 @@
 
 export { MediaReviewTool } from './MediaReviewTool';
 export { AudioReview } from './AudioReview';
+export { PDFWithAudioReview } from './PDFWithAudioReview';
 export { AudioPlayer } from './AudioPlayer';
 export { ImageReview } from './ImageReview';
 export { VideoReview } from './VideoReview';

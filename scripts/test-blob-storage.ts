@@ -3,6 +3,12 @@
  * Verifies that BLOB_READ_WRITE_TOKEN is configured and working
  */
 
+import { config } from 'dotenv';
+import { resolve } from 'path';
+
+// Load environment variables from .env.local
+config({ path: resolve(process.cwd(), '.env.local') });
+
 async function testBlobStorage() {
   console.log('🧪 Testing Blob Storage Configuration\n');
   console.log('=' .repeat(60));
