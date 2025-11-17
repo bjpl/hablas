@@ -3,6 +3,7 @@ import './globals.css'
 import '@/styles/resource-content.css'
 import { Providers } from './providers'
 import ErrorBoundary from '@/components/ErrorBoundary'
+import AdminNav from '@/components/AdminNav'
 
 export const metadata: Metadata = {
   title: 'Hablas - Aprende Inglés para Trabajo',
@@ -58,6 +59,7 @@ export default function RootLayout({
               Saltar al contenido principal
             </a>
             {children}
+            <AdminNav />
           </Providers>
         </ErrorBoundary>
       </body>

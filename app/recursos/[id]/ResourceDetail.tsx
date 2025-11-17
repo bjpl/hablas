@@ -12,10 +12,13 @@ import PracticalScenario from '@/components/resource-renderers/PracticalScenario
 import PhraseList from '@/components/resource-renderers/PhraseList'
 import { cleanAudioScript, isAudioScript } from './clean-audio-script'
 import type { JsonResourceContent } from '@/lib/types/resource-content'
+import Link from 'next/link'
+import { Edit2 } from 'lucide-react'
 
 export default function ResourceDetail({ id, initialContent = '' }: { id: string; initialContent?: string }) {
   const router = useRouter()
   const [content, setContent] = useState<string>(initialContent)
+  const [isAdmin, setIsAdmin] = useState(false)
   const [jsonContent, setJsonContent] = useState<JsonResourceContent | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -31,6 +34,12 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
   const basePath = ''
 
   useEffect(() => {
+    // Check for admin mode
+    const urlParams = new URLSearchParams(window.location.search);
+    const adminParam = urlParams.get('admin');
+    const adminMode = adminParam === 'true' || localStorage.getItem('adminMode') === 'true';
+    setIsAdmin(adminMode);
+
     if (!resource) {
       setError('Recurso no encontrado')
       return
@@ -152,6 +161,16 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
           <div className="flex-1">
             <h1 className="text-xl font-bold line-clamp-1 text-gray-900">{resource.title}</h1>
           </div>
+          {isAdmin && (
+            <Link
+              href={`/admin/edit/${id}`}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
+              title="Edit this resource"
+            >
+              <Edit2 className="w-4 h-4" />
+              <span className="hidden sm:inline">Edit Content</span>
+            </Link>
+          )}
         </div>
       </header>
 
