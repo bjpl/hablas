@@ -27,23 +27,22 @@ interface AttemptRecord {
 const memoryStore = new Map<string, AttemptRecord>();
 
 /**
- * Redis client (optional)
- * Set via setRedisClient() for distributed rate limiting
+ * Import Redis manager
  */
-let redisClient: any = null;
+import { getRedisClient, isRedisConnected } from '../db/redis';
 
 /**
- * Set Redis client for distributed rate limiting
+ * Get Redis client (uses centralized Redis manager)
  */
-export function setRedisClient(client: any): void {
-  redisClient = client;
+function getClient() {
+  return getRedisClient();
 }
 
 /**
  * Get Redis client status
  */
 export function isRedisEnabled(): boolean {
-  return redisClient !== null;
+  return isRedisConnected();
 }
 
 /**
@@ -113,20 +112,25 @@ async function checkRedisRateLimit(
   key: string,
   config: RateLimitConfig
 ): Promise<RateLimitResult> {
+  const client = getClient();
+  if (!client) {
+    return checkMemoryRateLimit(key, config);
+  }
+
   try {
     const now = Date.now();
     const windowKey = `ratelimit:${key}`;
 
     // Get current count
-    const count = await redisClient.incr(windowKey);
+    const count = await client.incr(windowKey);
 
     // Set expiration on first request
     if (count === 1) {
-      await redisClient.pexpire(windowKey, config.windowMs);
+      await client.pExpire(windowKey, config.windowMs);
     }
 
     // Get TTL
-    const ttl = await redisClient.pttl(windowKey);
+    const ttl = await client.pTTL(windowKey);
     const resetAt = now + ttl;
 
     // Check if exceeded
@@ -161,14 +165,16 @@ export async function checkRateLimit(
 ): Promise<RateLimitResult> {
   const config = SECURITY_CONFIG.RATE_LIMIT[type];
   const rateLimitConfig: RateLimitConfig = {
-    maxAttempts: config.MAX_ATTEMPTS,
+    maxAttempts: 'MAX_ATTEMPTS' in config ? config.MAX_ATTEMPTS : (config as any).MAX_REQUESTS,
     windowMs: config.WINDOW_MS,
     message: config.MESSAGE,
   };
 
   const key = `${type.toLowerCase()}:${identifier}`;
 
-  if (redisClient) {
+  // Use Redis if available, fallback to memory
+  const client = getClient();
+  if (client) {
     return checkRedisRateLimit(key, rateLimitConfig);
   }
 
@@ -183,10 +189,11 @@ export async function resetRateLimit(
   type: keyof typeof SECURITY_CONFIG.RATE_LIMIT = 'API'
 ): Promise<void> {
   const key = `${type.toLowerCase()}:${identifier}`;
+  const client = getClient();
 
-  if (redisClient) {
+  if (client) {
     try {
-      await redisClient.del(`ratelimit:${key}`);
+      await client.del(`ratelimit:${key}`);
     } catch (error) {
       console.error('Redis reset error:', error);
     }
@@ -204,22 +211,24 @@ export async function getRateLimitStatus(
 ): Promise<RateLimitResult | null> {
   const key = `${type.toLowerCase()}:${identifier}`;
   const config = SECURITY_CONFIG.RATE_LIMIT[type];
+  const client = getClient();
 
-  if (redisClient) {
+  if (client) {
     try {
       const windowKey = `ratelimit:${key}`;
-      const count = await redisClient.get(windowKey);
+      const count = await client.get(windowKey);
 
       if (count === null) {
         return null;
       }
 
-      const ttl = await redisClient.pttl(windowKey);
+      const ttl = await client.pTTL(windowKey);
       const now = Date.now();
 
+      const maxAttempts = 'MAX_ATTEMPTS' in config ? config.MAX_ATTEMPTS : (config as any).MAX_REQUESTS;
       return {
-        allowed: count < config.MAX_ATTEMPTS,
-        remaining: Math.max(0, config.MAX_ATTEMPTS - parseInt(count)),
+        allowed: parseInt(count) < maxAttempts,
+        remaining: Math.max(0, maxAttempts - parseInt(count)),
         resetAt: now + ttl,
       };
     } catch (error) {
@@ -233,9 +242,10 @@ export async function getRateLimitStatus(
     return null;
   }
 
+  const maxAttempts = 'MAX_ATTEMPTS' in config ? config.MAX_ATTEMPTS : (config as any).MAX_REQUESTS;
   return {
-    allowed: record.count < config.MAX_ATTEMPTS,
-    remaining: Math.max(0, config.MAX_ATTEMPTS - record.count),
+    allowed: record.count < maxAttempts,
+    remaining: Math.max(0, maxAttempts - record.count),
     resetAt: record.resetAt,
   };
 }
@@ -244,11 +254,13 @@ export async function getRateLimitStatus(
  * Clear all rate limits (for testing)
  */
 export async function clearAllRateLimits(): Promise<void> {
-  if (redisClient) {
+  const client = getClient();
+
+  if (client) {
     try {
-      const keys = await redisClient.keys('ratelimit:*');
+      const keys = await client.keys('ratelimit:*');
       if (keys.length > 0) {
-        await redisClient.del(...keys);
+        await client.del(keys);
       }
     } catch (error) {
       console.error('Redis clear error:', error);
@@ -266,8 +278,9 @@ export async function checkCustomRateLimit(
   config: RateLimitConfig
 ): Promise<RateLimitResult> {
   const key = `custom:${identifier}`;
+  const client = getClient();
 
-  if (redisClient) {
+  if (client) {
     return checkRedisRateLimit(key, config);
   }
 

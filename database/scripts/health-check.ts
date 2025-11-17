@@ -4,11 +4,18 @@
  */
 
 import { db } from '../../lib/db/pool';
+import { redis, redisHealthCheck } from '../../lib/db/redis';
 
 interface HealthCheckResult {
   database: {
     connected: boolean;
     responseTime: number;
+    error?: string;
+  };
+  redis: {
+    connected: boolean;
+    responseTime?: number;
+    mode: 'redis' | 'memory';
     error?: string;
   };
   tables: {
@@ -50,10 +57,26 @@ async function checkConnection(): Promise<HealthCheckResult['database']> {
 }
 
 /**
+ * Check Redis connection
+ */
+async function checkRedis(): Promise<HealthCheckResult['redis']> {
+  try {
+    const status = await redisHealthCheck();
+    return status;
+  } catch (error: any) {
+    return {
+      connected: false,
+      mode: 'memory',
+      error: error.message,
+    };
+  }
+}
+
+/**
  * Check table existence and counts
  */
 async function checkTables(): Promise<HealthCheckResult['tables']> {
-  const tables = ['users', 'refresh_tokens', 'auth_audit_log'];
+  const tables = ['users', 'sessions', 'refresh_tokens', 'auth_audit_log'];
   const result: HealthCheckResult['tables'] = {};
 
   for (const table of tables) {
@@ -130,15 +153,21 @@ async function main() {
 
     // Run checks
     const connection = await checkConnection();
+    const redisStatus = await checkRedis();
     const tables = await checkTables();
     const indexes = await checkIndexes();
-    const pool = db.getStats();
+    const poolStats = db.getStats();
 
     const results: HealthCheckResult = {
       database: connection,
+      redis: redisStatus,
       tables,
       indexes,
-      pool,
+      pool: poolStats ? {
+        total: poolStats.totalCount,
+        idle: poolStats.idleCount,
+        waiting: poolStats.waitingCount
+      } : null,
     };
 
     // Print results
@@ -147,6 +176,16 @@ async function main() {
     console.log(`  Response Time: ${connection.responseTime}ms`);
     if (connection.error) {
       console.log(`  Error:         ${connection.error}`);
+    }
+
+    console.log('\n🔴 Redis Connection:');
+    console.log(`  Status:        ${redisStatus.connected ? '✅ Connected' : '⚠️  Not Connected'}`);
+    console.log(`  Mode:          ${redisStatus.mode === 'redis' ? '🚀 Redis' : '💾 In-Memory'}`);
+    if (redisStatus.responseTime) {
+      console.log(`  Response Time: ${redisStatus.responseTime}ms`);
+    }
+    if (redisStatus.error) {
+      console.log(`  Info:          ${redisStatus.error}`);
     }
 
     console.log('\n📋 Tables:');
@@ -164,11 +203,11 @@ async function main() {
       console.log(`    ... and ${indexes.total - 10} more`);
     }
 
-    if (pool) {
+    if (poolStats) {
       console.log('\n🔗 Connection Pool:');
-      console.log(`  Total:   ${pool.totalCount}`);
-      console.log(`  Idle:    ${pool.idleCount}`);
-      console.log(`  Waiting: ${pool.waitingCount}`);
+      console.log(`  Total:   ${poolStats.totalCount}`);
+      console.log(`  Idle:    ${poolStats.idleCount}`);
+      console.log(`  Waiting: ${poolStats.waitingCount}`);
     }
 
     // Overall status
@@ -188,6 +227,7 @@ async function main() {
     process.exit(1);
   } finally {
     await db.close();
+    await redis.close();
   }
 }
 

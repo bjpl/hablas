@@ -1,29 +1,84 @@
 
 # Hablas Platform - Functionality Test Report
 
-**Date**: 2025-11-02T08:37:44.971Z
+**Date**: 2025-11-17T21:08:11.561Z
 **Total Tests**: 13
-**Passed**: 12 (92.3%)
-**Failed**: 1
-**Partial**: 0
+**Passed**: 9 (69.2%)
+**Failed**: 3
+**Partial**: 1
 **Skipped**: 0
 
 ## Test Results Summary
 
 | Status | Count | Percentage |
 |--------|-------|-----------|
-| PASS | 12 | 92.3% |
-| FAIL | 1 | 7.7% |
-| PARTIAL | 0 | 0.0% |
+| PASS | 9 | 69.2% |
+| FAIL | 3 | 23.1% |
+| PARTIAL | 1 | 7.7% |
 | SKIPPED | 0 | 0.0% |
 
 ## Detailed Test Results
 
 
-### PASS - npm run build
-- **Status**: PASS
-- **Notes**: Build completed successfully
+### FAIL - npm run build
+- **Status**: FAIL
+- **Notes**: Build failed
+- **Details**: ```
+Command failed: npm run build
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /mnt/c/Users/brand/Development/Project_Workspace/package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * /mnt/c/Users/brand/Development/Project_Workspace/active-development/hablas/package-lock.json
 
+ ⚠ Compiled with warnings in 19.3s
+
+./app/api/performance/metrics/route.ts
+Attempted import error: 'getRedisStats' is not exported from '@/lib/db/redis' (imported as 'getRedisStats').
+
+Import trace for requested module:
+./app/api/performance/metrics/route.ts
+
+ ⚠ Compiled with warnings in 3.4s
+
+./lib/auth/session.ts
+A Node.js module is loaded ('fs' at line 4) which is not supported in the Edge Runtime.
+Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime
+
+Import trace for requested module:
+./lib/auth/session.ts
+
+./lib/auth/session.ts
+A Node.js module is loaded ('path' at line 5) which is not supported in the Edge Runtime.
+Learn More: https://nextjs.org/docs/messages/node-module-in-edge-runtime
+
+Import trace for requested module:
+./lib/auth/session.ts
+
+./lib/auth/session.ts
+A Node.js API is used (process.cwd at line: 7) which is not supported in the Edge Runtime.
+Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+
+Import trace for requested module:
+./lib/auth/session.ts
+
+./lib/auth/session.ts
+A Node.js API is used (process.cwd at line: 8) which is not supported in the Edge Runtime.
+Learn more: https://nextjs.org/docs/api-reference/edge-runtime
+
+Import trace for requested module:
+./lib/auth/session.ts
+
+Failed to compile.
+
+app/api/audio/[id]/route.ts
+Type error: Route "app/api/audio/[id]/route.ts" has an invalid "GET" export:
+  Type "{ params: { id: string; }; }" is not a valid type for the function's second argument.
+
+Next.js build worker exited with code: 1 and signal: null
+
+```
 
 
 ### FAIL - npm run typecheck
@@ -34,21 +89,22 @@
 > hablas@1.2.0 typecheck
 > tsc --noEmit
 
-__tests__/integration/resource-detail-enhanced.test.tsx(19,41): error TS7016: Could not find a declaration file for module 'jest-axe'. 'C:/Users/brand/Development/Project_Workspace/active-development/hablas/node_modules/jest-axe/index.js' implicitly has an 'any' type.
-  Try `npm i --save-dev @types/jest-axe` if it exists or add a new declaration (.d.ts) file containing `declare module 'jest-axe';`
-__tests__/integration/resource-detail-enhanced.test.tsx
+.next/types/app/api/audio/[id]/route.ts(49,7): error TS2344: Type '{ __tag__: "GET"; __param_position__: "second"; __param_type__: { params: { id: string; }; }; }' does not satisfy the constraint 'ParamCheck<RouteContext>'.
+  The types of '__param_type__.params' are incompatible between these types.
+    Type '{ id: string; }' is missing the following properties from type 'Promise<any>': then, catch, finally, [Symbol.toStringTag]
+.next/types/app/api/audio
 ```
 
 
-### PASS - Total resources count
-- **Status**: PASS
-- **Notes**: Found 59 resources (expected 59)
+### FAIL - Total resources count
+- **Status**: FAIL
+- **Notes**: Found 56 resources (expected 59)
 
 
 
 ### PASS - Resource required fields
 - **Status**: PASS
-- **Notes**: 59 resources validated
+- **Notes**: 56 resources validated
 
 
 
@@ -70,27 +126,27 @@ __tests__/integration/resource-detail-enhanced.test.tsx
 
 
 
-### PASS - Resource IDs uniqueness
-- **Status**: PASS
-- **Notes**: 59 unique IDs found
+### PARTIAL - Resource IDs uniqueness
+- **Status**: PARTIAL
+- **Notes**: 56 unique IDs found
 
 
 
 ### PASS - No production markers in content
 - **Status**: PASS
-- **Notes**: Scanned 59 resources for production markers
+- **Notes**: Scanned 56 resources for production markers
 
 
 
 ### PASS - Audio resources have audioUrl
 - **Status**: PASS
-- **Notes**: 9 audio resources found, 9 have audioUrl
+- **Notes**: 0 audio resources found, 0 have audioUrl
 
 
 
 ### PASS - Resource download URLs validation
 - **Status**: PASS
-- **Notes**: 59 resources have valid download URLs
+- **Notes**: 56 resources have valid download URLs
 
 
 
@@ -102,7 +158,7 @@ __tests__/integration/resource-detail-enhanced.test.tsx
 
 ### PASS - Resource detail pages generated
 - **Status**: PASS
-- **Notes**: 118 resource pages generated (expected 59)
+- **Notes**: 112 resource pages generated (expected 59)
 
 
 

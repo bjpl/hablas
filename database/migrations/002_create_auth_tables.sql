@@ -42,9 +42,9 @@ CREATE INDEX IF NOT EXISTS idx_refresh_expires ON refresh_tokens(expires_at);
 CREATE INDEX IF NOT EXISTS idx_refresh_active ON refresh_tokens(user_id, revoked_at)
   WHERE revoked_at IS NULL;
 
--- Auto-cleanup expired tokens index
+-- Auto-cleanup expired tokens index (removed CURRENT_TIMESTAMP predicate - not immutable)
 CREATE INDEX IF NOT EXISTS idx_refresh_cleanup ON refresh_tokens(expires_at)
-  WHERE revoked_at IS NULL AND expires_at < CURRENT_TIMESTAMP;
+  WHERE revoked_at IS NULL;
 
 -- Table comments
 COMMENT ON TABLE refresh_tokens IS 'JWT refresh tokens for session management';

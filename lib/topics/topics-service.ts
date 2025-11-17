@@ -61,7 +61,7 @@ export function extractTopicsFromResources(): Topic[] {
         description: resource.description || `Resources for ${name}`,
         category: resource.category || 'general',
         level: resource.level || 'intermedio',
-        subcategory: resource.subcategory,
+        resourceIds: [],
         resourceCount: 0,
       });
     }
@@ -115,10 +115,9 @@ export function getResourcesForTopic(topicSlug: string): TopicResource[] {
         resourceId: parseInt(resource.id.split('-')[1]) || 0,
         title: resource.title,
         description: resource.description,
-        type: 'pdf', // Default, would need to be determined from resource
+        content: '', // Would need to be loaded separately
         hasEdit: false, // Would need to check content-edits.json
         editStatus: undefined,
-        lastEditDate: undefined,
       });
     }
   }

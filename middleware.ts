@@ -21,10 +21,15 @@ interface RouteConfig {
 }
 
 const routeConfigs: RouteConfig[] = [
-  // Public routes (no auth required)
+  // Public routes (no auth required) - MUST be listed first and with exact matches
+  { path: '/api/auth/login', requireAuth: false },
+  { path: '/api/auth/register', requireAuth: false },
+  { path: '/api/auth/logout', requireAuth: false },
+  { path: '/api/auth/refresh', requireAuth: false },
+  { path: '/api/auth/password-reset', requireAuth: false },
+  { path: '/api/auth/me', requireAuth: false }, // FIXED: Allow unauthenticated check for current user
   { path: '/admin/login', requireAuth: false },
   { path: '/admin/reset-password', requireAuth: false },
-  { path: '/api/auth', requireAuth: false },
 
   // Admin-only routes
   { path: '/admin/users', requireAuth: true, allowedRoles: ['admin'] },
@@ -137,6 +142,17 @@ export async function middleware(request: NextRequest) {
   const response = NextResponse.next();
   response.headers.set('X-User-Id', payload.userId);
   response.headers.set('X-User-Role', payload.role);
+
+  // Apply security headers
+  response.headers.set('X-Frame-Options', 'DENY');
+  response.headers.set('X-Content-Type-Options', 'nosniff');
+  response.headers.set('X-XSS-Protection', '1; mode=block');
+  response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
+  response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+
+  if (process.env.NODE_ENV === 'production') {
+    response.headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+  }
 
   return response;
 }

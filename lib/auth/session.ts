@@ -1,24 +1,57 @@
 /**
  * Session Management
  * Handles refresh tokens and session persistence
+ * NOTE: File-based storage is deprecated - use database sessions instead
  */
 
-import { promises as fs } from 'fs';
-import path from 'path';
 import { SignJWT, jwtVerify } from 'jose';
 import type { UserRole } from './types';
 
-const SESSIONS_FILE = path.join(process.cwd(), 'data', 'sessions.json');
-const REFRESH_TOKEN_SECRET = process.env.REFRESH_TOKEN_SECRET || 'your-refresh-token-secret-change-in-production';
+// Edge Runtime compatible - no file system access
+// File-based sessions are deprecated in favor of database sessions
+let SESSIONS_FILE: string | undefined;
+let BLACKLIST_FILE: string | undefined;
+
+// Only initialize file paths in Node.js runtime (not Edge)
+if (typeof process !== 'undefined' && process.cwd) {
+  try {
+    const fs = require('fs');
+    const path = require('path');
+    SESSIONS_FILE = path.join(process.cwd(), 'data', 'sessions.json');
+    BLACKLIST_FILE = path.join(process.cwd(), 'data', 'token-blacklist.json');
+  } catch {
+    // Edge Runtime - skip file initialization
+  }
+}
+
+/**
+ * SECURITY FIX: Remove hardcoded fallback secret
+ * Fail-fast in production if REFRESH_TOKEN_SECRET is not set
+ */
+const REFRESH_TOKEN_SECRET = process.env.REFRESH_TOKEN_SECRET;
+
+if (!REFRESH_TOKEN_SECRET) {
+  if (process.env.NODE_ENV === 'production') {
+    throw new Error('CRITICAL: REFRESH_TOKEN_SECRET environment variable must be set in production. Generate a secure secret using: openssl rand -base64 48');
+  }
+  // In development, generate a temporary secure random secret
+  const crypto = require('crypto');
+  const tempSecret = crypto.randomBytes(64).toString('hex');
+  console.warn('⚠️  SECURITY WARNING: Using auto-generated REFRESH_TOKEN_SECRET for development only');
+  console.warn('⚠️  DO NOT USE THIS IN PRODUCTION. Set REFRESH_TOKEN_SECRET environment variable.');
+  // Use temporary secret (this is OK for development only)
+  var TEMP_REFRESH_SECRET = tempSecret;
+}
+
+// Validate secret length
+if (REFRESH_TOKEN_SECRET && REFRESH_TOKEN_SECRET.length < 32) {
+  throw new Error('REFRESH_TOKEN_SECRET must be at least 32 characters long for security');
+}
+
 const REFRESH_TOKEN_EXPIRY = '30d'; // 30 days for refresh tokens
-const BLACKLIST_FILE = path.join(process.cwd(), 'data', 'token-blacklist.json');
 
 // Convert secret to Uint8Array for jose
-const refreshSecretKey = new TextEncoder().encode(REFRESH_TOKEN_SECRET);
-
-if (!process.env.REFRESH_TOKEN_SECRET && process.env.NODE_ENV === 'production') {
-  console.error('⚠️  WARNING: REFRESH_TOKEN_SECRET not set in production!');
-}
+const refreshSecretKey = new TextEncoder().encode(REFRESH_TOKEN_SECRET || (TEMP_REFRESH_SECRET as any));
 
 export interface Session {
   id: string;

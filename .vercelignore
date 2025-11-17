@@ -1,0 +1,65 @@
+# Python virtual environment (CRITICAL - very large)
+venv-audio/**
+venv/**
+*.pyc
+__pycache__/
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Development files
+.git/
+.vscode/
+.idea/
+
+# Test files
+coverage/
+.nyc_output/
+tests/
+__tests__/
+*.test.ts
+*.test.tsx
+*.test.js
+*.test.jsx
+*.spec.ts
+*.spec.tsx
+
+# Build artifacts
+.next/
+out/
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation (CRITICAL - very large)
+docs/**
+
+# Database files
+*.db
+*.sqlite
+database/migrations/**
+database/scripts/**
+
+# Temporary files
+tmp/
+temp/
+
+# Scripts (not needed in production)
+scripts/**
+
+# Large audio files (CRITICAL - 254MB, exceeds Vercel limit)
+# Audio files will be served from Vercel Blob Storage or CDN
+public/audio/**

@@ -9,7 +9,7 @@ export interface MediaMetadata {
   duration?: number; // For audio/video in seconds
   dimensions?: { width: number; height: number }; // For image/video
   format: string; // File format (mp3, mp4, jpg, etc.)
-  size: number; // File size in bytes
+  size?: number; // File size in bytes (optional)
   bitrate?: number; // For audio/video
   sampleRate?: number; // For audio
   channels?: number; // For audio (1 = mono, 2 = stereo)

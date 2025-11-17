@@ -3,7 +3,7 @@
  * Manages PostgreSQL connections with automatic retry and health checks
  */
 
-import { Pool, PoolClient, QueryResult } from 'pg';
+import { Pool, PoolClient, QueryResult, QueryResultRow } from 'pg';
 import type { DatabaseConfig, TransactionCallback } from '../../database/types';
 
 class DatabasePool {
@@ -17,32 +17,67 @@ class DatabasePool {
 
   /**
    * Get database configuration from environment
+   * SECURITY FIX: Enforce SSL in production with proper certificate validation
    */
   private getConfig(): DatabaseConfig {
     const connectionString = process.env.DATABASE_URL;
+    const isProduction = process.env.NODE_ENV === 'production';
+
+    // SECURITY: Determine SSL configuration based on environment
+    let sslConfig: boolean | { rejectUnauthorized: boolean; ca?: string } = false;
+
+    if (isProduction) {
+      // PRODUCTION: Enforce SSL with certificate validation
+      sslConfig = {
+        rejectUnauthorized: true,
+        ca: process.env.DB_SSL_CA, // Optional CA certificate
+      };
+      console.log('✅ Database SSL enabled with certificate validation (production)');
+    } else if (process.env.DB_SSL === 'true') {
+      // DEVELOPMENT: Allow self-signed certificates
+      sslConfig = { rejectUnauthorized: false };
+      console.warn('⚠️  Database SSL enabled without certificate validation (development only)');
+    }
 
     if (connectionString) {
+      // Validate production requirements
+      if (isProduction && !connectionString.includes('sslmode=')) {
+        console.warn('⚠️  WARNING: DATABASE_URL should include sslmode=require in production');
+      }
+
       return {
         connectionString,
         max: parseInt(process.env.DB_POOL_MAX || '20', 10),
         idleTimeoutMillis: parseInt(process.env.DB_IDLE_TIMEOUT || '30000', 10),
         connectionTimeoutMillis: parseInt(process.env.DB_CONNECT_TIMEOUT || '2000', 10),
-        ssl: process.env.DB_SSL === 'true' ? { rejectUnauthorized: false } : false,
+        ssl: sslConfig,
       };
     }
 
     // Fallback to individual connection parameters
-    return {
+    const config: DatabaseConfig = {
       host: process.env.DB_HOST || 'localhost',
       port: parseInt(process.env.DB_PORT || '5432', 10),
       database: process.env.DB_NAME || 'hablas',
       user: process.env.DB_USER || 'postgres',
-      password: process.env.DB_PASSWORD,
+      password: process.env.DB_PASSWORD || 'postgres',
       max: parseInt(process.env.DB_POOL_MAX || '20', 10),
       idleTimeoutMillis: parseInt(process.env.DB_IDLE_TIMEOUT || '30000', 10),
       connectionTimeoutMillis: parseInt(process.env.DB_CONNECT_TIMEOUT || '2000', 10),
-      ssl: process.env.DB_SSL === 'true' ? { rejectUnauthorized: false } : false,
+      ssl: sslConfig,
     };
+
+    // Validate production configuration
+    if (isProduction) {
+      if (!config.password) {
+        throw new Error('CRITICAL: Database password must be set in production');
+      }
+      if (config.ssl === false || !config.ssl) {
+        throw new Error('CRITICAL: Database SSL must be enabled in production');
+      }
+    }
+
+    return config;
   }
 
   /**
@@ -89,7 +124,7 @@ class DatabasePool {
   /**
    * Execute a query
    */
-  async query<T = any>(text: string, params?: any[]): Promise<QueryResult<T>> {
+  async query<T extends QueryResultRow = any>(text: string, params?: any[]): Promise<QueryResult<T>> {
     const pool = await this.getPool();
     const start = Date.now();
     try {

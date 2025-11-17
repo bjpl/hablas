@@ -3,6 +3,7 @@
  * Migrates data from JSON files to PostgreSQL
  */
 
+import 'dotenv/config';
 import { promises as fs } from 'fs';
 import path from 'path';
 import { db } from '../../lib/db/pool';
@@ -63,12 +64,12 @@ async function migrateUsers(): Promise<MigrationStats['users']> {
         continue;
       }
 
-      // Insert user directly with existing password hash
-      await db.query(
-        `INSERT INTO users (id, email, password_hash, name, role, created_at, last_login)
-         VALUES ($1, $2, $3, $4, $5, $6, $7)`,
+      // Insert user with new UUID (old IDs are not valid UUIDs)
+      const result = await db.query(
+        `INSERT INTO users (email, password_hash, name, role, created_at, last_login)
+         VALUES ($1, $2, $3, $4, $5, $6)
+         RETURNING id`,
         [
-          user.id,
           user.email,
           user.password, // Already hashed in JSON
           user.name,
@@ -78,15 +79,17 @@ async function migrateUsers(): Promise<MigrationStats['users']> {
         ]
       );
 
+      const newUserId = result.rows[0].id;
+
       // Log migration event
       await logAuthEvent({
-        user_id: user.id,
+        user_id: newUserId,
         event_type: 'registration',
         success: true,
         error_message: 'Migrated from JSON',
       });
 
-      console.log(`✅ Migrated ${user.email}`);
+      console.log(`✅ Migrated ${user.email} (new ID: ${newUserId})`);
       stats.migrated++;
     } catch (error: any) {
       console.error(`❌ Error migrating ${user.email}:`, error.message);

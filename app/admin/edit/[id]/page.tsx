@@ -46,7 +46,11 @@ export default function EditResourcePage({ params }: { params: Promise<{ id: str
       // Combine resource with API data
       setResource({
         ...foundResource,
-        metadata: data.metadata ? { ...data.metadata, format: data.metadata.format || 'unknown' } : undefined,
+        metadata: data.metadata ? {
+          ...data.metadata,
+          format: data.metadata.format || 'unknown',
+          size: data.metadata.size || 0
+        } : undefined,
       });
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load content');
