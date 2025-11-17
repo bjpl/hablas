@@ -46,7 +46,7 @@ export default function EditResourcePage({ params }: { params: Promise<{ id: str
       // Combine resource with API data
       setResource({
         ...foundResource,
-        metadata: data.metadata,
+        metadata: data.metadata ? { ...data.metadata, format: data.metadata.format || 'unknown' } : undefined,
       });
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load content');

@@ -21,8 +21,9 @@ describe('Performance Utilities', () => {
     })
 
     it('should provide memory usage information', () => {
-      if (performance.memory) {
-        const memoryUsage = performance.memory
+      const perf = performance as any;
+      if (perf.memory) {
+        const memoryUsage = perf.memory
         expect(memoryUsage).toBeDefined()
         expect(memoryUsage.usedJSHeapSize).toBeGreaterThan(0)
         expect(memoryUsage.totalJSHeapSize).toBeGreaterThan(0)

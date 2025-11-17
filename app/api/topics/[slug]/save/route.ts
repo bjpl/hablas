@@ -15,10 +15,10 @@ import type { ContentEdit, EditHistory } from '@/lib/types/content-edits';
 
 export async function POST(
   request: Request,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
-    const { slug } = params;
+    const { slug } = await params;
 
     // Verify topic exists
     const topic = getTopicBySlug(slug);

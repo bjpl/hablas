@@ -185,7 +185,7 @@ export default function TopicReviewPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Pending Edits</p>
-                <p className="text-3xl font-bold text-yellow-600 mt-2">{data.metadata.pendingEdits}</p>
+                <p className="text-3xl font-bold text-yellow-600 mt-2">{data.metadata?.pendingEdits || 0}</p>
               </div>
               <Clock className="w-8 h-8 text-yellow-600" />
             </div>
@@ -195,7 +195,7 @@ export default function TopicReviewPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Approved</p>
-                <p className="text-3xl font-bold text-green-600 mt-2">{data.metadata.approvedEdits}</p>
+                <p className="text-3xl font-bold text-green-600 mt-2">{data.metadata?.approvedEdits || 0}</p>
               </div>
               <CheckCircle className="w-8 h-8 text-green-600" />
             </div>
@@ -205,7 +205,7 @@ export default function TopicReviewPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Total Edits</p>
-                <p className="text-3xl font-bold text-blue-600 mt-2">{data.metadata.totalEdits}</p>
+                <p className="text-3xl font-bold text-blue-600 mt-2">{data.metadata?.totalEdits || 0}</p>
               </div>
               <Edit2 className="w-8 h-8 text-blue-600" />
             </div>
@@ -246,7 +246,7 @@ export default function TopicReviewPage() {
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
-                  {data.resources.map(resource => (
+                  {data.resources.map((resource: any) => (
                     <tr key={resource.id} className="hover:bg-gray-50">
                       <td className="px-6 py-4">
                         <div>

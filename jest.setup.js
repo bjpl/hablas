@@ -8,6 +8,15 @@ expect.extend(toHaveNoViolations)
 // Mock environment variables for testing
 process.env.NEXTAUTH_SECRET = 'test-secret-key-for-testing-only'
 process.env.NEXTAUTH_URL = 'http://localhost:3000'
+process.env.JWT_SECRET = 'test-jwt-secret-key'
+process.env.JWT_REFRESH_SECRET = 'test-jwt-refresh-secret-key'
+
+// Mock Web APIs for Next.js server code
+import { Request, Response, Headers } from 'node-fetch'
+
+global.Request = Request
+global.Response = Response
+global.Headers = Headers
 
 // Mock DOMPurify for Node environment
 global.window = global.window || {}

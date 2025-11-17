@@ -45,8 +45,8 @@ export async function checkAuth(request: NextRequest): Promise<AuthResult> {
 
     return {
       authenticated: true,
-      user,
-      role: user.role,
+      user: user,
+      role: user?.role || 'viewer',
     };
   } catch (error) {
     console.error('Authentication check failed:', error);
@@ -117,5 +117,8 @@ export async function checkPermission(
  */
 export async function getUserSession(request: NextRequest): Promise<UserSession | null> {
   const authResult = await checkAuth(request);
-  return authResult.user || null;
+  if (!authResult.authenticated || !authResult.user) {
+    return null;
+  }
+  return authResult.user;
 }

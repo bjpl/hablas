@@ -6,6 +6,13 @@
  * Average Quality Score: 87.6%
  */
 
+export interface MediaMetadata {
+  duration?: number;
+  dimensions?: { width: number; height: number };
+  format: string;
+  size?: number;
+}
+
 export interface Resource {
   id: number
   title: string
@@ -19,6 +26,7 @@ export interface Resource {
   offline: boolean
   contentPath?: string // Optional: absolute path to source file (for development/debugging)
   audioUrl?: string // Optional: path to MP3 audio file
+  metadata?: MediaMetadata
 }
 
 export const resources: Resource[] = [

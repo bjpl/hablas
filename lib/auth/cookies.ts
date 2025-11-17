@@ -5,21 +5,13 @@
 
 import { serialize, parse } from 'cookie';
 import type { NextRequest, NextResponse } from 'next/server';
+import { SECURITY_CONFIG } from '@/lib/config/security';
 
-export const AUTH_COOKIE_NAME = 'hablas_auth_token';
+// Export cookie name from centralized config
+export const AUTH_COOKIE_NAME = SECURITY_CONFIG.COOKIE.AUTH_COOKIE_NAME;
 
-const COOKIE_OPTIONS = {
-  httpOnly: true,
-  secure: process.env.NODE_ENV === 'production',
-  sameSite: 'lax' as const,
-  path: '/',
-  maxAge: 7 * 24 * 60 * 60, // 7 days in seconds
-};
-
-const REMEMBER_ME_OPTIONS = {
-  ...COOKIE_OPTIONS,
-  maxAge: 30 * 24 * 60 * 60, // 30 days in seconds
-};
+const COOKIE_OPTIONS = SECURITY_CONFIG.COOKIE.OPTIONS;
+const REMEMBER_ME_OPTIONS = SECURITY_CONFIG.COOKIE.REMEMBER_ME_OPTIONS;
 
 /**
  * Set authentication cookie

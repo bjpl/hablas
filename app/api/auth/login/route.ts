@@ -6,54 +6,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { validateCredentials, toUserSession, initializeDefaultAdmin } from '@/lib/auth/users';
 import { generateToken } from '@/lib/auth/jwt';
+import { createSession } from '@/lib/auth/session';
 import { createAuthCookie } from '@/lib/auth/cookies';
+import { validateRequest, loginSchema } from '@/lib/auth/validation';
+import { checkRateLimit, resetRateLimit } from '@/lib/utils/rate-limiter';
+import { createCorsPreflightResponse, addCorsHeaders } from '@/lib/utils/cors';
 import type { LoginCredentials } from '@/lib/auth/types';
-
-// Rate limiting (simple in-memory implementation)
-const loginAttempts = new Map<string, { count: number; resetAt: number }>();
-const MAX_ATTEMPTS = 5;
-const LOCKOUT_DURATION = 15 * 60 * 1000; // 15 minutes
-
-function checkRateLimit(ip: string): { allowed: boolean; error?: string } {
-  const now = Date.now();
-  const attempts = loginAttempts.get(ip);
-
-  if (attempts) {
-    if (now < attempts.resetAt) {
-      if (attempts.count >= MAX_ATTEMPTS) {
-        return {
-          allowed: false,
-          error: `Too many login attempts. Please try again in ${Math.ceil((attempts.resetAt - now) / 60000)} minutes.`,
-        };
-      }
-    } else {
-      // Reset counter
-      loginAttempts.delete(ip);
-    }
-  }
-
-  return { allowed: true };
-}
-
-function recordLoginAttempt(ip: string, success: boolean): void {
-  const now = Date.now();
-  const attempts = loginAttempts.get(ip);
-
-  if (success) {
-    // Clear attempts on successful login
-    loginAttempts.delete(ip);
-    return;
-  }
-
-  if (attempts) {
-    attempts.count += 1;
-  } else {
-    loginAttempts.set(ip, {
-      count: 1,
-      resetAt: now + LOCKOUT_DURATION,
-    });
-  }
-}
 
 export async function POST(request: NextRequest) {
   try {
@@ -63,13 +21,19 @@ export async function POST(request: NextRequest) {
     // Get client IP for rate limiting
     const ip = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown';
 
-    // Check rate limit
-    const rateLimit = checkRateLimit(ip);
+    // Check rate limit using new distributed rate limiter
+    const rateLimit = await checkRateLimit(ip, 'LOGIN');
     if (!rateLimit.allowed) {
-      return NextResponse.json(
-        { success: false, error: rateLimit.error },
+      const response = NextResponse.json(
+        {
+          success: false,
+          error: rateLimit.error,
+          remaining: rateLimit.remaining,
+          resetAt: rateLimit.resetAt,
+        },
         { status: 429 }
       );
+      return addCorsHeaders(response, request.headers.get('origin'));
     }
 
     // Parse request body
@@ -78,50 +42,64 @@ export async function POST(request: NextRequest) {
 
     // Validate input
     if (!email || !password) {
-      recordLoginAttempt(ip, false);
-      return NextResponse.json(
+      const response = NextResponse.json(
         { success: false, error: 'Email and password are required' },
         { status: 400 }
       );
+      return addCorsHeaders(response, request.headers.get('origin'));
     }
 
     // Validate credentials
     const result = await validateCredentials({ email, password });
 
     if (!result.valid || !result.user) {
-      recordLoginAttempt(ip, false);
-      return NextResponse.json(
+      const response = NextResponse.json(
         { success: false, error: result.error || 'Invalid credentials' },
         { status: 401 }
       );
+      return addCorsHeaders(response, request.headers.get('origin'));
     }
 
-    // Record successful login
-    recordLoginAttempt(ip, true);
+    // Reset rate limit on successful login
+    await resetRateLimit(ip, 'LOGIN');
 
-    // Generate JWT token
-    const token = generateToken(
+    // Generate JWT access token (async with jose)
+    const accessToken = await generateToken(
       result.user.id,
       result.user.email,
       result.user.role,
       rememberMe
     );
 
+    // Create session with refresh token
+    const userAgent = request.headers.get('user-agent') || undefined;
+    const { refreshToken } = await createSession(
+      result.user.id,
+      result.user.email,
+      result.user.role,
+      userAgent,
+      ip
+    );
+
     // Create user session (without password)
     const userSession = toUserSession(result.user);
 
-    // Create response with auth cookie
+    // Create response with auth cookie and tokens
     const response = NextResponse.json({
       success: true,
       user: userSession,
-      token,
+      tokens: {
+        accessToken,
+        refreshToken,
+      },
     });
 
-    // Set auth cookie
-    const cookie = createAuthCookie(token, rememberMe);
+    // Set auth cookie with access token
+    const cookie = createAuthCookie(accessToken, rememberMe);
     response.headers.set('Set-Cookie', cookie);
 
-    return response;
+    // Add CORS headers
+    return addCorsHeaders(response, request.headers.get('origin'));
   } catch (error) {
     console.error('Login error:', error);
     return NextResponse.json(
@@ -131,14 +109,7 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// OPTIONS for CORS
-export async function OPTIONS() {
-  return new NextResponse(null, {
-    status: 200,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
-    },
-  });
+// OPTIONS for CORS preflight
+export async function OPTIONS(request: NextRequest) {
+  return createCorsPreflightResponse(request.headers.get('origin'));
 }

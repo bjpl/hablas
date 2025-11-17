@@ -52,9 +52,9 @@ export default function TopicsListPage() {
   };
 
   // Filter topics
-  const filteredCategories = data?.categories.map(category => ({
+  const filteredCategories = data?.categories?.map((category: any) => ({
     ...category,
-    topics: category.topics.filter(topic => {
+    topics: category.topics.filter((topic: any) => {
       const matchesSearch = topic.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         topic.description.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesCategory = categoryFilter === 'all' || category.slug === categoryFilter;
@@ -64,7 +64,7 @@ export default function TopicsListPage() {
     }),
   })).filter(category => category.topics.length > 0) || [];
 
-  const totalFilteredTopics = filteredCategories.reduce((sum, cat) => sum + cat.topics.length, 0);
+  const totalFilteredTopics = filteredCategories.reduce((sum: number, cat: any) => sum + cat.topics.length, 0);
 
   if (loading) {
     return (
@@ -144,7 +144,7 @@ export default function TopicsListPage() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Categories</p>
-                <p className="text-3xl font-bold text-gray-900 mt-2">{data?.categories.length || 0}</p>
+                <p className="text-3xl font-bold text-gray-900 mt-2">{data?.categories?.length || 0}</p>
               </div>
               <BarChart3 className="w-8 h-8 text-purple-600" />
             </div>
@@ -171,7 +171,7 @@ export default function TopicsListPage() {
               className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
               <option value="all">All Categories</option>
-              {data?.categories.map(cat => (
+              {data?.categories?.map((cat: any) => (
                 <option key={cat.slug} value={cat.slug}>{cat.name}</option>
               ))}
             </select>
@@ -217,7 +217,7 @@ export default function TopicsListPage() {
           </div>
         ) : (
           <div className="space-y-6">
-            {filteredCategories.map(category => (
+            {filteredCategories.map((category: any) => (
               <div key={category.slug} className="bg-white rounded-lg shadow-sm border border-gray-200">
                 <div className="p-4 border-b border-gray-200 bg-gray-50">
                   <h2 className="text-xl font-semibold text-gray-900">{category.name}</h2>
@@ -228,7 +228,7 @@ export default function TopicsListPage() {
                   ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4'
                   : 'divide-y divide-gray-200'
                 }>
-                  {category.topics.map(topic => (
+                  {category.topics.map((topic: any) => (
                     <Link
                       key={topic.slug}
                       href={`/admin/topics/${topic.slug}`}

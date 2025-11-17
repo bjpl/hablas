@@ -7,6 +7,7 @@ import bcrypt from 'bcryptjs';
 import { promises as fs } from 'fs';
 import path from 'path';
 import type { User, UserSession, LoginCredentials } from './types';
+import { SECURITY_CONFIG } from '@/lib/config/security';
 
 const USERS_FILE = path.join(process.cwd(), 'data', 'users.json');
 const SALT_ROUNDS = 10;
@@ -123,19 +124,13 @@ export function toUserSession(user: User): UserSession {
 }
 
 /**
- * Validate password strength
+ * Validate password strength using security policy
  */
 export function validatePasswordStrength(password: string): { valid: boolean; error?: string } {
-  if (password.length < 8) {
-    return { valid: false, error: 'Password must be at least 8 characters long' };
-  }
+  const result = SECURITY_CONFIG.PASSWORD.validate(password);
 
-  if (!/\d/.test(password)) {
-    return { valid: false, error: 'Password must contain at least one number' };
-  }
-
-  if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
-    return { valid: false, error: 'Password must contain at least one special character' };
+  if (!result.valid) {
+    return { valid: false, error: result.errors[0] }; // Return first error
   }
 
   return { valid: true };
@@ -189,8 +184,8 @@ export async function initializeDefaultAdmin(): Promise<void> {
   const users = await loadUsers();
 
   if (users.length === 0) {
-    const adminEmail = process.env.ADMIN_EMAIL || 'admin@hablas.co';
-    const adminPassword = process.env.ADMIN_PASSWORD || 'Admin123!';
+    const adminEmail = SECURITY_CONFIG.ADMIN.getDefaultEmail();
+    const adminPassword = SECURITY_CONFIG.ADMIN.getDefaultPassword();
 
     console.log('🔐 No users found. Creating default admin user...');
 
@@ -203,7 +198,17 @@ export async function initializeDefaultAdmin(): Promise<void> {
 
     if (result.success) {
       console.log(`✅ Default admin created: ${adminEmail}`);
-      console.log('⚠️  Please change the default password immediately!');
+
+      // In production, if password was auto-generated, show it once
+      if (process.env.NODE_ENV === 'production' && !process.env.ADMIN_PASSWORD) {
+        console.log('⚠️  IMPORTANT: Save this password - it will not be shown again!');
+        console.log(`   Password: ${adminPassword}`);
+        console.log('⚠️  For security, set ADMIN_PASSWORD in environment variables');
+      } else if (process.env.ADMIN_PASSWORD) {
+        console.log('⚠️  Using ADMIN_PASSWORD from environment variables');
+      } else {
+        console.log('⚠️  Using auto-generated secure password (check logs above)');
+      }
     } else {
       console.error('❌ Failed to create default admin:', result.error);
     }

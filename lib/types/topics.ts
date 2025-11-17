@@ -29,8 +29,58 @@ export interface TopicDetailsResponse {
   resources: TopicResourceWithContent[];
 }
 
+export interface TopicCategory {
+  name: string;
+  slug: string;
+  count: number;
+  topics: TopicGroup[];
+}
+
 export interface TopicsListResponse {
   topics: TopicGroup[];
+  totalTopics?: number;
+  totalResources?: number;
+  categories?: TopicCategory[];
+}
+
+export interface Topic {
+  id?: string;
+  slug: string;
+  name: string;
+  description: string;
+  category: 'all' | 'repartidor' | 'conductor';
+  level?: 'basico' | 'intermedio' | 'avanzado';
+  resourceIds: number[];
+  resourceCount?: number;
+}
+
+export interface TopicResource {
+  id: number;
+  resourceId?: number;
+  title: string;
+  description?: string;
+  content: string;
+  hasEdit?: boolean;
+  editStatus?: 'pending' | 'approved' | 'rejected';
+}
+
+export interface TopicWithResources extends Topic {
+  resources: TopicResource[];
+}
+
+export interface TopicReviewResponse {
+  name?: string;
+  level?: 'basico' | 'intermedio' | 'avanzado';
+  category?: 'all' | 'repartidor' | 'conductor';
+  description?: string;
+  topic: TopicGroup;
+  resources: TopicResourceWithContent[];
+  metadata?: {
+    totalEdits: number;
+    pendingEdits: number;
+    approvedEdits: number;
+    rejectedEdits: number;
+  };
 }
 
 export interface BatchSaveRequest {
