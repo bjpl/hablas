@@ -74,6 +74,7 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
+  runtime: 'nodejs', // Use Node.js runtime to support jsonwebtoken (requires crypto module)
   matcher: [
     /*
      * Match all request paths except for the ones starting with:

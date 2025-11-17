@@ -16,10 +16,15 @@ export { ContentReviewTool } from './ContentReviewTool';
 export { ComparisonView } from './ComparisonView';
 export { EditPanel } from './EditPanel';
 export { DiffHighlighter } from './DiffHighlighter';
+export { TopicReviewTool } from './TopicReviewTool';
+export { TopicResourceTab } from './TopicResourceTab';
 export { useAutoSave } from './hooks/useAutoSave';
 export { useContentManager } from './hooks/useContentManager';
+export { useTopicManager } from './hooks/useTopicManager';
 
 export type { ContentItem } from './ContentReviewTool';
+export type { TopicReviewToolProps } from './TopicReviewTool';
+export type { ResourceEditState } from './hooks/useTopicManager';
 
 // Re-export media review components for convenience
 export { MediaReviewTool } from '@/components/media-review';

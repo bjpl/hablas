@@ -13,6 +13,7 @@ import {
   TrendingUp,
   FileText,
   BarChart3,
+  BookOpen,
 } from 'lucide-react';
 import type { ListResourcesResponse } from '@/lib/types/content-edits';
 
@@ -173,9 +174,38 @@ export default function AdminDashboard() {
         </div>
       </div>
 
-      {/* Stats Dashboard */}
+      {/* Navigation Options */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <Link
+            href="/admin/topics"
+            className="block p-6 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl"
+          >
+            <div className="flex items-center gap-4">
+              <BookOpen className="w-12 h-12" />
+              <div>
+                <h2 className="text-2xl font-bold">Review by Topics</h2>
+                <p className="mt-1 text-blue-100">Browse and review resources organized by topic</p>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="#resources"
+            className="block p-6 bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-lg hover:from-purple-600 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl"
+          >
+            <div className="flex items-center gap-4">
+              <FileText className="w-12 h-12" />
+              <div>
+                <h2 className="text-2xl font-bold">Edit Individual Resources</h2>
+                <p className="mt-1 text-purple-100">Browse and edit resources one by one</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+
+        {/* Stats Dashboard */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="resources">
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
             <div className="flex items-center justify-between">
               <div>
