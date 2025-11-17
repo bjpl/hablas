@@ -1,63 +1,94 @@
-# Hablas.co - English Learning Hub for Colombian Workers
+# Hablas
 
-**Version:** 1.2.0 | **Status:** VERY ACTIVE - Latest commit 2025-01-08
+A mobile-first English learning platform designed for Colombian delivery drivers and rideshare workers, featuring WhatsApp community integration and offline-first resources.
 
-A mobile-first web application connecting Colombian delivery drivers and rideshare workers to practical English learning resources through WhatsApp communities.
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Development](#development)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-## 🎯 Mission
+## Overview
 
-Help working-class Colombians (Rappi/Didi/Uber/inDriver drivers and delivery workers) learn practical workplace English to:
-- Communicate with international customers
-- Increase tips and ratings
-- Access better opportunities
+Hablas provides practical English learning resources for working-class Colombians, specifically delivery drivers and rideshare workers using platforms like Rappi, Didi, Uber, and inDriver. The application focuses on workplace English skills to improve customer communication, increase tips and ratings, and create better opportunities.
 
-## 🚀 Features
+**Version:** 1.2.0
+**Status:** Very Active
+**Last Updated:** 2025-01-08
 
-- **WhatsApp Community Integration**: Direct links to learning groups
-- **Offline-First Resources**: Download materials for use without data
-- **Job-Specific Content**: Tailored phrases for delivery and rideshare scenarios
-- **Mobile Optimized**: Built for budget Android phones on 3G/4G networks
-- **Colombian Spanish**: Interface uses local dialect and conventions
-- **Data Conservation**: Aggressive compression and caching
-- **AI-Powered Content**: 50+ resources generated using Claude Sonnet 4.5
+## Features
 
-## 🛠️ Tech Stack
+### Core Functionality
+- WhatsApp community integration with direct links to learning groups
+- Offline-first resources with downloadable materials
+- Job-specific content tailored for delivery and rideshare scenarios
+- Mobile optimization for budget Android phones on 3G/4G networks
+- Colombian Spanish interface using local dialect and conventions
+- Data conservation with aggressive compression and caching
+- 50+ AI-powered resources generated using Claude Sonnet 4.5
 
-- **Frontend**: Next.js 15.0 with React 18 and TypeScript 5.6
-- **AI Integration**: Anthropic Claude SDK 0.65.0 for AI resource generation
-- **Database**: Supabase 2.58.0 (devDependency)
-- **Validation**: Zod 4.1.12 for schema validation
-- **Icons**: Lucide React 0.548
-- **Deployment**: Vercel (language-learning/hablas/) + GitHub Pages
-- **Styling**: Tailwind CSS with custom design system
-- **PWA**: Service Workers for offline functionality
-- **Testing**: Jest 30.2 + jest-axe for accessibility testing
-- **Build Automation**: Automated documentation sync
+### Technical Capabilities
+- Built with Next.js 15.0, React 18, and TypeScript 5.6
+- AI integration via Anthropic Claude SDK 0.65.0 for resource generation
+- Supabase 2.58.0 for data management
+- Zod 4.1.12 for schema validation
+- Lucide React 0.548 for icons
+- Tailwind CSS with custom design system
+- Progressive Web App with service workers for offline functionality
+- Jest 30.2 with jest-axe for accessibility testing
+- Automated documentation synchronization
 
-## 📱 Optimization for Colombia
+## Installation
 
-- System fonts to reduce load time
-- Image compression for slow networks
-- Thumb-friendly buttons for motorcycle drivers
-- WhatsApp sharing integration
-- Prepaid data warnings
+### Prerequisites
+- Node.js 18 or higher
+- npm or pnpm
 
-## 🏗️ Setup
+### Setup
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Run development server: `npm run dev`
-4. Build for production: `npm run build`
+Clone the repository:
+
+```bash
+git clone https://github.com/bjpl/hablas.git
+cd hablas
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Usage
+
+### Development
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
 
 ### Build Scripts
 
+Core commands:
 - `npm run dev` - Start development server
-- `npm run build` - Build for production (automatically syncs design system docs)
+- `npm run build` - Build for production with automatic documentation sync
 - `npm run lint` - Run ESLint
 - `npm run typecheck` - TypeScript type checking
 
-### Resource Management Scripts
-
+Resource management:
 - `npm run resource:list` - List all resource templates
 - `npm run resource:generate` - Generate resources from templates
 - `npm run resource:validate` - Validate resource structure
@@ -65,8 +96,7 @@ Help working-class Colombians (Rappi/Didi/Uber/inDriver drivers and delivery wor
 - `npm run resource:search` - Search available resources
 - `npm run resource:help` - Show resource CLI help
 
-### AI Generation Scripts
-
+AI generation:
 - `npm run ai:generate` - Interactive AI resource generation
 - `npm run ai:generate-essentials` - Generate 20 core resources
 - `npm run ai:generate-all` - Generate complete resource library
@@ -75,61 +105,80 @@ Help working-class Colombians (Rappi/Didi/Uber/inDriver drivers and delivery wor
 - `npm run ai:generate-level` - Generate by level (basico/intermedio/avanzado)
 - `npm run check:progress` - Check AI generation progress
 
-## 🌐 Deployment
+## Project Structure
 
-**Primary Domain:** https://hablas.co (custom domain)
-**Previous Deployment:** GitHub Pages at `https://bjpl.github.io/hablas/`
+```
+hablas/
+├── src/
+│   ├── app/              # Next.js app router
+│   ├── components/       # React components
+│   ├── lib/              # Core libraries
+│   ├── types/            # TypeScript definitions
+│   └── utils/            # Utility functions
+├── public/               # Static assets
+├── docs/                 # Documentation
+└── tests/                # Test files
+```
 
-1. Push to `main` branch
-2. Build with `npm run build`
-3. Deploy the `out` directory to your hosting service
-4. Domain configured for hablas.co
+## Development
+
+### Testing
+
+Run tests:
+
+```bash
+npm run test
+```
+
+### Code Quality
+
+Linting and type checking:
+
+```bash
+npm run lint
+npm run typecheck
+```
+
+## Deployment
+
+### Primary Domain
+
+The application is deployed at https://hablas.co with custom domain configuration.
 
 ### Build Configuration
 
-- **Static Export**: `output: 'export'` in next.config.js
-- **No Base Path**: Custom domain doesn't require base path
-- **Service Worker**: Configured for offline functionality
-- **PWA Support**: Full Progressive Web App capabilities
+- Static export enabled with `output: 'export'` in next.config.js
+- No base path required for custom domain
+- Service worker configured for offline functionality
+- Full Progressive Web App capabilities
 
-## 📊 Current Status
+### Deployment Process
 
-- **Version**: 1.2.0
-- **Last Updated**: 2025-01-08
-- **Resources**: 50+ AI-generated learning materials
-- **Design System**: 100% integrated across all components
-- **Documentation**: Comprehensive with automated sync
-- **Performance**: 95+ Lighthouse score, 50% speed improvement
+Build the application:
 
-### Recent Improvements (Latest)
+```bash
+npm run build
+```
 
-- ✅ Phase 1A completion: 22 resources with audio
-- ✅ Audio script transformation system
-- ✅ Type-aware audio generation
-- ✅ Content alignment improvements
-- ✅ AI-powered resource generation system (50+ resources)
-- ✅ Rate limiting infrastructure
-- ✅ Markdown rendering capabilities
-- ✅ Performance optimizations (95+ Lighthouse score)
-- ✅ Complete design system integration
-- ✅ Automated documentation sync
-- ✅ TypeScript strict mode enabled
-- ✅ Next.js 15.0 upgrade with React 18 support
-- ✅ Component data extraction (57% size reduction)
-- ✅ Comprehensive cleanup and optimization
-- ✅ Service Worker for offline capability
+Deploy the `out` directory to hosting service. Domain is configured for hablas.co.
 
-## 🤝 Contributing
+### GitHub Pages (Previous)
 
-Contributions welcome! Focus on:
-- More workplace-specific phrases
+Previously deployed to `https://bjpl.github.io/hablas/`
+
+## Contributing
+
+Contributions are welcome. Focus areas include:
+- Additional workplace-specific phrases
 - Audio pronunciations with Colombian accent considerations
 - Visual vocabulary for app interfaces
 
-## 📄 License
+Please open an issue or submit a pull request.
 
-MIT - Free for all Colombian workers to use and share
+## License
+
+MIT License - Free for all Colombian workers to use and share.
 
 ---
 
-Hecho con ❤️ en Medellín para toda Colombia
+Made with care in Medellín for all of Colombia
