@@ -262,7 +262,7 @@ export async function revokeSession(sessionId: string): Promise<void> {
 /**
  * Blacklist token (database stub)
  */
-export async function blacklistToken(token: string): Promise<void> {
+export async function blacklistToken(token: string, expiresAt?: string): Promise<void> {
   await revokeRefreshToken(token);
 }
 
