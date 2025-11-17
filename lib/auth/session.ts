@@ -224,3 +224,71 @@ export async function revokeAllUserSessions(userId: string): Promise<void> {
   const remainingSessions = sessions.filter(session => session.userId !== userId);
   await saveSessions(remainingSessions);
 }
+
+/**
+ * Create new session (database stub)
+ */
+export async function createSession(userId: string, role: UserRole): Promise<string> {
+  const refreshToken = await generateRefreshToken(userId, role);
+  await storeSession(userId, refreshToken, role);
+  return refreshToken;
+}
+
+/**
+ * Get session by refresh token (database stub)
+ */
+export async function getSessionByRefreshToken(token: string): Promise<Session | null> {
+  const sessions = await loadSessions();
+  return sessions.find(s => s.refreshToken === token) || null;
+}
+
+/**
+ * Revoke session (database stub)
+ */
+export async function revokeSession(sessionId: string): Promise<void> {
+  // Deprecated: Use database sessions table
+  return;
+}
+
+/**
+ * Blacklist token (database stub)
+ */
+export async function blacklistToken(token: string): Promise<void> {
+  await revokeRefreshToken(token);
+}
+
+/**
+ * Check if token is blacklisted (database stub)
+ */
+export async function isTokenBlacklisted(token: string): Promise<boolean> {
+  const blacklist = await loadBlacklist();
+  return blacklist.some(item => item.token === token);
+}
+
+/**
+ * Generate password reset token (database stub)
+ */
+export async function generatePasswordResetToken(email: string): Promise<string> {
+  // Generate a password reset token (simplified for Edge Runtime)
+  const token = await new SignJWT({ email, type: 'password-reset' })
+    .setProtectedHeader({ alg: 'HS256' })
+    .setExpirationTime('1h')
+    .setIssuedAt()
+    .sign(REFRESH_SECRET);
+  return token;
+}
+
+/**
+ * Verify password reset token (database stub)
+ */
+export async function verifyPasswordResetToken(token: string): Promise<{ email: string } | null> {
+  try {
+    const { payload } = await jwtVerify(token, REFRESH_SECRET);
+    if (payload.type !== 'password-reset' || !payload.email) {
+      return null;
+    }
+    return { email: payload.email as string };
+  } catch (error) {
+    return null;
+  }
+}
