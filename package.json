@@ -30,12 +30,19 @@
     "test:coverage": "jest --coverage",
     "generate:audio-specs": "node scripts/generate-audio-specs.js",
     "generate:audio-metadata": "tsx scripts/create-audio-metadata.ts",
-    "test:rate-limit": "tsx scripts/test-rate-limit.ts"
+    "test:rate-limit": "tsx scripts/test-rate-limit.ts",
+    "auth:init": "tsx scripts/init-admin.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.65.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie": "^0.6.0",
+    "@types/jsonwebtoken": "^9.0.10",
+    "bcryptjs": "^3.0.3",
+    "cookie": "^1.0.2",
     "dompurify": "^3.3.0",
     "dotenv": "^17.2.3",
+    "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.548.0",
     "next": "^15.0.0",
     "react": "^18.3.1",
