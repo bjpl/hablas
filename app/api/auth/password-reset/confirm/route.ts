@@ -43,8 +43,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Get user
-    const user = await getUserById(tokenData.userId);
+    // Get user by email (password reset tokens contain email, not userId)
+    const user = await getUserByEmail(tokenData.email);
 
     if (!user) {
       return NextResponse.json(
