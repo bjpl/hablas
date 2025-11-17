@@ -41,6 +41,7 @@ const REFRESH_SECRET = new TextEncoder().encode(
 );
 
 export interface Session {
+  id: string; // Session ID for database compatibility
   userId: string;
   sessionId: string;
   refreshToken: string;
