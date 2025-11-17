@@ -43,11 +43,13 @@ const REFRESH_SECRET = new TextEncoder().encode(
 export interface Session {
   id: string; // Session ID for database compatibility
   userId: string;
-  sessionId: string;
   refreshToken: string;
   createdAt: Date;
   expiresAt: Date;
   userRole?: UserRole;
+  email?: string; // User email for token refresh
+  userAgent?: string; // User agent string
+  ipAddress?: string; // IP address for security
 }
 
 interface BlacklistedToken {
@@ -101,8 +103,8 @@ async function saveBlacklist(blacklist: BlacklistedToken[]): Promise<void> {
 /**
  * Generate refresh token
  */
-export async function generateRefreshToken(userId: string, role: UserRole): Promise<string> {
-  const token = await new SignJWT({ userId, role })
+export async function generateRefreshToken(userId: string, email: string, role: UserRole): Promise<string> {
+  const token = await new SignJWT({ userId, email, role })
     .setProtectedHeader({ alg: 'HS256' })
     .setExpirationTime('7d')
     .setIssuedAt()
@@ -114,7 +116,7 @@ export async function generateRefreshToken(userId: string, role: UserRole): Prom
 /**
  * Verify and decode refresh token
  */
-export async function verifyRefreshToken(token: string): Promise<{ userId: string; role: UserRole } | null> {
+export async function verifyRefreshToken(token: string): Promise<{ userId: string; email: string; role: UserRole } | null> {
   try {
     // Check if token is blacklisted
     const blacklist = await loadBlacklist();
@@ -124,12 +126,13 @@ export async function verifyRefreshToken(token: string): Promise<{ userId: strin
 
     const { payload } = await jwtVerify(token, REFRESH_SECRET);
 
-    if (!payload.userId || !payload.role) {
+    if (!payload.userId || !payload.email || !payload.role) {
       return null;
     }
 
     return {
       userId: payload.userId as string,
+      email: payload.email as string,
       role: payload.role as UserRole,
     };
   } catch (error) {
@@ -143,19 +146,25 @@ export async function verifyRefreshToken(token: string): Promise<{ userId: strin
  */
 export async function storeSession(
   userId: string,
+  email: string,
   refreshToken: string,
-  role: UserRole
+  role: UserRole,
+  userAgent?: string,
+  ipAddress?: string
 ): Promise<void> {
   const sessions = await loadSessions();
   const sessionId = crypto.randomUUID();
 
   const newSession: Session = {
+    id: sessionId,
     userId,
-    sessionId,
+    email,
     refreshToken,
     createdAt: new Date(),
     expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
     userRole: role,
+    userAgent,
+    ipAddress,
   };
 
   sessions.push(newSession);
@@ -236,8 +245,8 @@ export async function createSession(
   userAgent?: string,
   ipAddress?: string
 ): Promise<{ refreshToken: string; sessionId: string }> {
-  const refreshToken = await generateRefreshToken(userId, role);
-  await storeSession(userId, refreshToken, role);
+  const refreshToken = await generateRefreshToken(userId, email, role);
+  await storeSession(userId, email, refreshToken, role, userAgent, ipAddress);
   return {
     refreshToken,
     sessionId: crypto.randomUUID(),
@@ -250,6 +259,14 @@ export async function createSession(
 export async function getSessionByRefreshToken(token: string): Promise<Session | null> {
   const sessions = await loadSessions();
   return sessions.find(s => s.refreshToken === token) || null;
+}
+
+/**
+ * Update session last used timestamp (database stub)
+ */
+export async function updateSessionLastUsed(sessionId: string): Promise<void> {
+  // Deprecated: Use database sessions table for last_used_at updates
+  return;
 }
 
 /**
@@ -278,9 +295,9 @@ export async function isTokenBlacklisted(token: string): Promise<boolean> {
 /**
  * Generate password reset token (database stub)
  */
-export async function generatePasswordResetToken(email: string): Promise<string> {
+export async function generatePasswordResetToken(userId: string, email: string): Promise<string> {
   // Generate a password reset token (simplified for Edge Runtime)
-  const token = await new SignJWT({ email, type: 'password-reset' })
+  const token = await new SignJWT({ userId, email, type: 'password-reset' })
     .setProtectedHeader({ alg: 'HS256' })
     .setExpirationTime('1h')
     .setIssuedAt()

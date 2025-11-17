@@ -16,12 +16,12 @@ import { middleware } from '@/middleware';
 import { checkAuth, requireAuth, requireRole } from '@/lib/auth/middleware-helper';
 import { generateToken, verifyToken, refreshToken } from '@/lib/auth/jwt';
 import { createAuthCookie, getTokenFromRequest } from '@/lib/auth/cookies';
-import { addToBlacklist, isTokenBlacklisted } from '@/lib/auth/session';
+import { blacklistToken, isTokenBlacklisted } from '@/lib/auth/session';
 import type { UserRole } from '@/lib/auth/types';
 
 // Mock modules
 jest.mock('@/lib/auth/session', () => ({
-  addToBlacklist: jest.fn(),
+  blacklistToken: jest.fn(),
   isTokenBlacklisted: jest.fn(),
   createSession: jest.fn(),
 }));

@@ -385,7 +385,8 @@ describe('Login API Route', () => {
 
   describe('OPTIONS /api/auth/login', () => {
     it('should handle OPTIONS request for CORS', async () => {
-      const response = await OPTIONS();
+      const mockRequest = createMockRequest('OPTIONS', 'http://localhost:3000/api/auth/login');
+      const response = await OPTIONS(mockRequest);
 
       expect(response.status).toBe(200);
       expect(response.headers.get('Access-Control-Allow-Origin')).toBe('*');
