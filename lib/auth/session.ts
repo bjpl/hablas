@@ -228,10 +228,19 @@ export async function revokeAllUserSessions(userId: string): Promise<void> {
 /**
  * Create new session (database stub)
  */
-export async function createSession(userId: string, role: UserRole): Promise<string> {
+export async function createSession(
+  userId: string,
+  email: string,
+  role: UserRole,
+  userAgent?: string,
+  ipAddress?: string
+): Promise<{ refreshToken: string; sessionId: string }> {
   const refreshToken = await generateRefreshToken(userId, role);
   await storeSession(userId, refreshToken, role);
-  return refreshToken;
+  return {
+    refreshToken,
+    sessionId: crypto.randomUUID(),
+  };
 }
 
 /**
