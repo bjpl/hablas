@@ -4,10 +4,8 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { getUserById } from '@/lib/auth/users';
-import { verifyPasswordResetToken } from '@/lib/auth/session';
-import { hashPassword } from '@/lib/auth/users';
-import { revokeAllUserSessions } from '@/lib/auth/session';
+import { getUserByEmail, hashPassword } from '@/lib/auth/users';
+import { verifyPasswordResetToken, revokeAllUserSessions } from '@/lib/auth/session';
 import { validateRequest, passwordResetSchema } from '@/lib/auth/validation';
 import { promises as fs } from 'fs';
 import path from 'path';
