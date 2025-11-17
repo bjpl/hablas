@@ -291,13 +291,16 @@ export async function generatePasswordResetToken(email: string): Promise<string>
 /**
  * Verify password reset token (database stub)
  */
-export async function verifyPasswordResetToken(token: string): Promise<{ email: string } | null> {
+export async function verifyPasswordResetToken(token: string): Promise<{ email: string; userId?: string } | null> {
   try {
     const { payload } = await jwtVerify(token, REFRESH_SECRET);
     if (payload.type !== 'password-reset' || !payload.email) {
       return null;
     }
-    return { email: payload.email as string };
+    return {
+      email: payload.email as string,
+      userId: payload.userId as string | undefined
+    };
   } catch (error) {
     return null;
   }
