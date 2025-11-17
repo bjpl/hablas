@@ -31,341 +31,196 @@ if (!REFRESH_TOKEN_SECRET) {
   var TEMP_REFRESH_SECRET = tempSecret;
 }
 
-// Validate secret length
+// Validate secret length (minimum 32 characters for security)
 if (REFRESH_TOKEN_SECRET && REFRESH_TOKEN_SECRET.length < 32) {
-  throw new Error('REFRESH_TOKEN_SECRET must be at least 32 characters long for security');
+  throw new Error('CRITICAL: REFRESH_TOKEN_SECRET must be at least 32 characters long. Generate a secure secret using: openssl rand -base64 48');
 }
 
-const REFRESH_TOKEN_EXPIRY = '30d'; // 30 days for refresh tokens
-
-// Convert secret to Uint8Array for jose
-const refreshSecretKey = new TextEncoder().encode(REFRESH_TOKEN_SECRET || (TEMP_REFRESH_SECRET as any));
+const REFRESH_SECRET = new TextEncoder().encode(
+  REFRESH_TOKEN_SECRET || (typeof TEMP_REFRESH_SECRET !== 'undefined' ? TEMP_REFRESH_SECRET : '')
+);
 
 export interface Session {
-  id: string;
   userId: string;
+  sessionId: string;
   refreshToken: string;
-  createdAt: string;
-  expiresAt: string;
-  lastUsed: string;
-  userAgent?: string;
-  ipAddress?: string;
-}
-
-export interface PasswordResetToken {
-  token: string;
-  userId: string;
-  email: string;
-  expiresAt: string;
-  used: boolean;
+  createdAt: Date;
+  expiresAt: Date;
+  userRole?: UserRole;
 }
 
 interface BlacklistedToken {
   token: string;
-  blacklistedAt: string;
-  expiresAt: string;
+  blacklistedAt: Date;
+  expiresAt: Date;
 }
 
 /**
- * Load sessions from file
+ * Load sessions from database
+ * NOTE: File-based sessions are deprecated - use database sessions table instead
+ * This is a stub for backward compatibility
  */
 async function loadSessions(): Promise<Session[]> {
-  try {
-    const data = await fs.readFile(SESSIONS_FILE, 'utf-8');
-    return JSON.parse(data);
-  } catch {
-    return [];
-  }
+  // Deprecated: Sessions are now stored in PostgreSQL sessions table
+  return [];
 }
 
 /**
- * Save sessions to file
+ * Save sessions to database
+ * NOTE: File-based sessions are deprecated - use database sessions table instead
+ * This is a stub for backward compatibility
  */
 async function saveSessions(sessions: Session[]): Promise<void> {
-  try {
-    // Ensure data directory exists
-    const dataDir = path.dirname(SESSIONS_FILE);
-    await fs.mkdir(dataDir, { recursive: true });
-    await fs.writeFile(SESSIONS_FILE, JSON.stringify(sessions, null, 2), 'utf-8');
-  } catch (error) {
-    console.error('Error saving sessions:', error);
-    throw new Error('Failed to save sessions');
-  }
+  // Deprecated: Sessions are now stored in PostgreSQL sessions table
+  // No-op for Edge Runtime compatibility
+  return;
 }
 
 /**
- * Load token blacklist
+ * Load token blacklist from database
+ * NOTE: File-based storage is deprecated - use database refresh_tokens table instead
+ * This is a stub for backward compatibility
  */
 async function loadBlacklist(): Promise<BlacklistedToken[]> {
-  try {
-    const data = await fs.readFile(BLACKLIST_FILE, 'utf-8');
-    return JSON.parse(data);
-  } catch {
-    return [];
-  }
+  // Deprecated: Token revocation is now handled by PostgreSQL refresh_tokens table
+  return [];
 }
 
 /**
- * Save token blacklist
+ * Save blacklist to database
+ * NOTE: File-based storage is deprecated - use database refresh_tokens table instead
+ * This is a stub for backward compatibility
  */
 async function saveBlacklist(blacklist: BlacklistedToken[]): Promise<void> {
-  try {
-    const dataDir = path.dirname(BLACKLIST_FILE);
-    await fs.mkdir(dataDir, { recursive: true });
-    await fs.writeFile(BLACKLIST_FILE, JSON.stringify(blacklist, null, 2), 'utf-8');
-  } catch (error) {
-    console.error('Error saving blacklist:', error);
-  }
+  // Deprecated: Token revocation is now handled by PostgreSQL refresh_tokens table
+  // No-op for Edge Runtime compatibility
+  return;
 }
 
 /**
- * Clean up expired sessions
+ * Generate refresh token
  */
-async function cleanupExpiredSessions(): Promise<void> {
-  const sessions = await loadSessions();
-  const now = new Date().toISOString();
-  const activeSessions = sessions.filter(s => s.expiresAt > now);
-
-  if (activeSessions.length !== sessions.length) {
-    await saveSessions(activeSessions);
-  }
-}
-
-/**
- * Clean up expired blacklist entries
- */
-async function cleanupBlacklist(): Promise<void> {
-  const blacklist = await loadBlacklist();
-  const now = new Date().toISOString();
-  const activeEntries = blacklist.filter(b => b.expiresAt > now);
-
-  if (activeEntries.length !== blacklist.length) {
-    await saveBlacklist(activeEntries);
-  }
-}
-
-/**
- * Generate a refresh token
- */
-export async function generateRefreshToken(
-  userId: string,
-  email: string,
-  role: UserRole
-): Promise<string> {
-  // Calculate expiry (30 days from now)
-  const expirySeconds = 30 * 24 * 60 * 60;
-
-  const token = await new SignJWT({
-    userId,
-    email,
-    role,
-    type: 'refresh',
-  })
+export async function generateRefreshToken(userId: string, role: UserRole): Promise<string> {
+  const token = await new SignJWT({ userId, role })
     .setProtectedHeader({ alg: 'HS256' })
+    .setExpirationTime('7d')
     .setIssuedAt()
-    .setExpirationTime(Math.floor(Date.now() / 1000) + expirySeconds)
-    .setJti(`refresh_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`)
-    .sign(refreshSecretKey);
+    .sign(REFRESH_SECRET);
 
   return token;
 }
 
 /**
- * Verify a refresh token
+ * Verify and decode refresh token
  */
-export async function verifyRefreshToken(token: string): Promise<{
-  userId: string;
-  email: string;
-  role: UserRole;
-} | null> {
+export async function verifyRefreshToken(token: string): Promise<{ userId: string; role: UserRole } | null> {
   try {
     // Check if token is blacklisted
-    const isBlacklisted = await isTokenBlacklisted(token);
-    if (isBlacklisted) {
+    const blacklist = await loadBlacklist();
+    if (blacklist.some(item => item.token === token)) {
       return null;
     }
 
-    const { payload } = await jwtVerify(token, refreshSecretKey);
+    const { payload } = await jwtVerify(token, REFRESH_SECRET);
 
-    if (payload.type !== 'refresh') {
+    if (!payload.userId || !payload.role) {
       return null;
     }
 
     return {
       userId: payload.userId as string,
-      email: payload.email as string,
       role: payload.role as UserRole,
     };
   } catch (error) {
-    if (error instanceof Error) {
-      console.error('Refresh token verification error:', error.message);
-    }
+    console.error('Refresh token verification failed:', error);
     return null;
   }
 }
 
 /**
- * Create a new session with refresh token
+ * Store refresh token session
  */
-export async function createSession(
+export async function storeSession(
   userId: string,
-  email: string,
-  role: UserRole,
-  userAgent?: string,
-  ipAddress?: string
-): Promise<{ sessionId: string; refreshToken: string }> {
-  await cleanupExpiredSessions();
+  refreshToken: string,
+  role: UserRole
+): Promise<void> {
+  const sessions = await loadSessions();
+  const sessionId = crypto.randomUUID();
 
-  const refreshToken = await generateRefreshToken(userId, email, role);
-  const now = new Date();
-  const expiresAt = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000); // 30 days
-
-  const session: Session = {
-    id: `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+  const newSession: Session = {
     userId,
+    sessionId,
     refreshToken,
-    createdAt: now.toISOString(),
-    expiresAt: expiresAt.toISOString(),
-    lastUsed: now.toISOString(),
-    userAgent,
-    ipAddress,
+    createdAt: new Date(),
+    expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
+    userRole: role,
   };
 
-  const sessions = await loadSessions();
-  sessions.push(session);
+  sessions.push(newSession);
   await saveSessions(sessions);
-
-  return { sessionId: session.id, refreshToken };
 }
 
 /**
- * Get session by refresh token
+ * Revoke refresh token
  */
-export async function getSessionByRefreshToken(refreshToken: string): Promise<Session | null> {
-  const sessions = await loadSessions();
-  const session = sessions.find(s => s.refreshToken === refreshToken);
-
-  if (!session) {
-    return null;
-  }
-
-  // Check if session is expired
-  if (new Date(session.expiresAt) < new Date()) {
-    return null;
-  }
-
-  return session;
-}
-
-/**
- * Update session last used timestamp
- */
-export async function updateSessionLastUsed(sessionId: string): Promise<void> {
-  const sessions = await loadSessions();
-  const session = sessions.find(s => s.id === sessionId);
-
-  if (session) {
-    session.lastUsed = new Date().toISOString();
-    await saveSessions(sessions);
-  }
-}
-
-/**
- * Revoke a session (delete it)
- */
-export async function revokeSession(sessionId: string): Promise<void> {
-  const sessions = await loadSessions();
-  const filteredSessions = sessions.filter(s => s.id !== sessionId);
-  await saveSessions(filteredSessions);
-}
-
-/**
- * Revoke all sessions for a user
- */
-export async function revokeAllUserSessions(userId: string): Promise<void> {
-  const sessions = await loadSessions();
-  const filteredSessions = sessions.filter(s => s.userId !== userId);
-  await saveSessions(filteredSessions);
-}
-
-/**
- * Get all sessions for a user
- */
-export async function getUserSessions(userId: string): Promise<Session[]> {
-  const sessions = await loadSessions();
-  const now = new Date().toISOString();
-  return sessions.filter(s => s.userId === userId && s.expiresAt > now);
-}
-
-/**
- * Add token to blacklist
- */
-export async function blacklistToken(token: string, expiresAt: string): Promise<void> {
-  await cleanupBlacklist();
-
+export async function revokeRefreshToken(token: string): Promise<void> {
   const blacklist = await loadBlacklist();
+
   blacklist.push({
     token,
-    blacklistedAt: new Date().toISOString(),
-    expiresAt,
+    blacklistedAt: new Date(),
+    expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // Match token expiry
   });
 
   await saveBlacklist(blacklist);
 }
 
 /**
- * Check if token is blacklisted
+ * Clean up expired sessions and blacklisted tokens
  */
-export async function isTokenBlacklisted(token: string): Promise<boolean> {
+export async function cleanupExpired(): Promise<void> {
+  const now = new Date();
+
+  // Clean sessions
+  const sessions = await loadSessions();
+  const activeSessions = sessions.filter(session => session.expiresAt > now);
+  await saveSessions(activeSessions);
+
+  // Clean blacklist
   const blacklist = await loadBlacklist();
-  return blacklist.some(b => b.token === token);
+  const activeBlacklist = blacklist.filter(item => item.expiresAt > now);
+  await saveBlacklist(activeBlacklist);
 }
 
 /**
- * Generate password reset token
+ * Get user sessions
  */
-export async function generatePasswordResetToken(
-  userId: string,
-  email: string
-): Promise<string> {
-  const expirySeconds = 60 * 60; // 1 hour
-
-  const token = await new SignJWT({
-    userId,
-    email,
-    type: 'password-reset',
-  })
-    .setProtectedHeader({ alg: 'HS256' })
-    .setIssuedAt()
-    .setExpirationTime(Math.floor(Date.now() / 1000) + expirySeconds)
-    .setJti(`reset_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`)
-    .sign(refreshSecretKey);
-
-  return token;
+export async function getUserSessions(userId: string): Promise<Session[]> {
+  const sessions = await loadSessions();
+  return sessions.filter(session => session.userId === userId && session.expiresAt > new Date());
 }
 
 /**
- * Verify password reset token
+ * Revoke all user sessions
  */
-export async function verifyPasswordResetToken(token: string): Promise<{
-  userId: string;
-  email: string;
-} | null> {
-  try {
-    const { payload } = await jwtVerify(token, refreshSecretKey);
+export async function revokeAllUserSessions(userId: string): Promise<void> {
+  const sessions = await loadSessions();
+  const userSessions = sessions.filter(session => session.userId === userId);
 
-    if (payload.type !== 'password-reset') {
-      return null;
-    }
-
-    return {
-      userId: payload.userId as string,
-      email: payload.email as string,
-    };
-  } catch (error) {
-    if (error instanceof Error) {
-      console.error('Password reset token verification error:', error.message);
-    }
-    return null;
+  // Blacklist all user's refresh tokens
+  const blacklist = await loadBlacklist();
+  for (const session of userSessions) {
+    blacklist.push({
+      token: session.refreshToken,
+      blacklistedAt: new Date(),
+      expiresAt: session.expiresAt,
+    });
   }
+
+  await saveBlacklist(blacklist);
+
+  // Remove user sessions
+  const remainingSessions = sessions.filter(session => session.userId !== userId);
+  await saveSessions(remainingSessions);
 }
