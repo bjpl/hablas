@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useRef, useEffect, useState } from 'react';
-import { Play, Pause, Volume2, VolumeX, SkipBack, SkipForward } from 'lucide-react';
+import { Play, Pause, Volume2, VolumeX, SkipBack, SkipForward, AlertCircle } from 'lucide-react';
 import type { AudioPlayerState } from '@/lib/types/media';
 
 interface AudioPlayerProps {
@@ -18,6 +18,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
   onEnded,
 }) => {
   const audioRef = useRef<HTMLAudioElement>(null);
+  const [resolvedSrc, setResolvedSrc] = useState<string>(src);
   const [state, setState] = useState<AudioPlayerState>({
     isPlaying: false,
     currentTime: 0,
@@ -28,6 +29,39 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
     isLoading: true,
     error: null,
   });
+
+  // Resolve audio URL - try blob storage first, fallback to public path
+  useEffect(() => {
+    const resolveUrl = async () => {
+      // If already a full URL, use it
+      if (src.startsWith('http://') || src.startsWith('https://')) {
+        setResolvedSrc(src);
+        return;
+      }
+
+      // Try to get from blob storage in production
+      if (process.env.NODE_ENV === 'production' || process.env.NEXT_PUBLIC_VERCEL_ENV) {
+        const filename = src.replace(/^\/audio\//, '');
+        try {
+          const response = await fetch(`/api/audio/${filename}`);
+          if (response.ok) {
+            const data = await response.json();
+            if (data.success && data.url) {
+              setResolvedSrc(data.url);
+              return;
+            }
+          }
+        } catch (error) {
+          console.warn(`Blob storage unavailable for ${filename}, using public path`);
+        }
+      }
+
+      // Fallback to original path
+      setResolvedSrc(src);
+    };
+
+    resolveUrl();
+  }, [src]);
 
   // Initialize audio element
   useEffect(() => {
@@ -137,14 +171,33 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
   if (state.error) {
     return (
       <div className={`p-4 bg-red-50 border border-red-200 rounded-lg ${className}`}>
-        <p className="text-sm text-red-800">{state.error}</p>
+        <div className="flex items-start gap-3">
+          <AlertCircle className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" />
+          <div className="flex-1">
+            <p className="text-sm font-medium text-red-900">Audio Playback Error</p>
+            <p className="text-xs text-red-700 mt-1">{state.error}</p>
+            <p className="text-xs text-red-600 mt-2">
+              <strong>Note:</strong> Audio files are served from Vercel Blob Storage in production.
+              If this error persists, the audio file may need to be uploaded to blob storage.
+            </p>
+            <details className="mt-2 text-xs text-red-600">
+              <summary className="cursor-pointer font-medium">Troubleshooting</summary>
+              <ul className="mt-1 ml-4 list-disc space-y-1">
+                <li>Check if the audio file exists in blob storage</li>
+                <li>Verify BLOB_READ_WRITE_TOKEN is configured</li>
+                <li>Ensure the file was uploaded using the upload script</li>
+                <li>Path: {src} → {resolvedSrc}</li>
+              </ul>
+            </details>
+          </div>
+        </div>
       </div>
     );
   }
 
   return (
     <div className={`audio-player bg-white border border-gray-200 rounded-lg p-4 ${className}`}>
-      <audio ref={audioRef} src={src} preload="metadata" />
+      <audio ref={audioRef} src={resolvedSrc} preload="metadata" />
 
       {/* Progress Bar */}
       <div className="mb-4">

@@ -38,6 +38,7 @@
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand",
     "generate:audio-specs": "node scripts/generate-audio-specs.js",
     "generate:audio-metadata": "tsx scripts/create-audio-metadata.ts",
+    "audio:upload-blob": "tsx scripts/upload-audio-to-blob.ts",
     "test:rate-limit": "tsx scripts/test-rate-limit.ts",
     "auth:init": "tsx scripts/init-admin.ts",
     "db:init": "tsx database/scripts/init-db.ts",
