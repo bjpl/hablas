@@ -13,26 +13,55 @@ const USERS_FILE = path.join(process.cwd(), 'data', 'users.json');
 const SALT_ROUNDS = 10;
 
 /**
- * Load users from JSON file
+ * Load users from JSON file or environment variables (for Vercel)
  */
 async function loadUsers(): Promise<User[]> {
   try {
     const data = await fs.readFile(USERS_FILE, 'utf-8');
     return JSON.parse(data);
   } catch (error) {
-    // If file doesn't exist, return empty array
+    // If file doesn't exist (Vercel serverless), check environment variables
+    if (process.env.ADMIN_EMAIL && process.env.ADMIN_PASSWORD) {
+      console.log('📁 File system unavailable - using environment variables for admin user');
+
+      // Check if password is already hashed (bcrypt hashes start with $2a$ or $2b$)
+      const isHashed = process.env.ADMIN_PASSWORD.startsWith('$2a$') ||
+                       process.env.ADMIN_PASSWORD.startsWith('$2b$');
+
+      const passwordHash = isHashed
+        ? process.env.ADMIN_PASSWORD
+        : await hashPassword(process.env.ADMIN_PASSWORD);
+
+      // Create admin user from environment variables
+      const adminUser: User = {
+        id: 'user_env_admin',
+        email: process.env.ADMIN_EMAIL,
+        password: passwordHash,
+        role: 'admin',
+        name: 'Admin User',
+        createdAt: new Date().toISOString(),
+      };
+      return [adminUser];
+    }
+
+    // No file and no env vars - return empty array
     console.error('Error loading users:', error);
     return [];
   }
 }
 
 /**
- * Save users to JSON file
+ * Save users to JSON file (skips on Vercel serverless)
  */
 async function saveUsers(users: User[]): Promise<void> {
   try {
     await fs.writeFile(USERS_FILE, JSON.stringify(users, null, 2), 'utf-8');
   } catch (error) {
+    // On Vercel serverless, filesystem is read-only - skip save
+    if (process.env.VERCEL || process.env.NODE_ENV === 'production') {
+      console.log('⚠️ Serverless environment - skipping user save to file system');
+      return; // Skip file save on Vercel
+    }
     console.error('Error saving users:', error);
     throw new Error('Failed to save users');
   }
