@@ -17,12 +17,17 @@
     --radius-md: 0.5rem;     /* 8px */
     --radius-lg: 0.75rem;    /* 12px */
     --radius-xl: 1rem;       /* 16px */
+    --radius-2xl: 1.5rem;    /* 24px */
+    --radius-3xl: 2rem;      /* 32px */
 
-    /* Shadows */
+    /* Shadows - Enhanced with multiple layers for depth */
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
     --shadow-md: 0 2px 6px rgba(0, 0, 0, 0.10);
     --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.12);
     --shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.15);
+    --shadow-card: 0 2px 4px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
+    --shadow-card-hover: 0 4px 8px rgba(0, 0, 0, 0.08), 0 8px 16px rgba(0, 0, 0, 0.06);
+    --shadow-glow: 0 0 20px rgba(18, 140, 126, 0.15);
 
     /* Transitions */
     --transition-fast: 150ms ease-in-out;
@@ -275,5 +280,118 @@
 
   .min-w-touch {
     min-width: 44px;
+  }
+
+  /* Safe area support for iOS notch/Android gesture bars */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  .h-safe-bottom {
+    height: env(safe-area-inset-bottom, 0px);
+  }
+
+  .h-safe-top {
+    height: env(safe-area-inset-top, 0px);
+  }
+
+  /* Account for bottom nav height in scrollable content */
+  .mb-bottom-nav {
+    margin-bottom: calc(4rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Prevent tap highlight on mobile */
+  .no-tap-highlight {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Button styles */
+  .btn-primary {
+    @apply px-8 py-4 bg-gradient-to-r from-accent-blue to-blue-600
+      text-white font-bold rounded-xl shadow-lg
+      hover:shadow-xl hover:scale-105 active:scale-95
+      transition-all duration-200
+      flex items-center justify-center gap-2
+      min-h-[52px];
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 bg-white text-gray-700 font-semibold rounded-xl
+      border-2 border-gray-300
+      hover:border-accent-blue hover:text-accent-blue hover:shadow-md
+      active:scale-95 transition-all duration-200
+      flex items-center justify-center gap-2
+      min-h-[52px];
+  }
+
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-in-top {
+    animation: slideInFromTop 0.5s ease-out;
+  }
+
+  @keyframes slideInFromTop {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-bounce-in {
+    animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Enhanced shadows with proper CSS custom property usage */
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Scale animations */
+  .hover\:scale-102:hover {
+    transform: scale(1.02);
   }
 }

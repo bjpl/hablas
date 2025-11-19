@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useDebounce } from '../hooks/useDebounce'
 
 interface SearchBarProps {
   onSearch: (query: string) => void
@@ -9,11 +10,17 @@ interface SearchBarProps {
 
 export default function SearchBar({ onSearch, placeholder = "Buscar recursos..." }: SearchBarProps) {
   const [query, setQuery] = useState('')
+  // Debounce search query with 300ms delay to improve performance
+  const debouncedQuery = useDebounce(query, 300)
+
+  // Trigger search only when debounced value changes
+  useEffect(() => {
+    onSearch(debouncedQuery)
+  }, [debouncedQuery, onSearch])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value
     setQuery(value)
-    onSearch(value)
   }
 
   const handleClear = () => {
