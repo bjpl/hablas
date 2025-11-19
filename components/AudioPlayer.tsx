@@ -51,6 +51,7 @@ export default function AudioPlayer({
   const [isLooping, setIsLooping] = useState(false);
   const [isCached, setIsCached] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
+  const [resolvedAudioUrl, setResolvedAudioUrl] = useState<string | undefined>(undefined);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const formatTime = (seconds: number): string => {
@@ -60,40 +61,96 @@ export default function AudioPlayer({
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
+  // Resolve audio URL - try blob storage first, fallback to public path
+  useEffect(() => {
+    const resolveAudioUrl = async () => {
+      if (!audioUrl) {
+        setIsLoading(false);
+        setError('No hay archivo de audio disponible');
+        setResolvedAudioUrl(undefined);
+        return;
+      }
+
+      setIsLoading(true);
+      setError(null);
+
+      // If already a full URL (blob storage), use it directly
+      if (audioUrl.startsWith('http://') || audioUrl.startsWith('https://')) {
+        console.log('[AudioPlayer] Using full URL:', audioUrl);
+        setResolvedAudioUrl(audioUrl);
+        setIsLoading(false);
+        return;
+      }
+
+      // In development, use local path directly
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[AudioPlayer] Development mode, using local path:', audioUrl);
+        setResolvedAudioUrl(audioUrl);
+        setIsLoading(false);
+        return;
+      }
+
+      // In production, try to get from blob storage
+      const filename = audioUrl.replace(/^\/audio\//, '');
+      console.log('[AudioPlayer] Resolving blob storage URL for:', filename);
+
+      try {
+        const response = await fetch(`/api/audio/${filename}`);
+        if (response.ok) {
+          const data = await response.json();
+          if (data.success && data.url) {
+            console.log('[AudioPlayer] Blob URL resolved:', data.url);
+            setResolvedAudioUrl(data.url);
+            setIsLoading(false);
+            setError(null);
+            return;
+          } else {
+            console.warn('[AudioPlayer] API returned unsuccessful response:', data);
+          }
+        } else {
+          console.warn('[AudioPlayer] API request failed:', response.status, response.statusText);
+        }
+      } catch (err) {
+        console.error('[AudioPlayer] Blob storage fetch error:', err);
+      }
+
+      // Fallback to original path - but this likely won't work in production
+      console.log('[AudioPlayer] Falling back to original path:', audioUrl);
+      setResolvedAudioUrl(audioUrl);
+      setIsLoading(false);
+    };
+
+    resolveAudioUrl();
+  }, [audioUrl]);
+
   useEffect(() => {
     const audio = audioRef.current;
-    if (!audio || !audioUrl) {
-      setIsLoading(false);
-      setError(audioUrl ? null : 'No hay archivo de audio disponible');
-      return;
+    if (!audio || !resolvedAudioUrl) return;
+
+    // Preload audio in background (if URL is already resolved)
+    if (resolvedAudioUrl && resolvedAudioUrl.startsWith('http')) {
+      preloadAudio(resolvedAudioUrl, { resourceId }).catch(err => {
+        console.warn('Background preload failed:', err);
+      });
+
+      // Check cache status
+      isAudioCached(resolvedAudioUrl).then(status => {
+        setIsCached(status.isCached);
+      });
     }
 
-    setIsLoading(true);
-    setError(null);
-
-    // Preload audio in background
-    preloadAudio(audioUrl, { resourceId }).catch(err => {
-      console.warn('Background preload failed:', err);
-    });
-
-    // Check cache status
-    isAudioCached(audioUrl).then(status => {
-      setIsCached(status.isCached);
-    });
-
     // Restore playback position if exists
-    const savedPosition = getPlaybackPosition(audioUrl);
+    const savedPosition = getPlaybackPosition(resolvedAudioUrl);
     if (savedPosition > 0 && savedPosition < audio.duration - 1) {
       audio.currentTime = savedPosition;
     }
 
     const handleLoadedMetadata = () => {
       setDuration(audio.duration);
-      setIsLoading(false);
       setError(null);
 
       // Restore position after metadata loaded
-      const savedPosition = getPlaybackPosition(audioUrl);
+      const savedPosition = getPlaybackPosition(resolvedAudioUrl);
       if (savedPosition > 0 && savedPosition < audio.duration - 1) {
         audio.currentTime = savedPosition;
       }
@@ -103,7 +160,7 @@ export default function AudioPlayer({
       setCurrentTime(audio.currentTime);
       // Save position every 2 seconds
       if (Math.floor(audio.currentTime) % 2 === 0) {
-        savePlaybackPosition(audioUrl, audio.currentTime);
+        savePlaybackPosition(resolvedAudioUrl, audio.currentTime);
       }
     };
 
@@ -125,8 +182,8 @@ export default function AudioPlayer({
 
     // Auto-stop when component unmounts
     return () => {
-      if (audioRef.current) {
-        savePlaybackPosition(audioUrl, audioRef.current.currentTime);
+      if (audioRef.current && resolvedAudioUrl) {
+        savePlaybackPosition(resolvedAudioUrl, audioRef.current.currentTime);
         audioRef.current.pause();
         setCurrentAudio(null);
       }
@@ -135,7 +192,7 @@ export default function AudioPlayer({
       audio.removeEventListener('canplay', handleCanPlay);
       audio.removeEventListener('error', handleError);
     };
-  }, [audioUrl, resourceId]);
+  }, [resolvedAudioUrl, resourceId]);
 
   useEffect(() => {
     // Handle autoplay if enabled
@@ -183,8 +240,8 @@ export default function AudioPlayer({
       setIsPlaying(false);
       setCurrentAudio(null);
       // Clear position when finished
-      if (audioUrl) {
-        clearPlaybackPosition(audioUrl);
+      if (resolvedAudioUrl) {
+        clearPlaybackPosition(resolvedAudioUrl);
       }
     }
   };
@@ -215,14 +272,14 @@ export default function AudioPlayer({
   };
 
   const handleDownload = async () => {
-    if (!audioUrl) return;
+    if (!resolvedAudioUrl) return;
 
     setIsDownloading(true);
     const filename = title
       ? `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}.mp3`
-      : audioUrl.split('/').pop();
+      : resolvedAudioUrl.split('/').pop();
 
-    const result = await downloadAudio(audioUrl, filename);
+    const result = await downloadAudio(resolvedAudioUrl, filename);
 
     if (result.success) {
       setIsCached(true);
@@ -256,7 +313,12 @@ export default function AudioPlayer({
       }
     }
 
-    console.error('Audio error:', { url: audioUrl, error: audio?.error, message: errorMessage });
+    console.error('Audio error:', {
+      originalUrl: audioUrl,
+      resolvedUrl: resolvedAudioUrl,
+      error: audio?.error,
+      message: errorMessage
+    });
     setError(errorMessage);
     setIsPlaying(false);
     setIsLoading(false);
@@ -317,7 +379,10 @@ export default function AudioPlayer({
             <div className="bg-red-50 rounded p-4 border border-red-200">
               <p className="text-red-900 font-medium mb-2">Error al cargar el audio</p>
               <p className="text-sm text-red-800">{error}</p>
-              <p className="text-xs text-red-700 mt-2">URL: {audioUrl}</p>
+              <p className="text-xs text-red-700 mt-2">Original URL: {audioUrl}</p>
+              {resolvedAudioUrl && resolvedAudioUrl !== audioUrl && (
+                <p className="text-xs text-red-700 mt-1">Resolved URL: {resolvedAudioUrl}</p>
+              )}
             </div>
           </div>
         ) : isLoading ? (
@@ -467,7 +532,7 @@ export default function AudioPlayer({
 
         <audio
           ref={audioRef}
-          src={audioUrl}
+          src={resolvedAudioUrl}
           onEnded={handleEnded}
           onError={handleError}
           preload="metadata"
@@ -531,7 +596,7 @@ export default function AudioPlayer({
 
       {/* Error Message */}
       {error && (
-        <span className="text-sm text-red-600" role="alert" title={audioUrl || 'No URL'}>
+        <span className="text-sm text-red-600" role="alert" title={resolvedAudioUrl || audioUrl || 'No URL'}>
           {error}
         </span>
       )}
@@ -539,7 +604,7 @@ export default function AudioPlayer({
       {/* Hidden Audio Element */}
       <audio
         ref={audioRef}
-        src={audioUrl}
+        src={resolvedAudioUrl}
         onEnded={handleEnded}
         onError={handleError}
         preload="metadata"
