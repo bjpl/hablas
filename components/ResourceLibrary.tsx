@@ -1,7 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ResourceCard from './ResourceCard'
+import SkeletonList from './mobile/SkeletonList'
 import { resources, type Resource } from '../data/resources'
 
 interface ResourceLibraryProps {
@@ -13,6 +14,16 @@ interface ResourceLibraryProps {
 
 export default function ResourceLibrary({ category, level, searchQuery = '' }: ResourceLibraryProps) {
   const [downloadedResources, setDownloadedResources] = useState<number[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+
+  // Simulate initial loading state (in a real app, this would be tied to actual data fetching)
+  useEffect(() => {
+    // Short delay to show skeleton on initial mount
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 300)
+    return () => clearTimeout(timer)
+  }, [])
 
   const filteredResources = resources.filter(resource => {
     const categoryMatch = category === 'all' || resource.category === category || resource.category === 'all'
@@ -39,6 +50,11 @@ export default function ResourceLibrary({ category, level, searchQuery = '' }: R
 
   const handleDownload = (resourceId: number) => {
     setDownloadedResources(prev => [...prev, resourceId])
+  }
+
+  // Show skeleton loading state during initial load
+  if (isLoading) {
+    return <SkeletonList count={6} />
   }
 
   return (

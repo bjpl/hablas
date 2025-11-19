@@ -4,6 +4,7 @@ import '@/styles/resource-content.css'
 import { Providers } from './providers'
 import ErrorBoundary from '@/components/ErrorBoundary'
 import AdminNav from '@/components/AdminNav'
+import BottomNav from '@/components/mobile/BottomNav'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
@@ -61,6 +62,7 @@ export default function RootLayout({
               Saltar al contenido principal
             </a>
             {children}
+            <BottomNav />
             <AdminNav />
           </Providers>
         </ErrorBoundary>

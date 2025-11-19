@@ -43,13 +43,13 @@ export default function Home() {
   }, [])
 
   return (
-    <main id="main-content" className="min-h-screen" role="main">
+    <main id="main-content" className="min-h-screen mb-bottom-nav" role="main">
       {!isOnline && <OfflineNotice />}
       <InstallPrompt />
 
       <Hero />
       
-      <section className="px-4 py-8 max-w-6xl mx-auto" aria-labelledby="community-heading">
+      <section id="community" className="px-4 py-8 max-w-6xl mx-auto" aria-labelledby="community-heading">
         <div className="mb-8">
           <h2 id="community-heading" className="text-2xl font-bold mb-4">Únete a Nuestra Comunidad</h2>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mb-6" role="region" aria-label="Búsqueda y filtros de recursos">
+        <div id="recursos" className="mb-6" role="region" aria-label="Búsqueda y filtros de recursos">
           {/* Search bar */}
           <SearchBar onSearch={setSearchQuery} placeholder="Buscar por título, descripción o etiquetas..." />
 
@@ -77,34 +77,37 @@ export default function Home() {
             <button
               onClick={() => setSelectedCategory('all')}
               aria-pressed={selectedCategory === 'all'}
-              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border-2 min-h-[44px] ${
                 selectedCategory === 'all'
-                  ? 'bg-accent-blue text-white'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
+                  ? 'bg-accent-blue text-white border-accent-blue shadow-md scale-105'
+                  : 'bg-white text-gray-700 border-gray-300 hover:border-accent-blue hover:text-accent-blue hover:scale-102'
+              } active:scale-95 focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2`}
             >
+              {selectedCategory === 'all' && <span className="mr-2 inline-block">✓</span>}
               Todos
             </button>
             <button
               onClick={() => setSelectedCategory('repartidor')}
               aria-pressed={selectedCategory === 'repartidor'}
-              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border-2 min-h-[44px] ${
                 selectedCategory === 'repartidor'
-                  ? 'bg-rappi text-white'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
+                  ? 'bg-rappi text-white border-rappi shadow-md scale-105'
+                  : 'bg-white text-gray-700 border-gray-300 hover:border-rappi hover:text-rappi hover:scale-102'
+              } active:scale-95 focus-visible:ring-2 focus-visible:ring-rappi focus-visible:ring-offset-2`}
             >
+              {selectedCategory === 'repartidor' && <span className="mr-2 inline-block">✓</span>}
               Repartidor
             </button>
             <button
               onClick={() => setSelectedCategory('conductor')}
               aria-pressed={selectedCategory === 'conductor'}
-              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border-2 min-h-[44px] ${
                 selectedCategory === 'conductor'
-                  ? 'bg-uber text-white'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
+                  ? 'bg-uber text-white border-uber shadow-md scale-105'
+                  : 'bg-white text-gray-700 border-gray-300 hover:border-uber hover:text-uber hover:scale-102'
+              } active:scale-95 focus-visible:ring-2 focus-visible:ring-uber focus-visible:ring-offset-2`}
             >
+              {selectedCategory === 'conductor' && <span className="mr-2 inline-block">✓</span>}
               Conductor
             </button>
           </div>
@@ -114,34 +117,37 @@ export default function Home() {
             <button
               onClick={() => setSelectedLevel('all')}
               aria-pressed={selectedLevel === 'all'}
-              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border-2 min-h-[44px] ${
                 selectedLevel === 'all'
-                  ? 'bg-accent-green text-white'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
+                  ? 'bg-accent-green text-white border-accent-green shadow-md scale-105'
+                  : 'bg-white text-gray-700 border-gray-300 hover:border-accent-green hover:text-accent-green hover:scale-102'
+              } active:scale-95 focus-visible:ring-2 focus-visible:ring-accent-green focus-visible:ring-offset-2`}
             >
+              {selectedLevel === 'all' && <span className="mr-2 inline-block">✓</span>}
               Todos
             </button>
             <button
               onClick={() => setSelectedLevel('basico')}
               aria-pressed={selectedLevel === 'basico'}
-              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border-2 min-h-[44px] ${
                 selectedLevel === 'basico'
-                  ? 'bg-accent-green text-white'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
+                  ? 'bg-accent-green text-white border-accent-green shadow-md scale-105'
+                  : 'bg-white text-gray-700 border-gray-300 hover:border-accent-green hover:text-accent-green hover:scale-102'
+              } active:scale-95 focus-visible:ring-2 focus-visible:ring-accent-green focus-visible:ring-offset-2`}
             >
+              {selectedLevel === 'basico' && <span className="mr-2 inline-block">✓</span>}
               Básico
             </button>
             <button
               onClick={() => setSelectedLevel('intermedio')}
               aria-pressed={selectedLevel === 'intermedio'}
-              className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border-2 min-h-[44px] ${
                 selectedLevel === 'intermedio'
-                  ? 'bg-accent-green text-white'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
+                  ? 'bg-accent-green text-white border-accent-green shadow-md scale-105'
+                  : 'bg-white text-gray-700 border-gray-300 hover:border-accent-green hover:text-accent-green hover:scale-102'
+              } active:scale-95 focus-visible:ring-2 focus-visible:ring-accent-green focus-visible:ring-offset-2`}
             >
+              {selectedLevel === 'intermedio' && <span className="mr-2 inline-block">✓</span>}
               Intermedio
             </button>
           </div>

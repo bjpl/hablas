@@ -54,9 +54,9 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
   }
 
   return (
-    <article className="card-resource flex flex-col h-full">
+    <article className="card-resource flex flex-col h-full transition-all duration-300 ease-out hover:shadow-card-hover hover:-translate-y-1 hover:scale-[1.02] active:scale-[0.98] group cursor-pointer">
       <div className="flex items-start justify-between mb-4">
-        <span className="text-3xl" aria-hidden="true">
+        <span className="text-3xl transition-transform duration-200 group-hover:scale-110 group-hover:rotate-3" aria-hidden="true">
           {getTypeIcon(resource.type)}
         </span>
         {resource.offline && (
@@ -67,7 +67,7 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
       </div>
 
       <Link href={`/recursos/${resource.id}`} aria-label={`Ver detalles de ${resource.title}`}>
-        <h3 className="font-bold text-xl mb-3 hover:text-accent-blue transition-colors duration-200 cursor-pointer line-clamp-2 leading-tight">
+        <h3 className="font-bold text-xl mb-3 transition-colors duration-200 group-hover:text-accent-blue cursor-pointer line-clamp-2 leading-tight">
           {resource.title}
         </h3>
       </Link>
@@ -86,13 +86,13 @@ export default function ResourceCard({ resource, isDownloaded, onDownload }: Res
       </div>
 
       <div className="mt-auto">
-        <Link href={`/recursos/${resource.id}`} className="block">
-          <button
-            className="w-full py-3 px-4 rounded font-semibold bg-accent-blue text-white hover:bg-blue-700 transition-colors"
-            aria-label={`Ver detalles del recurso ${resource.title}`}
-          >
-            Ver recurso
-          </button>
+        {/* Fixed: Removed nested button inside Link to comply with accessibility standards */}
+        <Link
+          href={`/recursos/${resource.id}`}
+          className="block w-full py-3 px-4 rounded-lg font-semibold bg-accent-blue text-white hover:bg-gradient-to-r hover:from-accent-blue hover:to-blue-600 active:scale-95 transition-all duration-200 shadow-sm hover:shadow-md text-center"
+          aria-label={`Ver detalles del recurso ${resource.title}`}
+        >
+          Ver recurso
         </Link>
       </div>
     </article>
