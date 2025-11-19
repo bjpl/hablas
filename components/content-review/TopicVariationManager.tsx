@@ -230,7 +230,7 @@ const SharedSectionsPanel: React.FC<SharedSectionsPanelProps> = ({
             <p className="text-sm text-gray-600">No common sections detected</p>
           )}
 
-          {sharedAnalysis.differences > 0 && (
+          {typeof sharedAnalysis.differences === 'number' && sharedAnalysis.differences > 0 && (
             <div className="mt-3 p-2 bg-amber-50 border border-amber-200 rounded text-sm text-amber-800">
               <AlertCircle className="w-4 h-4 inline mr-1" />
               {sharedAnalysis.differences} section(s) have different content across

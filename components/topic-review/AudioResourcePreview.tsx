@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import AudioPlayer from '@/components/AudioPlayer';
-import AudioTranscriptReview from '@/components/content-review/AudioTranscriptReview';
+import { AudioTranscriptReview } from '@/components/content-review/AudioTranscriptReview';
 import { Save, X, RefreshCw, FileAudio } from 'lucide-react';
 
 interface TranscriptSegment {

@@ -35,7 +35,7 @@ interface AudioTranscriptReviewProps {
  * - Keyboard shortcuts for efficient review
  * - Export to VTT format
  */
-export default function AudioTranscriptReview({
+export function AudioTranscriptReview({
   audioUrl,
   title,
   transcriptSegments: initialSegments,
