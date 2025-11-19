@@ -1,0 +1,478 @@
+[
+  {
+    "filename": "emergencia-var1-es.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/emergencia-var1-es.mp3",
+    "pathname": "audio/emergencia-var1-es.mp3",
+    "size": 131328,
+    "success": true
+  },
+  {
+    "filename": "emergency-var1-en.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/emergency-var1-en.mp3",
+    "pathname": "audio/emergency-var1-en.mp3",
+    "size": 122880,
+    "success": true
+  },
+  {
+    "filename": "emergency-var2-en.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/emergency-var2-en.mp3",
+    "pathname": "audio/emergency-var2-en.mp3",
+    "size": 116352,
+    "success": true
+  },
+  {
+    "filename": "frases-esenciales-var1-es.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/frases-esenciales-var1-es.mp3",
+    "pathname": "audio/frases-esenciales-var1-es.mp3",
+    "size": 134208,
+    "success": true
+  },
+  {
+    "filename": "frases-esenciales-var2-es.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/frases-esenciales-var2-es.mp3",
+    "pathname": "audio/frases-esenciales-var2-es.mp3",
+    "size": 128064,
+    "success": true
+  },
+  {
+    "filename": "frases-esenciales-var3-es.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/frases-esenciales-var3-es.mp3",
+    "pathname": "audio/frases-esenciales-var3-es.mp3",
+    "size": 124032,
+    "success": true
+  },
+  {
+    "filename": "numeros-direcciones-var1-es.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/numeros-direcciones-var1-es.mp3",
+    "pathname": "audio/numeros-direcciones-var1-es.mp3",
+    "size": 92736,
+    "success": true
+  },
+  {
+    "filename": "numeros-direcciones-var2-es.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/numeros-direcciones-var2-es.mp3",
+    "pathname": "audio/numeros-direcciones-var2-es.mp3",
+    "size": 100224,
+    "success": true
+  },
+  {
+    "filename": "resource-1.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-1.mp3",
+    "pathname": "audio/resource-1.mp3",
+    "size": 3410496,
+    "success": true
+  },
+  {
+    "filename": "resource-10.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-10.mp3",
+    "pathname": "audio/resource-10.mp3",
+    "size": 20340140,
+    "success": true
+  },
+  {
+    "filename": "resource-11.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-11.mp3",
+    "pathname": "audio/resource-11.mp3",
+    "size": 2765808,
+    "success": true
+  },
+  {
+    "filename": "resource-12.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-12.mp3",
+    "pathname": "audio/resource-12.mp3",
+    "size": 2429136,
+    "success": true
+  },
+  {
+    "filename": "resource-13.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-13.mp3",
+    "pathname": "audio/resource-13.mp3",
+    "size": 6118316,
+    "success": true
+  },
+  {
+    "filename": "resource-14.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-14.mp3",
+    "pathname": "audio/resource-14.mp3",
+    "size": 3354768,
+    "success": true
+  },
+  {
+    "filename": "resource-15.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-15.mp3",
+    "pathname": "audio/resource-15.mp3",
+    "size": 2639232,
+    "success": true
+  },
+  {
+    "filename": "resource-16.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-16.mp3",
+    "pathname": "audio/resource-16.mp3",
+    "size": 3031200,
+    "success": true
+  },
+  {
+    "filename": "resource-17.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-17.mp3",
+    "pathname": "audio/resource-17.mp3",
+    "size": 2662848,
+    "success": true
+  },
+  {
+    "filename": "resource-18.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-18.mp3",
+    "pathname": "audio/resource-18.mp3",
+    "size": 6458540,
+    "success": true
+  },
+  {
+    "filename": "resource-19.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-19.mp3",
+    "pathname": "audio/resource-19.mp3",
+    "size": 2398176,
+    "success": true
+  },
+  {
+    "filename": "resource-2.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-2.mp3",
+    "pathname": "audio/resource-2.mp3",
+    "size": 7413932,
+    "success": true
+  },
+  {
+    "filename": "resource-20.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-20.mp3",
+    "pathname": "audio/resource-20.mp3",
+    "size": 4865904,
+    "success": true
+  },
+  {
+    "filename": "resource-21.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-21.mp3",
+    "pathname": "audio/resource-21.mp3",
+    "size": 8127404,
+    "success": true
+  },
+  {
+    "filename": "resource-22.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-22.mp3",
+    "pathname": "audio/resource-22.mp3",
+    "size": 2439936,
+    "success": true
+  },
+  {
+    "filename": "resource-23.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-23.mp3",
+    "pathname": "audio/resource-23.mp3",
+    "size": 2426688,
+    "success": true
+  },
+  {
+    "filename": "resource-25.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-25.mp3",
+    "pathname": "audio/resource-25.mp3",
+    "size": 2962800,
+    "success": true
+  },
+  {
+    "filename": "resource-26.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-26.mp3",
+    "pathname": "audio/resource-26.mp3",
+    "size": 4282560,
+    "success": true
+  },
+  {
+    "filename": "resource-27.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-27.mp3",
+    "pathname": "audio/resource-27.mp3",
+    "size": 4039920,
+    "success": true
+  },
+  {
+    "filename": "resource-28.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-28.mp3",
+    "pathname": "audio/resource-28.mp3",
+    "size": 9037100,
+    "success": true
+  },
+  {
+    "filename": "resource-29.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-29.mp3",
+    "pathname": "audio/resource-29.mp3",
+    "size": 3254112,
+    "success": true
+  },
+  {
+    "filename": "resource-30.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-30.mp3",
+    "pathname": "audio/resource-30.mp3",
+    "size": 6382800,
+    "success": true
+  },
+  {
+    "filename": "resource-31.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-31.mp3",
+    "pathname": "audio/resource-31.mp3",
+    "size": 14642348,
+    "success": true
+  },
+  {
+    "filename": "resource-32.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-32.mp3",
+    "pathname": "audio/resource-32.mp3",
+    "size": 22081964,
+    "success": true
+  },
+  {
+    "filename": "resource-33.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-33.mp3",
+    "pathname": "audio/resource-33.mp3",
+    "size": 3642624,
+    "success": true
+  },
+  {
+    "filename": "resource-34.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-34.mp3",
+    "pathname": "audio/resource-34.mp3",
+    "size": 18434732,
+    "success": true
+  },
+  {
+    "filename": "resource-35.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-35.mp3",
+    "pathname": "audio/resource-35.mp3",
+    "size": 641952,
+    "success": true
+  },
+  {
+    "filename": "resource-36.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-36.mp3",
+    "pathname": "audio/resource-36.mp3",
+    "size": 470160,
+    "success": true
+  },
+  {
+    "filename": "resource-37.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-37.mp3",
+    "pathname": "audio/resource-37.mp3",
+    "size": 561312,
+    "success": true
+  },
+  {
+    "filename": "resource-38.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-38.mp3",
+    "pathname": "audio/resource-38.mp3",
+    "size": 390528,
+    "success": true
+  },
+  {
+    "filename": "resource-39.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-39.mp3",
+    "pathname": "audio/resource-39.mp3",
+    "size": 415872,
+    "success": true
+  },
+  {
+    "filename": "resource-4.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-4.mp3",
+    "pathname": "audio/resource-4.mp3",
+    "size": 2339568,
+    "success": true
+  },
+  {
+    "filename": "resource-40.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-40.mp3",
+    "pathname": "audio/resource-40.mp3",
+    "size": 512640,
+    "success": true
+  },
+  {
+    "filename": "resource-41.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-41.mp3",
+    "pathname": "audio/resource-41.mp3",
+    "size": 696672,
+    "success": true
+  },
+  {
+    "filename": "resource-42.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-42.mp3",
+    "pathname": "audio/resource-42.mp3",
+    "size": 933984,
+    "success": true
+  },
+  {
+    "filename": "resource-43.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-43.mp3",
+    "pathname": "audio/resource-43.mp3",
+    "size": 752400,
+    "success": true
+  },
+  {
+    "filename": "resource-44.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-44.mp3",
+    "pathname": "audio/resource-44.mp3",
+    "size": 1185408,
+    "success": true
+  },
+  {
+    "filename": "resource-45.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-45.mp3",
+    "pathname": "audio/resource-45.mp3",
+    "size": 12941228,
+    "success": true
+  },
+  {
+    "filename": "resource-46.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-46.mp3",
+    "pathname": "audio/resource-46.mp3",
+    "size": 4582700,
+    "success": true
+  },
+  {
+    "filename": "resource-47.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-47.mp3",
+    "pathname": "audio/resource-47.mp3",
+    "size": 6595628,
+    "success": true
+  },
+  {
+    "filename": "resource-48.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-48.mp3",
+    "pathname": "audio/resource-48.mp3",
+    "size": 5434796,
+    "success": true
+  },
+  {
+    "filename": "resource-49.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-49.mp3",
+    "pathname": "audio/resource-49.mp3",
+    "size": 5967404,
+    "success": true
+  },
+  {
+    "filename": "resource-5.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-5.mp3",
+    "pathname": "audio/resource-5.mp3",
+    "size": 14109740,
+    "success": true
+  },
+  {
+    "filename": "resource-50.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-50.mp3",
+    "pathname": "audio/resource-50.mp3",
+    "size": 6626732,
+    "success": true
+  },
+  {
+    "filename": "resource-51.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-51.mp3",
+    "pathname": "audio/resource-51.mp3",
+    "size": 3337772,
+    "success": true
+  },
+  {
+    "filename": "resource-52.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-52.mp3",
+    "pathname": "audio/resource-52.mp3",
+    "size": 8702252,
+    "success": true
+  },
+  {
+    "filename": "resource-53.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-53.mp3",
+    "pathname": "audio/resource-53.mp3",
+    "size": 2068416,
+    "success": true
+  },
+  {
+    "filename": "resource-54.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-54.mp3",
+    "pathname": "audio/resource-54.mp3",
+    "size": 1147104,
+    "success": true
+  },
+  {
+    "filename": "resource-55.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-55.mp3",
+    "pathname": "audio/resource-55.mp3",
+    "size": 1407024,
+    "success": true
+  },
+  {
+    "filename": "resource-56.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-56.mp3",
+    "pathname": "audio/resource-56.mp3",
+    "size": 1161216,
+    "success": true
+  },
+  {
+    "filename": "resource-57.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-57.mp3",
+    "pathname": "audio/resource-57.mp3",
+    "size": 764496,
+    "success": true
+  },
+  {
+    "filename": "resource-58.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-58.mp3",
+    "pathname": "audio/resource-58.mp3",
+    "size": 698544,
+    "success": true
+  },
+  {
+    "filename": "resource-59.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-59.mp3",
+    "pathname": "audio/resource-59.mp3",
+    "size": 416160,
+    "success": true
+  },
+  {
+    "filename": "resource-6.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-6.mp3",
+    "pathname": "audio/resource-6.mp3",
+    "size": 2011392,
+    "success": true
+  },
+  {
+    "filename": "resource-7.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-7.mp3",
+    "pathname": "audio/resource-7.mp3",
+    "size": 5856812,
+    "success": true
+  },
+  {
+    "filename": "resource-9.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/resource-9.mp3",
+    "pathname": "audio/resource-9.mp3",
+    "size": 2044080,
+    "success": true
+  },
+  {
+    "filename": "saludos-var1-en.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/saludos-var1-en.mp3",
+    "pathname": "audio/saludos-var1-en.mp3",
+    "size": 130944,
+    "success": true
+  },
+  {
+    "filename": "saludos-var2-en.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/saludos-var2-en.mp3",
+    "pathname": "audio/saludos-var2-en.mp3",
+    "size": 108864,
+    "success": true
+  },
+  {
+    "filename": "saludos-var3-en.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/saludos-var3-en.mp3",
+    "pathname": "audio/saludos-var3-en.mp3",
+    "size": 122880,
+    "success": true
+  },
+  {
+    "filename": "tiempo-var1-es.mp3",
+    "url": "https://rmclluevochegoeu.public.blob.vercel-storage.com/audio/tiempo-var1-es.mp3",
+    "pathname": "audio/tiempo-var1-es.mp3",
+    "size": 119232,
+    "success": true
+  }
+]

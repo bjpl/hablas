@@ -217,7 +217,7 @@ export default function EditResourcePage({ params }: { params: Promise<{ id: str
           <TripleComparisonView
             resourceId={resolvedParams.id}
             downloadableUrl={resource.downloadUrl}
-            webUrl={resource.contentUrl}
+            webUrl={resource.downloadUrl}
             audioUrl={resource.audioUrl}
             onSave={handleTripleComparisonSave}
             onCancel={() => setViewMode('standard')}

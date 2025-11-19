@@ -36,28 +36,36 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
       // If already a full URL, use it
       if (src.startsWith('http://') || src.startsWith('https://')) {
         setResolvedSrc(src);
+        setState(prev => ({ ...prev, isLoading: false }));
         return;
       }
 
-      // Try to get from blob storage in production
-      if (process.env.NODE_ENV === 'production' || process.env.NEXT_PUBLIC_VERCEL_ENV) {
-        const filename = src.replace(/^\/audio\//, '');
-        try {
-          const response = await fetch(`/api/audio/${filename}`);
-          if (response.ok) {
-            const data = await response.json();
-            if (data.success && data.url) {
-              setResolvedSrc(data.url);
-              return;
-            }
+      // In development, use local path directly
+      if (process.env.NODE_ENV === 'development') {
+        setResolvedSrc(src);
+        setState(prev => ({ ...prev, isLoading: false }));
+        return;
+      }
+
+      // In production, try to get from blob storage
+      const filename = src.replace(/^\/audio\//, '');
+      try {
+        const response = await fetch(`/api/audio/${filename}`);
+        if (response.ok) {
+          const data = await response.json();
+          if (data.success && data.url) {
+            setResolvedSrc(data.url);
+            setState(prev => ({ ...prev, isLoading: false }));
+            return;
           }
-        } catch (error) {
-          console.warn(`Blob storage unavailable for ${filename}, using public path`);
         }
+      } catch (error) {
+        console.warn(`Blob storage unavailable for ${filename}, using public path`);
       }
 
       // Fallback to original path
       setResolvedSrc(src);
+      setState(prev => ({ ...prev, isLoading: false }));
     };
 
     resolveUrl();

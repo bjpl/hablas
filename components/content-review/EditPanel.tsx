@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useCallback, useRef, useEffect } from 'react';
-import { Edit3, RotateCcw, Download } from 'lucide-react';
+import React, { useCallback, useRef, useEffect, useState } from 'react';
+import { Edit3, RotateCcw, Download, Eye, Code } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 
 interface EditPanelProps {
   content: string;
@@ -11,6 +12,8 @@ interface EditPanelProps {
   className?: string;
 }
 
+type ViewMode = 'edit' | 'preview';
+
 export const EditPanel: React.FC<EditPanelProps> = ({
   content,
   onChange,
@@ -19,6 +22,7 @@ export const EditPanel: React.FC<EditPanelProps> = ({
   className = '',
 }) => {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const [viewMode, setViewMode] = useState<ViewMode>('edit');
 
   // Handle content change
   const handleChange = useCallback((e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -81,33 +85,84 @@ export const EditPanel: React.FC<EditPanelProps> = ({
             <Download className="w-4 h-4" />
           </button>
         </div>
+
+        {/* View Mode Toggle */}
+        <div className="mt-2 flex items-center gap-1 bg-white border border-gray-300 rounded-md p-0.5 w-fit">
+          <button
+            onClick={() => setViewMode('edit')}
+            className={`flex items-center gap-1 px-2 py-1 text-xs font-medium rounded transition-colors ${
+              viewMode === 'edit'
+                ? 'bg-blue-100 text-blue-700'
+                : 'text-gray-600 hover:text-gray-900'
+            }`}
+            title="Edit mode"
+          >
+            <Code className="w-3 h-3" />
+            Edit
+          </button>
+          <button
+            onClick={() => setViewMode('preview')}
+            className={`flex items-center gap-1 px-2 py-1 text-xs font-medium rounded transition-colors ${
+              viewMode === 'preview'
+                ? 'bg-blue-100 text-blue-700'
+                : 'text-gray-600 hover:text-gray-900'
+            }`}
+            title="Preview rendered content"
+          >
+            <Eye className="w-3 h-3" />
+            Preview
+          </button>
+        </div>
       </div>
 
-      {/* Editor Area */}
+      {/* Editor/Preview Area */}
       <div className="p-6">
-        <textarea
-          ref={textareaRef}
-          value={content}
-          onChange={handleChange}
-          onKeyDown={handleKeyDown}
-          className="
-            w-full px-4 py-3
-            text-gray-800 leading-relaxed
-            border border-gray-300 rounded-lg
-            focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent
-            resize-none
-            font-mono text-sm
-          "
-          style={{
-            minHeight: '400px',
-            maxHeight: '600px',
-          }}
-          placeholder="Enter your content here..."
-          aria-label="Content editor"
-        />
-        <p className="mt-2 text-xs text-gray-500">
-          Tip: Press Ctrl+S (or Cmd+S on Mac) to save quickly
-        </p>
+        {viewMode === 'edit' ? (
+          <>
+            <textarea
+              ref={textareaRef}
+              value={content}
+              onChange={handleChange}
+              onKeyDown={handleKeyDown}
+              className="
+                w-full px-4 py-3
+                text-gray-800 leading-relaxed
+                border border-gray-300 rounded-lg
+                focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent
+                resize-none
+                font-mono text-sm
+              "
+              style={{
+                minHeight: '400px',
+                maxHeight: '600px',
+              }}
+              placeholder="Enter your content here..."
+              aria-label="Content editor"
+            />
+            <p className="mt-2 text-xs text-gray-500">
+              Tip: Press Ctrl+S (or Cmd+S on Mac) to save quickly
+            </p>
+          </>
+        ) : (
+          <div
+            className="bg-white border border-gray-300 rounded-lg p-4"
+            style={{
+              minHeight: '400px',
+              maxHeight: '600px',
+              overflowY: 'auto',
+            }}
+          >
+            {content ? (
+              <div className="prose prose-sm max-w-none">
+                <ReactMarkdown>{content}</ReactMarkdown>
+              </div>
+            ) : (
+              <div className="flex items-center justify-center h-full text-gray-400">
+                <p>No content to preview</p>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Footer Info */}
