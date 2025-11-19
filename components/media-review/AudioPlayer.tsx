@@ -35,6 +35,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
     const resolveUrl = async () => {
       // If already a full URL, use it
       if (src.startsWith('http://') || src.startsWith('https://')) {
+        console.log('[AudioPlayer] Using full URL:', src);
         setResolvedSrc(src);
         setState(prev => ({ ...prev, isLoading: false }));
         return;
@@ -42,6 +43,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
 
       // In development, use local path directly
       if (process.env.NODE_ENV === 'development') {
+        console.log('[AudioPlayer] Development mode, using local path:', src);
         setResolvedSrc(src);
         setState(prev => ({ ...prev, isLoading: false }));
         return;
@@ -49,21 +51,29 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
 
       // In production, try to get from blob storage
       const filename = src.replace(/^\/audio\//, '');
+      console.log('[AudioPlayer] Resolving blob storage URL for:', filename);
+
       try {
         const response = await fetch(`/api/audio/${filename}`);
         if (response.ok) {
           const data = await response.json();
           if (data.success && data.url) {
+            console.log('[AudioPlayer] Blob URL resolved:', data.url);
             setResolvedSrc(data.url);
             setState(prev => ({ ...prev, isLoading: false }));
             return;
+          } else {
+            console.warn('[AudioPlayer] API returned unsuccessful response:', data);
           }
+        } else {
+          console.warn('[AudioPlayer] API request failed:', response.status, response.statusText);
         }
       } catch (error) {
-        console.warn(`Blob storage unavailable for ${filename}, using public path`);
+        console.error('[AudioPlayer] Blob storage fetch error:', error);
       }
 
       // Fallback to original path
+      console.log('[AudioPlayer] Falling back to original path:', src);
       setResolvedSrc(src);
       setState(prev => ({ ...prev, isLoading: false }));
     };
@@ -71,17 +81,27 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
     resolveUrl();
   }, [src]);
 
-  // Initialize audio element
+  // Initialize audio element and reload when src changes
   useEffect(() => {
     const audio = audioRef.current;
-    if (!audio) return;
+    if (!audio || !resolvedSrc) return;
 
     const handleLoadedMetadata = () => {
+      console.log('[AudioPlayer] Audio metadata loaded:', {
+        duration: audio.duration,
+        src: resolvedSrc,
+      });
       setState(prev => ({
         ...prev,
         duration: audio.duration,
         isLoading: false,
+        error: null,
       }));
+    };
+
+    const handleCanPlay = () => {
+      console.log('[AudioPlayer] Audio can play');
+      setState(prev => ({ ...prev, isLoading: false, error: null }));
     };
 
     const handleTimeUpdate = () => {
@@ -96,25 +116,59 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
     };
 
     const handleError = () => {
+      const audio = audioRef.current;
+      let errorDetails = 'Failed to load audio file';
+
+      if (audio?.error) {
+        switch (audio.error.code) {
+          case MediaError.MEDIA_ERR_ABORTED:
+            errorDetails = 'Audio loading was aborted';
+            break;
+          case MediaError.MEDIA_ERR_NETWORK:
+            errorDetails = 'Network error while loading audio';
+            break;
+          case MediaError.MEDIA_ERR_DECODE:
+            errorDetails = 'Audio file could not be decoded';
+            break;
+          case MediaError.MEDIA_ERR_SRC_NOT_SUPPORTED:
+            errorDetails = 'Audio format not supported or file not found';
+            break;
+        }
+      }
+
+      console.error('[AudioPlayer] Audio error:', {
+        code: audio?.error?.code,
+        message: errorDetails,
+        src: resolvedSrc,
+        originalSrc: src,
+      });
+
       setState(prev => ({
         ...prev,
-        error: 'Failed to load audio file',
+        error: errorDetails,
         isLoading: false,
       }));
     };
 
     audio.addEventListener('loadedmetadata', handleLoadedMetadata);
+    audio.addEventListener('canplay', handleCanPlay);
     audio.addEventListener('timeupdate', handleTimeUpdate);
     audio.addEventListener('ended', handleEnded);
     audio.addEventListener('error', handleError);
 
+    // Force reload when src changes
+    console.log('[AudioPlayer] Loading audio from:', resolvedSrc);
+    setState(prev => ({ ...prev, isLoading: true, error: null }));
+    audio.load();
+
     return () => {
       audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
+      audio.removeEventListener('canplay', handleCanPlay);
       audio.removeEventListener('timeupdate', handleTimeUpdate);
       audio.removeEventListener('ended', handleEnded);
       audio.removeEventListener('error', handleError);
     };
-  }, [onTimeUpdate, onEnded]);
+  }, [onTimeUpdate, onEnded, resolvedSrc]);
 
   // Play/Pause toggle
   const togglePlay = () => {
@@ -184,17 +238,25 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
           <div className="flex-1">
             <p className="text-sm font-medium text-red-900">Audio Playback Error</p>
             <p className="text-xs text-red-700 mt-1">{state.error}</p>
-            <p className="text-xs text-red-600 mt-2">
-              <strong>Note:</strong> Audio files are served from Vercel Blob Storage in production.
-              If this error persists, the audio file may need to be uploaded to blob storage.
-            </p>
+            <div className="mt-2 p-2 bg-white rounded border border-red-200">
+              <p className="text-xs text-gray-700">
+                <strong>Source Path:</strong> {src}
+              </p>
+              <p className="text-xs text-gray-700 mt-1">
+                <strong>Resolved URL:</strong>{' '}
+                <span className="font-mono break-all">{resolvedSrc}</span>
+              </p>
+            </div>
             <details className="mt-2 text-xs text-red-600">
-              <summary className="cursor-pointer font-medium">Troubleshooting</summary>
-              <ul className="mt-1 ml-4 list-disc space-y-1">
-                <li>Check if the audio file exists in blob storage</li>
-                <li>Verify BLOB_READ_WRITE_TOKEN is configured</li>
-                <li>Ensure the file was uploaded using the upload script</li>
-                <li>Path: {src} → {resolvedSrc}</li>
+              <summary className="cursor-pointer font-medium hover:text-red-800">
+                Troubleshooting Steps
+              </summary>
+              <ul className="mt-2 ml-4 list-disc space-y-1">
+                <li>Verify the audio file exists in blob storage</li>
+                <li>Check browser console for detailed error logs</li>
+                <li>Ensure BLOB_READ_WRITE_TOKEN is configured in production</li>
+                <li>Try testing the resolved URL directly in a new browser tab</li>
+                <li>Check if CORS headers are properly configured for blob storage</li>
               </ul>
             </details>
           </div>
@@ -205,7 +267,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
 
   return (
     <div className={`audio-player bg-white border border-gray-200 rounded-lg p-4 ${className}`}>
-      <audio ref={audioRef} src={resolvedSrc} preload="metadata" />
+      <audio
+        ref={audioRef}
+        src={resolvedSrc}
+        preload="metadata"
+        crossOrigin="anonymous"
+      />
 
       {/* Progress Bar */}
       <div className="mb-4">
