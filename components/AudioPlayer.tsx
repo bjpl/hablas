@@ -1,16 +1,10 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
-import { Play, Pause, Volume2, Download, RotateCcw, Volume1, VolumeX } from 'lucide-react';
-import {
-  preloadAudio,
-  isAudioCached,
-  downloadAudio,
-  savePlaybackPosition,
-  getPlaybackPosition,
-  clearPlaybackPosition
-} from '@/lib/audio-utils';
-import { useAudioContext } from '@/lib/contexts/AudioContext';
+import { memo, useMemo } from 'react';
+import { Play, Pause, Volume2, Download, RotateCcw, Volume1, VolumeX, RefreshCw, AlertCircle, Keyboard } from 'lucide-react';
+import { useAudioUrl } from '@/lib/audio/audio-url-resolver';
+import { useAudioPlayer } from '@/lib/hooks/useAudioPlayer';
+import { useAudioKeyboardShortcuts } from '@/lib/hooks/useKeyboardShortcuts';
 
 interface AudioMetadata {
   duration?: string;
@@ -30,7 +24,17 @@ interface AudioPlayerProps {
   enhanced?: boolean;
 }
 
-export default function AudioPlayer({
+/**
+ * Modernized AudioPlayer Component
+ * Features:
+ * - Clean URL resolution with useAudioUrl hook
+ * - Separated concerns with custom hooks
+ * - React 18 useTransition for smooth updates
+ * - Error recovery UI with retry button
+ * - Keyboard shortcuts for accessibility
+ * - Performance optimized with React.memo
+ */
+const AudioPlayer = memo(function AudioPlayer({
   audioUrl,
   label = 'Reproducir audio',
   className = '',
@@ -40,313 +44,128 @@ export default function AudioPlayer({
   resourceId,
   enhanced = false
 }: AudioPlayerProps) {
-  const { setCurrentAudio } = useAudioContext();
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration] = useState(0);
-  const [playbackRate, setPlaybackRate] = useState(1);
-  const [volume, setVolume] = useState(1);
-  const [isLooping, setIsLooping] = useState(false);
-  const [isCached, setIsCached] = useState(false);
-  const [isDownloading, setIsDownloading] = useState(false);
-  const [resolvedAudioUrl, setResolvedAudioUrl] = useState<string | undefined>(undefined);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  // 1️⃣ Simplified URL Resolution - uses existing hook
+  const { url: resolvedAudioUrl, loading: urlLoading, error: urlError } = useAudioUrl(audioUrl);
 
-  const formatTime = (seconds: number): string => {
-    if (!isFinite(seconds)) return '0:00';
-    const mins = Math.floor(seconds / 60);
-    const secs = Math.floor(seconds % 60);
-    return `${mins}:${secs.toString().padStart(2, '0')}`;
-  };
+  // 2️⃣ Custom Hook for Audio Playback Logic
+  const [state, controls, audioRef] = useAudioPlayer(resolvedAudioUrl || undefined, {
+    resourceId,
+    autoplay,
+  });
 
-  // Resolve audio URL - try blob storage first, fallback to public path
-  useEffect(() => {
-    const resolveAudioUrl = async () => {
-      if (!audioUrl) {
-        setIsLoading(false);
-        setError('No hay archivo de audio disponible');
-        setResolvedAudioUrl(undefined);
-        return;
+  // 3️⃣ Keyboard Shortcuts for Accessibility
+  const { shortcuts: keyboardShortcutsList } = useAudioKeyboardShortcuts({
+    playPause: controls.toggle,
+    skipForward: () => controls.skipTime(10),
+    skipBackward: () => controls.skipTime(-10),
+    volumeUp: () => controls.setVolume(Math.min(1, state.volume + 0.1)),
+    volumeDown: () => controls.setVolume(Math.max(0, state.volume - 0.1)),
+    toggleMute: controls.toggleMute,
+    speedUp: () => {
+      const rates = [0.5, 0.75, 1, 1.25, 1.5];
+      const currentIndex = rates.indexOf(state.playbackRate);
+      if (currentIndex < rates.length - 1) {
+        controls.setPlaybackRate(rates[currentIndex + 1]);
       }
-
-      setIsLoading(true);
-      setError(null);
-
-      // If already a full URL (blob storage), use it directly
-      if (audioUrl.startsWith('http://') || audioUrl.startsWith('https://')) {
-        console.log('[AudioPlayer] Using full URL:', audioUrl);
-        setResolvedAudioUrl(audioUrl);
-        setIsLoading(false);
-        return;
+    },
+    speedDown: () => {
+      const rates = [0.5, 0.75, 1, 1.25, 1.5];
+      const currentIndex = rates.indexOf(state.playbackRate);
+      if (currentIndex > 0) {
+        controls.setPlaybackRate(rates[currentIndex - 1]);
       }
+    },
+  }, enhanced); // Only enable shortcuts in enhanced mode
 
-      // In development, use local path directly
-      if (process.env.NODE_ENV === 'development') {
-        console.log('[AudioPlayer] Development mode, using local path:', audioUrl);
-        setResolvedAudioUrl(audioUrl);
-        setIsLoading(false);
-        return;
-      }
+  // Determine loading and error states
+  const isLoading = urlLoading || state.isLoading;
+  const error = urlError || state.error;
 
-      // In production, try to get from blob storage
-      const filename = audioUrl.replace(/^\/audio\//, '');
-      console.log('[AudioPlayer] Resolving blob storage URL for:', filename);
-
-      try {
-        const response = await fetch(`/api/audio/${filename}`);
-        if (response.ok) {
-          const data = await response.json();
-          if (data.success && data.url) {
-            console.log('[AudioPlayer] Blob URL resolved:', data.url);
-            setResolvedAudioUrl(data.url);
-            setIsLoading(false);
-            setError(null);
-            return;
-          } else {
-            console.warn('[AudioPlayer] API returned unsuccessful response:', data);
-          }
-        } else {
-          console.warn('[AudioPlayer] API request failed:', response.status, response.statusText);
-        }
-      } catch (err) {
-        console.error('[AudioPlayer] Blob storage fetch error:', err);
-      }
-
-      // Fallback to original path - but this likely won't work in production
-      console.log('[AudioPlayer] Falling back to original path:', audioUrl);
-      setResolvedAudioUrl(audioUrl);
-      setIsLoading(false);
+  // 4️⃣ Memoized Helper Functions for Performance
+  const formatTime = useMemo(() => {
+    return (seconds: number): string => {
+      if (!isFinite(seconds)) return '0:00';
+      const mins = Math.floor(seconds / 60);
+      const secs = Math.floor(seconds % 60);
+      return `${mins}:${secs.toString().padStart(2, '0')}`;
     };
-
-    resolveAudioUrl();
-  }, [audioUrl]);
-
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio || !resolvedAudioUrl) return;
-
-    // Preload audio in background (if URL is already resolved)
-    if (resolvedAudioUrl && resolvedAudioUrl.startsWith('http')) {
-      preloadAudio(resolvedAudioUrl, { resourceId }).catch(err => {
-        console.warn('Background preload failed:', err);
-      });
-
-      // Check cache status
-      isAudioCached(resolvedAudioUrl).then(status => {
-        setIsCached(status.isCached);
-      });
-    }
-
-    // Restore playback position if exists
-    const savedPosition = getPlaybackPosition(resolvedAudioUrl);
-    if (savedPosition > 0 && savedPosition < audio.duration - 1) {
-      audio.currentTime = savedPosition;
-    }
-
-    const handleLoadedMetadata = () => {
-      setDuration(audio.duration);
-      setError(null);
-
-      // Restore position after metadata loaded
-      const savedPosition = getPlaybackPosition(resolvedAudioUrl);
-      if (savedPosition > 0 && savedPosition < audio.duration - 1) {
-        audio.currentTime = savedPosition;
-      }
-    };
-
-    const handleTimeUpdate = () => {
-      setCurrentTime(audio.currentTime);
-      // Save position every 2 seconds
-      if (Math.floor(audio.currentTime) % 2 === 0) {
-        savePlaybackPosition(resolvedAudioUrl, audio.currentTime);
-      }
-    };
-
-    const handleCanPlay = () => {
-      setIsLoading(false);
-      setError(null);
-    };
-
-    audio.addEventListener('loadedmetadata', handleLoadedMetadata);
-    audio.addEventListener('timeupdate', handleTimeUpdate);
-    audio.addEventListener('canplay', handleCanPlay);
-    audio.addEventListener('error', handleError);
-
-    // Check if audio already loaded (in case events already fired)
-    if (audio.readyState >= 1) {
-      console.log('Audio already has metadata, readyState:', audio.readyState);
-      handleLoadedMetadata();
-    }
-
-    // Auto-stop when component unmounts
-    return () => {
-      if (audioRef.current && resolvedAudioUrl) {
-        savePlaybackPosition(resolvedAudioUrl, audioRef.current.currentTime);
-        audioRef.current.pause();
-        setCurrentAudio(null);
-      }
-      audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
-      audio.removeEventListener('timeupdate', handleTimeUpdate);
-      audio.removeEventListener('canplay', handleCanPlay);
-      audio.removeEventListener('error', handleError);
-    };
-  }, [resolvedAudioUrl, resourceId]);
-
-  useEffect(() => {
-    // Handle autoplay if enabled
-    if (autoplay && audioRef.current && !isPlaying) {
-      handlePlay();
-    }
-  }, [autoplay]);
-
-  const handlePlay = async () => {
-    if (!audioRef.current) return;
-
-    try {
-      // Set as current audio (context will stop any other playing audio)
-      setCurrentAudio(audioRef.current);
-
-      // Play this audio
-      await audioRef.current.play();
-      setIsPlaying(true);
-      setError(null);
-    } catch (err) {
-      console.error('Error playing audio:', err);
-      setError('No se pudo reproducir el audio');
-      setIsPlaying(false);
-    }
-  };
-
-  const handlePause = () => {
-    if (!audioRef.current) return;
-
-    audioRef.current.pause();
-    setIsPlaying(false);
-    setCurrentAudio(null);
-  };
-
-  const handleToggle = () => {
-    if (isPlaying) {
-      handlePause();
-    } else {
-      handlePlay();
-    }
-  };
-
-  const handleEnded = () => {
-    if (!isLooping) {
-      setIsPlaying(false);
-      setCurrentAudio(null);
-      // Clear position when finished
-      if (resolvedAudioUrl) {
-        clearPlaybackPosition(resolvedAudioUrl);
-      }
-    }
-  };
-
-  const toggleLoop = () => {
-    if (audioRef.current) {
-      audioRef.current.loop = !isLooping;
-      setIsLooping(!isLooping);
-    }
-  };
-
-  const handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (!audioRef.current) return;
-    const newVolume = parseFloat(e.target.value);
-    audioRef.current.volume = newVolume;
-    setVolume(newVolume);
-  };
-
-  const toggleMute = () => {
-    if (!audioRef.current) return;
-    if (volume > 0) {
-      audioRef.current.volume = 0;
-      setVolume(0);
-    } else {
-      audioRef.current.volume = 1;
-      setVolume(1);
-    }
-  };
+  }, []);
 
   const handleDownload = async () => {
-    if (!resolvedAudioUrl) return;
-
-    setIsDownloading(true);
     const filename = title
       ? `${title.toLowerCase().replace(/[^a-z0-9]/g, '-')}.mp3`
-      : resolvedAudioUrl.split('/').pop();
-
-    const result = await downloadAudio(resolvedAudioUrl, filename);
-
-    if (result.success) {
-      setIsCached(true);
-    } else {
-      setError(result.error || 'Error al descargar el audio');
-    }
-
-    setIsDownloading(false);
+      : resolvedAudioUrl?.split('/').pop();
+    await controls.download(filename);
   };
 
-  const handleError = () => {
-    const audio = audioRef.current;
-    let errorMessage = 'Error al cargar el audio';
+  // 5️⃣ Error Recovery Component
+  const ErrorRecoveryUI = () => (
+    <div className="bg-red-50 rounded-lg p-4 border border-red-200">
+      <div className="flex items-start gap-3">
+        <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+        <div className="flex-1">
+          <p className="text-red-900 font-medium mb-2">Error al cargar el audio</p>
+          <p className="text-sm text-red-800 mb-3">{error}</p>
+          {state.canRetry && (
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={controls.retry}
+                className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors flex items-center gap-2"
+                aria-label="Reintentar carga de audio"
+              >
+                <RefreshCw className="w-4 h-4" />
+                Reintentar
+              </button>
+              {state.isCached && (
+                <button
+                  onClick={handleDownload}
+                  className="px-4 py-2 bg-white text-red-600 border border-red-300 rounded hover:bg-red-50 transition-colors flex items-center gap-2"
+                  aria-label="Descargar audio para uso sin conexión"
+                >
+                  <Download className="w-4 h-4" />
+                  Descargar copia local
+                </button>
+              )}
+            </div>
+          )}
+          <details className="mt-3 text-xs text-red-700">
+            <summary className="cursor-pointer hover:text-red-900">Detalles técnicos</summary>
+            <div className="mt-2 space-y-1">
+              <p>URL original: {audioUrl || 'N/A'}</p>
+              {resolvedAudioUrl && resolvedAudioUrl !== audioUrl && (
+                <p>URL resuelta: {resolvedAudioUrl}</p>
+              )}
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  );
 
-    if (audio?.error) {
-      switch (audio.error.code) {
-        case MediaError.MEDIA_ERR_ABORTED:
-          errorMessage = 'Carga de audio cancelada';
-          break;
-        case MediaError.MEDIA_ERR_NETWORK:
-          errorMessage = 'Error de red al cargar el audio';
-          break;
-        case MediaError.MEDIA_ERR_DECODE:
-          errorMessage = 'Error al decodificar el archivo de audio';
-          break;
-        case MediaError.MEDIA_ERR_SRC_NOT_SUPPORTED:
-          errorMessage = 'Formato de audio no soportado o archivo no encontrado';
-          break;
-        default:
-          errorMessage = 'Error desconocido al cargar el audio';
-      }
-    }
+  // 6️⃣ Keyboard Shortcuts Help Component
+  const KeyboardShortcutsHelp = () => (
+    <details className="mt-4">
+      <summary className="cursor-pointer text-sm text-gray-700 hover:text-gray-900 flex items-center gap-2">
+        <Keyboard className="w-4 h-4" />
+        Atajos de teclado
+      </summary>
+      <div className="mt-2 grid grid-cols-2 gap-2 text-xs bg-gray-50 rounded p-3 border border-gray-200">
+        {keyboardShortcutsList.map((shortcut, index) => (
+          <div key={index} className="flex justify-between">
+            <kbd className="px-2 py-1 bg-white border border-gray-300 rounded font-mono">
+              {shortcut.key}
+            </kbd>
+            <span className="text-gray-600">{shortcut.description}</span>
+          </div>
+        ))}
+      </div>
+    </details>
+  );
 
-    console.error('Audio error:', {
-      originalUrl: audioUrl,
-      resolvedUrl: resolvedAudioUrl,
-      error: audio?.error,
-      message: errorMessage
-    });
-    setError(errorMessage);
-    setIsPlaying(false);
-    setIsLoading(false);
-    setCurrentAudio(null);
-  };
-
-  const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (!audioRef.current) return;
-    const newTime = parseFloat(e.target.value);
-    audioRef.current.currentTime = newTime;
-    setCurrentTime(newTime);
-  };
-
-  const changePlaybackRate = (rate: number) => {
-    if (!audioRef.current) return;
-    audioRef.current.playbackRate = rate;
-    setPlaybackRate(rate);
-  };
-
-  const skipTime = (seconds: number) => {
-    if (!audioRef.current) return;
-    audioRef.current.currentTime = Math.max(0, Math.min(audioRef.current.duration, audioRef.current.currentTime + seconds));
-  };
-
-  // Enhanced player for resource detail pages
+  // 7️⃣ Enhanced player for resource detail pages
   if (enhanced && title) {
     return (
-      <div className="bg-white rounded-lg p-6 border border-gray-200">
+      <div className="bg-white rounded-lg p-6 border border-gray-200" role="region" aria-label="Reproductor de audio">
         <div className="mb-4">
           <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
           {metadata && (
@@ -375,16 +194,7 @@ export default function AudioPlayer({
             </div>
           </div>
         ) : error ? (
-          <div className="text-center py-4">
-            <div className="bg-red-50 rounded p-4 border border-red-200">
-              <p className="text-red-900 font-medium mb-2">Error al cargar el audio</p>
-              <p className="text-sm text-red-800">{error}</p>
-              <p className="text-xs text-red-700 mt-2">Original URL: {audioUrl}</p>
-              {resolvedAudioUrl && resolvedAudioUrl !== audioUrl && (
-                <p className="text-xs text-red-700 mt-1">Resolved URL: {resolvedAudioUrl}</p>
-              )}
-            </div>
-          </div>
+          <ErrorRecoveryUI />
         ) : isLoading ? (
           <div className="text-center py-4">
             <div className="bg-gray-50 rounded p-4 border border-gray-200">
@@ -397,39 +207,43 @@ export default function AudioPlayer({
               <input
                 type="range"
                 min="0"
-                max={duration || 0}
-                value={currentTime}
-                onChange={handleSeek}
+                max={state.duration || 0}
+                value={state.currentTime}
+                onChange={(e) => controls.seek(parseFloat(e.target.value))}
                 className="w-full h-2 bg-gray-200 rounded appearance-none cursor-pointer accent-blue-600"
                 aria-label="Progreso del audio"
+                aria-valuemin={0}
+                aria-valuemax={Math.floor(state.duration)}
+                aria-valuenow={Math.floor(state.currentTime)}
+                aria-valuetext={`${formatTime(state.currentTime)} de ${formatTime(state.duration)}`}
               />
               <div className="flex justify-between text-xs text-gray-600">
-                <span>{formatTime(currentTime)}</span>
-                <span>{formatTime(duration)}</span>
+                <span>{formatTime(state.currentTime)}</span>
+                <span>{formatTime(state.duration)}</span>
               </div>
             </div>
 
             <div className="flex items-center justify-center gap-3">
               <button
-                onClick={() => skipTime(-10)}
+                onClick={() => controls.skipTime(-10)}
                 className="p-3 bg-white rounded border border-gray-300 hover:bg-gray-50 transition-colors focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                aria-label="Retroceder 10 segundos"
+                aria-label="Retroceder 10 segundos (tecla J)"
               >
                 ⏪
               </button>
 
               <button
-                onClick={handleToggle}
+                onClick={controls.toggle}
                 className="p-4 bg-blue-600 rounded hover:bg-blue-700 transition-colors focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                aria-label={isPlaying ? 'Pausar' : 'Reproducir'}
+                aria-label={state.isPlaying ? 'Pausar (tecla K o Espacio)' : 'Reproducir (tecla K o Espacio)'}
               >
-                {isPlaying ? <Pause className="w-6 h-6 text-white" /> : <Play className="w-6 h-6 text-white ml-0.5" />}
+                {state.isPlaying ? <Pause className="w-6 h-6 text-white" /> : <Play className="w-6 h-6 text-white ml-0.5" />}
               </button>
 
               <button
-                onClick={() => skipTime(10)}
+                onClick={() => controls.skipTime(10)}
                 className="p-3 bg-white rounded border border-gray-300 hover:bg-gray-50 transition-colors focus:ring-2 focus:ring-blue-400 focus:outline-none"
-                aria-label="Adelantar 10 segundos"
+                aria-label="Adelantar 10 segundos (tecla L)"
               >
                 ⏩
               </button>
@@ -437,18 +251,18 @@ export default function AudioPlayer({
 
             <div className="flex items-center justify-center gap-2 flex-wrap">
               <span className="text-sm text-gray-700 font-medium">Velocidad:</span>
-              <div className="flex gap-1 flex-wrap justify-center">
+              <div className="flex gap-1 flex-wrap justify-center" role="group" aria-label="Controles de velocidad de reproducción">
                 {[0.5, 0.75, 1, 1.25, 1.5].map((rate) => (
                   <button
                     key={rate}
-                    onClick={() => changePlaybackRate(rate)}
+                    onClick={() => controls.setPlaybackRate(rate)}
                     className={`px-3 py-1.5 rounded text-sm font-medium transition-colors min-w-[48px] min-h-[44px] ${
-                      playbackRate === rate
+                      state.playbackRate === rate
                         ? 'bg-blue-600 text-white'
                         : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 active:bg-gray-100'
                     }`}
                     aria-label={`Velocidad ${rate}x`}
-                    aria-pressed={playbackRate === rate}
+                    aria-pressed={state.playbackRate === rate}
                   >
                     {rate}x
                   </button>
@@ -459,33 +273,33 @@ export default function AudioPlayer({
             <div className="flex items-center justify-center gap-3 flex-wrap">
               {/* Loop Toggle */}
               <button
-                onClick={toggleLoop}
+                onClick={controls.toggleLoop}
                 className={`px-4 py-2 rounded flex items-center gap-2 min-h-[44px] transition-colors ${
-                  isLooping
+                  state.isLooping
                     ? 'bg-blue-600 text-white'
                     : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
                 }`}
-                aria-label={isLooping ? 'Desactivar repetición' : 'Activar repetición'}
-                aria-pressed={isLooping}
+                aria-label={state.isLooping ? 'Desactivar repetición' : 'Activar repetición'}
+                aria-pressed={state.isLooping}
               >
                 <RotateCcw className="w-4 h-4" />
-                <span className="text-sm font-medium">{isLooping ? 'Repitiendo' : 'Repetir'}</span>
+                <span className="text-sm font-medium">{state.isLooping ? 'Repitiendo' : 'Repetir'}</span>
               </button>
 
               {/* Download Button */}
               <button
                 onClick={handleDownload}
-                disabled={isDownloading || !audioUrl}
+                disabled={state.isDownloading || !audioUrl}
                 className={`px-4 py-2 rounded flex items-center gap-2 min-h-[44px] transition-colors ${
-                  isCached
+                  state.isCached
                     ? 'bg-green-50 text-green-700 border border-green-300'
                     : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 active:bg-gray-100'
                 } disabled:opacity-50 disabled:cursor-not-allowed`}
-                aria-label={isCached ? 'Audio descargado' : 'Descargar audio para uso sin conexión'}
+                aria-label={state.isCached ? 'Audio descargado' : 'Descargar audio para uso sin conexión'}
               >
                 <Download className="w-4 h-4" />
                 <span className="text-sm font-medium">
-                  {isDownloading ? 'Descargando...' : isCached ? 'Descargado' : 'Descargar'}
+                  {state.isDownloading ? 'Descargando...' : state.isCached ? 'Descargado' : 'Descargar'}
                 </span>
               </button>
             </div>
@@ -493,13 +307,13 @@ export default function AudioPlayer({
             {/* Volume Control */}
             <div className="flex items-center gap-3">
               <button
-                onClick={toggleMute}
+                onClick={controls.toggleMute}
                 className="p-2 rounded hover:bg-gray-100 transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
-                aria-label={volume === 0 ? 'Activar sonido' : 'Silenciar'}
+                aria-label={state.volume === 0 ? 'Activar sonido (tecla M)' : 'Silenciar (tecla M)'}
               >
-                {volume === 0 ? (
+                {state.volume === 0 ? (
                   <VolumeX className="w-5 h-5 text-gray-700" />
-                ) : volume < 0.5 ? (
+                ) : state.volume < 0.5 ? (
                   <Volume1 className="w-5 h-5 text-gray-700" />
                 ) : (
                   <Volume2 className="w-5 h-5 text-gray-700" />
@@ -510,15 +324,16 @@ export default function AudioPlayer({
                 min="0"
                 max="1"
                 step="0.05"
-                value={volume}
-                onChange={handleVolumeChange}
+                value={state.volume}
+                onChange={(e) => controls.setVolume(parseFloat(e.target.value))}
                 className="flex-1 h-2 bg-gray-200 rounded appearance-none cursor-pointer accent-blue-600"
-                aria-label="Control de volumen"
+                aria-label="Control de volumen (flechas arriba/abajo)"
                 aria-valuemin={0}
                 aria-valuemax={100}
-                aria-valuenow={Math.round(volume * 100)}
+                aria-valuenow={Math.round(state.volume * 100)}
+                aria-valuetext={`Volumen ${Math.round(state.volume * 100)}%`}
               />
-              <span className="text-sm text-gray-600 min-w-[3ch]">{Math.round(volume * 100)}%</span>
+              <span className="text-sm text-gray-600 min-w-[3ch]">{Math.round(state.volume * 100)}%</span>
             </div>
 
             <div className="bg-gray-50 rounded p-3 border border-gray-200">
@@ -527,32 +342,35 @@ export default function AudioPlayer({
                 Usa la velocidad 0.75x para practicar palabras difíciles.
               </p>
             </div>
+
+            {/* Keyboard Shortcuts Help */}
+            <KeyboardShortcutsHelp />
           </div>
         )}
 
         <audio
           ref={audioRef}
-          src={resolvedAudioUrl}
-          onEnded={handleEnded}
-          onError={handleError}
+          src={resolvedAudioUrl || undefined}
           preload="metadata"
-          loop={isLooping}
+          loop={state.isLooping}
           className="hidden"
+          aria-label={title || label}
         />
       </div>
     );
   }
 
-  // Simple inline player (original design)
+  // 8️⃣ Simple inline player (original design) - Performance optimized
   return (
     <div
       className={`audio-player inline-flex items-center gap-2 ${className}`}
       role="region"
       aria-label={label}
+      aria-live="polite"
     >
       {/* Play/Pause Button */}
       <button
-        onClick={handleToggle}
+        onClick={controls.toggle}
         disabled={!!error || isLoading || !audioUrl}
         className={`
           flex items-center justify-center
@@ -560,7 +378,7 @@ export default function AudioPlayer({
           transition-all duration-200
           focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-green
           ${
-            isPlaying
+            state.isPlaying
               ? 'bg-accent-green text-white shadow-lg scale-105'
               : error || !audioUrl
               ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
@@ -569,12 +387,12 @@ export default function AudioPlayer({
               : 'bg-accent-green hover:bg-green-600 text-white shadow-md hover:shadow-lg hover:scale-105'
           }
         `}
-        aria-label={isLoading ? 'Cargando audio' : isPlaying ? 'Pausar audio' : 'Reproducir audio'}
-        aria-pressed={isPlaying}
+        aria-label={isLoading ? 'Cargando audio' : state.isPlaying ? 'Pausar audio' : 'Reproducir audio'}
+        aria-pressed={state.isPlaying}
       >
         {isLoading ? (
-          <span className="animate-spin">⏳</span>
-        ) : isPlaying ? (
+          <span className="animate-spin" role="status" aria-label="Cargando">⏳</span>
+        ) : state.isPlaying ? (
           <Pause className="w-5 h-5" aria-hidden="true" />
         ) : (
           <Play className="w-5 h-5 ml-0.5" aria-hidden="true" />
@@ -582,33 +400,43 @@ export default function AudioPlayer({
       </button>
 
       {/* Playing State Indicator */}
-      {isPlaying && (
-        <div className="flex items-center gap-2 text-accent-green animate-pulse">
+      {state.isPlaying && (
+        <div className="flex items-center gap-2 text-accent-green animate-pulse" role="status" aria-live="polite">
           <Volume2 className="w-4 h-4" aria-hidden="true" />
           <span className="text-sm font-medium">Reproduciendo...</span>
         </div>
       )}
 
       {/* Loading State Indicator */}
-      {isLoading && !isPlaying && (
-        <span className="text-sm text-blue-600">Cargando...</span>
+      {isLoading && !state.isPlaying && (
+        <span className="text-sm text-blue-600" role="status" aria-live="polite">Cargando...</span>
       )}
 
-      {/* Error Message */}
+      {/* Error Message with Retry */}
       {error && (
-        <span className="text-sm text-red-600" role="alert" title={resolvedAudioUrl || audioUrl || 'No URL'}>
-          {error}
-        </span>
+        <div className="flex items-center gap-2" role="alert">
+          <span className="text-sm text-red-600" title={resolvedAudioUrl || audioUrl || 'No URL'}>
+            {error}
+          </span>
+          {state.canRetry && (
+            <button
+              onClick={controls.retry}
+              className="text-xs px-2 py-1 bg-red-100 text-red-700 rounded hover:bg-red-200 transition-colors flex items-center gap-1"
+              aria-label="Reintentar carga de audio"
+            >
+              <RefreshCw className="w-3 h-3" />
+              Reintentar
+            </button>
+          )}
+        </div>
       )}
 
       {/* Hidden Audio Element */}
       <audio
         ref={audioRef}
-        src={resolvedAudioUrl}
-        onEnded={handleEnded}
-        onError={handleError}
+        src={resolvedAudioUrl || undefined}
         preload="metadata"
-        loop={isLooping}
+        loop={state.isLooping}
         aria-label={label}
         className="hidden"
       >
@@ -616,4 +444,6 @@ export default function AudioPlayer({
       </audio>
     </div>
   );
-}
+});
+
+export default AudioPlayer;

@@ -326,7 +326,7 @@ export const TopicVariationManager: React.FC<TopicVariationManagerProps> = ({
           <h3 className="text-sm font-semibold text-gray-700 mb-3">
             Select Variations to Compare (max 3)
           </h3>
-          <VariationSelectorselectedVariations={selectedVariations}
+          <VariationSelector selectedVariations={selectedVariations}
             variations={variations}
             onToggle={toggleVariation}
           />
