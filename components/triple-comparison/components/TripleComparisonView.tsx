@@ -1,11 +1,12 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Loader2, Save, X, FileText, Globe, Volume2 } from 'lucide-react';
+import { Loader2, Save, X, AlertTriangle, RefreshCw } from 'lucide-react';
 import { ContentPanel } from './ContentPanel';
 import { DiffViewer } from './DiffViewer';
 import { SyncControls } from './SyncControls';
 import { useTripleComparison } from '../hooks/useTripleComparison';
+import { useContentLoader } from '../hooks/useContentLoader';
 import type { TripleComparisonViewProps, ContentType, SyncOperation, ContentData } from '../types';
 
 export function TripleComparisonView({
@@ -24,7 +25,25 @@ export function TripleComparisonView({
 
   const [isSaving, setIsSaving] = useState(false);
 
-  // Initialize hook with empty content (will be loaded from URLs)
+  // Load content from actual sources with modern React patterns
+  const {
+    content: loadedContent,
+    deferredContent,
+    isLoading: isLoadingContent,
+    isPending,
+    error: loadError,
+    errors: loadErrors,
+    reloadContent,
+  } = useContentLoader({
+    resourceId,
+    downloadableUrl,
+    webUrl,
+    audioUrl,
+    autoLoad: true,
+    cache: true,
+  });
+
+  // Initialize hook with loaded content
   const {
     state,
     content,
@@ -38,20 +57,23 @@ export function TripleComparisonView({
     initialAudio: '',
   });
 
-  // Load content from URLs (simplified - in production, fetch from actual resources)
+  // Update content when loaded from sources
   useEffect(() => {
-    // This would fetch actual content from the URLs
-    // For now, using placeholder text
-    if (downloadableUrl) {
-      updateContent('downloadable', 'Downloadable PDF content would be loaded here...');
+    if (loadedContent && !isLoadingContent) {
+      // Use deferred content for smoother UI updates
+      const contentToUse = deferredContent || loadedContent;
+
+      if (contentToUse.downloadable && !content.downloadable.current) {
+        updateContent('downloadable', contentToUse.downloadable);
+      }
+      if (contentToUse.web && !content.web.current) {
+        updateContent('web', contentToUse.web);
+      }
+      if (contentToUse.audio && !content.audio.current) {
+        updateContent('audio', contentToUse.audio);
+      }
     }
-    if (webUrl) {
-      updateContent('web', 'Web content would be loaded here...');
-    }
-    if (audioUrl) {
-      updateContent('audio', 'Audio transcript would be loaded here...');
-    }
-  }, [downloadableUrl, webUrl, audioUrl, updateContent]);
+  }, [loadedContent, deferredContent, isLoadingContent, updateContent, content]);
 
   const handleSaveAll = async () => {
     setIsSaving(true);
@@ -132,12 +154,50 @@ export function TripleComparisonView({
     audioUrl: type === 'audio' ? audioUrl : undefined,
   });
 
-  if (state.isLoading && !content.downloadable.current && !content.web.current && !content.audio.current) {
+  // Loading state with user feedback
+  if (isLoadingContent && !loadedContent) {
     return (
       <div className="w-full bg-white rounded-lg border border-gray-200 shadow-sm p-6">
-        <div className="flex items-center justify-center py-12">
+        <div className="flex flex-col items-center justify-center py-12">
           <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
-          <span className="ml-3 text-lg">Loading content...</span>
+          <span className="ml-3 text-lg mt-3">Loading content...</span>
+          <p className="text-sm text-gray-500 mt-2">
+            Fetching downloadable, web, and audio content
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  // Error state with retry option
+  if (loadError) {
+    return (
+      <div className="w-full bg-white rounded-lg border border-red-200 shadow-sm p-6">
+        <div className="flex flex-col items-center justify-center py-12">
+          <AlertTriangle className="h-12 w-12 text-red-600 mb-4" />
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">
+            Failed to Load Content
+          </h3>
+          <p className="text-gray-600 text-center mb-6 max-w-md">
+            {loadError}
+          </p>
+          <div className="flex gap-3">
+            <button
+              onClick={reloadContent}
+              className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 flex items-center gap-2 transition-colors"
+            >
+              <RefreshCw className="h-4 w-4" />
+              Retry
+            </button>
+            {onCancel && (
+              <button
+                onClick={onCancel}
+                className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 transition-colors"
+              >
+                Cancel
+              </button>
+            )}
+          </div>
         </div>
       </div>
     );
@@ -208,6 +268,34 @@ export function TripleComparisonView({
           💡 <strong>Tip:</strong> Click the checkboxes below to select two panels for side-by-side comparison
         </p>
       </div>
+
+      {/* Individual Content Load Errors */}
+      {loadErrors.size > 0 && (
+        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+          <div className="flex items-start gap-2">
+            <AlertTriangle className="h-5 w-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+            <div className="flex-1">
+              <h4 className="text-sm font-semibold text-yellow-900 mb-2">
+                Some content failed to load:
+              </h4>
+              <ul className="text-sm text-yellow-800 space-y-1">
+                {Array.from(loadErrors.entries()).map(([type, error]) => (
+                  <li key={type}>
+                    <strong className="capitalize">{type}:</strong> {error}
+                  </li>
+                ))}
+              </ul>
+              <button
+                onClick={reloadContent}
+                className="mt-3 text-sm text-yellow-900 underline hover:no-underline flex items-center gap-1"
+              >
+                <RefreshCw className="h-3 w-3" />
+                Retry loading
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
