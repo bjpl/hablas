@@ -210,41 +210,44 @@ export function useAudioPlayer(
     };
   }, [audioUrl, state.isLooping, options, setCurrentAudio]);
 
-  // Autoplay effect
-  useEffect(() => {
-    if (options.autoplay && audioRef.current && !state.isPlaying && audioUrl) {
-      controls.play();
+  // Controls - defined before autoplay effect so they're available
+  const playAudio = useCallback(async () => {
+    if (!audioRef.current) return;
+
+    try {
+      setCurrentAudio(audioRef.current);
+      await audioRef.current.play();
+
+      startTransition(() => {
+        setState((prev) => ({ ...prev, isPlaying: true, error: null, canRetry: false }));
+      });
+
+      options.onPlay?.();
+    } catch (err) {
+      console.error('Error playing audio:', err);
+      const errorMessage = 'No se pudo reproducir el audio';
+
+      setState((prev) => ({
+        ...prev,
+        error: errorMessage,
+        isPlaying: false,
+        canRetry: true
+      }));
+
+      options.onError?.(errorMessage);
     }
-  }, [options.autoplay, audioUrl]);
+  }, [setCurrentAudio, options, startTransition]);
+
+  // Autoplay effect - now uses stable playAudio callback
+  useEffect(() => {
+    if (options.autoplay && audioRef.current && !state.isPlaying && audioUrl && !state.error) {
+      playAudio();
+    }
+  }, [options.autoplay, audioUrl, state.isPlaying, state.error, playAudio]);
 
   // Controls
   const controls: AudioPlayerControls = {
-    play: useCallback(async () => {
-      if (!audioRef.current) return;
-
-      try {
-        setCurrentAudio(audioRef.current);
-        await audioRef.current.play();
-
-        startTransition(() => {
-          setState((prev) => ({ ...prev, isPlaying: true, error: null, canRetry: false }));
-        });
-
-        options.onPlay?.();
-      } catch (err) {
-        console.error('Error playing audio:', err);
-        const errorMessage = 'No se pudo reproducir el audio';
-
-        setState((prev) => ({
-          ...prev,
-          error: errorMessage,
-          isPlaying: false,
-          canRetry: true
-        }));
-
-        options.onError?.(errorMessage);
-      }
-    }, [setCurrentAudio, options]),
+    play: playAudio,
 
     pause: useCallback(() => {
       if (!audioRef.current) return;

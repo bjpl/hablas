@@ -47,11 +47,14 @@ const AudioPlayer = memo(function AudioPlayer({
   // 1️⃣ Simplified URL Resolution - uses existing hook
   const { url: resolvedAudioUrl, loading: urlLoading, error: urlError } = useAudioUrl(audioUrl);
 
-  // 2️⃣ Custom Hook for Audio Playback Logic
-  const [state, controls, audioRef] = useAudioPlayer(resolvedAudioUrl || undefined, {
+  // 2️⃣ Memoize options to prevent stale closures and unnecessary re-renders
+  const audioPlayerOptions = useMemo(() => ({
     resourceId,
     autoplay,
-  });
+  }), [resourceId, autoplay]);
+
+  // 3️⃣ Custom Hook for Audio Playback Logic
+  const [state, controls, audioRef] = useAudioPlayer(resolvedAudioUrl || undefined, audioPlayerOptions);
 
   // 3️⃣ Keyboard Shortcuts for Accessibility
   const { shortcuts: keyboardShortcutsList } = useAudioKeyboardShortcuts({
