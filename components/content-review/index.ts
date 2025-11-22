@@ -23,7 +23,7 @@ export { TopicResourceTab } from './TopicResourceTab';
 // Hablas-specific content review enhancements
 export { BilingualComparisonView } from './BilingualComparisonView';
 export { AudioTextAlignmentTool } from './AudioTextAlignmentTool';
-export { AudioTranscriptReview } from './AudioTranscriptReview';
+export { default as AudioTranscriptReview } from './AudioTranscriptReview';
 export { HablasFormatComparisonTool } from './HablasFormatComparisonTool';
 export { GigWorkerContextValidator } from './GigWorkerContextValidator';
 export { TopicVariationManager } from './TopicVariationManager';
