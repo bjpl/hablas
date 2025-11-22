@@ -5,6 +5,7 @@
  */
 
 import type { TopicGroup } from '@/lib/types/topics';
+import { isResourceHidden } from '@/data/resources';
 
 export const topicGroups: TopicGroup[] = [
   // Repartidor Topics
@@ -155,8 +156,62 @@ export const topicGroups: TopicGroup[] = [
 
 /**
  * Get all topics, optionally filtered by category
+ * Filters out hidden resources from resource counts
  */
 export function getTopics(category?: 'all' | 'repartidor' | 'conductor'): TopicGroup[] {
+  const filterHiddenResources = (topic: TopicGroup) => {
+    const visibleIds = topic.resourceIds.filter(id => !isResourceHidden(id));
+    return {
+      ...topic,
+      resourceIds: visibleIds,
+      resourceCount: visibleIds.length,
+    };
+  };
+
+  if (!category) {
+    return topicGroups
+      .map(filterHiddenResources)
+      .filter(topic => topic.resourceCount > 0); // Exclude empty topics
+  }
+
+  return topicGroups
+    .filter(topic => topic.category === category)
+    .map(filterHiddenResources)
+    .filter(topic => topic.resourceCount > 0); // Exclude empty topics
+}
+
+/**
+ * Get a specific topic by slug
+ * Filters out hidden resources
+ */
+export function getTopicBySlug(slug: string): TopicGroup | null {
+  const topic = topicGroups.find(t => t.slug === slug);
+  if (!topic) return null;
+
+  const visibleIds = topic.resourceIds.filter(id => !isResourceHidden(id));
+
+  // Return null if all resources in this topic are hidden
+  if (visibleIds.length === 0) return null;
+
+  return {
+    ...topic,
+    resourceIds: visibleIds,
+    resourceCount: visibleIds.length,
+  };
+}
+
+/**
+ * Get all resource IDs for a topic (only visible resources)
+ */
+export function getTopicResourceIds(slug: string): number[] {
+  const topic = getTopicBySlug(slug);
+  return topic?.resourceIds || [];
+}
+
+/**
+ * Get all topics including hidden resources (for admin use)
+ */
+export function getAllTopicsWithHidden(category?: 'all' | 'repartidor' | 'conductor'): TopicGroup[] {
   if (!category) {
     return topicGroups.map(topic => ({
       ...topic,
@@ -170,25 +225,4 @@ export function getTopics(category?: 'all' | 'repartidor' | 'conductor'): TopicG
       ...topic,
       resourceCount: topic.resourceIds.length,
     }));
-}
-
-/**
- * Get a specific topic by slug
- */
-export function getTopicBySlug(slug: string): TopicGroup | null {
-  const topic = topicGroups.find(t => t.slug === slug);
-  if (!topic) return null;
-
-  return {
-    ...topic,
-    resourceCount: topic.resourceIds.length,
-  };
-}
-
-/**
- * Get all resource IDs for a topic
- */
-export function getTopicResourceIds(slug: string): number[] {
-  const topic = getTopicBySlug(slug);
-  return topic?.resourceIds || [];
 }

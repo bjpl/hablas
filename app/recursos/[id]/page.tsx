@@ -1,5 +1,6 @@
-import { resources } from '@/data/resources'
+import { resources, isResourceHidden } from '@/data/resources'
 import ResourceDetail from './ResourceDetail'
+import { redirect } from 'next/navigation'
 import fs from 'fs'
 import path from 'path'
 import { transformAudioScriptToUserFormat, isAudioProductionScript } from './transform-audio-script'
@@ -85,6 +86,12 @@ function cleanAudioScript(text: string): string {
 export default async function ResourceDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const resourceId = parseInt(id)
+
+  // Redirect hidden resources to home page (pending review)
+  if (isResourceHidden(resourceId)) {
+    redirect('/')
+  }
+
   const resource = resources.find(r => r.id === resourceId)
 
   let contentText = ''

@@ -27,6 +27,7 @@ export interface Resource {
   contentPath?: string // Optional: absolute path to source file (for development/debugging)
   audioUrl?: string // Optional: path to MP3 audio file
   metadata?: MediaMetadata
+  hidden?: boolean // Optional: hide from public pages (for review)
 }
 
 export const resources: Resource[] = [
@@ -669,6 +670,7 @@ export const resources: Resource[] = [
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\conductor\\intermediate_audio_conversations_1-audio-script.txt",
   },
   // JSON-converted resources (IDs 35-59) - Added 2025-10-28
+  // NOTE: These resources are hidden from public pages pending review
   {
     "id": 35,
     "title": "Gig Economy Business Terminology",
@@ -681,7 +683,8 @@ export const resources: Resource[] = [
     "tags": ["avanzado", "business-terminology", "gig-workers", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-35.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\business-terminology.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\business-terminology.md",
+    "hidden": true
   },
   {
     "id": 36,
@@ -695,7 +698,8 @@ export const resources: Resource[] = [
     "tags": ["avanzado", "complaint-handling", "gig-workers", "professional", "business", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-36.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\complaint-handling.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\complaint-handling.md",
+    "hidden": true
   },
   {
     "id": 37,
@@ -709,7 +713,8 @@ export const resources: Resource[] = [
     "tags": ["avanzado", "conflict-resolution", "gig-workers", "professional", "business", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-37.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\conflict-resolution.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\conflict-resolution.md",
+    "hidden": true
   },
   {
     "id": 38,
@@ -723,7 +728,8 @@ export const resources: Resource[] = [
     "tags": ["avanzado", "cross-cultural", "gig-workers", "professional", "business", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-38.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\cross-cultural-communication.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\cross-cultural-communication.md",
+    "hidden": true
   },
   {
     "id": 39,
@@ -737,7 +743,8 @@ export const resources: Resource[] = [
     "tags": ["avanzado", "customer-service", "gig-workers", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-39.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\customer-service-excellence.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\customer-service-excellence.md",
+    "hidden": true
   },
   {
     "id": 40,
@@ -751,7 +758,8 @@ export const resources: Resource[] = [
     "tags": ["avanzado", "earnings-optimization", "gig-workers", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-40.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\earnings-optimization.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\earnings-optimization.md",
+    "hidden": true
   },
   {
     "id": 41,
@@ -765,7 +773,8 @@ export const resources: Resource[] = [
     "tags": ["avanzado", "negotiation", "gig-workers", "professional", "business", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-41.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\negotiation-skills.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\negotiation-skills.md",
+    "hidden": true
   },
   {
     "id": 42,
@@ -779,7 +788,8 @@ export const resources: Resource[] = [
     "tags": ["avanzado", "professional-boundaries", "gig-workers", "professional", "business", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-42.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\professional-boundaries.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\professional-boundaries.md",
+    "hidden": true
   },
   {
     "id": 43,
@@ -793,7 +803,8 @@ export const resources: Resource[] = [
     "tags": ["avanzado", "professional-communication", "gig-workers", "professional", "business", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-43.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\professional-communication.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\professional-communication.md",
+    "hidden": true
   },
   {
     "id": 44,
@@ -807,7 +818,8 @@ export const resources: Resource[] = [
     "tags": ["avanzado", "time-management", "gig-workers", "professional", "business", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-44.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\time-management.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\avanzado\\time-management.md",
+    "hidden": true
   },
   {
     "id": 45,
@@ -821,7 +833,8 @@ export const resources: Resource[] = [
     "tags": ["emergency", "accident", "gig-workers", "intermedio", "pdf"],
     "offline": true,
     "audioUrl": "/audio-scripts/accident-procedures-audio-script.txt",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\accident-procedures.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\accident-procedures.md",
+    "hidden": true
   },
   {
     "id": 46,
@@ -835,7 +848,8 @@ export const resources: Resource[] = [
     "tags": ["emergency", "conflict", "gig-workers", "intermedio", "customer-service", "conflict-resolution", "pdf"],
     "offline": true,
     "audioUrl": "/audio-scripts/customer-conflict-audio-script.txt",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\customer-conflict.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\customer-conflict.md",
+    "hidden": true
   },
   {
     "id": 47,
@@ -849,7 +863,8 @@ export const resources: Resource[] = [
     "tags": ["emergency", "property", "gig-workers", "intermedio", "pdf"],
     "offline": true,
     "audioUrl": "/audio-scripts/lost-or-found-items-audio-script.txt",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\lost-or-found-items.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\lost-or-found-items.md",
+    "hidden": true
   },
   {
     "id": 48,
@@ -863,7 +878,8 @@ export const resources: Resource[] = [
     "tags": ["emergency", "medical", "gig-workers", "intermedio", "safety", "health", "pdf"],
     "offline": true,
     "audioUrl": "/audio-scripts/medical-emergencies-audio-script.txt",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\medical-emergencies.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\medical-emergencies.md",
+    "hidden": true
   },
   {
     "id": 49,
@@ -877,7 +893,8 @@ export const resources: Resource[] = [
     "tags": ["emergency", "payment", "gig-workers", "intermedio", "conflict-resolution", "pdf"],
     "offline": true,
     "audioUrl": "/audio-scripts/payment-disputes-audio-script.txt",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\payment-disputes.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\payment-disputes.md",
+    "hidden": true
   },
   {
     "id": 50,
@@ -891,7 +908,8 @@ export const resources: Resource[] = [
     "tags": ["emergency", "safety", "gig-workers", "intermedio", "pdf"],
     "offline": true,
     "audioUrl": "/audio-scripts/safety-concerns-audio-script.txt",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\safety-concerns.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\safety-concerns.md",
+    "hidden": true
   },
   {
     "id": 51,
@@ -905,7 +923,8 @@ export const resources: Resource[] = [
     "tags": ["emergency", "vehicle", "gig-workers", "intermedio", "safety", "pdf"],
     "offline": true,
     "audioUrl": "/audio-scripts/vehicle-breakdown-audio-script.txt",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\vehicle-breakdown.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\vehicle-breakdown.md",
+    "hidden": true
   },
   {
     "id": 52,
@@ -919,7 +938,8 @@ export const resources: Resource[] = [
     "tags": ["emergency", "weather", "gig-workers", "intermedio", "pdf"],
     "offline": true,
     "audioUrl": "/audio-scripts/weather-hazards-audio-script.txt",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\weather-hazards.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\emergency\\weather-hazards.md",
+    "hidden": true
   },
   {
     "id": 53,
@@ -933,7 +953,8 @@ export const resources: Resource[] = [
     "tags": ["app-specific", "airport-rideshare", "rideshare-drivers", "avanzado", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-53.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\airport-rideshare.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\airport-rideshare.md",
+    "hidden": true
   },
   {
     "id": 54,
@@ -947,7 +968,8 @@ export const resources: Resource[] = [
     "tags": ["app-specific", "food-delivery-doordash", "doordash-drivers", "avanzado", "platform-specific", "doordash", "delivery", "repartidor", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-54.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\doordash-delivery.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\doordash-delivery.md",
+    "hidden": true
   },
   {
     "id": 55,
@@ -961,7 +983,8 @@ export const resources: Resource[] = [
     "tags": ["app-specific", "rideshare-lyft", "lyft-drivers", "avanzado", "platform-specific", "lyft", "rideshare", "conductor", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-55.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\lyft-driver-essentials.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\lyft-driver-essentials.md",
+    "hidden": true
   },
   {
     "id": 56,
@@ -975,7 +998,8 @@ export const resources: Resource[] = [
     "tags": ["app-specific", "earnings-maximization", "experienced-gig-workers", "avanzado", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-56.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\multi-app-strategy.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\multi-app-strategy.md",
+    "hidden": true
   },
   {
     "id": 57,
@@ -989,7 +1013,8 @@ export const resources: Resource[] = [
     "tags": ["app-specific", "ratings-optimization", "all-gig-workers", "avanzado", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-57.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\platform-ratings-mastery.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\platform-ratings-mastery.md",
+    "hidden": true
   },
   {
     "id": 58,
@@ -1003,7 +1028,8 @@ export const resources: Resource[] = [
     "tags": ["app-specific", "financial-management", "all-gig-workers", "avanzado", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-58.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\tax-and-expenses.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\tax-and-expenses.md",
+    "hidden": true
   },
   {
     "id": 59,
@@ -1017,6 +1043,20 @@ export const resources: Resource[] = [
     "tags": ["app-specific", "rideshare-uber", "uber-drivers", "avanzado", "platform-specific", "uber", "rideshare", "conductor", "pdf"],
     "offline": true,
     "audioUrl": "/audio/resource-59.mp3",
-    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\uber-driver-essentials.md"
+    "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\docs\\resources\\converted\\app-specific\\uber-driver-essentials.md",
+    "hidden": true
   }
 ]
+
+/**
+ * Helper to get only visible (non-hidden) resources
+ */
+export const visibleResources = resources.filter(r => !r.hidden)
+
+/**
+ * Helper to check if a resource is hidden
+ */
+export function isResourceHidden(resourceId: number): boolean {
+  const resource = resources.find(r => r.id === resourceId)
+  return resource?.hidden ?? false
+}

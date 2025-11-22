@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import ResourceCard from './ResourceCard'
 import SkeletonList from './mobile/SkeletonList'
-import { resources, type Resource } from '../data/resources'
+import { visibleResources, type Resource } from '../data/resources'
 
 interface ResourceLibraryProps {
   category: 'all' | 'repartidor' | 'conductor'
@@ -25,7 +25,8 @@ export default function ResourceLibrary({ category, level, searchQuery = '' }: R
     return () => clearTimeout(timer)
   }, [])
 
-  const filteredResources = resources.filter(resource => {
+  // Filter from visible resources only (excludes hidden resources pending review)
+  const filteredResources = visibleResources.filter(resource => {
     const categoryMatch = category === 'all' || resource.category === category || resource.category === 'all'
     const levelMatch = level === 'all' || resource.level === level
 

@@ -7,7 +7,7 @@
  */
 
 import { NextResponse } from 'next/server';
-import { resources } from '@/data/resources';
+import { visibleResources } from '@/data/resources';
 import fs from 'fs/promises';
 import path from 'path';
 import type { ListResourcesResponse, ContentEdit } from '@/lib/types/content-edits';
@@ -19,8 +19,8 @@ export async function GET() {
     const editsData = await fs.readFile(editsPath, 'utf-8');
     const { edits, metadata } = JSON.parse(editsData);
 
-    // Map resources with edit status
-    const resourcesList = resources.map(resource => {
+    // Map only visible resources with edit status (excludes hidden resources pending review)
+    const resourcesList = visibleResources.map(resource => {
       const currentEdit = edits.find(
         (edit: ContentEdit) => edit.resourceId === resource.id
       );
