@@ -205,7 +205,7 @@ export async function retryWithBackoff<T>(
     signal,
   } = options;
 
-  let lastError: Error;
+  let lastError: Error = new Error('Unknown error');
   let delay = initialDelay;
 
   for (let attempt = 0; attempt <= retries; attempt++) {
@@ -1148,9 +1148,3 @@ export const pdfContentFetcher = new PDFContentFetcher();
 export const webContentFetcher = new WebContentFetcher();
 export const audioTranscriptFetcher = new AudioTranscriptFetcher();
 
-// Export utility functions
-export {
-  isOnline,
-  waitForOnline,
-  retryWithBackoff,
-};
