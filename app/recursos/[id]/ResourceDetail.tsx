@@ -1,8 +1,8 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import { useEffect, useState } from 'react'
-import { resources } from '@/data/resources'
+import { useEffect, useState, useMemo } from 'react'
+import { resources, visibleResources, isResourceHidden } from '@/data/resources'
 import ReactMarkdown from 'react-markdown'
 import AudioPlayer from '@/components/AudioPlayer'
 import BilingualDialogueFormatter from '@/components/resource-renderers/BilingualDialogueFormatter'
@@ -29,6 +29,15 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
 
   const resourceId = parseInt(id)
   const resource = resources.find(r => r.id === resourceId)
+
+  // Get sorted visible resource IDs for navigation
+  const sortedVisibleIds = useMemo(() =>
+    visibleResources.map(r => r.id).sort((a, b) => a - b),
+    []
+  )
+  const currentIndex = sortedVisibleIds.indexOf(resourceId)
+  const prevResourceId = currentIndex > 0 ? sortedVisibleIds[currentIndex - 1] : null
+  const nextResourceId = currentIndex < sortedVisibleIds.length - 1 ? sortedVisibleIds[currentIndex + 1] : null
 
   // No basePath needed for custom domain (hablas.co)
   const basePath = ''
@@ -538,19 +547,19 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
             ← Volver a recursos
           </button>
 
-          {/* Next/Previous resource navigation */}
+          {/* Next/Previous resource navigation (only visible resources) */}
           <div className="flex gap-3 w-full sm:w-auto">
-            {resourceId > 1 && (
+            {prevResourceId && (
               <button
-                onClick={() => router.push(`/recursos/${resourceId - 1}`)}
+                onClick={() => router.push(`/recursos/${prevResourceId}`)}
                 className="flex-1 sm:flex-none px-6 py-3 bg-accent-blue text-white rounded font-semibold hover:bg-blue-700 transition-colors"
               >
                 ← Anterior
               </button>
             )}
-            {resourceId < resources.length && (
+            {nextResourceId && (
               <button
-                onClick={() => router.push(`/recursos/${resourceId + 1}`)}
+                onClick={() => router.push(`/recursos/${nextResourceId}`)}
                 className="flex-1 sm:flex-none px-6 py-3 bg-accent-blue text-white rounded font-semibold hover:bg-blue-700 transition-colors"
               >
                 Siguiente →
