@@ -76,7 +76,7 @@ export class ContentErrorBoundary extends React.Component<
     }, delay);
   };
 
-  handleReset = (): void {
+  handleReset = (): void => {
     this.setState({
       hasError: false,
       error: null,

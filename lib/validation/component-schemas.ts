@@ -61,11 +61,8 @@ export const TripleComparisonViewPropsSchema = z.object({
   downloadableUrl: z.string().url().optional(),
   webUrl: z.string().url().optional(),
   audioUrl: z.string().url().optional(),
-  onSave: z.function().args(z.array(z.object({
-    type: ContentTypeSchema,
-    content: z.string(),
-  }))).returns(z.promise(z.void())),
-  onCancel: z.function().returns(z.void()).optional(),
+  onSave: z.function(),
+  onCancel: z.function().optional(),
 });
 
 /**
@@ -87,7 +84,7 @@ export const ContentItemSchema = z.object({
  */
 export const ContentReviewToolPropsSchema = z.object({
   initialContent: ContentItemSchema.optional(),
-  onSave: z.function().args(ContentItemSchema).returns(z.promise(z.void())).optional(),
+  onSave: z.function().optional(),
   autoSaveDelay: z.number().min(100).max(10000).default(2000),
   className: z.string().default(''),
 });
@@ -106,10 +103,8 @@ export const BilingualPhraseSchema = z.object({
  */
 export const BilingualComparisonViewPropsSchema = z.object({
   content: z.string(),
-  onEdit: z.function()
-    .args(z.enum(['en', 'es']), z.number().int().nonnegative(), z.string())
-    .returns(z.void()),
-  onSave: z.function().returns(z.void()).optional(),
+  onEdit: z.function(),
+  onSave: z.function().optional(),
   className: z.string().default(''),
 });
 
@@ -131,14 +126,7 @@ export const TranscriptPhraseSchema = z.object({
 export const AudioTextAlignmentToolPropsSchema = z.object({
   audioUrl: z.string().url('Valid audio URL is required'),
   transcript: z.array(TranscriptPhraseSchema),
-  onTimestampUpdate: z.function()
-    .args(
-      z.number().int().nonnegative(),
-      z.number().nonnegative(),
-      z.number().nonnegative()
-    )
-    .returns(z.void())
-    .optional(),
+  onTimestampUpdate: z.function().optional(),
   className: z.string().default(''),
 });
 

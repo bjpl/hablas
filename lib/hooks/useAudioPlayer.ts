@@ -57,7 +57,7 @@ export interface AudioPlayerControls {
 export function useAudioPlayer(
   audioUrl: string | undefined,
   options: UseAudioPlayerOptions = {}
-): [AudioPlayerState, AudioPlayerControls, React.RefObject<HTMLAudioElement>] {
+): [AudioPlayerState, AudioPlayerControls, React.RefObject<HTMLAudioElement | null>] {
   const { setCurrentAudio } = useAudioContext();
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPending, startTransition] = useTransition();
