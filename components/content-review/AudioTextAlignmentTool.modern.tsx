@@ -50,7 +50,7 @@ const WaveformViewer: React.FC<WaveformViewerProps> = memo(({
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [waveformData, setWaveformData] = useState<number[]>([]);
-  const rafRef = useRef<number>();
+  const rafRef = useRef<number | undefined>(undefined);
 
   // Generate waveform data (in production, use actual audio analysis)
   useEffect(() => {
