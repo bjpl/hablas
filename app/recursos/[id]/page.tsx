@@ -1,13 +1,13 @@
-import { resources, isResourceHidden } from '@/data/resources'
+import { resources, isResourceHidden, visibleResources } from '@/data/resources'
 import ResourceDetail from './ResourceDetail'
 import { redirect } from 'next/navigation'
 import fs from 'fs'
 import path from 'path'
 import { transformAudioScriptToUserFormat, isAudioProductionScript } from './transform-audio-script'
 
-// Generate static paths for all resources at build time (server component)
+// Generate static paths only for VISIBLE resources at build time
 export async function generateStaticParams() {
-  return resources.map((resource) => ({
+  return visibleResources.map((resource) => ({
     id: resource.id.toString(),
   }))
 }
