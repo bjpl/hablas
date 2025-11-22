@@ -3,8 +3,8 @@
  * Provides offline functionality and resource caching
  */
 
-const CACHE_NAME = 'hablas-v4-hidden-fix'
-const RUNTIME_CACHE = 'hablas-runtime-v4'
+const CACHE_NAME = 'hablas-v5-force-rebuild'
+const RUNTIME_CACHE = 'hablas-runtime-v5'
 
 // Resources to cache on install
 const PRECACHE_URLS = [
