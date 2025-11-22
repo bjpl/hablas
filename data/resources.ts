@@ -108,7 +108,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio-scripts/intermediate_situations_1-audio-script.txt",
+    "audioUrl": "/audio/resource-5.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_situations_1.md"
   },
   {
@@ -601,7 +601,7 @@ export const resources: Resource[] = [
       "pdf"
     ],
     "offline": true,
-    "audioUrl": "/audio-scripts/intermediate_situations_2-audio-script.txt",
+    "audioUrl": "/audio/resource-31.mp3",
     "contentPath": "C:\\Users\\brand\\Development\\Project_Workspace\\active-development\\hablas\\generated-resources\\50-batch\\repartidor\\intermediate_situations_2.md"
   },
   {
