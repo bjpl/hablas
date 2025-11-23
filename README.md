@@ -21,6 +21,8 @@ Hablas provides practical English learning resources for working-class Colombian
 **Status:** Very Active
 **Last Updated:** 2025-01-08
 
+**Live Demo:** [hablas.co](https://hablas.co)
+
 ## Features
 
 ### Core Functionality
@@ -179,6 +181,44 @@ Please open an issue or submit a pull request.
 
 MIT License - Free for all Colombian workers to use and share.
 
+## Exploring the Code
+
+The project demonstrates practical language learning application development with a focus on accessibility for low-resource environments:
+
+```
+hablas/
+├── src/
+│   ├── app/              # Next.js app router with SSG
+│   ├── components/       # React components optimized for mobile
+│   ├── lib/              # Resource generation and AI integration
+│   ├── types/            # TypeScript definitions
+│   └── utils/            # Data conservation utilities
+├── public/               # Static assets with aggressive compression
+├── docs/                 # Documentation
+└── tests/                # Accessibility and unit tests
+```
+
+**Architecture Highlights:**
+- Progressive Web App with service worker for offline functionality
+- AI-powered resource generation using Claude Sonnet 4.5
+- Mobile-first design optimized for budget Android devices
+- Data conservation through aggressive compression and caching
+- WhatsApp community integration for peer learning support
+
+**Implementation Demonstrates:**
+- Static site generation for optimal performance on slow networks
+- Automated documentation synchronization with build process
+- Resource templating system for scalable content generation
+- Jest with jest-axe for comprehensive accessibility testing
+
+**For Technical Review:**
+
+Those interested in the implementation details can explore:
+- `/src/lib/` for AI integration and resource generation
+- `/src/components/` for mobile-optimized React components
+- `/tests/` for accessibility testing patterns
+- Resource CLI tools for content management workflow
+
 ---
 
-Made with care in Medellín for all of Colombia
+Built with care in Medellín for all of Colombia
