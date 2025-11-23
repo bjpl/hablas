@@ -7,7 +7,7 @@
  */
 
 import { NextResponse } from 'next/server';
-import { resources } from '@/data/resources';
+import { resources, isResourceHidden } from '@/data/resources';
 import fs from 'fs/promises';
 import path from 'path';
 import { stat } from 'fs/promises';
@@ -20,9 +20,9 @@ export async function GET(
     const { id } = await params;
     const resourceId = parseInt(id);
 
-    // Find resource
+    // Find resource (return 404 for hidden resources)
     const resource = resources.find(r => r.id === resourceId);
-    if (!resource) {
+    if (!resource || isResourceHidden(resourceId)) {
       return NextResponse.json(
         { error: 'Resource not found' },
         { status: 404 }
@@ -99,7 +99,7 @@ export async function HEAD(
     const resourceId = parseInt(id);
 
     const resource = resources.find(r => r.id === resourceId);
-    if (!resource) {
+    if (!resource || isResourceHidden(resourceId)) {
       return new NextResponse(null, { status: 404 });
     }
 

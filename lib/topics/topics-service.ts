@@ -2,53 +2,33 @@
  * Topics Service
  *
  * Service layer for managing topics and their relationships with resources
+ *
+ * NOTE: This service now uses the main resources.ts file with proper hidden filtering
+ * instead of reading from data/resources/*.json files which contain hidden resources.
  */
 
-import fs from 'fs';
-import path from 'path';
 import type { Topic, TopicCategory, TopicResource, TopicWithResources } from '@/lib/types/topics';
-
-const DATA_DIR = path.join(process.cwd(), 'data', 'resources');
+import { visibleResources, type Resource } from '@/data/resources';
 
 /**
- * Get all resources from the data directory
+ * Get all visible resources (excludes hidden resources)
+ * Uses the main resources.ts file with proper filtering
  */
-function getAllResources() {
-  const resources: any[] = [];
-
-  function readDirectory(dir: string) {
-    const items = fs.readdirSync(dir, { withFileTypes: true });
-
-    for (const item of items) {
-      const fullPath = path.join(dir, item.name);
-
-      if (item.isDirectory()) {
-        readDirectory(fullPath);
-      } else if (item.isFile() && item.name.endsWith('.json')) {
-        try {
-          const content = fs.readFileSync(fullPath, 'utf-8');
-          const resource = JSON.parse(content);
-          resources.push(resource);
-        } catch (error) {
-          console.error(`Error reading ${fullPath}:`, error);
-        }
-      }
-    }
-  }
-
-  readDirectory(DATA_DIR);
-  return resources;
+function getAllResources(): Resource[] {
+  return visibleResources;
 }
 
 /**
  * Extract topics from resources
+ * Groups resources by category to create topics
  */
 export function extractTopicsFromResources(): Topic[] {
   const resources = getAllResources();
   const topicsMap = new Map<string, Topic>();
 
   for (const resource of resources) {
-    const slug = resource.subcategory || resource.category || 'general';
+    // Use category as the topic grouping (all, repartidor, conductor)
+    const slug = resource.category || 'all';
     const name = slug.split('-').map((word: string) =>
       word.charAt(0).toUpperCase() + word.slice(1)
     ).join(' ');
@@ -58,8 +38,8 @@ export function extractTopicsFromResources(): Topic[] {
         id: slug,
         slug,
         name,
-        description: resource.description || `Resources for ${name}`,
-        category: resource.category || 'general',
+        description: `Resources for ${name}`,
+        category: resource.category || 'all',
         level: resource.level || 'intermedio',
         resourceIds: [],
         resourceCount: 0,
@@ -100,19 +80,18 @@ export function groupTopicsByCategory(topics: Topic[]): TopicCategory[] {
 }
 
 /**
- * Get resources for a specific topic
+ * Get resources for a specific topic (by category)
  */
 export function getResourcesForTopic(topicSlug: string): TopicResource[] {
   const resources = getAllResources();
   const topicResources: TopicResource[] = [];
 
   for (const resource of resources) {
-    const resourceTopic = resource.subcategory || resource.category;
-
-    if (resourceTopic === topicSlug) {
+    // Match by category
+    if (resource.category === topicSlug) {
       topicResources.push({
         id: resource.id,
-        resourceId: parseInt(resource.id.split('-')[1]) || 0,
+        resourceId: resource.id,
         title: resource.title,
         description: resource.description,
         content: '', // Would need to be loaded separately
@@ -146,38 +125,10 @@ export function getTopicWithResources(topicSlug: string): TopicWithResources | n
 
 /**
  * Get edit status for resources
+ * Note: This is a simplified version that returns resources as-is
+ * Edit status can be loaded separately if needed
  */
 export function enrichResourcesWithEditStatus(resources: TopicResource[]): TopicResource[] {
-  try {
-    const editsPath = path.join(process.cwd(), 'data', 'content-edits.json');
-
-    if (!fs.existsSync(editsPath)) {
-      return resources;
-    }
-
-    const editsContent = fs.readFileSync(editsPath, 'utf-8');
-    const edits = JSON.parse(editsContent);
-
-    return resources.map(resource => {
-      const resourceEdits = edits.filter((edit: any) =>
-        edit.resourceId === resource.resourceId
-      );
-
-      if (resourceEdits.length === 0) {
-        return resource;
-      }
-
-      const latestEdit = resourceEdits[resourceEdits.length - 1];
-
-      return {
-        ...resource,
-        hasEdit: true,
-        editStatus: latestEdit.status,
-        lastEditDate: latestEdit.updatedAt || latestEdit.createdAt,
-      };
-    });
-  } catch (error) {
-    console.error('Error enriching resources with edit status:', error);
-    return resources;
-  }
+  // Return resources as-is - edit status can be loaded separately via API if needed
+  return resources;
 }

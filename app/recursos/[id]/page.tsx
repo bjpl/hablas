@@ -1,12 +1,13 @@
-import { resources } from '@/data/resources'
+import { resources, isResourceHidden, visibleResources } from '@/data/resources'
 import ResourceDetail from './ResourceDetail'
+import { redirect } from 'next/navigation'
 import fs from 'fs'
 import path from 'path'
 import { transformAudioScriptToUserFormat, isAudioProductionScript } from './transform-audio-script'
 
-// Generate static paths for all resources at build time (server component)
+// Generate static paths only for VISIBLE resources at build time
 export async function generateStaticParams() {
-  return resources.map((resource) => ({
+  return visibleResources.map((resource) => ({
     id: resource.id.toString(),
   }))
 }
@@ -85,6 +86,12 @@ function cleanAudioScript(text: string): string {
 export default async function ResourceDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const resourceId = parseInt(id)
+
+  // Redirect hidden resources to home page (pending review)
+  if (isResourceHidden(resourceId)) {
+    redirect('/')
+  }
+
   const resource = resources.find(r => r.id === resourceId)
 
   let contentText = ''

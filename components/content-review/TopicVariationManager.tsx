@@ -165,7 +165,7 @@ const SharedSectionsPanel: React.FC<SharedSectionsPanelProps> = ({
 
   // Analyze shared content across variations
   const sharedAnalysis = useMemo(() => {
-    if (variations.length === 0) return { sections: [], differences: [] };
+    if (variations.length === 0) return { sections: [], differences: 0 };
 
     // Simple heuristic: extract headers and check if they match across variations
     const headers = variations.map(v => {
@@ -326,7 +326,7 @@ export const TopicVariationManager: React.FC<TopicVariationManagerProps> = ({
           <h3 className="text-sm font-semibold text-gray-700 mb-3">
             Select Variations to Compare (max 3)
           </h3>
-          <VariationSelectorselectedVariations={selectedVariations}
+          <VariationSelector selectedVariations={selectedVariations}
             variations={variations}
             onToggle={toggleVariation}
           />

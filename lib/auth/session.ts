@@ -18,17 +18,22 @@ const BLACKLIST_FILE = 'deprecated';
  */
 const REFRESH_TOKEN_SECRET = process.env.REFRESH_TOKEN_SECRET;
 
+// Track if we're using a temp secret for development
+let TEMP_REFRESH_SECRET: string | undefined;
+
 if (!REFRESH_TOKEN_SECRET) {
-  if (process.env.NODE_ENV === 'production') {
+  // During build/static generation, use placeholder (API routes are dynamic)
+  if (process.env.NEXT_PHASE === 'phase-production-build') {
+    TEMP_REFRESH_SECRET = 'build-time-placeholder-not-used-at-runtime';
+  } else if (process.env.NODE_ENV === 'production') {
     throw new Error('CRITICAL: REFRESH_TOKEN_SECRET environment variable must be set in production. Generate a secure secret using: openssl rand -base64 48');
+  } else {
+    // In development, generate a temporary secure random secret
+    const crypto = require('crypto');
+    TEMP_REFRESH_SECRET = crypto.randomBytes(64).toString('hex');
+    console.warn('⚠️  SECURITY WARNING: Using auto-generated REFRESH_TOKEN_SECRET for development only');
+    console.warn('⚠️  DO NOT USE THIS IN PRODUCTION. Set REFRESH_TOKEN_SECRET environment variable.');
   }
-  // In development, generate a temporary secure random secret
-  const crypto = require('crypto');
-  const tempSecret = crypto.randomBytes(64).toString('hex');
-  console.warn('⚠️  SECURITY WARNING: Using auto-generated REFRESH_TOKEN_SECRET for development only');
-  console.warn('⚠️  DO NOT USE THIS IN PRODUCTION. Set REFRESH_TOKEN_SECRET environment variable.');
-  // Use temporary secret (this is OK for development only)
-  var TEMP_REFRESH_SECRET = tempSecret;
 }
 
 // Validate secret length (minimum 32 characters for security)
@@ -37,7 +42,7 @@ if (REFRESH_TOKEN_SECRET && REFRESH_TOKEN_SECRET.length < 32) {
 }
 
 const REFRESH_SECRET = new TextEncoder().encode(
-  REFRESH_TOKEN_SECRET || (typeof TEMP_REFRESH_SECRET !== 'undefined' ? TEMP_REFRESH_SECRET : '')
+  REFRESH_TOKEN_SECRET || TEMP_REFRESH_SECRET || ''
 );
 
 export interface Session {

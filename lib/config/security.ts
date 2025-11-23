@@ -109,6 +109,10 @@ export const JWT_CONFIG = {
     const secret = process.env.JWT_SECRET;
 
     if (!secret) {
+      // During build/static generation, return placeholder (API routes are dynamic anyway)
+      if (process.env.NEXT_PHASE === 'phase-production-build') {
+        return 'build-time-placeholder-not-used-at-runtime';
+      }
       if (process.env.NODE_ENV === 'production') {
         throw new Error('JWT_SECRET must be set in production');
       }

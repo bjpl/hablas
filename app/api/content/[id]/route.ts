@@ -7,7 +7,7 @@
  */
 
 import { NextResponse } from 'next/server';
-import { resources } from '@/data/resources';
+import { resources, isResourceHidden } from '@/data/resources';
 import fs from 'fs/promises';
 import path from 'path';
 import type { GetContentResponse, ContentEdit, EditHistory } from '@/lib/types/content-edits';
@@ -30,9 +30,9 @@ export async function GET(
     const { id } = await params;
     const resourceId = parseInt(id);
 
-    // Find resource
+    // Find resource (return 404 for hidden resources on public API)
     const resource = resources.find(r => r.id === resourceId);
-    if (!resource) {
+    if (!resource || isResourceHidden(resourceId)) {
       return NextResponse.json(
         { error: 'Resource not found' },
         { status: 404 }

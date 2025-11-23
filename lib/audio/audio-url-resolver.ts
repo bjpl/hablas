@@ -1,3 +1,7 @@
+'use client';
+
+import React from 'react';
+
 /**
  * Audio URL Resolver
  * Resolves audio URLs to use blob storage in production or local files in development
@@ -89,6 +93,3 @@ export function useAudioUrl(audioPath?: string): {
 
   return { url, loading, error };
 }
-
-// Need to import React for the hook
-import React from 'react';
