@@ -4,7 +4,7 @@
  */
 
 import type { Resource } from '@/data/resources'
-import { ALL_TEMPLATES, type getAllTemplatesArray } from '@/data/templates/resource-templates'
+import { ALL_TEMPLATES } from '@/data/templates/resource-templates'
 import { validateResource, suggestNextId } from './resource-validator'
 
 /**
@@ -285,7 +285,7 @@ export function generateMarkdownDocs(resources: Resource[]): string {
 /**
  * Helper: Group array by key
  */
-function groupBy<T extends Record<string, any>>(
+function groupBy<T extends Record<string, unknown>>(
   array: T[],
   key: keyof T
 ): Record<string, T[]> {
@@ -346,7 +346,7 @@ export const cli = {
   }
 }
 
-export default {
+const resourceGenerator = {
   generateFromTemplate,
   listTemplates,
   listTemplatesByCategory,
@@ -359,3 +359,5 @@ export default {
   generateMarkdownDocs,
   cli
 }
+
+export default resourceGenerator

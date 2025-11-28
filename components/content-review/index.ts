@@ -28,6 +28,10 @@ export { HablasFormatComparisonTool } from './HablasFormatComparisonTool';
 export { GigWorkerContextValidator } from './GigWorkerContextValidator';
 export { TopicVariationManager } from './TopicVariationManager';
 
+// Approval and History components
+export { default as ApprovalActions } from './ApprovalActions';
+export { default as EditHistoryModal } from './EditHistoryModal';
+
 // Hooks
 export { useAutoSave } from './hooks/useAutoSave';
 export { useContentManager } from './hooks/useContentManager';

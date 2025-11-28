@@ -38,6 +38,13 @@ jest.mock('next/router', () => ({
   }),
 }))
 
+// Mock react-markdown (ESM-only package)
+jest.mock('react-markdown', () => {
+  return function ReactMarkdown({ children }) {
+    return children
+  }
+})
+
 // Mock Next.js navigation for App Router
 jest.mock('next/navigation', () => ({
   useRouter: jest.fn().mockReturnValue({

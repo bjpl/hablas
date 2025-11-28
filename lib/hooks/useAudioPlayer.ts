@@ -63,7 +63,7 @@ export function useAudioPlayer(
 ): [AudioPlayerState, AudioPlayerControls, (node: HTMLAudioElement | null) => void] {
   const { setCurrentAudio } = useAudioContext();
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
 
   // Track when audio element is mounted - this triggers effect re-run
   const [audioElement, setAudioElement] = useState<HTMLAudioElement | null>(null);
@@ -390,6 +390,7 @@ export function useAudioPlayer(
       } else {
         await controls.play();
       }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [state.isPlaying]),
 
     seek: useCallback((time: number) => {
@@ -405,6 +406,7 @@ export function useAudioPlayer(
         Math.min(audioRef.current.duration, audioRef.current.currentTime + seconds)
       );
       controls.seek(newTime);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []),
 
     setPlaybackRate: useCallback((rate: number) => {
@@ -423,6 +425,7 @@ export function useAudioPlayer(
       if (!audioRef.current) return;
       const newVolume = state.volume > 0 ? 0 : 1;
       controls.setVolume(newVolume);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [state.volume]),
 
     toggleLoop: useCallback(() => {
@@ -447,6 +450,7 @@ export function useAudioPlayer(
 
       // Try to play again
       await controls.play();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [audioUrl]),
 
     download: useCallback(async (filename?: string) => {
@@ -467,7 +471,7 @@ export function useAudioPlayer(
             isDownloading: false,
           }));
         }
-      } catch (err) {
+      } catch {
         setState((prev) => ({
           ...prev,
           error: 'Error al descargar el audio',

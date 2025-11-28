@@ -32,7 +32,6 @@ export function useVirtualScroll<T>(
   }, [])
 
   const { virtualItems, totalHeight, startIndex, endIndex } = useMemo(() => {
-    const visibleCount = Math.ceil(containerHeight / itemHeight)
     const startIndex = Math.max(0, Math.floor(scrollTop / itemHeight) - overscan)
     const endIndex = Math.min(
       items.length - 1,

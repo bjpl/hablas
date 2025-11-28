@@ -165,7 +165,7 @@ export async function checkRateLimit(
 ): Promise<RateLimitResult> {
   const config = SECURITY_CONFIG.RATE_LIMIT[type];
   const rateLimitConfig: RateLimitConfig = {
-    maxAttempts: 'MAX_ATTEMPTS' in config ? config.MAX_ATTEMPTS : (config as any).MAX_REQUESTS,
+    maxAttempts: 'MAX_ATTEMPTS' in config ? config.MAX_ATTEMPTS : (config as { MAX_REQUESTS: number }).MAX_REQUESTS,
     windowMs: config.WINDOW_MS,
     message: config.MESSAGE,
   };
@@ -225,7 +225,7 @@ export async function getRateLimitStatus(
       const ttl = await client.pTTL(windowKey);
       const now = Date.now();
 
-      const maxAttempts = 'MAX_ATTEMPTS' in config ? config.MAX_ATTEMPTS : (config as any).MAX_REQUESTS;
+      const maxAttempts = 'MAX_ATTEMPTS' in config ? config.MAX_ATTEMPTS : (config as { MAX_REQUESTS: number }).MAX_REQUESTS;
       return {
         allowed: parseInt(count) < maxAttempts,
         remaining: Math.max(0, maxAttempts - parseInt(count)),
@@ -242,7 +242,7 @@ export async function getRateLimitStatus(
     return null;
   }
 
-  const maxAttempts = 'MAX_ATTEMPTS' in config ? config.MAX_ATTEMPTS : (config as any).MAX_REQUESTS;
+  const maxAttempts = 'MAX_ATTEMPTS' in config ? config.MAX_ATTEMPTS : (config as { MAX_REQUESTS: number }).MAX_REQUESTS;
   return {
     allowed: record.count < maxAttempts,
     remaining: Math.max(0, maxAttempts - record.count),

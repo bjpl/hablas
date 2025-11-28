@@ -451,10 +451,12 @@ export function formatValidationResult(result: ValidationResult): string {
   return lines.join('\n')
 }
 
-export default {
+const resourceValidator = {
   validateResource,
   validateResources,
   checkDuplicates,
   suggestNextId,
   formatValidationResult
 }
+
+export default resourceValidator

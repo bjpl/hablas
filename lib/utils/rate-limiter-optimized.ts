@@ -28,12 +28,12 @@ interface SlidingWindowEntry {
 const slidingWindowStore = new Map<string, SlidingWindowEntry>();
 
 // Redis client
-let redisClient: any = null;
+let redisClient: unknown = null;
 
 /**
  * Set Redis client
  */
-export function setRedisClient(client: any): void {
+export function setRedisClient(client: unknown): void {
   redisClient = client;
   console.log('✅ Redis rate limiter enabled');
 }
@@ -195,7 +195,7 @@ export async function checkRateLimit(
 ): Promise<RateLimitResult> {
   const config = SECURITY_CONFIG.RATE_LIMIT[type];
   const rateLimitConfig: RateLimitConfig = {
-    maxAttempts: 'MAX_ATTEMPTS' in config ? config.MAX_ATTEMPTS : (config as any).MAX_REQUESTS,
+    maxAttempts: 'MAX_ATTEMPTS' in config ? config.MAX_ATTEMPTS : (config as { MAX_REQUESTS: number }).MAX_REQUESTS,
     windowMs: config.WINDOW_MS,
     message: config.MESSAGE,
   };
@@ -238,7 +238,7 @@ export async function getRateLimitStatus(
 ): Promise<RateLimitResult | null> {
   const key = `${type.toLowerCase()}:${identifier}`;
   const config = SECURITY_CONFIG.RATE_LIMIT[type];
-  const maxAttempts = 'MAX_ATTEMPTS' in config ? config.MAX_ATTEMPTS : (config as any).MAX_REQUESTS;
+  const maxAttempts = 'MAX_ATTEMPTS' in config ? config.MAX_ATTEMPTS : (config as { MAX_REQUESTS: number }).MAX_REQUESTS;
 
   if (redisClient) {
     try {

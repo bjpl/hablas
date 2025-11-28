@@ -138,8 +138,9 @@ describe('TopicReviewTool', () => {
       render(<TopicReviewTool topicSlug="frases-esenciales-entregas" />);
 
       await waitFor(() => {
-        expect(screen.getByText('Frases Esenciales - Var 1')).toBeInTheDocument();
-        expect(screen.getByText('Frases Esenciales - Var 2')).toBeInTheDocument();
+        // Use getAllByText since titles appear in both tabs and content area
+        expect(screen.getAllByText('Frases Esenciales - Var 1').length).toBeGreaterThan(0);
+        expect(screen.getAllByText('Frases Esenciales - Var 2').length).toBeGreaterThan(0);
       });
     });
 
@@ -177,17 +178,20 @@ describe('TopicReviewTool', () => {
       render(<TopicReviewTool topicSlug="frases-esenciales-entregas" />);
 
       await waitFor(() => {
-        expect(screen.getByText('Frases Esenciales - Var 1')).toBeInTheDocument();
+        expect(screen.getAllByText('Frases Esenciales - Var 1').length).toBeGreaterThan(0);
       });
 
-      // First tab should be active by default
-      expect(screen.getByText('Original content for variation 1')).toBeInTheDocument();
+      // First tab should be active by default - content appears in textarea
+      const textarea = screen.getByRole('textbox', { name: /content editor/i });
+      expect(textarea).toHaveValue('Original content for variation 1');
 
-      // Click second tab
-      fireEvent.click(screen.getByText('Frases Esenciales - Var 2'));
+      // Click second tab (use getAllByText and find the button)
+      const tabs = screen.getAllByText('Frases Esenciales - Var 2');
+      const tabButton = tabs.find(el => el.closest('button'));
+      fireEvent.click(tabButton!);
 
       await waitFor(() => {
-        expect(screen.getByText('Original content for variation 2')).toBeInTheDocument();
+        expect(screen.getByRole('textbox', { name: /content editor/i })).toHaveValue('Original content for variation 2');
       });
     });
 
@@ -195,8 +199,10 @@ describe('TopicReviewTool', () => {
       render(<TopicReviewTool topicSlug="frases-esenciales-entregas" />);
 
       await waitFor(() => {
-        const tab1 = screen.getByText('Frases Esenciales - Var 1').closest('button');
-        expect(tab1).toHaveClass('border-blue-600');
+        // Find the tab button (not the header) by looking for button elements
+        const tabs = screen.getAllByText('Frases Esenciales - Var 1');
+        const tabButton = tabs.find(el => el.closest('button'))?.closest('button');
+        expect(tabButton).toHaveClass('border-blue-600');
       });
     });
   });
@@ -214,7 +220,7 @@ describe('TopicReviewTool', () => {
       render(<TopicReviewTool topicSlug="frases-esenciales-entregas" />);
 
       await waitFor(() => {
-        expect(screen.getByText('Original content for variation 1')).toBeInTheDocument();
+        expect(screen.getByRole('textbox', { name: /content editor/i })).toHaveValue('Original content for variation 1');
       });
 
       const textarea = screen.getByRole('textbox', { name: /content editor/i });

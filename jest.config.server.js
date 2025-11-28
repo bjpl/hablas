@@ -36,18 +36,25 @@ const customJestConfig = {
     '^@/(.*)$': '<rootDir>/$1',
   },
 
-  // Transform configuration
+  // Transform configuration - use babel for ES modules compatibility
   transform: {
-    '^.+\\.(ts|tsx|js|jsx)$': ['ts-jest', {
+    '^.+\\.(ts|tsx)$': ['ts-jest', {
+      useESM: true,
       tsconfig: {
-        module: 'commonjs',
+        module: 'ESNext',
+        moduleResolution: 'bundler',
         esModuleInterop: true,
+        allowSyntheticDefaultImports: true,
       },
+    }],
+    '^.+\\.(js|jsx|mjs)$': ['babel-jest', {
+      presets: ['next/babel'],
     }],
   },
   transformIgnorePatterns: [
-    'node_modules/(?!(jose|@supabase)/)',
+    '/node_modules/(?!(jose|@supabase|@edge-runtime)/)',
   ],
+  extensionsToTreatAsEsm: ['.ts', '.tsx'],
 
   // Coverage configuration
   collectCoverageFrom: [
@@ -79,11 +86,17 @@ const customJestConfig = {
   // Globals
   globals: {
     'ts-jest': {
+      useESM: true,
       tsconfig: {
-        module: 'commonjs',
+        module: 'ESNext',
+        moduleResolution: 'bundler',
+        esModuleInterop: true,
       },
     },
   },
+
+  // Workaround for ESM modules
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'mjs'],
 }
 
 module.exports = createJestConfig(customJestConfig)

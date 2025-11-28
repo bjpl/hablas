@@ -54,7 +54,7 @@ export const CSP_DIRECTIVES = {
  */
 export function generateCSP(): string {
   return Object.entries(CSP_DIRECTIVES)
-    .filter(([_, value]) => value !== undefined)
+    .filter(([, value]) => value !== undefined)
     .map(([directive, sources]) => {
       if (!sources || sources.length === 0) {
         return directive;
@@ -131,7 +131,7 @@ export function applySecurityHeaders(response: NextResponse): NextResponse {
  */
 export function getSecurityHeadersArray(): Array<{ key: string; value: string }> {
   return Object.entries(SECURITY_HEADERS)
-    .filter(([_, value]) => value)
+    .filter(([, value]) => value)
     .map(([key, value]) => ({ key, value: value as string }));
 }
 

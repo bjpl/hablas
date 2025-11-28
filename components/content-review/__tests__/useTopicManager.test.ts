@@ -9,6 +9,15 @@ import type { TopicDetailsResponse } from '@/lib/types/topics';
 const mockFetch = jest.fn();
 global.fetch = mockFetch;
 
+// Suppress console.error during error-handling tests
+const originalConsoleError = console.error;
+const suppressConsoleError = () => {
+  console.error = jest.fn();
+};
+const restoreConsoleError = () => {
+  console.error = originalConsoleError;
+};
+
 const mockTopicData: TopicDetailsResponse = {
   topic: {
     slug: 'test-topic',
@@ -99,6 +108,7 @@ describe('useTopicManager', () => {
     });
 
     it('should handle fetch errors', async () => {
+      suppressConsoleError();
       mockFetch.mockRejectedValueOnce(new Error('Network error'));
 
       const { result } = renderHook(() => useTopicManager('test-topic'));
@@ -109,9 +119,11 @@ describe('useTopicManager', () => {
 
       expect(result.current.error).toBe('Network error');
       expect(result.current.topic).toBeNull();
+      restoreConsoleError();
     });
 
     it('should handle HTTP errors', async () => {
+      suppressConsoleError();
       mockFetch.mockResolvedValueOnce({
         ok: false,
         statusText: 'Not Found',
@@ -124,6 +136,7 @@ describe('useTopicManager', () => {
       });
 
       expect(result.current.error).toBe('Failed to fetch topic: Not Found');
+      restoreConsoleError();
     });
   });
 
@@ -311,6 +324,7 @@ describe('useTopicManager', () => {
     });
 
     it('should throw error on save failure', async () => {
+      suppressConsoleError();
       mockFetch
         .mockResolvedValueOnce({
           ok: true,
@@ -335,6 +349,7 @@ describe('useTopicManager', () => {
           await result.current.saveResource(1);
         })
       ).rejects.toThrow('Failed to save resource');
+      restoreConsoleError();
     });
   });
 

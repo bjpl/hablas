@@ -26,7 +26,7 @@ export function reportWebVitals(metric: PerformanceMetric) {
   if (process.env.NODE_ENV === 'production') {
     // Could integrate with Google Analytics, Vercel Analytics, etc.
     if (typeof window !== 'undefined' && 'gtag' in window) {
-      ;(window as any).gtag('event', metric.name, {
+      ;(window as Record<string, unknown>).gtag('event', metric.name, {
         value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
         event_category: 'Web Vitals',
         event_label: metric.rating,
@@ -147,7 +147,7 @@ export function getPerformanceMetrics() {
 /**
  * Debounce function for performance optimization
  */
-export function debounce<T extends (...args: any[]) => any>(
+export function debounce<T extends (...args: unknown[]) => unknown>(
   func: T,
   wait: number
 ): (...args: Parameters<T>) => void {
@@ -167,7 +167,7 @@ export function debounce<T extends (...args: any[]) => any>(
 /**
  * Throttle function for performance optimization
  */
-export function throttle<T extends (...args: any[]) => any>(
+export function throttle<T extends (...args: unknown[]) => unknown>(
   func: T,
   limit: number
 ): (...args: Parameters<T>) => void {

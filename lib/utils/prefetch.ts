@@ -97,7 +97,7 @@ export function batchPrefetch(urls: string[], options: PrefetchOptions = {}) {
 
   // Use requestIdleCallback for non-blocking prefetch
   if ('requestIdleCallback' in window) {
-    ;(window as any).requestIdleCallback(
+    ;(window as Record<string, unknown>).requestIdleCallback(
       () => {
         urls.forEach((url) => prefetchResource(url, options))
       },
@@ -117,7 +117,7 @@ export function smartPrefetch(url: string, options: PrefetchOptions = {}) {
   if (typeof window === 'undefined') return
 
   // Check for slow connection
-  const connection = (navigator as any).connection
+  const connection = (navigator as Record<string, unknown>).connection
   if (connection) {
     const { effectiveType, saveData } = connection
 

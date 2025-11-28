@@ -12,8 +12,10 @@ import {
   XCircle,
   AlertCircle,
   Edit2,
+  History,
 } from 'lucide-react';
-import type { TopicReviewResponse } from '@/lib/types/topics';
+import type { TopicReviewResponse, TopicResourceWithContent } from '@/lib/types/topics';
+import { ApprovalActions, EditHistoryModal } from '@/components/content-review';
 
 /**
  * Topic Review Page
@@ -28,6 +30,9 @@ export default function TopicReviewPage() {
   const [data, setData] = useState<TopicReviewResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string>('');
+  const [historyModalOpen, setHistoryModalOpen] = useState(false);
+  const [selectedResourceId, setSelectedResourceId] = useState<number | null>(null);
+  const [expandedResourceId, setExpandedResourceId] = useState<number | null>(null);
 
   useEffect(() => {
     if (slug) {
@@ -55,7 +60,29 @@ export default function TopicReviewPage() {
     }
   };
 
-  const getStatusBadge = (resource: any) => {
+  const openHistoryModal = (resourceId: number) => {
+    setSelectedResourceId(resourceId);
+    setHistoryModalOpen(true);
+  };
+
+  const handleStatusChange = (resourceId: number, newStatus: string) => {
+    // Update local state to reflect the change
+    if (data) {
+      const updatedResources = data.resources.map((r) => {
+        if (r.resource.id === resourceId) {
+          return { ...r, editStatus: newStatus as 'pending' | 'approved' | 'rejected' };
+        }
+        return r;
+      });
+      setData({ ...data, resources: updatedResources });
+    }
+  };
+
+  const toggleResourceExpand = (resourceId: number) => {
+    setExpandedResourceId(expandedResourceId === resourceId ? null : resourceId);
+  };
+
+  const getStatusBadge = (resource: TopicResourceWithContent) => {
     if (!resource.hasEdit) {
       return (
         <span className="inline-flex items-center gap-1 px-2 py-1 text-xs font-medium bg-gray-100 text-gray-700 rounded">
@@ -246,38 +273,81 @@ export default function TopicReviewPage() {
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
-                  {data.resources.map((resource: any) => (
-                    <tr key={resource.id} className="hover:bg-gray-50">
-                      <td className="px-6 py-4">
-                        <div>
-                          <div className="text-sm font-medium text-gray-900">{resource.title}</div>
-                          <div className="text-sm text-gray-500 mt-1 line-clamp-2">{resource.description}</div>
-                        </div>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <span className="px-2 py-1 text-xs font-medium bg-purple-100 text-purple-700 rounded">
-                          {resource.type}
-                        </span>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        {getStatusBadge(resource)}
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        {resource.lastEditDate
-                          ? new Date(resource.lastEditDate).toLocaleDateString()
-                          : '-'
-                        }
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                        <Link
-                          href={`/admin/edit/${resource.resourceId}`}
-                          className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-900"
-                        >
-                          <Edit2 className="w-4 h-4" />
-                          Edit
-                        </Link>
-                      </td>
-                    </tr>
+                  {data.resources.map((item) => (
+                    <React.Fragment key={item.resource.id}>
+                      <tr className="hover:bg-gray-50">
+                        <td className="px-6 py-4">
+                          <div>
+                            <div className="text-sm font-medium text-gray-900">{item.resource.title}</div>
+                            <div className="text-sm text-gray-500 mt-1 line-clamp-2">{item.resource.description}</div>
+                          </div>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap">
+                          <span className="px-2 py-1 text-xs font-medium bg-purple-100 text-purple-700 rounded">
+                            {item.resource.type}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap">
+                          {getStatusBadge(item)}
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                          {item.lastEditDate
+                            ? new Date(item.lastEditDate).toLocaleDateString()
+                            : '-'
+                          }
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                          <div className="flex items-center justify-end gap-2">
+                            {item.hasEdit && (
+                              <button
+                                onClick={() => openHistoryModal(item.resource.id)}
+                                className="inline-flex items-center gap-1 text-gray-500 hover:text-gray-700"
+                                title="View History"
+                              >
+                                <History className="w-4 h-4" />
+                              </button>
+                            )}
+                            {item.hasEdit && item.editStatus === 'pending' && (
+                              <button
+                                onClick={() => toggleResourceExpand(item.resource.id)}
+                                className="inline-flex items-center gap-1 text-yellow-600 hover:text-yellow-700"
+                                title="Review"
+                              >
+                                <CheckCircle className="w-4 h-4" />
+                                Review
+                              </button>
+                            )}
+                            <Link
+                              href={`/admin/edit/${item.resource.id}`}
+                              className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-900"
+                            >
+                              <Edit2 className="w-4 h-4" />
+                              Edit
+                            </Link>
+                          </div>
+                        </td>
+                      </tr>
+                      {/* Expandable Approval Actions Row */}
+                      {expandedResourceId === item.resource.id && item.hasEdit && (
+                        <tr className="bg-gray-50">
+                          <td colSpan={5} className="px-6 py-4">
+                            <div className="max-w-md">
+                              <h4 className="text-sm font-medium text-gray-900 mb-3">
+                                Review: {item.resource.title}
+                              </h4>
+                              <ApprovalActions
+                                resourceId={item.resource.id}
+                                currentStatus={item.editStatus}
+                                onStatusChange={(newStatus) => {
+                                  handleStatusChange(item.resource.id, newStatus);
+                                  setExpandedResourceId(null);
+                                }}
+                              />
+                            </div>
+                          </td>
+                        </tr>
+                      )}
+                    </React.Fragment>
                   ))}
                 </tbody>
               </table>
@@ -285,6 +355,18 @@ export default function TopicReviewPage() {
           )}
         </div>
       </div>
+
+      {/* Edit History Modal */}
+      {selectedResourceId && (
+        <EditHistoryModal
+          resourceId={selectedResourceId}
+          isOpen={historyModalOpen}
+          onClose={() => {
+            setHistoryModalOpen(false);
+            setSelectedResourceId(null);
+          }}
+        />
+      )}
     </div>
   );
 }

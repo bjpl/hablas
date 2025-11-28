@@ -12,7 +12,7 @@ type SanitizeConfig = {
   ALLOWED_TAGS?: string[]
   ALLOWED_ATTR?: string[]
   ALLOWED_URI_REGEXP?: RegExp
-  [key: string]: any
+  [key: string]: unknown
 }
 
 /**
@@ -207,8 +207,8 @@ export function sanitizeSearchQuery(query: string): string {
  * @param data - Event data object
  * @returns Sanitized event data
  */
-export function sanitizeEventData(data: Record<string, any>): Record<string, any> {
-  const sanitized: Record<string, any> = {}
+export function sanitizeEventData(data: Record<string, unknown>): Record<string, unknown> {
+  const sanitized: Record<string, unknown> = {}
 
   for (const [key, value] of Object.entries(data)) {
     // Sanitize key
@@ -258,7 +258,7 @@ export function stripDangerousChars(input: string): string {
  * @param allowedKeys - Array of allowed key names
  * @returns Object with only allowed keys
  */
-export function sanitizeObject<T extends Record<string, any>>(
+export function sanitizeObject<T extends Record<string, unknown>>(
   obj: T,
   allowedKeys: string[]
 ): Partial<T> {
