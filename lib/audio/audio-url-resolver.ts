@@ -116,33 +116,75 @@ export async function resolveAudioUrlDirect(audioPath: string): Promise<string> 
 
 /**
  * Client-side hook to resolve audio URL
- * Now synchronous since resolveAudioUrl returns immediately
- * (no async fetch needed - API handles redirects)
+ * In production, fetches the direct blob URL from the API to avoid redirect issues
  */
 export function useAudioUrl(audioPath?: string): {
   url: string | null;
   loading: boolean;
   error: string | null;
 } {
-  // Resolve URL synchronously - no loading state needed
-  const resolvedUrl = React.useMemo(() => {
+  const [state, setState] = React.useState<{
+    url: string | null;
+    loading: boolean;
+    error: string | null;
+  }>({
+    url: null,
+    loading: !!audioPath,
+    error: null,
+  });
+
+  React.useEffect(() => {
     if (!audioPath) {
-      return null;
+      setState({ url: null, loading: false, error: null });
+      return;
     }
 
-    try {
-      const url = resolveAudioUrl(audioPath);
-      console.log(`[Audio Hook] Resolved: ${audioPath} -> ${url}`);
-      return url;
-    } catch (err) {
-      console.error(`[Audio Hook] Resolution error:`, err);
-      return audioPath; // Fallback to original path
+    // If already a full URL, use it directly
+    if (audioPath.startsWith('http://') || audioPath.startsWith('https://')) {
+      console.log(`[Audio Hook] Already full URL: ${audioPath}`);
+      setState({ url: audioPath, loading: false, error: null });
+      return;
     }
+
+    // In development, use local path directly
+    if (!isProduction()) {
+      console.log(`[Audio Hook] Dev mode, using local path: ${audioPath}`);
+      setState({ url: audioPath, loading: false, error: null });
+      return;
+    }
+
+    // In production, fetch the direct blob URL from the API
+    const filename = audioPath.replace(/^\/audio\//, '');
+    const apiUrl = `/api/audio/${filename}`;
+
+    console.log(`[Audio Hook] Production mode, fetching blob URL from: ${apiUrl}`);
+    setState(prev => ({ ...prev, loading: true, error: null }));
+
+    // Fetch with JSON mode to get direct blob URL
+    fetch(apiUrl, {
+      headers: {
+        'Accept': 'application/json',
+      },
+    })
+      .then(async (response) => {
+        if (!response.ok) {
+          throw new Error(`API returned ${response.status}`);
+        }
+        const data = await response.json();
+        if (data.success && data.url) {
+          console.log(`[Audio Hook] Got blob URL: ${data.url}`);
+          setState({ url: data.url, loading: false, error: null });
+        } else {
+          throw new Error(data.error || 'Failed to get blob URL');
+        }
+      })
+      .catch((error) => {
+        console.error(`[Audio Hook] Error fetching blob URL:`, error);
+        // Fallback to API URL with redirect (might work with crossOrigin)
+        console.log(`[Audio Hook] Falling back to API URL: ${apiUrl}`);
+        setState({ url: apiUrl, loading: false, error: null });
+      });
   }, [audioPath]);
 
-  return {
-    url: resolvedUrl,
-    loading: false, // No async loading needed
-    error: null,
-  };
+  return state;
 }
