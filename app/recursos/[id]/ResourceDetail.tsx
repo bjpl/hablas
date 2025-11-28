@@ -304,8 +304,25 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                     setDownloadingAudio(true);
                     setDownloadSuccess(null);
                     try {
-                      // Fetch and download audio with basePath
-                      const audioUrl = `${basePath}${resource.audioUrl}`;
+                      // Use blob storage API in production, local path in development
+                      let audioUrl = `${basePath}${resource.audioUrl}`;
+
+                      // In production, resolve via API to get blob storage URL
+                      if (typeof window !== 'undefined' && window.location.hostname !== 'localhost') {
+                        const filename = resource.audioUrl.replace(/^\/audio\//, '');
+                        try {
+                          const apiResponse = await fetch(`/api/audio/${filename}`);
+                          if (apiResponse.ok) {
+                            const data = await apiResponse.json();
+                            if (data.success && data.url) {
+                              audioUrl = data.url;
+                            }
+                          }
+                        } catch (e) {
+                          console.warn('Failed to resolve blob URL, using public path');
+                        }
+                      }
+
                       const response = await fetch(audioUrl);
                       if (!response.ok) throw new Error('Audio not found');
                       const blob = await response.blob();

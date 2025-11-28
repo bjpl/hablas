@@ -8,6 +8,25 @@ import React from 'react';
  */
 
 /**
+ * Check if running in production environment
+ * Uses both NODE_ENV and window.location for reliable detection
+ */
+function isProduction(): boolean {
+  // Build-time check
+  if (process.env.NODE_ENV === 'production') {
+    return true;
+  }
+
+  // Runtime check for client-side
+  if (typeof window !== 'undefined') {
+    const hostname = window.location.hostname;
+    return hostname !== 'localhost' && hostname !== '127.0.0.1';
+  }
+
+  return false;
+}
+
+/**
  * Resolve audio URL based on environment
  * - In development: use local /audio/ path
  * - In production: check if file exists in blob storage, fallback to public path
@@ -19,7 +38,7 @@ export async function resolveAudioUrl(audioPath: string): Promise<string> {
   }
 
   // In development, use local path
-  if (process.env.NODE_ENV === 'development') {
+  if (!isProduction()) {
     return audioPath;
   }
 
@@ -33,14 +52,20 @@ export async function resolveAudioUrl(audioPath: string): Promise<string> {
     if (response.ok) {
       const data = await response.json();
       if (data.success && data.url) {
+        console.log(`[Audio] Resolved blob URL for ${filename}`);
         return data.url;
+      } else {
+        console.warn(`[Audio] API returned no URL for ${filename}:`, data);
       }
+    } else {
+      console.warn(`[Audio] API request failed for ${filename}: ${response.status}`);
     }
   } catch (error) {
-    console.warn(`Failed to resolve blob storage URL for ${filename}, falling back to public path`);
+    console.warn(`[Audio] Failed to resolve blob URL for ${filename}:`, error);
   }
 
-  // Fallback to public path
+  // Fallback to public path (will 404 in production if file not deployed)
+  console.warn(`[Audio] Falling back to public path for ${filename}`);
   return audioPath;
 }
 
