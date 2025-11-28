@@ -351,9 +351,8 @@ const AudioPlayer = memo(function AudioPlayer({
         <audio
           ref={audioRef}
           src={resolvedAudioUrl || undefined}
-          preload="metadata"
+          preload="auto"
           loop={state.isLooping}
-          crossOrigin="anonymous"
           className="hidden"
           aria-label={title || label}
         />
@@ -436,9 +435,8 @@ const AudioPlayer = memo(function AudioPlayer({
       <audio
         ref={audioRef}
         src={resolvedAudioUrl || undefined}
-        preload="metadata"
+        preload="auto"
         loop={state.isLooping}
-        crossOrigin="anonymous"
         aria-label={label}
         className="hidden"
       >
