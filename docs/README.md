@@ -8,19 +8,28 @@ Welcome to the Hablas.co documentation directory. This contains all project eval
 docs/
 ├── README.md                          # This file
 ├── action-items.md                    # Project action items and tracking
+├── api/                              # API documentation
 ├── architecture/                      # Architecture documentation
-│   ├── supabase-status.md            # Supabase integration status
-│   ├── design-system-status.md       # Design system implementation
-│   └── cleanup-2025-09-27.md         # Technical debt cleanup report
-├── design-system/                     # Design system documentation
-│   ├── README.md                     # Design system overview
-│   └── style-guide.html              # Interactive style guide
-├── evaluations/                       # Application evaluations and assessments
-│   └── 2025-09-15-comprehensive-evaluation.md
-├── security/                          # Security assessments and recommendations
-│   └── security-recommendations.md
-└── performance/                       # Performance metrics and optimization guides
-    └── mobile-optimization-report.md
+├── archive/                          # Historical reports and audits
+├── audit/                            # Audit documentation
+├── database/                         # Database documentation
+├── deployment/                       # Deployment guides
+├── design-system/                    # Design system documentation
+├── development/                      # Development documentation
+│   ├── daily-reports/               # Daily development reports
+│   └── startup-reports/             # Daily startup reports
+├── evaluations/                      # Application evaluations
+├── guides/                           # User guides
+├── implementation/                   # Implementation details
+├── performance/                      # Performance metrics
+├── planning/                         # Project planning
+├── requirements/                     # Requirements documentation
+├── research/                         # Research documentation
+├── reviews/                          # Code and system reviews
+├── security/                         # Security documentation
+├── specifications/                   # Technical specifications
+├── templates/                        # Documentation templates
+└── testing/                          # Test documentation
 ```
 
 ## 📊 Current Status
