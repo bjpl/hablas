@@ -49,9 +49,37 @@ async function fetchWithTimeout(url: string, timeout: number): Promise<Response>
 /**
  * Resolve audio URL based on environment
  * - In development: use local /audio/ path
- * - In production: check if file exists in blob storage, fallback to public path
+ * - In production: use API endpoint that redirects to blob storage
+ *
+ * The API endpoint (/api/audio/[id]) handles:
+ * - Redirect mode: Returns 302 redirect to blob URL (for audio elements)
+ * - JSON mode: Returns JSON with blob URL (for programmatic access)
  */
-export async function resolveAudioUrl(audioPath: string): Promise<string> {
+export function resolveAudioUrl(audioPath: string): string {
+  // If already a full URL (blob storage), return as-is
+  if (audioPath.startsWith('http://') || audioPath.startsWith('https://')) {
+    return audioPath;
+  }
+
+  // In development, use local path
+  if (!isProduction()) {
+    console.log(`[Audio] Dev mode, using local path: ${audioPath}`);
+    return audioPath;
+  }
+
+  // In production, use API endpoint that redirects to blob storage
+  // Extract resource ID from path like "/audio/resource-1.mp3" -> "resource-1.mp3"
+  const filename = audioPath.replace(/^\/audio\//, '');
+  const apiUrl = `/api/audio/${filename}`;
+  console.log(`[Audio] Production mode, using API URL: ${apiUrl}`);
+  return apiUrl;
+}
+
+/**
+ * Resolve audio URL to direct blob URL (for download functionality)
+ * This fetches JSON from the API to get the direct blob URL
+ */
+export async function resolveAudioUrlDirect(audioPath: string): Promise<string> {
   // If already a full URL (blob storage), return as-is
   if (audioPath.startsWith('http://') || audioPath.startsWith('https://')) {
     return audioPath;
@@ -62,99 +90,59 @@ export async function resolveAudioUrl(audioPath: string): Promise<string> {
     return audioPath;
   }
 
-  // In production, try to use blob storage
-  // Extract resource ID from path like "/audio/resource-1.mp3" -> "resource-1.mp3"
+  // In production, fetch JSON from API to get direct blob URL
   const filename = audioPath.replace(/^\/audio\//, '');
 
   try {
-    // Try to fetch from blob storage API with timeout
     const response = await fetchWithTimeout(`/api/audio/${filename}`, RESOLUTION_TIMEOUT);
     if (response.ok) {
+      // Check if it's a redirect (API returns redirect by default)
+      if (response.redirected && response.url) {
+        return response.url;
+      }
+      // Otherwise parse JSON
       const data = await response.json();
       if (data.success && data.url) {
-        console.log(`[Audio] Resolved blob URL for ${filename}`);
         return data.url;
-      } else {
-        console.warn(`[Audio] API returned no URL for ${filename}:`, data);
       }
-    } else {
-      console.warn(`[Audio] API request failed for ${filename}: ${response.status}`);
     }
   } catch (error) {
-    if (error instanceof Error && error.name === 'AbortError') {
-      console.warn(`[Audio] Resolution timeout for ${filename}`);
-    } else {
-      console.warn(`[Audio] Failed to resolve blob URL for ${filename}:`, error);
-    }
+    console.warn(`[Audio] Failed to resolve direct blob URL for ${filename}:`, error);
   }
 
-  // Fallback to public path (will 404 in production if file not deployed)
-  console.warn(`[Audio] Falling back to public path for ${filename}`);
-  return audioPath;
+  // Fallback to API URL (will redirect on access)
+  return `/api/audio/${filename}`;
 }
 
 /**
  * Client-side hook to resolve audio URL
- * Enhanced with proper mounting tracking and guaranteed state resolution
+ * Now synchronous since resolveAudioUrl returns immediately
+ * (no async fetch needed - API handles redirects)
  */
 export function useAudioUrl(audioPath?: string): {
   url: string | null;
   loading: boolean;
   error: string | null;
 } {
-  // Track mounted state to prevent state updates after unmount
-  const mountedRef = React.useRef(true);
-  const [state, setState] = React.useState<{
-    url: string | null;
-    loading: boolean;
-    error: string | null;
-  }>({
-    url: null,
-    loading: !!audioPath, // Only loading if we have a path to resolve
-    error: null,
-  });
-
-  React.useEffect(() => {
-    mountedRef.current = true;
-
-    // No path provided - nothing to resolve
+  // Resolve URL synchronously - no loading state needed
+  const resolvedUrl = React.useMemo(() => {
     if (!audioPath) {
-      setState({ url: null, loading: false, error: null });
-      return;
+      return null;
     }
 
-    // Reset state for new path
-    setState(prev => ({ ...prev, loading: true, error: null }));
-
-    const resolve = async () => {
-      try {
-        console.log(`[Audio Hook] Resolving: ${audioPath}`);
-        const resolvedUrl = await resolveAudioUrl(audioPath);
-        console.log(`[Audio Hook] Resolved to: ${resolvedUrl}`);
-
-        if (mountedRef.current) {
-          setState({ url: resolvedUrl, loading: false, error: null });
-        }
-      } catch (err) {
-        console.error(`[Audio Hook] Resolution error:`, err);
-        if (mountedRef.current) {
-          const errorMsg = err instanceof Error ? err.message : 'Failed to resolve audio URL';
-          // Even on error, provide fallback URL
-          setState({
-            url: audioPath, // Fallback to original path
-            loading: false,
-            error: errorMsg,
-          });
-        }
-      }
-    };
-
-    resolve();
-
-    return () => {
-      mountedRef.current = false;
-    };
+    try {
+      const url = resolveAudioUrl(audioPath);
+      console.log(`[Audio Hook] Resolved: ${audioPath} -> ${url}`);
+      return url;
+    } catch (err) {
+      console.error(`[Audio Hook] Resolution error:`, err);
+      return audioPath; // Fallback to original path
+    }
   }, [audioPath]);
 
-  return state;
+  return {
+    url: resolvedUrl,
+    loading: false, // No async loading needed
+    error: null,
+  };
 }

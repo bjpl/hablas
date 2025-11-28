@@ -39,12 +39,20 @@ function validatePathname(pathname: string): boolean {
 /**
  * GET /api/audio/[id]
  * Retrieve audio file metadata and streaming URL
+ *
+ * Supports two modes:
+ * - JSON mode (Accept: application/json): Returns JSON with blob URL
+ * - Redirect mode (default): Redirects directly to blob URL for audio elements
  */
 export async function GET(
   request: NextRequest,
   props: { params: Promise<{ id: string }> }
-): Promise<NextResponse<AudioResponse>> {
+): Promise<NextResponse<AudioResponse> | NextResponse> {
   try {
+    // Check if client wants JSON response
+    const acceptHeader = request.headers.get('accept') || '';
+    const wantsJson = acceptHeader.includes('application/json');
+
     // Check authentication (optional - can be public)
     const authResult = await checkAuth(request);
     const forwardedFor = request.headers.get('x-forwarded-for');
@@ -116,23 +124,36 @@ export async function GET(
       );
     }
 
-    // Return blob information
-    return NextResponse.json(
-      {
-        success: true,
-        url: blob.url,
-        contentType: blob.contentType,
-        size: blob.size,
-      },
-      {
-        status: 200,
-        headers: {
-          'X-RateLimit-Remaining': rateLimit.remaining.toString(),
-          'X-RateLimit-Reset': new Date(rateLimit.resetAt).toISOString(),
-          'Cache-Control': 'public, max-age=3600', // Cache for 1 hour
+    // Return based on request type
+    if (wantsJson) {
+      // Return JSON for JavaScript clients
+      return NextResponse.json(
+        {
+          success: true,
+          url: blob.url,
+          contentType: blob.contentType,
+          size: blob.size,
         },
-      }
-    );
+        {
+          status: 200,
+          headers: {
+            'X-RateLimit-Remaining': rateLimit.remaining.toString(),
+            'X-RateLimit-Reset': new Date(rateLimit.resetAt).toISOString(),
+            'Cache-Control': 'public, max-age=3600', // Cache for 1 hour
+          },
+        }
+      );
+    }
+
+    // Redirect to blob URL for audio elements (default behavior)
+    return NextResponse.redirect(blob.url, {
+      status: 302,
+      headers: {
+        'X-RateLimit-Remaining': rateLimit.remaining.toString(),
+        'X-RateLimit-Reset': new Date(rateLimit.resetAt).toISOString(),
+        'Cache-Control': 'public, max-age=3600', // Cache for 1 hour
+      },
+    });
   } catch (error) {
     console.error('Audio retrieval error:', error);
 
