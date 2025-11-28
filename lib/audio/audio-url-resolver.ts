@@ -7,6 +7,9 @@ import React from 'react';
  * Resolves audio URLs to use blob storage in production or local files in development
  */
 
+// Resolution timeout in milliseconds
+const RESOLUTION_TIMEOUT = 5000;
+
 /**
  * Check if running in production environment
  * Uses both NODE_ENV and window.location for reliable detection
@@ -24,6 +27,23 @@ function isProduction(): boolean {
   }
 
   return false;
+}
+
+/**
+ * Fetch with timeout wrapper
+ */
+async function fetchWithTimeout(url: string, timeout: number): Promise<Response> {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeout);
+
+  try {
+    const response = await fetch(url, { signal: controller.signal });
+    clearTimeout(timeoutId);
+    return response;
+  } catch (error) {
+    clearTimeout(timeoutId);
+    throw error;
+  }
 }
 
 /**
@@ -47,8 +67,8 @@ export async function resolveAudioUrl(audioPath: string): Promise<string> {
   const filename = audioPath.replace(/^\/audio\//, '');
 
   try {
-    // Try to fetch from blob storage API
-    const response = await fetch(`/api/audio/${filename}`);
+    // Try to fetch from blob storage API with timeout
+    const response = await fetchWithTimeout(`/api/audio/${filename}`, RESOLUTION_TIMEOUT);
     if (response.ok) {
       const data = await response.json();
       if (data.success && data.url) {
@@ -61,7 +81,11 @@ export async function resolveAudioUrl(audioPath: string): Promise<string> {
       console.warn(`[Audio] API request failed for ${filename}: ${response.status}`);
     }
   } catch (error) {
-    console.warn(`[Audio] Failed to resolve blob URL for ${filename}:`, error);
+    if (error instanceof Error && error.name === 'AbortError') {
+      console.warn(`[Audio] Resolution timeout for ${filename}`);
+    } else {
+      console.warn(`[Audio] Failed to resolve blob URL for ${filename}:`, error);
+    }
   }
 
   // Fallback to public path (will 404 in production if file not deployed)
@@ -71,40 +95,56 @@ export async function resolveAudioUrl(audioPath: string): Promise<string> {
 
 /**
  * Client-side hook to resolve audio URL
+ * Enhanced with proper mounting tracking and guaranteed state resolution
  */
 export function useAudioUrl(audioPath?: string): {
   url: string | null;
   loading: boolean;
   error: string | null;
 } {
-  const [url, setUrl] = React.useState<string | null>(null);
-  const [loading, setLoading] = React.useState(true);
-  const [error, setError] = React.useState<string | null>(null);
+  // Track mounted state to prevent state updates after unmount
+  const mountedRef = React.useRef(true);
+  const [state, setState] = React.useState<{
+    url: string | null;
+    loading: boolean;
+    error: string | null;
+  }>({
+    url: null,
+    loading: !!audioPath, // Only loading if we have a path to resolve
+    error: null,
+  });
 
   React.useEffect(() => {
+    mountedRef.current = true;
+
+    // No path provided - nothing to resolve
     if (!audioPath) {
-      setUrl(null);
-      setLoading(false);
+      setState({ url: null, loading: false, error: null });
       return;
     }
 
-    let cancelled = false;
+    // Reset state for new path
+    setState(prev => ({ ...prev, loading: true, error: null }));
 
     const resolve = async () => {
       try {
-        setLoading(true);
-        setError(null);
+        console.log(`[Audio Hook] Resolving: ${audioPath}`);
         const resolvedUrl = await resolveAudioUrl(audioPath);
-        if (!cancelled) {
-          setUrl(resolvedUrl);
+        console.log(`[Audio Hook] Resolved to: ${resolvedUrl}`);
+
+        if (mountedRef.current) {
+          setState({ url: resolvedUrl, loading: false, error: null });
         }
       } catch (err) {
-        if (!cancelled) {
-          setError(err instanceof Error ? err.message : 'Failed to resolve audio URL');
-        }
-      } finally {
-        if (!cancelled) {
-          setLoading(false);
+        console.error(`[Audio Hook] Resolution error:`, err);
+        if (mountedRef.current) {
+          const errorMsg = err instanceof Error ? err.message : 'Failed to resolve audio URL';
+          // Even on error, provide fallback URL
+          setState({
+            url: audioPath, // Fallback to original path
+            loading: false,
+            error: errorMsg,
+          });
         }
       }
     };
@@ -112,9 +152,9 @@ export function useAudioUrl(audioPath?: string): {
     resolve();
 
     return () => {
-      cancelled = true;
+      mountedRef.current = false;
     };
   }, [audioPath]);
 
-  return { url, loading, error };
+  return state;
 }
