@@ -108,12 +108,18 @@ export function useAudioPlayer(
     checkCache();
   }, [audioUrl, options.resourceId]);
 
-  // Restore playback position
+  // Restore playback position and attach event listeners
   useEffect(() => {
     const audio = audioRef.current;
-    if (!audio || !audioUrl) return;
+    if (!audio || !audioUrl) {
+      console.log('[useAudioPlayer] Waiting for audio element or URL', { hasAudio: !!audio, audioUrl });
+      return;
+    }
+
+    console.log('[useAudioPlayer] Setting up audio event listeners for:', audioUrl);
 
     const handleLoadedMetadata = () => {
+      console.log('[useAudioPlayer] loadedmetadata fired, duration:', audio.duration);
       setState((prev) => ({ ...prev, duration: audio.duration, error: null }));
 
       // Restore saved position
@@ -133,7 +139,21 @@ export function useAudioPlayer(
     };
 
     const handleCanPlay = () => {
+      console.log('[useAudioPlayer] canplay fired - audio ready to play');
       setState((prev) => ({ ...prev, isLoading: false, error: null }));
+    };
+
+    const handleCanPlayThrough = () => {
+      console.log('[useAudioPlayer] canplaythrough fired - audio fully buffered');
+      setState((prev) => ({ ...prev, isLoading: false, error: null }));
+    };
+
+    const handleLoadStart = () => {
+      console.log('[useAudioPlayer] loadstart fired - beginning to load');
+    };
+
+    const handleProgress = () => {
+      console.log('[useAudioPlayer] progress fired - loading data');
     };
 
     const handleError = () => {
@@ -185,26 +205,44 @@ export function useAudioPlayer(
       }
     };
 
+    audio.addEventListener('loadstart', handleLoadStart);
+    audio.addEventListener('progress', handleProgress);
     audio.addEventListener('loadedmetadata', handleLoadedMetadata);
     audio.addEventListener('timeupdate', handleTimeUpdate);
     audio.addEventListener('canplay', handleCanPlay);
+    audio.addEventListener('canplaythrough', handleCanPlayThrough);
     audio.addEventListener('error', handleError);
     audio.addEventListener('ended', handleEnded);
 
-    // Check if metadata already loaded
-    if (audio.readyState >= 1) {
+    // Check current state - audio might already be ready
+    console.log('[useAudioPlayer] Audio readyState:', audio.readyState, 'networkState:', audio.networkState);
+    if (audio.readyState >= 3) {
+      // HAVE_FUTURE_DATA or HAVE_ENOUGH_DATA
+      console.log('[useAudioPlayer] Audio already ready, setting loading false');
+      setState((prev) => ({ ...prev, isLoading: false, error: null }));
+    } else if (audio.readyState >= 1) {
       handleLoadedMetadata();
     }
 
+    // Force load if not started
+    if (audio.networkState === 0) {
+      console.log('[useAudioPlayer] Network state EMPTY, calling load()');
+      audio.load();
+    }
+
     return () => {
+      console.log('[useAudioPlayer] Cleaning up event listeners');
       if (audioRef.current && audioUrl) {
         savePlaybackPosition(audioUrl, audioRef.current.currentTime);
         audioRef.current.pause();
         setCurrentAudio(null);
       }
+      audio.removeEventListener('loadstart', handleLoadStart);
+      audio.removeEventListener('progress', handleProgress);
       audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
       audio.removeEventListener('timeupdate', handleTimeUpdate);
       audio.removeEventListener('canplay', handleCanPlay);
+      audio.removeEventListener('canplaythrough', handleCanPlayThrough);
       audio.removeEventListener('error', handleError);
       audio.removeEventListener('ended', handleEnded);
     };
