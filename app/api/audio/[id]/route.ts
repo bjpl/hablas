@@ -145,13 +145,31 @@ export async function GET(
       );
     }
 
-    // Redirect to blob URL for audio elements (default behavior)
-    return NextResponse.redirect(blob.url, {
-      status: 302,
+    // Stream audio directly from blob storage (avoids cross-origin redirect issues)
+    const audioResponse = await fetch(blob.url);
+
+    if (!audioResponse.ok) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: 'Failed to fetch audio',
+          details: 'Could not retrieve audio from storage',
+        },
+        { status: 502 }
+      );
+    }
+
+    // Stream the audio with proper headers
+    return new NextResponse(audioResponse.body, {
+      status: 200,
       headers: {
+        'Content-Type': blob.contentType || 'audio/mpeg',
+        'Content-Length': blob.size?.toString() || '',
+        'Accept-Ranges': 'bytes',
+        'Cache-Control': 'public, max-age=86400', // Cache for 24 hours
+        'Access-Control-Allow-Origin': '*',
         'X-RateLimit-Remaining': rateLimit.remaining.toString(),
         'X-RateLimit-Reset': new Date(rateLimit.resetAt).toISOString(),
-        'Cache-Control': 'public, max-age=3600', // Cache for 1 hour
       },
     });
   } catch (error) {
