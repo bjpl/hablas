@@ -57,14 +57,29 @@ export interface AudioPlayerControls {
 export function useAudioPlayer(
   audioUrl: string | undefined,
   options: UseAudioPlayerOptions = {}
-): [AudioPlayerState, AudioPlayerControls, React.RefObject<HTMLAudioElement | null>] {
+): [AudioPlayerState, AudioPlayerControls, (node: HTMLAudioElement | null) => void] {
   const { setCurrentAudio } = useAudioContext();
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPending, startTransition] = useTransition();
 
+  // Track when audio element is mounted - this triggers effect re-run
+  const [audioElement, setAudioElement] = useState<HTMLAudioElement | null>(null);
+
   // Store options in ref to avoid effect re-runs when options object changes
   const optionsRef = useRef(options);
   optionsRef.current = options;
+
+  // Callback ref to capture audio element when mounted
+  const audioCallbackRef = useCallback((node: HTMLAudioElement | null) => {
+    audioRef.current = node;
+    setAudioElement(node);
+
+    // Force load when element is attached
+    if (node && audioUrl) {
+      console.log('[useAudioPlayer] Audio element mounted, forcing load for:', audioUrl);
+      node.load();
+    }
+  }, [audioUrl]);
 
   // State management
   const [state, setState] = useState<AudioPlayerState>({
@@ -114,7 +129,7 @@ export function useAudioPlayer(
 
   // Restore playback position and attach event listeners
   useEffect(() => {
-    const audio = audioRef.current;
+    const audio = audioElement; // Use state-tracked element instead of ref
     if (!audio || !audioUrl) {
       console.log('[useAudioPlayer] Waiting for audio element or URL', { hasAudio: !!audio, audioUrl });
       return;
@@ -250,8 +265,8 @@ export function useAudioPlayer(
       audio.removeEventListener('error', handleError);
       audio.removeEventListener('ended', handleEnded);
     };
-    // Note: options removed from deps - using optionsRef to avoid re-runs when options object reference changes
-  }, [audioUrl, state.isLooping, setCurrentAudio]);
+    // audioElement triggers re-run when ref is attached; options removed - using optionsRef
+  }, [audioUrl, audioElement, state.isLooping, setCurrentAudio]);
 
   // Autoplay effect
   useEffect(() => {
@@ -392,5 +407,5 @@ export function useAudioPlayer(
     }, [audioUrl]),
   };
 
-  return [state, controls, audioRef];
+  return [state, controls, audioCallbackRef];
 }
