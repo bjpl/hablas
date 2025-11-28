@@ -62,6 +62,10 @@ export function useAudioPlayer(
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPending, startTransition] = useTransition();
 
+  // Store options in ref to avoid effect re-runs when options object changes
+  const optionsRef = useRef(options);
+  optionsRef.current = options;
+
   // State management
   const [state, setState] = useState<AudioPlayerState>({
     isPlaying: false,
@@ -101,12 +105,12 @@ export function useAudioPlayer(
     };
 
     // Preload in background
-    preloadAudio(audioUrl, { resourceId: options.resourceId }).catch((err) => {
+    preloadAudio(audioUrl, { resourceId: optionsRef.current.resourceId }).catch((err) => {
       console.warn('Background preload failed:', err);
     });
 
     checkCache();
-  }, [audioUrl, options.resourceId]);
+  }, [audioUrl]); // resourceId read from optionsRef
 
   // Restore playback position and attach event listeners
   useEffect(() => {
@@ -191,7 +195,7 @@ export function useAudioPlayer(
       }));
 
       setCurrentAudio(null);
-      options.onError?.(errorMessage);
+      optionsRef.current.onError?.(errorMessage);
     };
 
     const handleEnded = () => {
@@ -201,7 +205,7 @@ export function useAudioPlayer(
         if (audioUrl) {
           clearPlaybackPosition(audioUrl);
         }
-        options.onEnded?.();
+        optionsRef.current.onEnded?.();
       }
     };
 
@@ -246,14 +250,16 @@ export function useAudioPlayer(
       audio.removeEventListener('error', handleError);
       audio.removeEventListener('ended', handleEnded);
     };
-  }, [audioUrl, state.isLooping, options, setCurrentAudio]);
+    // Note: options removed from deps - using optionsRef to avoid re-runs when options object reference changes
+  }, [audioUrl, state.isLooping, setCurrentAudio]);
 
   // Autoplay effect
   useEffect(() => {
-    if (options.autoplay && audioRef.current && !state.isPlaying && audioUrl) {
+    if (optionsRef.current.autoplay && audioRef.current && !state.isPlaying && audioUrl) {
       controls.play();
     }
-  }, [options.autoplay, audioUrl]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [audioUrl]); // Only trigger on URL change, autoplay is read from ref
 
   // Controls
   const controls: AudioPlayerControls = {
@@ -268,7 +274,7 @@ export function useAudioPlayer(
           setState((prev) => ({ ...prev, isPlaying: true, error: null, canRetry: false }));
         });
 
-        options.onPlay?.();
+        optionsRef.current.onPlay?.();
       } catch (err) {
         console.error('Error playing audio:', err);
         const errorMessage = 'No se pudo reproducir el audio';
@@ -280,9 +286,9 @@ export function useAudioPlayer(
           canRetry: true
         }));
 
-        options.onError?.(errorMessage);
+        optionsRef.current.onError?.(errorMessage);
       }
-    }, [setCurrentAudio, options]),
+    }, [setCurrentAudio]),
 
     pause: useCallback(() => {
       if (!audioRef.current) return;
@@ -290,8 +296,8 @@ export function useAudioPlayer(
       audioRef.current.pause();
       setState((prev) => ({ ...prev, isPlaying: false }));
       setCurrentAudio(null);
-      options.onPause?.();
-    }, [setCurrentAudio, options]),
+      optionsRef.current.onPause?.();
+    }, [setCurrentAudio]),
 
     toggle: useCallback(async () => {
       if (state.isPlaying) {
