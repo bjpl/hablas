@@ -5,11 +5,11 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
 const NAV_ITEMS = [
-  { href: '/', icon: Home, label: 'Inicio', ariaLabel: 'Ir a inicio' },
-  { href: '/recursos', icon: BookOpen, label: 'Recursos', ariaLabel: 'Ver recursos' },
-  { href: '/practica', icon: Mic, label: 'Practicar', ariaLabel: 'Practicar inglés' },
-  { href: '/comunidad', icon: Users, label: 'Comunidad', ariaLabel: 'Comunidad' },
-  { href: '/perfil', icon: User, label: 'Perfil', ariaLabel: 'Mi perfil' },
+  { href: '/', icon: Home, label: 'Inicio', ariaLabel: 'Ir a inicio', comingSoon: false },
+  { href: '/recursos', icon: BookOpen, label: 'Recursos', ariaLabel: 'Ver recursos', comingSoon: false },
+  { href: '/practica', icon: Mic, label: 'Practicar', ariaLabel: 'Practicar inglés - Próximamente', comingSoon: true },
+  { href: '/comunidad', icon: Users, label: 'Comunidad', ariaLabel: 'Comunidad', comingSoon: false },
+  { href: '/perfil', icon: User, label: 'Perfil', ariaLabel: 'Mi perfil', comingSoon: false },
 ]
 
 export default function BottomNav() {
@@ -32,9 +32,11 @@ export default function BottomNav() {
             <Link
               key={item.href}
               href={item.href}
-              className={`flex flex-col items-center justify-center min-w-[64px] min-h-[48px] px-2 py-1 rounded-lg transition-all duration-200 active:scale-95 no-tap-highlight ${
+              className={`relative flex flex-col items-center justify-center min-w-[64px] min-h-[48px] px-2 py-1 rounded-lg transition-all duration-200 active:scale-95 no-tap-highlight ${
                 isActive
                   ? 'text-accent-green bg-green-50 font-semibold'
+                  : item.comingSoon
+                  ? 'text-gray-400 cursor-pointer'
                   : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
               }`}
               aria-label={item.ariaLabel}
@@ -44,6 +46,11 @@ export default function BottomNav() {
               <span className={`text-xs mt-1 ${isActive ? 'font-semibold' : 'font-medium'}`}>
                 {item.label}
               </span>
+              {item.comingSoon && (
+                <span className="absolute -top-1 -right-1 bg-yellow-400 text-yellow-900 text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow-sm">
+                  SOON
+                </span>
+              )}
             </Link>
           )
         })}

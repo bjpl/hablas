@@ -24,7 +24,7 @@ export async function checkAuth(request: NextRequest): Promise<AuthResult> {
     }
 
     // Verify token
-    const payload = verifyToken(token);
+    const payload = await verifyToken(token);
 
     if (!payload) {
       return {

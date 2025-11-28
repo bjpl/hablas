@@ -1,6 +1,6 @@
-# Hablas
+# Spanish Resource Browser
 
-A mobile-first English learning platform designed for Colombian delivery drivers and rideshare workers, featuring WhatsApp community integration and offline-first resources.
+A modern web application for browsing and learning Spanish language resources, featuring categorized content, bilingual support, and an intuitive mobile-first interface.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -9,41 +9,38 @@ A mobile-first English learning platform designed for Colombian delivery drivers
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Development](#development)
-- [Deployment](#deployment)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Overview
 
-Hablas provides practical English learning resources for working-class Colombians, specifically delivery drivers and rideshare workers using platforms like Rappi, Didi, Uber, and inDriver. The application focuses on workplace English skills to improve customer communication, increase tips and ratings, and create better opportunities.
+Spanish Resource Browser is a curated collection of Spanish language learning materials organized by category and difficulty level. The application provides an easy-to-navigate interface for discovering and studying Spanish phrases, vocabulary, and expressions with English translations.
 
 **Version:** 1.2.0
-**Status:** Very Active
-**Last Updated:** 2025-01-08
+**Status:** Active Development
+**Last Updated:** 2025-01-27
 
 **Live Demo:** [hablas.co](https://hablas.co)
 
 ## Features
 
 ### Core Functionality
-- WhatsApp community integration with direct links to learning groups
-- Offline-first resources with downloadable materials
-- Job-specific content tailored for delivery and rideshare scenarios
-- Mobile optimization for budget Android phones on 3G/4G networks
-- Colombian Spanish interface using local dialect and conventions
-- Data conservation with aggressive compression and caching
-- 50+ AI-powered resources generated using Claude Sonnet 4.5
+- **Resource Browsing**: Navigate through 50+ Spanish learning resources organized by category
+- **Bilingual Interface**: Toggle between English and Spanish UI
+- **Category Filtering**: Filter resources by type (delivery driver, rideshare, general topics)
+- **Difficulty Levels**: Resources organized by beginner, intermediate, and advanced levels
+- **Phrase Cards**: Interactive cards displaying Spanish phrases with English translations
+- **Audio Support**: Built-in audio playback for pronunciation practice
+- **Mobile-First Design**: Responsive interface optimized for mobile devices
+- **Clean UI**: Modern, intuitive interface using Tailwind CSS
 
-### Technical Capabilities
-- Built with Next.js 15.0, React 18, and TypeScript 5.6
-- AI integration via Anthropic Claude SDK 0.65.0 for resource generation
-- Supabase 2.58.0 for data management
-- Zod 4.1.12 for schema validation
-- Lucide React 0.548 for icons
-- Tailwind CSS with custom design system
-- Progressive Web App with service workers for offline functionality
-- Jest 30.2 with jest-axe for accessibility testing
-- Automated documentation synchronization
+### Technical Stack
+- **Framework**: Next.js 15.0 with React 18 and TypeScript 5.6
+- **Styling**: Tailwind CSS with custom design system
+- **Icons**: Lucide React 0.548
+- **Schema Validation**: Zod 4.1.12
+- **Testing**: Jest 30.2 with jest-axe for accessibility
+- **Static Export**: Optimized static site generation for fast loading
 
 ## Installation
 
@@ -84,28 +81,15 @@ npm run build
 
 ### Build Scripts
 
-Core commands:
-- `npm run dev` - Start development server
-- `npm run build` - Build for production with automatic documentation sync
-- `npm run lint` - Run ESLint
-- `npm run typecheck` - TypeScript type checking
+Development commands:
+- `npm run dev` - Start development server at http://localhost:3000
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint for code quality
+- `npm run typecheck` - Run TypeScript type checking
 
-Resource management:
-- `npm run resource:list` - List all resource templates
-- `npm run resource:generate` - Generate resources from templates
-- `npm run resource:validate` - Validate resource structure
-- `npm run resource:stats` - Show resource statistics
-- `npm run resource:search` - Search available resources
-- `npm run resource:help` - Show resource CLI help
-
-AI generation:
-- `npm run ai:generate` - Interactive AI resource generation
-- `npm run ai:generate-essentials` - Generate 20 core resources
-- `npm run ai:generate-all` - Generate complete resource library
-- `npm run ai:generate-topic` - Generate resources by topic
-- `npm run ai:generate-category` - Generate by category (repartidor/conductor/all)
-- `npm run ai:generate-level` - Generate by level (basico/intermedio/avanzado)
-- `npm run check:progress` - Check AI generation progress
+Testing:
+- `npm run test` - Run Jest test suite
+- `npm run test:watch` - Run tests in watch mode
 
 ## Project Structure
 

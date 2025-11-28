@@ -16,6 +16,7 @@
     "resource:search": "tsx scripts/generate-resource.ts search",
     "resource:export": "tsx scripts/generate-resource.ts export",
     "resource:help": "tsx scripts/generate-resource.ts help",
+    "resource:validate-refs": "node scripts/validate-resource-references.js",
     "ai:generate": "tsx scripts/ai-generate-resources.ts",
     "ai:generate-all": "tsx scripts/ai-generate-resources.ts all",
     "ai:generate-essentials": "tsx scripts/ai-generate-resources.ts essentials",
@@ -53,6 +54,8 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.65.0",
+    "@esbuild/linux-x64": "^0.27.0",
+    "@esbuild/win32-x64": "^0.27.0",
     "@types/bcryptjs": "^2.4.6",
     "@types/cookie": "^0.6.0",
     "@types/pg": "^8.11.10",
