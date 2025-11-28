@@ -6,8 +6,11 @@
 
 'use client';
 
-import { useState, useRef, useEffect, useCallback, useTransition } from 'react';
+import { useState, useRef, useEffect, useLayoutEffect, useCallback, useTransition } from 'react';
 import { useAudioContext } from '@/lib/contexts/AudioContext';
+
+// Use useLayoutEffect on client, useEffect on server (for SSR compatibility)
+const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
 import {
   preloadAudio,
   isAudioCached,
@@ -71,15 +74,82 @@ export function useAudioPlayer(
 
   // Callback ref to capture audio element when mounted
   const audioCallbackRef = useCallback((node: HTMLAudioElement | null) => {
+    console.log('[useAudioPlayer] Callback ref called with:', node ? 'HTMLAudioElement' : 'null');
     audioRef.current = node;
     setAudioElement(node);
 
-    // Force load when element is attached
+    // Immediate load attempt when ref is first attached
     if (node && audioUrl) {
-      console.log('[useAudioPlayer] Audio element mounted, forcing load for:', audioUrl);
-      node.load();
+      console.log('[useAudioPlayer] Callback ref - immediate load attempt');
+      // Use requestAnimationFrame to ensure DOM is fully ready
+      requestAnimationFrame(() => {
+        if (node.networkState === HTMLMediaElement.NETWORK_EMPTY) {
+          console.log('[useAudioPlayer] Callback ref - network state empty, calling load()');
+          node.load();
+        }
+      });
     }
   }, [audioUrl]);
+
+  // Force load on mount/hydration - runs SYNCHRONOUSLY after DOM mutations
+  // This ensures audio.load() is called before browser paint
+  useIsomorphicLayoutEffect(() => {
+    // Use the state-tracked element directly for reliability
+    const audio = audioElement;
+    if (!audio) {
+      console.log('[useAudioPlayer] Layout effect - waiting for audio element');
+      return;
+    }
+
+    if (!audioUrl) {
+      console.log('[useAudioPlayer] Layout effect - no audio URL provided');
+      return;
+    }
+
+    console.log('[useAudioPlayer] Layout effect - audio element attached, forcing load');
+    console.log('[useAudioPlayer] Current src:', audio.src);
+    console.log('[useAudioPlayer] Target URL:', audioUrl);
+    console.log('[useAudioPlayer] ReadyState:', audio.readyState);
+    console.log('[useAudioPlayer] NetworkState:', audio.networkState);
+
+    // Always ensure src is set correctly (handles relative vs absolute URL mismatch)
+    const normalizedAudioUrl = audioUrl.startsWith('/') ? audioUrl : `/${audioUrl}`;
+    const currentSrcPath = new URL(audio.src, window.location.origin).pathname;
+
+    if (currentSrcPath !== normalizedAudioUrl) {
+      console.log('[useAudioPlayer] Setting src explicitly:', audioUrl);
+      audio.src = audioUrl;
+    }
+
+    // Force load - this triggers the browser to fetch the audio
+    console.log('[useAudioPlayer] Calling audio.load()');
+    audio.load();
+  }, [audioUrl, audioElement]); // Re-run when element is attached or URL changes
+
+  // BACKUP: Fallback effect that runs after a short delay to catch hydration edge cases
+  // This handles scenarios where React hydration doesn't trigger the callback ref
+  useEffect(() => {
+    if (!audioUrl) return;
+
+    // If audioElement is already set, skip the fallback
+    if (audioElement) {
+      console.log('[useAudioPlayer] Fallback effect - audioElement already set, skipping');
+      return;
+    }
+
+    console.log('[useAudioPlayer] Fallback effect - scheduling delayed check');
+
+    // Wait a tick for hydration to complete, then check if we have an audio element
+    const timeoutId = setTimeout(() => {
+      const audio = audioRef.current;
+      if (audio && audio.networkState === HTMLMediaElement.NETWORK_EMPTY) {
+        console.log('[useAudioPlayer] Fallback effect - found audio element, forcing load');
+        audio.load();
+      }
+    }, 100); // Small delay to let hydration complete
+
+    return () => clearTimeout(timeoutId);
+  }, [audioUrl, audioElement]);
 
   // State management
   const [state, setState] = useState<AudioPlayerState>({
