@@ -7,7 +7,7 @@
 
 import { jsPDF } from 'jspdf';
 
-interface PDFOptions {
+export interface PDFOptions {
   title: string;
   category?: string;
   level?: string;

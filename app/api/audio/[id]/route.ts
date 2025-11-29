@@ -32,6 +32,7 @@ function validatePathname(pathname: string): boolean {
   }
 
   // Only alphanumeric, dots, hyphens, underscores, and forward slashes
+  // Updated pattern to accept full filenames like resource-1.mp3
   const validPattern = /^audio\/[\w\d.-]+$/;
   return validPattern.test(pathname);
 }
@@ -94,7 +95,18 @@ export async function GET(
     // Construct pathname from ID
     const params = await props.params;
     const { id } = params;
-    const pathname = `audio/${id}`;
+
+    // Map ID to proper filename format
+    // Supports: "1", "resource-1", "resource-1.mp3"
+    let filename = id;
+    if (/^\d+$/.test(id)) {
+      // Numeric ID only -> map to resource-{id}.mp3
+      filename = `resource-${id}.mp3`;
+    } else if (!id.includes('.')) {
+      // Has prefix but no extension -> add .mp3
+      filename = `${id}.mp3`;
+    }
+    const pathname = `audio/${filename}`;
 
     // Validate pathname
     if (!validatePathname(pathname)) {
@@ -245,7 +257,15 @@ export async function DELETE(
     // Construct pathname from ID
     const params = await props.params;
     const { id } = params;
-    const pathname = `audio/${id}`;
+
+    // Map ID to proper filename format (same as GET)
+    let filename = id;
+    if (/^\d+$/.test(id)) {
+      filename = `resource-${id}.mp3`;
+    } else if (!id.includes('.')) {
+      filename = `${id}.mp3`;
+    }
+    const pathname = `audio/${filename}`;
 
     // Validate pathname
     if (!validatePathname(pathname)) {
