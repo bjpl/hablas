@@ -3,8 +3,6 @@
  * Centralized security settings for the application
  */
 
-import * as crypto from 'crypto';
-
 // Cookie Configuration
 export const COOKIE_CONFIG = {
   // Standard cookie name across entire application
@@ -176,16 +174,17 @@ export const PASSWORD_POLICY = {
 
 // Admin Configuration
 export const ADMIN_CONFIG = {
-  // Generate secure random password
+  // Generate secure random password using Web Crypto API (Edge-compatible)
   generateSecurePassword(): string {
     const length = 20;
     const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
 
     let password = '';
-    const randomBytes = crypto.randomBytes(length);
+    const randomValues = new Uint8Array(length);
+    globalThis.crypto.getRandomValues(randomValues);
 
     for (let i = 0; i < length; i++) {
-      password += charset[randomBytes[i] % charset.length];
+      password += charset[randomValues[i] % charset.length];
     }
 
     // Ensure it meets password policy
