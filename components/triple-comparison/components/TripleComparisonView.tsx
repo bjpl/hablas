@@ -2,12 +2,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { Loader2, Save, X, AlertTriangle, RefreshCw } from 'lucide-react';
-import { ContentPanel } from './ContentPanel';
+import { PDFPreviewPanel } from '../panels/PDFPreviewPanel';
+import { WebContentPanel } from '../panels/WebContentPanel';
+import { AudioTranscriptPanel } from '../panels/AudioTranscriptPanel';
 import { DiffViewer } from './DiffViewer';
 import { SyncControls } from './SyncControls';
 import { useTripleComparison } from '../hooks/useTripleComparison';
 import { useContentLoader } from '../hooks/useContentLoader';
-import type { TripleComparisonViewProps, ContentType, SyncOperation, ContentData } from '../types';
+import type { TripleComparisonViewProps, ContentType, SyncOperation } from '../types';
 
 export function TripleComparisonView({
   resourceId,
@@ -147,12 +149,10 @@ export function TripleComparisonView({
     return null;
   };
 
-  const createContentData = (type: ContentType): ContentData => ({
-    text: content[type].current,
-    status: content[type].isDirty ? 'modified' : 'synced',
-    lastModified: new Date(),
-    audioUrl: type === 'audio' ? audioUrl : undefined,
-  });
+  // Helper to save individual content changes
+  const handleContentSave = async (type: ContentType, newContent: string) => {
+    updateContent(type, newContent);
+  };
 
   // Loading state with user feedback
   if (isLoadingContent && !loadedContent) {
@@ -309,10 +309,13 @@ export function TripleComparisonView({
               className="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
             />
           </div>
-          <ContentPanel
-            type="downloadable"
-            content={createContentData('downloadable')}
-            onSave={(type, newContent) => updateContent(type, newContent)}
+          <PDFPreviewPanel
+            markdownContent={content.downloadable.current}
+            title="Resource Content"
+            category={resourceId}
+            level="Intermediate"
+            showMarkdownSource={true}
+            onDownload={() => console.log('PDF downloaded')}
           />
         </div>
 
@@ -326,10 +329,13 @@ export function TripleComparisonView({
               className="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
             />
           </div>
-          <ContentPanel
-            type="web"
-            content={createContentData('web')}
-            onSave={(type, newContent) => updateContent(type, newContent)}
+          <WebContentPanel
+            content={{
+              text: content.web.current,
+              status: content.web.isDirty ? 'modified' : 'synced',
+              lastModified: new Date(),
+            }}
+            onSave={(newContent) => handleContentSave('web', newContent)}
           />
         </div>
 
@@ -343,10 +349,12 @@ export function TripleComparisonView({
               className="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
             />
           </div>
-          <ContentPanel
-            type="audio"
-            content={createContentData('audio')}
-            onSave={(type, newContent) => updateContent(type, newContent)}
+          <AudioTranscriptPanel
+            audioUrl={audioUrl || ''}
+            transcript={content.audio.current}
+            status={content.audio.isDirty ? 'modified' : 'synced'}
+            lastModified={new Date()}
+            onSave={(newTranscript) => handleContentSave('audio', newTranscript)}
           />
         </div>
       </div>
