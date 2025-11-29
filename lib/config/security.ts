@@ -3,6 +3,8 @@
  * Centralized security settings for the application
  */
 
+import * as crypto from 'crypto';
+
 // Cookie Configuration
 export const COOKIE_CONFIG = {
   // Standard cookie name across entire application
@@ -178,7 +180,6 @@ export const ADMIN_CONFIG = {
   generateSecurePassword(): string {
     const length = 20;
     const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
-    const crypto = require('crypto');
 
     let password = '';
     const randomBytes = crypto.randomBytes(length);
