@@ -14,6 +14,7 @@ import { cleanAudioScript, isAudioScript } from './clean-audio-script'
 import type { JsonResourceContent } from '@/lib/types/resource-content'
 import Link from 'next/link'
 import { Edit2 } from 'lucide-react'
+import { downloadPDF } from '@/lib/utils/pdf-generator'
 
 export default function ResourceDetail({ id, initialContent = '' }: { id: string; initialContent?: string }) {
   const router = useRouter()
@@ -241,26 +242,27 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
             )}
 
             <div className="flex flex-col sm:flex-row gap-3">
-              {/* Resource content download */}
+              {/* Resource content download - PDF format */}
               <button
                 onClick={async () => {
                   setDownloadingResource(true);
                   setDownloadSuccess(null);
                   try {
-                    // Fetch the resource content first, then download
+                    // Fetch the resource content first
                     const resourceUrl = `${basePath}${resource.downloadUrl}`;
                     const response = await fetch(resourceUrl);
                     if (!response.ok) throw new Error('Resource not found');
-                    const blob = await response.blob();
-                    const url = window.URL.createObjectURL(blob);
-                    const link = document.createElement('a');
-                    link.href = url;
-                    link.download = `Hablas_${resource.id}_${resource.title.replace(/[^a-z0-9]/gi, '_').substring(0, 40)}.md`;
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                    window.URL.revokeObjectURL(url);
-                    setDownloadSuccess('✓ Recurso descargado exitosamente');
+                    const markdownContent = await response.text();
+
+                    // Generate and download PDF
+                    downloadPDF(markdownContent, {
+                      title: resource.title,
+                      category: resource.category,
+                      level: resource.level,
+                      includeHeader: true,
+                    });
+
+                    setDownloadSuccess('✓ PDF descargado exitosamente');
                     setTimeout(() => setDownloadSuccess(null), 3000);
                   } catch (err) {
                     console.error('Download failed:', err);
@@ -283,15 +285,15 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                     </svg>
-                    Descargando...
+                    Generando PDF...
                   </>
                 ) : (
                   <>
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
-                    <span>Descargar Recurso</span>
-                    <span className="text-xs opacity-80">({resource.size})</span>
+                    <span>Descargar PDF</span>
+                    <span className="text-xs opacity-80">(PDF)</span>
                   </>
                 )}
               </button>
