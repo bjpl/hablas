@@ -226,3 +226,16 @@ export function getAllTopicsWithHidden(category?: 'all' | 'repartidor' | 'conduc
       resourceCount: topic.resourceIds.length,
     }));
 }
+
+/**
+ * Get a specific topic by slug including hidden resources (for admin use)
+ */
+export function getTopicBySlugWithHidden(slug: string): TopicGroup | null {
+  const topic = topicGroups.find(t => t.slug === slug);
+  if (!topic) return null;
+
+  return {
+    ...topic,
+    resourceCount: topic.resourceIds.length,
+  };
+}

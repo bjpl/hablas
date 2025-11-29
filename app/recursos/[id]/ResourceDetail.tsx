@@ -384,6 +384,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                 metadata={audioMetadata}
                 resourceId={resource.id}
                 enhanced={true}
+                hideDownload={true}
               />
             </div>
           </div>

@@ -7,7 +7,7 @@
  */
 
 import { NextResponse } from 'next/server';
-import { getTopicBySlug } from '@/lib/utils/topic-groups';
+import { getTopicBySlugWithHidden } from '@/lib/utils/topic-groups';
 import { resources } from '@/data/resources';
 import fs from 'fs/promises';
 import path from 'path';
@@ -88,8 +88,8 @@ export async function GET(
   try {
     const { slug } = await params;
 
-    // Get topic from topic-groups
-    const topic = getTopicBySlug(slug);
+    // Get topic from topic-groups (includes hidden resources for admin)
+    const topic = getTopicBySlugWithHidden(slug);
 
     if (!topic) {
       return NextResponse.json(

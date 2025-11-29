@@ -22,6 +22,7 @@ interface AudioPlayerProps {
   metadata?: AudioMetadata;
   resourceId?: number;
   enhanced?: boolean;
+  hideDownload?: boolean; // Hide download button (when external download is provided)
 }
 
 /**
@@ -42,7 +43,8 @@ const AudioPlayer = memo(function AudioPlayer({
   title,
   metadata,
   resourceId,
-  enhanced = false
+  enhanced = false,
+  hideDownload = false
 }: AudioPlayerProps) {
   // 1️⃣ Simplified URL Resolution - uses existing hook
   const { url: resolvedAudioUrl, loading: urlLoading, error: urlError } = useAudioUrl(audioUrl);
@@ -142,9 +144,9 @@ const AudioPlayer = memo(function AudioPlayer({
     </div>
   );
 
-  // 6️⃣ Keyboard Shortcuts Help Component
+  // 6️⃣ Keyboard Shortcuts Help Component (hidden on mobile)
   const KeyboardShortcutsHelp = () => (
-    <details className="mt-4">
+    <details className="mt-4 hidden md:block">
       <summary className="cursor-pointer text-sm text-gray-700 hover:text-gray-900 flex items-center gap-2">
         <Keyboard className="w-4 h-4" />
         Atajos de teclado
@@ -286,22 +288,24 @@ const AudioPlayer = memo(function AudioPlayer({
                 <span className="text-sm font-medium">{state.isLooping ? 'Repitiendo' : 'Repetir'}</span>
               </button>
 
-              {/* Download Button */}
-              <button
-                onClick={handleDownload}
-                disabled={state.isDownloading || !audioUrl}
-                className={`px-4 py-2 rounded flex items-center gap-2 min-h-[44px] transition-colors ${
-                  state.isCached
-                    ? 'bg-green-50 text-green-700 border border-green-300'
-                    : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 active:bg-gray-100'
-                } disabled:opacity-50 disabled:cursor-not-allowed`}
-                aria-label={state.isCached ? 'Audio descargado' : 'Descargar audio para uso sin conexión'}
-              >
-                <Download className="w-4 h-4" />
-                <span className="text-sm font-medium">
-                  {state.isDownloading ? 'Descargando...' : state.isCached ? 'Descargado' : 'Descargar'}
-                </span>
-              </button>
+              {/* Download Button - hidden when external download provided */}
+              {!hideDownload && (
+                <button
+                  onClick={handleDownload}
+                  disabled={state.isDownloading || !audioUrl}
+                  className={`px-4 py-2 rounded flex items-center gap-2 min-h-[44px] transition-colors ${
+                    state.isCached
+                      ? 'bg-green-50 text-green-700 border border-green-300'
+                      : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 active:bg-gray-100'
+                  } disabled:opacity-50 disabled:cursor-not-allowed`}
+                  aria-label={state.isCached ? 'Audio descargado' : 'Descargar audio para uso sin conexión'}
+                >
+                  <Download className="w-4 h-4" />
+                  <span className="text-sm font-medium">
+                    {state.isDownloading ? 'Descargando...' : state.isCached ? 'Descargado' : 'Descargar'}
+                  </span>
+                </button>
+              )}
             </div>
 
             {/* Volume Control */}

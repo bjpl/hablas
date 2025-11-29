@@ -52,7 +52,7 @@ export default function Hero() {
         {/* Main headline with gradient */}
         <h1
           id="hero-heading"
-          className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-center bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text text-transparent leading-tight animate-fade-in"
+          className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-center bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text text-transparent leading-normal pb-1 animate-fade-in"
         >
           Aprende Inglés Para Tu Trabajo
         </h1>
