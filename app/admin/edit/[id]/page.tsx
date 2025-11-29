@@ -2,29 +2,27 @@
 
 import React, { useState, useEffect, use } from 'react';
 import { useRouter } from 'next/navigation';
-import { ArrowLeft, Loader2, AlertCircle, Layout, LayoutGrid } from 'lucide-react';
+import { ArrowLeft, Loader2, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
-import { MediaReviewTool } from '@/components/media-review';
-import { TripleComparisonView } from '@/components/triple-comparison';
+import { ResourceReview } from '@/components/review';
 import type { GetContentResponse } from '@/lib/types/content-edits';
-import type { MediaResource } from '@/lib/types/media';
-import type { ContentUpdate } from '@/components/triple-comparison/types';
+import type { Resource } from '@/data/resources';
 import { resources } from '@/data/resources';
 
 /**
  * Edit Page for Specific Resource
  *
- * Loads content for a specific resource and provides editing interface
+ * Uses the unified ResourceReview component that handles:
+ * - PDF content (comprehensive reference guides)
+ * - Audio scripts (concise narration for TTS)
+ * - Audio verification (TTS playback check)
  */
-type ViewMode = 'standard' | 'comparison';
-
 export default function EditResourcePage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
   const router = useRouter();
-  const [resource, setResource] = useState<MediaResource | null>(null);
+  const [resource, setResource] = useState<Resource | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string>('');
-  const [viewMode, setViewMode] = useState<ViewMode>('standard');
 
   useEffect(() => {
     fetchContent();
@@ -61,61 +59,6 @@ export default function EditResourcePage({ params }: { params: Promise<{ id: str
       setError(err instanceof Error ? err.message : 'Failed to load content');
     } finally {
       setLoading(false);
-    }
-  };
-
-  const handleSave = async (editedContent: string) => {
-    try {
-      const response = await fetch('/api/content/save', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          resourceId: parseInt(resolvedParams.id),
-          editedContent,
-          status: 'pending',
-          editedBy: 'admin',
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to save content');
-      }
-
-      // Optionally redirect back to resource or admin dashboard
-      // router.push(`/recursos/${resolvedParams.id}`);
-    } catch (err) {
-      throw new Error(err instanceof Error ? err.message : 'Failed to save');
-    }
-  };
-
-  const handleTripleComparisonSave = async (updates: ContentUpdate[]) => {
-    try {
-      // Save all three content types
-      for (const update of updates) {
-        const response = await fetch('/api/content/save', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            resourceId: parseInt(resolvedParams.id),
-            editedContent: update.content,
-            contentType: update.type,
-            status: 'pending',
-            editedBy: 'admin',
-          }),
-        });
-
-        if (!response.ok) {
-          throw new Error(`Failed to save ${update.type} content`);
-        }
-      }
-
-      alert('All changes saved successfully!');
-    } catch (err) {
-      alert(err instanceof Error ? err.message : 'Failed to save changes');
     }
   };
 
@@ -160,69 +103,34 @@ export default function EditResourcePage({ params }: { params: Promise<{ id: str
     <div className="min-h-screen bg-gray-50">
       {/* Header Navigation */}
       <div className="bg-white border-b border-gray-200 px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <Link
-              href="/admin"
-              className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Back to Dashboard
-            </Link>
-            <div className="border-l border-gray-300 h-6"></div>
-            <div>
-              <p className="text-sm text-gray-600">Editing Resource #{resolvedParams.id}</p>
-              <h1 className="text-lg font-semibold text-gray-900">{resource.title}</h1>
-              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800 mt-1">
-                {resource.type.toUpperCase()}
-              </span>
-            </div>
-          </div>
-
-          {/* View Mode Toggle */}
-          <div className="flex items-center gap-2 bg-gray-100 p-1 rounded-lg">
-            <button
-              onClick={() => setViewMode('standard')}
-              className={`flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
-                viewMode === 'standard'
-                  ? 'bg-white text-gray-900 shadow-sm'
-                  : 'text-gray-600 hover:text-gray-900'
-              }`}
-            >
-              <Layout className="w-4 h-4" />
-              Standard View
-            </button>
-            <button
-              onClick={() => setViewMode('comparison')}
-              className={`flex items-center gap-2 px-3 py-1.5 text-sm font-medium rounded-md transition-colors ${
-                viewMode === 'comparison'
-                  ? 'bg-white text-gray-900 shadow-sm'
-                  : 'text-gray-600 hover:text-gray-900'
-              }`}
-            >
-              <LayoutGrid className="w-4 h-4" />
-              Triple Comparison
-            </button>
+        <div className="flex items-center gap-4">
+          <Link
+            href="/admin"
+            className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Dashboard
+          </Link>
+          <div className="border-l border-gray-300 h-6"></div>
+          <div>
+            <p className="text-sm text-gray-600">Editing Resource #{resolvedParams.id}</p>
+            <h1 className="text-lg font-semibold text-gray-900">{resource.title}</h1>
+            <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800 mt-1">
+              {resource.type.toUpperCase()}
+            </span>
           </div>
         </div>
       </div>
 
-      {/* Content Area */}
+      {/* Content Area - ResourceReview handles all the editing */}
       <div className="p-6">
-        {viewMode === 'standard' ? (
-          /* Standard Media Review Tool - Intelligently routes based on media type */
-          <MediaReviewTool resource={resource} onSave={handleSave} />
-        ) : (
-          /* Triple Comparison View - Compare & edit all three content types */
-          <TripleComparisonView
-            resourceId={resolvedParams.id}
-            downloadableUrl={resource.downloadUrl}
-            webUrl={resource.downloadUrl}
-            audioUrl={resource.audioUrl}
-            onSave={handleTripleComparisonSave}
-            onCancel={() => setViewMode('standard')}
-          />
-        )}
+        <ResourceReview
+          resource={resource}
+          onSaveComplete={() => {
+            // Optionally show success message or redirect
+            console.log('Save completed');
+          }}
+        />
       </div>
     </div>
   );
