@@ -45,7 +45,7 @@ interface JSONResource {
 describe('JSON Resources Integration', () => {
   const resourcesDir = path.join(process.cwd(), 'resources', 'lesson-1');
   let resourceFiles: string[] = [];
-  let jsonResources: Map<string, JSONResource> = new Map();
+  const jsonResources: Map<string, JSONResource> = new Map();
 
   beforeAll(() => {
     // Load all JSON resource files

@@ -224,8 +224,9 @@ describe('Sanitization', () => {
         }
       }
       const clean = sanitizeEventData(data)
-      expect(clean.user.name).not.toContain('<script>')
-      expect(clean.user.age).toBe(25)
+      const user = clean.user as Record<string, unknown>
+      expect(user.name).not.toContain('<script>')
+      expect(user.age).toBe(25)
     })
 
     it('should sanitize arrays', () => {
@@ -233,8 +234,9 @@ describe('Sanitization', () => {
         tags: ['<script>evil</script>', 'safe-tag']
       }
       const clean = sanitizeEventData(data)
-      expect(clean.tags[0]).not.toContain('<script>')
-      expect(clean.tags[1]).toBe('safe-tag')
+      const tags = clean.tags as string[]
+      expect(tags[0]).not.toContain('<script>')
+      expect(tags[1]).toBe('safe-tag')
     })
   })
 

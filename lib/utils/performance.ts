@@ -25,8 +25,13 @@ export function reportWebVitals(metric: PerformanceMetric) {
   // Send to analytics in production
   if (process.env.NODE_ENV === 'production') {
     // Could integrate with Google Analytics, Vercel Analytics, etc.
-    if (typeof window !== 'undefined' && 'gtag' in window) {
-      ;(window as Record<string, unknown>).gtag('event', metric.name, {
+    interface WindowWithGtag extends Window {
+      gtag?: (command: string, eventName: string, params: Record<string, unknown>) => void;
+    }
+
+    const win = typeof window !== 'undefined' ? (window as WindowWithGtag) : null
+    if (win?.gtag) {
+      win.gtag('event', metric.name, {
         value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
         event_category: 'Web Vitals',
         event_label: metric.rating,

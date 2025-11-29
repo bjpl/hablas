@@ -223,8 +223,8 @@ export function sanitizeEventData(data: Record<string, unknown>): Record<string,
       sanitized[cleanKey] = value.map(item =>
         typeof item === 'string' ? sanitizeText(item) : item
       )
-    } else if (value && typeof value === 'object') {
-      sanitized[cleanKey] = sanitizeEventData(value)
+    } else if (value && typeof value === 'object' && !Array.isArray(value)) {
+      sanitized[cleanKey] = sanitizeEventData(value as Record<string, unknown>)
     }
   }
 
@@ -266,7 +266,7 @@ export function sanitizeObject<T extends Record<string, unknown>>(
 
   for (const key of allowedKeys) {
     if (key in obj) {
-      sanitized[key as keyof T] = obj[key]
+      sanitized[key as keyof T] = obj[key] as T[keyof T]
     }
   }
 

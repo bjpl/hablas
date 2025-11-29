@@ -213,7 +213,11 @@ describe('ErrorBoundary', () => {
 
     it('should show error details in development mode', () => {
       const originalEnv = process.env.NODE_ENV;
-      process.env.NODE_ENV = 'development';
+      Object.defineProperty(process.env, 'NODE_ENV', {
+        value: 'development',
+        writable: true,
+        configurable: true,
+      });
 
       render(
         <ErrorBoundary>
@@ -224,12 +228,20 @@ describe('ErrorBoundary', () => {
       const details = screen.getByText(/Detalles del error/);
       expect(details).toBeInTheDocument();
 
-      process.env.NODE_ENV = originalEnv;
+      Object.defineProperty(process.env, 'NODE_ENV', {
+        value: originalEnv,
+        writable: true,
+        configurable: true,
+      });
     });
 
     it('should hide error details in production mode', () => {
       const originalEnv = process.env.NODE_ENV;
-      process.env.NODE_ENV = 'production';
+      Object.defineProperty(process.env, 'NODE_ENV', {
+        value: 'production',
+        writable: true,
+        configurable: true,
+      });
 
       render(
         <ErrorBoundary>
@@ -239,7 +251,11 @@ describe('ErrorBoundary', () => {
 
       expect(screen.queryByText(/Detalles del error/)).not.toBeInTheDocument();
 
-      process.env.NODE_ENV = originalEnv;
+      Object.defineProperty(process.env, 'NODE_ENV', {
+        value: originalEnv,
+        writable: true,
+        configurable: true,
+      });
     });
   });
 

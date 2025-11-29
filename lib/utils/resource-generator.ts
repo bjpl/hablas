@@ -272,7 +272,7 @@ export function generateMarkdownDocs(resources: Resource[]): string {
         lines.push(`- **Type**: ${resource.type}`)
         lines.push(`- **Size**: ${resource.size}`)
         lines.push(`- **Offline**: ${resource.offline ? 'Yes' : 'No'}`)
-        lines.push(`- **Tags**: ${resource.tags.join(', ')}`)
+        lines.push(`- **Tags**: ${(resource.tags as string[]).join(', ')}`)
         lines.push(`- **Download**: [${resource.downloadUrl}](${resource.downloadUrl})`)
         lines.push('')
       })
@@ -285,7 +285,7 @@ export function generateMarkdownDocs(resources: Resource[]): string {
 /**
  * Helper: Group array by key
  */
-function groupBy<T extends Record<string, unknown>>(
+function groupBy<T>(
   array: T[],
   key: keyof T
 ): Record<string, T[]> {

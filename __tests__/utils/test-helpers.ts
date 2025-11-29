@@ -14,9 +14,9 @@ export function createMockResource(overrides?: Partial<Resource>): Resource {
     id: 999,
     title: 'Test Resource',
     description: 'A test resource for unit testing',
-    type: 'pdf',
-    category: 'repartidor',
-    level: 'basico',
+    type: 'pdf' as const,
+    category: 'repartidor' as const,
+    level: 'basico' as const,
     tags: ['test', 'mock'],
     size: '1.2 MB',
     downloadUrl: '/test-resource.pdf',
@@ -146,4 +146,34 @@ export function mockNavigatorShare() {
     configurable: true
   })
   return shareMock
+}
+
+/**
+ * Response Assertion Helpers
+ */
+export const Assertions = {
+  assertStatus(response: Response, expectedStatus: number): void {
+    expect(response.status).toBe(expectedStatus)
+  },
+
+  async assertJSON(response: Response): Promise<any> {
+    const data = await response.json()
+    expect(data).toBeDefined()
+    return data
+  },
+
+  assertError(response: Response): void {
+    expect(response.status).toBeGreaterThanOrEqual(400)
+    expect(response.status).toBeLessThan(600)
+  },
+
+  assertSuccess(response: Response): void {
+    expect(response.status).toBeGreaterThanOrEqual(200)
+    expect(response.status).toBeLessThan(300)
+  },
+
+  assertRedirect(response: Response): void {
+    expect(response.status).toBeGreaterThanOrEqual(300)
+    expect(response.status).toBeLessThan(400)
+  }
 }

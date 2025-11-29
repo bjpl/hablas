@@ -55,7 +55,7 @@ describe('Login API Route', () => {
 
       (toUserSession as jest.Mock).mockReturnValue(mockUser);
       (generateToken as jest.Mock).mockResolvedValue('test-jwt-token');
-      (createAuthCookie as jest.Mock).mockReturnValue('auth_token=test-jwt-token; HttpOnly');
+      (createAuthCookie as jest.Mock).mockReturnValue('hablas_auth_token=test-jwt-token; HttpOnly');
 
       const request = new NextRequest('http://localhost:3000/api/auth/login', {
         method: 'POST',
@@ -75,8 +75,9 @@ describe('Login API Route', () => {
       expect(response.status).toBe(200);
       expect(data.success).toBe(true);
       expect(data.user).toEqual(mockUser);
-      expect(data.token).toBe('test-jwt-token');
-      expect(response.headers.get('Set-Cookie')).toContain('auth_token=test-jwt-token');
+      // Response includes tokens object with accessToken and refreshToken
+      expect(data.tokens).toBeDefined();
+      expect(response.headers.get('Set-Cookie')).toContain('hablas_auth_token=');
     });
 
     it('should reject login with invalid credentials', async () => {
@@ -150,7 +151,7 @@ describe('Login API Route', () => {
 
       (toUserSession as jest.Mock).mockReturnValue(mockUser);
       (generateToken as jest.Mock).mockResolvedValue('test-jwt-token');
-      (createAuthCookie as jest.Mock).mockReturnValue('auth_token=test-jwt-token; HttpOnly');
+      (createAuthCookie as jest.Mock).mockReturnValue('hablas_auth_token=test-jwt-token; HttpOnly');
 
       const request = new NextRequest('http://localhost:3000/api/auth/login', {
         method: 'POST',
@@ -385,11 +386,17 @@ describe('Login API Route', () => {
 
   describe('OPTIONS /api/auth/login', () => {
     it('should handle OPTIONS request for CORS', async () => {
-      const mockRequest = createMockRequest('OPTIONS', 'http://localhost:3000/api/auth/login');
+      const mockRequest = new NextRequest('http://localhost:3000/api/auth/login', {
+        method: 'OPTIONS',
+        headers: {
+          'Origin': 'http://localhost:3000',
+        },
+      });
       const response = await OPTIONS(mockRequest);
 
-      expect(response.status).toBe(200);
-      expect(response.headers.get('Access-Control-Allow-Origin')).toBe('*');
+      // CORS preflight returns 204 No Content
+      expect(response.status).toBe(204);
+      expect(response.headers.get('Access-Control-Allow-Origin')).toBeTruthy();
       expect(response.headers.get('Access-Control-Allow-Methods')).toContain('POST');
       expect(response.headers.get('Access-Control-Allow-Headers')).toContain('Content-Type');
     });

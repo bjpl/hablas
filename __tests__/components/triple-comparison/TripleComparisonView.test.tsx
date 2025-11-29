@@ -263,8 +263,8 @@ describe('TripleComparisonView', () => {
 
       // Web content should now match downloadable content
       await waitFor(() => {
-        const downloadableTextarea = screen.getByTestId('textarea-downloadable');
-        const webTextarea = screen.getByTestId('textarea-web');
+        const downloadableTextarea = screen.getByTestId('textarea-downloadable') as HTMLTextAreaElement;
+        const webTextarea = screen.getByTestId('textarea-web') as HTMLTextAreaElement;
         expect(webTextarea.value).toBe(downloadableTextarea.value);
       });
     });
@@ -281,9 +281,9 @@ describe('TripleComparisonView', () => {
       await user.click(syncAllBtn);
 
       await waitFor(() => {
-        const downloadableTextarea = screen.getByTestId('textarea-downloadable');
-        const webTextarea = screen.getByTestId('textarea-web');
-        const audioTextarea = screen.getByTestId('textarea-audio');
+        const downloadableTextarea = screen.getByTestId('textarea-downloadable') as HTMLTextAreaElement;
+        const webTextarea = screen.getByTestId('textarea-web') as HTMLTextAreaElement;
+        const audioTextarea = screen.getByTestId('textarea-audio') as HTMLTextAreaElement;
 
         expect(webTextarea.value).toBe(downloadableTextarea.value);
         expect(audioTextarea.value).toBe(downloadableTextarea.value);
@@ -371,7 +371,7 @@ describe('TripleComparisonView', () => {
     it('should show saving state during save', async () => {
       const user = userEvent.setup();
       const onSave = jest.fn(
-        () => new Promise((resolve) => setTimeout(resolve, 100))
+        (): Promise<void> => new Promise((resolve) => setTimeout(resolve, 100))
       );
 
       render(<TripleComparisonView {...defaultProps} onSave={onSave} />);
@@ -439,7 +439,7 @@ describe('TripleComparisonView', () => {
     it('should disable cancel button during save', async () => {
       const user = userEvent.setup();
       const onSave = jest.fn(
-        () => new Promise((resolve) => setTimeout(resolve, 100))
+        (): Promise<void> => new Promise((resolve) => setTimeout(resolve, 100))
       );
 
       render(<TripleComparisonView {...defaultProps} onSave={onSave} />);
@@ -519,7 +519,7 @@ describe('TripleComparisonView', () => {
         expect(screen.getByTestId('panel-downloadable')).toBeInTheDocument();
       });
 
-      const checkboxes = screen.getAllByRole('checkbox');
+      const checkboxes = screen.getAllByRole('checkbox') as HTMLInputElement[];
 
       // Rapid clicking
       await user.click(checkboxes[0]);

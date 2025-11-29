@@ -89,15 +89,22 @@ export function prefetchOnVisible(url: string, options: PrefetchOptions = {}) {
   }
 }
 
+// Extended Window interface for requestIdleCallback
+interface WindowWithIdleCallback {
+  requestIdleCallback?: (callback: IdleRequestCallback, options?: IdleRequestOptions) => number;
+}
+
 /**
  * Batch prefetch multiple resources
  */
 export function batchPrefetch(urls: string[], options: PrefetchOptions = {}) {
   if (typeof window === 'undefined') return
 
+  const win = window as WindowWithIdleCallback
+
   // Use requestIdleCallback for non-blocking prefetch
-  if ('requestIdleCallback' in window) {
-    ;(window as Record<string, unknown>).requestIdleCallback(
+  if (win.requestIdleCallback) {
+    win.requestIdleCallback(
       () => {
         urls.forEach((url) => prefetchResource(url, options))
       },
@@ -110,6 +117,14 @@ export function batchPrefetch(urls: string[], options: PrefetchOptions = {}) {
   }
 }
 
+// Extended Navigator interface for Network Information API
+interface NavigatorWithConnection extends Navigator {
+  connection?: {
+    effectiveType?: string;
+    saveData?: boolean;
+  };
+}
+
 /**
  * Smart prefetch based on connection speed
  */
@@ -117,7 +132,8 @@ export function smartPrefetch(url: string, options: PrefetchOptions = {}) {
   if (typeof window === 'undefined') return
 
   // Check for slow connection
-  const connection = (navigator as Record<string, unknown>).connection
+  const nav = navigator as NavigatorWithConnection
+  const connection = nav.connection
   if (connection) {
     const { effectiveType, saveData } = connection
 

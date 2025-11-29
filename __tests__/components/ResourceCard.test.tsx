@@ -24,16 +24,16 @@ jest.mock('next/link', () => {
 })
 
 const mockResource: Resource = {
-  id: 'test-resource-1',
+  id: 1,
   title: 'Frases para Conductores',
   description: 'Frases esenciales para comunicarte con pasajeros en inglés',
-  type: 'audio',
+  type: 'audio' as const,
+  category: 'conductor' as const,
+  level: 'basico' as const,
   tags: ['Rappi', 'Uber', 'Básico'],
   size: '2.5 MB',
   offline: true,
   downloadUrl: '/resources/test-resource.mp3',
-  createdAt: '2024-01-01',
-  updatedAt: '2024-01-01'
 }
 
 describe('ResourceCard Component', () => {
@@ -146,16 +146,15 @@ describe('ResourceCard Component', () => {
 
   describe('Type Icons', () => {
     const testCases = [
-      { type: 'pdf', icon: '📄' },
-      { type: 'audio', icon: '🎧' },
-      { type: 'image', icon: '🖼️' },
-      { type: 'video', icon: '📹' },
-      { type: 'unknown', icon: '📎' }
+      { type: 'pdf' as const, icon: '📄' },
+      { type: 'audio' as const, icon: '🎧' },
+      { type: 'image' as const, icon: '🖼️' },
+      { type: 'video' as const, icon: '📹' },
     ]
 
     testCases.forEach(({ type, icon }) => {
       it(`should display ${icon} icon for ${type} type`, () => {
-        const resource = { ...mockResource, type }
+        const resource: Resource = { ...mockResource, type }
         renderWithUserEvent(
           <ResourceCard
             resource={resource}
@@ -226,7 +225,7 @@ describe('ResourceCard Component', () => {
       const titleLink = screen.getByLabelText(/Ver detalles de Frases para Conductores/i)
       await user.click(titleLink)
 
-      expect(titleLink).toHaveAttribute('href', '/recursos/test-resource-1')
+      expect(titleLink).toHaveAttribute('href', '/recursos/1')
     })
 
     it('should navigate to resource detail when button is clicked', async () => {
@@ -239,7 +238,7 @@ describe('ResourceCard Component', () => {
       )
 
       const button = screen.getByRole('button', { name: /Ver detalles del recurso/i })
-      expect(button.closest('a')).toHaveAttribute('href', '/recursos/test-resource-1')
+      expect(button.closest('a')).toHaveAttribute('href', '/recursos/1')
     })
 
     it('should show hover effect on title', async () => {
@@ -474,17 +473,17 @@ describe('ResourceCard Component', () => {
     })
 
     it('should handle missing optional fields', () => {
-      const minimalResource = {
-        id: 'minimal-1',
+      const minimalResource: Resource = {
+        id: 999,
         title: 'Minimal Resource',
         description: 'Description',
-        type: 'pdf',
+        type: 'pdf' as const,
+        category: 'repartidor' as const,
+        level: 'basico' as const,
         tags: ['Test'],
         size: '1 MB',
         offline: false,
         downloadUrl: '/test.pdf',
-        createdAt: '2024-01-01',
-        updatedAt: '2024-01-01'
       }
 
       expect(() => {

@@ -210,7 +210,7 @@ describe('E2E Authentication Flows', () => {
       const token = await generateToken('user-timeout', 'timeout@example.com', 'admin', false);
 
       // User is active, token is valid
-      let payload = await verifyToken(token);
+      const payload = await verifyToken(token);
       expect(payload).toBeDefined();
 
       // Simulate session timeout (token becomes invalid)

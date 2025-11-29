@@ -27,13 +27,29 @@ interface SlidingWindowEntry {
 // Optimized in-memory store with sliding window
 const slidingWindowStore = new Map<string, SlidingWindowEntry>();
 
+// Redis client interface for rate limiting operations
+interface RedisRateLimitClient {
+  multi(): {
+    zremrangebyscore(key: string, min: number, max: number): unknown;
+    zcard(key: string): unknown;
+    zadd(key: string, score: number, member: string): unknown;
+    pexpire(key: string, ms: number): unknown;
+    zrange(key: string, start: number, stop: number, withScores?: string): unknown;
+    exec(): Promise<Array<[Error | null, unknown]> | null>;
+  };
+  del(...keys: string[]): Promise<number>;
+  zcount(key: string, min: number, max: number): Promise<number>;
+  zrange(key: string, start: number, stop: number, withScores?: string): Promise<string[]>;
+  keys(pattern: string): Promise<string[]>;
+}
+
 // Redis client
-let redisClient: unknown = null;
+let redisClient: RedisRateLimitClient | null = null;
 
 /**
  * Set Redis client
  */
-export function setRedisClient(client: unknown): void {
+export function setRedisClient(client: RedisRateLimitClient): void {
   redisClient = client;
   console.log('✅ Redis rate limiter enabled');
 }
@@ -134,6 +150,9 @@ async function checkRedisSlidingWindow(
     const windowStart = now - config.windowMs;
 
     // Use Redis sorted set for sliding window
+    if (!redisClient) {
+      return checkSlidingWindowRateLimit(key, config);
+    }
     const multi = redisClient.multi();
 
     // Remove old entries
