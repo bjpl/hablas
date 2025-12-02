@@ -46,14 +46,22 @@ export function AudioVerifier({
   const [isVerified, setIsVerified] = useState(false);
   const [audioError, setAudioError] = useState<string | null>(null);
 
-  // Parse phrases from script
+  // Parse phrases from script - handles multiple content formats
   const phrases = React.useMemo(() => {
     const result: string[] = [];
     const lines = scriptContent.split('\n');
 
-    for (const line of lines) {
-      if (line.startsWith('**Inglés:**') || line.startsWith('**English:**')) {
-        const phrase = line.replace(/\*\*[^:]+:\*\*\s*/, '').replace(/"/g, '');
+    // Clean line helper - removes box characters and extra formatting
+    const cleanLine = (line: string) => line.replace(/[│┌┐└┘─]/g, '').trim();
+
+    for (const rawLine of lines) {
+      const line = cleanLine(rawLine);
+
+      // Match English phrases in various formats:
+      // **English**: "phrase" | **Inglés:** "phrase" | **English:** phrase
+      const match = line.match(/\*\*(?:English|Inglés)\*?\*?:?\s*"?([^"]+)"?/i);
+      if (match) {
+        const phrase = match[1].trim();
         if (phrase) result.push(phrase);
       }
     }

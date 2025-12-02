@@ -8,6 +8,10 @@ interface AudioScriptEditorProps extends EditorProps {
   audioUrl?: string;
   title?: string;
   description?: string;
+  /** Optional reference content (PDF) to parse ALL phrases from */
+  referenceContent?: string;
+  /** Show verification controls */
+  showVerification?: boolean;
 }
 
 /**
@@ -29,6 +33,8 @@ export function AudioScriptEditor({
   audioUrl,
   title = 'Audio Script',
   description = 'Edit the narration script for TTS generation',
+  referenceContent,
+  showVerification = false,
 }: AudioScriptEditorProps) {
   const [saving, setSaving] = useState(false);
   const [lastSaved, setLastSaved] = useState<Date | null>(null);
@@ -118,7 +124,7 @@ export function AudioScriptEditor({
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
-  // Parse script into phrases for display
+  // Parse script into phrases for display - handles multiple content formats
   const parseScriptPhrases = (text: string) => {
     const phrases: { english: string; spanish: string; pronunciation: string }[] = [];
     const lines = text.split('\n');
@@ -127,15 +133,33 @@ export function AudioScriptEditor({
       english: '', spanish: '', pronunciation: ''
     };
 
-    for (const line of lines) {
-      if (line.startsWith('**Inglés:**') || line.startsWith('**English:**')) {
+    // Clean line helper - removes box characters and extra formatting
+    const cleanLine = (line: string) => line.replace(/[│┌┐└┘─]/g, '').trim();
+
+    for (const rawLine of lines) {
+      const line = cleanLine(rawLine);
+
+      // Match English phrases in various formats:
+      // **English**: "phrase" | **Inglés:** "phrase" | **English:** phrase
+      const englishMatch = line.match(/\*\*(?:English|Inglés)\*?\*?:?\s*"?([^"]+)"?/i);
+      if (englishMatch) {
         if (currentPhrase.english) phrases.push({ ...currentPhrase });
         currentPhrase = { english: '', spanish: '', pronunciation: '' };
-        currentPhrase.english = line.replace(/\*\*[^:]+:\*\*\s*/, '').replace(/"/g, '');
-      } else if (line.startsWith('**Español:**') || line.startsWith('**Spanish:**')) {
-        currentPhrase.spanish = line.replace(/\*\*[^:]+:\*\*\s*/, '').replace(/"/g, '');
-      } else if (line.startsWith('**Pronunciación:**') || line.startsWith('**Pronunciation:**')) {
-        currentPhrase.pronunciation = line.replace(/\*\*[^:]+:\*\*\s*/, '');
+        currentPhrase.english = englishMatch[1].trim();
+        continue;
+      }
+
+      // Match Spanish phrases
+      const spanishMatch = line.match(/(?:🗣️\s*)?\*\*(?:Español|Spanish)\*?\*?:?\s*"?([^"]+)"?/i);
+      if (spanishMatch) {
+        currentPhrase.spanish = spanishMatch[1].trim();
+        continue;
+      }
+
+      // Match pronunciation
+      const pronMatch = line.match(/(?:🔊\s*)?\*\*(?:Pronunciación|Pronunciation)\*?\*?:?\s*\[?([^\]]+)\]?/i);
+      if (pronMatch) {
+        currentPhrase.pronunciation = pronMatch[1].trim();
       }
     }
 
@@ -143,7 +167,9 @@ export function AudioScriptEditor({
     return phrases;
   };
 
-  const phrases = parseScriptPhrases(content.edited);
+  // Parse from referenceContent (PDF) if provided, otherwise from script content
+  // This ensures ALL phrases from the resource are displayed
+  const phrases = parseScriptPhrases(referenceContent || content.edited);
 
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">

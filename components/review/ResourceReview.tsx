@@ -150,13 +150,15 @@ export function ResourceReview({
           audioUrl={data.audioUrl}
           title={`${resource.title} - Audio Script`}
           description="Concise narration script for TTS generation"
+          referenceContent={data.pdfContent?.edited}
+          showVerification={Boolean(data.audioUrl)}
         />
       )}
 
       {mode === 'audio-verify' && data.audioUrl && (
         <AudioVerifier
           audioUrl={data.audioUrl}
-          scriptContent={data.audioScript?.edited || data.pdfContent?.edited || 'No script content available'}
+          scriptContent={data.pdfContent?.edited || data.audioScript?.edited || 'No script content available'}
           title={`${resource.title} - Audio Verification`}
         />
       )}
@@ -193,6 +195,7 @@ export function ResourceReview({
               audioUrl={data.audioUrl}
               title="Audio Script"
               description="TTS narration script"
+              referenceContent={data.pdfContent?.edited}
             />
           ) : (
             <div className="bg-white rounded-xl border border-gray-200 p-6">
