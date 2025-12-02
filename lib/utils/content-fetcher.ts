@@ -162,6 +162,8 @@ async function fetchAudioTranscript(
     return '';
   }
 
+  let result = '';
+
   try {
     // Try to derive transcript URL from download URL
     // Pattern: basic_audio_1-audio-script.txt or basic_phrases_1.md -> basic_phrases_1-audio-script.txt
@@ -172,29 +174,60 @@ async function fetchAudioTranscript(
 
       try {
         const fileUrl = transcriptUrl.startsWith('/') ? transcriptUrl : `/${transcriptUrl}`;
-        return await fetchWithRetry(fileUrl, options);
+        result = await fetchWithRetry(fileUrl, options);
+        if (result) return result;
       } catch (error) {
         // If transcript file doesn't exist, try alternative patterns
         console.warn('Direct transcript fetch failed:', error);
       }
     }
 
+    // Try alternative pattern: look for -audio-script.md
+    if (!result && downloadUrl) {
+      try {
+        const mdTranscriptUrl = downloadUrl
+          .replace(/\.md$/, '-audio-script.md')
+          .replace(/\.txt$/, '-audio-script.md');
+        const fileUrl = mdTranscriptUrl.startsWith('/') ? mdTranscriptUrl : `/${mdTranscriptUrl}`;
+        result = await fetchWithRetry(fileUrl, options);
+        if (result) return result;
+      } catch {
+        // MD transcript not found
+      }
+    }
+
+    // Try pattern: same directory with audio-script suffix
+    if (!result && downloadUrl) {
+      try {
+        const parts = downloadUrl.split('/');
+        const filename = parts.pop() || '';
+        const baseName = filename.replace(/\.[^.]+$/, '');
+        const transcriptUrl = [...parts, `${baseName}-audio-script.txt`].join('/');
+        const fileUrl = transcriptUrl.startsWith('/') ? transcriptUrl : `/${transcriptUrl}`;
+        result = await fetchWithRetry(fileUrl, options);
+        if (result) return result;
+      } catch {
+        // Alternative pattern not found
+      }
+    }
+
     // If we have an audio URL, try to find associated transcript
-    if (audioUrl) {
+    if (!result && audioUrl) {
       // Try replacing .mp3 with -audio-script.txt
       const transcriptUrl = audioUrl
         .replace(/\.mp3$/, '-audio-script.txt')
         .replace(/\/audio\//, '/generated-resources/50-batch/repartidor/');
 
       try {
-        return await fetchWithRetry(transcriptUrl, options);
+        result = await fetchWithRetry(transcriptUrl, options);
+        if (result) return result;
       } catch (error) {
         console.warn('Audio URL transcript fetch failed:', error);
       }
     }
 
     // Return empty string if no transcript found
-    return '';
+    return result;
   } catch (error) {
     throw new Error(
       `Failed to fetch audio transcript: ${error instanceof Error ? error.message : 'Unknown error'}`

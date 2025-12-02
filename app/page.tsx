@@ -167,7 +167,7 @@ export default function Home() {
       <footer className="bg-gray-100 px-4 py-8 mt-12">
         <div className="max-w-6xl mx-auto text-center text-sm text-gray-600">
           <p className="mb-2">Hablas.co - Recursos gratuitos para trabajadores colombianos</p>
-          <p>Hecho en Medellín para toda Colombia</p>
+          <p>Made in California</p>
         </div>
       </footer>
     </main>

@@ -153,17 +153,17 @@ export function ResourceReview({
         />
       )}
 
-      {mode === 'audio-verify' && data.audioUrl && data.audioScript && (
+      {mode === 'audio-verify' && data.audioUrl && (
         <AudioVerifier
           audioUrl={data.audioUrl}
-          scriptContent={data.audioScript.edited}
+          scriptContent={data.audioScript?.edited || data.pdfContent?.edited || 'No script content available'}
           title={`${resource.title} - Audio Verification`}
         />
       )}
 
       {mode === 'comparison' && (
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-          {data.pdfContent && (
+          {data.pdfContent ? (
             <PDFEditor
               content={data.pdfContent}
               onChange={updatePdfContent}
@@ -174,9 +174,15 @@ export function ResourceReview({
               title="Reference Content"
               description="Web/PDF content"
             />
+          ) : (
+            <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Reference Content</h3>
+              <p className="text-gray-500">No reference content available for this resource.</p>
+              <p className="text-sm text-gray-400 mt-2">Try refreshing or check if the resource file exists.</p>
+            </div>
           )}
 
-          {data.audioScript && (
+          {data.audioScript ? (
             <AudioScriptEditor
               content={data.audioScript}
               onChange={updateAudioScript}
@@ -188,6 +194,12 @@ export function ResourceReview({
               title="Audio Script"
               description="TTS narration script"
             />
+          ) : (
+            <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Audio Script</h3>
+              <p className="text-gray-500">No audio script available for this resource.</p>
+              <p className="text-sm text-gray-400 mt-2">This resource may not have an audio component.</p>
+            </div>
           )}
         </div>
       )}

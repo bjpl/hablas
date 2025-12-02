@@ -48,35 +48,88 @@ export function useResourceContent(
 
       if (pdfResponse.ok) {
         const pdfData = await pdfResponse.json();
+        // API returns originalContent, not content
+        const originalContent = pdfData.originalContent || pdfData.content || '';
         pdfContent = {
           id: `pdf-${resource.id}`,
-          original: pdfData.content || '',
-          edited: pdfData.editedContent || pdfData.content || '',
+          original: originalContent,
+          edited: pdfData.editedContent || originalContent,
           status: (pdfData.status as ContentStatus) || 'draft',
           lastModified: pdfData.updatedAt,
           editedBy: pdfData.editedBy,
         };
       }
 
-      // Check for audio script (different file path pattern)
-      let audioScript: ReviewContent | undefined;
-      const hasAudioScript = resource.downloadUrl?.includes('audio-script') ||
-                             resource.type === 'audio';
-
-      if (hasAudioScript && resource.downloadUrl) {
+      // Fallback: if API returned no content, try fetching downloadUrl directly
+      if (!pdfContent?.original && resource.downloadUrl) {
         try {
-          const scriptResponse = await fetch(resource.downloadUrl);
-          if (scriptResponse.ok) {
-            const scriptText = await scriptResponse.text();
-            audioScript = {
-              id: `script-${resource.id}`,
-              original: scriptText,
-              edited: scriptText,
-              status: 'draft',
-            };
+          const directResponse = await fetch(resource.downloadUrl);
+          if (directResponse.ok) {
+            const directContent = await directResponse.text();
+            if (directContent) {
+              pdfContent = {
+                id: `pdf-${resource.id}`,
+                original: directContent,
+                edited: directContent,
+                status: 'draft' as ContentStatus,
+              };
+            }
           }
         } catch {
-          // Audio script fetch failed, continue without it
+          // Direct fetch failed, continue with empty content
+        }
+      }
+
+      // Fetch audio script - use explicit URL or try patterns
+      let audioScript: ReviewContent | undefined;
+
+      // Build list of potential audio script URLs to try (priority order)
+      const audioScriptUrls: string[] = [];
+
+      // 1. Use explicit audioScriptUrl if provided (preferred)
+      if (resource.audioScriptUrl) {
+        audioScriptUrls.push(resource.audioScriptUrl);
+      }
+
+      // 2. If downloadUrl is already an audio-script file, use it directly
+      if (resource.downloadUrl?.includes('audio-script')) {
+        audioScriptUrls.push(resource.downloadUrl);
+      }
+
+      // 3. Try deriving audio script URL from downloadUrl (fallback patterns)
+      if (resource.downloadUrl && !resource.audioScriptUrl) {
+        const baseUrl = resource.downloadUrl.replace(/\.[^.]+$/, '');
+        audioScriptUrls.push(`${baseUrl}-audio-script.txt`);
+        audioScriptUrls.push(`${baseUrl}-audio-script.md`);
+
+        // Pattern: basic_phrases_1.md -> basic_audio_1-audio-script.txt
+        const parts = resource.downloadUrl.split('/');
+        const filename = parts.pop() || '';
+        const dir = parts.join('/');
+        const match = filename.match(/^(\w+)_(\w+)_(\d+)/);
+        if (match) {
+          audioScriptUrls.push(`${dir}/${match[1]}_audio_${match[3]}-audio-script.txt`);
+        }
+      }
+
+      // Try each potential URL until one works
+      for (const scriptUrl of audioScriptUrls) {
+        try {
+          const scriptResponse = await fetch(scriptUrl);
+          if (scriptResponse.ok) {
+            const scriptText = await scriptResponse.text();
+            if (scriptText && scriptText.length > 10) {
+              audioScript = {
+                id: `script-${resource.id}`,
+                original: scriptText,
+                edited: scriptText,
+                status: 'draft',
+              };
+              break; // Found a valid script, stop searching
+            }
+          }
+        } catch {
+          // This URL didn't work, try the next one
         }
       }
 

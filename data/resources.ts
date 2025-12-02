@@ -26,6 +26,7 @@ export interface Resource {
   offline: boolean
   contentPath?: string // Optional: absolute path to source file (for development/debugging)
   audioUrl?: string // Optional: path to MP3 audio file
+  audioScriptUrl?: string // Optional: path to audio script/transcript file
   metadata?: MediaMetadata
   hidden?: boolean // Optional: hide from public pages (for review)
 }
@@ -40,6 +41,7 @@ export const resources: Resource[] = [
     "level": "basico",
     "size": "31.0 KB",
     "downloadUrl": "/generated-resources/50-batch/repartidor/basic_phrases_1.md",
+    "audioScriptUrl": "/generated-resources/50-batch/repartidor/basic_audio_1-audio-script.txt",
     "tags": [
       "entregas",
       "delivery",
@@ -80,6 +82,7 @@ export const resources: Resource[] = [
     "level": "basico",
     "size": "31.5 KB",
     "downloadUrl": "/generated-resources/50-batch/repartidor/basic_phrases_2.md",
+    "audioScriptUrl": "/generated-resources/50-batch/repartidor/basic_audio_2-audio-script.txt",
     "tags": [
       "entregas",
       "delivery",
@@ -100,6 +103,7 @@ export const resources: Resource[] = [
     "level": "intermedio",
     "size": "31.0 KB",
     "downloadUrl": "/generated-resources/50-batch/repartidor/intermediate_situations_1.md",
+    "audioScriptUrl": "/generated-resources/50-batch/repartidor/intermediate_conversations_1-audio-script.txt",
     "tags": [
       "entregas",
       "delivery",
@@ -201,6 +205,7 @@ export const resources: Resource[] = [
     "level": "basico",
     "size": "31.2 KB",
     "downloadUrl": "/generated-resources/50-batch/conductor/basic_greetings_1.md",
+    "audioScriptUrl": "/generated-resources/50-batch/all/basic_greetings_all_1-audio-script.txt",
     "tags": [
       "uber",
       "didi",
@@ -224,6 +229,7 @@ export const resources: Resource[] = [
     "level": "basico",
     "size": "34.5 KB",
     "downloadUrl": "/generated-resources/50-batch/conductor/basic_directions_1.md",
+    "audioScriptUrl": "/generated-resources/50-batch/conductor/basic_audio_navigation_1-audio-script.txt",
     "tags": [
       "uber",
       "didi",
@@ -270,6 +276,7 @@ export const resources: Resource[] = [
     "level": "basico",
     "size": "31.8 KB",
     "downloadUrl": "/generated-resources/50-batch/conductor/basic_greetings_2.md",
+    "audioScriptUrl": "/generated-resources/50-batch/all/basic_greetings_all_2-audio-script.txt",
     "tags": [
       "uber",
       "didi",
@@ -293,6 +300,7 @@ export const resources: Resource[] = [
     "level": "basico",
     "size": "33.4 KB",
     "downloadUrl": "/generated-resources/50-batch/conductor/basic_directions_2.md",
+    "audioScriptUrl": "/generated-resources/50-batch/conductor/basic_audio_navigation_2-audio-script.txt",
     "tags": [
       "uber",
       "didi",
@@ -316,6 +324,7 @@ export const resources: Resource[] = [
     "level": "intermedio",
     "size": "32.6 KB",
     "downloadUrl": "/generated-resources/50-batch/conductor/intermediate_smalltalk_1.md",
+    "audioScriptUrl": "/generated-resources/50-batch/conductor/intermediate_audio_conversations_1-audio-script.txt",
     "tags": [
       "uber",
       "didi",
@@ -593,6 +602,7 @@ export const resources: Resource[] = [
     "level": "intermedio",
     "size": "33.7 KB",
     "downloadUrl": "/generated-resources/50-batch/repartidor/intermediate_situations_2.md",
+    "audioScriptUrl": "/generated-resources/50-batch/repartidor/intermediate_conversations_2-audio-script.txt",
     "tags": [
       "entregas",
       "delivery",
@@ -634,6 +644,7 @@ export const resources: Resource[] = [
     "level": "intermedio",
     "size": "31.5 KB",
     "downloadUrl": "/generated-resources/50-batch/conductor/intermediate_smalltalk_2.md",
+    "audioScriptUrl": "/generated-resources/50-batch/conductor/intermediate_audio_conversations_1-audio-script.txt",
     "tags": [
       "uber",
       "didi",
