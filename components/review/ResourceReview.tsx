@@ -160,6 +160,10 @@ export function ResourceReview({
           audioUrl={data.audioUrl}
           scriptContent={data.pdfContent?.edited || data.audioScript?.edited || 'No script content available'}
           title={`${resource.title} - Audio Verification`}
+          resourceId={resource.id}
+          onVerificationComplete={(verified) => {
+            if (verified) onSaveComplete?.();
+          }}
         />
       )}
 
