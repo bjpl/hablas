@@ -4,7 +4,7 @@
  * SECURITY FIX: Replaces deprecated file-based stubs in lib/auth/session.ts
  */
 
-import { getPool } from './pool';
+import { query } from './pool';
 import { createHash } from 'crypto';
 
 export interface DBSession {
@@ -55,9 +55,8 @@ export async function createDBSession(
     ipAddress?: string;
   }
 ): Promise<DBSession> {
-  const pool = getPool();
 
-  const result = await pool.query<DBSession>(
+  const result = await query<DBSession>(
     `INSERT INTO sessions (
       user_id, session_token, access_token_hash, refresh_token_hash,
       ip_address, user_agent, device_type, expires_at, is_active
@@ -82,9 +81,8 @@ export async function createDBSession(
  * Get session by session token
  */
 export async function getSessionByToken(sessionToken: string): Promise<DBSession | null> {
-  const pool = getPool();
 
-  const result = await pool.query<DBSession>(
+  const result = await query<DBSession>(
     `SELECT * FROM sessions
      WHERE session_token = $1
        AND is_active = true
@@ -100,10 +98,9 @@ export async function getSessionByToken(sessionToken: string): Promise<DBSession
  * Get session by refresh token hash
  */
 export async function getSessionByRefreshToken(refreshToken: string): Promise<DBSession | null> {
-  const pool = getPool();
   const tokenHash = hashToken(refreshToken);
 
-  const result = await pool.query<DBSession>(
+  const result = await query<DBSession>(
     `SELECT * FROM sessions
      WHERE refresh_token_hash = $1
        AND is_active = true
@@ -119,9 +116,8 @@ export async function getSessionByRefreshToken(refreshToken: string): Promise<DB
  * Update session last activity
  */
 export async function updateSessionActivity(sessionId: string): Promise<void> {
-  const pool = getPool();
 
-  await pool.query(
+  await query(
     `UPDATE sessions SET last_activity = NOW() WHERE id = $1`,
     [sessionId]
   );
@@ -131,9 +127,8 @@ export async function updateSessionActivity(sessionId: string): Promise<void> {
  * Revoke a session
  */
 export async function revokeDBSession(sessionId: string): Promise<void> {
-  const pool = getPool();
 
-  await pool.query(
+  await query(
     `UPDATE sessions
      SET is_active = false, revoked_at = NOW()
      WHERE id = $1`,
@@ -145,9 +140,8 @@ export async function revokeDBSession(sessionId: string): Promise<void> {
  * Revoke session by token
  */
 export async function revokeSessionByToken(sessionToken: string): Promise<void> {
-  const pool = getPool();
 
-  await pool.query(
+  await query(
     `UPDATE sessions
      SET is_active = false, revoked_at = NOW()
      WHERE session_token = $1`,
@@ -159,9 +153,8 @@ export async function revokeSessionByToken(sessionToken: string): Promise<void> 
  * Revoke all user sessions
  */
 export async function revokeAllUserSessions(userId: string): Promise<number> {
-  const pool = getPool();
 
-  const result = await pool.query(
+  const result = await query(
     `UPDATE sessions
      SET is_active = false, revoked_at = NOW()
      WHERE user_id = $1 AND is_active = true
@@ -176,9 +169,8 @@ export async function revokeAllUserSessions(userId: string): Promise<number> {
  * Get active sessions for a user
  */
 export async function getUserActiveSessions(userId: string): Promise<DBSession[]> {
-  const pool = getPool();
 
-  const result = await pool.query<DBSession>(
+  const result = await query<DBSession>(
     `SELECT * FROM sessions
      WHERE user_id = $1
        AND is_active = true
@@ -195,11 +187,10 @@ export async function getUserActiveSessions(userId: string): Promise<DBSession[]
  * Check if a token is blacklisted (session revoked)
  */
 export async function isTokenBlacklistedDB(token: string): Promise<boolean> {
-  const pool = getPool();
   const tokenHash = hashToken(token);
 
   // Check if there's a revoked session with this token
-  const result = await pool.query(
+  const result = await query(
     `SELECT 1 FROM sessions
      WHERE (access_token_hash = $1 OR refresh_token_hash = $1)
        AND (is_active = false OR revoked_at IS NOT NULL)
@@ -218,10 +209,9 @@ export async function updateSessionTokens(
   newAccessToken: string,
   newRefreshToken?: string
 ): Promise<void> {
-  const pool = getPool();
 
   if (newRefreshToken) {
-    await pool.query(
+    await query(
       `UPDATE sessions
        SET access_token_hash = $2,
            refresh_token_hash = $3,
@@ -230,7 +220,7 @@ export async function updateSessionTokens(
       [sessionId, hashToken(newAccessToken), hashToken(newRefreshToken)]
     );
   } else {
-    await pool.query(
+    await query(
       `UPDATE sessions
        SET access_token_hash = $2,
            last_activity = NOW()
@@ -244,9 +234,8 @@ export async function updateSessionTokens(
  * Cleanup expired sessions
  */
 export async function cleanupExpiredSessions(): Promise<number> {
-  const pool = getPool();
 
-  const result = await pool.query(
+  const result = await query(
     `DELETE FROM sessions
      WHERE expires_at < NOW() - INTERVAL '7 days'
      RETURNING id`
@@ -259,9 +248,8 @@ export async function cleanupExpiredSessions(): Promise<number> {
  * Get session count for a user
  */
 export async function getUserSessionCount(userId: string): Promise<number> {
-  const pool = getPool();
 
-  const result = await pool.query(
+  const result = await query(
     `SELECT COUNT(*) as count FROM sessions
      WHERE user_id = $1
        AND is_active = true
