@@ -6,7 +6,6 @@
 
 import { getPool } from './pool';
 import { createHash } from 'crypto';
-import type { UserRole } from '@/lib/auth/types';
 
 export interface DBSession {
   id: string;
