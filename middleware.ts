@@ -3,6 +3,7 @@
  * Protects admin routes and API endpoints with JWT authentication
  * Uses jose library for Edge-compatible JWT verification
  * Implements role-based access control
+ * SECURITY: Enforces CSRF protection on state-changing operations
  */
 
 import { NextResponse } from 'next/server';
@@ -11,7 +12,25 @@ import { getTokenFromRequest } from '@/lib/auth/cookies';
 import { verifyToken, refreshToken as refreshJWT } from '@/lib/auth/jwt';
 import { createAuthCookie } from '@/lib/auth/cookies';
 import { isTokenBlacklisted } from '@/lib/auth/session';
+import { verifyCsrfToken, requiresCsrfProtection } from '@/lib/auth/csrf';
 import type { UserRole } from '@/lib/auth/types';
+
+// Routes that require CSRF protection (state-changing API endpoints)
+const CSRF_PROTECTED_ROUTES = [
+  '/api/content',
+  '/api/topics',
+  '/api/audio',
+  '/api/media',
+];
+
+// Routes exempt from CSRF (auth routes handle their own protection)
+const CSRF_EXEMPT_ROUTES = [
+  '/api/auth/login',
+  '/api/auth/register',
+  '/api/auth/logout',
+  '/api/auth/refresh',
+  '/api/auth/password-reset',
+];
 
 // Route configuration with role-based access
 interface RouteConfig {
@@ -75,6 +94,23 @@ function hasRequiredRole(userRole: UserRole, allowedRoles?: UserRole[]): boolean
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const method = request.method;
+
+  // CSRF Protection: Check state-changing requests on protected routes
+  if (requiresCsrfProtection(method)) {
+    const isProtectedRoute = CSRF_PROTECTED_ROUTES.some(route => pathname.startsWith(route));
+    const isExemptRoute = CSRF_EXEMPT_ROUTES.some(route => pathname.startsWith(route));
+
+    if (isProtectedRoute && !isExemptRoute) {
+      const csrfValid = await verifyCsrfToken(request);
+      if (!csrfValid) {
+        return NextResponse.json(
+          { error: 'Forbidden', message: 'Invalid or missing CSRF token' },
+          { status: 403 }
+        );
+      }
+    }
+  }
 
   // Get route configuration
   const routeConfig = getRouteConfig(pathname);

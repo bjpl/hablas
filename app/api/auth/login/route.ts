@@ -11,6 +11,7 @@ import { createAuthCookie } from '@/lib/auth/cookies';
 import { validateRequest, loginSchema } from '@/lib/auth/validation';
 import { checkRateLimit, resetRateLimit } from '@/lib/utils/rate-limiter';
 import { createCorsPreflightResponse, addCorsHeaders } from '@/lib/utils/cors';
+import { authLogger as logger } from '@/lib/utils/logger';
 import type { LoginCredentials } from '@/lib/auth/types';
 
 export async function POST(request: NextRequest) {
@@ -101,7 +102,7 @@ export async function POST(request: NextRequest) {
     // Add CORS headers
     return addCorsHeaders(response, request.headers.get('origin'));
   } catch (error) {
-    console.error('Login error:', error);
+    logger.error('Login error', error);
     return NextResponse.json(
       { success: false, error: 'Internal server error' },
       { status: 500 }

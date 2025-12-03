@@ -1,16 +1,13 @@
 /**
  * Session Management
  * Handles refresh tokens and session persistence
- * NOTE: File-based storage is deprecated - use database sessions instead
+ * Uses PostgreSQL-backed sessions via lib/db/sessions.ts
+ * Edge Runtime compatible using jose library
  */
 
 import { SignJWT, jwtVerify } from 'jose';
 import type { UserRole } from './types';
-
-// Edge Runtime compatible - using database sessions instead of file-based
-// File operations are deprecated and disabled for Edge Runtime compatibility
-const SESSIONS_FILE = 'deprecated';
-const BLACKLIST_FILE = 'deprecated';
+import { authLogger as logger } from '@/lib/utils/logger';
 
 /**
  * SECURITY FIX: Remove hardcoded fallback secret
@@ -31,8 +28,7 @@ if (!REFRESH_TOKEN_SECRET) {
     // In development, generate a temporary secure random secret
     const crypto = require('crypto');
     TEMP_REFRESH_SECRET = crypto.randomBytes(64).toString('hex');
-    console.warn('⚠️  SECURITY WARNING: Using auto-generated REFRESH_TOKEN_SECRET for development only');
-    console.warn('⚠️  DO NOT USE THIS IN PRODUCTION. Set REFRESH_TOKEN_SECRET environment variable.');
+    logger.warn('Using auto-generated REFRESH_TOKEN_SECRET for development only');
   }
 }
 
@@ -63,46 +59,32 @@ interface BlacklistedToken {
   expiresAt: Date;
 }
 
+// Import database session functions
+// NOTE: These are lazy-loaded to avoid Edge Runtime issues in middleware
+// The middleware uses jose for JWT verification; database calls happen in API routes
+
 /**
- * Load sessions from database
- * NOTE: File-based sessions are deprecated - use database sessions table instead
- * This is a stub for backward compatibility
+ * Check if we're in Edge Runtime (middleware context)
+ * Edge Runtime cannot use Node.js modules like pg
  */
-async function loadSessions(): Promise<Session[]> {
-  // Deprecated: Sessions are now stored in PostgreSQL sessions table
-  return [];
+function isEdgeRuntime(): boolean {
+  return typeof EdgeRuntime !== 'undefined' || process.env.NEXT_RUNTIME === 'edge';
 }
 
 /**
- * Save sessions to database
- * NOTE: File-based sessions are deprecated - use database sessions table instead
- * This is a stub for backward compatibility
+ * Get database session module (lazy load to avoid Edge Runtime issues)
  */
-async function saveSessions(sessions: Session[]): Promise<void> {
-  // Deprecated: Sessions are now stored in PostgreSQL sessions table
-  // No-op for Edge Runtime compatibility
-  return;
-}
-
-/**
- * Load token blacklist from database
- * NOTE: File-based storage is deprecated - use database refresh_tokens table instead
- * This is a stub for backward compatibility
- */
-async function loadBlacklist(): Promise<BlacklistedToken[]> {
-  // Deprecated: Token revocation is now handled by PostgreSQL refresh_tokens table
-  return [];
-}
-
-/**
- * Save blacklist to database
- * NOTE: File-based storage is deprecated - use database refresh_tokens table instead
- * This is a stub for backward compatibility
- */
-async function saveBlacklist(blacklist: BlacklistedToken[]): Promise<void> {
-  // Deprecated: Token revocation is now handled by PostgreSQL refresh_tokens table
-  // No-op for Edge Runtime compatibility
-  return;
+async function getDBSessions() {
+  if (isEdgeRuntime()) {
+    logger.debug('Edge Runtime detected - database operations not available');
+    return null;
+  }
+  try {
+    return await import('@/lib/db/sessions');
+  } catch (error) {
+    logger.warn('Failed to load database sessions module', { error: error instanceof Error ? error.message : 'Unknown' });
+    return null;
+  }
 }
 
 /**
@@ -123,9 +105,10 @@ export async function generateRefreshToken(userId: string, email: string, role: 
  */
 export async function verifyRefreshToken(token: string): Promise<{ userId: string; email: string; role: UserRole } | null> {
   try {
-    // Check if token is blacklisted
-    const blacklist = await loadBlacklist();
-    if (blacklist.some(item => item.token === token)) {
+    // Check if token is blacklisted using database
+    const blacklisted = await isTokenBlacklisted(token);
+    if (blacklisted) {
+      logger.debug('Refresh token is blacklisted');
       return null;
     }
 
@@ -141,7 +124,7 @@ export async function verifyRefreshToken(token: string): Promise<{ userId: strin
       role: payload.role as UserRole,
     };
   } catch (error) {
-    console.error('Refresh token verification failed:', error);
+    logger.debug('Refresh token verification failed', { error: error instanceof Error ? error.message : 'Unknown error' });
     return null;
   }
 }
@@ -157,91 +140,101 @@ export async function storeSession(
   userAgent?: string,
   ipAddress?: string
 ): Promise<void> {
-  const sessions = await loadSessions();
-  const sessionId = crypto.randomUUID();
+  const dbSessions = await getDBSessions();
 
-  const newSession: Session = {
-    id: sessionId,
-    userId,
-    email,
-    refreshToken,
-    createdAt: new Date(),
-    expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
-    userRole: role,
-    userAgent,
-    ipAddress,
-  };
+  if (dbSessions) {
+    // Use PostgreSQL-backed sessions
+    const sessionToken = crypto.randomUUID();
+    const accessToken = ''; // Access token stored separately
+    const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // 7 days
 
-  sessions.push(newSession);
-  await saveSessions(sessions);
+    await dbSessions.createDBSession(
+      userId,
+      sessionToken,
+      accessToken,
+      refreshToken,
+      expiresAt,
+      { userAgent, ipAddress }
+    );
+
+    logger.debug('Session stored in database', { userId });
+  } else {
+    // Edge Runtime fallback - session stored in JWT only
+    logger.debug('Session storage skipped (Edge Runtime)', { userId });
+  }
 }
 
 /**
  * Revoke refresh token
  */
 export async function revokeRefreshToken(token: string): Promise<void> {
-  const blacklist = await loadBlacklist();
+  const dbSessions = await getDBSessions();
 
-  blacklist.push({
-    token,
-    blacklistedAt: new Date(),
-    expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // Match token expiry
-  });
-
-  await saveBlacklist(blacklist);
+  if (dbSessions) {
+    // Find and revoke the session by refresh token
+    const session = await dbSessions.getSessionByRefreshToken(token);
+    if (session) {
+      await dbSessions.revokeDBSession(session.id);
+      logger.debug('Session revoked via refresh token');
+    }
+  } else {
+    logger.debug('Token revocation skipped (Edge Runtime)');
+  }
 }
 
 /**
  * Clean up expired sessions and blacklisted tokens
  */
 export async function cleanupExpired(): Promise<void> {
-  const now = new Date();
+  const dbSessions = await getDBSessions();
 
-  // Clean sessions
-  const sessions = await loadSessions();
-  const activeSessions = sessions.filter(session => session.expiresAt > now);
-  await saveSessions(activeSessions);
-
-  // Clean blacklist
-  const blacklist = await loadBlacklist();
-  const activeBlacklist = blacklist.filter(item => item.expiresAt > now);
-  await saveBlacklist(activeBlacklist);
+  if (dbSessions) {
+    const count = await dbSessions.cleanupExpiredSessions();
+    logger.info('Cleaned up expired sessions', { count });
+  } else {
+    logger.debug('Session cleanup skipped (Edge Runtime)');
+  }
 }
 
 /**
  * Get user sessions
  */
 export async function getUserSessions(userId: string): Promise<Session[]> {
-  const sessions = await loadSessions();
-  return sessions.filter(session => session.userId === userId && session.expiresAt > new Date());
+  const dbSessions = await getDBSessions();
+
+  if (dbSessions) {
+    const dbResults = await dbSessions.getUserActiveSessions(userId);
+    // Map DB sessions to Session interface
+    return dbResults.map(s => ({
+      id: s.id,
+      userId: s.user_id,
+      refreshToken: '', // Not exposed for security
+      createdAt: s.created_at,
+      expiresAt: s.expires_at,
+      userAgent: s.user_agent || undefined,
+      ipAddress: s.ip_address || undefined,
+    }));
+  }
+
+  return [];
 }
 
 /**
  * Revoke all user sessions
  */
 export async function revokeAllUserSessions(userId: string): Promise<void> {
-  const sessions = await loadSessions();
-  const userSessions = sessions.filter(session => session.userId === userId);
+  const dbSessions = await getDBSessions();
 
-  // Blacklist all user's refresh tokens
-  const blacklist = await loadBlacklist();
-  for (const session of userSessions) {
-    blacklist.push({
-      token: session.refreshToken,
-      blacklistedAt: new Date(),
-      expiresAt: session.expiresAt,
-    });
+  if (dbSessions) {
+    const count = await dbSessions.revokeAllUserSessions(userId);
+    logger.info('Revoked all user sessions', { userId, count });
+  } else {
+    logger.debug('Session revocation skipped (Edge Runtime)', { userId });
   }
-
-  await saveBlacklist(blacklist);
-
-  // Remove user sessions
-  const remainingSessions = sessions.filter(session => session.userId !== userId);
-  await saveSessions(remainingSessions);
 }
 
 /**
- * Create new session (database stub)
+ * Create new session
  */
 export async function createSession(
   userId: string,
@@ -251,50 +244,93 @@ export async function createSession(
   ipAddress?: string
 ): Promise<{ refreshToken: string; sessionId: string }> {
   const refreshToken = await generateRefreshToken(userId, email, role);
-  await storeSession(userId, email, refreshToken, role, userAgent, ipAddress);
-  return {
-    refreshToken,
-    sessionId: crypto.randomUUID(),
-  };
+  const sessionId = crypto.randomUUID();
+
+  const dbSessions = await getDBSessions();
+  if (dbSessions) {
+    const accessToken = ''; // Access token managed separately
+    const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+
+    await dbSessions.createDBSession(
+      userId,
+      sessionId,
+      accessToken,
+      refreshToken,
+      expiresAt,
+      { userAgent, ipAddress }
+    );
+    logger.debug('Session created in database', { userId, sessionId });
+  }
+
+  return { refreshToken, sessionId };
 }
 
 /**
- * Get session by refresh token (database stub)
+ * Get session by refresh token
  */
 export async function getSessionByRefreshToken(token: string): Promise<Session | null> {
-  const sessions = await loadSessions();
-  return sessions.find(s => s.refreshToken === token) || null;
+  const dbSessions = await getDBSessions();
+
+  if (dbSessions) {
+    const dbSession = await dbSessions.getSessionByRefreshToken(token);
+    if (dbSession) {
+      return {
+        id: dbSession.id,
+        userId: dbSession.user_id,
+        refreshToken: '', // Not exposed for security
+        createdAt: dbSession.created_at,
+        expiresAt: dbSession.expires_at,
+        userAgent: dbSession.user_agent || undefined,
+        ipAddress: dbSession.ip_address || undefined,
+      };
+    }
+  }
+
+  return null;
 }
 
 /**
- * Update session last used timestamp (database stub)
+ * Update session last used timestamp
  */
 export async function updateSessionLastUsed(sessionId: string): Promise<void> {
-  // Deprecated: Use database sessions table for last_used_at updates
-  return;
+  const dbSessions = await getDBSessions();
+
+  if (dbSessions) {
+    await dbSessions.updateSessionActivity(sessionId);
+  }
 }
 
 /**
- * Revoke session (database stub)
+ * Revoke session
  */
 export async function revokeSession(sessionId: string): Promise<void> {
-  // Deprecated: Use database sessions table
-  return;
+  const dbSessions = await getDBSessions();
+
+  if (dbSessions) {
+    await dbSessions.revokeDBSession(sessionId);
+    logger.debug('Session revoked', { sessionId });
+  }
 }
 
 /**
- * Blacklist token (database stub)
+ * Blacklist token
  */
-export async function blacklistToken(token: string, expiresAt?: string): Promise<void> {
+export async function blacklistToken(token: string, _expiresAt?: string): Promise<void> {
   await revokeRefreshToken(token);
 }
 
 /**
- * Check if token is blacklisted (database stub)
+ * Check if token is blacklisted
  */
 export async function isTokenBlacklisted(token: string): Promise<boolean> {
-  const blacklist = await loadBlacklist();
-  return blacklist.some(item => item.token === token);
+  const dbSessions = await getDBSessions();
+
+  if (dbSessions) {
+    return await dbSessions.isTokenBlacklistedDB(token);
+  }
+
+  // In Edge Runtime, we can't check database - allow token (JWT verification still applies)
+  return false;
 }
 
 /**

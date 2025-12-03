@@ -8,6 +8,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getTokenFromRequest } from '@/lib/auth/cookies';
 import { refreshToken as refreshAccessToken } from '@/lib/auth/jwt';
 import { generateToken } from '@/lib/auth/jwt';
+import { authLogger as logger } from '@/lib/utils/logger';
 import {
   verifyRefreshToken,
   getSessionByRefreshToken,
@@ -72,7 +73,7 @@ export async function POST(request: NextRequest) {
     // Add CORS headers
     return addCorsHeaders(response, request.headers.get('origin'));
   } catch (error) {
-    console.error('Token refresh error:', error);
+    logger.error('Token refresh error', error);
     return NextResponse.json(
       { success: false, error: 'Internal server error' },
       { status: 500 }

@@ -15,6 +15,7 @@ import {
   revokeSession
 } from '@/lib/auth/session';
 import { createCorsPreflightResponse, addCorsHeaders } from '@/lib/utils/cors';
+import { authLogger as logger } from '@/lib/utils/logger';
 
 export async function POST(request: NextRequest) {
   try {
@@ -63,7 +64,7 @@ export async function POST(request: NextRequest) {
     // Add CORS headers
     return addCorsHeaders(response, request.headers.get('origin'));
   } catch (error) {
-    console.error('Logout error:', error);
+    logger.error('Logout error', error);
     return NextResponse.json(
       { success: false, error: 'Internal server error' },
       { status: 500 }

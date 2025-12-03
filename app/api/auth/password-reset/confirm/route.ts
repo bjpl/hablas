@@ -7,6 +7,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getUserByEmail, hashPassword } from '@/lib/auth/users';
 import { verifyPasswordResetToken, revokeAllUserSessions } from '@/lib/auth/session';
 import { validateRequest, passwordResetSchema } from '@/lib/auth/validation';
+import { authLogger as logger } from '@/lib/utils/logger';
 import { promises as fs } from 'fs';
 import path from 'path';
 
@@ -77,7 +78,7 @@ export async function POST(request: NextRequest) {
       message: 'Password has been reset successfully. Please log in with your new password.',
     });
   } catch (error) {
-    console.error('Password reset confirmation error:', error);
+    logger.error('Password reset confirmation error', error);
     return NextResponse.json(
       { success: false, error: 'Internal server error' },
       { status: 500 }

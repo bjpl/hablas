@@ -6,6 +6,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { checkAuth } from '@/lib/auth/middleware-helper';
 import { getPermissions } from '@/lib/auth/permissions';
+import { authLogger as logger } from '@/lib/utils/logger';
 
 export async function GET(request: NextRequest) {
   try {
@@ -31,7 +32,7 @@ export async function GET(request: NextRequest) {
       },
     });
   } catch (error) {
-    console.error('Get current user error:', error);
+    logger.error('Get current user error', error);
     return NextResponse.json(
       { success: false, error: 'Internal server error' },
       { status: 500 }

@@ -10,61 +10,26 @@ import { createSession } from '@/lib/auth/session';
 import { createAuthCookie } from '@/lib/auth/cookies';
 import { validateRequest, registerSchema } from '@/lib/auth/validation';
 
-// Rate limiting for registration
-const registrationAttempts = new Map<string, { count: number; resetAt: number }>();
-const MAX_REGISTRATION_ATTEMPTS = 3;
-const LOCKOUT_DURATION = 60 * 60 * 1000; // 1 hour
-
-function checkRegistrationRateLimit(ip: string): { allowed: boolean; error?: string } {
-  const now = Date.now();
-  const attempts = registrationAttempts.get(ip);
-
-  if (attempts) {
-    if (now < attempts.resetAt) {
-      if (attempts.count >= MAX_REGISTRATION_ATTEMPTS) {
-        return {
-          allowed: false,
-          error: `Too many registration attempts. Please try again in ${Math.ceil((attempts.resetAt - now) / 60000)} minutes.`,
-        };
-      }
-    } else {
-      registrationAttempts.delete(ip);
-    }
-  }
-
-  return { allowed: true };
-}
-
-function recordRegistrationAttempt(ip: string, success: boolean): void {
-  const now = Date.now();
-  const attempts = registrationAttempts.get(ip);
-
-  if (success) {
-    registrationAttempts.delete(ip);
-    return;
-  }
-
-  if (attempts) {
-    attempts.count += 1;
-  } else {
-    registrationAttempts.set(ip, {
-      count: 1,
-      resetAt: now + LOCKOUT_DURATION,
-    });
-  }
-}
+// SECURITY FIX: Use distributed rate limiting from centralized utility
+import { checkRateLimit, resetRateLimit } from '@/lib/utils/rate-limiter';
 
 export async function POST(request: NextRequest) {
   try {
     // Get client IP for rate limiting
     const ip = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown';
 
-    // Check rate limit
-    const rateLimit = checkRegistrationRateLimit(ip);
+    // SECURITY FIX: Use distributed rate limiting (Redis-backed when available)
+    const rateLimit = await checkRateLimit(ip, 'REGISTRATION');
     if (!rateLimit.allowed) {
       return NextResponse.json(
         { success: false, error: rateLimit.error },
-        { status: 429 }
+        {
+          status: 429,
+          headers: {
+            'X-RateLimit-Remaining': String(rateLimit.remaining),
+            'X-RateLimit-Reset': String(rateLimit.resetAt),
+          }
+        }
       );
     }
 
@@ -73,7 +38,7 @@ export async function POST(request: NextRequest) {
     const validation = validateRequest(registerSchema, body);
 
     if (!validation.success) {
-      recordRegistrationAttempt(ip, false);
+      // Rate limit already incremented by checkRateLimit
       return NextResponse.json(
         {
           success: false,
@@ -94,15 +59,15 @@ export async function POST(request: NextRequest) {
     const result = await createUser(email, password, userRole, name);
 
     if (!result.success || !result.user) {
-      recordRegistrationAttempt(ip, false);
+      // Rate limit already incremented by checkRateLimit
       return NextResponse.json(
         { success: false, error: result.error || 'Failed to create user' },
         { status: 400 }
       );
     }
 
-    // Record successful registration
-    recordRegistrationAttempt(ip, true);
+    // Reset rate limit on successful registration
+    await resetRateLimit(ip, 'REGISTRATION');
 
     // Generate tokens
     const accessToken = await generateToken(
@@ -143,7 +108,9 @@ export async function POST(request: NextRequest) {
 
     return response;
   } catch (error) {
-    console.error('Registration error:', error);
+    // Use structured logging instead of console
+    const { authLogger: logger } = await import('@/lib/utils/logger');
+    logger.error('Registration error', error);
     return NextResponse.json(
       { success: false, error: 'Internal server error' },
       { status: 500 }
@@ -151,14 +118,21 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// OPTIONS for CORS
-export async function OPTIONS() {
+// OPTIONS for CORS - SECURITY FIX: Use configured origins instead of wildcard
+export async function OPTIONS(request: NextRequest) {
+  const origin = request.headers.get('origin');
+  const { CORS } = await import('@/lib/config/security').then(m => m.SECURITY_CONFIG);
+
+  // Only allow configured origins
+  const allowedOrigin = CORS.isOriginAllowed(origin) ? origin : CORS.getAllowedOrigins()[0];
+
   return new NextResponse(null, {
     status: 200,
     headers: {
-      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': allowedOrigin || '',
       'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Allow-Headers': 'Content-Type, X-CSRF-Token',
+      'Access-Control-Allow-Credentials': 'true',
     },
   });
 }

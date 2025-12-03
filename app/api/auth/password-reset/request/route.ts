@@ -7,6 +7,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getUserByEmail } from '@/lib/auth/users';
 import { generatePasswordResetToken } from '@/lib/auth/session';
 import { validateRequest, passwordResetRequestSchema } from '@/lib/auth/validation';
+import { authLogger as logger } from '@/lib/utils/logger';
 
 // Rate limiting for password reset requests
 const resetAttempts = new Map<string, { count: number; resetAt: number }>();
@@ -98,8 +99,10 @@ export async function POST(request: NextRequest) {
     // In production, send email with reset link
     // For now, log the token (development only)
     if (process.env.NODE_ENV === 'development') {
-      console.log('Password Reset Token:', resetToken);
-      console.log('Reset Link:', `${process.env.NEXT_PUBLIC_APP_URL}/admin/reset-password?token=${resetToken}`);
+      logger.debug('Password reset token generated', {
+        resetToken,
+        resetLink: `${process.env.NEXT_PUBLIC_APP_URL}/admin/reset-password?token=${resetToken}`
+      });
     }
 
     // TODO: Send email with reset link
@@ -112,7 +115,7 @@ export async function POST(request: NextRequest) {
       ...(process.env.NODE_ENV === 'development' && { resetToken }),
     });
   } catch (error) {
-    console.error('Password reset request error:', error);
+    logger.error('Password reset request error', error);
     return NextResponse.json(
       { success: false, error: 'Internal server error' },
       { status: 500 }

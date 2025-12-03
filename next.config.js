@@ -3,9 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   compress: true,
   poweredByHeader: false,
-  // Allow build to proceed with ESLint warnings
+  // ESLint enabled during builds - warnings won't fail build
+  // SECURITY FIX: ESLint should run to catch issues (config uses warnings, not errors)
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
   // Allow build to proceed with TypeScript errors (type checking runs separately)
   typescript: {
