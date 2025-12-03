@@ -48,7 +48,9 @@ function shouldLog(level: LogLevel): boolean {
 
 // Format log entry
 function formatLogEntry(entry: LogEntry): string {
-  if (process.env.NODE_ENV === 'production') {
+  const nodeEnv = process.env.NODE_ENV as string;
+
+  if (nodeEnv === 'production') {
     // JSON format for production (easier to parse in log aggregators)
     return JSON.stringify(entry);
   }
@@ -71,7 +73,7 @@ function formatLogEntry(entry: LogEntry): string {
 
   if (entry.error) {
     output += `\n  Error: ${entry.error.message}`;
-    if (entry.error.stack && process.env.NODE_ENV !== 'production') {
+    if (entry.error.stack && nodeEnv !== 'production') {
       output += `\n  ${entry.error.stack}`;
     }
   }
