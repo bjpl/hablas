@@ -63,6 +63,9 @@ interface BlacklistedToken {
 // NOTE: These are lazy-loaded to avoid Edge Runtime issues in middleware
 // The middleware uses jose for JWT verification; database calls happen in API routes
 
+// Declare EdgeRuntime global for TypeScript
+declare const EdgeRuntime: string | undefined;
+
 /**
  * Check if we're in Edge Runtime (middleware context)
  * Edge Runtime cannot use Node.js modules like pg
