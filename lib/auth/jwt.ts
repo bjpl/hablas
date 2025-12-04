@@ -7,6 +7,7 @@ import { SignJWT, jwtVerify } from 'jose';
 import type { JWTPayload as JoseJWTPayload } from 'jose';
 import type { JWTPayload, UserSession } from './types';
 import { SECURITY_CONFIG } from '@/lib/config/security';
+import { authLogger } from '@/lib/utils/logger';
 
 // Get JWT secret with validation
 const JWT_SECRET = SECURITY_CONFIG.JWT.getSecret();
@@ -78,9 +79,9 @@ export async function verifyToken(token: string): Promise<JWTPayload | null> {
   } catch (error) {
     if (error instanceof Error) {
       if (error.message.includes('expired')) {
-        console.log('Token expired:', error.message);
+        authLogger.debug('Token expired', { reason: error.message });
       } else {
-        console.error('Token verification error:', error.message);
+        authLogger.warn('Token verification error', { reason: error.message });
       }
     }
     return null;

@@ -3,6 +3,8 @@
  * Centralized security settings for the application
  */
 
+import { authLogger } from '@/lib/utils/logger';
+
 // Cookie Configuration
 export const COOKIE_CONFIG = {
   // Standard cookie name across entire application
@@ -116,7 +118,7 @@ export const JWT_CONFIG = {
       if (process.env.NODE_ENV === 'production') {
         throw new Error('JWT_SECRET must be set in production');
       }
-      console.warn('⚠️  WARNING: Using default JWT_SECRET in development');
+      authLogger.warn('Using default JWT_SECRET in development - set JWT_SECRET env var for production');
       return 'development-secret-change-in-production';
     }
 
@@ -204,8 +206,7 @@ export const ADMIN_CONFIG = {
     if (process.env.NODE_ENV === 'production') {
       if (!process.env.ADMIN_PASSWORD) {
         const password = this.generateSecurePassword();
-        console.log('🔐 Generated secure admin password:', password);
-        console.log('⚠️  SAVE THIS PASSWORD - it will not be shown again!');
+        authLogger.warn('Generated secure admin password - SAVE THIS NOW', { password });
         return password;
       }
       return process.env.ADMIN_PASSWORD;

@@ -8,6 +8,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import type { User, UserSession, LoginCredentials } from './types';
 import { SECURITY_CONFIG } from '@/lib/config/security';
+import { authLogger } from '@/lib/utils/logger';
 
 const USERS_FILE = path.join(process.cwd(), 'data', 'users.json');
 const SALT_ROUNDS = 10;
@@ -22,7 +23,7 @@ async function loadUsers(): Promise<User[]> {
   } catch (error) {
     // If file doesn't exist (Vercel serverless), check environment variables
     if (process.env.ADMIN_EMAIL && process.env.ADMIN_PASSWORD) {
-      console.log('📁 File system unavailable - using environment variables for admin user');
+      authLogger.info('File system unavailable - using environment variables for admin user');
 
       // Check if password is already hashed (bcrypt hashes start with $2a$ or $2b$)
       const isHashed = process.env.ADMIN_PASSWORD.startsWith('$2a$') ||
@@ -45,7 +46,7 @@ async function loadUsers(): Promise<User[]> {
     }
 
     // No file and no env vars - return empty array
-    console.error('Error loading users:', error);
+    authLogger.error('Error loading users', error instanceof Error ? error : new Error(String(error)));
     return [];
   }
 }
@@ -59,10 +60,10 @@ async function saveUsers(users: User[]): Promise<void> {
   } catch (error) {
     // On Vercel serverless, filesystem is read-only - skip save
     if (process.env.VERCEL || process.env.NODE_ENV === 'production') {
-      console.log('⚠️ Serverless environment - skipping user save to file system');
+      authLogger.debug('Serverless environment - skipping user save to file system');
       return; // Skip file save on Vercel
     }
-    console.error('Error saving users:', error);
+    authLogger.error('Error saving users', error instanceof Error ? error : new Error(String(error)));
     throw new Error('Failed to save users');
   }
 }
@@ -216,7 +217,7 @@ export async function initializeDefaultAdmin(): Promise<void> {
     const adminEmail = SECURITY_CONFIG.ADMIN.getDefaultEmail();
     const adminPassword = SECURITY_CONFIG.ADMIN.getDefaultPassword();
 
-    console.log('🔐 No users found. Creating default admin user...');
+    authLogger.info('No users found - creating default admin user');
 
     const result = await createUser(
       adminEmail,
@@ -226,20 +227,19 @@ export async function initializeDefaultAdmin(): Promise<void> {
     );
 
     if (result.success) {
-      console.log(`✅ Default admin created: ${adminEmail}`);
+      authLogger.info('Default admin created', { email: adminEmail.replace(/@.*/, '@***') });
 
       // In production, if password was auto-generated, show it once
       if (process.env.NODE_ENV === 'production' && !process.env.ADMIN_PASSWORD) {
-        console.log('⚠️  IMPORTANT: Save this password - it will not be shown again!');
-        console.log(`   Password: ${adminPassword}`);
-        console.log('⚠️  For security, set ADMIN_PASSWORD in environment variables');
+        authLogger.warn('IMPORTANT: Auto-generated admin password - save it now', { password: adminPassword });
+        authLogger.warn('For security, set ADMIN_PASSWORD in environment variables');
       } else if (process.env.ADMIN_PASSWORD) {
-        console.log('⚠️  Using ADMIN_PASSWORD from environment variables');
+        authLogger.info('Using ADMIN_PASSWORD from environment variables');
       } else {
-        console.log('⚠️  Using auto-generated secure password (check logs above)');
+        authLogger.debug('Using auto-generated secure password');
       }
     } else {
-      console.error('❌ Failed to create default admin:', result.error);
+      authLogger.error('Failed to create default admin', new Error(result.error || 'Unknown error'));
     }
   }
 }
