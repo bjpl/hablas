@@ -1,0 +1,819 @@
+{
+  "project": "Hablas - Critical Security Fixes",
+  "version": "1.0.0",
+  "generated": "2025-12-02",
+  "stack": {
+    "framework": "Next.js 15",
+    "runtime": "Node.js with Edge Runtime support",
+    "database": "PostgreSQL",
+    "cache": "Redis (optional, with in-memory fallback)",
+    "storage": "Vercel Blob",
+    "language": "TypeScript"
+  },
+
+  "fixes": {
+    "1_csrf_protection": {
+      "priority": "CRITICAL",
+      "status": "READY_FOR_IMPLEMENTATION",
+      "description": "Implement CSRF token validation on all state-changing routes",
+
+      "current_state": {
+        "implementation": "lib/auth/csrf.ts exists with full CSRF implementation",
+        "integration": "NOT INTEGRATED - functions exist but not used in routes",
+        "middleware": "middleware.ts has no CSRF checks",
+        "routes": "No routes validate CSRF tokens"
+      },
+
+      "architecture": {
+        "strategy": "Double-submit cookie pattern with HMAC signatures",
+        "integration_point": "middleware.ts",
+        "affected_routes": [
+          "POST /api/auth/register",
+          "POST /api/auth/login",
+          "POST /api/auth/logout",
+          "POST /api/auth/refresh",
+          "POST /api/auth/password-reset/*",
+          "POST /api/content/*",
+          "PUT /api/content/*",
+          "DELETE /api/content/*",
+          "All other POST/PUT/PATCH/DELETE routes"
+        ]
+      },
+
+      "implementation_plan": {
+        "phase_1_middleware_integration": {
+          "file": "middleware.ts",
+          "changes": [
+            {
+              "type": "import",
+              "code": "import { verifyCsrfToken, requiresCsrfProtection } from '@/lib/auth/csrf';"
+            },
+            {
+              "type": "modify_function",
+              "function": "middleware",
+              "location": "before authentication check (line 76)",
+              "code": "// CSRF Protection for state-changing requests\nif (requiresCsrfProtection(request.method)) {\n  const csrfValid = await verifyCsrfToken(request);\n  if (!csrfValid) {\n    return NextResponse.json(\n      { error: 'Invalid CSRF token', message: 'CSRF validation failed' },\n      { status: 403 }\n    );\n  }\n}"
+            }
+          ]
+        },
+
+        "phase_2_token_generation_endpoint": {
+          "file": "app/api/auth/csrf/route.ts",
+          "action": "CREATE_NEW_FILE",
+          "content": {
+            "purpose": "Generate CSRF tokens for authenticated and unauthenticated users",
+            "methods": ["GET"],
+            "authentication": "OPTIONAL",
+            "response": {
+              "csrfToken": "string (64 chars hex)",
+              "expiresIn": "86400 (24 hours)"
+            }
+          },
+          "implementation": "export async function GET(request: NextRequest) {\n  const { token, signature } = createSignedCsrfToken();\n  const cookie = setCsrfCookie(token);\n  \n  const response = NextResponse.json({\n    success: true,\n    csrfToken: token,\n    expiresIn: 86400\n  });\n  \n  response.headers.set('Set-Cookie', cookie);\n  return response;\n}"
+        },
+
+        "phase_3_route_updates": {
+          "pattern": "Add CSRF validation to all state-changing routes",
+          "files": [
+            "app/api/auth/register/route.ts",
+            "app/api/auth/login/route.ts",
+            "app/api/auth/password-reset/request/route.ts",
+            "app/api/content/*/route.ts"
+          ],
+          "approach": "MIDDLEWARE_HANDLES_VALIDATION",
+          "note": "Routes don't need individual changes since middleware validates CSRF globally"
+        },
+
+        "phase_4_frontend_integration": {
+          "requirement": "Frontend must fetch and include CSRF token",
+          "steps": [
+            "1. Fetch CSRF token on app load: GET /api/auth/csrf",
+            "2. Store token in memory or sessionStorage",
+            "3. Include token in all state-changing requests: X-CSRF-Token header",
+            "4. Refresh token on expiry (24 hours)"
+          ],
+          "example": "headers: { 'X-CSRF-Token': csrfToken, 'Content-Type': 'application/json' }"
+        }
+      },
+
+      "rollback_strategy": {
+        "method": "Feature flag",
+        "implementation": "Add ENABLE_CSRF_PROTECTION env var",
+        "default": "true in production, false in development",
+        "rollback_steps": [
+          "1. Set ENABLE_CSRF_PROTECTION=false",
+          "2. Redeploy application",
+          "3. Investigate and fix issues",
+          "4. Re-enable with ENABLE_CSRF_PROTECTION=true"
+        ]
+      },
+
+      "testing": {
+        "unit_tests": "lib/auth/__tests__/csrf.test.ts",
+        "integration_tests": [
+          "POST request without CSRF token should fail (403)",
+          "POST request with invalid CSRF token should fail (403)",
+          "POST request with valid CSRF token should succeed",
+          "GET request should not require CSRF token"
+        ]
+      }
+    },
+
+    "2_session_management": {
+      "priority": "CRITICAL",
+      "status": "READY_FOR_IMPLEMENTATION",
+      "description": "Implement PostgreSQL-backed session storage with token blacklisting",
+
+      "current_state": {
+        "implementation": "lib/auth/session.ts has deprecated stubs",
+        "database": "sessions table exists (003_create_sessions_table.sql)",
+        "storage": "File-based stubs return empty arrays",
+        "blacklist": "In-memory only, not persistent"
+      },
+
+      "architecture": {
+        "database_schema": "sessions table with triggers and indexes",
+        "tables": {
+          "sessions": {
+            "purpose": "Active session tracking",
+            "key_fields": [
+              "id (UUID PK)",
+              "user_id (FK to users)",
+              "session_token (unique)",
+              "access_token_hash (SHA-256)",
+              "refresh_token_hash (SHA-256)",
+              "ip_address, user_agent, device_type",
+              "is_active, last_activity, expires_at",
+              "created_at, updated_at, revoked_at"
+            ],
+            "indexes": [
+              "idx_sessions_token (unique)",
+              "idx_sessions_user",
+              "idx_sessions_active (filtered)",
+              "idx_sessions_expires (filtered)",
+              "idx_sessions_cleanup (composite)"
+            ]
+          }
+        },
+        "functions": {
+          "cleanup_expired_sessions()": "Delete sessions expired >7 days",
+          "enforce_max_sessions_per_user()": "Limit to 5 sessions per user (trigger)"
+        }
+      },
+
+      "implementation_plan": {
+        "phase_1_database_layer": {
+          "file": "lib/db/sessions.ts",
+          "action": "CREATE_NEW_FILE",
+          "functions": [
+            {
+              "name": "createSession",
+              "params": ["userId", "email", "role", "userAgent", "ipAddress"],
+              "returns": "{ sessionId: UUID, refreshToken: string }",
+              "query": "INSERT INTO sessions (user_id, session_token, refresh_token_hash, ip_address, user_agent, expires_at) VALUES ..."
+            },
+            {
+              "name": "getSessionByToken",
+              "params": ["sessionToken"],
+              "returns": "Session | null",
+              "query": "SELECT * FROM sessions WHERE session_token = $1 AND is_active = true AND revoked_at IS NULL"
+            },
+            {
+              "name": "updateSessionActivity",
+              "params": ["sessionId"],
+              "returns": "void",
+              "query": "UPDATE sessions SET last_activity = CURRENT_TIMESTAMP WHERE id = $1"
+            },
+            {
+              "name": "revokeSession",
+              "params": ["sessionId"],
+              "returns": "void",
+              "query": "UPDATE sessions SET is_active = false, revoked_at = CURRENT_TIMESTAMP WHERE id = $1"
+            },
+            {
+              "name": "revokeAllUserSessions",
+              "params": ["userId"],
+              "returns": "number (count of revoked sessions)",
+              "query": "UPDATE sessions SET is_active = false, revoked_at = CURRENT_TIMESTAMP WHERE user_id = $1 AND is_active = true"
+            },
+            {
+              "name": "getUserActiveSessions",
+              "params": ["userId"],
+              "returns": "Session[]",
+              "query": "SELECT * FROM sessions WHERE user_id = $1 AND is_active = true AND expires_at > CURRENT_TIMESTAMP ORDER BY last_activity DESC"
+            },
+            {
+              "name": "cleanupExpiredSessions",
+              "params": [],
+              "returns": "number (count of deleted sessions)",
+              "query": "SELECT cleanup_expired_sessions()"
+            }
+          ]
+        },
+
+        "phase_2_update_session_ts": {
+          "file": "lib/auth/session.ts",
+          "changes": [
+            {
+              "type": "replace_function",
+              "function": "createSession",
+              "new_implementation": "Call lib/db/sessions.createSession() with PostgreSQL storage"
+            },
+            {
+              "type": "replace_function",
+              "function": "getSessionByRefreshToken",
+              "new_implementation": "Query sessions table by refresh_token_hash (SHA-256)"
+            },
+            {
+              "type": "replace_function",
+              "function": "revokeSession",
+              "new_implementation": "Call lib/db/sessions.revokeSession()"
+            },
+            {
+              "type": "replace_function",
+              "function": "blacklistToken",
+              "new_implementation": "Store in sessions table with revoked_at timestamp"
+            },
+            {
+              "type": "replace_function",
+              "function": "isTokenBlacklisted",
+              "new_implementation": "Check sessions table: revoked_at IS NOT NULL OR is_active = false"
+            }
+          ]
+        },
+
+        "phase_3_token_hashing": {
+          "purpose": "Store hashed tokens in database for security",
+          "implementation": {
+            "algorithm": "SHA-256",
+            "location": "lib/auth/session.ts",
+            "function": "async function hashToken(token: string): Promise<string> {\n  const encoder = new TextEncoder();\n  const data = encoder.encode(token);\n  const hashBuffer = await crypto.subtle.digest('SHA-256', data);\n  const hashArray = Array.from(new Uint8Array(hashBuffer));\n  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');\n}"
+          },
+          "usage": "Store hash in sessions.access_token_hash and sessions.refresh_token_hash"
+        },
+
+        "phase_4_middleware_integration": {
+          "file": "middleware.ts",
+          "changes": [
+            {
+              "location": "Line 98-104 (isTokenBlacklisted check)",
+              "modification": "Update to query sessions table instead of in-memory blacklist",
+              "code": "const sessionValid = await isSessionActive(token);\nif (!sessionValid) {\n  const loginUrl = new URL('/admin/login', request.url);\n  loginUrl.searchParams.set('error', 'session-revoked');\n  return NextResponse.redirect(loginUrl);\n}"
+            }
+          ]
+        },
+
+        "phase_5_cleanup_cron": {
+          "purpose": "Periodic cleanup of expired sessions",
+          "options": [
+            {
+              "method": "Vercel Cron Job",
+              "file": "app/api/cron/cleanup-sessions/route.ts",
+              "schedule": "0 2 * * * (daily at 2 AM)",
+              "implementation": "export async function GET(request: NextRequest) {\n  const authHeader = request.headers.get('authorization');\n  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {\n    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });\n  }\n  const count = await cleanupExpiredSessions();\n  return NextResponse.json({ success: true, deletedSessions: count });\n}"
+            },
+            {
+              "method": "Application Startup",
+              "file": "lib/db/pool.ts",
+              "implementation": "Run cleanup on app initialization (non-blocking)"
+            }
+          ]
+        }
+      },
+
+      "rollback_strategy": {
+        "method": "Dual-write pattern during migration",
+        "steps": [
+          "1. Deploy with both file-based and PostgreSQL storage",
+          "2. Write to both, read from PostgreSQL",
+          "3. Monitor for 24 hours",
+          "4. If issues arise, switch read back to file-based",
+          "5. Once stable, remove file-based code"
+        ]
+      },
+
+      "data_migration": {
+        "required": false,
+        "reason": "File-based storage contains empty stubs only"
+      }
+    },
+
+    "3_cors_hardening": {
+      "priority": "HIGH",
+      "status": "PARTIALLY_COMPLETE",
+      "description": "Replace wildcard CORS with environment-based origin validation",
+
+      "current_state": {
+        "register_route": "Uses wildcard '*' in OPTIONS handler (line 159)",
+        "cors_utility": "lib/utils/cors.ts exists with proper validation",
+        "other_routes": "login/route.ts uses proper CORS utilities",
+        "config": "SECURITY_CONFIG.CORS.getAllowedOrigins() implemented"
+      },
+
+      "architecture": {
+        "strategy": "Centralized CORS configuration with environment-based validation",
+        "config_location": "lib/config/security.ts - CORS_CONFIG",
+        "utility_location": "lib/utils/cors.ts",
+        "allowed_origins": {
+          "production": [
+            "process.env.NEXT_PUBLIC_APP_URL",
+            "process.env.ALLOWED_ORIGIN_1",
+            "process.env.ALLOWED_ORIGIN_2"
+          ],
+          "development": [
+            "http://localhost:3000",
+            "http://localhost:3001",
+            "http://127.0.0.1:3000",
+            "http://127.0.0.1:3001"
+          ]
+        }
+      },
+
+      "implementation_plan": {
+        "phase_1_fix_register_route": {
+          "file": "app/api/auth/register/route.ts",
+          "changes": [
+            {
+              "type": "import",
+              "add": "import { createCorsPreflightResponse } from '@/lib/utils/cors';"
+            },
+            {
+              "type": "replace_function",
+              "function": "OPTIONS",
+              "old_code": "export async function OPTIONS() {\n  return new NextResponse(null, {\n    status: 200,\n    headers: {\n      'Access-Control-Allow-Origin': '*',\n      'Access-Control-Allow-Methods': 'POST, OPTIONS',\n      'Access-Control-Allow-Headers': 'Content-Type',\n    },\n  });\n}",
+              "new_code": "export async function OPTIONS(request: NextRequest) {\n  return createCorsPreflightResponse(request.headers.get('origin'));\n}"
+            },
+            {
+              "type": "add_to_function",
+              "function": "POST",
+              "location": "before final return (line 144)",
+              "code": "return addCorsHeaders(response, request.headers.get('origin'));"
+            }
+          ]
+        },
+
+        "phase_2_audit_all_routes": {
+          "description": "Scan all API routes for CORS patterns",
+          "files_to_check": [
+            "app/api/auth/*/route.ts",
+            "app/api/content/*/route.ts",
+            "app/api/audio/*/route.ts"
+          ],
+          "validation_pattern": [
+            "1. OPTIONS handler exists",
+            "2. Uses createCorsPreflightResponse() or getCorsHeaders()",
+            "3. No hardcoded origins or wildcards",
+            "4. POST/PUT/DELETE responses use addCorsHeaders()"
+          ]
+        },
+
+        "phase_3_environment_validation": {
+          "file": "lib/config/security.ts",
+          "enhancement": "Add startup validation",
+          "code": "// Add to CORS_CONFIG\nvalidateConfig(): void {\n  if (process.env.NODE_ENV === 'production') {\n    const origins = this.getAllowedOrigins();\n    if (origins.length === 0 || origins.includes('*')) {\n      throw new Error('CRITICAL: Production CORS configuration must specify allowed origins. Set NEXT_PUBLIC_APP_URL in environment.');\n    }\n  }\n}"
+        }
+      },
+
+      "rollback_strategy": {
+        "method": "Environment variable toggle",
+        "steps": [
+          "1. Add CORS_STRICT_MODE=false env var to disable validation",
+          "2. CORS utilities fall back to wildcard when strict mode disabled",
+          "3. Re-enable after fixing client issues"
+        ]
+      },
+
+      "testing": {
+        "scenarios": [
+          "Request from allowed origin -> Allow with CORS headers",
+          "Request from disallowed origin -> Reject (403 or no CORS headers)",
+          "Request without Origin header -> Allow (same-origin)",
+          "Preflight OPTIONS request -> Return 204 with correct headers",
+          "Development mode -> Allow all origins",
+          "Production mode -> Strict origin validation"
+        ]
+      }
+    },
+
+    "4_distributed_rate_limiting": {
+      "priority": "MEDIUM",
+      "status": "INFRASTRUCTURE_READY",
+      "description": "Replace in-memory rate limiting with Redis-backed distributed limiting",
+
+      "current_state": {
+        "implementation": "lib/utils/rate-limiter.ts exists with Redis support",
+        "redis_client": "lib/db/redis.ts provides RedisManager singleton",
+        "usage": "login/route.ts uses checkRateLimit() correctly",
+        "issue": "register/route.ts still uses in-memory Map (lines 14-55)"
+      },
+
+      "architecture": {
+        "primary_storage": "Redis (via Upstash or self-hosted)",
+        "fallback_storage": "In-memory Map (automatic fallback)",
+        "rate_limiter": "lib/utils/rate-limiter.ts",
+        "redis_manager": "lib/db/redis.ts",
+        "config": "SECURITY_CONFIG.RATE_LIMIT"
+      },
+
+      "implementation_plan": {
+        "phase_1_fix_register_route": {
+          "file": "app/api/auth/register/route.ts",
+          "changes": [
+            {
+              "type": "remove",
+              "lines": "14-55",
+              "description": "Delete in-memory rate limiting code (registrationAttempts Map and helper functions)"
+            },
+            {
+              "type": "modify_function",
+              "function": "POST",
+              "location": "lines 59-68",
+              "old_code": "const rateLimit = checkRegistrationRateLimit(ip);\nif (!rateLimit.allowed) {\n  return NextResponse.json(\n    { success: false, error: rateLimit.error },\n    { status: 429 }\n  );\n}",
+              "new_code": "const rateLimit = await checkRateLimit(ip, 'REGISTRATION');\nif (!rateLimit.allowed) {\n  return NextResponse.json(\n    {\n      success: false,\n      error: rateLimit.error,\n      remaining: rateLimit.remaining,\n      resetAt: rateLimit.resetAt\n    },\n    { status: 429 }\n  );\n}"
+            },
+            {
+              "type": "modify_function",
+              "function": "POST",
+              "location": "line 76",
+              "old_code": "recordRegistrationAttempt(ip, false);",
+              "new_code": "// Rate limit automatically tracked by checkRateLimit"
+            },
+            {
+              "type": "modify_function",
+              "function": "POST",
+              "location": "line 105",
+              "old_code": "recordRegistrationAttempt(ip, true);",
+              "new_code": "await resetRateLimit(ip, 'REGISTRATION');"
+            }
+          ]
+        },
+
+        "phase_2_redis_setup": {
+          "options": [
+            {
+              "provider": "Upstash Redis",
+              "setup": [
+                "1. Create Upstash Redis database at https://upstash.com",
+                "2. Copy REDIS_URL from Upstash dashboard",
+                "3. Add to .env: REDIS_URL=rediss://...",
+                "4. RedisManager auto-connects on app start"
+              ],
+              "pricing": "Free tier: 10,000 commands/day"
+            },
+            {
+              "provider": "Vercel KV (Upstash)",
+              "setup": [
+                "1. Enable Vercel KV in project settings",
+                "2. Auto-configures REDIS_URL",
+                "3. Same Upstash backend"
+              ]
+            },
+            {
+              "provider": "Self-hosted Redis",
+              "setup": [
+                "1. Deploy Redis instance",
+                "2. Set REDIS_HOST and REDIS_PORT",
+                "3. Optional: REDIS_PASSWORD"
+              ]
+            }
+          ],
+          "fallback": "If Redis unavailable, automatically uses in-memory Map (logged as warning)"
+        },
+
+        "phase_3_audit_other_routes": {
+          "description": "Replace any remaining in-memory rate limiters",
+          "files_to_check": [
+            "app/api/auth/password-reset/request/route.ts",
+            "app/api/auth/password-reset/confirm/route.ts",
+            "app/api/content/*/route.ts"
+          ],
+          "pattern": "Search for 'new Map<' or 'Map()' in API routes"
+        },
+
+        "phase_4_monitoring": {
+          "file": "app/api/admin/health/route.ts",
+          "action": "CREATE_OR_UPDATE",
+          "endpoint": "GET /api/admin/health",
+          "response": {
+            "redis": {
+              "connected": "boolean",
+              "mode": "'redis' | 'memory'",
+              "responseTime": "number (ms)"
+            },
+            "rateLimit": {
+              "provider": "'redis' | 'memory'",
+              "statsAvailable": "boolean"
+            }
+          }
+        }
+      },
+
+      "rollback_strategy": {
+        "method": "Automatic fallback (built-in)",
+        "behavior": "If Redis connection fails, rate-limiter automatically uses in-memory Map",
+        "manual_disable": "Set REDIS_URL= (empty) to force in-memory mode",
+        "verification": "Check logs for 'Redis not configured - using in-memory rate limiting'"
+      },
+
+      "testing": {
+        "scenarios": [
+          "Redis available -> Use Redis for rate limiting",
+          "Redis unavailable -> Fallback to memory (logged warning)",
+          "Rate limit exceeded -> Return 429 with resetAt timestamp",
+          "Successful auth -> Reset rate limit counter",
+          "Multiple instances -> Share rate limit state (Redis only)"
+        ]
+      }
+    },
+
+    "5_code_quality": {
+      "priority": "LOW",
+      "status": "REQUIRES_AUDIT",
+      "description": "Replace console.log with structured logging and remove any types",
+
+      "current_state": {
+        "console_logs": "941 instances across codebase (estimate)",
+        "any_types": "69 instances (estimate)",
+        "logger": "No centralized logging utility"
+      },
+
+      "architecture": {
+        "logging_strategy": "Structured logging with environment-based levels",
+        "logger_location": "lib/utils/logger.ts",
+        "log_levels": ["error", "warn", "info", "debug"],
+        "production_behavior": "Only log errors and warnings",
+        "development_behavior": "Log all levels"
+      },
+
+      "implementation_plan": {
+        "phase_1_create_logger": {
+          "file": "lib/utils/logger.ts",
+          "action": "CREATE_NEW_FILE",
+          "implementation": "export type LogLevel = 'error' | 'warn' | 'info' | 'debug';\n\nexport interface LogContext {\n  [key: string]: any;\n}\n\nclass Logger {\n  private minLevel: LogLevel;\n  \n  constructor() {\n    const env = process.env.NODE_ENV;\n    this.minLevel = env === 'production' ? 'warn' : 'debug';\n  }\n  \n  private shouldLog(level: LogLevel): boolean {\n    const levels: LogLevel[] = ['error', 'warn', 'info', 'debug'];\n    return levels.indexOf(level) <= levels.indexOf(this.minLevel);\n  }\n  \n  private formatMessage(level: LogLevel, message: string, context?: LogContext): string {\n    const timestamp = new Date().toISOString();\n    const ctx = context ? ` ${JSON.stringify(context)}` : '';\n    return `[${timestamp}] [${level.toUpperCase()}] ${message}${ctx}`;\n  }\n  \n  error(message: string, error?: Error, context?: LogContext): void {\n    if (!this.shouldLog('error')) return;\n    const ctx = { ...context, error: error?.message, stack: error?.stack };\n    console.error(this.formatMessage('error', message, ctx));\n  }\n  \n  warn(message: string, context?: LogContext): void {\n    if (!this.shouldLog('warn')) return;\n    console.warn(this.formatMessage('warn', message, context));\n  }\n  \n  info(message: string, context?: LogContext): void {\n    if (!this.shouldLog('info')) return;\n    console.info(this.formatMessage('info', message, context));\n  }\n  \n  debug(message: string, context?: LogContext): void {\n    if (!this.shouldLog('debug')) return;\n    console.log(this.formatMessage('debug', message, context));\n  }\n}\n\nexport const logger = new Logger();"
+        },
+
+        "phase_2_replace_console_logs": {
+          "strategy": "Incremental replacement by module",
+          "priority_order": [
+            "1. Authentication and security modules (lib/auth/*)",
+            "2. API routes (app/api/*)",
+            "3. Database layer (lib/db/*)",
+            "4. Utilities (lib/utils/*)",
+            "5. Components (components/*)"
+          ],
+          "replacement_patterns": [
+            {
+              "old": "console.error('Error:', error)",
+              "new": "logger.error('Error description', error, { module: 'auth' })"
+            },
+            {
+              "old": "console.warn('Warning message')",
+              "new": "logger.warn('Warning message', { module: 'auth' })"
+            },
+            {
+              "old": "console.log('Info message')",
+              "new": "logger.info('Info message', { module: 'auth' })"
+            },
+            {
+              "old": "console.log('Debug:', data)",
+              "new": "logger.debug('Debug message', { data, module: 'auth' })"
+            }
+          ],
+          "automated_tool": "eslint rule: 'no-console': ['error', { allow: [] }]"
+        },
+
+        "phase_3_remove_any_types": {
+          "strategy": "Progressive type strengthening",
+          "priority_areas": [
+            "1. Authentication types (lib/auth/types.ts)",
+            "2. API route handlers",
+            "3. Database query results",
+            "4. Utility functions"
+          ],
+          "patterns": [
+            {
+              "category": "Error handlers",
+              "old": "catch (error: any)",
+              "new": "catch (error: unknown) {\n  const err = error as Error;\n  logger.error('Error message', err);\n}"
+            },
+            {
+              "category": "External libraries",
+              "old": "response: any",
+              "new": "response: Response | NextResponse"
+            },
+            {
+              "category": "Generic objects",
+              "old": "data: any",
+              "new": "data: Record<string, unknown> or specific interface"
+            }
+          ],
+          "eslint_rule": "@typescript-eslint/no-explicit-any: error"
+        },
+
+        "phase_4_logging_best_practices": {
+          "guidelines": [
+            "Always include module/component context",
+            "Log errors with full error object, not just message",
+            "Use structured context objects, not string concatenation",
+            "Include relevant IDs (userId, sessionId, requestId)",
+            "Never log sensitive data (passwords, tokens, PII)",
+            "Use appropriate log levels (error for failures, warn for recoverable issues)",
+            "Add request IDs for request tracing"
+          ],
+          "example": "logger.error('Failed to create user', error, {\n  module: 'auth',\n  function: 'createUser',\n  email: email.replace(/@.*/, '@***'), // Partially redacted\n  requestId: request.headers.get('x-request-id')\n});"
+        }
+      },
+
+      "rollback_strategy": {
+        "method": "Environment variable toggle",
+        "implementation": "Logger checks LOG_LEVEL env var",
+        "levels": {
+          "LOG_LEVEL=error": "Only errors",
+          "LOG_LEVEL=warn": "Errors and warnings",
+          "LOG_LEVEL=info": "Errors, warnings, info",
+          "LOG_LEVEL=debug": "All logs"
+        }
+      },
+
+      "automation": {
+        "eslint_config": {
+          "file": "eslint.config.mjs",
+          "rules": {
+            "no-console": ["error", { "allow": [] }],
+            "@typescript-eslint/no-explicit-any": "error",
+            "@typescript-eslint/explicit-module-boundary-types": "warn"
+          }
+        },
+        "pre_commit_hook": {
+          "file": ".husky/pre-commit",
+          "command": "npm run lint && npm run typecheck"
+        }
+      }
+    }
+  },
+
+  "implementation_sequence": {
+    "phase_1_critical_security": {
+      "order": 1,
+      "duration": "2-3 days",
+      "fixes": [
+        "1_csrf_protection",
+        "2_session_management",
+        "3_cors_hardening"
+      ],
+      "rationale": "Address critical security vulnerabilities first"
+    },
+
+    "phase_2_infrastructure": {
+      "order": 2,
+      "duration": "1-2 days",
+      "fixes": [
+        "4_distributed_rate_limiting"
+      ],
+      "rationale": "Improve scalability and resilience"
+    },
+
+    "phase_3_code_quality": {
+      "order": 3,
+      "duration": "3-5 days (incremental)",
+      "fixes": [
+        "5_code_quality"
+      ],
+      "rationale": "Can be done incrementally without blocking deployment"
+    }
+  },
+
+  "deployment_strategy": {
+    "approach": "Progressive rollout with feature flags",
+    "steps": [
+      {
+        "step": 1,
+        "action": "Deploy to staging environment",
+        "validation": "Run full test suite, manual QA"
+      },
+      {
+        "step": 2,
+        "action": "Deploy to production with feature flags disabled",
+        "validation": "Verify deployment successful, no regressions"
+      },
+      {
+        "step": 3,
+        "action": "Enable CSRF protection (ENABLE_CSRF_PROTECTION=true)",
+        "validation": "Monitor error rates, check frontend integration"
+      },
+      {
+        "step": 4,
+        "action": "Enable PostgreSQL sessions (SESSION_STORAGE=postgres)",
+        "validation": "Monitor session creation/validation, check database performance"
+      },
+      {
+        "step": 5,
+        "action": "Enable strict CORS (CORS_STRICT_MODE=true)",
+        "validation": "Monitor CORS errors, validate allowed origins"
+      },
+      {
+        "step": 6,
+        "action": "Connect Redis for rate limiting",
+        "validation": "Verify Redis connectivity, monitor rate limit accuracy"
+      }
+    ],
+    "monitoring": {
+      "metrics": [
+        "Authentication success/failure rates",
+        "Session creation/validation latency",
+        "CSRF validation failures",
+        "CORS rejection rates",
+        "Rate limit hits",
+        "Redis connection health"
+      ],
+      "alerts": [
+        "CSRF validation failure rate >5%",
+        "Session database query latency >100ms",
+        "Redis connection down",
+        "Rate limit false positives"
+      ]
+    }
+  },
+
+  "testing_requirements": {
+    "unit_tests": {
+      "csrf": "lib/auth/__tests__/csrf.test.ts",
+      "sessions": "lib/db/__tests__/sessions.test.ts",
+      "rate_limiter": "lib/utils/__tests__/rate-limiter.test.ts",
+      "logger": "lib/utils/__tests__/logger.test.ts"
+    },
+
+    "integration_tests": {
+      "auth_flow": "Complete auth flow with CSRF tokens",
+      "session_lifecycle": "Create, validate, revoke sessions",
+      "rate_limiting": "Distributed rate limiting across requests",
+      "cors": "Origin validation and rejection"
+    },
+
+    "e2e_tests": {
+      "scenarios": [
+        "User registration with CSRF protection",
+        "Login with session creation",
+        "Multi-device session management",
+        "Rate limit enforcement",
+        "CORS preflight and actual requests"
+      ]
+    }
+  },
+
+  "documentation_requirements": {
+    "files_to_create": [
+      "docs/security/CSRF_PROTECTION.md",
+      "docs/security/SESSION_MANAGEMENT.md",
+      "docs/security/CORS_CONFIGURATION.md",
+      "docs/infrastructure/REDIS_SETUP.md",
+      "docs/development/LOGGING_GUIDE.md"
+    ],
+
+    "api_documentation": [
+      "Add CSRF token requirement to API docs",
+      "Document rate limit headers",
+      "Document session endpoints"
+    ],
+
+    "environment_variables": [
+      "ENABLE_CSRF_PROTECTION (boolean, default true)",
+      "SESSION_STORAGE (postgres|memory, default postgres)",
+      "CORS_STRICT_MODE (boolean, default true in production)",
+      "REDIS_URL (optional, for distributed rate limiting)",
+      "LOG_LEVEL (error|warn|info|debug, default warn in production)"
+    ]
+  },
+
+  "risk_assessment": {
+    "csrf_protection": {
+      "risk": "MEDIUM",
+      "concern": "Frontend must be updated to include CSRF tokens",
+      "mitigation": "Comprehensive testing, staged rollout, feature flag"
+    },
+
+    "session_management": {
+      "risk": "LOW",
+      "concern": "Database performance impact",
+      "mitigation": "Indexes optimized, connection pooling, cleanup cron job"
+    },
+
+    "cors_hardening": {
+      "risk": "MEDIUM",
+      "concern": "May block legitimate requests if origins not configured",
+      "mitigation": "Validate allowed origins before deployment, feature flag for rollback"
+    },
+
+    "rate_limiting": {
+      "risk": "LOW",
+      "concern": "Redis unavailability",
+      "mitigation": "Automatic fallback to in-memory, monitoring"
+    },
+
+    "code_quality": {
+      "risk": "VERY_LOW",
+      "concern": "Incremental changes may introduce bugs",
+      "mitigation": "ESLint enforcement, peer review, test coverage"
+    }
+  }
+}

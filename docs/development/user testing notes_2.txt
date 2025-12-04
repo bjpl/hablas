@@ -1,0 +1,80 @@
+Hablas User Testing - Round 2 Notes (Organized)
+Overview
+This is a follow-up testing round for Hablas, focusing on the admin portal and content review functionality. The core issue remains: the review/edit workflow is not fully implemented or integrated.
+
+Public Home Page
+ItemStatusNotesHomepage loads✅ PassEverything looks goodFooter location text❌ IncorrectSays "Made in Medellín" but should say "Made in California"
+Action Items:
+
+ Update footer text from "Made in Medellín" to "Made in California"
+
+
+Admin Portal
+Authentication
+ItemStatusNotesAdmin login✅ PassCredentials work correctly
+
+Content Review/Edit Workflow
+This is the core area needing attention. The review interface has multiple tabs, but none are functioning as intended.
+Resource 1 Testing
+TabStatusNotesReference tab❌ BlankShows "intercontent" label but nothing preloaded; should have contentVerify Audio tab❌ FailNothing loadingCompare All tab❌ IncompleteOnly shows "Reference content" with nothing integrated
+Finding: Audio and resource files are not loading at all for this resource.
+Resource 2 Testing
+TabStatusNotesReference tab❌ BlankStill not showing anything; not fully implemented/integratedAudio Script tab⚠️ ProgressBetter direction, more developed than Resource 1Verify Audio tab❌ ErrorDisplaying an errorCompare All tab❌ IncompleteReference content (left) shows nothing; Audio Script (right) partially working
+
+Core Problem Analysis
+The review workflow has structural issues that need to be addressed before further development:
+Current State:
+
+Multiple tabs exist (Reference, Audio Script, Verify Audio, Compare All)
+Tabs are inconsistently implemented across resources
+Data/content not loading or integrating properly
+The conceptual model for these tabs isn't clear
+
+What's Needed:
+A thoughtful, intentional design for the review workflow that:
+
+Aligns with modern conventions for content review tasks
+Has clear purpose for each tab/view
+Is consistently implemented across all resources
+Properly integrates audio, transcripts, and text content
+
+
+Summary: Action Items
+Critical (Blocking Review Workflow)
+
+Fix content loading in Reference tab (currently blank)
+Fix Verify Audio tab errors
+Ensure audio and resource files load consistently across all resources
+Design and document the intended review workflow before further implementation
+
+High Priority (Architecture/Design)
+
+Rethink tab structure and naming conventions
+Define what each tab should display and why
+Research modern conventions for audio/transcript/content review workflows
+Ensure Compare All view has clear purpose and both panels populated
+
+Low Priority (Polish)
+
+Update footer from "Made in Medellín" to "Made in California"
+
+
+Recommendation: Review Workflow Design Session
+Before continuing to build out the review interface, I'd suggest stepping back to define the workflow clearly. Here are some questions to consider:
+What content types need to be reviewed?
+
+Audio recordings
+Audio transcripts
+Web/text content
+PDF/downloadable resources
+
+What are the review tasks?
+
+Verify audio quality and accuracy
+Check transcript alignment with audio
+Compare source content across formats
+Edit and approve final versions
+
+What views would support these tasks?
+Based on your earlier feedback about the "triple comparison," a cleaner model might be:
+ViewLeft PanelRight PanelPurposeAudio ReviewAudio player + synced transcriptEdit/correction interfaceVerify and correct audio/transcriptContent ReviewOriginal source contentRendered preview (as it appears on site)Verify web content accuracyDownload ReviewSource file (markdown/text)PDF preview (exact output)Verify downloadable resourceCompare AllSide-by-side of all three formats—Final verification before publish

@@ -75,6 +75,7 @@
     "react-dom": "^18.3.1",
     "react-markdown": "^10.1.0",
     "redis": "^4.7.0",
+    "ruvector": "^0.1.26",
     "zod": "^4.1.12"
   },
   "devDependencies": {

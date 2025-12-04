@@ -1,0 +1,722 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "created": "2025-12-02",
+    "coordinator": "queen-coordinator",
+    "project": "hablas",
+    "status": "in-progress",
+    "methodology": "SPARC"
+  },
+  "critical_blockers": {
+    "security": [
+      {
+        "id": "CSRF-001",
+        "title": "CSRF Protection Not Enforced",
+        "severity": "CRITICAL",
+        "impact": "Application vulnerable to cross-site request forgery attacks",
+        "current_state": "CSRF middleware implemented but never validated",
+        "files_affected": [
+          "middleware.ts",
+          "app/api/**/route.ts"
+        ],
+        "sparc_phase": "specification"
+      },
+      {
+        "id": "SESSION-001",
+        "title": "Session Management Non-Functional",
+        "severity": "CRITICAL",
+        "impact": "User sessions cannot be maintained, auth system broken",
+        "current_state": "Deprecated session stub implementations",
+        "files_affected": [
+          "lib/auth/session.ts",
+          "lib/auth/middleware.ts"
+        ],
+        "sparc_phase": "specification"
+      },
+      {
+        "id": "CORS-001",
+        "title": "CORS Wildcard on Auth Endpoints",
+        "severity": "CRITICAL",
+        "impact": "Authentication endpoints exposed to any origin",
+        "current_state": "middleware.ts has wildcard CORS on /api/auth/*",
+        "files_affected": [
+          "middleware.ts",
+          "next.config.js"
+        ],
+        "sparc_phase": "specification"
+      },
+      {
+        "id": "RATE-001",
+        "title": "Rate Limiting Not Distributed-Safe",
+        "severity": "CRITICAL",
+        "impact": "Rate limiting bypassed in multi-instance deployments",
+        "current_state": "In-memory rate limiting, no Redis coordination",
+        "files_affected": [
+          "lib/rate-limit/config.ts",
+          "lib/rate-limit/redis-limiter.ts"
+        ],
+        "sparc_phase": "specification"
+      }
+    ]
+  },
+  "high_priority": {
+    "code_quality": [
+      {
+        "id": "CONSOLE-001",
+        "title": "Remove 941 console.log Statements",
+        "severity": "HIGH",
+        "impact": "Performance degradation, security exposure, production noise",
+        "current_state": "941 console.log statements across codebase",
+        "automated_fix": true,
+        "estimated_time": "2 hours",
+        "sparc_phase": "specification"
+      },
+      {
+        "id": "TYPES-001",
+        "title": "Fix 69 TypeScript 'any' Types",
+        "severity": "HIGH",
+        "impact": "Type safety compromised, runtime errors possible",
+        "current_state": "69 instances of 'any' type usage",
+        "automated_fix": false,
+        "estimated_time": "8 hours",
+        "sparc_phase": "specification"
+      },
+      {
+        "id": "ESLINT-001",
+        "title": "ESLint Disabled in Production Builds",
+        "severity": "HIGH",
+        "impact": "Code quality checks bypassed, issues shipped to production",
+        "current_state": "ESLint errors ignored during next build",
+        "files_affected": [
+          "next.config.js",
+          "eslint.config.mjs"
+        ],
+        "sparc_phase": "specification"
+      }
+    ],
+    "testing": [
+      {
+        "id": "TEST-001",
+        "title": "Implement 141 Skipped Tests",
+        "severity": "HIGH",
+        "impact": "Incomplete test coverage, untested functionality",
+        "current_state": "141 tests marked as .skip or .todo",
+        "estimated_time": "16 hours",
+        "sparc_phase": "specification"
+      }
+    ]
+  },
+  "implementation_phases": [
+    {
+      "phase": 1,
+      "name": "Security Fixes - Critical Blockers",
+      "duration": "3 days",
+      "dependencies": [],
+      "tasks": [
+        {
+          "task_id": "1.1",
+          "title": "Fix CSRF Protection",
+          "assignee": "security-specialist",
+          "sparc_steps": {
+            "specification": {
+              "requirements": [
+                "CSRF tokens must be validated on all state-changing requests",
+                "Token generation must use cryptographically secure random",
+                "Tokens must be bound to user sessions",
+                "Double-submit cookie pattern implementation",
+                "Synchronizer token pattern for forms"
+              ],
+              "success_criteria": [
+                "All POST/PUT/DELETE/PATCH endpoints validate CSRF tokens",
+                "Token mismatch returns 403 Forbidden",
+                "Tokens expire with session",
+                "Tests verify protection on all endpoints"
+              ]
+            },
+            "pseudocode": {
+              "approach": "Implement double-submit cookie pattern with session binding",
+              "steps": [
+                "Generate CSRF token on session creation",
+                "Store token in httpOnly cookie and session",
+                "Middleware validates token on non-GET requests",
+                "Return 403 on mismatch or missing token",
+                "Provide token to client via secure endpoint"
+              ]
+            },
+            "architecture": {
+              "components": [
+                "lib/security/csrf.ts - Token generation and validation",
+                "middleware.ts - CSRF middleware integration",
+                "lib/auth/session.ts - Session-token binding",
+                "app/api/csrf/token/route.ts - Token endpoint"
+              ],
+              "integration_points": [
+                "Next.js middleware",
+                "Session management",
+                "API routes"
+              ]
+            },
+            "refinement": {
+              "test_strategy": "TDD with edge cases",
+              "test_files": [
+                "__tests__/security/csrf.test.ts",
+                "__tests__/api/csrf-protection.test.ts"
+              ]
+            },
+            "completion": {
+              "validation": [
+                "Manual testing with invalid tokens",
+                "Automated test suite passes",
+                "Security audit confirms protection"
+              ]
+            }
+          },
+          "estimated_hours": 8,
+          "priority": "critical"
+        },
+        {
+          "task_id": "1.2",
+          "title": "Fix Session Management",
+          "assignee": "security-specialist",
+          "sparc_steps": {
+            "specification": {
+              "requirements": [
+                "Replace deprecated session stubs with functional implementation",
+                "Use jose for JWT token management",
+                "Session data stored securely in httpOnly cookies",
+                "Session refresh mechanism",
+                "Session invalidation on logout"
+              ],
+              "success_criteria": [
+                "Users can login and maintain sessions",
+                "Sessions persist across page reloads",
+                "Sessions expire after configured timeout",
+                "Logout properly invalidates sessions"
+              ]
+            },
+            "pseudocode": {
+              "approach": "JWT-based session with secure cookie storage",
+              "steps": [
+                "Create session on successful login",
+                "Generate JWT with user claims",
+                "Store JWT in httpOnly, secure, sameSite cookie",
+                "Middleware validates JWT on protected routes",
+                "Refresh token mechanism for long sessions",
+                "Blacklist tokens on logout"
+              ]
+            },
+            "architecture": {
+              "components": [
+                "lib/auth/session.ts - Session management core",
+                "lib/auth/jwt.ts - JWT utilities using jose",
+                "middleware.ts - Session validation",
+                "app/api/auth/login/route.ts - Session creation",
+                "app/api/auth/logout/route.ts - Session destruction"
+              ],
+              "dependencies": [
+                "jose library for JWT",
+                "Redis for session blacklist (optional)",
+                "Environment variables for secrets"
+              ]
+            },
+            "refinement": {
+              "test_strategy": "Integration tests for auth flow",
+              "test_files": [
+                "__tests__/auth/session.test.ts",
+                "__tests__/auth/login-flow.test.ts"
+              ]
+            },
+            "completion": {
+              "validation": [
+                "Full auth flow testing",
+                "Session persistence verification",
+                "Security review of token handling"
+              ]
+            }
+          },
+          "estimated_hours": 12,
+          "priority": "critical"
+        },
+        {
+          "task_id": "1.3",
+          "title": "Fix CORS Configuration",
+          "assignee": "security-specialist",
+          "sparc_steps": {
+            "specification": {
+              "requirements": [
+                "Remove wildcard CORS from auth endpoints",
+                "Whitelist specific origins based on environment",
+                "Proper credentials handling",
+                "Preflight request support",
+                "Different policies for public vs protected endpoints"
+              ],
+              "success_criteria": [
+                "Only whitelisted origins can access auth endpoints",
+                "Credentials properly handled",
+                "Public endpoints accessible to all",
+                "Development and production configs separate"
+              ]
+            },
+            "pseudocode": {
+              "approach": "Environment-based origin whitelist with endpoint-specific policies",
+              "steps": [
+                "Define allowed origins per environment",
+                "Create CORS middleware with origin validation",
+                "Apply strict CORS to /api/auth/* endpoints",
+                "Apply permissive CORS to public endpoints",
+                "Handle preflight OPTIONS requests"
+              ]
+            },
+            "architecture": {
+              "components": [
+                "middleware.ts - CORS policy enforcement",
+                "lib/security/cors.ts - CORS utilities",
+                ".env.local - Origin configuration"
+              ],
+              "policies": {
+                "/api/auth/*": "strict - whitelisted origins only",
+                "/api/public/*": "permissive - all origins",
+                "/api/content/*": "strict - whitelisted origins only"
+              }
+            },
+            "refinement": {
+              "test_strategy": "Test CORS headers on various endpoints",
+              "test_files": [
+                "__tests__/security/cors.test.ts"
+              ]
+            },
+            "completion": {
+              "validation": [
+                "CORS policy testing from different origins",
+                "Browser testing with credentials",
+                "Security audit confirms proper configuration"
+              ]
+            }
+          },
+          "estimated_hours": 4,
+          "priority": "critical"
+        },
+        {
+          "task_id": "1.4",
+          "title": "Fix Distributed Rate Limiting",
+          "assignee": "security-specialist",
+          "sparc_steps": {
+            "specification": {
+              "requirements": [
+                "Replace in-memory rate limiting with Redis-backed implementation",
+                "Support multiple application instances",
+                "Sliding window algorithm for accurate rate limiting",
+                "Different limits for different endpoint types",
+                "IP-based and user-based rate limiting"
+              ],
+              "success_criteria": [
+                "Rate limits enforced across all instances",
+                "No race conditions in limit tracking",
+                "Proper 429 responses with Retry-After header",
+                "Rate limit info in response headers"
+              ]
+            },
+            "pseudocode": {
+              "approach": "Redis-backed sliding window with atomic operations",
+              "steps": [
+                "Connect to Redis cluster",
+                "Implement sliding window counter in Redis",
+                "Use Redis transactions for atomic increment/check",
+                "Track requests per IP and per user",
+                "Return rate limit headers in responses",
+                "Clean up expired entries"
+              ]
+            },
+            "architecture": {
+              "components": [
+                "lib/rate-limit/redis-limiter.ts - Redis rate limiter",
+                "lib/rate-limit/config.ts - Rate limit policies",
+                "middleware.ts - Rate limit middleware",
+                "lib/redis/client.ts - Redis connection management"
+              ],
+              "redis_keys": {
+                "pattern": "rate:{{endpoint}}:{{identifier}}:{{window}}",
+                "ttl": "window duration + grace period"
+              }
+            },
+            "refinement": {
+              "test_strategy": "Load testing with multiple instances",
+              "test_files": [
+                "__tests__/rate-limit/redis-limiter.test.ts",
+                "__tests__/rate-limit/distributed.test.ts"
+              ]
+            },
+            "completion": {
+              "validation": [
+                "Load test with multiple app instances",
+                "Verify limits enforced correctly",
+                "Monitor Redis performance",
+                "Security audit confirms implementation"
+              ]
+            }
+          },
+          "estimated_hours": 10,
+          "priority": "critical"
+        }
+      ],
+      "validation": {
+        "security_audit": "Full security review by security-specialist",
+        "penetration_testing": "Attempt to exploit fixed vulnerabilities",
+        "integration_testing": "Verify fixes don't break existing functionality"
+      }
+    },
+    {
+      "phase": 2,
+      "name": "Code Quality Improvements",
+      "duration": "2 days",
+      "dependencies": ["phase-1"],
+      "tasks": [
+        {
+          "task_id": "2.1",
+          "title": "Remove console.log Statements",
+          "assignee": "code-quality-agent",
+          "sparc_steps": {
+            "specification": {
+              "requirements": [
+                "Remove all 941 console.log statements",
+                "Replace with proper logging library where needed",
+                "Preserve debug logging in development mode only",
+                "No console statements in production builds"
+              ],
+              "success_criteria": [
+                "Zero console.log in production code",
+                "Proper logging for errors and important events",
+                "Development-only debug logs",
+                "Build process fails on console statements"
+              ]
+            },
+            "pseudocode": {
+              "approach": "Automated removal with selective replacement",
+              "steps": [
+                "Scan all source files for console.log",
+                "Categorize: debug, error, info, warn",
+                "Replace errors with proper error logging",
+                "Remove debug statements",
+                "Add ESLint rule to prevent future additions"
+              ]
+            },
+            "architecture": {
+              "components": [
+                "lib/logger/index.ts - Logging utility",
+                "scripts/remove-console-logs.ts - Automated cleanup",
+                "eslint.config.mjs - No-console rule"
+              ]
+            },
+            "refinement": {
+              "test_strategy": "Verify no functional changes",
+              "test_files": [
+                "All existing tests must pass"
+              ]
+            },
+            "completion": {
+              "validation": [
+                "Grep for console.log returns zero results",
+                "Build succeeds without console warnings",
+                "Application functions identically"
+              ]
+            }
+          },
+          "estimated_hours": 2,
+          "priority": "high",
+          "automated": true
+        },
+        {
+          "task_id": "2.2",
+          "title": "Fix TypeScript 'any' Types",
+          "assignee": "code-quality-agent",
+          "sparc_steps": {
+            "specification": {
+              "requirements": [
+                "Replace all 69 'any' types with proper types",
+                "Use type inference where possible",
+                "Create custom types for complex structures",
+                "Enable strict TypeScript checking"
+              ],
+              "success_criteria": [
+                "Zero 'any' types in codebase",
+                "TypeScript strict mode enabled",
+                "No type-related runtime errors",
+                "Better IDE autocomplete"
+              ]
+            },
+            "pseudocode": {
+              "approach": "Incremental type fixing with priority order",
+              "steps": [
+                "Identify all 'any' usage locations",
+                "Prioritize: API boundaries > utilities > components",
+                "Infer types from usage patterns",
+                "Create type definitions where needed",
+                "Enable noImplicitAny in tsconfig"
+              ]
+            },
+            "architecture": {
+              "components": [
+                "lib/types/* - Type definition files",
+                "tsconfig.json - Strict TypeScript config"
+              ],
+              "priority_files": [
+                "API routes",
+                "Database models",
+                "Auth utilities",
+                "Content types"
+              ]
+            },
+            "refinement": {
+              "test_strategy": "TypeScript compilation with strict mode",
+              "test_files": [
+                "Type-level tests where appropriate"
+              ]
+            },
+            "completion": {
+              "validation": [
+                "tsc --noEmit succeeds with strict mode",
+                "No any types in codebase",
+                "All tests pass"
+              ]
+            }
+          },
+          "estimated_hours": 8,
+          "priority": "high"
+        },
+        {
+          "task_id": "2.3",
+          "title": "Enable ESLint in Production Builds",
+          "assignee": "code-quality-agent",
+          "sparc_steps": {
+            "specification": {
+              "requirements": [
+                "Remove ESLint ignore from next.config.js",
+                "Fix all ESLint errors",
+                "Configure appropriate ESLint rules",
+                "Build fails on ESLint errors"
+              ],
+              "success_criteria": [
+                "Zero ESLint errors",
+                "Production build enforces linting",
+                "CI/CD pipeline includes linting",
+                "Consistent code style"
+              ]
+            },
+            "pseudocode": {
+              "approach": "Fix errors then enable enforcement",
+              "steps": [
+                "Run ESLint to identify all errors",
+                "Fix errors systematically",
+                "Update ESLint config for project needs",
+                "Remove ignoreBuildErrors from next.config.js",
+                "Add pre-commit hook for linting"
+              ]
+            },
+            "architecture": {
+              "components": [
+                "eslint.config.mjs - ESLint configuration",
+                "next.config.js - Build configuration",
+                ".husky/pre-commit - Pre-commit hook"
+              ]
+            },
+            "refinement": {
+              "test_strategy": "Build verification",
+              "test_files": [
+                "ESLint must pass for all files"
+              ]
+            },
+            "completion": {
+              "validation": [
+                "npm run lint passes",
+                "npm run build succeeds with ESLint enabled",
+                "CI pipeline enforces linting"
+              ]
+            }
+          },
+          "estimated_hours": 4,
+          "priority": "high"
+        }
+      ],
+      "validation": {
+        "code_review": "Review all changes for quality",
+        "build_verification": "Ensure production build succeeds",
+        "performance_testing": "Verify no performance regression"
+      }
+    },
+    {
+      "phase": 3,
+      "name": "Test Implementation",
+      "duration": "4 days",
+      "dependencies": ["phase-2"],
+      "tasks": [
+        {
+          "task_id": "3.1",
+          "title": "Implement Skipped Tests",
+          "assignee": "test-implementation-agent",
+          "sparc_steps": {
+            "specification": {
+              "requirements": [
+                "Implement all 141 skipped tests",
+                "Achieve >80% code coverage",
+                "Tests must be meaningful and test actual functionality",
+                "No flaky tests"
+              ],
+              "success_criteria": [
+                "All tests pass",
+                "Code coverage >80%",
+                "No .skip or .todo tests",
+                "CI pipeline runs full test suite"
+              ]
+            },
+            "pseudocode": {
+              "approach": "Systematic test implementation by priority",
+              "steps": [
+                "Categorize skipped tests by module",
+                "Prioritize: critical paths > edge cases > nice-to-haves",
+                "Implement tests incrementally",
+                "Run tests to verify functionality",
+                "Remove .skip markers"
+              ]
+            },
+            "architecture": {
+              "test_categories": [
+                "Authentication tests",
+                "API endpoint tests",
+                "Component tests",
+                "Integration tests",
+                "Security tests"
+              ],
+              "coverage_targets": {
+                "lib/auth/*": "95%",
+                "app/api/*": "90%",
+                "components/*": "85%",
+                "lib/utils/*": "80%"
+              }
+            },
+            "refinement": {
+              "test_strategy": "TDD approach for skipped tests",
+              "test_files": [
+                "__tests__/**/*.test.ts",
+                "__tests__/**/*.test.tsx"
+              ]
+            },
+            "completion": {
+              "validation": [
+                "npm run test passes 100%",
+                "npm run test:coverage shows >80%",
+                "No skipped or todo tests",
+                "CI pipeline green"
+              ]
+            }
+          },
+          "estimated_hours": 16,
+          "priority": "high"
+        }
+      ],
+      "validation": {
+        "test_coverage_report": "Generate and review coverage report",
+        "integration_testing": "Full integration test suite",
+        "regression_testing": "Verify no regressions introduced"
+      }
+    },
+    {
+      "phase": 4,
+      "name": "Final Validation & Documentation",
+      "duration": "1 day",
+      "dependencies": ["phase-3"],
+      "tasks": [
+        {
+          "task_id": "4.1",
+          "title": "Comprehensive Security Audit",
+          "assignee": "validation-agent",
+          "estimated_hours": 4,
+          "priority": "critical"
+        },
+        {
+          "task_id": "4.2",
+          "title": "Performance Testing",
+          "assignee": "validation-agent",
+          "estimated_hours": 2,
+          "priority": "high"
+        },
+        {
+          "task_id": "4.3",
+          "title": "Production Deployment Checklist",
+          "assignee": "validation-agent",
+          "estimated_hours": 2,
+          "priority": "critical"
+        }
+      ],
+      "validation": {
+        "final_security_review": "External security review if possible",
+        "production_readiness_checklist": "Complete all items",
+        "stakeholder_approval": "Get approval for production deployment"
+      }
+    }
+  ],
+  "success_metrics": {
+    "security": {
+      "csrf_protection": "100% coverage on state-changing endpoints",
+      "session_management": "Functional and secure",
+      "cors_configuration": "No wildcards, proper origin whitelisting",
+      "rate_limiting": "Distributed-safe, working across instances"
+    },
+    "code_quality": {
+      "console_logs": "0 in production code",
+      "typescript_any": "0 instances",
+      "eslint": "Enabled with 0 errors",
+      "code_coverage": ">80%"
+    },
+    "testing": {
+      "skipped_tests": "0",
+      "test_coverage": ">80%",
+      "ci_pipeline": "Green"
+    }
+  },
+  "timeline": {
+    "total_duration": "10 days",
+    "phases": [
+      {
+        "phase": 1,
+        "start": "Day 1",
+        "end": "Day 3",
+        "deliverable": "All security blockers fixed"
+      },
+      {
+        "phase": 2,
+        "start": "Day 4",
+        "end": "Day 5",
+        "deliverable": "Code quality improved"
+      },
+      {
+        "phase": 3,
+        "start": "Day 6",
+        "end": "Day 9",
+        "deliverable": "All tests implemented"
+      },
+      {
+        "phase": 4,
+        "start": "Day 10",
+        "end": "Day 10",
+        "deliverable": "Production ready"
+      }
+    ]
+  },
+  "risk_mitigation": {
+    "breaking_changes": "Comprehensive testing after each fix",
+    "performance_degradation": "Performance testing after security changes",
+    "deployment_issues": "Staging environment testing before production",
+    "timeline_slippage": "Daily standup to identify blockers early"
+  },
+  "coordination_protocol": {
+    "daily_standups": "Review progress, blockers, next steps",
+    "memory_keys": {
+      "phase_status": "hivemind/implementation/phase-{n}/status",
+      "phase_completion": "hivemind/implementation/phase-{n}/complete",
+      "blockers": "hivemind/implementation/blockers",
+      "metrics": "hivemind/implementation/metrics"
+    },
+    "escalation_path": "Blocker → Agent → Coordinator → Human",
+    "progress_tracking": "Memory keys updated after each task completion"
+  }
+}

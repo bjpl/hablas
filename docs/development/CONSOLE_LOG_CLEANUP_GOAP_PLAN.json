@@ -1,0 +1,210 @@
+{
+  "goal": "Clean up console.log statements in database layer files",
+  "currentState": {
+    "pool-optimized.ts": {
+      "consoleStatements": 14,
+      "status": "needs_cleanup",
+      "hasLogger": false
+    },
+    "redis.ts": {
+      "consoleStatements": 14,
+      "status": "needs_cleanup",
+      "hasLogger": false
+    },
+    "sessions.ts": {
+      "consoleStatements": 0,
+      "status": "clean",
+      "hasLogger": true
+    },
+    "users.ts": {
+      "consoleStatements": 0,
+      "status": "clean",
+      "hasLogger": true
+    }
+  },
+  "goalState": {
+    "pool-optimized.ts": {
+      "consoleStatements": 0,
+      "status": "clean",
+      "hasLogger": true
+    },
+    "redis.ts": {
+      "consoleStatements": 0,
+      "status": "clean",
+      "hasLogger": true
+    }
+  },
+  "optimalActionSequence": [
+    {
+      "step": 1,
+      "action": "read_files",
+      "targets": [
+        "lib/db/pool-optimized.ts",
+        "lib/db/redis.ts"
+      ],
+      "purpose": "Analyze current console statement patterns and context",
+      "parallel": true,
+      "estimatedTime": "5s"
+    },
+    {
+      "step": 2,
+      "action": "add_logger_imports",
+      "operations": [
+        {
+          "file": "lib/db/pool-optimized.ts",
+          "import": "import { dbLogger } from '@/lib/utils/logger';"
+        },
+        {
+          "file": "lib/db/redis.ts",
+          "import": "import { redisLogger } from '@/lib/utils/logger';"
+        }
+      ],
+      "parallel": true,
+      "estimatedTime": "2s"
+    },
+    {
+      "step": 3,
+      "action": "replace_console_statements_pool",
+      "file": "lib/db/pool-optimized.ts",
+      "logger": "dbLogger",
+      "replacements": [
+        {
+          "type": "console.log",
+          "targetLevel": "info",
+          "count": 8,
+          "examples": [
+            "Pool initialized",
+            "Connection successful"
+          ]
+        },
+        {
+          "type": "console.warn",
+          "targetLevel": "warn",
+          "count": 3,
+          "examples": [
+            "Connection pool exhausted",
+            "Slow query detected"
+          ]
+        },
+        {
+          "type": "console.error",
+          "targetLevel": "error",
+          "count": 3,
+          "examples": [
+            "Failed to initialize pool",
+            "Connection error"
+          ]
+        }
+      ],
+      "transformations": [
+        "Remove emoji prefixes",
+        "Add context objects for errors",
+        "Use structured logging format"
+      ],
+      "parallel": false,
+      "estimatedTime": "15s"
+    },
+    {
+      "step": 4,
+      "action": "replace_console_statements_redis",
+      "file": "lib/db/redis.ts",
+      "logger": "redisLogger",
+      "replacements": [
+        {
+          "type": "console.log",
+          "targetLevel": "info",
+          "count": 8,
+          "examples": [
+            "Redis connected",
+            "Cache operation successful"
+          ]
+        },
+        {
+          "type": "console.warn",
+          "targetLevel": "warn",
+          "count": 3,
+          "examples": [
+            "Redis connection slow",
+            "Cache miss"
+          ]
+        },
+        {
+          "type": "console.error",
+          "targetLevel": "error",
+          "count": 3,
+          "examples": [
+            "Redis connection failed",
+            "Cache error"
+          ]
+        }
+      ],
+      "transformations": [
+        "Remove emoji prefixes",
+        "Add context objects for errors",
+        "Use structured logging format"
+      ],
+      "parallel": false,
+      "estimatedTime": "15s"
+    },
+    {
+      "step": 5,
+      "action": "verify_changes",
+      "operations": [
+        {
+          "type": "grep_search",
+          "pattern": "console\\.(log|warn|error|info|debug)",
+          "files": [
+            "lib/db/pool-optimized.ts",
+            "lib/db/redis.ts"
+          ],
+          "expectedResult": "no_matches"
+        },
+        {
+          "type": "check_imports",
+          "files": [
+            "lib/db/pool-optimized.ts",
+            "lib/db/redis.ts"
+          ],
+          "expectedImports": [
+            "dbLogger",
+            "redisLogger"
+          ]
+        }
+      ],
+      "parallel": true,
+      "estimatedTime": "5s"
+    }
+  ],
+  "totalEstimatedTime": "42s",
+  "efficiencyMetrics": {
+    "filesProcessed": 2,
+    "statementsConverted": 28,
+    "parallelOperations": 3,
+    "sequentialOperations": 2,
+    "batchedEditsPerFile": true
+  },
+  "constraints": {
+    "preserveSemantics": true,
+    "useProperLogLevels": true,
+    "batchEdits": true,
+    "removeEmojis": true,
+    "addContextObjects": true
+  },
+  "successCriteria": [
+    "Zero console.* statements in target files",
+    "All logger imports present",
+    "Proper log levels applied",
+    "Context objects added for errors",
+    "No semantic meaning lost",
+    "All files pass linting"
+  ],
+  "rollbackPlan": {
+    "enabled": true,
+    "method": "git_reset",
+    "checkpoints": [
+      "after_step_2",
+      "after_step_3",
+      "after_step_4"
+    ]
+  }
+}
