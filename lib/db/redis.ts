@@ -5,6 +5,7 @@
  */
 
 import { createClient, RedisClientType } from 'redis';
+import { redisLogger } from '@/lib/utils/logger';
 
 export interface RedisConfig {
   url?: string;
@@ -67,7 +68,7 @@ class RedisManager {
         connectTimeout: parseInt(process.env.REDIS_CONNECT_TIMEOUT || '5000', 10),
         reconnectStrategy: (retries: number) => {
           if (retries > this.maxRetries) {
-            console.log('⚠️  Redis max retries reached - using in-memory fallback');
+            redisLogger.warn('Redis max retries reached - using in-memory fallback');
             return new Error('Max retries reached');
           }
           // Exponential backoff: 100ms, 200ms, 400ms, 800ms...
@@ -84,7 +85,7 @@ class RedisManager {
    */
   async initialize(): Promise<boolean> {
     if (!this.isEnabled) {
-      console.log('ℹ️  Redis not configured - using in-memory rate limiting');
+      redisLogger.info('Redis not configured - using in-memory rate limiting');
       return false;
     }
 
@@ -101,26 +102,26 @@ class RedisManager {
 
       // Set up error handlers
       this.client.on('error', (err) => {
-        console.error('Redis Client Error:', err);
+        redisLogger.error('Redis client error', err);
         this.isConnected = false;
       });
 
       this.client.on('connect', () => {
-        console.log('🔗 Redis connecting...');
+        redisLogger.debug('Redis connecting');
       });
 
       this.client.on('ready', () => {
-        console.log('✅ Redis connection ready');
+        redisLogger.info('Redis connection ready');
         this.isConnected = true;
         this.connectionAttempts = 0;
       });
 
       this.client.on('reconnecting', () => {
-        console.log('🔄 Redis reconnecting...');
+        redisLogger.debug('Redis reconnecting');
       });
 
       this.client.on('end', () => {
-        console.log('🔌 Redis connection closed');
+        redisLogger.info('Redis connection closed');
         this.isConnected = false;
       });
 
@@ -132,11 +133,11 @@ class RedisManager {
         ),
       ]);
 
-      console.log('✅ Redis connected successfully');
+      redisLogger.info('Redis connected successfully');
       return true;
-    } catch (error: any) {
-      console.warn('⚠️  Redis connection failed:', error.message);
-      console.log('ℹ️  Falling back to in-memory rate limiting');
+    } catch (error: unknown) {
+      const errMessage = error instanceof Error ? error.message : String(error);
+      redisLogger.warn('Redis connection failed - falling back to in-memory', { error: errMessage });
       this.client = null;
       this.isConnected = false;
       return false;
@@ -195,7 +196,7 @@ class RedisManager {
   /**
    * Get Redis stats
    */
-  async getStats(): Promise<any> {
+  async getStats(): Promise<{ connected: boolean; dbSize: number; info: string } | null> {
     if (!this.isConnected || !this.client) {
       return null;
     }
@@ -210,7 +211,7 @@ class RedisManager {
         info,
       };
     } catch (error) {
-      console.error('Failed to get Redis stats:', error);
+      redisLogger.error('Failed to get Redis stats', error instanceof Error ? error : new Error(String(error)));
       return null;
     }
   }
@@ -224,9 +225,9 @@ class RedisManager {
         await this.client.quit();
         this.client = null;
         this.isConnected = false;
-        console.log('Redis connection closed');
+        redisLogger.info('Redis connection closed gracefully');
       } catch (error) {
-        console.error('Error closing Redis connection:', error);
+        redisLogger.error('Error closing Redis connection', error instanceof Error ? error : new Error(String(error)));
         // Force disconnect
         await this.client?.disconnect();
         this.client = null;
@@ -250,8 +251,9 @@ export const redis = new RedisManager();
 // Auto-initialize on import (non-blocking)
 if (typeof window === 'undefined') {
   // Only in Node.js environment
-  redis.initialize().catch((error) => {
-    console.warn('Redis auto-initialization failed:', error.message);
+  redis.initialize().catch((error: unknown) => {
+    const errMessage = error instanceof Error ? error.message : String(error);
+    redisLogger.warn('Redis auto-initialization failed', { error: errMessage });
   });
 }
 

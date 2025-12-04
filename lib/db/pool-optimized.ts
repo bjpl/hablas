@@ -5,6 +5,7 @@
 
 import { Pool, PoolClient, QueryResult, QueryResultRow } from 'pg';
 import type { DatabaseConfig, TransactionCallback } from '../../database/types';
+import { dbLogger } from '@/lib/utils/logger';
 
 interface CacheEntry {
   data: any;
@@ -93,20 +94,16 @@ class OptimizedDatabasePool {
     this.pool = new Pool(this.config);
 
     // Enhanced error handler
-    this.pool.on('error', (err, client) => {
-      console.error('Unexpected database error:', {
-        error: err.message,
-        code: (err as any).code,
-        timestamp: new Date().toISOString(),
+    this.pool.on('error', (err) => {
+      dbLogger.error('Unexpected database error', err, {
+        code: (err as NodeJS.ErrnoException).code,
       });
     });
 
     // Connection events for monitoring
     this.pool.on('connect', () => {
       this.poolMetrics.totalConnections++;
-      if (process.env.NODE_ENV === 'development') {
-        console.log('✓ New database connection established');
-      }
+      dbLogger.debug('New database connection established');
     });
 
     this.pool.on('acquire', () => {
@@ -138,10 +135,12 @@ class OptimizedDatabasePool {
       await Promise.all(warmupPromises);
 
       this.isInitialized = true;
-      console.log('✅ Database connection pool initialized and warmed');
-      console.log(`   Pool size: ${minConnections}-${this.config.max} connections`);
+      dbLogger.info('Database connection pool initialized and warmed', {
+        minConnections,
+        maxConnections: this.config.max,
+      });
     } catch (error) {
-      console.error('❌ Failed to initialize database pool:', error);
+      dbLogger.error('Failed to initialize database pool', error instanceof Error ? error : new Error(String(error)));
       throw error;
     }
   }
@@ -209,8 +208,8 @@ class OptimizedDatabasePool {
       }
     }
 
-    if (cleaned > 0 && process.env.NODE_ENV === 'development') {
-      console.log(`🧹 Cleaned ${cleaned} expired cache entries`);
+    if (cleaned > 0) {
+      dbLogger.debug('Cleaned expired cache entries', { count: cleaned });
     }
   }
 
@@ -253,9 +252,7 @@ class OptimizedDatabasePool {
       const cached = this.getCached(cacheKey);
 
       if (cached) {
-        if (process.env.NODE_ENV === 'development') {
-          console.log('💾 Cache hit for query:', text.substring(0, 50));
-        }
+        dbLogger.debug('Cache hit for query', { query: text.substring(0, 50) });
         return cached;
       }
     }
@@ -271,10 +268,9 @@ class OptimizedDatabasePool {
 
       // Log slow queries
       if (duration > this.slowQueryThreshold) {
-        console.warn(`🐌 Slow query (${duration}ms):`, {
-          query: text.substring(0, 100),
-          params,
+        dbLogger.warn('Slow query detected', {
           duration,
+          query: text.substring(0, 100),
         });
       }
 
@@ -286,10 +282,8 @@ class OptimizedDatabasePool {
 
       return result;
     } catch (error) {
-      console.error('Query error:', {
+      dbLogger.error('Query error', error instanceof Error ? error : new Error(String(error)), {
         query: text.substring(0, 100),
-        params,
-        error: (error as Error).message,
       });
       throw error;
     }
@@ -311,7 +305,7 @@ class OptimizedDatabasePool {
 
       const duration = Date.now() - start;
       if (duration > this.slowQueryThreshold) {
-        console.warn(`🐌 Slow transaction (${duration}ms)`);
+        dbLogger.warn('Slow transaction detected', { duration });
       }
 
       return result;
@@ -345,7 +339,7 @@ class OptimizedDatabasePool {
 
       return result.rows[0]?.health === 1;
     } catch (error) {
-      console.error('Health check failed:', (error as Error).message);
+      dbLogger.error('Health check failed', error instanceof Error ? error : new Error(String(error)));
       return false;
     }
   }
@@ -406,8 +400,7 @@ class OptimizedDatabasePool {
     const stats = this.getStats();
     if (!stats) return;
 
-    console.log('📊 Database Pool Metrics:', {
-      timestamp: new Date().toISOString(),
+    dbLogger.info('Database pool metrics', {
       pool: stats.pool,
       cache: stats.cache,
       queries: stats.queries,
@@ -419,7 +412,7 @@ class OptimizedDatabasePool {
    */
   clearCache(): void {
     this.queryCache.clear();
-    console.log('🧹 Query cache cleared');
+    dbLogger.info('Query cache cleared');
   }
 
   /**
@@ -441,7 +434,7 @@ class OptimizedDatabasePool {
       this.pool = null;
       this.isInitialized = false;
       this.queryCache.clear();
-      console.log('Database pool closed');
+      dbLogger.info('Database pool closed');
     }
   }
 }
