@@ -4,7 +4,8 @@
  */
 
 import { Pool, PoolClient, QueryResult, QueryResultRow } from 'pg';
-import type { DatabaseConfig, TransactionCallback } from '../../database/types';
+import type { DatabaseConfig, TransactionCallback, QueryParams } from '../../database/types';
+import { dbLogger } from '@/lib/utils/logger';
 
 class DatabasePool {
   private pool: Pool | null = null;
@@ -32,17 +33,17 @@ class DatabasePool {
         rejectUnauthorized: true,
         ca: process.env.DB_SSL_CA, // Optional CA certificate
       };
-      console.log('✅ Database SSL enabled with certificate validation (production)');
+      dbLogger.info('Database SSL enabled with certificate validation (production)');
     } else if (process.env.DB_SSL === 'true') {
       // DEVELOPMENT: Allow self-signed certificates
       sslConfig = { rejectUnauthorized: false };
-      console.warn('⚠️  Database SSL enabled without certificate validation (development only)');
+      dbLogger.warn('Database SSL enabled without certificate validation (development only)');
     }
 
     if (connectionString) {
       // Validate production requirements
       if (isProduction && !connectionString.includes('sslmode=')) {
-        console.warn('⚠️  WARNING: DATABASE_URL should include sslmode=require in production');
+        dbLogger.warn('DATABASE_URL should include sslmode=require in production');
       }
 
       return {
@@ -91,8 +92,8 @@ class DatabasePool {
     this.pool = new Pool(this.config);
 
     // Set up error handler
-    this.pool.on('error', (err, client) => {
-      console.error('Unexpected error on idle client', err);
+    this.pool.on('error', (err) => {
+      dbLogger.error('Unexpected error on idle client', err);
     });
 
     // Test connection
@@ -101,9 +102,9 @@ class DatabasePool {
       await client.query('SELECT NOW()');
       client.release();
       this.isInitialized = true;
-      console.log('✅ Database connection pool initialized');
+      dbLogger.info('Database connection pool initialized');
     } catch (error) {
-      console.error('❌ Failed to initialize database pool:', error);
+      dbLogger.error('Failed to initialize database pool', error instanceof Error ? error : new Error(String(error)));
       throw error;
     }
   }
@@ -124,7 +125,7 @@ class DatabasePool {
   /**
    * Execute a query
    */
-  async query<T extends QueryResultRow = any>(text: string, params?: any[]): Promise<QueryResult<T>> {
+  async query<T extends QueryResultRow = QueryResultRow>(text: string, params?: QueryParams): Promise<QueryResult<T>> {
     const pool = await this.getPool();
     const start = Date.now();
     try {
@@ -133,12 +134,12 @@ class DatabasePool {
 
       // Log slow queries (> 1 second)
       if (duration > 1000) {
-        console.warn(`Slow query (${duration}ms):`, text.substring(0, 100));
+        dbLogger.warn('Slow query detected', { duration, query: text.substring(0, 100) });
       }
 
       return result;
     } catch (error) {
-      console.error('Query error:', { text, params, error });
+      dbLogger.error('Query error', error instanceof Error ? error : new Error(String(error)), { query: text.substring(0, 100) });
       throw error;
     }
   }
@@ -179,7 +180,7 @@ class DatabasePool {
       const result = await this.query('SELECT 1 as health');
       return result.rows[0]?.health === 1;
     } catch (error) {
-      console.error('Health check failed:', error);
+      dbLogger.error('Health check failed', error instanceof Error ? error : new Error(String(error)));
       return false;
     }
   }
@@ -207,7 +208,7 @@ class DatabasePool {
       await this.pool.end();
       this.pool = null;
       this.isInitialized = false;
-      console.log('Database pool closed');
+      dbLogger.info('Database pool closed');
     }
   }
 }

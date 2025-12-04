@@ -127,8 +127,16 @@ export interface DatabaseConfig {
   connectionTimeoutMillis?: number;
 }
 
-// Transaction callback type
-export type TransactionCallback<T> = (client: any) => Promise<T>;
+// Pool client type (re-exported from pg for type safety)
+import type { PoolClient } from 'pg';
+export type { PoolClient };
+
+// Transaction callback type - now type-safe with PoolClient
+export type TransactionCallback<T> = (client: PoolClient) => Promise<T>;
+
+// Query parameter types for type-safe queries
+export type QueryParamValue = string | number | boolean | null | Date | Buffer | undefined;
+export type QueryParams = QueryParamValue[];
 
 // Database error types
 export class DatabaseError extends Error {
