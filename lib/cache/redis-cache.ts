@@ -3,6 +3,9 @@
  * Centralized caching layer for improved performance
  */
 
+import { redisLogger } from '@/lib/utils/logger';
+import type { RedisClientType } from 'redis';
+
 interface CacheOptions {
   ttl?: number; // Time to live in seconds
   namespace?: string;
@@ -17,7 +20,7 @@ interface CacheStats {
 }
 
 class RedisCache {
-  private client: any = null;
+  private client: RedisClientType | null = null;
   private stats: CacheStats = {
     hits: 0,
     misses: 0,
@@ -29,9 +32,9 @@ class RedisCache {
   /**
    * Initialize Redis client
    */
-  setClient(client: any): void {
+  setClient(client: RedisClientType): void {
     this.client = client;
-    console.log('✅ Redis cache initialized');
+    redisLogger.info('Redis cache initialized');
   }
 
   /**
@@ -51,14 +54,14 @@ class RedisCache {
   /**
    * Get value from cache
    */
-  async get<T = any>(key: string, options?: CacheOptions): Promise<T | null> {
+  async get<T = unknown>(key: string, options?: CacheOptions): Promise<T | null> {
     if (!this.isAvailable()) {
       return null;
     }
 
     try {
       const cacheKey = this.getKey(key, options?.namespace);
-      const value = await this.client.get(cacheKey);
+      const value = await this.client!.get(cacheKey);
 
       if (value === null) {
         this.stats.misses++;
@@ -71,7 +74,7 @@ class RedisCache {
 
       return JSON.parse(value) as T;
     } catch (error) {
-      console.error('Redis cache get error:', error);
+      redisLogger.error('Redis cache get error', error instanceof Error ? error : new Error(String(error)), { key });
       return null;
     }
   }
@@ -79,7 +82,7 @@ class RedisCache {
   /**
    * Set value in cache
    */
-  async set<T = any>(
+  async set<T = unknown>(
     key: string,
     value: T,
     options?: CacheOptions
@@ -93,15 +96,15 @@ class RedisCache {
       const serialized = JSON.stringify(value);
 
       if (options?.ttl) {
-        await this.client.setex(cacheKey, options.ttl, serialized);
+        await this.client!.setEx(cacheKey, options.ttl, serialized);
       } else {
-        await this.client.set(cacheKey, serialized);
+        await this.client!.set(cacheKey, serialized);
       }
 
       this.stats.sets++;
       return true;
     } catch (error) {
-      console.error('Redis cache set error:', error);
+      redisLogger.error('Redis cache set error', error instanceof Error ? error : new Error(String(error)), { key });
       return false;
     }
   }
@@ -116,11 +119,11 @@ class RedisCache {
 
     try {
       const cacheKey = this.getKey(key, options?.namespace);
-      await this.client.del(cacheKey);
+      await this.client!.del(cacheKey);
       this.stats.deletes++;
       return true;
     } catch (error) {
-      console.error('Redis cache delete error:', error);
+      redisLogger.error('Redis cache delete error', error instanceof Error ? error : new Error(String(error)), { key });
       return false;
     }
   }
@@ -135,10 +138,10 @@ class RedisCache {
 
     try {
       const cacheKey = this.getKey(key, options?.namespace);
-      const exists = await this.client.exists(cacheKey);
+      const exists = await this.client!.exists(cacheKey);
       return exists === 1;
     } catch (error) {
-      console.error('Redis cache exists error:', error);
+      redisLogger.error('Redis cache exists error', error instanceof Error ? error : new Error(String(error)), { key });
       return false;
     }
   }
@@ -146,7 +149,7 @@ class RedisCache {
   /**
    * Get or set pattern (cache-aside)
    */
-  async getOrSet<T = any>(
+  async getOrSet<T = unknown>(
     key: string,
     fetcher: () => Promise<T>,
     options?: CacheOptions
@@ -163,7 +166,7 @@ class RedisCache {
       await this.set(key, value, options);
       return value;
     } catch (error) {
-      console.error('Cache getOrSet error:', error);
+      redisLogger.error('Cache getOrSet error', error instanceof Error ? error : new Error(String(error)), { key });
       return null;
     }
   }
@@ -178,17 +181,17 @@ class RedisCache {
 
     try {
       const pattern = `cache:${namespace}:*`;
-      const keys = await this.client.keys(pattern);
+      const keys = await this.client!.keys(pattern);
 
       if (keys.length === 0) {
         return 0;
       }
 
-      await this.client.del(...keys);
+      await this.client!.del(keys);
       this.stats.deletes += keys.length;
       return keys.length;
     } catch (error) {
-      console.error('Redis cache deleteNamespace error:', error);
+      redisLogger.error('Redis cache deleteNamespace error', error instanceof Error ? error : new Error(String(error)), { namespace });
       return 0;
     }
   }
@@ -196,7 +199,7 @@ class RedisCache {
   /**
    * Get multiple keys at once
    */
-  async mget<T = any>(
+  async mget<T = unknown>(
     keys: string[],
     options?: CacheOptions
   ): Promise<Map<string, T>> {
@@ -208,11 +211,11 @@ class RedisCache {
 
     try {
       const cacheKeys = keys.map(k => this.getKey(k, options?.namespace));
-      const values = await this.client.mget(...cacheKeys);
+      const values = await this.client!.mGet(cacheKeys);
 
       keys.forEach((key, index) => {
         if (values[index] !== null) {
-          result.set(key, JSON.parse(values[index]));
+          result.set(key, JSON.parse(values[index]!) as T);
           this.stats.hits++;
         } else {
           this.stats.misses++;
@@ -222,7 +225,7 @@ class RedisCache {
       this.updateHitRate();
       return result;
     } catch (error) {
-      console.error('Redis cache mget error:', error);
+      redisLogger.error('Redis cache mget error', error instanceof Error ? error : new Error(String(error)));
       return result;
     }
   }
@@ -230,7 +233,7 @@ class RedisCache {
   /**
    * Set multiple keys at once
    */
-  async mset<T = any>(
+  async mset<T = unknown>(
     entries: Map<string, T>,
     options?: CacheOptions
   ): Promise<boolean> {
@@ -239,14 +242,14 @@ class RedisCache {
     }
 
     try {
-      const multi = this.client.multi();
+      const multi = this.client!.multi();
 
       for (const [key, value] of entries) {
         const cacheKey = this.getKey(key, options?.namespace);
         const serialized = JSON.stringify(value);
 
         if (options?.ttl) {
-          multi.setex(cacheKey, options.ttl, serialized);
+          multi.setEx(cacheKey, options.ttl, serialized);
         } else {
           multi.set(cacheKey, serialized);
         }
@@ -256,7 +259,7 @@ class RedisCache {
       this.stats.sets += entries.size;
       return true;
     } catch (error) {
-      console.error('Redis cache mset error:', error);
+      redisLogger.error('Redis cache mset error', error instanceof Error ? error : new Error(String(error)));
       return false;
     }
   }
@@ -271,15 +274,15 @@ class RedisCache {
 
     try {
       const cacheKey = this.getKey(key, options?.namespace);
-      const value = await this.client.incrby(cacheKey, by);
+      const value = await this.client!.incrBy(cacheKey, by);
 
       if (options?.ttl) {
-        await this.client.expire(cacheKey, options.ttl);
+        await this.client!.expire(cacheKey, options.ttl);
       }
 
       return value;
     } catch (error) {
-      console.error('Redis cache increment error:', error);
+      redisLogger.error('Redis cache increment error', error instanceof Error ? error : new Error(String(error)), { key });
       return 0;
     }
   }
@@ -321,14 +324,14 @@ class RedisCache {
     }
 
     try {
-      const keys = await this.client.keys('cache:*');
+      const keys = await this.client!.keys('cache:*');
       if (keys.length > 0) {
-        await this.client.del(...keys);
+        await this.client!.del(keys);
         this.stats.deletes += keys.length;
       }
       return true;
     } catch (error) {
-      console.error('Redis cache clear error:', error);
+      redisLogger.error('Redis cache clear error', error instanceof Error ? error : new Error(String(error)));
       return false;
     }
   }
@@ -343,10 +346,10 @@ class RedisCache {
 
     try {
       const pattern = namespace ? `cache:${namespace}:*` : 'cache:*';
-      const keys = await this.client.keys(pattern);
+      const keys = await this.client!.keys(pattern);
       return keys.length;
     } catch (error) {
-      console.error('Redis cache size error:', error);
+      redisLogger.error('Redis cache size error', error instanceof Error ? error : new Error(String(error)));
       return 0;
     }
   }

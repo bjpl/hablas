@@ -7,6 +7,7 @@ import type { NextRequest } from 'next/server';
 import { verifyToken, getUserFromToken } from './jwt';
 import { getTokenFromRequest } from './cookies';
 import type { AuthResult, UserSession } from './types';
+import { authLogger } from '@/lib/utils/logger';
 
 /**
  * Check authentication from request
@@ -49,7 +50,7 @@ export async function checkAuth(request: NextRequest): Promise<AuthResult> {
       role: user?.role || 'viewer',
     };
   } catch (error) {
-    console.error('Authentication check failed:', error);
+    authLogger.error('Authentication check failed', error instanceof Error ? error : new Error(String(error)));
     return {
       authenticated: false,
       error: 'Authentication check failed',

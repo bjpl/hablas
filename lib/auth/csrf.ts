@@ -6,6 +6,7 @@
 import { createHmac, randomBytes } from 'crypto';
 import type { NextRequest } from 'next/server';
 import { serialize, parse } from 'cookie';
+import { authLogger } from '@/lib/utils/logger';
 
 const CSRF_SECRET = process.env.CSRF_SECRET || process.env.JWT_SECRET;
 const CSRF_COOKIE_NAME = 'hablas_csrf_token';
@@ -15,7 +16,7 @@ if (!CSRF_SECRET) {
   if (process.env.NODE_ENV === 'production') {
     throw new Error('CSRF_SECRET or JWT_SECRET must be set in production');
   }
-  console.warn('⚠️  WARNING: Using default CSRF secret in development');
+  authLogger.warn('Using default CSRF secret in development - set CSRF_SECRET or JWT_SECRET env var');
 }
 
 /**
