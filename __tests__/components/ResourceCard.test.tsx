@@ -18,9 +18,11 @@ import type { Resource } from '@/data/resources'
 
 // Mock Next.js Link component
 jest.mock('next/link', () => {
-  return ({ children, href, ...props }: any) => {
+  const MockLink = ({ children, href, ...props }: any) => {
     return <a href={href} {...props}>{children}</a>
   }
+  MockLink.displayName = 'MockLink'
+  return MockLink
 })
 
 const mockResource: Resource = {

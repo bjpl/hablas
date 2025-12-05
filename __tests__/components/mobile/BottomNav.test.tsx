@@ -18,6 +18,7 @@ import React from 'react'
 import { screen } from '@testing-library/react'
 import { renderWithUserEvent } from '../../utils/render-helpers'
 import { axe } from 'jest-axe'
+import Link from 'next/link'
 
 // TODO: Import actual BottomNav component when implemented
 // import BottomNav from '@/components/mobile/BottomNav'
@@ -31,7 +32,7 @@ describe('BottomNav Component (STUB)', () => {
       data-testid="bottom-nav"
     >
       <div className="flex justify-around items-center h-16">
-        <a
+        <Link
           href="/"
           className={`flex flex-col items-center p-3 min-w-[48px] min-h-[48px] ${currentPath === '/' ? 'text-accent-blue' : 'text-gray-600'}`}
           aria-label="Inicio"
@@ -39,8 +40,8 @@ describe('BottomNav Component (STUB)', () => {
         >
           <span>🏠</span>
           <span className="text-xs mt-1">Inicio</span>
-        </a>
-        <a
+        </Link>
+        <Link
           href="/recursos"
           className={`flex flex-col items-center p-3 min-w-[48px] min-h-[48px] ${currentPath === '/recursos' ? 'text-accent-blue' : 'text-gray-600'}`}
           aria-label="Recursos"
@@ -48,8 +49,8 @@ describe('BottomNav Component (STUB)', () => {
         >
           <span>📚</span>
           <span className="text-xs mt-1">Recursos</span>
-        </a>
-        <a
+        </Link>
+        <Link
           href="/perfil"
           className={`flex flex-col items-center p-3 min-w-[48px] min-h-[48px] ${currentPath === '/perfil' ? 'text-accent-blue' : 'text-gray-600'}`}
           aria-label="Perfil"
@@ -57,7 +58,7 @@ describe('BottomNav Component (STUB)', () => {
         >
           <span>👤</span>
           <span className="text-xs mt-1">Perfil</span>
-        </a>
+        </Link>
       </div>
     </nav>
   )

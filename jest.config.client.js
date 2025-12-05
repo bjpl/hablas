@@ -9,6 +9,7 @@
  */
 
 const nextJest = require('next/jest')
+const path = require('path')
 
 const createJestConfig = nextJest({
   dir: './',
@@ -17,7 +18,8 @@ const createJestConfig = nextJest({
 const customJestConfig = {
   displayName: 'client',
   testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.client.js'],
+  rootDir: __dirname,
+  setupFilesAfterEnv: [path.join(__dirname, 'jest.setup.client.js')],
 
   // Client test patterns
   testMatch: [

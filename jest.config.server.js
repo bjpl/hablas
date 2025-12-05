@@ -10,6 +10,7 @@
  */
 
 const nextJest = require('next/jest')
+const path = require('path')
 
 const createJestConfig = nextJest({
   dir: './',
@@ -18,7 +19,8 @@ const createJestConfig = nextJest({
 const customJestConfig = {
   displayName: 'server',
   testEnvironment: '@edge-runtime/jest-environment',
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.server.js'],
+  rootDir: __dirname,
+  setupFilesAfterEnv: [path.join(__dirname, 'jest.setup.server.js')],
 
   // Server test patterns
   testMatch: [

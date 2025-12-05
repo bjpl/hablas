@@ -3,6 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   compress: true,
   poweredByHeader: false,
+  // Fix workspace detection for Jest
+  outputFileTracingRoot: __dirname,
   // ESLint disabled during builds - CI treats warnings as errors
   // TODO: Fix ESLint warnings then re-enable
   eslint: {
