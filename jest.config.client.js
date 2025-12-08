@@ -70,15 +70,6 @@ const customJestConfig = {
 
   // Test timeout
   testTimeout: 10000,
-
-  // Globals
-  globals: {
-    'ts-jest': {
-      tsconfig: {
-        jsx: 'react',
-      },
-    },
-  },
 }
 
 module.exports = createJestConfig(customJestConfig)

@@ -3,6 +3,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Play, Pause, Volume2, VolumeX, SkipBack, SkipForward, AlertCircle } from 'lucide-react';
 import type { AudioPlayerState } from '@/lib/types/media';
+import { createLogger } from '@/lib/utils/logger';
+
+const playerLogger = createLogger('AudioPlayer');
 
 interface AudioPlayerProps {
   src: string;
@@ -35,7 +38,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
     const resolveUrl = async () => {
       // If already a full URL, use it
       if (src.startsWith('http://') || src.startsWith('https://')) {
-        console.log('[AudioPlayer] Using full URL:', src);
+        playerLogger.debug('Using full URL', { src });
         setResolvedSrc(src);
         setState(prev => ({ ...prev, isLoading: false }));
         return;
@@ -43,7 +46,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
 
       // In development, use local path directly
       if (process.env.NODE_ENV === 'development') {
-        console.log('[AudioPlayer] Development mode, using local path:', src);
+        playerLogger.debug('Development mode, using local path', { src });
         setResolvedSrc(src);
         setState(prev => ({ ...prev, isLoading: false }));
         return;
@@ -51,29 +54,29 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
 
       // In production, try to get from blob storage
       const filename = src.replace(/^\/audio\//, '');
-      console.log('[AudioPlayer] Resolving blob storage URL for:', filename);
+      playerLogger.debug('Resolving blob storage URL', { filename });
 
       try {
         const response = await fetch(`/api/audio/${filename}`);
         if (response.ok) {
           const data = await response.json();
           if (data.success && data.url) {
-            console.log('[AudioPlayer] Blob URL resolved:', data.url);
+            playerLogger.debug('Blob URL resolved', { url: data.url });
             setResolvedSrc(data.url);
             setState(prev => ({ ...prev, isLoading: false }));
             return;
           } else {
-            console.warn('[AudioPlayer] API returned unsuccessful response:', data);
+            playerLogger.warn('API returned unsuccessful response', { data });
           }
         } else {
-          console.warn('[AudioPlayer] API request failed:', response.status, response.statusText);
+          playerLogger.warn('API request failed', { status: response.status, statusText: response.statusText });
         }
       } catch (error) {
-        console.error('[AudioPlayer] Blob storage fetch error:', error);
+        playerLogger.error('Blob storage fetch error', error as Error);
       }
 
       // Fallback to original path
-      console.log('[AudioPlayer] Falling back to original path:', src);
+      playerLogger.debug('Falling back to original path', { src });
       setResolvedSrc(src);
       setState(prev => ({ ...prev, isLoading: false }));
     };
@@ -87,10 +90,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
     if (!audio || !resolvedSrc) return;
 
     const handleLoadedMetadata = () => {
-      console.log('[AudioPlayer] Audio metadata loaded:', {
-        duration: audio.duration,
-        src: resolvedSrc,
-      });
+      playerLogger.debug('Audio metadata loaded', { duration: audio.duration, src: resolvedSrc });
       setState(prev => ({
         ...prev,
         duration: audio.duration,
@@ -100,7 +100,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
     };
 
     const handleCanPlay = () => {
-      console.log('[AudioPlayer] Audio can play');
+      playerLogger.debug('Audio can play');
       setState(prev => ({ ...prev, isLoading: false, error: null }));
     };
 
@@ -136,9 +136,8 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
         }
       }
 
-      console.error('[AudioPlayer] Audio error:', {
+      playerLogger.error('Audio error', new Error(errorDetails), {
         code: audio?.error?.code,
-        message: errorDetails,
         src: resolvedSrc,
         originalSrc: src,
       });
@@ -157,7 +156,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
     audio.addEventListener('error', handleError);
 
     // Force reload when src changes
-    console.log('[AudioPlayer] Loading audio from:', resolvedSrc);
+    playerLogger.debug('Loading audio', { src: resolvedSrc });
     setState(prev => ({ ...prev, isLoading: true, error: null }));
     audio.load();
 

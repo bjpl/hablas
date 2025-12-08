@@ -8,6 +8,9 @@
 
 import { useState, useRef, useEffect, useLayoutEffect, useCallback, useTransition } from 'react';
 import { useAudioContext } from '@/lib/contexts/AudioContext';
+import { createLogger } from '@/lib/utils/logger';
+
+const audioLogger = createLogger('useAudioPlayer');
 
 // Use useLayoutEffect on client, useEffect on server (for SSR compatibility)
 const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
@@ -74,17 +77,17 @@ export function useAudioPlayer(
 
   // Callback ref to capture audio element when mounted
   const audioCallbackRef = useCallback((node: HTMLAudioElement | null) => {
-    console.log('[useAudioPlayer] Callback ref called with:', node ? 'HTMLAudioElement' : 'null');
+    audioLogger.debug('Callback ref called', { hasNode: !!node });
     audioRef.current = node;
     setAudioElement(node);
 
     // Immediate load attempt when ref is first attached
     if (node && audioUrl) {
-      console.log('[useAudioPlayer] Callback ref - immediate load attempt');
+      audioLogger.debug('Callback ref - immediate load attempt');
       // Use requestAnimationFrame to ensure DOM is fully ready
       requestAnimationFrame(() => {
         if (node.networkState === HTMLMediaElement.NETWORK_EMPTY) {
-          console.log('[useAudioPlayer] Callback ref - network state empty, calling load()');
+          audioLogger.debug('Callback ref - network state empty, calling load()');
           node.load();
         }
       });
@@ -97,32 +100,33 @@ export function useAudioPlayer(
     // Use the state-tracked element directly for reliability
     const audio = audioElement;
     if (!audio) {
-      console.log('[useAudioPlayer] Layout effect - waiting for audio element');
+      audioLogger.debug('Layout effect - waiting for audio element');
       return;
     }
 
     if (!audioUrl) {
-      console.log('[useAudioPlayer] Layout effect - no audio URL provided');
+      audioLogger.debug('Layout effect - no audio URL provided');
       return;
     }
 
-    console.log('[useAudioPlayer] Layout effect - audio element attached, forcing load');
-    console.log('[useAudioPlayer] Current src:', audio.src);
-    console.log('[useAudioPlayer] Target URL:', audioUrl);
-    console.log('[useAudioPlayer] ReadyState:', audio.readyState);
-    console.log('[useAudioPlayer] NetworkState:', audio.networkState);
+    audioLogger.debug('Layout effect - audio element attached, forcing load', {
+      currentSrc: audio.src,
+      targetUrl: audioUrl,
+      readyState: audio.readyState,
+      networkState: audio.networkState
+    });
 
     // Always ensure src is set correctly (handles relative vs absolute URL mismatch)
     const normalizedAudioUrl = audioUrl.startsWith('/') ? audioUrl : `/${audioUrl}`;
     const currentSrcPath = new URL(audio.src, window.location.origin).pathname;
 
     if (currentSrcPath !== normalizedAudioUrl) {
-      console.log('[useAudioPlayer] Setting src explicitly:', audioUrl);
+      audioLogger.debug('Setting src explicitly', { audioUrl });
       audio.src = audioUrl;
     }
 
     // Force load - this triggers the browser to fetch the audio
-    console.log('[useAudioPlayer] Calling audio.load()');
+    audioLogger.debug('Calling audio.load()');
     audio.load();
   }, [audioUrl, audioElement]); // Re-run when element is attached or URL changes
 
@@ -133,17 +137,17 @@ export function useAudioPlayer(
 
     // If audioElement is already set, skip the fallback
     if (audioElement) {
-      console.log('[useAudioPlayer] Fallback effect - audioElement already set, skipping');
+      audioLogger.debug('Fallback effect - audioElement already set, skipping');
       return;
     }
 
-    console.log('[useAudioPlayer] Fallback effect - scheduling delayed check');
+    audioLogger.debug('Fallback effect - scheduling delayed check');
 
     // Wait a tick for hydration to complete, then check if we have an audio element
     const timeoutId = setTimeout(() => {
       const audio = audioRef.current;
       if (audio && audio.networkState === HTMLMediaElement.NETWORK_EMPTY) {
-        console.log('[useAudioPlayer] Fallback effect - found audio element, forcing load');
+        audioLogger.debug('Fallback effect - found audio element, forcing load');
         audio.load();
       }
     }, 100); // Small delay to let hydration complete
@@ -191,7 +195,7 @@ export function useAudioPlayer(
 
     // Preload in background
     preloadAudio(audioUrl, { resourceId: optionsRef.current.resourceId }).catch((err) => {
-      console.warn('Background preload failed:', err);
+      audioLogger.warn('Background preload failed', { error: err });
     });
 
     checkCache();
@@ -201,14 +205,14 @@ export function useAudioPlayer(
   useEffect(() => {
     const audio = audioElement; // Use state-tracked element instead of ref
     if (!audio || !audioUrl) {
-      console.log('[useAudioPlayer] Waiting for audio element or URL', { hasAudio: !!audio, audioUrl });
+      audioLogger.debug('Waiting for audio element or URL', { hasAudio: !!audio, audioUrl });
       return;
     }
 
-    console.log('[useAudioPlayer] Setting up audio event listeners for:', audioUrl);
+    audioLogger.debug('Setting up audio event listeners', { audioUrl });
 
     const handleLoadedMetadata = () => {
-      console.log('[useAudioPlayer] loadedmetadata fired, duration:', audio.duration);
+      audioLogger.debug('loadedmetadata fired', { duration: audio.duration });
       setState((prev) => ({ ...prev, duration: audio.duration, error: null }));
 
       // Restore saved position
@@ -228,21 +232,21 @@ export function useAudioPlayer(
     };
 
     const handleCanPlay = () => {
-      console.log('[useAudioPlayer] canplay fired - audio ready to play');
+      audioLogger.debug('canplay fired - audio ready to play');
       setState((prev) => ({ ...prev, isLoading: false, error: null }));
     };
 
     const handleCanPlayThrough = () => {
-      console.log('[useAudioPlayer] canplaythrough fired - audio fully buffered');
+      audioLogger.debug('canplaythrough fired - audio fully buffered');
       setState((prev) => ({ ...prev, isLoading: false, error: null }));
     };
 
     const handleLoadStart = () => {
-      console.log('[useAudioPlayer] loadstart fired - beginning to load');
+      audioLogger.debug('loadstart fired - beginning to load');
     };
 
     const handleProgress = () => {
-      console.log('[useAudioPlayer] progress fired - loading data');
+      audioLogger.debug('progress fired - loading data');
     };
 
     const handleError = () => {
@@ -265,10 +269,9 @@ export function useAudioPlayer(
         }
       }
 
-      console.error('Audio error:', {
+      audioLogger.error('Audio error', new Error(errorMessage), {
         url: audioUrl,
-        error: audio.error,
-        message: errorMessage,
+        errorCode: audio.error?.code,
       });
 
       setState((prev) => ({
@@ -304,10 +307,10 @@ export function useAudioPlayer(
     audio.addEventListener('ended', handleEnded);
 
     // Check current state - audio might already be ready
-    console.log('[useAudioPlayer] Audio readyState:', audio.readyState, 'networkState:', audio.networkState);
+    audioLogger.debug('Audio state check', { readyState: audio.readyState, networkState: audio.networkState });
     if (audio.readyState >= 3) {
       // HAVE_FUTURE_DATA or HAVE_ENOUGH_DATA
-      console.log('[useAudioPlayer] Audio already ready, setting loading false');
+      audioLogger.debug('Audio already ready, setting loading false');
       setState((prev) => ({ ...prev, isLoading: false, error: null }));
     } else if (audio.readyState >= 1) {
       handleLoadedMetadata();
@@ -315,12 +318,12 @@ export function useAudioPlayer(
 
     // Force load if not started
     if (audio.networkState === 0) {
-      console.log('[useAudioPlayer] Network state EMPTY, calling load()');
+      audioLogger.debug('Network state EMPTY, calling load()');
       audio.load();
     }
 
     return () => {
-      console.log('[useAudioPlayer] Cleaning up event listeners');
+      audioLogger.debug('Cleaning up event listeners');
       if (audioRef.current && audioUrl) {
         savePlaybackPosition(audioUrl, audioRef.current.currentTime);
         audioRef.current.pause();
@@ -361,7 +364,7 @@ export function useAudioPlayer(
 
         optionsRef.current.onPlay?.();
       } catch (err) {
-        console.error('Error playing audio:', err);
+        audioLogger.error('Error playing audio', err as Error);
         const errorMessage = 'No se pudo reproducir el audio';
 
         setState((prev) => ({

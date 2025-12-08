@@ -17,6 +17,9 @@
 
 import { z } from 'zod';
 import { sanitizeHtml, sanitizeText } from './sanitize';
+import { createLogger } from './utils/logger';
+
+const fetchLogger = createLogger('ContentFetcher');
 
 // =============================================================================
 // TYPE DEFINITIONS & VALIDATION SCHEMAS
@@ -333,7 +336,7 @@ export class ContentCache {
         request.onerror = () => reject(request.error);
       });
     } catch (error) {
-      console.error('Cache get error:', error);
+      fetchLogger.error('Cache get error', error as Error);
       return null;
     }
   }
@@ -365,7 +368,7 @@ export class ContentCache {
         request.onerror = () => reject(request.error);
       });
     } catch (error) {
-      console.error('Cache set error:', error);
+      fetchLogger.error('Cache set error', error as Error);
       return false;
     }
   }
@@ -385,7 +388,7 @@ export class ContentCache {
         request.onerror = () => reject(request.error);
       });
     } catch (error) {
-      console.error('Cache delete error:', error);
+      fetchLogger.error('Cache delete error', error as Error);
       return false;
     }
   }
@@ -405,7 +408,7 @@ export class ContentCache {
         request.onerror = () => reject(request.error);
       });
     } catch (error) {
-      console.error('Cache clear error:', error);
+      fetchLogger.error('Cache clear error', error as Error);
       return false;
     }
   }
@@ -425,7 +428,7 @@ export class ContentCache {
         request.onerror = () => reject(request.error);
       });
     } catch (error) {
-      console.error('Cache size error:', error);
+      fetchLogger.error('Cache size error', error as Error);
       return 0;
     }
   }
@@ -462,7 +465,7 @@ export class ContentCache {
         request.onerror = () => reject(request.error);
       });
     } catch (error) {
-      console.error('Cache clean error:', error);
+      fetchLogger.error('Cache clean error', error as Error);
       return 0;
     }
   }
@@ -509,7 +512,7 @@ export class PDFContentFetcher {
 
       this.pdfjs = pdfjsLib;
     } catch (error) {
-      console.warn('PDF.js not available. Install with: npm install pdfjs-dist');
+      fetchLogger.warn('PDF.js not available. Install with: npm install pdfjs-dist');
       throw new ContentFetchError(
         'PDF.js library not available',
         'PDFJS_NOT_AVAILABLE',
@@ -1054,7 +1057,7 @@ export class ContentFetcher {
             updateProgress();
           })
           .catch(error => {
-            console.error('PDF fetch failed:', error);
+            fetchLogger.error('PDF fetch failed', error as Error);
           })
       );
     }
@@ -1068,7 +1071,7 @@ export class ContentFetcher {
             updateProgress();
           })
           .catch(error => {
-            console.error('Web content fetch failed:', error);
+            fetchLogger.error('Web content fetch failed', error as Error);
           })
       );
     }
@@ -1087,7 +1090,7 @@ export class ContentFetcher {
             updateProgress();
           })
           .catch(error => {
-            console.error('Audio transcript fetch failed:', error);
+            fetchLogger.error('Audio transcript fetch failed', error as Error);
           })
       );
     }
@@ -1106,7 +1109,7 @@ export class ContentFetcher {
     const promises = resources.map(resource =>
       this.fetchAll(resource, { ...options, cache: true })
         .catch(error => {
-          console.error(`Prefetch failed for ${resource.id}:`, error);
+          fetchLogger.error('Prefetch failed', error as Error, { resourceId: resource.id });
         })
     );
 

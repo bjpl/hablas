@@ -85,18 +85,6 @@ const customJestConfig = {
   // Server-specific settings
   maxWorkers: 1, // Run server tests sequentially to avoid conflicts
 
-  // Globals
-  globals: {
-    'ts-jest': {
-      useESM: true,
-      tsconfig: {
-        module: 'ESNext',
-        moduleResolution: 'bundler',
-        esModuleInterop: true,
-      },
-    },
-  },
-
   // Workaround for ESM modules
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'mjs'],
 }
