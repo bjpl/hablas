@@ -5,6 +5,7 @@
 
 import { db } from '../../lib/db/pool';
 import { redis, redisHealthCheck } from '../../lib/db/redis';
+import { logger } from '../../lib/utils/logger';
 
 interface HealthCheckResult {
   database: {
@@ -144,8 +145,8 @@ async function checkIndexes(): Promise<HealthCheckResult['indexes']> {
  * Run health check
  */
 async function main() {
-  console.log('🏥 Running database health check...\n');
-  console.log('='.repeat(60));
+  logger.info('Running database health check', { script: 'health-check' });
+  logger.info('='.repeat(60), { script: 'health-check' });
 
   try {
     // Initialize connection
@@ -171,59 +172,59 @@ async function main() {
     };
 
     // Print results
-    console.log('\n📊 Database Connection:');
-    console.log(`  Status:        ${connection.connected ? '✅ Connected' : '❌ Disconnected'}`);
-    console.log(`  Response Time: ${connection.responseTime}ms`);
-    if (connection.error) {
-      console.log(`  Error:         ${connection.error}`);
-    }
+    logger.info('Database Connection', {
+      script: 'health-check',
+      connected: connection.connected,
+      responseTime: connection.responseTime,
+      error: connection.error
+    });
 
-    console.log('\n🔴 Redis Connection:');
-    console.log(`  Status:        ${redisStatus.connected ? '✅ Connected' : '⚠️  Not Connected'}`);
-    console.log(`  Mode:          ${redisStatus.mode === 'redis' ? '🚀 Redis' : '💾 In-Memory'}`);
-    if (redisStatus.responseTime) {
-      console.log(`  Response Time: ${redisStatus.responseTime}ms`);
-    }
-    if (redisStatus.error) {
-      console.log(`  Info:          ${redisStatus.error}`);
-    }
+    logger.info('Redis Connection', {
+      script: 'health-check',
+      connected: redisStatus.connected,
+      mode: redisStatus.mode,
+      responseTime: redisStatus.responseTime,
+      error: redisStatus.error
+    });
 
-    console.log('\n📋 Tables:');
-    for (const [table, info] of Object.entries(tables)) {
-      const status = info.exists ? '✅' : '❌';
-      console.log(`  ${status} ${table.padEnd(20)} ${info.exists ? `(${info.rowCount} rows)` : '(missing)'}`);
-    }
+    logger.info('Tables status', {
+      script: 'health-check',
+      tables: Object.entries(tables).map(([table, info]) => ({
+        table,
+        exists: info.exists,
+        rowCount: info.rowCount
+      }))
+    });
 
-    console.log('\n🔍 Indexes:');
-    console.log(`  Total: ${indexes.total}`);
-    for (const idx of indexes.details.slice(0, 10)) {
-      console.log(`    - ${idx.table}.${idx.index}`);
-    }
-    if (indexes.total > 10) {
-      console.log(`    ... and ${indexes.total - 10} more`);
-    }
+    logger.info('Indexes summary', {
+      script: 'health-check',
+      total: indexes.total,
+      sample: indexes.details.slice(0, 10).map(idx => `${idx.table}.${idx.index}`)
+    });
 
     if (poolStats) {
-      console.log('\n🔗 Connection Pool:');
-      console.log(`  Total:   ${poolStats.totalCount}`);
-      console.log(`  Idle:    ${poolStats.idleCount}`);
-      console.log(`  Waiting: ${poolStats.waitingCount}`);
+      logger.info('Connection Pool stats', {
+        script: 'health-check',
+        total: poolStats.totalCount,
+        idle: poolStats.idleCount,
+        waiting: poolStats.waitingCount
+      });
     }
 
     // Overall status
     const allTablesExist = Object.values(tables).every(t => t.exists);
     const isHealthy = connection.connected && allTablesExist;
 
-    console.log('\n' + '='.repeat(60));
+    logger.info('='.repeat(60), { script: 'health-check' });
     if (isHealthy) {
-      console.log('✅ Database is healthy!');
+      logger.info('Database is healthy', { script: 'health-check' });
       process.exit(0);
     } else {
-      console.log('⚠️  Database has issues - see details above');
+      logger.warn('Database has issues - see details above', { script: 'health-check' });
       process.exit(1);
     }
   } catch (error) {
-    console.error('\n❌ Health check failed:', error);
+    logger.error('Health check failed', { script: 'health-check', error });
     process.exit(1);
   } finally {
     await db.close();

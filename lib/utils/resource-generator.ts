@@ -6,6 +6,7 @@
 import type { Resource } from '@/data/resources'
 import { ALL_TEMPLATES } from '@/data/templates/resource-templates'
 import { validateResource, suggestNextId } from './resource-validator'
+import { logger } from './logger'
 
 /**
  * Generate a new resource from a template
@@ -34,7 +35,10 @@ export function generateFromTemplate(
   // Validate
   const validation = validateResource(newResource)
   if (!validation.isValid) {
-    console.warn('Generated resource has validation errors:', validation.errors)
+    logger.warn('Generated resource has validation errors', {
+      component: 'resource-generator',
+      errors: validation.errors
+    })
   }
 
   return newResource
@@ -307,13 +311,13 @@ export const cli = {
    * List all available templates
    */
   list(): void {
-    console.log('📚 Available Templates:\n')
+    logger.info('Available Templates', { component: 'resource-generator-cli' })
     const byCategory = listTemplatesByCategory()
 
     for (const [category, templates] of Object.entries(byCategory)) {
-      console.log(`\n${category.toUpperCase()}:`)
-      templates.forEach(template => {
-        console.log(`  - ${template}`)
+      logger.info(`Category: ${category.toUpperCase()}`, {
+        component: 'resource-generator-cli',
+        templates
       })
     }
   },
@@ -324,12 +328,18 @@ export const cli = {
   show(templateName: string): void {
     const template = findTemplate(templateName)
     if (!template) {
-      console.error(`❌ Template '${templateName}' not found`)
+      logger.error('Template not found', {
+        component: 'resource-generator-cli',
+        templateName
+      })
       return
     }
 
-    console.log(`\n📄 Template: ${templateName}\n`)
-    console.log(JSON.stringify(template, null, 2))
+    logger.info('Template details', {
+      component: 'resource-generator-cli',
+      templateName,
+      template
+    })
   },
 
   /**
@@ -338,10 +348,15 @@ export const cli = {
   generate(templateName: string, overrides: Partial<Resource> = {}): void {
     try {
       const resource = generateFromTemplate(templateName, overrides)
-      console.log('\n✅ Resource generated:\n')
-      console.log(JSON.stringify(resource, null, 2))
+      logger.info('Resource generated', {
+        component: 'resource-generator-cli',
+        resource
+      })
     } catch (error) {
-      console.error('❌ Generation failed:', error)
+      logger.error('Generation failed', {
+        component: 'resource-generator-cli',
+        error
+      })
     }
   }
 }

@@ -9,6 +9,7 @@ import type { Resource } from '@/data/resources'
 import { validateResource } from '@/lib/utils/resource-validator'
 import { readFileSync } from 'fs'
 import { join } from 'path'
+import { logger } from '@/lib/utils/logger'
 
 // Initialize Anthropic client
 const anthropic = new Anthropic({
@@ -93,7 +94,10 @@ async function loadContentGuidelines(): Promise<string> {
     const guidelinesPath = join(process.cwd(), 'docs', 'resources', 'content-creation-guide.md')
     return readFileSync(guidelinesPath, 'utf-8')
   } catch (error) {
-    console.warn('Could not load content guidelines, using built-in defaults')
+    logger.warn('Could not load content guidelines, using built-in defaults', {
+      component: 'resource-content-generator',
+      error
+    })
     return getDefaultGuidelines()
   }
 }
@@ -412,7 +416,10 @@ export async function generateResourceBatch(
   const results = []
 
   for (const resource of resources) {
-    console.log(`Generating content for: ${resource.title}`)
+    logger.info('Generating content', {
+      component: 'resource-content-generator',
+      title: resource.title
+    })
 
     try {
       // Generate content
@@ -428,13 +435,22 @@ export async function generateResourceBatch(
         validation
       })
 
-      console.log(`✅ Generated (${metadata.wordCount} words, ${metadata.tokensUsed} tokens)`)
+      logger.info('Generated content successfully', {
+        component: 'resource-content-generator',
+        title: resource.title,
+        wordCount: metadata.wordCount,
+        tokensUsed: metadata.tokensUsed
+      })
 
       // Rate limiting: wait 1 second between requests
       await new Promise(resolve => setTimeout(resolve, 1000))
 
     } catch (error) {
-      console.error(`❌ Failed to generate ${resource.title}:`, error)
+      logger.error('Failed to generate content', {
+        component: 'resource-content-generator',
+        title: resource.title,
+        error
+      })
       results.push({
         resource,
         content: '',
@@ -455,7 +471,11 @@ export async function generateCompleteResourceSet(
   category: Resource['category'],
   config: GenerationConfig = {}
 ): Promise<any[]> {
-  console.log(`\n🚀 Generating complete resource set for: ${topic}\n`)
+  logger.info('Generating complete resource set', {
+    component: 'resource-content-generator',
+    topic,
+    category
+  })
 
   // Define the set: Basic PDF + Audio, Intermediate PDF, Advanced PDF
   const resourceSet: Partial<Resource>[] = [
@@ -530,7 +550,10 @@ export async function saveGeneratedContent(
     const filepath = path.join(outputDir, `${filename}${extension}`)
 
     await fs.writeFile(filepath, result.content, 'utf-8')
-    console.log(`💾 Saved: ${filepath}`)
+    logger.info('Saved generated content', {
+      component: 'resource-content-generator',
+      filepath
+    })
   }
 }
 

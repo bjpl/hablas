@@ -8,20 +8,31 @@ import path from 'path';
 import { db } from '../../lib/db/pool';
 import { createUser } from '../../lib/db/users';
 import type { UserRole } from '../types';
+import { logger } from '../../lib/utils/logger';
 
 /**
  * Run SQL migration file
  */
 async function runMigration(filePath: string): Promise<void> {
-  console.log(`\n📄 Running migration: ${path.basename(filePath)}`);
+  logger.info('Running migration', {
+    script: 'init-db',
+    file: path.basename(filePath)
+  });
 
   const sql = await fs.readFile(filePath, 'utf-8');
 
   try {
     await db.query(sql);
-    console.log(`✅ Migration completed successfully`);
+    logger.info('Migration completed successfully', {
+      script: 'init-db',
+      file: path.basename(filePath)
+    });
   } catch (error: any) {
-    console.error(`❌ Migration failed:`, error.message);
+    logger.error('Migration failed', {
+      script: 'init-db',
+      file: path.basename(filePath),
+      error: error.message
+    });
     throw error;
   }
 }
@@ -43,7 +54,7 @@ async function getMigrationFiles(): Promise<string[]> {
  * Create default admin user if none exists
  */
 async function createDefaultAdmin(): Promise<void> {
-  console.log('\n👤 Checking for admin users...');
+  logger.info('Checking for admin users', { script: 'init-db' });
 
   const result = await db.query(
     "SELECT COUNT(*) FROM users WHERE role = 'admin'"
@@ -52,11 +63,14 @@ async function createDefaultAdmin(): Promise<void> {
   const adminCount = parseInt(result.rows[0].count, 10);
 
   if (adminCount > 0) {
-    console.log(`ℹ️  ${adminCount} admin user(s) already exist`);
+    logger.info('Admin user(s) already exist', {
+      script: 'init-db',
+      count: adminCount
+    });
     return;
   }
 
-  console.log('🔐 No admin users found. Creating default admin...');
+  logger.info('No admin users found. Creating default admin', { script: 'init-db' });
 
   const adminEmail = process.env.ADMIN_EMAIL || 'admin@hablas.co';
   const adminPassword = process.env.ADMIN_PASSWORD || 'Admin123!ChangeThis';
@@ -70,10 +84,16 @@ async function createDefaultAdmin(): Promise<void> {
       role: 'admin' as UserRole,
     });
 
-    console.log(`✅ Default admin created: ${admin.email}`);
-    console.log(`⚠️  IMPORTANT: Change the default password immediately!`);
+    logger.info('Default admin created', {
+      script: 'init-db',
+      email: admin.email
+    });
+    logger.warn('IMPORTANT: Change the default password immediately', { script: 'init-db' });
   } catch (error: any) {
-    console.error('❌ Failed to create default admin:', error.message);
+    logger.error('Failed to create default admin', {
+      script: 'init-db',
+      error: error.message
+    });
     throw error;
   }
 }
@@ -82,17 +102,20 @@ async function createDefaultAdmin(): Promise<void> {
  * Main initialization function
  */
 async function main() {
-  console.log('🚀 Initializing database...\n');
-  console.log('='.repeat(50));
+  logger.info('Initializing database', { script: 'init-db' });
+  logger.info('='.repeat(50), { script: 'init-db' });
 
   try {
     // Initialize connection
     await db.initialize();
-    console.log('✅ Database connection established');
+    logger.info('Database connection established', { script: 'init-db' });
 
     // Get and run migrations
     const migrations = await getMigrationFiles();
-    console.log(`\n📚 Found ${migrations.length} migration(s)`);
+    logger.info('Found migrations', {
+      script: 'init-db',
+      count: migrations.length
+    });
 
     for (const migration of migrations) {
       await runMigration(migration);
@@ -102,20 +125,22 @@ async function main() {
     await createDefaultAdmin();
 
     // Summary
-    console.log('\n' + '='.repeat(50));
-    console.log('✅ Database initialization complete!');
-    console.log('='.repeat(50));
+    logger.info('='.repeat(50), { script: 'init-db' });
+    logger.info('Database initialization complete', { script: 'init-db' });
+    logger.info('='.repeat(50), { script: 'init-db' });
 
     // Show pool stats
     const stats = db.getStats();
     if (stats) {
-      console.log('\n📊 Connection Pool Stats:');
-      console.log(`  Total:   ${stats.totalCount}`);
-      console.log(`  Idle:    ${stats.idleCount}`);
-      console.log(`  Waiting: ${stats.waitingCount}`);
+      logger.info('Connection Pool stats', {
+        script: 'init-db',
+        total: stats.totalCount,
+        idle: stats.idleCount,
+        waiting: stats.waitingCount
+      });
     }
   } catch (error) {
-    console.error('\n❌ Database initialization failed:', error);
+    logger.error('Database initialization failed', { script: 'init-db', error });
     process.exit(1);
   } finally {
     await db.close();
