@@ -4,7 +4,9 @@
  */
 
 import type { ErrorReport, ErrorContext, ErrorSeverity, ErrorInfo } from './types';
+import { createLogger } from '@/lib/utils/logger';
 
+const errorLoggerInstance = createLogger('ErrorLogger');
 const isDevelopment = process.env.NODE_ENV === 'development';
 
 /**
@@ -49,12 +51,15 @@ export function getErrorSeverity(error: Error): ErrorSeverity {
  */
 export function logErrorToConsole(error: Error, errorInfo: ErrorInfo, component?: string): void {
   if (isDevelopment) {
-    console.group(`🚨 Error in ${component || 'Unknown Component'}`);
-    console.error('Error:', error);
-    console.error('Error Message:', error.message);
-    console.error('Stack:', error.stack);
-    console.error('Component Stack:', errorInfo.componentStack);
-    console.groupEnd();
+    errorLoggerInstance.error(
+      `Error in ${component || 'Unknown Component'}`,
+      error,
+      {
+        message: error.message,
+        stack: error.stack,
+        componentStack: errorInfo.componentStack,
+      }
+    );
   }
 }
 
@@ -75,9 +80,9 @@ export async function sendErrorToTracking(report: ErrorReport): Promise<void> {
       //   body: JSON.stringify(report),
       // });
 
-      console.warn('Error tracking not configured. Error report:', report);
+      errorLoggerInstance.warn('Error tracking not configured', { report });
     } catch (trackingError) {
-      console.error('Failed to send error to tracking:', trackingError);
+      errorLoggerInstance.error('Failed to send error to tracking', trackingError as Error);
     }
   }
 }

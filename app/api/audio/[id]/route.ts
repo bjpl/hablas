@@ -7,6 +7,9 @@ import { head } from '@vercel/blob';
 import { NextRequest, NextResponse } from 'next/server';
 import { checkAuth } from '@/lib/auth/middleware-helper';
 import { checkRateLimit } from '@/lib/utils/rate-limiter';
+import { createLogger } from '@/lib/utils/logger';
+
+const audioApiLogger = createLogger('api:audio');
 
 interface AudioResponse {
   success: boolean;
@@ -81,7 +84,7 @@ export async function GET(
 
     // Verify Blob token is configured
     if (!process.env.BLOB_READ_WRITE_TOKEN) {
-      console.error('BLOB_READ_WRITE_TOKEN not configured');
+      audioApiLogger.error('BLOB_READ_WRITE_TOKEN not configured');
       return NextResponse.json(
         {
           success: false,
@@ -168,7 +171,7 @@ export async function GET(
       },
     });
   } catch (error) {
-    console.error('Audio retrieval error:', error);
+    audioApiLogger.error('Audio retrieval error', error as Error);
 
     // Handle blob not found error
     if (error instanceof Error && error.message.includes('not found')) {
@@ -243,7 +246,7 @@ export async function DELETE(
 
     // Verify Blob token is configured
     if (!process.env.BLOB_READ_WRITE_TOKEN) {
-      console.error('BLOB_READ_WRITE_TOKEN not configured');
+      audioApiLogger.error('BLOB_READ_WRITE_TOKEN not configured');
       return NextResponse.json(
         {
           success: false,
@@ -298,7 +301,7 @@ export async function DELETE(
       }
     );
   } catch (error) {
-    console.error('Audio deletion error:', error);
+    audioApiLogger.error('Audio deletion error', error as Error);
 
     // Handle specific error types
     if (error instanceof Error) {

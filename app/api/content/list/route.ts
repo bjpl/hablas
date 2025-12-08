@@ -11,6 +11,9 @@ import { visibleResources } from '@/data/resources';
 import fs from 'fs/promises';
 import path from 'path';
 import type { ListResourcesResponse, ContentEdit } from '@/lib/types/content-edits';
+import { createLogger } from '@/lib/utils/logger';
+
+const contentListLogger = createLogger('api:content:list');
 
 export async function GET() {
   try {
@@ -44,7 +47,7 @@ export async function GET() {
 
     return NextResponse.json(response);
   } catch (error) {
-    console.error('Error fetching resource list:', error);
+    contentListLogger.error('Error fetching resource list', error as Error);
     return NextResponse.json(
       { error: 'Failed to fetch resources' },
       { status: 500 }

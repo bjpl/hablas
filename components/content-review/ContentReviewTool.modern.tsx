@@ -25,6 +25,9 @@ import { useContentManager } from './hooks/useContentManager';
 import { useOptimisticUpdate } from '@/lib/hooks/useOptimisticUpdate';
 import { useTheme } from '@/lib/hooks/useTheme';
 import { SkeletonCard } from '@/components/ui/SkeletonLoader';
+import { createLogger } from '@/lib/utils/logger';
+
+const contentReviewModernLogger = createLogger('ContentReviewToolModern');
 
 export interface ContentItem {
   id: string;
@@ -129,9 +132,9 @@ export const ContentReviewTool: React.FC<ContentReviewToolProps> = ({
 
     try {
       await onSave(currentContent);
-      console.log('Auto-saved successfully');
+      contentReviewModernLogger.info('Auto-saved successfully');
     } catch (error) {
-      console.error('Auto-save failed:', error);
+      contentReviewModernLogger.error('Auto-save failed', error as Error);
     }
   }, [onSave]);
 

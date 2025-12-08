@@ -4,6 +4,9 @@
  */
 
 import { SECURITY_CONFIG } from '@/lib/config/security';
+import { createLogger } from '@/lib/utils/logger';
+
+const rateLimiterLogger = createLogger('lib:rate-limiter');
 
 export interface RateLimitConfig {
   maxAttempts: number;
@@ -149,7 +152,7 @@ async function checkRedisRateLimit(
       resetAt,
     };
   } catch (error) {
-    console.error('Redis rate limit error:', error);
+    rateLimiterLogger.error('Redis rate limit error', error as Error);
     // Fallback to memory store on Redis error
     return checkMemoryRateLimit(key, config);
   }
@@ -195,7 +198,7 @@ export async function resetRateLimit(
     try {
       await client.del(`ratelimit:${key}`);
     } catch (error) {
-      console.error('Redis reset error:', error);
+      rateLimiterLogger.error('Redis reset error', error as Error);
     }
   }
 
@@ -232,7 +235,7 @@ export async function getRateLimitStatus(
         resetAt: now + ttl,
       };
     } catch (error) {
-      console.error('Redis status error:', error);
+      rateLimiterLogger.error('Redis status error', error as Error);
     }
   }
 
@@ -263,7 +266,7 @@ export async function clearAllRateLimits(): Promise<void> {
         await client.del(keys);
       }
     } catch (error) {
-      console.error('Redis clear error:', error);
+      rateLimiterLogger.error('Redis clear error', error as Error);
     }
   }
 

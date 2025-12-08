@@ -3,6 +3,10 @@
  * Provides tools for measuring and reporting web vitals and custom metrics
  */
 
+import { createLogger } from '@/lib/utils/logger';
+
+const perfLogger = createLogger('lib:performance');
+
 interface PerformanceMetric {
   name: string
   value: number
@@ -14,9 +18,9 @@ interface PerformanceMetric {
  * Reports Web Vitals metrics
  */
 export function reportWebVitals(metric: PerformanceMetric) {
-  // Log to console in development
+  // Log in development
   if (process.env.NODE_ENV === 'development') {
-    console.log(`[Web Vitals] ${metric.name}:`, {
+    perfLogger.debug(`Web Vitals - ${metric.name}`, {
       value: metric.value,
       rating: metric.rating,
     })
@@ -54,7 +58,7 @@ export class PerformanceMonitor {
   end(label: string): number | null {
     const startTime = this.marks.get(label)
     if (!startTime) {
-      console.warn(`No start mark found for: ${label}`)
+      perfLogger.warn('No start mark found', { label })
       return null
     }
 
@@ -62,7 +66,7 @@ export class PerformanceMonitor {
     this.marks.delete(label)
 
     if (process.env.NODE_ENV === 'development') {
-      console.log(`[Performance] ${label}: ${duration.toFixed(2)}ms`)
+      perfLogger.debug(`Performance measurement - ${label}`, { duration: `${duration.toFixed(2)}ms` })
     }
 
     return duration

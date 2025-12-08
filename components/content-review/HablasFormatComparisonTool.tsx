@@ -16,6 +16,9 @@ import {
 } from 'lucide-react';
 import { DiffHighlighter } from './DiffHighlighter';
 import { FormatDifference } from '@/lib/content-validation/types';
+import { createLogger } from '@/lib/utils/logger';
+
+const formatComparisonLogger = createLogger('HablasFormatComparisonTool');
 
 interface FormatContent {
   pdf: string;
@@ -134,7 +137,7 @@ export const HablasFormatComparisonTool: React.FC<HablasFormatComparisonToolProp
       setSyncSuccess(true);
       setTimeout(() => setSyncSuccess(false), 3000);
     } catch (error) {
-      console.error('Sync failed:', error);
+      formatComparisonLogger.error('Sync failed', error as Error);
     } finally {
       setSyncing(false);
     }
@@ -151,7 +154,7 @@ export const HablasFormatComparisonTool: React.FC<HablasFormatComparisonToolProp
       setSyncSuccess(true);
       setTimeout(() => setSyncSuccess(false), 3000);
     } catch (error) {
-      console.error('Sync all failed:', error);
+      formatComparisonLogger.error('Sync all failed', error as Error);
     } finally {
       setSyncing(false);
     }

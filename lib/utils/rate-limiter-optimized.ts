@@ -4,6 +4,9 @@
  */
 
 import { SECURITY_CONFIG } from '@/lib/config/security';
+import { createLogger } from '@/lib/utils/logger';
+
+const rateLimiterLogger = createLogger('lib:rate-limiter-optimized');
 
 export interface RateLimitConfig {
   maxAttempts: number;
@@ -51,7 +54,7 @@ let redisClient: RedisRateLimitClient | null = null;
  */
 export function setRedisClient(client: RedisRateLimitClient): void {
   redisClient = client;
-  console.log('✅ Redis rate limiter enabled');
+  rateLimiterLogger.info('Redis rate limiter enabled');
 }
 
 /**
@@ -80,7 +83,7 @@ function cleanupSlidingWindow(): void {
   }
 
   if (cleaned > 0 && process.env.NODE_ENV === 'development') {
-    console.log(`🧹 Cleaned ${cleaned} expired rate limit entries`);
+    rateLimiterLogger.debug('Cleaned expired rate limit entries', { cleaned });
   }
 }
 
@@ -199,7 +202,7 @@ async function checkRedisSlidingWindow(
       resetAt: now + config.windowMs,
     };
   } catch (error) {
-    console.error('Redis rate limit error:', error);
+    rateLimiterLogger.error('Redis rate limit error', error as Error);
     // Fallback to in-memory
     return checkSlidingWindowRateLimit(key, config);
   }
@@ -241,7 +244,7 @@ export async function resetRateLimit(
     try {
       await redisClient.del(`ratelimit:${key}`);
     } catch (error) {
-      console.error('Redis reset error:', error);
+      rateLimiterLogger.error('Redis reset error', error as Error);
     }
   }
 
@@ -275,7 +278,7 @@ export async function getRateLimitStatus(
         resetAt: oldestTimestamp + config.WINDOW_MS,
       };
     } catch (error) {
-      console.error('Redis status error:', error);
+      rateLimiterLogger.error('Redis status error', error as Error);
     }
   }
 
@@ -306,7 +309,7 @@ export async function clearAllRateLimits(): Promise<void> {
         await redisClient.del(...keys);
       }
     } catch (error) {
-      console.error('Redis clear error:', error);
+      rateLimiterLogger.error('Redis clear error', error as Error);
     }
   }
 

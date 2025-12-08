@@ -7,6 +7,9 @@ import { EditPanel } from './EditPanel';
 import { DiffHighlighter } from './DiffHighlighter';
 import { useAutoSave } from './hooks/useAutoSave';
 import { useContentManager } from './hooks/useContentManager';
+import { createLogger } from '@/lib/utils/logger';
+
+const contentReviewLogger = createLogger('ContentReviewTool');
 
 export interface ContentItem {
   id: string;
@@ -69,9 +72,9 @@ export const ContentReviewTool: React.FC<ContentReviewToolProps> = ({
 
     try {
       await onSave(currentContent);
-      console.log('Auto-saved successfully');
+      contentReviewLogger.info('Auto-saved successfully');
     } catch (error) {
-      console.error('Auto-save failed:', error);
+      contentReviewLogger.error('Auto-save failed', error as Error);
     }
   }, [onSave]);
 

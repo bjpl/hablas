@@ -17,6 +17,7 @@
 
 import React, { useState, useEffect, useMemo, useTransition, useDeferredValue, Suspense, useCallback } from 'react';
 import { Loader2, Save, X, FileText, Globe, Volume2, Moon, Sun } from 'lucide-react';
+import { createLogger } from '@/lib/utils/logger';
 import { ContentPanel } from './ContentPanel';
 import { DiffViewer } from './DiffViewer';
 import { SyncControls } from './SyncControls';
@@ -34,6 +35,8 @@ const MemoizedContentPanel = React.memo(ContentPanel);
  * Memoized diff viewer for performance
  */
 const MemoizedDiffViewer = React.memo(DiffViewer);
+
+const tripleComparisonModernLogger = createLogger('TripleComparisonView.modern');
 
 /**
  * Loading fallback component
@@ -126,7 +129,7 @@ export function TripleComparisonView({
       } catch (err) {
         const errorMessage = err instanceof Error ? err.message : 'Failed to save changes';
         setSaveError(errorMessage);
-        console.error('Failed to save changes:', err);
+        tripleComparisonModernLogger.error('Failed to save changes', err as Error);
       }
     });
   }, [saveAll, content, onSave]);

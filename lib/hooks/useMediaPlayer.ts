@@ -5,6 +5,9 @@
  */
 
 import { useState, useRef, useCallback, useEffect } from 'react';
+import { createLogger } from '@/lib/utils/logger';
+
+const mediaPlayerLogger = createLogger('hooks:useMediaPlayer');
 import type { AudioPlayerState } from '@/lib/types/media';
 
 interface UseMediaPlayerOptions {
@@ -44,7 +47,7 @@ export function useMediaPlayer({
 
     if (autoPlay) {
       audio.play().catch(err => {
-        console.error('Auto-play failed:', err);
+        mediaPlayerLogger.error('Auto-play failed', err as Error);
       });
     }
 
@@ -111,7 +114,7 @@ export function useMediaPlayer({
     try {
       await audioRef.current?.play();
     } catch (err) {
-      console.error('Play failed:', err);
+      mediaPlayerLogger.error('Play failed', err as Error);
     }
   }, []);
 

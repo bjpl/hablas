@@ -3,6 +3,9 @@
 import { useState } from 'react';
 import { ArrowLeft, Save, AlertCircle, CheckCircle, RefreshCw } from 'lucide-react';
 import Link from 'next/link';
+import { createLogger } from '@/lib/utils/logger';
+
+const topicHeaderLogger = createLogger('components:TopicHeader');
 
 interface TopicHeaderProps {
   topicName: string;
@@ -40,7 +43,7 @@ export default function TopicHeader({
       }, 3000);
     } catch (error) {
       setSaveStatus('error');
-      console.error('Failed to save changes:', error);
+      topicHeaderLogger.error('Failed to save changes', error as Error);
     } finally {
       setIsSaving(false);
     }

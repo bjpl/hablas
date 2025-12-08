@@ -7,6 +7,9 @@ import React from 'react';
 import type { ErrorBoundaryProps, ErrorBoundaryState, ErrorInfo } from './types';
 import { handleError } from './errorLogger';
 import { ErrorUI } from './ErrorUI';
+import { createLogger } from '@/lib/utils/logger';
+
+const audioErrorLogger = createLogger('AudioErrorBoundary');
 
 const DEFAULT_MAX_RETRIES = 2;
 const DEFAULT_RETRY_DELAY_MS = 2000;
@@ -46,7 +49,7 @@ export class AudioErrorBoundary extends React.Component<
         ogg: document.createElement('audio').canPlayType('audio/ogg'),
         wav: document.createElement('audio').canPlayType('audio/wav'),
       },
-    }).catch(console.error);
+    }).catch((err) => audioErrorLogger.error('Failed to handle error', err as Error));
 
     this.setState({
       errorInfo,
@@ -96,7 +99,7 @@ export class AudioErrorBoundary extends React.Component<
     const { error, errorInfo } = this.state;
     if (!error || !errorInfo) return;
 
-    console.log('Reporting audio error:', { error, errorInfo });
+    audioErrorLogger.info('Reporting audio error', { error: error.message, componentStack: errorInfo.componentStack });
 
     const subject = encodeURIComponent('Audio Playback Error Report');
     const body = encodeURIComponent(
@@ -146,7 +149,7 @@ export function useAudioErrorHandler() {
     setError(audioError);
 
     // Log audio error
-    handleError(audioError, { componentStack: '' }, 'AudioPlayer').catch(console.error);
+    handleError(audioError, { componentStack: '' }, 'AudioPlayer').catch((err) => audioErrorLogger.error('Failed to handle audio error', err as Error));
   }, []);
 
   const retry = React.useCallback(() => {

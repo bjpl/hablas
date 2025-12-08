@@ -4,6 +4,9 @@
  */
 
 import { useEffect, useRef, useCallback } from 'react'
+import { createLogger } from '@/lib/utils/logger'
+
+const perfMonitorLogger = createLogger('hooks:usePerformanceMonitor')
 
 export function usePerformanceMonitor(componentName: string) {
   const renderCount = useRef(0)
@@ -14,7 +17,7 @@ export function usePerformanceMonitor(componentName: string) {
     renderCount.current += 1
 
     if (process.env.NODE_ENV === 'development') {
-      console.log(`[${componentName}] Mount time:`, mountTime.current)
+      perfMonitorLogger.debug(`${componentName} mount time`, { time: mountTime.current })
     }
 
     return () => {
@@ -22,15 +25,14 @@ export function usePerformanceMonitor(componentName: string) {
       const lifetime = unmountTime - mountTime.current
 
       if (process.env.NODE_ENV === 'development') {
-        console.log(`[${componentName}] Component lifetime:`, lifetime, 'ms')
-        console.log(`[${componentName}] Total renders:`, renderCount.current)
+        perfMonitorLogger.debug(`${componentName} component lifetime`, { lifetime: `${lifetime}ms`, totalRenders: renderCount.current })
       }
     }
   }, [componentName])
 
   const measureRender = useCallback(() => {
     if (process.env.NODE_ENV === 'development') {
-      console.log(`[${componentName}] Render #${renderCount.current}`)
+      perfMonitorLogger.debug(`${componentName} render`, { renderNumber: renderCount.current })
     }
   }, [componentName])
 
@@ -43,7 +45,7 @@ export function useRenderCount(componentName: string) {
   useEffect(() => {
     renderCount.current += 1
     if (process.env.NODE_ENV === 'development') {
-      console.log(`[${componentName}] Render count:`, renderCount.current)
+      perfMonitorLogger.debug(`${componentName} render count`, { count: renderCount.current })
     }
   })
 

@@ -8,6 +8,9 @@
 import { useState, useEffect, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/lib/contexts/AuthContext';
+import { createLogger } from '@/lib/utils/logger';
+
+const loginLogger = createLogger('LoginPage');
 
 export default function LoginPage() {
   const router = useRouter();
@@ -50,7 +53,7 @@ export default function LoginPage() {
       }
     } catch (err) {
       setError('An unexpected error occurred. Please try again.');
-      console.error('Login error:', err);
+      loginLogger.error('Login error', err as Error);
     } finally {
       setIsLoading(false);
     }

@@ -16,6 +16,9 @@ import {
   type FetchedContent,
   type ContentFetchError,
 } from '@/lib/utils/content-fetcher';
+import { createLogger } from '@/lib/utils/logger';
+
+const contentLoaderLogger = createLogger('useContentLoader');
 
 export interface UseContentLoaderOptions {
   resourceId: string;
@@ -108,7 +111,7 @@ export function useContentLoader({
     } catch (err) {
       const errorMessage = getErrorMessage(err);
       setError(errorMessage);
-      console.error('Content loading error:', err);
+      contentLoaderLogger.error('Content loading error', err as Error);
 
       // Set empty content on error
       startTransition(() => {

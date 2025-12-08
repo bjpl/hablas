@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Loader2, Save, X, AlertTriangle, RefreshCw } from 'lucide-react';
+import { createLogger } from '@/lib/utils/logger';
 import { PDFPreviewPanel } from '../panels/PDFPreviewPanel';
 import { WebContentPanel } from '../panels/WebContentPanel';
 import { AudioTranscriptPanel } from '../panels/AudioTranscriptPanel';
@@ -10,6 +11,8 @@ import { SyncControls } from './SyncControls';
 import { useTripleComparison } from '../hooks/useTripleComparison';
 import { useContentLoader } from '../hooks/useContentLoader';
 import type { TripleComparisonViewProps, ContentType, SyncOperation } from '../types';
+
+const tripleComparisonLogger = createLogger('TripleComparisonView');
 
 export function TripleComparisonView({
   resourceId,
@@ -87,7 +90,7 @@ export function TripleComparisonView({
       }));
       await onSave(updates);
     } catch (err) {
-      console.error('Failed to save changes:', err);
+      tripleComparisonLogger.error('Failed to save changes', err as Error);
     } finally {
       setIsSaving(false);
     }
@@ -315,7 +318,7 @@ export function TripleComparisonView({
             category={resourceId}
             level="Intermediate"
             showMarkdownSource={true}
-            onDownload={() => console.log('PDF downloaded')}
+            onDownload={() => tripleComparisonLogger.info('PDF downloaded')}
           />
         </div>
 

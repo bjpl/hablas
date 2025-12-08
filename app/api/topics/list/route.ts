@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server';
 import { getAllTopicsWithHidden } from '@/lib/utils/topic-groups';
+import { createLogger } from '@/lib/utils/logger';
+
+const topicsListLogger = createLogger('api:topics:list');
 
 /**
  * GET /api/topics/list
@@ -55,7 +58,7 @@ export async function GET() {
       totalResources,
     });
   } catch (error) {
-    console.error('Error fetching topics:', error);
+    topicsListLogger.error('Error fetching topics', error as Error);
     return NextResponse.json(
       { error: 'Failed to fetch topics' },
       { status: 500 }

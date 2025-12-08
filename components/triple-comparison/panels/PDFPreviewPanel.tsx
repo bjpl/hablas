@@ -13,6 +13,9 @@ import {
 } from 'lucide-react';
 import { generatePDFBlob, generatePDFFromMarkdown, type PDFOptions } from '@/lib/utils/pdf-generator';
 import * as pdfjsLib from 'pdfjs-dist';
+import { createLogger } from '@/lib/utils/logger';
+
+const pdfPreviewLogger = createLogger('PDFPreviewPanel');
 
 // Configure PDF.js worker
 if (typeof window !== 'undefined') {
@@ -80,7 +83,7 @@ export const PDFPreviewPanel: React.FC<PDFPreviewPanelProps> = ({
         // Clean up blob URL
         return () => URL.revokeObjectURL(pdfUrl);
       } catch (err) {
-        console.error('Error loading PDF:', err);
+        pdfPreviewLogger.error('Error loading PDF', err as Error);
         setError(err instanceof Error ? err.message : 'Failed to load PDF');
         setIsLoading(false);
       }
@@ -118,7 +121,7 @@ export const PDFPreviewPanel: React.FC<PDFPreviewPanelProps> = ({
 
         await page.render(renderContext as any).promise;
       } catch (err) {
-        console.error('Error rendering page:', err);
+        pdfPreviewLogger.error('Error rendering page', err as Error);
         setError('Failed to render PDF page');
       }
     };

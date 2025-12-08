@@ -6,6 +6,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { healthCheck as dbHealthCheck } from '@/lib/db/pool-optimized';
 import { redisHealthCheck } from '@/lib/db/redis';
+import { createLogger } from '@/lib/utils/logger';
+
+const healthLogger = createLogger('api:health');
 
 export async function GET(request: NextRequest) {
   const checks = {
@@ -83,7 +86,7 @@ export async function GET(request: NextRequest) {
       },
     });
   } catch (error) {
-    console.error('Health check error:', error);
+    healthLogger.error('Health check error', error as Error);
 
     return NextResponse.json(
       {

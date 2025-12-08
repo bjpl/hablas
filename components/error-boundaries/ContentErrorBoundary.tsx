@@ -7,6 +7,9 @@ import React from 'react';
 import type { ErrorBoundaryProps, ErrorBoundaryState, ErrorInfo } from './types';
 import { handleError } from './errorLogger';
 import { ErrorUI } from './ErrorUI';
+import { createLogger } from '@/lib/utils/logger';
+
+const contentErrorLogger = createLogger('ContentErrorBoundary');
 
 const DEFAULT_MAX_RETRIES = 3;
 const DEFAULT_RETRY_DELAY_MS = 1000;
@@ -38,7 +41,7 @@ export class ContentErrorBoundary extends React.Component<
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
     // Log error
-    handleError(error, errorInfo, 'ContentErrorBoundary').catch(console.error);
+    handleError(error, errorInfo, 'ContentErrorBoundary').catch((err) => contentErrorLogger.error('Failed to handle error', err as Error));
 
     // Update state with error info
     this.setState({
@@ -91,7 +94,7 @@ export class ContentErrorBoundary extends React.Component<
     if (!error || !errorInfo) return;
 
     // In a real application, this would send to an error reporting service
-    console.log('Reporting error:', { error, errorInfo });
+    contentErrorLogger.info('Reporting error', { error: error.message, componentStack: errorInfo.componentStack });
 
     // Could also open a feedback form or email client
     const subject = encodeURIComponent('Content Error Report');

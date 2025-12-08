@@ -8,6 +8,9 @@ import { put } from '@vercel/blob';
 import { NextRequest, NextResponse } from 'next/server';
 import { requireRole } from '@/lib/auth/middleware-helper';
 import { checkRateLimit } from '@/lib/utils/rate-limiter';
+import { createLogger } from '@/lib/utils/logger';
+
+const audioUploadLogger = createLogger('api:audio:upload');
 
 // Maximum file size: 10MB
 const MAX_FILE_SIZE = 10 * 1024 * 1024;
@@ -123,7 +126,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<UploadRes
 
     // Verify Blob token is configured
     if (!process.env.BLOB_READ_WRITE_TOKEN) {
-      console.error('BLOB_READ_WRITE_TOKEN not configured');
+      audioUploadLogger.error('BLOB_READ_WRITE_TOKEN not configured');
       return NextResponse.json(
         {
           success: false,
@@ -193,7 +196,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<UploadRes
       }
     );
   } catch (error) {
-    console.error('Audio upload error:', error);
+    audioUploadLogger.error('Audio upload error', error as Error);
 
     // Handle specific error types
     if (error instanceof Error) {

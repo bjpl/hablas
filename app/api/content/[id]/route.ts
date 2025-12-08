@@ -11,6 +11,9 @@ import { resources, isResourceHidden } from '@/data/resources';
 import fs from 'fs/promises';
 import path from 'path';
 import type { GetContentResponse, ContentEdit, EditHistory } from '@/lib/types/content-edits';
+import { createLogger } from '@/lib/utils/logger';
+
+const contentDetailLogger = createLogger('api:content:detail');
 
 // Helper function to clean box characters
 function cleanBoxCharacters(text: string): string {
@@ -75,7 +78,7 @@ export async function GET(
         // Note: Duration would require audio parsing library (e.g., music-metadata)
         // For now, we'll leave it as optional
       } catch (err) {
-        console.warn('Could not read audio metadata:', err);
+        contentDetailLogger.warn('Could not read audio metadata', { error: err });
       }
     }
 
@@ -94,7 +97,7 @@ export async function GET(
 
     return NextResponse.json(response);
   } catch (error) {
-    console.error('Error fetching content:', error);
+    contentDetailLogger.error('Error fetching content', error as Error);
     return NextResponse.json(
       { error: 'Failed to fetch content' },
       { status: 500 }

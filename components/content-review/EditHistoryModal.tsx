@@ -2,6 +2,9 @@
 
 import React, { useEffect, useState } from 'react';
 import { History, Clock, User, ChevronDown, ChevronUp, X } from 'lucide-react';
+import { createLogger } from '@/lib/utils/logger';
+
+const editHistoryLogger = createLogger('EditHistoryModal');
 
 interface EditHistoryEntry {
   id: number;
@@ -48,7 +51,7 @@ export default function EditHistoryModal({
       setHistory(data.history || []);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred');
-      console.error('Error fetching edit history:', err);
+      editHistoryLogger.error('Error fetching edit history', err as Error);
     } finally {
       setLoading(false);
     }

@@ -2,6 +2,9 @@
 
 import React, { useState } from 'react';
 import { ContentReviewTool, ContentItem } from '@/components/content-review';
+import { createLogger } from '@/lib/utils/logger';
+
+const reviewLogger = createLogger('ReviewPage');
 
 /**
  * Demo page for the Content Review Tool
@@ -75,13 +78,13 @@ Five - Cinco`,
 
   // Mock save function for demonstration
   const handleSave = async (content: ContentItem) => {
-    console.log('Saving content:', content);
+    reviewLogger.debug('Saving content', { contentId: content.id });
 
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000));
 
     // In production, this would save to your backend/database
-    console.log('Content saved successfully!');
+    reviewLogger.info('Content saved successfully', { contentId: content.id });
   };
 
   return (

@@ -1,6 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { createLogger } from '@/lib/utils/logger'
+
+const installPromptLogger = createLogger('components:InstallPrompt')
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>
@@ -41,7 +44,7 @@ export default function InstallPrompt() {
     // Wait for the user to respond to the prompt
     const { outcome } = await deferredPrompt.userChoice
 
-    console.log(`User response to install prompt: ${outcome}`)
+    installPromptLogger.info('User response to install prompt', { outcome })
 
     // Clear the deferredPrompt
     setDeferredPrompt(null)

@@ -3,6 +3,10 @@
  * Handles registration and lifecycle of service worker
  */
 
+import { createLogger } from '@/lib/utils/logger';
+
+const swLogger = createLogger('lib:serviceWorker');
+
 export function registerServiceWorker() {
   if (typeof window === 'undefined' || !('serviceWorker' in navigator)) {
     return
@@ -14,7 +18,7 @@ export function registerServiceWorker() {
     navigator.serviceWorker
       .register(swUrl)
       .then((registration) => {
-        console.log('Service Worker registered:', registration)
+        swLogger.info('Service Worker registered', { scope: registration.scope })
 
         // Check for updates periodically
         setInterval(() => {
@@ -39,7 +43,7 @@ export function registerServiceWorker() {
         })
       })
       .catch((error) => {
-        console.error('Service Worker registration failed:', error)
+        swLogger.error('Service Worker registration failed', error as Error)
       })
 
     // Handle controller change
@@ -59,6 +63,6 @@ export function unregisterServiceWorker() {
       registration.unregister()
     })
     .catch((error) => {
-      console.error('Service Worker unregister failed:', error)
+      swLogger.error('Service Worker unregister failed', error as Error)
     })
 }

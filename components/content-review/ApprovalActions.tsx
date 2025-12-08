@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { CheckCircle, XCircle, MessageSquare, Loader2 } from 'lucide-react';
+import { createLogger } from '@/lib/utils/logger';
 
 interface ApprovalActionsProps {
   resourceId: number;
@@ -10,6 +11,8 @@ interface ApprovalActionsProps {
 }
 
 type ActionType = 'approve' | 'reject' | null;
+
+const approvalLogger = createLogger('ApprovalActions');
 
 export default function ApprovalActions({
   resourceId,
@@ -79,7 +82,7 @@ export default function ApprovalActions({
         setFeedback(null);
       }, 2000);
     } catch (error) {
-      console.error('Error submitting review:', error);
+      approvalLogger.error('Error submitting review', error as Error);
       setFeedback({
         type: 'error',
         message:

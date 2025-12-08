@@ -1,6 +1,9 @@
 'use client';
 
 import React from 'react';
+import { createLogger } from '@/lib/utils/logger';
+
+const audioResolverLogger = createLogger('audio-url-resolver');
 
 /**
  * Audio URL Resolver
@@ -63,7 +66,7 @@ export function resolveAudioUrl(audioPath: string): string {
 
   // In development, use local path
   if (!isProduction()) {
-    console.log(`[Audio] Dev mode, using local path: ${audioPath}`);
+    audioResolverLogger.debug('Dev mode, using local path', { audioPath });
     return audioPath;
   }
 
@@ -71,7 +74,7 @@ export function resolveAudioUrl(audioPath: string): string {
   // Extract resource ID from path like "/audio/resource-1.mp3" -> "resource-1.mp3"
   const filename = audioPath.replace(/^\/audio\//, '');
   const apiUrl = `/api/audio/${filename}`;
-  console.log(`[Audio] Production mode, using API URL: ${apiUrl}`);
+  audioResolverLogger.debug('Production mode, using API URL', { apiUrl });
   return apiUrl;
 }
 
@@ -107,7 +110,7 @@ export async function resolveAudioUrlDirect(audioPath: string): Promise<string> 
       }
     }
   } catch (error) {
-    console.warn(`[Audio] Failed to resolve direct blob URL for ${filename}:`, error);
+    audioResolverLogger.warn('Failed to resolve direct blob URL', { filename, error });
   }
 
   // Fallback to API URL (will redirect on access)
@@ -141,14 +144,14 @@ export function useAudioUrl(audioPath?: string): {
 
     // If already a full URL, use it directly
     if (audioPath.startsWith('http://') || audioPath.startsWith('https://')) {
-      console.log(`[Audio Hook] Already full URL: ${audioPath}`);
+      audioResolverLogger.debug('Already full URL', { audioPath });
       setState({ url: audioPath, loading: false, error: null });
       return;
     }
 
     // In development, use local path directly
     if (!isProduction()) {
-      console.log(`[Audio Hook] Dev mode, using local path: ${audioPath}`);
+      audioResolverLogger.debug('Hook: Dev mode, using local path', { audioPath });
       setState({ url: audioPath, loading: false, error: null });
       return;
     }
@@ -157,7 +160,7 @@ export function useAudioUrl(audioPath?: string): {
     const filename = audioPath.replace(/^\/audio\//, '');
     const apiUrl = `/api/audio/${filename}`;
 
-    console.log(`[Audio Hook] Production mode, fetching blob URL from: ${apiUrl}`);
+    audioResolverLogger.debug('Hook: Production mode, fetching blob URL', { apiUrl });
     setState(prev => ({ ...prev, loading: true, error: null }));
 
     // Fetch with JSON mode to get direct blob URL
@@ -172,16 +175,16 @@ export function useAudioUrl(audioPath?: string): {
         }
         const data = await response.json();
         if (data.success && data.url) {
-          console.log(`[Audio Hook] Got blob URL: ${data.url}`);
+          audioResolverLogger.debug('Hook: Got blob URL', { url: data.url });
           setState({ url: data.url, loading: false, error: null });
         } else {
           throw new Error(data.error || 'Failed to get blob URL');
         }
       })
       .catch((error) => {
-        console.error(`[Audio Hook] Error fetching blob URL:`, error);
+        audioResolverLogger.error('Hook: Error fetching blob URL', error as Error);
         // Fallback to API URL with redirect (might work with crossOrigin)
-        console.log(`[Audio Hook] Falling back to API URL: ${apiUrl}`);
+        audioResolverLogger.debug('Hook: Falling back to API URL', { apiUrl });
         setState({ url: apiUrl, loading: false, error: null });
       });
   }, [audioPath]);

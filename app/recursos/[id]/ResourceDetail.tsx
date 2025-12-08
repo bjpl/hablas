@@ -15,6 +15,9 @@ import type { JsonResourceContent } from '@/lib/types/resource-content'
 import Link from 'next/link'
 import { Edit2 } from 'lucide-react'
 import { downloadPDF } from '@/lib/utils/pdf-generator'
+import { createLogger } from '@/lib/utils/logger'
+
+const resourceDetailLogger = createLogger('ResourceDetail')
 
 export default function ResourceDetail({ id, initialContent = '' }: { id: string; initialContent?: string }) {
   const router = useRouter()
@@ -93,7 +96,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
             setAudioMetadata(data.resources[resourceId])
           }
         })
-        .catch(err => console.log('Audio metadata not available'))
+        .catch(err => resourceDetailLogger.debug('Audio metadata not available', { resourceId }))
     }
   }, [resource, initialContent])
 
@@ -265,7 +268,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                     setDownloadSuccess('✓ PDF descargado exitosamente');
                     setTimeout(() => setDownloadSuccess(null), 3000);
                   } catch (err) {
-                    console.error('Download failed:', err);
+                    resourceDetailLogger.error('Download failed', err as Error);
                     setDownloadSuccess('❌ Error al descargar - intenta de nuevo');
                     setTimeout(() => setDownloadSuccess(null), 3000);
                   } finally {
@@ -321,7 +324,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                             }
                           }
                         } catch (e) {
-                          console.warn('Failed to resolve blob URL, using public path');
+                          resourceDetailLogger.warn('Failed to resolve blob URL, using public path');
                         }
                       }
 
@@ -339,7 +342,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
                       setDownloadSuccess('✓ Audio descargado exitosamente');
                       setTimeout(() => setDownloadSuccess(null), 3000);
                     } catch (err) {
-                      console.error('Audio download failed:', err);
+                      resourceDetailLogger.error('Audio download failed', err as Error);
                       setDownloadSuccess('❌ Error al descargar audio');
                       setTimeout(() => setDownloadSuccess(null), 3000);
                     } finally {

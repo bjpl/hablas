@@ -15,6 +15,9 @@ import type {
   ContentEdit,
   EditHistory,
 } from '@/lib/types/content-edits';
+import { createLogger } from '@/lib/utils/logger';
+
+const contentSaveLogger = createLogger('api:content:save');
 
 export async function POST(request: Request) {
   try {
@@ -120,7 +123,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json(response);
   } catch (error) {
-    console.error('Error saving content:', error);
+    contentSaveLogger.error('Error saving content', error as Error);
     return NextResponse.json(
       { error: 'Failed to save content' },
       { status: 500 }

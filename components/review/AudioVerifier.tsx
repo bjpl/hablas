@@ -7,6 +7,9 @@ import {
   RefreshCw, Download, Check, X, MessageSquare,
   ChevronDown, Loader2
 } from 'lucide-react';
+import { createLogger } from '@/lib/utils/logger';
+
+const audioVerifierLogger = createLogger('components:AudioVerifier');
 
 interface AudioVerifierProps {
   audioUrl: string;
@@ -289,7 +292,7 @@ export function AudioVerifier({
       setIsVerified(true);
       onVerificationComplete?.(true, []);
     } catch (error) {
-      console.error('Failed to save verification:', error);
+      audioVerifierLogger.error('Failed to save verification', error as Error);
     } finally {
       setSaving(false);
     }
@@ -315,7 +318,7 @@ export function AudioVerifier({
       }
       alert('Re-generation request submitted successfully');
     } catch (error) {
-      console.error('Failed to request regeneration:', error);
+      audioVerifierLogger.error('Failed to request regeneration', error as Error);
       alert('Failed to submit re-generation request');
     } finally {
       setSaving(false);

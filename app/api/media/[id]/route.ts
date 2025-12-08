@@ -11,6 +11,9 @@ import { resources, isResourceHidden } from '@/data/resources';
 import fs from 'fs/promises';
 import path from 'path';
 import { stat } from 'fs/promises';
+import { createLogger } from '@/lib/utils/logger';
+
+const mediaApiLogger = createLogger('api:media');
 
 export async function GET(
   request: Request,
@@ -79,7 +82,7 @@ export async function GET(
       },
     });
   } catch (error) {
-    console.error('Error streaming media:', error);
+    mediaApiLogger.error('Error streaming media', error as Error);
     return NextResponse.json(
       { error: 'Failed to stream media' },
       { status: 500 }

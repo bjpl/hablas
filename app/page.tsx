@@ -7,6 +7,9 @@ import WhatsAppCTA from '@/components/WhatsAppCTA'
 import OfflineNotice from '@/components/OfflineNotice'
 import SearchBar from '@/components/SearchBar'
 import InstallPrompt from '@/components/InstallPrompt'
+import { createLogger } from '@/lib/utils/logger'
+
+const homeLogger = createLogger('HomePage')
 
 export default function Home() {
   const [isOnline, setIsOnline] = useState(true)
@@ -23,12 +26,12 @@ export default function Home() {
         .register('/sw.js')
         .then((registration) => {
           if (process.env.NODE_ENV === 'development') {
-            console.log('Service Worker registered:', registration)
+            homeLogger.debug('Service Worker registered', { registration })
           }
         })
         .catch((error) => {
           if (process.env.NODE_ENV === 'development') {
-            console.error('Service Worker registration failed:', error)
+            homeLogger.error('Service Worker registration failed', error as Error)
           }
         })
     }

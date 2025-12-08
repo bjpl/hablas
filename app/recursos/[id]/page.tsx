@@ -4,6 +4,9 @@ import { redirect } from 'next/navigation'
 import fs from 'fs'
 import path from 'path'
 import { transformAudioScriptToUserFormat, isAudioProductionScript } from './transform-audio-script'
+import { createLogger } from '@/lib/utils/logger'
+
+const resourcePageLogger = createLogger('ResourceDetailPage')
 
 // Generate static paths only for VISIBLE resources at build time
 export async function generateStaticParams() {
@@ -116,7 +119,7 @@ export default async function ResourceDetailPage({ params }: { params: Promise<{
         contentText = cleanBoxCharacters(rawContent)
       }
     } catch (error) {
-      console.error(`Error loading content for resource ${resourceId}:`, error)
+      resourcePageLogger.error(`Error loading content for resource ${resourceId}`, error as Error)
       contentText = ''
     }
   }

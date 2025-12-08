@@ -13,6 +13,9 @@ import { NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
 import type { ContentEdit } from '@/lib/types/content-edits';
+import { createLogger } from '@/lib/utils/logger';
+
+const reviewLogger = createLogger('api:content:review');
 
 type ReviewAction = 'approve' | 'reject' | 'verify-audio' | 'request-regeneration';
 
@@ -116,7 +119,7 @@ export async function POST(
         );
     }
   } catch (error) {
-    console.error('Error processing review:', error);
+    reviewLogger.error('Error processing review', error as Error);
     return NextResponse.json(
       { error: 'Failed to process review' },
       { status: 500 }
@@ -231,7 +234,7 @@ async function handleContentReview(
     const fileContent = await fs.readFile(editsPath, 'utf-8');
     editsData = JSON.parse(fileContent);
   } catch (error) {
-    console.error('Error reading content-edits.json:', error);
+    reviewLogger.error('Error reading content-edits.json', error as Error);
     return NextResponse.json(
       { error: 'Failed to read content edits data' },
       { status: 500 }
@@ -280,7 +283,7 @@ async function handleContentReview(
   try {
     await fs.writeFile(editsPath, JSON.stringify(editsData, null, 2), 'utf-8');
   } catch (error) {
-    console.error('Error writing content-edits.json:', error);
+    reviewLogger.error('Error writing content-edits.json', error as Error);
     return NextResponse.json(
       { error: 'Failed to save review' },
       { status: 500 }
@@ -335,7 +338,7 @@ export async function GET(
 
     return NextResponse.json(verification);
   } catch (error) {
-    console.error('Error fetching verification status:', error);
+    reviewLogger.error('Error fetching verification status', error as Error);
     return NextResponse.json(
       { error: 'Failed to fetch verification status' },
       { status: 500 }

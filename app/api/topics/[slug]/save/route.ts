@@ -12,6 +12,9 @@ import fs from 'fs/promises';
 import path from 'path';
 import type { BatchSaveRequest, BatchSaveResponse } from '@/lib/types/topics';
 import type { ContentEdit, EditHistory } from '@/lib/types/content-edits';
+import { createLogger } from '@/lib/utils/logger';
+
+const topicSaveLogger = createLogger('api:topics:save');
 
 export async function POST(
   request: Request,
@@ -154,7 +157,7 @@ export async function POST(
         editIds.push(editId);
         savedCount++;
       } catch (error) {
-        console.error(`Error saving resource ${update.resourceId}:`, error);
+        topicSaveLogger.error('Error saving resource', error as Error, { resourceId: update.resourceId });
         errors.push({
           resourceId: update.resourceId,
           error: error instanceof Error ? error.message : 'Unknown error',
@@ -177,7 +180,7 @@ export async function POST(
 
     return NextResponse.json(response);
   } catch (error) {
-    console.error('Error in batch save:', error);
+    topicSaveLogger.error('Error in batch save', error as Error);
     return NextResponse.json(
       { error: 'Failed to save batch updates' },
       { status: 500 }

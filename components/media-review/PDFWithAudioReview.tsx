@@ -6,6 +6,9 @@ import { ContentReviewTool, AudioTranscriptReview, type ContentItem } from '@/co
 import type { MediaResource } from '@/lib/types/media';
 import { FileText, Music, Captions, FileText as FileTextIcon } from 'lucide-react';
 import { isAudioScript, parseAudioScript, generateVTT, type TranscriptSegment } from '@/lib/utils/transcript-parser';
+import { createLogger } from '@/lib/utils/logger';
+
+const pdfAudioReviewLogger = createLogger('components:PDFWithAudioReview');
 
 interface PDFWithAudioReviewProps {
   resource: MediaResource;
@@ -68,7 +71,7 @@ export const PDFWithAudioReview: React.FC<PDFWithAudioReviewProps> = ({
   const handleTranscriptSave = async (segments: TranscriptSegment[]) => {
     // Convert segments back to text format and save
     // For now, just log - in production, this would update the content
-    console.log('Saving transcript segments:', segments);
+    pdfAudioReviewLogger.debug('Saving transcript segments', { segmentCount: segments.length });
     // The transcript is displayed from the original content
     // Editing individual segments would require a different data model
   };

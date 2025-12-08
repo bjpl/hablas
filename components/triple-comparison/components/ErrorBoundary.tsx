@@ -9,6 +9,7 @@
 
 import React, { Component, ReactNode } from 'react';
 import { AlertTriangle, RefreshCw } from 'lucide-react';
+import { createLogger } from '@/lib/utils/logger';
 
 interface ErrorBoundaryProps {
   children: ReactNode;
@@ -22,6 +23,8 @@ interface ErrorBoundaryState {
   error: Error | null;
   errorInfo: React.ErrorInfo | null;
 }
+
+const errorBoundaryLogger = createLogger('ErrorBoundary');
 
 export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   constructor(props: ErrorBoundaryProps) {
@@ -48,8 +51,10 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
     // Call custom error handler if provided
     this.props.onError?.(error, errorInfo);
 
-    // Log to console for debugging
-    console.error('ErrorBoundary caught error:', error, errorInfo);
+    // Log error with context
+    errorBoundaryLogger.error('ErrorBoundary caught error', error, {
+      componentStack: errorInfo.componentStack,
+    });
   }
 
   componentDidUpdate(prevProps: ErrorBoundaryProps): void {

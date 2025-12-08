@@ -7,6 +7,9 @@ import React from 'react';
 import type { ErrorBoundaryProps, ErrorBoundaryState, ErrorInfo } from './types';
 import { handleError } from './errorLogger';
 import { ErrorUI } from './ErrorUI';
+import { createLogger } from '@/lib/utils/logger';
+
+const globalErrorLogger = createLogger('GlobalErrorBoundary');
 
 const DEFAULT_MAX_RETRIES = 1; // Limited retries for global errors
 const DEFAULT_RETRY_DELAY_MS = 3000;
@@ -45,7 +48,7 @@ export class GlobalErrorBoundary extends React.Component<
       timestamp: new Date().toISOString(),
       localStorage: this.getLocalStorageInfo(),
       sessionInfo: this.getSessionInfo(),
-    }).catch(console.error);
+    }).catch((err) => globalErrorLogger.error('Failed to handle error', err as Error));
 
     this.setState({
       errorInfo,
@@ -56,7 +59,7 @@ export class GlobalErrorBoundary extends React.Component<
     // In production, you might want to redirect to a static error page
     // or display a maintenance message
     if (process.env.NODE_ENV === 'production') {
-      console.error('Critical application error:', error);
+      globalErrorLogger.error('Critical application error', error);
     }
   }
 
@@ -118,7 +121,7 @@ export class GlobalErrorBoundary extends React.Component<
     const { error, errorInfo } = this.state;
     if (!error || !errorInfo) return;
 
-    console.log('Reporting critical error:', { error, errorInfo });
+    globalErrorLogger.info('Reporting critical error', { error: error.message, componentStack: errorInfo.componentStack });
 
     // Create detailed error report
     const report = {
@@ -188,31 +191,33 @@ export class GlobalErrorBoundary extends React.Component<
 export function setupGlobalErrorHandlers(): void {
   // Handle unhandled promise rejections
   window.addEventListener('unhandledrejection', (event) => {
-    console.error('Unhandled promise rejection:', event.reason);
+    const error = event.reason instanceof Error ? event.reason : new Error(String(event.reason));
+    globalErrorLogger.error('Unhandled promise rejection', error);
 
     handleError(
-      event.reason instanceof Error ? event.reason : new Error(String(event.reason)),
+      error,
       { componentStack: '' },
       'UnhandledPromise'
-    ).catch(console.error);
+    ).catch((err) => globalErrorLogger.error('Failed to handle unhandled rejection', err as Error));
   });
 
   // Handle global errors
   window.addEventListener('error', (event) => {
-    console.error('Global error:', event.error);
+    const error = event.error instanceof Error ? event.error : new Error(event.message);
+    globalErrorLogger.error('Global error', error);
 
     handleError(
-      event.error instanceof Error ? event.error : new Error(event.message),
+      error,
       { componentStack: '' },
       'GlobalError'
-    ).catch(console.error);
+    ).catch((err) => globalErrorLogger.error('Failed to handle global error', err as Error));
   });
 
   // Handle resource loading errors
   window.addEventListener('error', (event) => {
     const target = event.target as HTMLElement;
     if (target && (target.tagName === 'IMG' || target.tagName === 'SCRIPT' || target.tagName === 'LINK')) {
-      console.error('Resource failed to load:', target);
+      globalErrorLogger.error('Resource failed to load', new Error(`Failed to load ${target.tagName}: ${(target as any).src || (target as any).href}`));
     }
   }, true);
 }

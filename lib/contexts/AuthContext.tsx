@@ -6,6 +6,9 @@
  */
 
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import { createLogger } from '@/lib/utils/logger';
+
+const authLogger = createLogger('contexts:AuthContext');
 import type { UserSession, UserRole, Permission } from '@/lib/auth/types';
 import { PERMISSIONS } from '@/lib/auth/types';
 
@@ -38,7 +41,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         setUser(null);
       }
     } catch (error) {
-      console.error('Failed to fetch user:', error);
+      authLogger.error('Failed to fetch user', error as Error);
       setUser(null);
     } finally {
       setIsLoading(false);
@@ -67,7 +70,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
       return { success: false, error: data.error || 'Login failed' };
     } catch (error) {
-      console.error('Login error:', error);
+      authLogger.error('Login error', error as Error);
       return { success: false, error: 'Network error' };
     }
   }, []);
@@ -78,7 +81,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       await fetch('/api/auth/logout', { method: 'POST' });
       setUser(null);
     } catch (error) {
-      console.error('Logout error:', error);
+      authLogger.error('Logout error', error as Error);
       // Clear user anyway
       setUser(null);
     }
@@ -108,7 +111,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       try {
         await fetch('/api/auth/refresh', { method: 'POST' });
       } catch (error) {
-        console.error('Token refresh failed:', error);
+        authLogger.error('Token refresh failed', error as Error);
       }
     }, 6 * 24 * 60 * 60 * 1000); // 6 days
 

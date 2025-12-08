@@ -13,6 +13,9 @@ import fs from 'fs/promises';
 import path from 'path';
 import type { TopicResourceWithContent, TopicDetailsResponse } from '@/lib/types/topics';
 import type { ContentEdit } from '@/lib/types/content-edits';
+import { createLogger } from '@/lib/utils/logger';
+
+const topicDetailLogger = createLogger('api:topics:detail');
 
 /**
  * Load content from a resource's downloadUrl or contentPath
@@ -53,7 +56,7 @@ async function loadResourceContent(resource: typeof resources[0]): Promise<strin
 
     return `[Content for "${resource.title}" - File not found]`;
   } catch (error) {
-    console.error(`Error loading content for resource ${resource.id}:`, error);
+    topicDetailLogger.error('Error loading content for resource', error as Error, { resourceId: resource.id });
     return `[Error loading content for "${resource.title}"]`;
   }
 }
@@ -137,7 +140,7 @@ export async function GET(
 
     return NextResponse.json(response);
   } catch (error) {
-    console.error('Error fetching topic:', error);
+    topicDetailLogger.error('Error fetching topic', error as Error);
     return NextResponse.json(
       { error: 'Failed to fetch topic' },
       { status: 500 }

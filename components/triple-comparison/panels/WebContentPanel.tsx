@@ -3,6 +3,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Save, RotateCcw, Globe, Eye, Code, Columns, AlertCircle } from 'lucide-react';
 import type { ContentData } from '../types';
+import { createLogger } from '@/lib/utils/logger';
+
+const webContentLogger = createLogger('WebContentPanel');
 
 interface WebContentPanelProps {
   content: ContentData;
@@ -45,7 +48,7 @@ export const WebContentPanel: React.FC<WebContentPanelProps> = ({
       setTimeout(() => setSaveStatus('idle'), 3000);
     } catch (error) {
       setSaveStatus('error');
-      console.error('Save failed:', error);
+      webContentLogger.error('Save failed', error as Error);
     }
   };
 

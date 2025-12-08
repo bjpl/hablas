@@ -11,6 +11,9 @@ import { resources, isResourceHidden } from '@/data/resources';
 import fs from 'fs/promises';
 import path from 'path';
 import type { EditHistory, ContentEdit } from '@/lib/types/content-edits';
+import { createLogger } from '@/lib/utils/logger';
+
+const historyLogger = createLogger('api:content:history');
 
 export async function GET(
   request: Request,
@@ -64,7 +67,7 @@ export async function GET(
       totalEntries: editHistory.length,
     });
   } catch (error) {
-    console.error('Error fetching edit history:', error);
+    historyLogger.error('Error fetching edit history', error as Error);
     return NextResponse.json(
       { error: 'Failed to fetch edit history' },
       { status: 500 }

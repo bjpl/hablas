@@ -3,6 +3,10 @@
  * Optimized for budget Android devices on slow networks
  */
 
+import { createLogger } from '@/lib/utils/logger';
+
+const audioUtilsLogger = createLogger('audio-utils');
+
 export interface AudioCacheStatus {
   isCached: boolean;
   isPreloading: boolean;
@@ -61,7 +65,7 @@ export async function preloadAudio(
 
     return true;
   } catch (error) {
-    console.error('Error preloading audio:', error);
+    audioUtilsLogger.error('Error preloading audio', error as Error);
     return false;
   } finally {
     preloadingAudio.set(audioUrl, false);
@@ -142,7 +146,7 @@ export async function downloadAudio(
 
     return { success: true };
   } catch (error) {
-    console.error('Error downloading audio:', error);
+    audioUtilsLogger.error('Error downloading audio', error as Error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Download failed'
@@ -198,7 +202,7 @@ export function savePlaybackPosition(audioUrl: string, position: number): void {
     const key = `audio-position-${btoa(audioUrl)}`;
     localStorage.setItem(key, position.toString());
   } catch (error) {
-    console.error('Error saving playback position:', error);
+    audioUtilsLogger.error('Error saving playback position', error as Error);
   }
 }
 
@@ -213,7 +217,7 @@ export function getPlaybackPosition(audioUrl: string): number {
     const position = localStorage.getItem(key);
     return position ? parseFloat(position) : 0;
   } catch (error) {
-    console.error('Error getting playback position:', error);
+    audioUtilsLogger.error('Error getting playback position', error as Error);
     return 0;
   }
 }
@@ -228,6 +232,6 @@ export function clearPlaybackPosition(audioUrl: string): void {
     const key = `audio-position-${btoa(audioUrl)}`;
     localStorage.removeItem(key);
   } catch (error) {
-    console.error('Error clearing playback position:', error);
+    audioUtilsLogger.error('Error clearing playback position', error as Error);
   }
 }

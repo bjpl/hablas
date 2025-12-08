@@ -1,5 +1,8 @@
 import { useState, useCallback, useEffect } from 'react';
 import type { TopicDetailsResponse, TopicResourceWithContent, BatchSaveRequest } from '@/lib/types/topics';
+import { createLogger } from '@/lib/utils/logger';
+
+const topicManagerLogger = createLogger('useTopicManager');
 
 export interface ResourceEditState {
   resourceId: number;
@@ -70,7 +73,7 @@ export function useTopicManager(topicSlug: string): UseTopicManagerReturn {
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Unknown error occurred';
       setError(message);
-      console.error('Error fetching topic:', err);
+      topicManagerLogger.error('Error fetching topic', err as Error);
     } finally {
       setIsLoading(false);
     }
@@ -135,7 +138,7 @@ export function useTopicManager(topicSlug: string): UseTopicManagerReturn {
         return newEdits;
       });
     } catch (err) {
-      console.error('Error saving resource:', err);
+      topicManagerLogger.error('Error saving resource', err as Error);
       throw err;
     }
   }, [resourceEdits, topicSlug]);
@@ -179,7 +182,7 @@ export function useTopicManager(topicSlug: string): UseTopicManagerReturn {
         return newEdits;
       });
     } catch (err) {
-      console.error('Error saving all resources:', err);
+      topicManagerLogger.error('Error saving all resources', err as Error);
       throw err;
     }
   }, [resourceEdits, topicSlug]);

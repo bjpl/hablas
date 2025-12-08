@@ -9,6 +9,9 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { getTopics } from '@/lib/utils/topic-groups';
 import type { TopicsListResponse } from '@/lib/types/topics';
+import { createLogger } from '@/lib/utils/logger';
+
+const topicsLogger = createLogger('api:topics');
 
 export async function GET(request: NextRequest) {
   try {
@@ -25,7 +28,7 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json(response);
   } catch (error) {
-    console.error('Error fetching topics:', error);
+    topicsLogger.error('Error fetching topics', error as Error);
     return NextResponse.json(
       { error: 'Failed to fetch topics' },
       { status: 500 }

@@ -7,7 +7,10 @@ import { NextRequest, NextResponse } from 'next/server';
 import { db } from '@/lib/db/pool-optimized';
 import { cache } from '@/lib/cache/redis-cache';
 import { getRateLimiterStats } from '@/lib/utils/rate-limiter-optimized';
+import { createLogger } from '@/lib/utils/logger';
 // import { getRedisStats } from '@/lib/db/redis'; // TODO: Add getRedisStats export
+
+const metricsLogger = createLogger('api:performance:metrics');
 
 export async function GET(request: NextRequest) {
   try {
@@ -58,7 +61,7 @@ export async function GET(request: NextRequest) {
       },
     });
   } catch (error) {
-    console.error('Error collecting performance metrics:', error);
+    metricsLogger.error('Error collecting performance metrics', error as Error);
 
     return NextResponse.json(
       {

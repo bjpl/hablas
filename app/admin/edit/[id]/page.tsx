@@ -8,6 +8,9 @@ import { ResourceReview } from '@/components/review';
 import type { GetContentResponse } from '@/lib/types/content-edits';
 import type { Resource } from '@/data/resources';
 import { resources } from '@/data/resources';
+import { createLogger } from '@/lib/utils/logger';
+
+const editLogger = createLogger('EditResourcePage');
 
 /**
  * Edit Page for Specific Resource
@@ -128,7 +131,7 @@ export default function EditResourcePage({ params }: { params: Promise<{ id: str
           resource={resource}
           onSaveComplete={() => {
             // Optionally show success message or redirect
-            console.log('Save completed');
+            editLogger.info('Save completed');
           }}
         />
       </div>

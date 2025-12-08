@@ -7,6 +7,9 @@ import React from 'react';
 import type { ErrorBoundaryProps, ErrorBoundaryState, ErrorInfo } from './types';
 import { handleError } from './errorLogger';
 import { ErrorUI } from './ErrorUI';
+import { createLogger } from '@/lib/utils/logger';
+
+const apiErrorLogger = createLogger('APIErrorBoundary');
 
 const DEFAULT_MAX_RETRIES = 3;
 const DEFAULT_RETRY_DELAY_MS = 1500;
@@ -43,7 +46,7 @@ export class APIErrorBoundary extends React.Component<
       errorType: 'api',
       networkStatus: navigator.onLine ? 'online' : 'offline',
       timestamp: new Date().toISOString(),
-    }).catch(console.error);
+    }).catch((err) => apiErrorLogger.error('Failed to handle error', err as Error));
 
     this.setState({
       errorInfo,
@@ -75,7 +78,7 @@ export class APIErrorBoundary extends React.Component<
       retryCount: retryCount + 1,
     });
 
-    console.log(`Retrying API call in ${Math.round(delay)}ms (attempt ${retryCount + 1}/${maxRetries})`);
+    apiErrorLogger.info(`Retrying API call in ${Math.round(delay)}ms (attempt ${retryCount + 1}/${maxRetries})`);
 
     // Retry after delay
     this.retryTimeout = setTimeout(() => {
@@ -97,7 +100,7 @@ export class APIErrorBoundary extends React.Component<
     const { error, errorInfo } = this.state;
     if (!error || !errorInfo) return;
 
-    console.log('Reporting API error:', { error, errorInfo });
+    apiErrorLogger.info('Reporting API error', { error: error.message, componentStack: errorInfo.componentStack });
 
     const subject = encodeURIComponent('API Error Report');
     const body = encodeURIComponent(
@@ -144,7 +147,7 @@ export function useAPIErrorHandler(maxRetries = DEFAULT_MAX_RETRIES) {
     setError(err);
 
     // Log API error
-    handleError(err, { componentStack: '' }, 'API').catch(console.error);
+    handleError(err, { componentStack: '' }, 'API').catch((error) => apiErrorLogger.error('Failed to handle API error', error as Error));
   }, []);
 
   const retry = React.useCallback(async (retryFn: () => Promise<void>) => {

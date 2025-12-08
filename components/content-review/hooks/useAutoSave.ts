@@ -1,4 +1,7 @@
 import { useEffect, useRef } from 'react';
+import { createLogger } from '@/lib/utils/logger';
+
+const autoSaveLogger = createLogger('useAutoSave');
 
 interface UseAutoSaveOptions<T> {
   content: T | null;
@@ -47,7 +50,7 @@ export function useAutoSave<T>({
         await onSave(content);
         previousContentRef.current = content;
       } catch (error) {
-        console.error('Auto-save failed:', error);
+        autoSaveLogger.error('Auto-save failed', error as Error);
       }
     }, delay);
 
