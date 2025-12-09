@@ -4,7 +4,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { db } from '@/lib/db/pool-optimized';
+import { db } from '@/lib/db/pool';
 import { cache } from '@/lib/cache/redis-cache';
 import { getRateLimiterStats } from '@/lib/utils/rate-limiter-optimized';
 import { createLogger } from '@/lib/utils/logger';

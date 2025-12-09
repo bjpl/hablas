@@ -4,7 +4,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { healthCheck as dbHealthCheck } from '@/lib/db/pool-optimized';
+import { healthCheck as dbHealthCheck } from '@/lib/db/pool';
 import { redisHealthCheck } from '@/lib/db/redis';
 import { createLogger } from '@/lib/utils/logger';
 
