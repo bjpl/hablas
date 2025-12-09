@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import { Save, RotateCcw, Globe, Eye, Code, Columns, AlertCircle } from 'lucide-react';
+import DOMPurify from 'dompurify';
 import type { ContentData } from '../types';
 import { createLogger } from '@/lib/utils/logger';
 
@@ -159,7 +160,13 @@ export const WebContentPanel: React.FC<WebContentPanelProps> = ({
   }, []);
 
   const renderedHtml = useMemo(() => {
-    return renderMarkdown(editedContent);
+    const rawHtml = renderMarkdown(editedContent);
+    // SECURITY: Sanitize HTML to prevent XSS attacks
+    return DOMPurify.sanitize(rawHtml, {
+      ALLOWED_TAGS: ['h1', 'h2', 'h3', 'p', 'br', 'strong', 'em', 'ul', 'ol', 'li', 'a', 'code', 'pre', 'blockquote'],
+      ALLOWED_ATTR: ['href', 'target', 'rel'],
+      ALLOW_DATA_ATTR: false,
+    });
   }, [editedContent, renderMarkdown]);
 
   return (

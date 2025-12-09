@@ -28,6 +28,7 @@ interface AttemptRecord {
 
 // In-memory store (fallback when Redis is not available)
 const memoryStore = new Map<string, AttemptRecord>();
+const MAX_MEMORY_STORE_SIZE = 10000; // Maximum entries to prevent memory leak
 
 /**
  * Import Redis manager
@@ -66,6 +67,38 @@ if (typeof setInterval !== 'undefined') {
 }
 
 /**
+ * Enforce max memory store size with LRU-like eviction
+ */
+function enforceMemoryStoreLimit(): void {
+  if (memoryStore.size >= MAX_MEMORY_STORE_SIZE) {
+    // Delete oldest 10% of entries
+    const now = Date.now();
+    const entriesToDelete = Math.ceil(MAX_MEMORY_STORE_SIZE * 0.1);
+
+    // First try to delete expired entries
+    let deleted = 0;
+    for (const [key, record] of memoryStore.entries()) {
+      if (now >= record.resetAt || deleted >= entriesToDelete) {
+        memoryStore.delete(key);
+        deleted++;
+        if (deleted >= entriesToDelete) break;
+      }
+    }
+
+    // If not enough expired, delete oldest by iterator order
+    if (deleted < entriesToDelete) {
+      const iterator = memoryStore.keys();
+      for (let i = deleted; i < entriesToDelete; i++) {
+        const key = iterator.next().value;
+        if (key) memoryStore.delete(key);
+      }
+    }
+
+    rateLimiterLogger.debug('Memory store eviction', { evicted: entriesToDelete, remaining: memoryStore.size });
+  }
+}
+
+/**
  * Check rate limit using in-memory store
  */
 async function checkMemoryRateLimit(
@@ -77,6 +110,9 @@ async function checkMemoryRateLimit(
 
   // No previous attempts or window expired
   if (!record || now >= record.resetAt) {
+    // Enforce max size before adding new entry
+    enforceMemoryStoreLimit();
+
     const resetAt = now + config.windowMs;
     memoryStore.set(key, { count: 1, resetAt });
 

@@ -25,12 +25,14 @@ class OptimizedDatabasePool {
   private config: DatabaseConfig;
   private isInitialized = false;
 
-  // Query result cache
+  // Query result cache with LRU eviction
   private queryCache: Map<string, CacheEntry> = new Map();
   private cacheTTL = 60000; // 1 minute default
+  private maxCacheSize = 1000; // Maximum cache entries to prevent memory leak
 
-  // Performance monitoring
+  // Performance monitoring with bounded size
   private queryStats: Map<string, QueryStats> = new Map();
+  private maxStatsEntries = 500; // Maximum stats entries
   private slowQueryThreshold = 1000; // 1 second
 
   // Connection pool monitoring
@@ -184,9 +186,23 @@ class OptimizedDatabasePool {
   }
 
   /**
-   * Cache query result
+   * Cache query result with LRU eviction
    */
   private setCache(key: string, data: any, ttl: number = this.cacheTTL): void {
+    // Enforce max cache size with LRU eviction
+    if (this.queryCache.size >= this.maxCacheSize) {
+      // Delete oldest entries (first 10% of cache)
+      const entriesToDelete = Math.ceil(this.maxCacheSize * 0.1);
+      const iterator = this.queryCache.keys();
+      for (let i = 0; i < entriesToDelete; i++) {
+        const oldestKey = iterator.next().value;
+        if (oldestKey) {
+          this.queryCache.delete(oldestKey);
+        }
+      }
+      dbLogger.debug('LRU cache eviction', { evicted: entriesToDelete, remaining: this.queryCache.size });
+    }
+
     this.queryCache.set(key, {
       data,
       timestamp: Date.now(),
@@ -214,10 +230,27 @@ class OptimizedDatabasePool {
   }
 
   /**
-   * Update query statistics
+   * Update query statistics with bounded size
    */
   private updateStats(query: string, duration: number): void {
     const key = query.substring(0, 100); // Use first 100 chars as key
+
+    // Enforce max stats entries to prevent memory leak
+    if (!this.queryStats.has(key) && this.queryStats.size >= this.maxStatsEntries) {
+      // Remove least used stats entry
+      let minCount = Infinity;
+      let minKey = '';
+      for (const [k, s] of this.queryStats.entries()) {
+        if (s.count < minCount) {
+          minCount = s.count;
+          minKey = k;
+        }
+      }
+      if (minKey) {
+        this.queryStats.delete(minKey);
+      }
+    }
+
     const stats = this.queryStats.get(key) || {
       count: 0,
       totalTime: 0,
