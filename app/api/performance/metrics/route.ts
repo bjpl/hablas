@@ -6,7 +6,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { db } from '@/lib/db/pool';
 import { cache } from '@/lib/cache/redis-cache';
-import { getRateLimiterStats } from '@/lib/utils/rate-limiter-optimized';
+import { getRateLimiterStats } from '@/lib/utils/rate-limiter';
 import { createLogger } from '@/lib/utils/logger';
 // import { getRedisStats } from '@/lib/db/redis'; // TODO: Add getRedisStats export
 

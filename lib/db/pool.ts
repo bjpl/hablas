@@ -43,16 +43,47 @@ class OptimizedDatabasePool {
     waitingConnections: 0,
   };
 
+  // Interval handles for graceful shutdown
+  private cacheCleanupInterval: NodeJS.Timeout | null = null;
+  private metricsInterval: NodeJS.Timeout | null = null;
+
   constructor() {
     this.config = this.getConfig();
 
     // Start cache cleanup interval
-    setInterval(() => this.cleanupCache(), 60000); // Cleanup every minute
+    this.cacheCleanupInterval = setInterval(() => this.cleanupCache(), 60000); // Cleanup every minute
 
     // Start metrics reporting interval
     if (process.env.NODE_ENV === 'production') {
-      setInterval(() => this.logMetrics(), 300000); // Log every 5 minutes
+      this.metricsInterval = setInterval(() => this.logMetrics(), 300000); // Log every 5 minutes
     }
+
+    // Register shutdown hooks for graceful cleanup
+    if (typeof process !== 'undefined') {
+      process.on('SIGTERM', () => this.shutdown());
+      process.on('SIGINT', () => this.shutdown());
+    }
+  }
+
+  /**
+   * Graceful shutdown - clear intervals and close pool
+   */
+  private async shutdown(): Promise<void> {
+    dbLogger.info('Database pool shutdown initiated');
+
+    // Clear intervals
+    if (this.cacheCleanupInterval) {
+      clearInterval(this.cacheCleanupInterval);
+      this.cacheCleanupInterval = null;
+    }
+    if (this.metricsInterval) {
+      clearInterval(this.metricsInterval);
+      this.metricsInterval = null;
+    }
+
+    // Close pool
+    await this.close();
+    dbLogger.info('Database pool shutdown complete');
   }
 
   /**

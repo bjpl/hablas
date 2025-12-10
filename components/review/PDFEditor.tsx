@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Save, Eye, Edit3, CheckCircle, AlertCircle } from 'lucide-react';
+import DOMPurify from 'dompurify';
 import type { EditorProps } from './types';
 
 interface PDFEditorProps extends EditorProps {
@@ -98,13 +99,17 @@ export function PDFEditor({
         if (line.startsWith('---')) {
           return <hr key={i} className="my-4 border-gray-300" />;
         }
-        // Bold text
+        // Bold text - SECURITY: Sanitize with DOMPurify before rendering
         const boldText = line.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+        const sanitizedHtml = DOMPurify.sanitize(boldText, {
+          ALLOWED_TAGS: ['strong', 'b', 'em', 'i'],
+          ALLOWED_ATTR: [],
+        });
         // Empty line
         if (!line.trim()) {
           return <br key={i} />;
         }
-        return <p key={i} className="my-1" dangerouslySetInnerHTML={{ __html: boldText }} />;
+        return <p key={i} className="my-1" dangerouslySetInnerHTML={{ __html: sanitizedHtml }} />;
       });
   };
 

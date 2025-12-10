@@ -61,9 +61,29 @@ function cleanupMemoryStore(): void {
   }
 }
 
+// Interval handle for graceful shutdown
+let cleanupIntervalId: NodeJS.Timeout | null = null;
+
 // Run cleanup every 5 minutes
 if (typeof setInterval !== 'undefined') {
-  setInterval(cleanupMemoryStore, 5 * 60 * 1000);
+  cleanupIntervalId = setInterval(cleanupMemoryStore, 5 * 60 * 1000);
+}
+
+/**
+ * Graceful shutdown - clear interval
+ */
+export function shutdownRateLimiter(): void {
+  if (cleanupIntervalId) {
+    clearInterval(cleanupIntervalId);
+    cleanupIntervalId = null;
+    rateLimiterLogger.info('Rate limiter shutdown complete');
+  }
+}
+
+// Register shutdown hooks
+if (typeof process !== 'undefined') {
+  process.on('SIGTERM', shutdownRateLimiter);
+  process.on('SIGINT', shutdownRateLimiter);
 }
 
 /**
@@ -324,4 +344,19 @@ export async function checkCustomRateLimit(
   }
 
   return checkMemoryRateLimit(key, config);
+}
+
+/**
+ * Get rate limiter statistics
+ */
+export function getRateLimiterStats(): {
+  inMemoryEntries: number;
+  redisEnabled: boolean;
+  maxMemoryStoreSize: number;
+} {
+  return {
+    inMemoryEntries: memoryStore.size,
+    redisEnabled: isRedisEnabled(),
+    maxMemoryStoreSize: MAX_MEMORY_STORE_SIZE,
+  };
 }
