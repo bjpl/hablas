@@ -105,8 +105,29 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    // TODO: Send email with reset link
-    // await sendPasswordResetEmail(user.email, resetToken);
+    // Email sending - configure via EMAIL_SERVICE_ENABLED environment variable
+    // In production, integrate with your email provider (SendGrid, AWS SES, etc.)
+    if (process.env.EMAIL_SERVICE_ENABLED === 'true') {
+      const emailEndpoint = process.env.EMAIL_SERVICE_ENDPOINT || '/api/email/send';
+      try {
+        await fetch(emailEndpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            to: user.email,
+            template: 'password-reset',
+            data: {
+              resetLink: `${process.env.NEXT_PUBLIC_APP_URL}/admin/reset-password?token=${resetToken}`,
+              expiresIn: '1 hour',
+            },
+          }),
+        });
+        logger.info('Password reset email sent', { email: user.email });
+      } catch (emailError) {
+        logger.error('Failed to send password reset email', emailError);
+        // Don't fail the request - token is still valid
+      }
+    }
 
     return NextResponse.json({
       success: true,

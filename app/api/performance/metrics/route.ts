@@ -8,7 +8,7 @@ import { db } from '@/lib/db/pool';
 import { cache } from '@/lib/cache/redis-cache';
 import { getRateLimiterStats } from '@/lib/utils/rate-limiter';
 import { createLogger } from '@/lib/utils/logger';
-// import { getRedisStats } from '@/lib/db/redis'; // TODO: Add getRedisStats export
+import { getRedisStats } from '@/lib/db/redis';
 
 const metricsLogger = createLogger('api:performance:metrics');
 
@@ -25,7 +25,7 @@ export async function GET(request: NextRequest) {
       Promise.resolve(getRateLimiterStats()),
     ]);
 
-    const redisStats = null; // TODO: Implement getRedisStats()
+    const redisStats = await getRedisStats();
 
     // Get slow queries
     const slowQueries = db.getSlowQueries(5);

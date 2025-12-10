@@ -18,170 +18,128 @@ describe('Content Review Workflow Integration', () => {
   })
 
   describe('Complete Review Workflow', () => {
-    it.skip('should complete full content review process', async () => {
-      // TODO: Test end-to-end workflow
-      // 1. Open content for review
-      // 2. Compare bilingual content
-      // 3. Edit translations
-      // 4. Align audio with text
-      // 5. Validate context
-      // 6. Save changes
-      // 7. Publish content
-    })
+    /** @pending Requires full workflow orchestration implementation */
+    it.skip('should complete full content review process', async () => {})
 
-    it.skip('should preserve changes across workflow steps', async () => {
-      // TODO: Test state persistence
-    })
+    /** @pending Requires workflow state management */
+    it.skip('should preserve changes across workflow steps', async () => {})
 
-    it.skip('should allow jumping between workflow steps', async () => {
-      // TODO: Test non-linear workflow
-    })
+    /** @pending Requires step navigation logic */
+    it.skip('should allow jumping between workflow steps', async () => {})
   })
 
   describe('Bilingual Review Step', () => {
-    it.skip('should load Spanish and English content', async () => {
-      // TODO: Test BilingualComparisonView integration
-    })
+    /** @pending Requires BilingualComparisonView component */
+    it.skip('should load Spanish and English content', async () => {})
 
-    it.skip('should highlight missing translations', async () => {
-      // TODO: Test translation detection
-    })
+    /** @pending Requires translation detection logic */
+    it.skip('should highlight missing translations', async () => {})
 
-    it.skip('should save inline edits', async () => {
-      // TODO: Test edit persistence
-    })
+    /** @pending Requires inline edit persistence */
+    it.skip('should save inline edits', async () => {})
 
-    it.skip('should show diff of changes', async () => {
-      // TODO: Test diff highlighting
-    })
+    /** @pending Requires diff highlighting implementation */
+    it.skip('should show diff of changes', async () => {})
   })
 
   describe('Audio Alignment Step', () => {
-    it.skip('should load audio and transcript', async () => {
-      // TODO: Test AudioTextAlignmentTool integration
-    })
+    /** @pending Requires AudioTextAlignmentTool component */
+    it.skip('should load audio and transcript', async () => {})
 
-    it.skip('should sync playback with transcript', async () => {
-      // TODO: Test audio sync
-    })
+    /** @pending Requires audio sync implementation */
+    it.skip('should sync playback with transcript', async () => {})
 
-    it.skip('should allow editing timestamps', async () => {
-      // TODO: Test timestamp editing
-    })
+    /** @pending Requires timestamp editing UI */
+    it.skip('should allow editing timestamps', async () => {})
 
-    it.skip('should validate timestamp ranges', async () => {
-      // TODO: Test timestamp validation
-    })
+    /** @pending Requires timestamp validation logic */
+    it.skip('should validate timestamp ranges', async () => {})
   })
 
   describe('Context Validation Step', () => {
-    it.skip('should validate content for Colombian context', async () => {
-      // TODO: Test GigWorkerContextValidator integration
-    })
+    /** @pending Requires GigWorkerContextValidator component */
+    it.skip('should validate content for Colombian context', async () => {})
 
-    it.skip('should detect dialect issues', async () => {
-      // TODO: Test dialect detection
-    })
+    /** @pending Requires dialect detection implementation */
+    it.skip('should detect dialect issues', async () => {})
 
-    it.skip('should flag cultural problems', async () => {
-      // TODO: Test cultural validation
-    })
+    /** @pending Requires cultural validation rules */
+    it.skip('should flag cultural problems', async () => {})
 
-    it.skip('should suggest improvements', async () => {
-      // TODO: Test suggestion system
-    })
+    /** @pending Requires suggestion engine */
+    it.skip('should suggest improvements', async () => {})
 
-    it.skip('should allow applying suggestions', async () => {
-      // TODO: Test quick-fix functionality
-    })
+    /** @pending Requires quick-fix implementation */
+    it.skip('should allow applying suggestions', async () => {})
   })
 
   describe('Save and Publish', () => {
-    it.skip('should save draft with all changes', async () => {
-      // TODO: Test draft save
-    })
+    /** @pending Requires draft save API */
+    it.skip('should save draft with all changes', async () => {})
 
-    it.skip('should validate before publishing', async () => {
-      // TODO: Test pre-publish validation
-    })
+    /** @pending Requires pre-publish validation */
+    it.skip('should validate before publishing', async () => {})
 
-    it.skip('should publish approved content', async () => {
-      // TODO: Test publish flow
-    })
+    /** @pending Requires publish API integration */
+    it.skip('should publish approved content', async () => {})
 
-    it.skip('should show success confirmation', async () => {
-      // TODO: Test success feedback
-    })
+    /** @pending Requires success notification UI */
+    it.skip('should show success confirmation', async () => {})
   })
 
   describe('Collaboration', () => {
-    it.skip('should show other reviewers comments', async () => {
-      // TODO: Test comment display
-    })
+    /** @pending Requires comment display component */
+    it.skip('should show other reviewers comments', async () => {})
 
-    it.skip('should allow adding comments', async () => {
-      // TODO: Test comment creation
-    })
+    /** @pending Requires comment creation API */
+    it.skip('should allow adding comments', async () => {})
 
-    it.skip('should resolve comment threads', async () => {
-      // TODO: Test comment resolution
-    })
+    /** @pending Requires comment resolution logic */
+    it.skip('should resolve comment threads', async () => {})
   })
 
   describe('Version Control', () => {
-    it.skip('should track revision history', async () => {
-      // TODO: Test version tracking
-    })
+    /** @pending Requires version tracking implementation */
+    it.skip('should track revision history', async () => {})
 
-    it.skip('should allow reverting changes', async () => {
-      // TODO: Test revert functionality
-    })
+    /** @pending Requires revert functionality */
+    it.skip('should allow reverting changes', async () => {})
 
-    it.skip('should show who made changes', async () => {
-      // TODO: Test author tracking
-    })
+    /** @pending Requires author tracking */
+    it.skip('should show who made changes', async () => {})
   })
 
   describe('Error Handling', () => {
-    it.skip('should handle save failures gracefully', async () => {
-      // TODO: Test error recovery
-    })
+    /** @pending Requires error recovery implementation */
+    it.skip('should handle save failures gracefully', async () => {})
 
-    it.skip('should auto-save work in progress', async () => {
-      // TODO: Test auto-save
-    })
+    /** @pending Requires auto-save implementation */
+    it.skip('should auto-save work in progress', async () => {})
 
-    it.skip('should warn before losing unsaved changes', async () => {
-      // TODO: Test unsaved changes warning
-    })
+    /** @pending Requires unsaved changes detection */
+    it.skip('should warn before losing unsaved changes', async () => {})
   })
 
   describe('Accessibility', () => {
-    it.skip('should be fully keyboard navigable', async () => {
-      // TODO: Test keyboard navigation throughout workflow
-    })
+    /** @pending Requires keyboard navigation throughout workflow */
+    it.skip('should be fully keyboard navigable', async () => {})
 
-    it.skip('should announce workflow steps to screen readers', async () => {
-      // TODO: Test ARIA live regions
-    })
+    /** @pending Requires ARIA live region implementation */
+    it.skip('should announce workflow steps to screen readers', async () => {})
 
-    it.skip('should maintain focus management', async () => {
-      // TODO: Test focus flow
-    })
+    /** @pending Requires focus management implementation */
+    it.skip('should maintain focus management', async () => {})
   })
 
   describe('Performance', () => {
-    it.skip('should load large content efficiently', async () => {
-      // TODO: Test with long articles
-    })
+    /** @pending Requires large content handling optimization */
+    it.skip('should load large content efficiently', async () => {})
 
-    it.skip('should handle multiple audio files', async () => {
-      // TODO: Test audio loading performance
-    })
+    /** @pending Requires audio loading optimization */
+    it.skip('should handle multiple audio files', async () => {})
 
-    it.skip('should debounce validation', async () => {
-      // TODO: Test validation performance
-    })
+    /** @pending Requires validation debouncing */
+    it.skip('should debounce validation', async () => {})
   })
 })
 

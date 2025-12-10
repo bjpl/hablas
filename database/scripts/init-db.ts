@@ -134,9 +134,9 @@ async function main() {
     if (stats) {
       logger.info('Connection Pool stats', {
         script: 'init-db',
-        total: stats.totalCount,
-        idle: stats.idleCount,
-        waiting: stats.waitingCount
+        total: stats.pool.totalCount,
+        idle: stats.pool.idleCount,
+        waiting: stats.pool.waitingCount
       });
     }
   } catch (error) {

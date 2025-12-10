@@ -261,3 +261,4 @@ if (typeof window === 'undefined') {
 export const getRedisClient = () => redis.getClient();
 export const isRedisConnected = () => redis.isRedisConnected();
 export const redisHealthCheck = () => redis.healthCheck();
+export const getRedisStats = () => redis.getStats();

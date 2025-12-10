@@ -165,9 +165,9 @@ async function main() {
       tables,
       indexes,
       pool: poolStats ? {
-        total: poolStats.totalCount,
-        idle: poolStats.idleCount,
-        waiting: poolStats.waitingCount
+        total: poolStats.pool.totalCount,
+        idle: poolStats.pool.idleCount,
+        waiting: poolStats.pool.waitingCount
       } : null,
     };
 
@@ -205,9 +205,9 @@ async function main() {
     if (poolStats) {
       logger.info('Connection Pool stats', {
         script: 'health-check',
-        total: poolStats.totalCount,
-        idle: poolStats.idleCount,
-        waiting: poolStats.waitingCount
+        total: poolStats.pool.totalCount,
+        idle: poolStats.pool.idleCount,
+        waiting: poolStats.pool.waitingCount
       });
     }
 

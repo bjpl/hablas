@@ -72,15 +72,21 @@ export async function sendErrorToTracking(report: ErrorReport): Promise<void> {
 
   if (!isDevelopment) {
     try {
-      // TODO: Integrate with your error tracking service
-      // Example:
-      // await fetch('/api/errors', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(report),
-      // });
+      // Error tracking service integration
+      // Configure via ERROR_TRACKING_ENDPOINT environment variable
+      const trackingEndpoint = process.env.NEXT_PUBLIC_ERROR_TRACKING_ENDPOINT || '/api/errors';
 
-      errorLoggerInstance.warn('Error tracking not configured', { report });
+      if (process.env.NEXT_PUBLIC_ERROR_TRACKING_ENABLED === 'true') {
+        await fetch(trackingEndpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(report),
+        });
+      } else {
+        errorLoggerInstance.debug('Error tracking disabled - set NEXT_PUBLIC_ERROR_TRACKING_ENABLED=true to enable', {
+          severity: report.severity
+        });
+      }
     } catch (trackingError) {
       errorLoggerInstance.error('Failed to send error to tracking', trackingError as Error);
     }
