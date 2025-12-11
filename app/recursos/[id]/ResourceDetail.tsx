@@ -1,7 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import { useEffect, useState, useMemo } from 'react'
+import { useEffect, useState, useMemo, useCallback } from 'react'
 import { resources, visibleResources, isResourceHidden } from '@/data/resources'
 import ReactMarkdown from 'react-markdown'
 import AudioPlayer from '@/components/AudioPlayer'
@@ -26,7 +26,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
   const [jsonContent, setJsonContent] = useState<JsonResourceContent | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [audioMetadata, setAudioMetadata] = useState<any>(null)
+  const [audioMetadata, setAudioMetadata] = useState<{ duration?: string; narrator?: string; accent?: string } | null>(null)
   const [downloadingResource, setDownloadingResource] = useState(false)
   const [downloadingAudio, setDownloadingAudio] = useState(false)
   const [downloadSuccess, setDownloadSuccess] = useState<string | null>(null)
@@ -45,6 +45,36 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
 
   // No basePath needed for custom domain (hablas.co)
   const basePath = ''
+
+  // Extract audio metadata from script content
+  const extractAudioMetadata = useCallback((scriptContent: string) => {
+    interface ExtractedMetadata {
+      duration?: string;
+      narrator?: string;
+      accent?: string;
+    }
+
+    const metadata: ExtractedMetadata = {}
+
+    // Extract duration
+    const durationMatch = scriptContent.match(/\*\*Total Duration\*\*:\s*([^\n]+)/i)
+    if (durationMatch) metadata.duration = durationMatch[1].trim()
+
+    // Extract voice info
+    const narratorMatch = scriptContent.match(/\*\*Spanish Narrator\*\*:\s*([^\n]+)/i)
+    if (narratorMatch) metadata.narrator = narratorMatch[1].split(',')[0].trim()
+
+    // Extract accent info
+    const accentMatch = scriptContent.match(/accent.*?\(([^)]+)\)/i)
+    if (accentMatch) metadata.accent = accentMatch[1].trim()
+
+    // Default values
+    if (!metadata.duration) metadata.duration = 'Duración variable'
+    if (!metadata.narrator) metadata.narrator = 'Voz profesional bilingüe'
+    if (!metadata.accent) metadata.accent = 'Latinoamericano neutral'
+
+    setAudioMetadata(metadata)
+  }, [])
 
   useEffect(() => {
     // Check for admin mode
@@ -98,37 +128,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
         })
         .catch(err => resourceDetailLogger.debug('Audio metadata not available', { resourceId }))
     }
-  }, [resource, initialContent])
-
-  // Extract audio metadata from script content
-  const extractAudioMetadata = (scriptContent: string) => {
-    interface ExtractedMetadata {
-      duration?: string;
-      narrator?: string;
-      accent?: string;
-    }
-
-    const metadata: ExtractedMetadata = {}
-
-    // Extract duration
-    const durationMatch = scriptContent.match(/\*\*Total Duration\*\*:\s*([^\n]+)/i)
-    if (durationMatch) metadata.duration = durationMatch[1].trim()
-
-    // Extract voice info
-    const narratorMatch = scriptContent.match(/\*\*Spanish Narrator\*\*:\s*([^\n]+)/i)
-    if (narratorMatch) metadata.narrator = narratorMatch[1].split(',')[0].trim()
-
-    // Extract accent info
-    const accentMatch = scriptContent.match(/accent.*?\(([^)]+)\)/i)
-    if (accentMatch) metadata.accent = accentMatch[1].trim()
-
-    // Default values
-    if (!metadata.duration) metadata.duration = 'Duración variable'
-    if (!metadata.narrator) metadata.narrator = 'Voz profesional bilingüe'
-    if (!metadata.accent) metadata.accent = 'Latinoamericano neutral'
-
-    setAudioMetadata(metadata)
-  }
+  }, [resource, initialContent, resourceId, extractAudioMetadata])
 
   if (!resource) {
     return (
