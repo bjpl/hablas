@@ -5,8 +5,8 @@ const nextConfig = {
   poweredByHeader: false,
   // Fix workspace detection for Jest
   outputFileTracingRoot: __dirname,
-  // ESLint disabled during builds - CI treats warnings as errors
-  // TODO: Fix ESLint warnings then re-enable
+  // ESLint disabled during builds - 65 errors and 325 warnings remain
+  // TODO: Fix ESLint errors progressively then re-enable
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -23,7 +23,8 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 60,
-    unoptimized: true,
+    // Enable image optimization for production performance
+    unoptimized: process.env.NODE_ENV !== 'production',
   },
   experimental: {
     optimizeCss: false,

@@ -13,6 +13,10 @@
  * - Loading state management
  */
 
+import { createLogger } from '@/lib/utils/logger';
+
+const logger = createLogger('content-fetcher');
+
 export interface FetchedContent {
   downloadable: string;
   web: string;
@@ -122,7 +126,7 @@ async function fetchDownloadableContent(
       return apiContent;
     }
   } catch (error) {
-    console.warn('API fetch failed, falling back to direct file access:', error);
+    logger.warn('API fetch failed, falling back to direct file access', { error });
   }
 
   // Fallback to direct file access
@@ -178,7 +182,7 @@ async function fetchAudioTranscript(
         if (result) return result;
       } catch (error) {
         // If transcript file doesn't exist, try alternative patterns
-        console.warn('Direct transcript fetch failed:', error);
+        logger.warn('Direct transcript fetch failed', { error });
       }
     }
 
@@ -222,7 +226,7 @@ async function fetchAudioTranscript(
         result = await fetchWithRetry(transcriptUrl, options);
         if (result) return result;
       } catch (error) {
-        console.warn('Audio URL transcript fetch failed:', error);
+        logger.warn('Audio URL transcript fetch failed', { error });
       }
     }
 
@@ -315,7 +319,7 @@ export async function fetchResourceContent(
 
   // Log errors for debugging
   if (errors.length > 0) {
-    console.warn('Content fetch errors:', errors);
+    logger.warn('Content fetch errors', { errors });
   }
 
   // Cache the result
@@ -355,7 +359,7 @@ export async function prefetchResourceContent(
   try {
     await fetchResourceContent(resourceId, urls, { cache: true });
   } catch (error) {
-    console.warn('Prefetch failed:', error);
+    logger.warn('Prefetch failed', { error });
   }
 }
 

@@ -60,10 +60,19 @@ export async function POST(
 
     // Load current edits data
     const editsPath = path.join(process.cwd(), 'data', 'content-edits.json');
+
+    interface EditsMetadata {
+      totalEdits: number;
+      pendingEdits: number;
+      approvedEdits: number;
+      rejectedEdits: number;
+      lastEditDate: string;
+    }
+
     let data: {
       edits: ContentEdit[];
       history: EditHistory[];
-      metadata: any;
+      metadata: EditsMetadata;
     };
 
     try {

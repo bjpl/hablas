@@ -7,8 +7,8 @@ import { Pool, PoolClient, QueryResult, QueryResultRow } from 'pg';
 import type { DatabaseConfig, TransactionCallback } from '../../database/types';
 import { dbLogger } from '@/lib/utils/logger';
 
-interface CacheEntry {
-  data: any;
+interface CacheEntry<T = unknown> {
+  data: T;
   timestamp: number;
   ttl: number;
 }
@@ -26,7 +26,7 @@ class OptimizedDatabasePool {
   private isInitialized = false;
 
   // Query result cache with LRU eviction
-  private queryCache: Map<string, CacheEntry> = new Map();
+  private queryCache: Map<string, CacheEntry<QueryResult>> = new Map();
   private cacheTTL = 60000; // 1 minute default
   private maxCacheSize = 1000; // Maximum cache entries to prevent memory leak
 
@@ -230,14 +230,14 @@ class OptimizedDatabasePool {
   /**
    * Generate cache key for query
    */
-  private getCacheKey(text: string, params?: any[]): string {
+  private getCacheKey(text: string, params?: unknown[]): string {
     return `${text}:${JSON.stringify(params || [])}`;
   }
 
   /**
    * Get cached query result
    */
-  private getCached(key: string): any | null {
+  private getCached<T extends QueryResultRow = QueryResultRow>(key: string): QueryResult<T> | null {
     const entry = this.queryCache.get(key);
 
     if (!entry) {
@@ -249,13 +249,13 @@ class OptimizedDatabasePool {
       return null;
     }
 
-    return entry.data;
+    return entry.data as QueryResult<T>;
   }
 
   /**
    * Cache query result with LRU eviction
    */
-  private setCache(key: string, data: any, ttl: number = this.cacheTTL): void {
+  private setCache<T extends QueryResultRow = QueryResultRow>(key: string, data: QueryResult<T>, ttl: number = this.cacheTTL): void {
     // Enforce max cache size with LRU eviction
     if (this.queryCache.size >= this.maxCacheSize) {
       // Delete oldest entries (first 10% of cache)
@@ -339,9 +339,9 @@ class OptimizedDatabasePool {
   /**
    * Execute query with caching and monitoring
    */
-  async query<T extends QueryResultRow = any>(
+  async query<T extends QueryResultRow = QueryResultRow>(
     text: string,
-    params?: any[],
+    params?: unknown[],
     options?: { cache?: boolean; cacheTTL?: number }
   ): Promise<QueryResult<T>> {
     const pool = await this.getPool();
@@ -353,7 +353,7 @@ class OptimizedDatabasePool {
 
       if (cached) {
         dbLogger.debug('Cache hit for query', { query: text.substring(0, 50) });
-        return cached;
+        return cached as QueryResult<T>;
       }
     }
 

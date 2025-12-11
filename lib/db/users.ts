@@ -90,8 +90,8 @@ export async function createUser(input: UserCreateInput): Promise<UserPublic> {
     );
 
     return toPublicUser(result.rows[0]);
-  } catch (error: any) {
-    if (error.code === '23505') { // Unique constraint violation
+  } catch (error: unknown) {
+    if (error && typeof error === 'object' && 'code' in error && error.code === '23505') {
       throw new UniqueConstraintError('email');
     }
     throw error;
@@ -103,7 +103,7 @@ export async function createUser(input: UserCreateInput): Promise<UserPublic> {
  */
 export async function updateUser(input: UserUpdateInput): Promise<UserPublic> {
   const updates: string[] = [];
-  const values: any[] = [];
+  const values: (string | boolean)[] = [];
   let paramCount = 1;
 
   if (input.email !== undefined) {

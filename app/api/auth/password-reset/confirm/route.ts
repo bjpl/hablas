@@ -55,10 +55,16 @@ export async function POST(request: NextRequest) {
     // Hash new password
     const hashedPassword = await hashPassword(password);
 
+    interface UserData {
+      id: string;
+      password: string;
+      email: string;
+    }
+
     // Update user password
     const usersData = await fs.readFile(USERS_FILE, 'utf-8');
-    const users = JSON.parse(usersData);
-    const userIndex = users.findIndex((u: any) => u.id === user.id);
+    const users: UserData[] = JSON.parse(usersData);
+    const userIndex = users.findIndex((u: UserData) => u.id === user.id);
 
     if (userIndex === -1) {
       return NextResponse.json(

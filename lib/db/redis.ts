@@ -183,11 +183,12 @@ class RedisManager {
         responseTime: Date.now() - start,
         mode: 'redis',
       };
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
       return {
         connected: false,
         responseTime: Date.now() - start,
-        error: error.message,
+        error: errorMessage,
         mode: 'memory',
       };
     }

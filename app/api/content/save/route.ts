@@ -6,7 +6,7 @@
  * Saves edited content and tracks edit history
  */
 
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
 import type {
@@ -16,11 +16,15 @@ import type {
   EditHistory,
 } from '@/lib/types/content-edits';
 import { createLogger } from '@/lib/utils/logger';
+import { requireRole } from '@/lib/auth/middleware-helper';
 
 const contentSaveLogger = createLogger('api:content:save');
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
   try {
+    // SECURITY: Require editor or admin role to save content
+    await requireRole(request, 'editor');
+
     const body: SaveContentRequest = await request.json();
     const { resourceId, editedContent, status = 'pending', editedBy, comments } = body;
 

@@ -65,7 +65,7 @@ export async function GET(
       : [];
 
     // Gather media metadata
-    const metadata: any = {
+    const metadata: Record<string, unknown> = {
       format: path.extname(resource.downloadUrl).slice(1),
     };
 

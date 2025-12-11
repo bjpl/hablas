@@ -14,7 +14,7 @@ export const COOKIE_CONFIG = {
   OPTIONS: {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
-    sameSite: 'lax' as const,
+    sameSite: 'strict' as const,
     path: '/',
     maxAge: 7 * 24 * 60 * 60, // 7 days in seconds
   },
@@ -22,7 +22,7 @@ export const COOKIE_CONFIG = {
   REMEMBER_ME_OPTIONS: {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
-    sameSite: 'lax' as const,
+    sameSite: 'strict' as const,
     path: '/',
     maxAge: 30 * 24 * 60 * 60, // 30 days in seconds
   },
@@ -206,7 +206,7 @@ export const ADMIN_CONFIG = {
     if (process.env.NODE_ENV === 'production') {
       if (!process.env.ADMIN_PASSWORD) {
         const password = this.generateSecurePassword();
-        authLogger.warn('Generated secure admin password - SAVE THIS NOW', { password });
+        authLogger.warn('Generated secure admin password - SAVE THIS NOW (password not logged for security)');
         return password;
       }
       return process.env.ADMIN_PASSWORD;
@@ -224,6 +224,7 @@ export const SECURITY_HEADERS = {
   'X-XSS-Protection': '1; mode=block',
   'Referrer-Policy': 'strict-origin-when-cross-origin',
   'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
+  'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
   ...(process.env.NODE_ENV === 'production' && {
     'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
   }),

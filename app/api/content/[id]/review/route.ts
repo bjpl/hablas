@@ -130,13 +130,28 @@ export async function POST(
 /**
  * Handle audio verification status updates
  */
+interface AudioVerification {
+  resourceId: number;
+  verified: boolean;
+  verifiedPhrases: number[];
+  totalPhrases: number;
+  verifiedBy: string;
+  verifiedAt: string;
+  progress: number;
+}
+
+interface VerificationsData {
+  verifications: Record<number, AudioVerification>;
+  metadata: { lastUpdated: string | null };
+}
+
 async function handleAudioVerification(
   resourceId: number,
   body: ReviewRequest
 ): Promise<NextResponse> {
   const { verified, verifiedPhrases = [], totalPhrases = 0, reviewedBy } = body;
 
-  const verifications = await readJsonFile<Record<string, any>>(
+  const verifications = await readJsonFile<VerificationsData>(
     VERIFICATIONS_PATH,
     { verifications: {}, metadata: { lastUpdated: null } }
   );
@@ -173,6 +188,24 @@ async function handleAudioVerification(
 /**
  * Handle TTS regeneration requests
  */
+interface RegenerationRequest {
+  id: string;
+  resourceId: number;
+  issues: VerificationIssue[];
+  status: string;
+  requestedBy: string;
+  requestedAt: string;
+  priority: 'high' | 'medium' | 'low';
+}
+
+interface RegenerationRequestsData {
+  requests: RegenerationRequest[];
+  metadata: {
+    totalRequests: number;
+    lastUpdated: string | null;
+  };
+}
+
 async function handleRegenerationRequest(
   resourceId: number,
   body: ReviewRequest
@@ -186,21 +219,21 @@ async function handleRegenerationRequest(
     );
   }
 
-  const requests = await readJsonFile<{ requests: any[]; metadata: any }>(
+  const requests = await readJsonFile<RegenerationRequestsData>(
     REGENERATION_REQUESTS_PATH,
     { requests: [], metadata: { totalRequests: 0, lastUpdated: null } }
   );
 
-  const request = {
+  const request: RegenerationRequest = {
     id: `regen-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
     resourceId,
     issues,
-    status: 'pending',
+    status: 'pending' as const,
     requestedBy: reviewedBy || 'admin',
     requestedAt: new Date().toISOString(),
-    priority: issues.some(i => i.severity === 'high') ? 'high'
+    priority: (issues.some(i => i.severity === 'high') ? 'high'
              : issues.some(i => i.severity === 'medium') ? 'medium'
-             : 'low',
+             : 'low') as 'high' | 'medium' | 'low',
   };
 
   requests.requests.push(request);
@@ -220,6 +253,28 @@ async function handleRegenerationRequest(
 /**
  * Handle content approval/rejection
  */
+interface EditsMetadata {
+  totalEdits?: number;
+  pendingEdits?: number;
+  approvedEdits?: number;
+  rejectedEdits?: number;
+  lastEditDate?: string;
+}
+
+interface EditsHistory {
+  id: string;
+  contentEditId: string;
+  content: string;
+  timestamp: string;
+  changeDescription?: string;
+}
+
+interface EditsData {
+  edits: ContentEdit[];
+  history: EditsHistory[];
+  metadata: EditsMetadata;
+}
+
 async function handleContentReview(
   resourceId: number,
   body: ReviewRequest
@@ -228,7 +283,7 @@ async function handleContentReview(
 
   const editsPath = path.join(process.cwd(), 'data', 'content-edits.json');
 
-  let editsData: { edits: ContentEdit[]; history: any[]; metadata: any };
+  let editsData: EditsData;
 
   try {
     const fileContent = await fs.readFile(editsPath, 'utf-8');
@@ -319,7 +374,7 @@ export async function GET(
       );
     }
 
-    const verifications = await readJsonFile<Record<string, any>>(
+    const verifications = await readJsonFile<VerificationsData>(
       VERIFICATIONS_PATH,
       { verifications: {}, metadata: { lastUpdated: null } }
     );
