@@ -3,7 +3,7 @@
  * Tests for JWT token generation, verification, and refresh
  */
 
-import { describe, it, expect, beforeAll } from '@jest/globals';
+import { describe, it, expect } from '@jest/globals';
 import {
   generateToken,
   verifyToken,

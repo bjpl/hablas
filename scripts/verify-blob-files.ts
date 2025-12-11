@@ -62,7 +62,7 @@ async function verifyBlobFiles() {
         console.log(`   URL: ${blob.url}`);
         console.log(`   Size: ${(blob.size / 1024 / 1024).toFixed(2)} MB`);
         console.log(`   Type: ${blob.contentType}\n`);
-      } catch (error) {
+      } catch {
         console.log(`❌ ${filename} - Not found or error\n`);
       }
     }

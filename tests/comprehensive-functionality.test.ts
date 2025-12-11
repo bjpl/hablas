@@ -31,12 +31,13 @@ describe('Build & Deployment Tests', () => {
         status: 'PASS',
         notes: 'Build completed successfully',
       })
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
       testResults.push({
         testName: 'npm run build',
         status: 'FAIL',
         notes: 'Build failed',
-        details: error.message,
+        details: errorMessage,
       })
       throw error
     }
@@ -50,8 +51,9 @@ describe('Build & Deployment Tests', () => {
         status: 'PASS',
         notes: 'TypeScript type checking passed',
       })
-    } catch (error: any) {
-      const errorOutput = error.stderr || error.stdout || error.message
+    } catch (error: unknown) {
+      const execError = error as { stderr?: string; stdout?: string; message?: string };
+      const errorOutput = execError.stderr || execError.stdout || execError.message || String(error);
       if (errorOutput.includes('error TS')) {
         testResults.push({
           testName: 'npm run typecheck',

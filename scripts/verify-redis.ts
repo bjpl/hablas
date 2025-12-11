@@ -113,14 +113,15 @@ class RedisVerifier {
       });
 
       console.log(`✅ Connected to Redis (${duration}ms)`);
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
       this.results.push({
         name: 'Connection',
         passed: false,
-        message: error.message,
+        message: errorMessage,
       });
 
-      console.log(`❌ Connection failed: ${error.message}`);
+      console.log(`❌ Connection failed: ${errorMessage}`);
       console.log('\n🔧 Troubleshooting:');
       console.log('   1. Check REDIS_URL format: redis://default:[password]@[endpoint]:6379');
       console.log('   2. Verify Upstash database is active');
@@ -155,14 +156,15 @@ class RedisVerifier {
         });
 
         console.log(`✅ ${test.name} (${duration}ms)`);
-      } catch (error: any) {
+      } catch (error: unknown) {
+        const errorMessage = error instanceof Error ? error.message : String(error);
         this.results.push({
           name: `Command: ${test.name}`,
           passed: false,
-          message: error.message,
+          message: errorMessage,
         });
 
-        console.log(`❌ ${test.name} failed: ${error.message}`);
+        console.log(`❌ ${test.name} failed: ${errorMessage}`);
       }
     }
   }
@@ -218,14 +220,15 @@ class RedisVerifier {
       });
 
       console.log('✅ Rate limiting test passed');
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
       this.results.push({
         name: 'Rate Limiting',
         passed: false,
-        message: error.message,
+        message: errorMessage,
       });
 
-      console.log(`❌ Rate limiting test failed: ${error.message}`);
+      console.log(`❌ Rate limiting test failed: ${errorMessage}`);
     }
   }
 
@@ -265,14 +268,15 @@ class RedisVerifier {
         console.log('   2. Upgrading to Global database for multi-region');
         console.log('   3. Checking network connectivity');
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
       this.results.push({
         name: 'Performance',
         passed: false,
-        message: error.message,
+        message: errorMessage,
       });
 
-      console.log(`❌ Performance test failed: ${error.message}`);
+      console.log(`❌ Performance test failed: ${errorMessage}`);
     }
   }
 

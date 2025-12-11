@@ -223,7 +223,7 @@ describe('useAutoSave', () => {
         { initialProps: { content: 'initial' } }
       );
 
-      rerender({ content: null as any });
+      rerender({ content: null as unknown as string });
       jest.advanceTimersByTime(1000);
 
       expect(mockOnSave).not.toHaveBeenCalled();
