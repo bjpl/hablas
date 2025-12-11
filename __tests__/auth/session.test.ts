@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 /**
  * Session Management Unit Tests
  * Tests for lib/auth/session.ts
