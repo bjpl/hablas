@@ -251,15 +251,16 @@ async function retryFailedResource(
       filepath
     }
 
-  } catch (error: any) {
-    log(`   ❌ Retry Failed: ${error.message}`, 'red')
+  } catch (error: unknown) {
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    log(`   ❌ Retry Failed: ${errorMessage}`, 'red')
 
     return {
       number: newId,
       name: failedResource.name,
       title: TITLE_MAPPING[failedResource.name] || 'Failed',
       success: false,
-      error: `Retry failed: ${error.message}`
+      error: `Retry failed: ${errorMessage}`
     }
   }
 }
@@ -410,14 +411,15 @@ async function main() {
         await new Promise(resolve => setTimeout(resolve, 2000))
       }
 
-    } catch (error: any) {
-      log(`   ❌ Critical error: ${error.message}`, 'red')
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      log(`   ❌ Critical error: ${errorMessage}`, 'red')
       retryResults.push({
         number: currentId,
         name: failedResource.name,
         title: 'Failed',
         success: false,
-        error: `Critical error: ${error.message}`
+        error: `Critical error: ${errorMessage}`
       })
       currentId++
     }

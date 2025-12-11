@@ -146,11 +146,11 @@ export const FormHelpers = {
  * Mock window properties for testing
  */
 export class MockWindow {
-  private original: Record<string, any> = {}
+  private original: Record<string, unknown> = {}
 
-  mockProperty(property: string, value: any) {
+  mockProperty(property: string, value: unknown) {
     if (!(property in this.original)) {
-      this.original[property] = (window as any)[property]
+      this.original[property] = (window as Record<string, unknown>)[property]
     }
     Object.defineProperty(window, property, {
       writable: true,

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable @typescript-eslint/no-require-imports */
 /**
  * Resource Reference Validator
  * Validates all resource references in data/resources.ts

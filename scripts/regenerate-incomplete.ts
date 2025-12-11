@@ -6,7 +6,7 @@
  */
 
 import Anthropic from '@anthropic-ai/sdk';
-import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'fs';
+import { writeFileSync, readFileSync, mkdirSync } from 'fs';
 import { join } from 'path';
 
 // Incomplete resources from audit (22 total)
@@ -145,9 +145,10 @@ Generate the COMPLETE resource. Do not truncate. End properly with all content i
       return { success: false, filename, lines: newLines, tokensUsed: message.usage.output_tokens };
     }
 
-  } catch (error: any) {
-    console.error(`  ❌ ERROR: ${error.message}`);
-    return { success: false, filename, error: error.message };
+  } catch (error: unknown) {
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    console.error(`  ❌ ERROR: ${errorMessage}`);
+    return { success: false, filename, error: errorMessage };
   }
 }
 

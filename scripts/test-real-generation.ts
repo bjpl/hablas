@@ -158,14 +158,16 @@ async function testRealGeneration() {
 
     log('\n🎉 Test complete!\n', 'bright')
 
-  } catch (error: any) {
+  } catch (error: unknown) {
+    const err = error as { message?: string };
+    const errorMessage = err.message || String(error);
     log('\n❌ Generation failed!\n', 'red')
     log('Error details:', 'red')
-    console.error(error.message)
+    console.error(errorMessage)
 
-    if (error.message.includes('Invalid API key')) {
+    if (errorMessage.includes('Invalid API key')) {
       log('\n💡 Check your .env file and make sure ANTHROPIC_API_KEY is correct\n', 'yellow')
-    } else if (error.message.includes('Rate limit')) {
+    } else if (errorMessage.includes('Rate limit')) {
       log('\n💡 Wait a moment and try again\n', 'yellow')
     }
 

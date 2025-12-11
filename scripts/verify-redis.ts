@@ -145,7 +145,7 @@ class RedisVerifier {
     for (const test of tests) {
       try {
         const start = Date.now();
-        const result = await test.command();
+        await test.command();
         const duration = Date.now() - start;
 
         this.results.push({
@@ -288,8 +288,9 @@ class RedisVerifier {
     try {
       await this.client.quit();
       console.log('✅ Connection closed gracefully');
-    } catch (error: any) {
-      console.log(`⚠️  Cleanup warning: ${error.message}`);
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      console.log(`⚠️  Cleanup warning: ${errorMessage}`);
     }
   }
 

@@ -102,7 +102,13 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
 
   // Extract audio metadata from script content
   const extractAudioMetadata = (scriptContent: string) => {
-    const metadata: any = {}
+    interface ExtractedMetadata {
+      duration?: string;
+      narrator?: string;
+      accent?: string;
+    }
+
+    const metadata: ExtractedMetadata = {}
 
     // Extract duration
     const durationMatch = scriptContent.match(/\*\*Total Duration\*\*:\s*([^\n]+)/i)

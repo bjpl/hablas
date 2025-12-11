@@ -16,7 +16,7 @@ interface TestResult {
   status: 'PASS' | 'FAIL' | 'SKIP';
   message: string;
   duration?: number;
-  details?: any;
+  details?: Record<string, unknown>;
 }
 
 const results: TestResult[] = [];
@@ -34,7 +34,7 @@ const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || '';
 async function makeRequest(
   endpoint: string,
   options: RequestInit = {}
-): Promise<{ response: Response; data: any; duration: number }> {
+): Promise<{ response: Response; data: unknown; duration: number }> {
   const startTime = Date.now();
 
   try {
@@ -104,7 +104,7 @@ async function testValidLogin() {
         details: data,
       });
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     results.push({
       name: testName,
       status: 'FAIL',
@@ -146,7 +146,7 @@ async function testInvalidLogin() {
         details: data,
       });
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     results.push({
       name: testName,
       status: 'FAIL',
@@ -188,7 +188,7 @@ async function testMissingFields() {
         details: data,
       });
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     results.push({
       name: testName,
       status: 'FAIL',
@@ -242,7 +242,7 @@ async function testRateLimiting() {
         details: { attempts: attempts.map(a => a.status) },
       });
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     results.push({
       name: testName,
       status: 'FAIL',
@@ -296,7 +296,7 @@ async function testTokenValidation() {
         details: data,
       });
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     results.push({
       name: testName,
       status: 'FAIL',
@@ -357,7 +357,7 @@ async function testRefreshToken() {
         details: data,
       });
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     results.push({
       name: testName,
       status: 'FAIL',
@@ -395,7 +395,7 @@ async function testProtectedEndpointNoAuth() {
         details: data,
       });
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     results.push({
       name: testName,
       status: 'FAIL',
@@ -436,7 +436,7 @@ async function testProtectedEndpointInvalidToken() {
         details: data,
       });
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     results.push({
       name: testName,
       status: 'FAIL',
@@ -489,7 +489,7 @@ async function testLogout() {
         details: data,
       });
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     results.push({
       name: testName,
       status: 'FAIL',
@@ -530,7 +530,7 @@ async function testAccessAfterLogout() {
         details: data,
       });
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     results.push({
       name: testName,
       status: 'FAIL',

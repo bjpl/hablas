@@ -404,15 +404,25 @@ function getDefaultGuidelines(): string {
 /**
  * Generate multiple resources in batch
  */
+interface BatchResult {
+  resource: Partial<Resource>;
+  content: string;
+  metadata: {
+    tokensUsed?: number;
+    generationTime?: number;
+    wordCount?: number;
+    error?: string;
+  };
+  validation: {
+    isValid: boolean;
+    errors?: string[];
+  };
+}
+
 export async function generateResourceBatch(
   resources: Partial<Resource>[],
   config: GenerationConfig = {}
-): Promise<Array<{
-  resource: Partial<Resource>
-  content: string
-  metadata: any
-  validation: any
-}>> {
+): Promise<BatchResult[]> {
   const results = []
 
   for (const resource of resources) {
@@ -470,7 +480,7 @@ export async function generateCompleteResourceSet(
   topic: string,
   category: Resource['category'],
   config: GenerationConfig = {}
-): Promise<any[]> {
+): Promise<BatchResult[]> {
   logger.info('Generating complete resource set', {
     component: 'resource-content-generator',
     topic,

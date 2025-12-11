@@ -14,7 +14,7 @@ expect.extend(toHaveNoViolations);
 
 // Mock the child components
 jest.mock('@/components/triple-comparison/components/ContentPanel', () => ({
-  ContentPanel: ({ type, content, onSave }: any) => (
+  ContentPanel: ({ type, content, onSave }: { type: string; content: { text: string; status: string }; onSave: (type: string, value: string) => void }) => (
     <div data-testid={`panel-${type}`}>
       <h3>{type} Panel</h3>
       <textarea
@@ -28,7 +28,7 @@ jest.mock('@/components/triple-comparison/components/ContentPanel', () => ({
 }));
 
 jest.mock('@/components/triple-comparison/components/DiffViewer', () => ({
-  DiffViewer: ({ leftContent, rightContent, leftLabel, rightLabel }: any) => (
+  DiffViewer: ({ leftContent, rightContent, leftLabel, rightLabel }: { leftContent: string; rightContent: string; leftLabel: string; rightLabel: string }) => (
     <div data-testid="diff-viewer">
       <div data-testid="left-label">{leftLabel}</div>
       <div data-testid="right-label">{rightLabel}</div>
@@ -39,7 +39,7 @@ jest.mock('@/components/triple-comparison/components/DiffViewer', () => ({
 }));
 
 jest.mock('@/components/triple-comparison/components/SyncControls', () => ({
-  SyncControls: ({ onSync, dirtyStates, disabled }: any) => (
+  SyncControls: ({ onSync, disabled }: { onSync: (action: string) => void; dirtyStates?: unknown; disabled: boolean }) => (
     <div data-testid="sync-controls">
       <button
         data-testid="sync-btn-downloadable-to-web"

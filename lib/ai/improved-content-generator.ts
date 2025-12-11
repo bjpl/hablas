@@ -94,16 +94,17 @@ export async function generateResourceContent(
         qualityScore
       }
     }
-  } catch (error: any) {
+  } catch (error: unknown) {
     // Improved error handling
-    if (error.status === 401) {
+    const err = error as { status?: number; message?: string };
+    if (err.status === 401) {
       throw new Error('Invalid API key. Please check ANTHROPIC_API_KEY environment variable.')
-    } else if (error.status === 429) {
+    } else if (err.status === 429) {
       throw new Error('Rate limit exceeded. Please wait a moment and try again.')
-    } else if (error.status === 500) {
+    } else if (err.status === 500) {
       throw new Error('Anthropic API error. Please try again later.')
     } else {
-      throw new Error(`Generation failed: ${error.message}`)
+      throw new Error(`Generation failed: ${err.message || String(error)}`)
     }
   }
 }

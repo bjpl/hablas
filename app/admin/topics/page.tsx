@@ -52,9 +52,9 @@ export default function TopicsListPage() {
   };
 
   // Filter topics
-  const filteredCategories = data?.categories?.map((category: any) => ({
+  const filteredCategories = data?.categories?.map((category: TopicCategory) => ({
     ...category,
-    topics: category.topics.filter((topic: any) => {
+    topics: category.topics.filter((topic) => {
       const matchesSearch = topic.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         topic.description.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesCategory = categoryFilter === 'all' || category.slug === categoryFilter;
@@ -64,7 +64,7 @@ export default function TopicsListPage() {
     }),
   })).filter(category => category.topics.length > 0) || [];
 
-  const totalFilteredTopics = filteredCategories.reduce((sum: number, cat: any) => sum + cat.topics.length, 0);
+  const totalFilteredTopics = filteredCategories.reduce((sum: number, cat: TopicCategory) => sum + cat.topics.length, 0);
 
   if (loading) {
     return (
@@ -171,7 +171,7 @@ export default function TopicsListPage() {
               className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             >
               <option value="all">All Categories</option>
-              {data?.categories?.map((cat: any) => (
+              {data?.categories?.map((cat: TopicCategory) => (
                 <option key={cat.slug} value={cat.slug}>{cat.name}</option>
               ))}
             </select>
@@ -217,7 +217,7 @@ export default function TopicsListPage() {
           </div>
         ) : (
           <div className="space-y-6">
-            {filteredCategories.map((category: any) => (
+            {filteredCategories.map((category: TopicCategory) => (
               <div key={category.slug} className="bg-white rounded-lg shadow-sm border border-gray-200">
                 <div className="p-4 border-b border-gray-200 bg-gray-50">
                   <h2 className="text-xl font-semibold text-gray-900">{category.name}</h2>
@@ -228,7 +228,7 @@ export default function TopicsListPage() {
                   ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4'
                   : 'divide-y divide-gray-200'
                 }>
-                  {category.topics.map((topic: any) => (
+                  {category.topics.map((topic) => (
                     <Link
                       key={topic.slug}
                       href={`/admin/topics/${topic.slug}`}

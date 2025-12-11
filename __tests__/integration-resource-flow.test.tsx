@@ -217,7 +217,7 @@ describe('Resource Flow Integration', () => {
 
   describe('Analytics Integration', () => {
     it('should track resource view events', () => {
-      const events: any[] = []
+      const events: Array<{ event: string; resourceId: number; timestamp: string }> = []
       const resource = createMockResource({ id: 111 })
 
       events.push({
@@ -231,7 +231,7 @@ describe('Resource Flow Integration', () => {
     })
 
     it('should track download events', () => {
-      const events: any[] = []
+      const events: Array<{ event: string; resourceId: number; timestamp: string }> = []
       const resource = createMockResource({ id: 222 })
 
       events.push({
@@ -245,7 +245,7 @@ describe('Resource Flow Integration', () => {
     })
 
     it('should track search events', () => {
-      const events: any[] = []
+      const events: Array<{ event: string; query: string; timestamp: string }> = []
 
       events.push({
         event: 'search',
@@ -261,7 +261,7 @@ describe('Resource Flow Integration', () => {
 
   describe('Error Handling', () => {
     it('should handle missing resources gracefully', () => {
-      const resources: any[] = []
+      const resources: Array<{ id: string | number }> = []
       const resourceId = 'non-existent'
       const found = resources.find(r => r.id === resourceId)
 
@@ -273,8 +273,10 @@ describe('Resource Flow Integration', () => {
 
       try {
         await mockDownload()
-      } catch (error: any) {
-        expect(error.message).toBe('Network error')
+      } catch (error) {
+        if (error instanceof Error) {
+          expect(error.message).toBe('Network error')
+        }
       }
     })
 

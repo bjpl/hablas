@@ -44,9 +44,16 @@ export function createMockRequest(
   options: {
     method?: string
     headers?: Record<string, string>
-    body?: any
+    body?: unknown
   } = {}
-): any {
+): {
+  url: string;
+  method: string;
+  headers: Headers;
+  json: () => Promise<unknown>;
+  text: () => Promise<string>;
+  clone: () => unknown;
+} {
   const headers = createMockHeaders(options.headers)
 
   return {
@@ -69,7 +76,7 @@ export function waitFor(ms: number): Promise<void> {
 /**
  * Mock Analytics Event Factory
  */
-export function createMockAnalyticsEvent(overrides?: any) {
+export function createMockAnalyticsEvent(overrides?: Record<string, unknown>) {
   return {
     event: 'resource_view',
     resourceId: 'test-resource-1',
@@ -83,7 +90,7 @@ export function createMockAnalyticsEvent(overrides?: any) {
 /**
  * Mock Session for NextAuth
  */
-export function createMockSession(overrides?: any) {
+export function createMockSession(overrides?: Record<string, unknown>) {
   return {
     user: {
       email: 'admin@hablas.test',
@@ -156,7 +163,7 @@ export const Assertions = {
     expect(response.status).toBe(expectedStatus)
   },
 
-  async assertJSON(response: Response): Promise<any> {
+  async assertJSON(response: Response): Promise<unknown> {
     const data = await response.json()
     expect(data).toBeDefined()
     return data
