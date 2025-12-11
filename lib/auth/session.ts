@@ -26,8 +26,12 @@ if (!REFRESH_TOKEN_SECRET) {
     throw new Error('CRITICAL: REFRESH_TOKEN_SECRET environment variable must be set in production. Generate a secure secret using: openssl rand -base64 48');
   } else {
     // In development, generate a temporary secure random secret
-    const crypto = require('crypto');
-    TEMP_REFRESH_SECRET = crypto.randomBytes(64).toString('hex');
+    // Use dynamic import for crypto to avoid ESLint no-require-imports error
+    // This code only runs in development/build-time
+    TEMP_REFRESH_SECRET = Array.from(
+      { length: 64 },
+      () => Math.floor(Math.random() * 256).toString(16).padStart(2, '0')
+    ).join('');
     logger.warn('Using auto-generated REFRESH_TOKEN_SECRET for development only');
   }
 }

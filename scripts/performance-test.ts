@@ -21,7 +21,7 @@ interface PerformanceMetrics {
     p95: number;
     p99: number;
   };
-  details?: any;
+  details?: Record<string, unknown>;
 }
 
 interface LighthouseResults {
@@ -65,7 +65,7 @@ class PerformanceTestSuite {
   async testApiEndpoint(
     endpoint: string,
     method: string = 'GET',
-    body?: any,
+    body?: Record<string, unknown>,
     iterations: number = 100
   ): Promise<PerformanceMetrics> {
     console.log(`Testing API: ${method} ${endpoint}`);

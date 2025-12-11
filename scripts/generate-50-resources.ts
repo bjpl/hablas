@@ -216,8 +216,9 @@ async function generateBatch(
         await new Promise(resolve => setTimeout(resolve, 2000))
       }
 
-    } catch (error: any) {
-      log(`   ❌ Failed: ${error.message}`, 'red')
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      log(`   ❌ Failed: ${errorMessage}`, 'red')
 
       results.push({
         batchNumber,
@@ -225,7 +226,7 @@ async function generateBatch(
         template: templateName,
         title: 'Failed',
         success: false,
-        error: error.message
+        error: errorMessage
       })
     }
   }

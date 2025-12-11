@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import {
@@ -34,13 +34,7 @@ export default function TopicReviewPage() {
   const [selectedResourceId, setSelectedResourceId] = useState<number | null>(null);
   const [expandedResourceId, setExpandedResourceId] = useState<number | null>(null);
 
-  useEffect(() => {
-    if (slug) {
-      fetchTopicData();
-    }
-  }, [slug]);
-
-  const fetchTopicData = async () => {
+  const fetchTopicData = useCallback(async () => {
     try {
       setLoading(true);
       const response = await fetch(`/api/topics/${slug}`);
@@ -58,7 +52,13 @@ export default function TopicReviewPage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [slug]);
+
+  useEffect(() => {
+    if (slug) {
+      fetchTopicData();
+    }
+  }, [slug, fetchTopicData]);
 
   const openHistoryModal = (resourceId: number) => {
     setSelectedResourceId(resourceId);

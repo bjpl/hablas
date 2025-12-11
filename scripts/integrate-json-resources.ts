@@ -64,11 +64,11 @@ interface JSONResource {
   culturalNotes?: CulturalNote[]
   practicalScenarios?: PracticalScenario[]
   platformVocabulary?: VocabularyItem[]
-  commonScenarios?: any
-  callScript911?: any
-  stepByStepProtocol?: any
-  medicalConditionsPhrases?: any
-  [key: string]: any
+  commonScenarios?: Array<{ title: string; phrases: PhraseItem[] }>
+  callScript911?: { steps: Array<{ step: number; action: string; phrase: string }> }
+  stepByStepProtocol?: Array<{ step: number; action: string; phrase?: string; spanish?: string; details?: string }>
+  medicalConditionsPhrases?: Array<{ condition: string; phrase: string; spanish: string }> | Record<string, { symptoms?: string; spanish?: string; action?: string }>
+  [key: string]: unknown
 }
 
 interface Resource {
@@ -232,13 +232,21 @@ function convertToMarkdown(json: JSONResource): string {
   if (json.stepByStepProtocol) {
     lines.push(`## Step-by-Step Protocol`)
     lines.push('')
-    json.stepByStepProtocol.forEach((step: any) => {
+    json.stepByStepProtocol.forEach((step) => {
       lines.push(`### Step ${step.step}: ${step.action}`)
       lines.push('')
-      lines.push(`**Spanish:** ${step.spanish}`)
-      lines.push('')
-      lines.push(`**Details:** ${step.details}`)
-      lines.push('')
+      if ('spanish' in step && step.spanish) {
+        lines.push(`**Spanish:** ${step.spanish}`)
+        lines.push('')
+      }
+      if ('details' in step && step.details) {
+        lines.push(`**Details:** ${step.details}`)
+        lines.push('')
+      }
+      if (step.phrase) {
+        lines.push(`**Phrase:** ${step.phrase}`)
+        lines.push('')
+      }
     })
   }
 
@@ -246,16 +254,36 @@ function convertToMarkdown(json: JSONResource): string {
   if (json.medicalConditionsPhrases) {
     lines.push(`## Medical Conditions Reference`)
     lines.push('')
-    Object.entries(json.medicalConditionsPhrases).forEach(([condition, data]: [string, any]) => {
-      lines.push(`### ${condition.charAt(0).toUpperCase() + condition.slice(1).replace(/([A-Z])/g, ' $1')}`)
-      lines.push('')
-      lines.push(`**Symptoms (English):** ${data.symptoms}`)
-      lines.push('')
-      lines.push(`**Síntomas (Español):** ${data.spanish}`)
-      lines.push('')
-      lines.push(`**Action:** ${data.action}`)
-      lines.push('')
-    })
+    if (Array.isArray(json.medicalConditionsPhrases)) {
+      json.medicalConditionsPhrases.forEach((item) => {
+        lines.push(`### ${item.condition}`)
+        lines.push('')
+        lines.push(`**English:** ${item.phrase}`)
+        lines.push('')
+        lines.push(`**Spanish:** ${item.spanish}`)
+        lines.push('')
+      })
+    } else {
+      Object.entries(json.medicalConditionsPhrases).forEach(([condition, data]) => {
+        lines.push(`### ${condition.charAt(0).toUpperCase() + condition.slice(1).replace(/([A-Z])/g, ' $1')}`)
+        lines.push('')
+        if (data && typeof data === 'object') {
+          const dataObj = data as Record<string, unknown>;
+          if ('symptoms' in dataObj) {
+            lines.push(`**Symptoms (English):** ${dataObj.symptoms}`)
+            lines.push('')
+          }
+          if ('spanish' in dataObj) {
+            lines.push(`**Síntomas (Español):** ${dataObj.spanish}`)
+            lines.push('')
+          }
+          if ('action' in dataObj) {
+            lines.push(`**Action:** ${dataObj.action}`)
+            lines.push('')
+          }
+        }
+      })
+    }
   }
 
   // Additional sections from other properties

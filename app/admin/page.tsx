@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import {
   Edit2,
@@ -45,12 +45,7 @@ export default function AdminDashboard() {
   const [levelFilter, setLevelFilter] = useState<string>('all');
   const [statusFilter, setStatusFilter] = useState<string>('all');
 
-  // Fetch resources on mount
-  useEffect(() => {
-    fetchResources();
-  }, []);
-
-  const fetchResources = async () => {
+  const fetchResources = useCallback(async () => {
     try {
       setLoading(true);
       const response = await fetch('/api/content/list');
@@ -64,7 +59,12 @@ export default function AdminDashboard() {
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
+
+  // Fetch resources on mount
+  useEffect(() => {
+    fetchResources();
+  }, [fetchResources]);
 
   // Filter resources
   const filteredResources = resources.filter(resource => {

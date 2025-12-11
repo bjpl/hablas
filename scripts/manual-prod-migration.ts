@@ -20,8 +20,9 @@ async function runMigration(migrationFile: string, pool: Pool) {
   try {
     await pool.query(sql);
     console.log(`✅ Success: ${migrationFile}`);
-  } catch (error: any) {
-    console.error(`❌ Error in ${migrationFile}:`, error.message);
+  } catch (error: unknown) {
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    console.error(`❌ Error in ${migrationFile}:`, errorMessage);
     throw error;
   }
 }

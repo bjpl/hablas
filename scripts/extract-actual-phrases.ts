@@ -114,7 +114,15 @@ async function main() {
     console.log('Backup created at:', backupDir, '\n');
   }
 
-  const report: any[] = [];
+  const report: Array<{
+    resourceId: string;
+    title: string;
+    status: string;
+    error?: string;
+    sourcePath?: string;
+    phrasesExtracted?: number;
+    outputFile?: string;
+  }> = [];
   let successCount = 0;
   let errorCount = 0;
 
@@ -187,14 +195,15 @@ async function main() {
         sourcePath: fullSourcePath
       });
 
-    } catch (error: any) {
-      console.log(`  ❌ Error: ${error.message}`);
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      console.log(`  ❌ Error: ${errorMessage}`);
       errorCount++;
       report.push({
         resourceId,
         title: resource.title,
         status: 'error',
-        error: error.message
+        error: errorMessage
       });
     }
 

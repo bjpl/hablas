@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, use } from 'react';
-import { useRouter } from 'next/navigation';
+import React, { useState, useEffect, use, useCallback } from 'react';
 import { ArrowLeft, Loader2, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
 import { ResourceReview } from '@/components/review';
@@ -22,16 +21,11 @@ const editLogger = createLogger('EditResourcePage');
  */
 export default function EditResourcePage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);
-  const router = useRouter();
   const [resource, setResource] = useState<Resource | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string>('');
 
-  useEffect(() => {
-    fetchContent();
-  }, [resolvedParams.id]);
-
-  const fetchContent = async () => {
+  const fetchContent = useCallback(async () => {
     try {
       setLoading(true);
 
@@ -63,7 +57,11 @@ export default function EditResourcePage({ params }: { params: Promise<{ id: str
     } finally {
       setLoading(false);
     }
-  };
+  }, [resolvedParams.id]);
+
+  useEffect(() => {
+    fetchContent();
+  }, [fetchContent]);
 
   if (loading) {
     return (

@@ -196,14 +196,15 @@ async function generate50Resources(): Promise<GenerationResult[]> {
         log('─'.repeat(70) + '\n', 'cyan')
       }
 
-    } catch (error: any) {
-      log(`   ❌ Failed: ${error.message}`, 'red')
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      log(`   ❌ Failed: ${errorMessage}`, 'red')
       results.push({
         number: progress,
         name,
         title: 'Failed',
         success: false,
-        error: error.message
+        error: errorMessage
       })
     }
   }

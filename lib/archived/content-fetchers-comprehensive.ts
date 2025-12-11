@@ -487,7 +487,7 @@ export const contentCache = new ContentCache();
  * @requires pdfjs-dist
  */
 export class PDFContentFetcher {
-  private pdfjs: any = null;
+  private pdfjs: typeof import('pdfjs-dist') | null = null;
 
   constructor() {
     // Lazy load PDF.js when needed
@@ -637,7 +637,7 @@ export class PDFContentFetcher {
         const textContent = await page.getTextContent();
 
         const pageText = textContent.items
-          .map((item: any) => item.str)
+          .map((item: { str: string }) => item.str)
           .join(' ');
 
         const lines = textContent.items.length;
@@ -924,7 +924,18 @@ export class AudioTranscriptFetcher {
   /**
    * Parse transcript segments
    */
-  private parseTranscriptSegments(data: any[]): TranscriptSegment[] {
+  private parseTranscriptSegments(data: Array<{
+    timestamp?: string;
+    time?: string;
+    startTime?: number;
+    start?: number;
+    endTime?: number;
+    end?: number;
+    text?: string;
+    content?: string;
+    speaker?: string;
+    name?: string;
+  }>): TranscriptSegment[] {
     return data.map((item, index) => {
       // Handle different transcript formats
       const timestamp = item.timestamp || item.time || `${index}`;
