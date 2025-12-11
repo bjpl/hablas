@@ -11,6 +11,7 @@ export interface TopicGroup {
   name: string;
   description: string;
   category: 'all' | 'repartidor' | 'conductor';
+  level?: 'basico' | 'intermedio' | 'avanzado';
   resourceIds: number[];
   resourceCount?: number;
 }

@@ -121,6 +121,9 @@ async function main() {
     error?: string;
     sourcePath?: string;
     phrasesExtracted?: number;
+    phrasesFound?: number;
+    phrasesUsed?: number;
+    samplePhrases?: string[];
     outputFile?: string;
   }> = [];
   let successCount = 0;
@@ -165,7 +168,7 @@ async function main() {
           resourceId,
           title: resource.title,
           status: 'warning',
-          phrasesFound: 0,
+          phrasesExtracted: 0,
           sourcePath: fullSourcePath
         });
         continue;
@@ -224,13 +227,13 @@ async function main() {
   console.log(`\n📁 Output directory: ${outputDir}`);
 
   // Show sample from Resource 5 (the example mentioned)
-  const resource5Report = report.find(r => r.resourceId === 5);
+  const resource5Report = report.find(r => r.resourceId === '5');
   if (resource5Report && resource5Report.status === 'success') {
     console.log('\n=== RESOURCE 5 VERIFICATION ===');
     console.log('Title:', resource5Report.title);
     console.log('Phrases found:', resource5Report.phrasesFound);
     console.log('Sample phrases:');
-    resource5Report.samplePhrases.forEach((p: string, i: number) => {
+    resource5Report.samplePhrases?.forEach((p: string, i: number) => {
       console.log(`  ${i + 1}. "${p}"`);
     });
   }

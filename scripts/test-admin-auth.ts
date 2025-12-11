@@ -19,6 +19,26 @@ interface TestResult {
   details?: Record<string, unknown>;
 }
 
+interface ApiResponse {
+  success?: boolean;
+  error?: string;
+  tokens?: {
+    accessToken: string;
+    refreshToken: string;
+  };
+  user?: {
+    id: string;
+    email: string;
+    role: string;
+  };
+  [key: string]: unknown;
+}
+
+interface RequestError {
+  message?: string;
+  duration?: number;
+}
+
 const results: TestResult[] = [];
 let accessToken = '';
 let refreshToken = '';
@@ -34,7 +54,7 @@ const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || '';
 async function makeRequest(
   endpoint: string,
   options: RequestInit = {}
-): Promise<{ response: Response; data: unknown; duration: number }> {
+): Promise<{ response: Response; data: ApiResponse; duration: number }> {
   const startTime = Date.now();
 
   try {
@@ -46,19 +66,20 @@ async function makeRequest(
       },
     });
 
-    let data;
+    let data: ApiResponse;
     const contentType = response.headers.get('content-type');
     if (contentType?.includes('application/json')) {
-      data = await response.json();
+      data = await response.json() as ApiResponse;
     } else {
-      data = await response.text();
+      data = { error: await response.text() };
     }
 
     const duration = Date.now() - startTime;
     return { response, data, duration };
   } catch (error) {
     const duration = Date.now() - startTime;
-    throw { error, duration };
+    const err = error as Error;
+    throw { message: err.message, duration } as RequestError;
   }
 }
 
@@ -104,7 +125,8 @@ async function testValidLogin() {
         details: data,
       });
     }
-  } catch (error: unknown) {
+  } catch (err) {
+    const error = err as RequestError;
     results.push({
       name: testName,
       status: 'FAIL',
@@ -146,7 +168,8 @@ async function testInvalidLogin() {
         details: data,
       });
     }
-  } catch (error: unknown) {
+  } catch (err) {
+    const error = err as RequestError;
     results.push({
       name: testName,
       status: 'FAIL',
@@ -188,7 +211,8 @@ async function testMissingFields() {
         details: data,
       });
     }
-  } catch (error: unknown) {
+  } catch (err) {
+    const error = err as RequestError;
     results.push({
       name: testName,
       status: 'FAIL',
@@ -242,7 +266,8 @@ async function testRateLimiting() {
         details: { attempts: attempts.map(a => a.status) },
       });
     }
-  } catch (error: unknown) {
+  } catch (err) {
+    const error = err as RequestError;
     results.push({
       name: testName,
       status: 'FAIL',
@@ -296,7 +321,8 @@ async function testTokenValidation() {
         details: data,
       });
     }
-  } catch (error: unknown) {
+  } catch (err) {
+    const error = err as RequestError;
     results.push({
       name: testName,
       status: 'FAIL',
@@ -357,7 +383,8 @@ async function testRefreshToken() {
         details: data,
       });
     }
-  } catch (error: unknown) {
+  } catch (err) {
+    const error = err as RequestError;
     results.push({
       name: testName,
       status: 'FAIL',
@@ -395,7 +422,8 @@ async function testProtectedEndpointNoAuth() {
         details: data,
       });
     }
-  } catch (error: unknown) {
+  } catch (err) {
+    const error = err as RequestError;
     results.push({
       name: testName,
       status: 'FAIL',
@@ -436,7 +464,8 @@ async function testProtectedEndpointInvalidToken() {
         details: data,
       });
     }
-  } catch (error: unknown) {
+  } catch (err) {
+    const error = err as RequestError;
     results.push({
       name: testName,
       status: 'FAIL',
@@ -489,7 +518,8 @@ async function testLogout() {
         details: data,
       });
     }
-  } catch (error: unknown) {
+  } catch (err) {
+    const error = err as RequestError;
     results.push({
       name: testName,
       status: 'FAIL',
@@ -530,7 +560,8 @@ async function testAccessAfterLogout() {
         details: data,
       });
     }
-  } catch (error: unknown) {
+  } catch (err) {
+    const error = err as RequestError;
     results.push({
       name: testName,
       status: 'FAIL',

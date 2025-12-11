@@ -392,7 +392,7 @@ export default function ResourceDetail({ id, initialContent = '' }: { id: string
               <AudioPlayer
                 title={resource.title}
                 audioUrl={`${basePath}${resource.audioUrl}`}
-                metadata={audioMetadata}
+                metadata={audioMetadata ?? undefined}
                 resourceId={resource.id}
                 enhanced={true}
                 hideDownload={true}

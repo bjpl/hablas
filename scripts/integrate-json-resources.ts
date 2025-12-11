@@ -65,7 +65,11 @@ interface JSONResource {
   practicalScenarios?: PracticalScenario[]
   platformVocabulary?: VocabularyItem[]
   commonScenarios?: Array<{ title: string; phrases: PhraseItem[] }>
-  callScript911?: { steps: Array<{ step: number; action: string; phrase: string }> }
+  callScript911?: {
+    steps?: Array<{ step: number; action: string; phrase: string }>;
+    english?: string[];
+    spanish?: string[];
+  }
   stepByStepProtocol?: Array<{ step: number; action: string; phrase?: string; spanish?: string; details?: string }>
   medicalConditionsPhrases?: Array<{ condition: string; phrase: string; spanish: string }> | Record<string, { symptoms?: string; spanish?: string; action?: string }>
   [key: string]: unknown
@@ -214,18 +218,22 @@ function convertToMarkdown(json: JSONResource): string {
   if (json.callScript911) {
     lines.push(`## Emergency 911 Call Script`)
     lines.push('')
-    lines.push('### English:')
-    lines.push('')
-    json.callScript911.english.forEach((line: string) => {
-      lines.push(`- ${line}`)
-    })
-    lines.push('')
-    lines.push('### Spanish:')
-    lines.push('')
-    json.callScript911.spanish.forEach((line: string) => {
-      lines.push(`- ${line}`)
-    })
-    lines.push('')
+    if (json.callScript911.english) {
+      lines.push('### English:')
+      lines.push('')
+      json.callScript911.english.forEach((line: string) => {
+        lines.push(`- ${line}`)
+      })
+      lines.push('')
+    }
+    if (json.callScript911.spanish) {
+      lines.push('### Spanish:')
+      lines.push('')
+      json.callScript911.spanish.forEach((line: string) => {
+        lines.push(`- ${line}`)
+      })
+      lines.push('')
+    }
   }
 
   // Step-by-Step Protocol (for emergency resources)
